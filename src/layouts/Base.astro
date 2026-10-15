@@ -1,0 +1,81 @@
+---
+// Layout base de todas as páginas: <head> com SEO, cabeçalho e rodapé.
+import '@fontsource-variable/inter';
+import '@fontsource-variable/montserrat';
+import '../styles/global.css';
+import { getImage } from 'astro:assets';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { site } from '../data/site';
+import ogPadrao from '../assets/img/hero-pergolado-piscina.png';
+
+interface Props {
+  /** <title> da página (até ~60 caracteres) */
+  title: string;
+  /** Meta description (até ~155 caracteres) */
+  description: string;
+  /** Imagem de compartilhamento (Open Graph). Padrão: foto da home. */
+  image?: ImageMetadata;
+  /** true = página não aparece no Google */
+  noindex?: boolean;
+  /** Dados estruturados (JSON-LD) específicos da página */
+  schema?: Record<string, unknown>[];
+  /** Cabeçalho transparente por cima da foto do topo */
+  headerSobreposto?: boolean;
+  /** 'website' ou 'article' */
+  ogType?: 'website' | 'article';
+}
+
+const {
+  title,
+  description,
+  image = ogPadrao,
+  noindex = false,
+  schema = [],
+  headerSobreposto = false,
+  ogType = 'website',
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, site.url).href;
+const og = await getImage({ src: image, width: 1200, format: 'jpg', quality: 80 });
+const ogUrl = new URL(og.src, site.url).href;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta name="theme-color" content="#7c5143" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content={site.nome} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <slot name="head" />
+
+    {schema.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <Header sobreposto={headerSobreposto} />
+    <main id="conteudo">
+      <slot />
+    </main>
+    <Footer />
+    <script>
+      import '../scripts/animacoes';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+/* Estilos globais: cores, fontes e reset mínimo. */
+:root {
+  --sar-creme: #f3eadb;
+  --sar-bege: #f7f1e6;
+  --sar-areia: #f0e6d6;
+  --sar-marrom: #8a5a4e;
+  --sar-marrom-escuro: #7a4a3f;
+  --sar-marrom-rodape: #7c5143;
+  --sar-oliva: #7d8558;
+  --sar-oliva-escuro: #6a7148;
+  --sar-oliva-botao: #828a64;
+  --sar-verde-menu: #7d8f5a;
+  --sar-texto: #3a2c27;
+
+  --fonte-titulos: 'Montserrat Variable', 'Helvetica Neue', Arial, sans-serif;
+  --fonte-texto: 'Inter Variable', 'Helvetica Neue', Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--sar-texto);
+  font-family: var(--fonte-texto);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 2000;
+  padding: 12px 18px;
+  background: #fff;
+  color: #000;
+}
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.sar-wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+@media (max-width: 600px) {
+  .sar-wrap {
+    padding: 0 20px;
+  }
+}
+
+/* ===================== Animações ===================== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px; /* links internos (#projetos) não ficam atrás do cabeçalho fixo */
+  interpolate-size: allow-keywords; /* permite abrir/fechar com altura animada */
+}
+
+/* Surgir ao rolar (ativado por src/scripts/animacoes.ts) */
+html.js-anima [data-revelar] {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) var(--atraso, 0ms),
+    transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) var(--atraso, 0ms);
+}
+html.js-anima [data-revelar].is-visivel {
+  opacity: 1;
+  transform: none;
+}
+
+/* Topo: textos sobem em sequência e a foto faz um leve "zoom out" */
+@keyframes sar-subir {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes sar-zoom {
+  from { transform: scale(1.08); }
+  to { transform: scale(1); }
+}
+.sar-hero__content > *,
+.ph__content > * {
+  animation: sar-subir 1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.sar-hero__content > :nth-child(2),
+.ph__content > :nth-child(2) { animation-delay: 0.15s; }
+.sar-hero__content > :nth-child(3),
+.ph__content > :nth-child(3) { animation-delay: 0.3s; }
+.sar-hero__content > :nth-child(4),
+.ph__content > :nth-child(4) { animation-delay: 0.45s; }
+.sar-hero__bg,
+.ph__bg {
+  animation: sar-zoom 2.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.sar-hero__bar,
+.ph__bar {
+  animation: sar-subir 1s cubic-bezier(0.2, 0.7, 0.2, 1) 0.55s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

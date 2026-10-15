@@ -1,0 +1,222 @@
+---
+// Lista de perguntas/tópicos que abrem e fecham (sem JavaScript, usando <details>).
+// O texto fica no HTML da página, então o Google lê tudo mesmo fechado.
+import { Image } from 'astro:assets';
+
+export interface ItemAcordeao {
+  titulo: string;
+  html: string;
+  imagem?: { arquivo: string; alt: string } | null;
+}
+
+interface Props {
+  itens: ItemAcordeao[];
+  /** Imagens disponíveis: resultado de import.meta.glob da pasta da página */
+  imagens?: Record<string, { default: ImageMetadata }>;
+  /** Duas colunas no desktop */
+  colunas?: 1 | 2;
+  /** Nível do título de cada item */
+  nivel?: 'h3' | 'h4';
+}
+const { itens, imagens = {}, colunas = 2, nivel: Tag = 'h3' } = Astro.props;
+
+const acharImagem = (arquivo?: string) =>
+  arquivo ? Object.entries(imagens).find(([caminho]) => caminho.endsWith('/' + arquivo))?.[1].default : undefined;
+
+const metade = Math.ceil(itens.length / 2);
+const grupos = colunas === 2 ? [itens.slice(0, metade), itens.slice(metade)] : [itens];
+---
+
+<div class:list={['acd', { 'acd--2': colunas === 2 }]}>
+  {
+    grupos.map((grupo) => (
+      <div class="acd__col">
+        {grupo.map((item) => {
+          const img = acharImagem(item.imagem?.arquivo);
+          return (
+            <details class="acd__item">
+              <summary>
+                <Tag class="acd__titulo">{item.titulo}</Tag>
+                <span class="acd__icone" aria-hidden="true" />
+              </summary>
+              <div class="acd__corpo">
+                {img && (
+                  <Image
+                    src={img}
+                    alt={item.imagem!.alt}
+                    widths={[400, 700]}
+                    sizes="(max-width: 900px) 100vw, 560px"
+                    class="acd__img"
+                    quality={70}
+                  />
+                )}
+                <div class="acd__texto" set:html={item.html} />
+              </div>
+            </details>
+          );
+        })}
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .acd {
+    display: grid;
+    gap: 14px 28px;
+    align-items: start;
+  }
+  .acd--2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .acd__col {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .acd__item {
+    background: #fff;
+    border: 1px solid #e3d9cb;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .acd__item[open] {
+    border-color: var(--sar-oliva);
+    box-shadow: 0 6px 18px rgba(90, 58, 48, 0.08);
+  }
+  /* Abertura suave (navegadores recentes; nos demais abre direto) */
+  .acd__item::details-content {
+    block-size: 0;
+    overflow: hidden;
+    transition: block-size 0.4s cubic-bezier(0.2, 0.7, 0.2, 1), content-visibility 0.4s allow-discrete;
+  }
+  .acd__item[open]::details-content {
+    block-size: auto;
+  }
+  .acd__item[open] .acd__corpo {
+    animation: acd-surgir 0.45s ease both;
+  }
+  @keyframes acd-surgir {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: none; }
+  }
+  .acd__item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 22px;
+    cursor: pointer;
+    list-style: none;
+  }
+  .acd__item summary::-webkit-details-marker {
+    display: none;
+  }
+  .acd__item summary:hover {
+    background: var(--sar-bege);
+  }
+  .acd__item summary:focus-visible {
+    outline: 3px solid var(--sar-oliva);
+    outline-offset: -3px;
+  }
+  .acd__titulo {
+    margin: 0;
+    font-family: var(--fonte-texto);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--sar-marrom-escuro);
+  }
+  .acd__icone {
+    position: relative;
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--sar-bege);
+  }
+  .acd__icone::before,
+  .acd__icone::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 1.5px;
+    background: var(--sar-marrom-escuro);
+    transform: translate(-50%, -50%);
+    transition: transform 0.25s ease;
+  }
+  .acd__icone::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  .acd__item[open] .acd__icone {
+    background: var(--sar-oliva);
+  }
+  .acd__item[open] .acd__icone::before,
+  .acd__item[open] .acd__icone::after {
+    background: #fff;
+  }
+  .acd__item[open] .acd__icone::after {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  .acd__corpo {
+    padding: 4px 22px 22px;
+    border-top: 1px solid #efe7db;
+  }
+  .acd__corpo :global(.acd__img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 18px 0 6px;
+  }
+  .acd__texto {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #4d413c;
+  }
+  .acd__texto :global(p),
+  .acd__texto :global(ul),
+  .acd__texto :global(ol) {
+    margin: 14px 0 0;
+  }
+  .acd__texto :global(ul),
+  .acd__texto :global(ol) {
+    padding-left: 20px;
+  }
+  .acd__texto :global(li) {
+    margin-bottom: 6px;
+  }
+  .acd__texto :global(h3),
+  .acd__texto :global(h4) {
+    margin: 18px 0 0;
+    font-size: 15px;
+    color: var(--sar-marrom-escuro);
+  }
+  .acd__texto :global(strong) {
+    color: var(--sar-marrom-escuro);
+  }
+  .acd__texto :global(a) {
+    color: var(--sar-oliva-escuro);
+    font-weight: 600;
+  }
+
+  @media (max-width: 900px) {
+    .acd--2 {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 600px) {
+    .acd__item summary {
+      padding: 16px 18px;
+    }
+    .acd__corpo {
+      padding: 4px 18px 18px;
+    }
+  }
+</style>

@@ -1,0 +1,106 @@
+---
+// Capa de vídeo: carrega o YouTube só quando a pessoa clica (deixa a página leve).
+import { getImage } from 'astro:assets';
+
+interface Props {
+  id: string;
+  capa: ImageMetadata;
+  titulo: string;
+  /** Largura máxima em que a capa aparece (px) */
+  largura?: number;
+}
+const { id, capa, titulo, largura = 700 } = Astro.props;
+const img = await getImage({ src: capa, width: largura, format: 'webp', quality: 75 });
+---
+
+<button
+  type="button"
+  class="sar-video"
+  data-yt={id}
+  style={`background-image:url('${img.src}')`}
+  aria-label={`Assistir: ${titulo}`}
+>
+  <span class="sar-video__play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"></path></svg></span>
+</button>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.sar-video[data-yt]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (btn.classList.contains('is-playing')) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.yt}?autoplay=1&rel=0&modestbranding=1`;
+      iframe.title = btn.getAttribute('aria-label') || 'Vídeo';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+      iframe.allowFullscreen = true;
+      btn.classList.add('is-playing');
+      btn.replaceChildren(iframe);
+    });
+  });
+</script>
+
+<style>
+  .sar-video {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    padding: 0;
+    border: 0;
+    border-radius: 2px;
+    background: #1d1a18 center / cover no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .sar-video::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.45) 100%);
+  }
+  .sar-video__play {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 68px;
+    height: 68px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(243, 234, 219, 0.94);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease, background 0.25s ease;
+  }
+  .sar-video__play svg {
+    width: 26px;
+    height: 26px;
+    fill: var(--sar-marrom-escuro);
+    margin-left: 4px;
+  }
+  .sar-video:hover .sar-video__play,
+  .sar-video:focus-visible .sar-video__play {
+    transform: translate(-50%, -50%) scale(1.08);
+    background: #fff;
+  }
+  .sar-video:focus-visible {
+    outline: 3px solid var(--sar-oliva);
+    outline-offset: 3px;
+  }
+  .sar-video :global(iframe) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .sar-video.is-playing::after {
+    display: none;
+  }
+  @media (max-width: 600px) {
+    .sar-video__play {
+      width: 58px;
+      height: 58px;
+    }
+  }
+</style>

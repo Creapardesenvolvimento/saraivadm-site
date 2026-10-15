@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import { whatsappUrl } from '../../data/site';
+---
+
+<Base title="Mensagem enviada | Saraiva Design" description="Recebemos sua mensagem. Nossa equipe comercial entrará em contato em breve." noindex>
+  <section class="msg">
+    <h1>Mensagem enviada!</h1>
+    <p>Obrigado pelo contato. Nossa equipe comercial vai responder em breve. Se preferir, fale agora pelo WhatsApp.</p>
+    <a href={whatsappUrl()} target="_blank" rel="noopener">Falar no WhatsApp</a>
+    <a class="sec" href="/">Voltar para a página inicial</a>
+  </section>
+</Base>
+
+<style>
+  .msg { max-width: 640px; margin: 0 auto; padding: 100px 20px; text-align: center; }
+  h1 { font-family: var(--fonte-titulos); font-size: 38px; color: var(--sar-marrom-escuro); }
+  p { margin: 16px 0 32px; font-size: 17px; }
+  a { display: inline-block; margin: 6px; padding: 14px 32px; background: var(--sar-oliva-botao); color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600; }
+  a.sec { background: transparent; color: var(--sar-marrom-escuro); border: 1px solid currentColor; }
+</style>

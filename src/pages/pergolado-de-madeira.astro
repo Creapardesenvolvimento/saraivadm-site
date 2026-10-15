@@ -1,0 +1,337 @@
+---
+import { Image, getImage } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import VideoYoutube from '../components/VideoYoutube.astro';
+import Galeria from '../components/Galeria.astro';
+import Acordeao from '../components/Acordeao.astro';
+import ProdutosGrid from '../components/ProdutosGrid.astro';
+import ContactForm from '../components/ContactForm.astro';
+import { site, whatsappUrl } from '../data/site';
+import { catalogo } from '../data/catalogo';
+import conteudo from '../data/produtos/pergolado-de-madeira.json';
+import '../styles/produto.css';
+
+import hero from '../assets/img/pergolado-de-madeira/hero.jpg';
+import capaVideo from '../assets/img/pergolado-de-madeira/video-8iL0TCnJZkw.jpg';
+import capaVideo2 from '../assets/img/pergolado-de-madeira/video-FJn8PLWOXPs.jpg';
+import capaVideo3 from '../assets/img/pergolado-de-madeira/video-OXuauDAjbZM.jpg';
+import capaVideo4 from '../assets/img/pergolado-de-madeira/video-MN-aw4iKUa8.jpg';
+import madeira from '../assets/img/pergolado-de-madeira/madeira-garapeira.png';
+import folderCapa from '../assets/img/pergolado-de-madeira/folder-capa.png';
+import p1 from '../assets/img/pergolado-de-madeira/projeto-1.webp';
+import p2 from '../assets/img/pergolado-de-madeira/projeto-2.webp';
+import p3 from '../assets/img/pergolado-de-madeira/projeto-3.webp';
+import p4 from '../assets/img/pergolado-de-madeira/projeto-4.webp';
+import p5 from '../assets/img/pergolado-de-madeira/projeto-5.webp';
+import p6 from '../assets/img/pergolado-de-madeira/projeto-6.webp';
+import p7 from '../assets/img/pergolado-de-madeira/projeto-7.webp';
+import p8 from '../assets/img/pergolado-de-madeira/projeto-8.webp';
+import caixa1 from '../assets/img/pergolado-de-madeira/modelo-caixa-1.avif';
+import caixa2 from '../assets/img/pergolado-de-madeira/modelo-caixa-2.avif';
+import caixa3 from '../assets/img/pergolado-de-madeira/modelo-caixa-3.avif';
+import beiral1 from '../assets/img/pergolado-de-madeira/modelo-beiral-1.avif';
+import beiral2 from '../assets/img/pergolado-de-madeira/modelo-beiral-2.avif';
+import beiral3 from '../assets/img/pergolado-de-madeira/modelo-beiral-3.avif';
+
+// Imagens de usos, dúvidas, dicas e cidades (referenciadas pelo nome no JSON)
+const imagens = import.meta.glob<{ default: ImageMetadata }>('../assets/img/pergolado-de-madeira/**/*.{jpg,jpeg,png,webp,avif}', {
+  eager: true,
+});
+const img = (arquivo: string) => Object.entries(imagens).find(([k]) => k.endsWith('/' + arquivo))![1].default;
+
+// ---------- SEO ----------
+const seo = {
+  title: 'Pergolado de Madeira Sob Medida em Garapeira | Saraiva Design',
+  description:
+    'Pergolado de madeira de alto padrão, sob medida, em garapeira tipo exportação, com forro de palha ou bambu e telha Pergoconfort. Atendemos SP e todo o Brasil.',
+};
+const msg = (sobre = 'pergolado de madeira') => whatsappUrl(`Olá! Vim do site e quero saber mais sobre ${sobre}.`);
+// Link do folder (PDF). TODO: hospedar uma versão comprimida no próprio site.
+const folderUrl = 'https://saraivadm.com.br/wp-content/uploads/2025/05/FOLDER-PERGOLADO-DE-MADEIRA-2025.pdf';
+
+const projetos = [p1, p2, p3, p4, p5, p6, p7, p8].map((src, i) => ({ src, alt: `Projeto de pergolado de madeira Saraiva Design ${i + 1}` }));
+
+const videos = [
+  { id: 'FJn8PLWOXPs', capa: capaVideo2, titulo: 'Pergolado de madeira no interior de SP' },
+  { id: 'OXuauDAjbZM', capa: capaVideo3, titulo: 'Pergolado de madeira para área gourmet' },
+  { id: 'MN-aw4iKUa8', capa: capaVideo4, titulo: 'Pergolado de madeira em cobertura de prédio' },
+];
+
+const relacionados = catalogo.filter((p) =>
+  ['/pergolado-metalico/', '/pergolado-mlc/', '/coberturas/', '/forro-de-palha/', '/forro-de-bambu/', '/decks/'].includes(p.href),
+);
+
+// ---------- Dados estruturados ----------
+const url = `${site.url}/pergolado-de-madeira/`;
+const heroSchema = await getImage({ src: hero, width: 1200, format: 'jpg', quality: 80 });
+const textoPuro = (html: string) => html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+const cidades = conteudo.cidades.map((c) => c.titulo.replace(/^Pergolado de madeira (em|no|na) /, ''));
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${url}#servico`,
+    name: 'Pergolado de madeira sob medida',
+    serviceType: 'Projeto, fabricação e montagem de pergolado de madeira',
+    description: seo.description,
+    url,
+    image: new URL(heroSchema.src, site.url).href,
+    provider: { '@id': `${site.url}/#empresa` },
+    areaServed: [{ '@type': 'Country', name: 'Brasil' }, ...cidades.map((name) => ({ '@type': 'Place', name }))],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: conteudo.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.titulo,
+      acceptedAnswer: { '@type': 'Answer', text: textoPuro(f.html) },
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: `${site.url}/` },
+      { '@type': 'ListItem', position: 2, name: 'Pergolados', item: `${site.url}/pergolados/` },
+      { '@type': 'ListItem', position: 3, name: 'Pergolado de madeira', item: url },
+    ],
+  },
+];
+---
+
+<Base title={seo.title} description={seo.description} image={hero} schema={schema} headerSobreposto>
+  <PageHero
+    imagem={hero}
+    titulo="Pergolado de madeira"
+    texto="Pergolado feito sob medida com o melhor madeiramento do mercado, forração de palha ou bambu, telha Pergoconfort e sistema de captação de água com calha, rufos e condutores."
+    trilha={[{ label: 'Início', href: '/' }, { label: 'Pergolados', href: '/pergolados/' }, { label: 'Pergolado de madeira' }]}
+    botoes={[
+      { label: 'Orçamento imediato', href: msg(), whatsapp: true },
+      { label: 'Ver projetos', href: '#projetos' },
+    ]}
+    faixa={['Garapeira tipo exportação', 'Projeto sob medida', 'Telha Pergoconfort', 'Mão de obra artesanal']}
+  />
+
+  <!-- ================= INTRODUÇÃO ================= -->
+  <section class="pm-intro">
+    <div class="sar-wrap pm-intro__grid">
+      <div>
+        <span class="pm-selo">Alto padrão sob medida</span>
+        <h2 class="pm-h2">Pergolados em madeira de <strong>alto padrão</strong></h2>
+        <p class="pm-lead">
+          Sob medida, com madeiramento selecionado tipo exportação, mão de obra artesanal e assessoria completa desde o
+          projeto até a entrega.
+        </p>
+        <div class="pm-texto">
+          <p>
+            Hoje quando pensamos em jardim e área gourmet certamente lembramo-nos dos pergolados de madeira, pois são
+            estruturas de montagem rápida e com uma estética excelente.
+          </p>
+          <p>
+            O pergolado é um coringa na construção, pois substituiu o famoso "puxadinho de telhado" de uma forma muito
+            requintada, bonita e rápida de ser executada. Hoje em dia o pergolado pode ser desde um avanço da área gourmet
+            como um avulso na área de lazer para sombreamento.
+          </p>
+          <p>
+            A Saraiva Design em Madeiras trabalha com pergolados de madeira personalizados, desde modelos mais simples até
+            projetos grandes. A empresa possui expertise no assunto e uma equipe de técnicos e carpinteiros com anos de
+            experiência na área. Os materiais são adequados e exclusivos para atender a necessidade de cada cliente.
+          </p>
+          <p class="pm-destaque">O seu gosto, seu projeto, sua casa nas mãos de quem entende do assunto.</p>
+        </div>
+        <a class="pm-btn" href={msg()} target="_blank" rel="noopener">Fale com um especialista técnico</a>
+      </div>
+      <VideoYoutube id="8iL0TCnJZkw" capa={capaVideo} titulo="Pergolado de madeira Saraiva Design" />
+    </div>
+  </section>
+
+  <!-- ================= PROJETOS ================= -->
+  <section class="pm-sec pm-sec--bege" id="projetos">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <h2 class="pm-h2">Alguns projetos de pergolado de madeira</h2>
+        <p>Clique nas fotos para ampliar.</p>
+      </header>
+      <Galeria fotos={projetos} />
+    </div>
+  </section>
+
+  <!-- ================= MODELOS ================= -->
+  <section class="pm-sec">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">Modelos</span>
+        <h2 class="pm-h2">Modelos de pergolado de madeira</h2>
+      </header>
+
+      <div class="pm-modelo">
+        <div class="pm-modelo__fotos">
+          <Image src={caixa1} alt="Pergolado de madeira modelo caixa em 3D" widths={[400, 700]} sizes="(max-width: 600px) 100vw, 380px" />
+          <Image src={caixa2} alt="Pergolado de madeira sem beiral ao lado da piscina" widths={[400, 700]} sizes="(max-width: 600px) 100vw, 380px" />
+          <Image src={caixa3} alt="Pergolado de madeira modelo caixa em área externa" widths={[400, 700]} sizes="(max-width: 600px) 100vw, 380px" />
+        </div>
+        <div class="pm-modelo__texto">
+          <h3>Modelo caixa (sem beiral)</h3>
+          <p>
+            O pergolado de madeira sem beiral, também conhecido como <strong>modelo caixa</strong>, possui um design mais
+            moderno, compacto e simétrico, ideal para projetos contemporâneos e minimalistas. Nesse modelo, a cobertura e
+            as vigas ficam alinhadas com as colunas, formando um <strong>visual limpo e bem definido</strong>, sem avanço
+            lateral. Na Saraiva Design em Madeira e Aço, fabricamos esse tipo de pergolado sob medida, utilizando
+            <strong>garapeira tipo exportação</strong>, madeira nobre, resistente e esteticamente superior. É uma excelente
+            opção para quem busca elegância com proporções equilibradas, mantendo a funcionalidade e o estilo do ambiente.
+            O resultado é uma estrutura sólida, com acabamento refinado e presença marcante.
+          </p>
+          <a class="pm-link" href={msg('o pergolado de madeira modelo caixa')} target="_blank" rel="noopener">Quero um orçamento deste modelo →</a>
+        </div>
+      </div>
+
+      <div class="pm-modelo pm-modelo--inv">
+        <div class="pm-modelo__fotos">
+          <Image src={beiral1} alt="Pergolado de madeira com beiral em 3D" widths={[400, 700]} sizes="(max-width: 600px) 100vw, 380px" />
+          <Image src={beiral2} alt="Pergolado de madeira com beiral em jardim" widths={[400, 700]} sizes="(max-width: 600px) 100vw, 380px" />
+          <Image src={beiral3} alt="Pergolado de madeira com beiral e cobertura" widths={[400, 700]} sizes="(max-width: 600px) 100vw, 380px" />
+        </div>
+        <div class="pm-modelo__texto">
+          <h3>Modelo com beiral</h3>
+          <p>
+            O pergolado de madeira com beiral é uma estrutura que combina <strong>charme rústico com acabamento refinado</strong>,
+            ideal para áreas externas elegantes e funcionais. O beiral consiste em uma extensão do telhado além da estrutura
+            principal, criando uma <strong>sombra adicional</strong> e protegendo ainda mais contra sol e chuva. Na Saraiva
+            Design em Madeira e Aço, produzimos esse modelo sob medida, com madeiramento selecionado de
+            <strong>garapeira tipo exportação</strong>, garantindo durabilidade, resistência e estética superior. Cada
+            projeto é personalizado de acordo com o espaço e a proposta visual do cliente, mantendo equilíbrio entre
+            funcionalidade e beleza. Nosso compromisso é entregar um pergolado robusto, sofisticado e pronto para valorizar
+            qualquer ambiente.
+          </p>
+          <a class="pm-link" href={msg('o pergolado de madeira com beiral')} target="_blank" rel="noopener">Quero um orçamento deste modelo →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MADEIRA ================= -->
+  <section class="pm-sec pm-sec--marrom">
+    <div class="sar-wrap pm-madeira">
+      <div>
+        <span class="pm-selo pm-selo--claro">Matéria-prima</span>
+        <h2 class="pm-h2">Tipos de pergolado de madeira</h2>
+        <p>
+          Os pergolados de madeira podem ter diversas utilizações e aplicações. Os montados com madeiras maciças, naturais,
+          duras, de lei e apropriadas para área externa podem ter contato direto com sol e chuva, podendo molhar, pegar sol e
+          sofrer as ações do tempo. Para esses pergolados externos indicamos madeiras como <strong>garapeira</strong> ou
+          <strong>cumaru</strong>.
+        </p>
+        <p>
+          Os pergolados de madeira também podem ser utilizados em áreas internas, como varandas, salas, estruturas
+          estéticas para cozinhas, quartos e adegas. O pergolado se tornou um grande coringa na construção civil e um
+          artefato de desejo, requinte e solução para a arquitetura moderna e contemporânea.
+        </p>
+      </div>
+      <Image src={madeira} alt="Mascote da Saraiva Design carregando pranchas de madeira nobre" widths={[400, 700]} sizes="(max-width: 900px) 100vw, 480px" class="pm-madeira__img" />
+    </div>
+  </section>
+
+  <!-- ================= USOS ================= -->
+  <section class="pm-sec pm-sec--bege">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">Aplicações</span>
+        <h2 class="pm-h2">Onde usar um pergolado de madeira</h2>
+      </header>
+      <div class="pm-usos">
+        {
+          conteudo.usos.map((u) => (
+            <article class="pm-uso">
+              <Image src={img(u.imagem.arquivo)} alt={u.imagem.alt} widths={[500, 800]} sizes="(max-width: 900px) 100vw, 560px" class="pm-uso__img" />
+              <div class="pm-uso__texto">
+                <h3>{u.titulo}</h3>
+                <div set:html={u.html} />
+                <a class="pm-link" href={msg(u.titulo.toLowerCase())} target="_blank" rel="noopener">
+                  Quero saber mais sobre esse pergolado →
+                </a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VÍDEOS ================= -->
+  <section class="pm-sec pm-sec--marrom">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <h2 class="pm-h2">Pergolados de madeira em obra</h2>
+        <p>Acompanhe projetos reais executados pela nossa equipe.</p>
+      </header>
+      <div class="pm-videos">
+        {videos.map((v) => <VideoYoutube id={v.id} capa={v.capa} titulo={v.titulo} largura={500} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DÚVIDAS ================= -->
+  <section class="pm-sec" id="duvidas">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">Perguntas frequentes</span>
+        <h2 class="pm-h2">Dúvidas sobre pergolado de madeira</h2>
+        <p>Tudo sobre pergolados de madeira: madeira, cobertura, montagem, prazos, preço e manutenção.</p>
+      </header>
+      <Acordeao itens={conteudo.faq} imagens={imagens} />
+    </div>
+  </section>
+
+  <!-- ================= DICAS ================= -->
+  <section class="pm-sec pm-sec--bege" id="dicas">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">Guia</span>
+        <h2 class="pm-h2">Dicas, estilos e cuidados ao montar o seu pergolado de madeira</h2>
+      </header>
+      <Acordeao itens={conteudo.dicas} imagens={imagens} />
+    </div>
+  </section>
+
+  <!-- ================= FOLDER ================= -->
+  <section class="pm-folder">
+    <div class="sar-wrap pm-folder__grid">
+      <Image src={folderCapa} alt="Capa do folder do pergolado de madeira Saraiva Design" widths={[300, 500]} sizes="260px" class="pm-folder__img" />
+      <div>
+        <h2 class="pm-h2">Faça o download do nosso folder e fique por dentro das novidades</h2>
+        <p>Modelos, medidas, acabamentos e opções de cobertura do pergolado de madeira em um só arquivo.</p>
+        <a class="pm-btn pm-btn--claro" href={folderUrl} target="_blank" rel="noopener">Baixar o folder (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CIDADES ================= -->
+  <section class="pm-sec" id="cidades">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">Onde atendemos</span>
+        <h2 class="pm-h2">Pergolado de madeira nas cidades que atendemos</h2>
+        <p>
+          Produção própria e centro logístico em Campinas-SP, com equipes de montagem em todo o estado de São Paulo e
+          atendimento em outras regiões do Brasil.
+        </p>
+      </header>
+      <Acordeao itens={conteudo.cidades} imagens={imagens} />
+    </div>
+  </section>
+
+  <!-- ================= OUTROS PRODUTOS ================= -->
+  <section class="pm-sec pm-sec--bege">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <h2 class="pm-h2">Complete seu projeto</h2>
+        <p>Coberturas, forros e decks que combinam com o pergolado de madeira.</p>
+      </header>
+      <ProdutosGrid produtos={relacionados} />
+    </div>
+  </section>
+
+  <ContactForm titulo="Quer um pergolado de madeira?<br> Receba o contato da nossa equipe" />
+</Base>

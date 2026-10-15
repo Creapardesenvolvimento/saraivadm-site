@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /enviar.php
+
+Sitemap: https://saraivadm.com.br/sitemap-index.xml

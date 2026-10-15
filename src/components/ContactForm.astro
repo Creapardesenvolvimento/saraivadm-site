@@ -1,0 +1,130 @@
+---
+// Formulário "Solicitar contato". Envia para /enviar.php (roda no cPanel),
+// que manda o e-mail para contato@saraivadm.com.br.
+interface Props {
+  titulo?: string;
+}
+const { titulo = 'Preencha o formulário e receba o contato<br> da nossa equipe comercial' } = Astro.props;
+const origem = Astro.url.pathname;
+---
+
+<section class="sar-form" id="contato" aria-labelledby="contato-titulo">
+  <div class="sar-form__inner">
+    <h2 class="sar-form__titulo" id="contato-titulo" set:html={titulo} />
+
+    <form class="sar-form__form" method="post" action="/enviar.php">
+      <input type="hidden" name="origem" value={origem} />
+      <input type="hidden" name="ts" value="" data-ts />
+      <div class="visually-hidden" aria-hidden="true">
+        <label for="f-site">Não preencha este campo</label>
+        <input type="text" id="f-site" name="website" tabindex="-1" autocomplete="off" />
+      </div>
+
+      <label class="visually-hidden" for="f-nome">Seu nome</label>
+      <input id="f-nome" type="text" name="nome" placeholder="Seu nome:" autocomplete="name" required maxlength="120" />
+
+      <label class="visually-hidden" for="f-tel">Seu telefone</label>
+      <input id="f-tel" type="tel" name="telefone" placeholder="Seu telefone:" autocomplete="tel" required pattern="[0-9\s\(\)\+\.\-]{8,20}" title="Apenas números e os caracteres ( ) + -" />
+
+      <label class="visually-hidden" for="f-email">Seu e-mail</label>
+      <input id="f-email" type="email" name="email" placeholder="Seu e-mail:" autocomplete="email" required maxlength="150" />
+
+      <label class="visually-hidden" for="f-cidade">Sua cidade</label>
+      <input id="f-cidade" type="text" name="cidade" placeholder="Sua cidade:" autocomplete="address-level2" required maxlength="100" />
+
+      <label class="visually-hidden" for="f-msg">Sua mensagem</label>
+      <textarea id="f-msg" name="mensagem" rows="4" placeholder="Deixe sua mensagem:" maxlength="3000"></textarea>
+
+      <button type="submit">Solicitar contato</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  // Marca o horário em que o formulário apareceu (proteção simples contra robôs).
+  document.querySelectorAll<HTMLInputElement>('[data-ts]').forEach((el) => {
+    el.value = String(Math.floor(Date.now() / 1000));
+  });
+</script>
+
+<style>
+  .sar-form {
+    padding: 50px 24px;
+    background: #fff;
+  }
+  .sar-form__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .sar-form__titulo {
+    margin-bottom: 50px;
+    font-family: var(--fonte-texto);
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--sar-marrom-rodape);
+  }
+  .sar-form__form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .sar-form__form input,
+  .sar-form__form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    background: #fff;
+    border: 1.5px solid #dcdcdc;
+    border-radius: 6px;
+    font: inherit;
+    font-size: 15px;
+    color: #554f4c;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  .sar-form__form ::placeholder {
+    color: #9e9e9e;
+    font-size: 14px;
+  }
+  .sar-form__form input:focus,
+  .sar-form__form textarea:focus {
+    border-color: var(--sar-oliva-botao);
+  }
+  .sar-form__form textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  .sar-form__form button {
+    width: 100%;
+    padding: 16px 24px;
+    background: var(--sar-oliva-botao);
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .sar-form__form button:hover {
+    background: #727a55;
+  }
+
+  @media (max-width: 767px) {
+    .sar-form {
+      padding: 50px;
+    }
+    .sar-form__titulo {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 480px) {
+    .sar-form {
+      padding: 40px 20px;
+    }
+  }
+</style>

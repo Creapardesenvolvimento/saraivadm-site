@@ -1,0 +1,256 @@
+---
+// Topo das páginas internas: foto de fundo, trilha (breadcrumb), H1, texto, botões e faixa marrom.
+import { Image } from 'astro:assets';
+
+interface Props {
+  imagem: ImageMetadata;
+  titulo: string;
+  texto?: string;
+  trilha?: { label: string; href?: string }[];
+  botoes?: { label: string; href: string; whatsapp?: boolean; externo?: boolean }[];
+  /** Itens da faixa marrom (até 4) */
+  faixa?: string[];
+}
+const { imagem, titulo, texto, trilha = [], botoes = [], faixa = [] } = Astro.props;
+
+const iconeWhats =
+  'M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.9-1.6.1-.2.1-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z';
+---
+
+<section class="ph">
+  <Image src={imagem} alt="" class="ph__bg" widths={[640, 1024, 1600]} sizes="100vw" loading="eager" fetchpriority="high" quality={70} />
+  <div class="ph__content">
+    {
+      trilha.length > 0 && (
+        <nav class="ph__trilha" aria-label="Você está em">
+          <ol>
+            {trilha.map((t) => (
+              <li>{t.href ? <a href={t.href}>{t.label}</a> : <span aria-current="page">{t.label}</span>}</li>
+            ))}
+          </ol>
+        </nav>
+      )
+    }
+    <h1 class="ph__title">{titulo}</h1>
+    {texto && <p class="ph__text">{texto}</p>}
+    {
+      botoes.length > 0 && (
+        <div class="ph__buttons">
+          {botoes.map((b, i) => (
+            <a
+              class:list={['ph__btn', i === 0 ? 'ph__btn--solid' : 'ph__btn--outline']}
+              href={b.href}
+              target={b.externo || b.whatsapp ? '_blank' : undefined}
+              rel={b.externo || b.whatsapp ? 'noopener' : undefined}
+            >
+              {b.whatsapp && <svg viewBox="0 0 24 24" aria-hidden="true"><path d={iconeWhats} /></svg>}
+              {b.label}
+            </a>
+          ))}
+        </div>
+      )
+    }
+  </div>
+
+  {
+    faixa.length > 0 && (
+      <ul class="ph__bar">
+        {faixa.map((f) => (
+          <li class="ph__item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>
+            <span>{f}</span>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</section>
+
+<style>
+  .ph {
+    position: relative;
+    overflow: hidden;
+    background: #2b2a28;
+    color: var(--sar-creme);
+    font-family: var(--fonte-titulos);
+  }
+  .ph :global(.ph__bg) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 55%;
+  }
+  .ph::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(10, 14, 18, 0.55) 0%, rgba(10, 14, 18, 0.35) 45%, rgba(10, 14, 18, 0.6) 100%);
+  }
+  .ph__content,
+  .ph__bar {
+    position: relative;
+    z-index: 2;
+  }
+  .ph__content {
+    min-height: min(78vh, 760px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 150px 24px 60px;
+  }
+
+  .ph__trilha ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0 0 22px;
+    padding: 0;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(243, 234, 219, 0.85);
+  }
+  .ph__trilha li + li::before {
+    content: '›';
+    margin: 0 10px;
+    opacity: 0.7;
+  }
+  .ph__trilha a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .ph__trilha a:hover {
+    color: #fff;
+  }
+
+  .ph__title {
+    max-width: 1000px;
+    font-size: clamp(34px, 5.2vw, 80px);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+  }
+  .ph__text {
+    margin-top: 24px;
+    max-width: 720px;
+    color: #fff;
+    font-size: clamp(15px, 1.3vw, 19px);
+    line-height: 1.6;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
+  }
+  .ph__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 36px;
+  }
+  .ph__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 190px;
+    padding: 16px 30px;
+    border: 1px solid var(--sar-creme);
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .ph__btn svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+  .ph__btn--solid {
+    background: var(--sar-creme);
+    color: var(--sar-marrom-escuro);
+  }
+  .ph__btn--solid:hover {
+    background: #fff;
+    border-color: #fff;
+  }
+  .ph__btn--outline {
+    color: var(--sar-creme);
+  }
+  .ph__btn--outline:hover {
+    background: var(--sar-creme);
+    color: var(--sar-marrom-escuro);
+  }
+
+  .ph__bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 26px max(40px, calc((100% - 1100px) / 2));
+    background: var(--sar-marrom);
+  }
+  .ph__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 6px 16px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+  .ph__item + .ph__item {
+    border-left: 1px solid rgba(243, 234, 219, 0.35);
+  }
+  .ph__item svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    fill: none;
+    stroke: var(--sar-creme);
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  @media (max-width: 900px) {
+    .ph__bar {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 16px;
+      padding: 22px 20px;
+    }
+    .ph__item:nth-child(3) {
+      border-left: 0;
+    }
+  }
+  @media (max-width: 600px) {
+    .ph__content {
+      padding: 110px 20px 40px;
+      min-height: 70vh;
+    }
+    .ph__title {
+      letter-spacing: 0.05em;
+    }
+    .ph__buttons {
+      flex-direction: column;
+      width: 100%;
+      max-width: 300px;
+    }
+    .ph__item {
+      justify-content: flex-start;
+      font-size: 10px;
+      padding: 6px 8px;
+    }
+  }
+</style>

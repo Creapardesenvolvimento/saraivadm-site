@@ -1,0 +1,290 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/img/logo-saraiva.png';
+import { site, rodapeProdutos, rodapeInstitucional } from '../data/site';
+
+const ano = new Date().getFullYear();
+
+const iconeWhats =
+  'M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.270 20.920 6.780 19.050 4.910C17.180 3.030 14.690 2 12.040 2M12.050 3.670C14.250 3.670 16.310 4.530 17.870 6.090C19.420 7.650 20.280 9.720 20.280 11.920C20.280 16.460 16.580 20.150 12.040 20.150C10.560 20.150 9.110 19.760 7.850 19L7.550 18.830L4.430 19.650L5.260 16.610L5.060 16.290C4.240 14.990 3.800 13.470 3.800 11.910C3.810 7.370 7.500 3.670 12.050 3.670M9.110 7.030C8.940 7.030 8.670 7.090 8.440 7.340C8.210 7.590 7.560 8.200 7.560 9.440C7.560 10.680 8.460 11.880 8.590 12.050C8.720 12.220 10.370 14.770 12.890 15.860C13.490 16.120 13.950 16.270 14.320 16.390C14.920 16.580 15.470 16.550 15.900 16.490C16.380 16.420 17.380 15.880 17.590 15.300C17.800 14.720 17.800 14.220 17.740 14.120C17.680 14.020 17.510 13.960 17.260 13.840C17.010 13.710 15.780 13.110 15.550 13.030C15.320 12.950 15.160 12.910 14.990 13.160C14.820 13.410 14.340 13.970 14.190 14.140C14.040 14.310 13.890 14.330 13.640 14.210C13.390 14.090 12.590 13.820 11.640 12.980C10.900 12.320 10.400 11.510 10.250 11.260C10.100 11.010 10.230 10.880 10.360 10.750C10.470 10.640 10.610 10.460 10.740 10.310C10.870 10.160 10.910 10.050 10.990 9.890C11.070 9.730 11.030 9.580 10.970 9.460C10.910 9.340 10.440 8.160 10.230 7.680C10.030 7.210 9.830 7.270 9.680 7.260C9.530 7.250 9.320 7.030 9.110 7.030Z';
+
+const redes = [
+  { nome: 'Instagram', url: site.redes.instagram, d: 'M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z' },
+  { nome: 'Facebook', url: site.redes.facebook, d: 'M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z' },
+  { nome: 'YouTube', url: site.redes.youtube, d: 'M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.882 0-2.299-.157-2.57-1.545-2.583-4.892.013-3.347.284-4.735 2.583-4.892 2.098-.144 6.78-.144 8.882 0 2.299.157 2.57 1.545 2.583 4.892-.013 3.347-.284 4.735-2.583 4.892zm-5.441-7.392v5l4-2.5-4-2.5z' },
+  { nome: 'Pinterest', url: site.redes.pinterest, d: 'M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.357-.056.234-.188.283-.433.17-1.614-.752-2.624-3.109-2.624-5.008 0-4.077 2.962-7.822 8.541-7.822 4.484 0 7.969 3.2 7.969 7.476 0 4.463-2.807 8.049-6.702 8.049-1.309 0-2.54-.68-2.96-1.482l-.809 3.085c-.293 1.119-1.087 2.522-1.621 3.376 1.178.363 2.434.562 3.738.562 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z' },
+  { nome: 'Google', url: site.redes.google, d: 'M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.052 16.791c-2.646 0-4.791-2.145-4.791-4.791s2.145-4.791 4.791-4.791c1.295 0 2.378.473 3.217 1.259l-1.306 1.258c-.358-.344-.984-.744-1.911-.744-1.637 0-2.973 1.357-2.973 3.018s1.336 3.018 2.973 3.018c1.899 0 2.611-1.365 2.723-2.073h-2.723v-1.691h4.551c.045.245.077.5.077.827 0 2.682-1.796 4.728-4.628 4.728zm7.052-4.041v1.25h-1.25v-1.25h-1.25v-1.250h1.250v-1.250h1.250v1.250h1.250v1.250h-1.250z' },
+  { nome: 'TikTok', url: site.redes.tiktok, d: 'M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.498 12.003c-.006 1.838-.971 3.428-2.42 4.316-.76.465-1.652.732-2.607.732-1.942 0-3.619-1.127-4.42-2.766-.341-.699-.533-1.488-.533-2.32 0-2.83 2.296-5.127 5.126-5.127.135 0 .268.006.4.017v2.247c-.13-.016-.264-.025-.4-.025-1.594 0-2.888 1.294-2.888 2.888 0 .47.112.913.31 1.306.444.877 1.353 1.479 2.404 1.479.524 0 1.014-.144 1.432-.397.74-.45 1.233-1.259 1.236-2.182v-7.195h2.24c.058 1.15.867 2.115 1.954 2.42v2.259c-.934-.131-1.748-.65-2.28-1.39v4.032z' },
+];
+---
+
+<footer class="sar-rodape">
+  <div class="sar-rodape__container">
+    <div class="sar-rodape__topo">
+      <div class="sar-rodape__col1">
+        <a href="/" aria-label="Saraiva Design - Página inicial">
+          <Image src={logo} alt="Saraiva Design em Madeiras e Aço" widths={[280, 560]} sizes="280px" class="sar-rodape__logo" />
+        </a>
+        <p class="sar-rodape__desc">{site.descricao}</p>
+      </div>
+
+      <div class="sar-rodape__vline" aria-hidden="true"></div>
+
+      <address class="sar-rodape__col2">
+        <div class="sar-rodape__fones">
+          {
+            site.telefones.map((t) => (
+              <a href={`https://wa.me/${t.whatsapp}`} target="_blank" rel="noopener" class="sar-rodape__fone">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d={iconeWhats} /></svg>
+                <span>{t.exibicao}</span>
+              </a>
+            ))
+          }
+        </div>
+        <a class="sar-rodape__email" href={`mailto:${site.email}`}>{site.email}</a>
+        <p class="sar-rodape__endereco">
+          {site.endereco.rua}<br />
+          - {site.endereco.bairro} - {site.endereco.cidade}-{site.endereco.uf}
+        </p>
+      </address>
+
+      <div class="sar-rodape__vline" aria-hidden="true"></div>
+
+      <div class="sar-rodape__col3">
+        <span class="sar-rodape__label">Acesse nossas redes sociais</span>
+        <div class="sar-rodape__redes">
+          {
+            redes.map((r) => (
+              <a href={r.url || '#'} target={r.url ? '_blank' : undefined} rel={r.url ? 'noopener' : undefined} aria-label={r.nome}>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d={r.d} /></svg>
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="sar-rodape__hline" aria-hidden="true"></div>
+
+    <nav class="sar-rodape__grupo" aria-labelledby="rodape-produtos">
+      <h2 class="sar-rodape__titulo" id="rodape-produtos">Produtos</h2>
+      <ul class="sar-rodape__links">
+        {rodapeProdutos.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+      </ul>
+    </nav>
+
+    <nav class="sar-rodape__grupo sar-rodape__grupo--inst" aria-labelledby="rodape-inst">
+      <h2 class="sar-rodape__titulo" id="rodape-inst">Institucional</h2>
+      <ul class="sar-rodape__links">
+        {rodapeInstitucional.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+      </ul>
+    </nav>
+
+    <div class="sar-rodape__hline" aria-hidden="true"></div>
+
+    <div class="sar-rodape__base">
+      <p>Copyright © {ano} – {site.nome} – {site.cnpj} | Todos os direitos reservados.</p>
+      <ul class="sar-rodape__links sar-rodape__legal">
+        <li><a href="/politica-de-privacidade/">Política de privacidade</a></li>
+        <li><a href="/termos-de-uso/">Termos de uso</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .sar-rodape {
+    background: var(--sar-marrom-rodape);
+    color: #fff;
+    padding: 130px 60px 80px;
+    font-family: var(--fonte-texto);
+  }
+  .sar-rodape a {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+  .sar-rodape a:hover {
+    opacity: 0.75;
+  }
+  .sar-rodape__container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .sar-rodape__topo {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .sar-rodape__col1 {
+    flex: 0 0 32%;
+    max-width: 32%;
+    padding-right: 50px;
+  }
+  .sar-rodape__logo {
+    display: block;
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+  }
+  .sar-rodape__desc {
+    margin-top: 35px;
+    max-width: 350px;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.1px;
+  }
+  .sar-rodape__vline {
+    width: 1px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.28);
+  }
+
+  .sar-rodape__col2 {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 0 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-style: normal;
+  }
+  .sar-rodape__fones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 32px;
+    margin-bottom: 30px;
+  }
+  .sar-rodape__fone {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+  }
+  .sar-rodape__fone svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .sar-rodape__email {
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .sar-rodape__endereco {
+    font-size: 17px;
+    line-height: 1.55;
+    font-weight: 500;
+  }
+
+  .sar-rodape__col3 {
+    flex: 0 0 28%;
+    max-width: 28%;
+    padding-left: 65px;
+  }
+  .sar-rodape__label {
+    display: block;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+  .sar-rodape__redes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .sar-rodape__redes a {
+    display: inline-flex;
+    width: 28px;
+    height: 28px;
+  }
+  .sar-rodape__redes svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sar-rodape__hline {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.28);
+    margin: 70px 0 55px;
+  }
+
+  .sar-rodape__grupo {
+    margin-bottom: 40px;
+  }
+  .sar-rodape__grupo--inst {
+    margin: 48px 0 0;
+  }
+  .sar-rodape__titulo {
+    margin-bottom: 16px;
+    font-size: 13.5px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+  .sar-rodape__links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    line-height: 2.1;
+    text-transform: uppercase;
+  }
+  .sar-rodape__links li + li::before {
+    content: '|';
+    margin: 0 9px;
+    font-weight: 300;
+    opacity: 0.6;
+  }
+
+  .sar-rodape__base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 10.5px;
+    opacity: 0.9;
+    letter-spacing: 0.1px;
+  }
+  .sar-rodape__legal {
+    font-size: 10.5px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0.1px;
+  }
+
+  @media (max-width: 1024px) {
+    .sar-rodape {
+      padding: 60px 25px 40px;
+    }
+    .sar-rodape__topo {
+      flex-direction: column;
+      gap: 35px;
+    }
+    .sar-rodape__col1,
+    .sar-rodape__col2,
+    .sar-rodape__col3 {
+      flex: 1 1 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+    .sar-rodape__vline {
+      display: none;
+    }
+    .sar-rodape__hline {
+      margin: 40px 0 30px;
+    }
+    .sar-rodape__base {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>

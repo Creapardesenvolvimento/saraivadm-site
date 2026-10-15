@@ -1,0 +1,125 @@
+---
+// Grade de cards de produtos (foto + faixa verde com o nome).
+import { Image } from 'astro:assets';
+import type { ProdutoCatalogo } from '../data/catalogo';
+
+interface Props {
+  produtos: ProdutoCatalogo[];
+}
+const { produtos } = Astro.props;
+---
+
+<ul class="sar-produtos__grid">
+  {
+    produtos.map((p) => (
+      <li>
+        <a class="sar-card" href={p.href}>
+          <span class="sar-card__media">
+            <Image
+              src={p.img}
+              alt={p.alt}
+              class="sar-card__img"
+              widths={[400, 600, 800]}
+              sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px"
+              quality={72}
+            />
+          </span>
+          <span class="sar-card__label">
+            {p.nome}
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </span>
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .sar-produtos__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-titulos);
+  }
+  .sar-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    background: var(--sar-oliva);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .sar-card__media {
+    position: relative;
+    display: block;
+    aspect-ratio: 4 / 4.2;
+    overflow: hidden;
+    background: #d8cdbb;
+  }
+  .sar-card :global(.sar-card__img) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+  }
+  .sar-card:hover :global(.sar-card__img),
+  .sar-card:focus-visible :global(.sar-card__img) {
+    transform: scale(1.05);
+  }
+  .sar-card:focus-visible {
+    outline: 3px solid var(--sar-oliva);
+    outline-offset: 3px;
+  }
+  .sar-card__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 60px;
+    padding: 0 22px;
+    background: linear-gradient(90deg, #6a7148 0%, #7d8558 50%, #a5ad78 100%);
+    color: var(--sar-creme);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .sar-card:hover .sar-card__label,
+  .sar-card:focus-visible .sar-card__label {
+    background: var(--sar-oliva-escuro);
+  }
+  .sar-card__label svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.3s ease;
+  }
+  .sar-card:hover .sar-card__label svg {
+    transform: translateX(4px);
+  }
+  @media (max-width: 900px) {
+    .sar-produtos__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  }
+  @media (max-width: 600px) {
+    .sar-produtos__grid {
+      grid-template-columns: 1fr;
+    }
+    .sar-card__media {
+      aspect-ratio: 4 / 3.4;
+    }
+  }
+</style>

@@ -1,0 +1,784 @@
+---
+import { Image, getImage } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import VideoYoutube from '../components/VideoYoutube.astro';
+import ContactForm from '../components/ContactForm.astro';
+import ProdutosGrid from '../components/ProdutosGrid.astro';
+import { catalogo } from '../data/catalogo';
+import { site, whatsappUrl, mapsUrl, wazeUrl } from '../data/site';
+import { getPosts } from '../lib/blog';
+
+import hero from '../assets/img/hero-pergolado-piscina.png';
+import logo from '../assets/img/logo-saraiva.png';
+import capaInstitucional from '../assets/img/video-institucional.jpg';
+import capaProjeto1 from '../assets/img/projeto-1.png';
+import capaProjeto2 from '../assets/img/projeto-2.png';
+import capaProjeto3 from '../assets/img/projeto-3.png';
+import capaProjeto4 from '../assets/img/projeto-4.png';
+
+// ---------- SEO da home ----------
+const seo = {
+  title: 'Pergolados de Alto Padrão em Madeira e Aço | Saraiva Design',
+  description:
+    'Pergolados de madeira e aço, forros de palha e bambu, decks, coberturas e piso de madeira sob medida. Projeto 3D e atendimento em todo o Brasil.',
+};
+
+
+const projetos = [
+  { id: 'R46swYFV-gg', capa: capaProjeto1, titulo: 'Projeto de pergolado Saraiva Design 1' },
+  { id: 'PWc5jsNgGfU', capa: capaProjeto2, titulo: 'Projeto de pergolado Saraiva Design 2' },
+  { id: 'YeiJ3UUrdZ8', capa: capaProjeto3, titulo: 'Projeto de pergolado Saraiva Design 3' },
+  { id: 'vbjZWB_g87c', capa: capaProjeto4, titulo: 'Projeto de pergolado Saraiva Design 4' },
+];
+
+const diferenciais = [
+  { t: 'Projetos em 3D', d: 'Veja seu pergolado antes mesmo de começar a obra com nossa tecnologia 3D.' },
+  { t: 'Mão de obra profissional', d: 'Mestres em marcenaria, serralheria e carpintaria artesanal com acabamento refinado.' },
+  { t: 'Atendimento exclusivo', d: 'Consultores especializados à sua total disposição em todo o Brasil.' },
+  { t: 'Garantias certificadas', d: 'Qualidade comprovada, durabilidade e segurança total para o seu projeto.' },
+  { t: 'Logística', d: 'Atendimento para todo o Brasil, com centro logístico localizado em Campinas/SP.' },
+  { t: 'Prazo reduzido', d: 'Cronograma inteligente e equipes prontas para entregas rápidas.' },
+];
+
+const posts = (await getPosts()).slice(0, 3);
+
+// ---------- Dados estruturados (Google) ----------
+const sameAs = Object.values(site.redes).filter(Boolean);
+const logoSchema = await getImage({ src: logo, width: 600, format: 'png' });
+const heroSchema = await getImage({ src: hero, width: 1200, format: 'jpg', quality: 80 });
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'HomeAndConstructionBusiness',
+    '@id': `${site.url}/#empresa`,
+    name: site.nome,
+    alternateName: site.nomeCurto,
+    url: `${site.url}/`,
+    logo: new URL(logoSchema.src, site.url).href,
+    image: new URL(heroSchema.src, site.url).href,
+    description: seo.description,
+    email: site.email,
+    telephone: site.telefones.map((t) => t.tel),
+    taxID: site.cnpj,
+    priceRange: '$$$',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: site.endereco.rua,
+      addressLocality: site.endereco.cidade,
+      addressRegion: site.endereco.uf,
+      addressCountry: site.endereco.pais,
+    },
+    geo: { '@type': 'GeoCoordinates', latitude: site.endereco.lat, longitude: site.endereco.lng },
+    areaServed: { '@type': 'Country', name: 'Brasil' },
+    ...(sameAs.length ? { sameAs } : {}),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${site.url}/#site`,
+    name: site.nome,
+    url: `${site.url}/`,
+    inLanguage: 'pt-BR',
+    publisher: { '@id': `${site.url}/#empresa` },
+  },
+];
+
+const iconeWhats =
+  'M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.9-1.6.1-.2.1-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z';
+---
+
+<Base title={seo.title} description={seo.description} schema={schema} headerSobreposto>
+  <Fragment slot="head">
+    <link rel="preconnect" href="https://www.google.com" />
+  </Fragment>
+
+  <!-- ================= HERO ================= -->
+  <section class="sar-hero">
+    <Image
+      src={hero}
+      alt=""
+      class="sar-hero__bg"
+      widths={[640, 1024, 1494]}
+      sizes="100vw"
+      loading="eager"
+      fetchpriority="high"
+      quality={70}
+    />
+    <div class="sar-hero__content">
+      <h1 class="sar-hero__title">
+        <strong>Pergolados</strong>
+        <span>de alto padrão</span>
+      </h1>
+      <p class="sar-hero__text">
+        Pergolados de madeira e aço, Piso de madeira, forros de palha e bambu, decks e muito mais.
+      </p>
+      <div class="sar-hero__buttons">
+        <a class="sar-hero__btn" href={whatsappUrl()} target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d={iconeWhats}></path></svg>
+          Atendimento
+        </a>
+      </div>
+    </div>
+
+    <ul class="sar-hero__bar">
+      <li class="sar-hero__item">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M20 5l7 7-3 3-7-7z"></path><path d="M17 8L5 20l-1 7 7-1 12-12"></path><path d="M8 17l7 7"></path><path d="M6 24l2 2"></path></svg>
+        <span>Matéria-prima<br />selecionada</span>
+      </li>
+      <li class="sar-hero__item">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 8h16v14H3z"></path><path d="M19 12h6l4 5v5h-10"></path><circle cx="8.5" cy="23.5" r="2.3"></circle><circle cx="23.5" cy="23.5" r="2.3"></circle><path d="M6.5 12h8M6.5 15.5h5"></path></svg>
+        <span>Atendimento em todo<br />território nacional</span>
+      </li>
+      <li class="sar-hero__item">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 4h20v24H5z"></path><path d="M5 22l7-8 5 5 8-10"></path><path d="M9 10h6M9 26v-4M15 26v-4M21 26v-4"></path></svg>
+        <span>Projetos<br />sob medida</span>
+      </li>
+      <li class="sar-hero__item">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l10 4v8c0 6.5-4.2 11.2-10 14C10.2 26.2 6 21.5 6 15V7z"></path><path d="M11.5 16l3.5 3.5 6-7"></path></svg>
+        <span>Garantia e<br />pós-venda</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ================= TRADIÇÃO E INOVAÇÃO ================= -->
+  <section class="sar-tradicao" id="sobre">
+    <div class="sar-wrap">
+      <div class="sar-tradicao__grid">
+        <div>
+          <span class="sar-tradicao__selo">Top 1 em obras de alto padrão</span>
+          <h2><strong>Tradição</strong> e inovação</h2>
+          <p class="sar-tradicao__texto">
+            A Saraiva Design em Madeiras surgiu da necessidade de trabalhos com qualidade e garantia voltados à
+            madeira, trazendo profissionais com mais de 25 anos de experiência.
+          </p>
+        </div>
+        <VideoYoutube id="XyS5GsUSi0I" capa={capaInstitucional} titulo="Vídeo institucional da Saraiva Design" />
+      </div>
+
+      <ul class="sar-stats">
+        <li><strong>+100mil</strong><span>m² instalados</span></li>
+        <li><strong>+5mil</strong><span>Projetos atendidos</span></li>
+        <li><strong>+25</strong><span>Anos de experiência</span></li>
+        <li><strong>100%</strong><span>Qualidade e garantia</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= NOSSOS PRODUTOS ================= -->
+  <section class="sar-produtos" id="produtos">
+    <div class="sar-wrap">
+      <div class="sar-produtos__head">
+        <h2>Nossos produtos</h2>
+        <p>
+          Conheça nossa linha de pergolados, coberturas e forros sob medida, produzidos em madeira, aço e materiais
+          naturais para projetos residenciais e comerciais de alto padrão.
+        </p>
+      </div>
+      <ProdutosGrid produtos={catalogo} />
+    </div>
+  </section>
+
+  <!-- ================= PROJETOS EM DESTAQUE ================= -->
+  <section class="sar-projetos" id="projetos">
+    <div class="sar-wrap">
+      <div class="sar-projetos__head">
+        <h2>Nossos projetos em destaque</h2>
+        <p>
+          Conheça projetos de pergolados e áreas externas, acompanhe os bastidores das nossas obras e veja a
+          experiência de clientes que escolheram soluções sob medida.
+        </p>
+      </div>
+      <div class="sar-projetos__grid">
+        {projetos.map((v) => <VideoYoutube id={v.id} capa={v.capa} titulo={v.titulo} />)}
+      </div>
+      <div class="sar-projetos__rodape">
+        <p>Acompanhe nosso canal no YouTube<br />e fique por dentro dos nossos projetos</p>
+        <a class="sar-projetos__yt" href={site.redes.youtube || 'https://www.youtube.com/'} target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2C.5 9.1.5 12 .5 12s0 2.9.5 4.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-4.8.5-4.8s0-2.9-.5-4.8zM9.7 15.5v-7l6 3.5z"></path></svg>
+          YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DIFERENCIAIS ================= -->
+  <section class="sar-dif">
+    <h2 class="sar-dif__title">Conheça nossos diferenciais e a qualidade dos nossos produtos.</h2>
+    <ol class="sar-dif__grid">
+      {
+        diferenciais.map((d, i) => (
+          <li class="sar-dif__item">
+            <span class="sar-dif__num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+            <h3>{d.t}</h3>
+            <p>{d.d}</p>
+          </li>
+        ))
+      }
+    </ol>
+    <a class="sar-dif__btn" href={whatsappUrl()} target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.65-4.2A9 9 0 1 1 8 19.6z"></path><path d="M9.2 7.8c-.3.4-.5 1-.2 1.8.7 1.9 2.6 3.8 4.6 4.6.8.3 1.4.1 1.8-.3l.5-.8-1.9-1-.8.7c-.9-.4-1.7-1.2-2.1-2.1l.7-.8-1-1.9z"></path></svg>
+      Atendimento
+    </a>
+  </section>
+
+  <!-- ================= BLOG ================= -->
+  {
+    posts.length > 0 && (
+      <section class="sar-blog">
+        <div class="sar-blog__inner">
+          <div class="sar-blog__head">
+            <h2>Nosso blog</h2>
+            <p>Encontre dicas sobre pergolados, coberturas, materiais, manutenção e soluções para áreas externas.</p>
+          </div>
+          <ul class="sar-blog__grid">
+            {posts.map((post) => (
+              <li>
+                <article class="sar-blog__card">
+                  <Image
+                    src={post.data.imagem}
+                    alt={post.data.imagemAlt}
+                    class="sar-blog__thumb"
+                    widths={[400, 700]}
+                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 380px"
+                    quality={72}
+                  />
+                  <div class="sar-blog__content">
+                    <h3>
+                      <a href={`/blog/${post.id}/`}>{post.data.titulo}</a>
+                    </h3>
+                    <p>{post.data.resumo}</p>
+                  </div>
+                </article>
+              </li>
+            ))}
+          </ul>
+          <div class="sar-blog__cta">
+            <a href="/blog/">Conhecer blog</a>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <!-- ================= SHOWROOM ================= -->
+  <section class="sar-showroom" aria-labelledby="showroom-titulo">
+    <iframe
+      class="sar-showroom__mapa"
+      title="Showroom Saraiva Design em Campinas no Google Maps"
+      src="https://www.google.com/maps/embed?pb=!4v1728473434040!6m8!1m7!1sCAoSLEFGMVFpcE5vUkxmODY4WmlBVTNqQ0Fia2lBOTVmR0tTUFY3SFhRMTNFNzFV!2m2!1d-22.96106548984442!2d-47.06469526309858!3f8.7148689489091!4f-1.7145099266170831!5f0.7820865974627469"
+      width="1200"
+      height="450"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen></iframe>
+
+    <div class="sar-showroom__bar">
+      <h2 id="showroom-titulo">Visite nosso showroom</h2>
+      <div class="sar-showroom__acoes">
+        <a href={mapsUrl} target="_blank" rel="noopener" class="sar-pill sar-pill--maps" aria-label="Abrir o endereço no Google Maps">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#4285F4" d="M12 2C8.13 2 5 5.13 5 9.1c0 5.25 7 12.9 7 12.9s7-7.65 7-12.9C19 5.13 15.87 2 12 2z"></path>
+            <path fill="#EA4335" d="M12 2C8.13 2 5 5.13 5 9.1c0 2.22 1.25 5.24 3.12 8.35L12 9.1V2z"></path>
+            <path fill="#FBBC04" d="M12 2v7.1l3.88 8.35C17.75 14.34 19 11.32 19 9.1 19 5.13 15.87 2 12 2z"></path>
+            <path fill="#34A853" d="M12 22s7-7.65 7-12.9c0-.44-.04-.87-.1-1.29L12 22z"></path>
+            <circle fill="#FFFFFF" cx="12" cy="9" r="3.2"></circle>
+          </svg>
+          <span>Maps</span>
+        </a>
+        <a href={wazeUrl} target="_blank" rel="noopener" class="sar-pill sar-pill--waze" aria-label="Abrir a rota no Waze">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M25.6 13.2c-.4-4.6-4.2-8.2-8.9-8.2-5 0-9.1 4.1-9.1 9.1 0 1.2.2 2.3.7 3.4l-1.8 3.8c-.3.7.2 1.5 1 1.5h1.2c1.3 2.5 3.9 4.3 7 4.3 3.9 0 7.3-2.6 8.5-6.2 1.1-.3 2-.9 2.5-1.9.8-1.5.5-3.3-.6-4.4.1-.5.1-.9.1-1.4zm-12.4.9c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6.5 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm-5.7 5.7c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4 1-1 2.3-1.5 3.8-1.5s2.8.5 3.8 1.5c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0-.6-.6-1.5-.9-2.4-.9s-1.8.3-2.4.9z"></path></svg>
+          <span>Waze</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <ContactForm />
+</Base>
+
+<style>
+  /* ================= HERO ================= */
+  .sar-hero {
+    position: relative;
+    overflow: hidden;
+    background: #2b2a28;
+    color: var(--sar-creme);
+    font-family: var(--fonte-titulos);
+  }
+  .sar-hero :global(.sar-hero__bg) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+  }
+  .sar-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(10, 14, 18, 0.45) 0%, rgba(10, 14, 18, 0.35) 50%, rgba(10, 14, 18, 0.45) 100%);
+  }
+  .sar-hero__content,
+  .sar-hero__bar {
+    position: relative;
+    z-index: 2;
+  }
+  .sar-hero__content {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 130px 24px 40px;
+  }
+  .sar-hero__title {
+    font-size: clamp(36px, 5.7vw, 88px);
+    line-height: 1.12;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+  }
+  .sar-hero__title strong { display: block; font-weight: 600; }
+  .sar-hero__title span { display: block; font-weight: 300; }
+  .sar-hero__text {
+    margin-top: 28px;
+    max-width: 620px;
+    color: #fff;
+    font-size: clamp(15px, 1.35vw, 19px);
+    line-height: 1.55;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
+  }
+  .sar-hero__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 36px;
+  }
+  .sar-hero__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 158px;
+    padding: 16px 32px;
+    background: var(--sar-creme);
+    color: var(--sar-marrom-escuro);
+    border: 1px solid var(--sar-creme);
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .sar-hero__btn:hover { background: #fff; border-color: #fff; }
+  .sar-hero__btn svg { width: 20px; height: 20px; flex-shrink: 0; fill: currentColor; }
+
+  .sar-hero__bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 30px max(40px, calc((100% - 1100px) / 2));
+    background: var(--sar-marrom);
+  }
+  .sar-hero__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 6px 18px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+  .sar-hero__item + .sar-hero__item { border-left: 1px solid rgba(243, 234, 219, 0.35); }
+  .sar-hero__item svg {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    fill: none;
+    stroke: var(--sar-creme);
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  @media (min-width: 1600px) {
+    .sar-hero :global(.sar-hero__bg) { object-position: center 45%; }
+  }
+  @media (max-width: 1024px) {
+    .sar-hero__content { padding-top: 110px; }
+  }
+  @media (max-width: 900px) {
+    .sar-hero__bar { padding: 24px 20px; grid-template-columns: repeat(2, 1fr); row-gap: 20px; }
+    .sar-hero__item:nth-child(3) { border-left: 0; }
+  }
+  @media (max-width: 600px) {
+    .sar-hero__content { padding: 100px 20px 30px; min-height: calc(100vh - 70px); }
+    .sar-hero :global(.sar-hero__bg) { object-position: center; }
+    .sar-hero__title { letter-spacing: 0.06em; }
+    .sar-hero__text { margin-top: 20px; }
+    .sar-hero__buttons { flex-direction: column; width: 100%; max-width: 300px; margin-top: 28px; }
+    .sar-hero__btn { width: 100%; }
+    .sar-hero__item { justify-content: flex-start; font-size: 10px; padding: 6px 10px; }
+    .sar-hero__item svg { width: 26px; height: 26px; }
+  }
+
+  /* ================= SEÇÕES (Montserrat) ================= */
+  .sar-tradicao,
+  .sar-produtos,
+  .sar-projetos {
+    font-family: var(--fonte-titulos);
+  }
+
+  /* ================= TRADIÇÃO ================= */
+  .sar-tradicao { background: #fff; padding: 90px 0 80px; }
+  .sar-tradicao__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .sar-tradicao__selo {
+    display: inline-block;
+    margin-bottom: 22px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sar-marrom);
+  }
+  .sar-tradicao h2 {
+    font-size: clamp(34px, 4vw, 54px);
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    color: var(--sar-marrom-escuro);
+  }
+  .sar-tradicao h2 strong { font-weight: 600; }
+  .sar-tradicao__texto { margin-top: 22px; max-width: 460px; font-size: 16px; line-height: 1.7; color: #5b4a43; }
+  .sar-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    list-style: none;
+    margin: 64px 0 0;
+    padding: 44px 0 0;
+    border-top: 1px solid rgba(138, 90, 78, 0.25);
+    text-align: center;
+  }
+  .sar-stats strong {
+    display: block;
+    font-size: clamp(30px, 3.4vw, 46px);
+    font-weight: 500;
+    color: var(--sar-marrom);
+    line-height: 1;
+  }
+  .sar-stats span {
+    display: block;
+    margin-top: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6d5c55;
+  }
+
+  /* ================= DIFERENCIAIS ================= */
+  .sar-dif {
+    background: #f8f4ed;
+    padding: clamp(50px, 6vw, 96px) 20px clamp(50px, 5.3vw, 84px);
+    text-align: center;
+    color: #4a4540;
+  }
+  .sar-dif__title {
+    max-width: 860px;
+    margin: 0 auto;
+    font-size: clamp(30px, 3.3vw, 54px);
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: -0.01em;
+  }
+  .sar-dif__grid {
+    width: 84%;
+    max-width: 1343px;
+    margin: clamp(40px, 5vw, 80px) auto 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #d9cfc1;
+    border-left: 1px solid #d9cfc1;
+    text-align: left;
+  }
+  .sar-dif__item {
+    min-height: clamp(220px, 17.6vw, 282px);
+    padding: clamp(22px, 2.1vw, 34px) clamp(22px, 2.4vw, 38px) 30px;
+    border-right: 1px solid #d9cfc1;
+    border-bottom: 1px solid #d9cfc1;
+  }
+  .sar-dif__num {
+    display: block;
+    font-size: clamp(16px, 1.4vw, 22px);
+    font-weight: 600;
+    line-height: 1.2;
+    color: #7e8c5f;
+  }
+  .sar-dif__item h3 {
+    margin-top: clamp(42px, 4.6vw, 74px);
+    font-size: clamp(15px, 1.32vw, 21px);
+    font-weight: 500;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: #86503f;
+  }
+  .sar-dif__item p {
+    margin-top: 7px;
+    max-width: 340px;
+    font-size: clamp(13.5px, 1.1vw, 17.5px);
+    line-height: 1.35;
+  }
+  .sar-dif__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-width: clamp(240px, 21vw, 337px);
+    height: clamp(52px, 4.1vw, 66px);
+    margin-top: clamp(40px, 5.8vw, 93px);
+    padding: 0 30px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #7f8c62 0%, #abb98b 100%);
+    color: #fff;
+    font-size: clamp(15px, 1.4vw, 22px);
+    letter-spacing: 0.13em;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.25s ease, filter 0.25s ease;
+  }
+  .sar-dif__btn:hover { transform: translateY(-2px); filter: brightness(1.07); }
+  .sar-dif__btn svg {
+    width: clamp(20px, 1.7vw, 27px);
+    height: clamp(20px, 1.7vw, 27px);
+    flex-shrink: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  @media (max-width: 900px) {
+    .sar-dif__grid { width: 100%; grid-template-columns: repeat(2, 1fr); }
+    .sar-dif__item { min-height: 0; }
+  }
+  @media (max-width: 560px) {
+    .sar-dif__grid { grid-template-columns: 1fr; }
+    .sar-dif__item h3 { margin-top: 36px; }
+    .sar-dif__btn { width: 100%; max-width: 320px; }
+  }
+
+  /* ================= PRODUTOS ================= */
+  .sar-produtos { background: var(--sar-bege); padding: 90px 0; }
+  .sar-produtos__head { text-align: center; max-width: 720px; margin: 0 auto 52px; }
+  .sar-produtos__head h2 { font-size: clamp(30px, 3.4vw, 44px); font-weight: 600; color: var(--sar-marrom-escuro); }
+  .sar-produtos__head p { margin-top: 16px; font-size: 15px; line-height: 1.7; color: #5b4a43; }
+  /* ================= PROJETOS ================= */
+  .sar-projetos { background: var(--sar-marrom); color: var(--sar-creme); padding: 90px 0; }
+  .sar-projetos__head { text-align: center; max-width: 760px; margin: 0 auto 48px; }
+  .sar-projetos__head h2 { font-size: clamp(30px, 3.4vw, 44px); font-weight: 400; }
+  .sar-projetos__head p { margin-top: 16px; font-size: 15px; line-height: 1.7; color: rgba(243, 234, 219, 0.88); }
+  .sar-projetos__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .sar-projetos__rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(243, 234, 219, 0.3);
+  }
+  .sar-projetos__rodape p { font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.6; }
+  .sar-projetos__yt {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 26px;
+    border: 1px solid var(--sar-creme);
+    border-radius: 2px;
+    color: var(--sar-creme);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  .sar-projetos__yt:hover { background: var(--sar-creme); color: var(--sar-marrom-escuro); }
+  .sar-projetos__yt svg { width: 22px; height: 22px; fill: currentColor; }
+
+  @media (max-width: 900px) {
+    .sar-tradicao, .sar-produtos, .sar-projetos { padding: 64px 0; }
+    .sar-tradicao__grid { grid-template-columns: 1fr; gap: 36px; }
+    .sar-tradicao__texto { max-width: none; }
+    .sar-stats { grid-template-columns: repeat(2, 1fr); row-gap: 36px; margin-top: 48px; padding-top: 36px; }
+    .sar-projetos__grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .sar-projetos__rodape { flex-direction: column; align-items: flex-start; }
+  }
+
+  /* ================= BLOG ================= */
+  .sar-blog { background: var(--sar-areia); }
+  .sar-blog__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    color: #454545;
+  }
+  .sar-blog__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 35px;
+  }
+  .sar-blog__head h2 { font-size: 44px; font-weight: 700; line-height: 1.1; }
+  .sar-blog__head p { max-width: 440px; font-size: 18px; line-height: 1.45; }
+  .sar-blog__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    list-style: none;
+    margin: 0 0 50px;
+    padding: 0;
+  }
+  .sar-blog__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .sar-blog__card:hover { transform: translateY(-5px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); }
+  .sar-blog__card :global(.sar-blog__thumb) { display: block; width: 100%; height: 290px; object-fit: cover; }
+  .sar-blog__content {
+    position: relative;
+    margin: -38px 14px 14px;
+    padding: 30px 24px;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    color: #7c5143;
+  }
+  .sar-blog__content h3 { margin-bottom: 10px; font-size: 18px; font-weight: 700; line-height: 1.35; }
+  .sar-blog__content a { color: inherit; text-decoration: none; }
+  /* card inteiro clicável */
+  .sar-blog__content a::after { content: ''; position: absolute; inset: -400px -14px -14px; }
+  .sar-blog__content p { font-size: 13px; line-height: 1.5; opacity: 0.85; }
+  .sar-blog__cta { text-align: center; }
+  .sar-blog__cta a {
+    display: inline-block;
+    padding: 14px 44px;
+    background: var(--sar-oliva-botao);
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.25s ease;
+  }
+  .sar-blog__cta a:hover { background: #727a55; }
+  @media (max-width: 991px) {
+    .sar-blog__grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 767px) {
+    .sar-blog__head { flex-direction: column; gap: 15px; }
+    .sar-blog__head h2 { font-size: 34px; }
+    .sar-blog__head p { max-width: 100%; font-size: 16px; }
+    .sar-blog__grid { grid-template-columns: 1fr; gap: 25px; }
+    .sar-blog__card :global(.sar-blog__thumb) { height: 240px; }
+  }
+
+  /* ================= SHOWROOM ================= */
+  .sar-showroom__mapa {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    border: 0;
+  }
+  .sar-showroom__bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 35px auto 45px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .sar-showroom__bar h2 {
+    color: var(--sar-marrom-escuro);
+    font-size: clamp(26px, 3.4vw, 42px);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .sar-showroom__acoes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  .sar-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-width: 185px;
+    height: 58px;
+    padding: 0 32px;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    text-transform: uppercase;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+  }
+  .sar-pill:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); filter: brightness(1.05); }
+  .sar-pill svg { width: 26px; height: 26px; flex-shrink: 0; }
+  .sar-pill--maps { background: #fff; color: #202124; border: 2px solid #e0e0e0; }
+  .sar-pill--maps:hover { border-color: #4285f4; }
+  .sar-pill--waze { background: #33ccff; color: #193644; border: 2px solid #33ccff; }
+  @media (max-width: 580px) {
+    .sar-showroom__mapa { height: 320px; }
+    .sar-showroom__bar { gap: 20px; margin: 25px auto 35px; padding: 0 16px; }
+    .sar-showroom__acoes { flex-direction: column; gap: 14px; }
+    .sar-pill { width: 100%; max-width: 320px; height: 52px; }
+  }
+</style>

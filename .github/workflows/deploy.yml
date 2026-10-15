@@ -1,0 +1,38 @@
+# Publicação alternativa no cPanel via FTP. Hoje o site roda no Easypanel (Dockerfile),
+# então este fluxo só roda quando acionado manualmente em GitHub > Actions.
+# Configure em GitHub > Settings > Secrets and variables > Actions:
+#   FTP_SERVER    ex.: ftp.saraivadm.com.br
+#   FTP_USERNAME  usuário FTP do cPanel
+#   FTP_PASSWORD  senha FTP do cPanel
+name: Publicar no cPanel
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Enviar por FTP (só arquivos alterados)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./dist/
+          server-dir: ./public_html/
