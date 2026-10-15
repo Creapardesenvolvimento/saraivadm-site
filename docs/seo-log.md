@@ -148,3 +148,21 @@ Cada entrada: data, página, o que mudou e por quê. O histórico completo de ar
 - O que já aparece na tela ao abrir a página nunca é escondido (sem "piscar" e sem atrasar o carregamento).
 - Quem ativa "reduzir movimento" no celular ou computador vê o site sem animações.
 - Sem bibliotecas externas: o script tem ~2 KB. Arquivo: `src/scripts/animacoes.ts` (para animar um elemento novo, basta incluir o seletor na lista do topo do arquivo ou usar o atributo `data-revelar`).
+
+---
+
+## 2026-10-15 — Padrão único de acabamento e espaçamento
+
+**Páginas:** todas
+
+- **Cantos quadrados em todo o site** (`--raio: 2px`): cards do blog (antes 20px), caixas internas (14px), botões (6px), campos do formulário, dúvidas, galeria, vídeos, botões Maps/Waze (antes totalmente arredondados) e ícones.
+- **Espaçamento padronizado** (definido em `src/styles/global.css`):
+  | Medida | Desktop | Tablet | Celular |
+  |---|---|---|---|
+  | Espaço de cada seção (em cima e embaixo) | 96px | 72px | 56px |
+  | Título da seção → conteúdo | 56px | 40px | 32px |
+  | Entre cards, fotos e itens | 24px | 16px | 16px |
+  | Entre texto e imagem lado a lado | 64px | 36px | 36px |
+  | Largura máxima do conteúdo | 1180px | — | — |
+- Antes, as seções variavam entre 50px e 96px e as larguras entre 1180px, 1200px e 84% da tela. Agora todo o conteúdo começa na mesma linha em todas as páginas.
+- Duas seções brancas seguidas (ex.: showroom + formulário) não somam espaço duplo.

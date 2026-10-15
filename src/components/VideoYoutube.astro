@@ -46,7 +46,7 @@ const img = await getImage({ src: capa, width: largura, format: 'webp', quality:
     aspect-ratio: 16 / 9;
     padding: 0;
     border: 0;
-    border-radius: 2px;
+    border-radius: var(--raio);
     background: #1d1a18 center / cover no-repeat;
     cursor: pointer;
     overflow: hidden;
@@ -65,7 +65,7 @@ const img = await getImage({ src: capa, width: largura, format: 'webp', quality:
     width: 68px;
     height: 68px;
     transform: translate(-50%, -50%);
-    border-radius: 50%;
+    border-radius: var(--raio);
     background: rgba(243, 234, 219, 0.94);
     display: flex;
     align-items: center;

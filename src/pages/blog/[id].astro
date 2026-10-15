@@ -72,7 +72,7 @@ const schema = [
 
 <style>
   .post {
-    padding: 60px 20px 40px;
+    padding: var(--secao) var(--wrap-pad) 0;
   }
   .post__wrap {
     max-width: 780px;
@@ -101,7 +101,7 @@ const schema = [
   .post :global(.post__capa) {
     display: block;
     width: 100%;
-    border-radius: 14px;
+    border-radius: var(--raio);
     margin-bottom: 36px;
   }
   .post__conteudo {
@@ -134,6 +134,6 @@ const schema = [
     font-weight: 600;
   }
   .post__conteudo :global(img) {
-    border-radius: 10px;
+    border-radius: var(--raio);
   }
 </style>

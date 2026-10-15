@@ -63,7 +63,7 @@ const grupos = colunas === 2 ? [itens.slice(0, metade), itens.slice(metade)] : [
 <style>
   .acd {
     display: grid;
-    gap: 14px 28px;
+    gap: 12px var(--gap);
     align-items: start;
   }
   .acd--2 {
@@ -72,12 +72,12 @@ const grupos = colunas === 2 ? [itens.slice(0, metade), itens.slice(metade)] : [
   .acd__col {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
   }
   .acd__item {
     background: #fff;
     border: 1px solid #e3d9cb;
-    border-radius: 10px;
+    border-radius: var(--raio);
     overflow: hidden;
     transition: border-color 0.25s ease, box-shadow 0.25s ease;
   }
@@ -133,7 +133,7 @@ const grupos = colunas === 2 ? [itens.slice(0, metade), itens.slice(metade)] : [
     flex-shrink: 0;
     width: 26px;
     height: 26px;
-    border-radius: 50%;
+    border-radius: var(--raio);
     background: var(--sar-bege);
   }
   .acd__icone::before,
@@ -172,7 +172,7 @@ const grupos = colunas === 2 ? [itens.slice(0, metade), itens.slice(metade)] : [
     height: auto;
     max-height: 320px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: var(--raio);
     margin: 18px 0 6px;
   }
   .acd__texto {

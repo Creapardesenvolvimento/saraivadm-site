@@ -51,7 +51,7 @@ const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width:
   .gal__grid {
     display: grid;
     grid-template-columns: repeat(var(--gal-cols), 1fr);
-    gap: 14px;
+    gap: var(--gap);
     list-style: none;
     margin: 0;
     padding: 0;
@@ -62,7 +62,7 @@ const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width:
     aspect-ratio: 1;
     padding: 0;
     border: 0;
-    border-radius: 4px;
+    border-radius: var(--raio);
     overflow: hidden;
     cursor: zoom-in;
     background: #d8cdbb;
@@ -96,7 +96,7 @@ const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width:
     max-width: 100%;
     max-height: 88vh;
     margin: 0 auto;
-    border-radius: 4px;
+    border-radius: var(--raio);
   }
   .gal__fechar {
     position: absolute;
@@ -105,7 +105,7 @@ const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width:
     width: 40px;
     height: 40px;
     border: 0;
-    border-radius: 50%;
+    border-radius: var(--raio);
     background: var(--sar-creme);
     color: var(--sar-marrom-escuro);
     font-size: 26px;
@@ -120,7 +120,6 @@ const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width:
   @media (max-width: 600px) {
     .gal__grid {
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
     }
   }
 </style>

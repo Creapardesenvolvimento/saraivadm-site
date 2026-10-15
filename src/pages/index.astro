@@ -369,7 +369,7 @@ const iconeWhats =
     background: var(--sar-creme);
     color: var(--sar-marrom-escuro);
     border: 1px solid var(--sar-creme);
-    border-radius: 2px;
+    border-radius: var(--raio);
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.14em;
@@ -387,7 +387,7 @@ const iconeWhats =
     align-items: center;
     list-style: none;
     margin: 0;
-    padding: 30px max(40px, calc((100% - 1100px) / 2));
+    padding: 30px max(var(--wrap-pad), calc((100% - var(--wrap)) / 2 + var(--wrap-pad)));
     background: var(--sar-marrom);
   }
   .sar-hero__item {
@@ -442,11 +442,11 @@ const iconeWhats =
   }
 
   /* ================= TRADIÇÃO ================= */
-  .sar-tradicao { background: #fff; padding: 90px 0 80px; }
+  .sar-tradicao { background: #fff; padding: var(--secao) 0; }
   .sar-tradicao__grid {
     display: grid;
     grid-template-columns: 1fr 1.15fr;
-    gap: 64px;
+    gap: var(--gap-col);
     align-items: center;
   }
   .sar-tradicao__selo {
@@ -470,10 +470,10 @@ const iconeWhats =
   .sar-stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+    gap: var(--gap);
     list-style: none;
-    margin: 64px 0 0;
-    padding: 44px 0 0;
+    margin: var(--secao-head) 0 0;
+    padding: var(--secao-head) 0 0;
     border-top: 1px solid rgba(138, 90, 78, 0.25);
     text-align: center;
   }
@@ -497,7 +497,7 @@ const iconeWhats =
   /* ================= DIFERENCIAIS ================= */
   .sar-dif {
     background: #f8f4ed;
-    padding: clamp(50px, 6vw, 96px) 20px clamp(50px, 5.3vw, 84px);
+    padding: var(--secao) var(--wrap-pad);
     text-align: center;
     color: #4a4540;
   }
@@ -510,9 +510,9 @@ const iconeWhats =
     letter-spacing: -0.01em;
   }
   .sar-dif__grid {
-    width: 84%;
-    max-width: 1343px;
-    margin: clamp(40px, 5vw, 80px) auto 0;
+    width: 100%;
+    max-width: calc(var(--wrap) - 2 * var(--wrap-pad));
+    margin: var(--secao-head) auto 0;
     padding: 0;
     list-style: none;
     display: grid;
@@ -555,9 +555,9 @@ const iconeWhats =
     gap: 12px;
     min-width: clamp(240px, 21vw, 337px);
     height: clamp(52px, 4.1vw, 66px);
-    margin-top: clamp(40px, 5.8vw, 93px);
+    margin-top: var(--secao-head);
     padding: 0 30px;
-    border-radius: 6px;
+    border-radius: var(--raio);
     background: linear-gradient(90deg, #7f8c62 0%, #abb98b 100%);
     color: #fff;
     font-size: clamp(15px, 1.4vw, 22px);
@@ -579,7 +579,7 @@ const iconeWhats =
     stroke-linejoin: round;
   }
   @media (max-width: 900px) {
-    .sar-dif__grid { width: 100%; grid-template-columns: repeat(2, 1fr); }
+    .sar-dif__grid { grid-template-columns: repeat(2, 1fr); }
     .sar-dif__item { min-height: 0; }
   }
   @media (max-width: 560px) {
@@ -589,24 +589,24 @@ const iconeWhats =
   }
 
   /* ================= PRODUTOS ================= */
-  .sar-produtos { background: var(--sar-bege); padding: 90px 0; }
-  .sar-produtos__head { text-align: center; max-width: 720px; margin: 0 auto 52px; }
+  .sar-produtos { background: var(--sar-bege); padding: var(--secao) 0; }
+  .sar-produtos__head { text-align: center; max-width: 720px; margin: 0 auto var(--secao-head); }
   .sar-produtos__head h2 { font-size: clamp(30px, 3.4vw, 44px); font-weight: 600; color: var(--sar-marrom-escuro); }
   .sar-produtos__head p { margin-top: 16px; font-size: 15px; line-height: 1.7; color: #5b4a43; }
   /* ================= PROJETOS ================= */
-  .sar-projetos { background: var(--sar-marrom); color: var(--sar-creme); padding: 90px 0; }
-  .sar-projetos__head { text-align: center; max-width: 760px; margin: 0 auto 48px; }
+  .sar-projetos { background: var(--sar-marrom); color: var(--sar-creme); padding: var(--secao) 0; }
+  .sar-projetos__head { text-align: center; max-width: 760px; margin: 0 auto var(--secao-head); }
   .sar-projetos__head h2 { font-size: clamp(30px, 3.4vw, 44px); font-weight: 400; }
   .sar-projetos__head p { margin-top: 16px; font-size: 15px; line-height: 1.7; color: rgba(243, 234, 219, 0.88); }
-  .sar-projetos__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .sar-projetos__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gap); }
   .sar-projetos__rodape {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 36px;
-    padding-top: 28px;
+    margin-top: var(--secao-head);
+    padding-top: var(--gap);
     border-top: 1px solid rgba(243, 234, 219, 0.3);
   }
   .sar-projetos__rodape p { font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.6; }
@@ -616,7 +616,7 @@ const iconeWhats =
     gap: 10px;
     padding: 14px 26px;
     border: 1px solid var(--sar-creme);
-    border-radius: 2px;
+    border-radius: var(--raio);
     color: var(--sar-creme);
     text-decoration: none;
     font-size: 13px;
@@ -629,10 +629,9 @@ const iconeWhats =
   .sar-projetos__yt svg { width: 22px; height: 22px; fill: currentColor; }
 
   @media (max-width: 900px) {
-    .sar-tradicao, .sar-produtos, .sar-projetos { padding: 64px 0; }
-    .sar-tradicao__grid { grid-template-columns: 1fr; gap: 36px; }
+    .sar-tradicao__grid { grid-template-columns: 1fr; }
     .sar-tradicao__texto { max-width: none; }
-    .sar-stats { grid-template-columns: repeat(2, 1fr); row-gap: 36px; margin-top: 48px; padding-top: 36px; }
+    .sar-stats { grid-template-columns: repeat(2, 1fr); row-gap: var(--secao-head); }
     .sar-projetos__grid { grid-template-columns: 1fr; }
   }
   @media (max-width: 600px) {
@@ -642,26 +641,26 @@ const iconeWhats =
   /* ================= BLOG ================= */
   .sar-blog { background: var(--sar-areia); }
   .sar-blog__inner {
-    max-width: 1200px;
+    max-width: var(--wrap);
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: var(--secao) var(--wrap-pad);
     color: #454545;
   }
   .sar-blog__head {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
-    margin-bottom: 35px;
+    gap: var(--gap-col);
+    margin-bottom: var(--secao-head);
   }
   .sar-blog__head h2 { font-size: 44px; font-weight: 700; line-height: 1.1; }
   .sar-blog__head p { max-width: 440px; font-size: 18px; line-height: 1.45; }
   .sar-blog__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
+    gap: var(--gap);
     list-style: none;
-    margin: 0 0 50px;
+    margin: 0 0 var(--secao-head);
     padding: 0;
   }
   .sar-blog__card {
@@ -669,7 +668,7 @@ const iconeWhats =
     display: flex;
     flex-direction: column;
     height: 100%;
-    border-radius: 20px;
+    border-radius: var(--raio);
     overflow: hidden;
     background: #fff;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
@@ -679,9 +678,9 @@ const iconeWhats =
   .sar-blog__card :global(.sar-blog__thumb) { display: block; width: 100%; height: 290px; object-fit: cover; }
   .sar-blog__content {
     position: relative;
-    margin: -38px 14px 14px;
-    padding: 30px 24px;
-    border-radius: 14px;
+    margin: -38px var(--gap) var(--gap);
+    padding: 28px 24px;
+    border-radius: var(--raio);
     background: #fff;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     color: #7c5143;
@@ -689,7 +688,7 @@ const iconeWhats =
   .sar-blog__content h3 { margin-bottom: 10px; font-size: 18px; font-weight: 700; line-height: 1.35; }
   .sar-blog__content a { color: inherit; text-decoration: none; }
   /* card inteiro clicável */
-  .sar-blog__content a::after { content: ''; position: absolute; inset: -400px -14px -14px; }
+  .sar-blog__content a::after { content: ''; position: absolute; inset: -400px calc(-1 * var(--gap)) calc(-1 * var(--gap)); }
   .sar-blog__content p { font-size: 13px; line-height: 1.5; opacity: 0.85; }
   .sar-blog__cta { text-align: center; }
   .sar-blog__cta a {
@@ -697,7 +696,7 @@ const iconeWhats =
     padding: 14px 44px;
     background: var(--sar-oliva-botao);
     color: #fff;
-    border-radius: 6px;
+    border-radius: var(--raio);
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -710,30 +709,32 @@ const iconeWhats =
     .sar-blog__grid { grid-template-columns: repeat(2, 1fr); }
   }
   @media (max-width: 767px) {
-    .sar-blog__head { flex-direction: column; gap: 15px; }
+    .sar-blog__head { flex-direction: column; gap: 12px; }
     .sar-blog__head h2 { font-size: 34px; }
     .sar-blog__head p { max-width: 100%; font-size: 16px; }
-    .sar-blog__grid { grid-template-columns: 1fr; gap: 25px; }
+    .sar-blog__grid { grid-template-columns: 1fr; }
     .sar-blog__card :global(.sar-blog__thumb) { height: 240px; }
   }
 
   /* ================= SHOWROOM ================= */
+  .sar-showroom {
+    padding: var(--secao) var(--wrap-pad);
+  }
   .sar-showroom__mapa {
     display: block;
     width: 100%;
-    max-width: 1200px;
+    max-width: calc(var(--wrap) - 2 * var(--wrap-pad));
     height: 450px;
     margin: 0 auto;
     border: 0;
+    border-radius: var(--raio);
   }
   .sar-showroom__bar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-    max-width: 1200px;
-    margin: 35px auto 45px;
-    padding: 0 20px;
+    gap: var(--gap);
+    margin: var(--secao-head) auto 0;
     text-align: center;
   }
   .sar-showroom__bar h2 {
@@ -749,7 +750,7 @@ const iconeWhats =
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: var(--gap);
     width: 100%;
   }
   .sar-pill {
@@ -760,7 +761,7 @@ const iconeWhats =
     min-width: 185px;
     height: 58px;
     padding: 0 32px;
-    border-radius: 9999px;
+    border-radius: var(--raio);
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
@@ -777,8 +778,7 @@ const iconeWhats =
   .sar-pill--waze { background: #33ccff; color: #193644; border: 2px solid #33ccff; }
   @media (max-width: 580px) {
     .sar-showroom__mapa { height: 320px; }
-    .sar-showroom__bar { gap: 20px; margin: 25px auto 35px; padding: 0 16px; }
-    .sar-showroom__acoes { flex-direction: column; gap: 14px; }
+    .sar-showroom__acoes { flex-direction: column; gap: 12px; }
     .sar-pill { width: 100%; max-width: 320px; height: 52px; }
   }
 </style>

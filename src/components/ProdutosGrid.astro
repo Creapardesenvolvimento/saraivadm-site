@@ -38,7 +38,7 @@ const { produtos } = Astro.props;
   .sar-produtos__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    gap: var(--gap);
     list-style: none;
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@ const { produtos } = Astro.props;
     height: 100%;
     text-decoration: none;
     background: var(--sar-oliva);
-    border-radius: 2px;
+    border-radius: var(--raio);
     overflow: hidden;
   }
   .sar-card__media {
@@ -111,7 +111,6 @@ const { produtos } = Astro.props;
   @media (max-width: 900px) {
     .sar-produtos__grid {
       grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
     }
   }
   @media (max-width: 600px) {

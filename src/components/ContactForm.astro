@@ -49,15 +49,15 @@ const origem = Astro.url.pathname;
 
 <style>
   .sar-form {
-    padding: 50px 24px;
+    padding: var(--secao) var(--wrap-pad);
     background: #fff;
   }
   .sar-form__inner {
-    max-width: 1200px;
+    max-width: calc(var(--wrap) - 2 * var(--wrap-pad));
     margin: 0 auto;
   }
   .sar-form__titulo {
-    margin-bottom: 50px;
+    margin-bottom: var(--secao-head);
     font-family: var(--fonte-texto);
     font-size: 45px;
     font-weight: 500;
@@ -75,7 +75,7 @@ const origem = Astro.url.pathname;
     padding: 14px 18px;
     background: #fff;
     border: 1.5px solid #dcdcdc;
-    border-radius: 6px;
+    border-radius: var(--raio);
     font: inherit;
     font-size: 15px;
     color: #554f4c;
@@ -100,7 +100,7 @@ const origem = Astro.url.pathname;
     background: var(--sar-oliva-botao);
     color: #fff;
     border: 0;
-    border-radius: 6px;
+    border-radius: var(--raio);
     font: inherit;
     font-size: 14px;
     font-weight: 600;
@@ -114,17 +114,8 @@ const origem = Astro.url.pathname;
   }
 
   @media (max-width: 767px) {
-    .sar-form {
-      padding: 50px;
-    }
     .sar-form__titulo {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-  }
-  @media (max-width: 480px) {
-    .sar-form {
-      padding: 40px 20px;
+      font-size: 24px;
     }
   }
 </style>

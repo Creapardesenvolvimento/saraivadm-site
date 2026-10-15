@@ -55,10 +55,10 @@ const schema = [
 <style>
   .blog-lista {
     background: var(--sar-areia);
-    padding: 70px 0 90px;
+    padding: var(--secao) 0;
   }
   .blog-lista__head {
-    margin-bottom: 40px;
+    margin-bottom: var(--secao-head);
     color: #454545;
   }
   .blog-lista__head h1 {
@@ -74,7 +74,7 @@ const schema = [
   .blog-lista__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
+    gap: var(--gap);
     list-style: none;
     margin: 0;
     padding: 0;
@@ -82,7 +82,7 @@ const schema = [
   .blog-card {
     position: relative;
     height: 100%;
-    border-radius: 20px;
+    border-radius: var(--raio);
     overflow: hidden;
     background: #fff;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);

@@ -14,6 +14,30 @@
 
   --fonte-titulos: 'Montserrat Variable', 'Helvetica Neue', Arial, sans-serif;
   --fonte-texto: 'Inter Variable', 'Helvetica Neue', Arial, sans-serif;
+
+  /* ===== Padrão de acabamento (use sempre estes valores) ===== */
+  --raio: 2px;          /* cantos: quadrados em todo o site */
+  --wrap: 1180px;       /* largura máxima do conteúdo */
+  --wrap-pad: 24px;     /* margem lateral */
+  --secao: 96px;        /* espaço vertical de cada seção (em cima e embaixo) */
+  --secao-head: 56px;   /* título da seção -> conteúdo */
+  --gap: 24px;          /* espaço entre cards, fotos e itens de grade */
+  --gap-col: 64px;      /* espaço entre texto e imagem lado a lado */
+}
+@media (max-width: 900px) {
+  :root {
+    --secao: 72px;
+    --secao-head: 40px;
+    --gap: 16px;
+    --gap-col: 36px;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --secao: 56px;
+    --secao-head: 32px;
+    --wrap-pad: 20px;
+  }
 }
 
 *,
@@ -71,14 +95,15 @@ p {
 }
 
 .sar-wrap {
-  max-width: 1180px;
+  max-width: var(--wrap);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 var(--wrap-pad);
 }
-@media (max-width: 600px) {
-  .sar-wrap {
-    padding: 0 20px;
-  }
+
+/* Duas seções brancas seguidas não somam espaço (ex.: showroom + formulário) */
+main .sar-showroom + .sar-form,
+main .pm-sec:not(.pm-sec--bege):not(.pm-sec--marrom) + .sar-form {
+  padding-top: 0;
 }
 
 /* ===================== Animações ===================== */

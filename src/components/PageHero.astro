@@ -161,7 +161,7 @@ const iconeWhats =
     min-width: 190px;
     padding: 16px 30px;
     border: 1px solid var(--sar-creme);
-    border-radius: 2px;
+    border-radius: var(--raio);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.14em;
@@ -196,7 +196,7 @@ const iconeWhats =
     grid-template-columns: repeat(4, 1fr);
     list-style: none;
     margin: 0;
-    padding: 26px max(40px, calc((100% - 1100px) / 2));
+    padding: 30px max(var(--wrap-pad), calc((100% - var(--wrap)) / 2 + var(--wrap-pad)));
     background: var(--sar-marrom);
   }
   .ph__item {
