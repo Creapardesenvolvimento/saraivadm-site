@@ -296,3 +296,27 @@ html.js-anima [data-revelar].is-visivel {
 .btn--bloco {
   width: 100%;
 }
+
+/* ===================== Título de seção =====================
+   Todos os títulos de seção seguem o padrão de "Nossos produtos". */
+.titulo-secao {
+  margin: 0;
+  font-family: var(--fonte-titulos);
+  font-size: clamp(30px, 3.4vw, 44px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--sar-marrom-escuro);
+}
+.titulo-secao strong {
+  font-weight: inherit;
+}
+/* Em fundos escuros o título fica claro */
+.sar-projetos .titulo-secao,
+.pm-sec--marrom .titulo-secao {
+  color: var(--sar-creme);
+}
+.pm-folder .titulo-secao {
+  color: #fff;
+}

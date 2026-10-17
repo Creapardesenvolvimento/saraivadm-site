@@ -175,3 +175,11 @@ Cada entrada: data, página, o que mudou e por quê. O histórico completo de ar
 - **Dois botões no topo:** "Produtos" (leva à seção de produtos) e "Atendimento" com ícone do WhatsApp.
 - **Botão padrão único** (`.btn` em `src/styles/global.css`): cantos quadrados, mesma tipografia e a mesma animação em todos — a cor de destaque preenche o botão da esquerda para a direita e ele sobe levemente.
 - Aplicado em: botão do menu (agora com ícone do WhatsApp), topo da home e das páginas de produto, diferenciais, YouTube, blog, Maps/Waze, formulário, folder, "Fale com um especialista", 404 e página de obrigado.
+
+---
+
+## 2026-10-17 — Títulos padronizados, nome dos produtos e formulário centralizado
+
+- **Todos os títulos de seção** seguem o padrão de "Nossos produtos": Montserrat semibold, 44px no desktop (30px no celular), marrom (claro sobre fundos escuros). Classe `.titulo-secao` em `src/styles/global.css`. Vale para home, páginas de produto, blog e formulário.
+- **Nome dos produtos nos cards:** 20% maior (13px → 15,6px) e em negrito.
+- **Formulário de contato:** título e campos centralizados, com largura máxima de 760px.
