@@ -5,6 +5,7 @@ import VideoYoutube from '../components/VideoYoutube.astro';
 import ContactForm from '../components/ContactForm.astro';
 import ProdutosGrid from '../components/ProdutosGrid.astro';
 import IconeWhatsApp from '../components/IconeWhatsApp.astro';
+import Depoimentos from '../components/Depoimentos.astro';
 import { catalogo } from '../data/catalogo';
 import { site, whatsappUrl, mapsUrl, wazeUrl } from '../data/site';
 import { getPosts } from '../lib/blog';
@@ -200,6 +201,9 @@ const schema = [
       </div>
     </div>
   </section>
+
+  <!-- ================= DEPOIMENTOS (Google) ================= -->
+  <Depoimentos />
 
   <!-- ================= DIFERENCIAIS ================= -->
   <section class="sar-dif">

@@ -18,6 +18,9 @@ const SELETORES = [
   '.sar-blog__head',
   '.sar-blog__grid > li',
   '.sar-showroom__bar',
+  '.dep__head',
+  '.dep__carrossel',
+  '.dep__controles',
   // comuns
   '.sar-produtos__grid > li',
   '.sar-form__inner',

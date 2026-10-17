@@ -1,0 +1,311 @@
+---
+// Depoimentos reais do Google em carrossel (setas + barra de progresso, arrasta no celular).
+import { avaliacoesGoogle, depoimentos } from '../data/depoimentos';
+
+interface Props {
+  titulo?: string;
+}
+const { titulo = 'Depoimentos dos nossos clientes' } = Astro.props;
+
+const iniciais = (nome: string) => nome.trim().charAt(0).toUpperCase();
+const estrelas = Array.from({ length: 5 });
+---
+
+<section class="dep" aria-labelledby="dep-titulo">
+  <div class="sar-wrap">
+    <header class="dep__head">
+      <h2 class="titulo-secao" id="dep-titulo">{titulo}</h2>
+      <a class="dep__nota" href={avaliacoesGoogle.url} target="_blank" rel="noopener">
+        <strong>{avaliacoesGoogle.nota}</strong>
+        <span class="dep__estrelas" aria-hidden="true">
+          {estrelas.map(() => <svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" /></svg>)}
+        </span>
+        <span>{avaliacoesGoogle.total} avaliações no Google</span>
+        <span class="visually-hidden">(abre o Google Maps)</span>
+      </a>
+    </header>
+
+    <div class="dep__carrossel">
+      <ul class="dep__trilho" tabindex="0" aria-label="Depoimentos de clientes">
+        {
+          depoimentos.map((d) => (
+            <li class="dep__card">
+              <div class="dep__autor">
+                <span class="dep__avatar" aria-hidden="true">{iniciais(d.nome)}</span>
+                <div>
+                  <p class="dep__nome">{d.nome}</p>
+                  <p class="dep__fonte">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.6 12.2c0-.8-.1-1.5-.2-2.2H12v4.3h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2.1-1.9 3.3-4.8 3.3-8.1z" /><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.6-2.7c-1 .7-2.2 1.1-3.7 1.1-2.9 0-5.3-1.9-6.2-4.5H2.1v2.8A11 11 0 0 0 12 23z" /><path fill="#FBBC05" d="M5.8 14.2a6.6 6.6 0 0 1 0-4.3V7.1H2.1a11 11 0 0 0 0 9.9z" /><path fill="#EA4335" d="M12 5.4c1.6 0 3 .6 4.2 1.6l3.1-3.1A11 11 0 0 0 2.1 7.1l3.7 2.8C6.7 7.3 9.1 5.4 12 5.4z" /></svg>
+                    Avaliação no Google
+                  </p>
+                </div>
+              </div>
+              <span class="dep__estrelas dep__estrelas--card" role="img" aria-label="5 de 5 estrelas">
+                {estrelas.map(() => <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" /></svg>)}
+              </span>
+              <blockquote class="dep__texto">
+                {d.texto.split('\n').map((par) => <p>{par}</p>)}
+              </blockquote>
+              <button type="button" class="dep__mais" hidden>Ler mais</button>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div class="dep__controles">
+      <button type="button" class="dep__seta" data-dir="-1" aria-label="Depoimentos anteriores">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+      </button>
+      <div class="dep__progresso" aria-hidden="true"><span></span></div>
+      <button type="button" class="dep__seta" data-dir="1" aria-label="Próximos depoimentos">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.dep').forEach((sec) => {
+    const trilho = sec.querySelector<HTMLElement>('.dep__trilho')!;
+    const barra = sec.querySelector<HTMLElement>('.dep__progresso span')!;
+    const passo = () =>
+      (trilho.querySelector<HTMLElement>('.dep__card')?.offsetWidth ?? 300) + (parseFloat(getComputedStyle(trilho).columnGap) || 0);
+
+    sec.querySelectorAll<HTMLButtonElement>('.dep__seta').forEach((b) =>
+      b.addEventListener('click', () => trilho.scrollBy({ left: Number(b.dataset.dir) * passo(), behavior: 'smooth' })),
+    );
+
+    const atualizar = () => {
+      const max = trilho.scrollWidth - trilho.clientWidth;
+      const visivel = trilho.clientWidth / trilho.scrollWidth;
+      barra.style.width = `${Math.max(visivel * 100, 12)}%`;
+      barra.style.transform = `translateX(${max > 0 ? (trilho.scrollLeft / max) * (100 / Math.max(visivel, 0.12) - 100) : 0}%)`;
+    };
+    trilho.addEventListener('scroll', atualizar, { passive: true });
+    window.addEventListener('resize', atualizar);
+    atualizar();
+
+    // "Ler mais" só aparece quando o texto foi cortado
+    sec.querySelectorAll<HTMLElement>('.dep__card').forEach((card) => {
+      const texto = card.querySelector<HTMLElement>('.dep__texto')!;
+      const botao = card.querySelector<HTMLButtonElement>('.dep__mais')!;
+      if (texto.scrollHeight > texto.clientHeight + 4) botao.hidden = false;
+      botao.addEventListener('click', () => {
+        const aberto = card.classList.toggle('is-aberto');
+        botao.textContent = aberto ? 'Ler menos' : 'Ler mais';
+      });
+    });
+  });
+</script>
+
+<style>
+  .dep {
+    padding: var(--secao) 0;
+    background: #fff;
+  }
+  .dep__head {
+    text-align: center;
+    margin-bottom: var(--secao-head);
+  }
+  .dep__nota {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    color: var(--sar-marrom-escuro);
+    font-family: var(--fonte-titulos);
+    font-size: clamp(17px, 1.5vw, 22px);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .dep__nota strong {
+    font-weight: 600;
+  }
+  .dep__nota:hover span:last-of-type {
+    text-decoration: underline;
+  }
+  .dep__estrelas {
+    display: inline-flex;
+    gap: 2px;
+  }
+  .dep__estrelas svg {
+    width: 22px;
+    height: 22px;
+    fill: #f5b301;
+  }
+  .dep__estrelas--card svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Carrossel */
+  .dep__trilho {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 2 * var(--gap)) / 3);
+    gap: var(--gap);
+    list-style: none;
+    margin: 0;
+    padding: 0 0 4px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+  }
+  .dep__trilho::-webkit-scrollbar {
+    display: none;
+  }
+  .dep__trilho:focus-visible {
+    outline: 3px solid var(--sar-oliva);
+    outline-offset: 4px;
+  }
+
+  .dep__card {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    padding: 36px 36px 32px;
+    background: #f5f2ee;
+    border-radius: var(--raio);
+  }
+  .dep__autor {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .dep__avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--raio);
+    background: var(--sar-marrom-rodape);
+    color: var(--sar-creme);
+    font-family: var(--fonte-titulos);
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .dep__nome {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3a2c27;
+  }
+  .dep__fonte {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 2px;
+    font-size: 13px;
+    color: #7a6a63;
+  }
+  .dep__fonte svg {
+    width: 14px;
+    height: 14px;
+  }
+  .dep__estrelas--card {
+    margin-top: 18px;
+  }
+  .dep__texto {
+    margin: 14px 0 0;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #4d413c;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    line-clamp: 9;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .dep__texto p + p {
+    margin-top: 8px;
+  }
+  .dep__card.is-aberto .dep__texto {
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    display: block;
+  }
+  .dep__mais {
+    align-self: flex-start;
+    margin-top: 14px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--sar-oliva-escuro);
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid currentColor;
+    cursor: pointer;
+  }
+
+  /* Setas + barra de progresso */
+  .dep__controles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: var(--secao-head);
+  }
+  .dep__seta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: var(--raio);
+    background: none;
+    color: var(--sar-marrom-escuro);
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  .dep__seta:hover,
+  .dep__seta:focus-visible {
+    background: var(--sar-marrom-escuro);
+    color: var(--sar-creme);
+    transform: translateY(-2px);
+  }
+  .dep__seta svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .dep__progresso {
+    position: relative;
+    width: min(260px, 50vw);
+    height: 3px;
+    background: #e6e0d8;
+    overflow: hidden;
+  }
+  .dep__progresso span {
+    position: absolute;
+    inset: 0 auto 0 0;
+    background: var(--sar-marrom-escuro);
+    transition: transform 0.2s ease-out;
+  }
+
+  @media (max-width: 900px) {
+    .dep__trilho {
+      grid-auto-columns: calc((100% - var(--gap)) / 2);
+    }
+  }
+  @media (max-width: 600px) {
+    .dep__trilho {
+      grid-auto-columns: 86%;
+    }
+    .dep__card {
+      padding: 28px 24px;
+    }
+  }
+</style>

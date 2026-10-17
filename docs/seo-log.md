@@ -183,3 +183,14 @@ Cada entrada: data, página, o que mudou e por quê. O histórico completo de ar
 - **Todos os títulos de seção** seguem o padrão de "Nossos produtos": Montserrat semibold, 44px no desktop (30px no celular), marrom (claro sobre fundos escuros). Classe `.titulo-secao` em `src/styles/global.css`. Vale para home, páginas de produto, blog e formulário.
 - **Nome dos produtos nos cards:** 20% maior (13px → 15,6px) e em negrito.
 - **Formulário de contato:** título e campos centralizados, com largura máxima de 760px.
+
+---
+
+## 2026-10-17 — Depoimentos reais do Google na home
+
+- Nova seção **"Depoimentos dos nossos clientes"** logo abaixo dos vídeos do YouTube, com nota **4,9 ★ e 158 avaliações** (link para o perfil no Google Maps).
+- **10 avaliações reais de 5 estrelas** do Perfil da Empresa no Google, copiadas sem alterar o texto (`src/data/depoimentos.ts`).
+- Carrossel com setas, barra de progresso e arraste no celular; textos longos com "Ler mais".
+- Os textos estão no HTML da página (o Google lê), sem widget externo e sem carregar scripts do Google.
+- **Não** foi adicionado schema de avaliações (`AggregateRating`/`Review`): o Google não exibe estrelas para avaliações que a própria empresa publica no site e pode tratar como marcação enganosa. As estrelas continuam aparecendo no Perfil da Empresa.
+- Para atualizar: trocar/adicionar avaliações e a nota/total em `src/data/depoimentos.ts`.
