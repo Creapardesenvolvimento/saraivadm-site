@@ -1,6 +1,7 @@
 ---
 // Topo das páginas internas: foto de fundo, trilha (breadcrumb), H1, texto, botões e faixa marrom.
 import { Image } from 'astro:assets';
+import IconeWhatsApp from './IconeWhatsApp.astro';
 
 interface Props {
   imagem: ImageMetadata;
@@ -13,8 +14,6 @@ interface Props {
 }
 const { imagem, titulo, texto, trilha = [], botoes = [], faixa = [] } = Astro.props;
 
-const iconeWhats =
-  'M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.9-1.6.1-.2.1-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z';
 ---
 
 <section class="ph">
@@ -38,12 +37,12 @@ const iconeWhats =
         <div class="ph__buttons">
           {botoes.map((b, i) => (
             <a
-              class:list={['ph__btn', i === 0 ? 'ph__btn--solid' : 'ph__btn--outline']}
+              class:list={['btn btn--grande', i === 0 ? 'btn--creme' : 'btn--contorno']}
               href={b.href}
               target={b.externo || b.whatsapp ? '_blank' : undefined}
               rel={b.externo || b.whatsapp ? 'noopener' : undefined}
             >
-              {b.whatsapp && <svg viewBox="0 0 24 24" aria-hidden="true"><path d={iconeWhats} /></svg>}
+              {b.whatsapp && <IconeWhatsApp />}
               {b.label}
             </a>
           ))}
@@ -153,42 +152,8 @@ const iconeWhats =
     gap: 16px;
     margin-top: 36px;
   }
-  .ph__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    min-width: 190px;
-    padding: 16px 30px;
-    border: 1px solid var(--sar-creme);
-    border-radius: var(--raio);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.14em;
-    line-height: 1;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  .ph__btn svg {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-  }
-  .ph__btn--solid {
-    background: var(--sar-creme);
-    color: var(--sar-marrom-escuro);
-  }
-  .ph__btn--solid:hover {
-    background: #fff;
-    border-color: #fff;
-  }
-  .ph__btn--outline {
-    color: var(--sar-creme);
-  }
-  .ph__btn--outline:hover {
-    background: var(--sar-creme);
-    color: var(--sar-marrom-escuro);
+  .ph__buttons .btn {
+    min-width: clamp(200px, 15vw, 290px);
   }
 
   .ph__bar {
@@ -245,7 +210,11 @@ const iconeWhats =
     .ph__buttons {
       flex-direction: column;
       width: 100%;
-      max-width: 300px;
+      max-width: 320px;
+    }
+    .ph__buttons .btn {
+      width: 100%;
+      min-width: 0;
     }
     .ph__item {
       justify-content: flex-start;

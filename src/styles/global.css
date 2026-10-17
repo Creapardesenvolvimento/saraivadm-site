@@ -164,3 +164,135 @@ html.js-anima [data-revelar].is-visivel {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ===================== Botão padrão =====================
+   Todos os botões do site usam .btn + uma cor:
+   .btn--creme (claro)  .btn--contorno (vazado claro)  .btn--verde
+   .btn--escuro-contorno (vazado escuro)  .btn--branco  .btn--waze
+   Tamanhos: .btn--grande (topo) e .btn--pequeno (menu).
+   Animação única: a cor de destaque "preenche" o botão da esquerda para a direita
+   e ele sobe levemente. */
+.btn {
+  --btn-fundo: var(--sar-oliva-botao);
+  --btn-cor: #fff;
+  --btn-borda: var(--btn-fundo);
+  --btn-hover-fundo: var(--sar-oliva-escuro);
+  --btn-hover-cor: var(--btn-cor);
+  --btn-hover-borda: var(--btn-hover-fundo);
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 54px;
+  padding: 0 32px;
+  background: var(--btn-fundo);
+  color: var(--btn-cor);
+  border: 1px solid var(--btn-borda);
+  border-radius: var(--raio);
+  font-family: var(--fonte-titulos);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    color 0.4s ease,
+    border-color 0.4s ease,
+    transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1),
+    box-shadow 0.4s ease;
+}
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--btn-hover-fundo);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.btn:hover,
+.btn:focus-visible {
+  color: var(--btn-hover-cor);
+  border-color: var(--btn-hover-borda);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(30, 18, 12, 0.18);
+}
+.btn:hover::before,
+.btn:focus-visible::before {
+  transform: scaleX(1);
+}
+.btn:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+.btn svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+.btn--creme {
+  --btn-fundo: var(--sar-creme);
+  --btn-cor: var(--sar-marrom-escuro);
+  --btn-hover-fundo: #fff;
+}
+.btn--contorno {
+  --btn-fundo: transparent;
+  --btn-cor: var(--sar-creme);
+  --btn-borda: var(--sar-creme);
+  --btn-hover-fundo: var(--sar-creme);
+  --btn-hover-cor: var(--sar-marrom-escuro);
+}
+.btn--escuro-contorno {
+  --btn-fundo: transparent;
+  --btn-cor: var(--sar-marrom-escuro);
+  --btn-borda: var(--sar-marrom-escuro);
+  --btn-hover-fundo: var(--sar-marrom-escuro);
+  --btn-hover-cor: var(--sar-creme);
+}
+.btn--branco {
+  --btn-fundo: #fff;
+  --btn-cor: #202124;
+  --btn-borda: #e0e0e0;
+  --btn-hover-fundo: var(--sar-creme);
+  --btn-hover-borda: var(--sar-creme);
+}
+.btn--waze {
+  --btn-fundo: #33ccff;
+  --btn-cor: #193644;
+  --btn-hover-fundo: #1fb5e8;
+}
+
+.btn--grande {
+  min-height: 64px;
+  padding: 0 40px;
+  font-size: clamp(15px, 1.15vw, 20px);
+  letter-spacing: 0.16em;
+}
+.btn--grande svg {
+  width: 24px;
+  height: 24px;
+}
+.btn--pequeno {
+  min-height: 44px;
+  padding: 0 20px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  gap: 8px;
+}
+.btn--pequeno svg {
+  width: 17px;
+  height: 17px;
+}
+.btn--bloco {
+  width: 100%;
+}

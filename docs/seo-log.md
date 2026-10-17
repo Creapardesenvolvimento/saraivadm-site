@@ -166,3 +166,12 @@ Cada entrada: data, página, o que mudou e por quê. O histórico completo de ar
   | Largura máxima do conteúdo | 1180px | — | — |
 - Antes, as seções variavam entre 50px e 96px e as larguras entre 1180px, 1200px e 84% da tela. Agora todo o conteúdo começa na mesma linha em todas as páginas.
 - Duas seções brancas seguidas (ex.: showroom + formulário) não somam espaço duplo.
+
+---
+
+## 2026-10-17 — Topo da home em tela cheia e botão padrão
+
+- **Topo da home** ocupa a primeira dobra inteira (100% da altura da tela, em qualquer monitor). Título e texto maiores, conforme o layout desktop. A faixa marrom de diferenciais fica logo abaixo da dobra.
+- **Dois botões no topo:** "Produtos" (leva à seção de produtos) e "Atendimento" com ícone do WhatsApp.
+- **Botão padrão único** (`.btn` em `src/styles/global.css`): cantos quadrados, mesma tipografia e a mesma animação em todos — a cor de destaque preenche o botão da esquerda para a direita e ele sobe levemente.
+- Aplicado em: botão do menu (agora com ícone do WhatsApp), topo da home e das páginas de produto, diferenciais, YouTube, blog, Maps/Waze, formulário, folder, "Fale com um especialista", 404 e página de obrigado.

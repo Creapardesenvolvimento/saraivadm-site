@@ -35,7 +35,7 @@ const origem = Astro.url.pathname;
       <label class="visually-hidden" for="f-msg">Sua mensagem</label>
       <textarea id="f-msg" name="mensagem" rows="4" placeholder="Deixe sua mensagem:" maxlength="3000"></textarea>
 
-      <button type="submit">Solicitar contato</button>
+      <button type="submit" class="btn btn--verde btn--grande btn--bloco">Solicitar contato</button>
     </form>
   </div>
 </section>
@@ -94,25 +94,6 @@ const origem = Astro.url.pathname;
     min-height: 120px;
     resize: vertical;
   }
-  .sar-form__form button {
-    width: 100%;
-    padding: 16px 24px;
-    background: var(--sar-oliva-botao);
-    color: #fff;
-    border: 0;
-    border-radius: var(--raio);
-    font: inherit;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .sar-form__form button:hover {
-    background: #727a55;
-  }
-
   @media (max-width: 767px) {
     .sar-form__titulo {
       font-size: 24px;

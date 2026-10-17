@@ -4,6 +4,7 @@ import Base from '../layouts/Base.astro';
 import VideoYoutube from '../components/VideoYoutube.astro';
 import ContactForm from '../components/ContactForm.astro';
 import ProdutosGrid from '../components/ProdutosGrid.astro';
+import IconeWhatsApp from '../components/IconeWhatsApp.astro';
 import { catalogo } from '../data/catalogo';
 import { site, whatsappUrl, mapsUrl, wazeUrl } from '../data/site';
 import { getPosts } from '../lib/blog';
@@ -83,8 +84,6 @@ const schema = [
   },
 ];
 
-const iconeWhats =
-  'M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.9-1.6.1-.2.1-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z';
 ---
 
 <Base title={seo.title} description={seo.description} schema={schema} headerSobreposto>
@@ -113,8 +112,9 @@ const iconeWhats =
         Pergolados de madeira e aço, Piso de madeira, forros de palha e bambu, decks e muito mais.
       </p>
       <div class="sar-hero__buttons">
-        <a class="sar-hero__btn" href={whatsappUrl()} target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d={iconeWhats}></path></svg>
+        <a class="btn btn--creme btn--grande" href="#produtos">Produtos</a>
+        <a class="btn btn--contorno btn--grande" href={whatsappUrl()} target="_blank" rel="noopener">
+          <IconeWhatsApp />
           Atendimento
         </a>
       </div>
@@ -193,7 +193,7 @@ const iconeWhats =
       </div>
       <div class="sar-projetos__rodape">
         <p>Acompanhe nosso canal no YouTube<br />e fique por dentro dos nossos projetos</p>
-        <a class="sar-projetos__yt" href={site.redes.youtube || 'https://www.youtube.com/'} target="_blank" rel="noopener">
+        <a class="btn btn--contorno" href={site.redes.youtube || 'https://www.youtube.com/'} target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2C.5 9.1.5 12 .5 12s0 2.9.5 4.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-4.8.5-4.8s0-2.9-.5-4.8zM9.7 15.5v-7l6 3.5z"></path></svg>
           YouTube
         </a>
@@ -215,8 +215,8 @@ const iconeWhats =
         ))
       }
     </ol>
-    <a class="sar-dif__btn" href={whatsappUrl()} target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.65-4.2A9 9 0 1 1 8 19.6z"></path><path d="M9.2 7.8c-.3.4-.5 1-.2 1.8.7 1.9 2.6 3.8 4.6 4.6.8.3 1.4.1 1.8-.3l.5-.8-1.9-1-.8.7c-.9-.4-1.7-1.2-2.1-2.1l.7-.8-1-1.9z"></path></svg>
+    <a class="btn btn--verde btn--grande sar-dif__btn" href={whatsappUrl()} target="_blank" rel="noopener">
+      <IconeWhatsApp />
       Atendimento
     </a>
   </section>
@@ -253,7 +253,7 @@ const iconeWhats =
             ))}
           </ul>
           <div class="sar-blog__cta">
-            <a href="/blog/">Conhecer blog</a>
+            <a class="btn btn--verde" href="/blog/">Conhecer blog</a>
           </div>
         </div>
       </section>
@@ -275,7 +275,7 @@ const iconeWhats =
     <div class="sar-showroom__bar">
       <h2 id="showroom-titulo">Visite nosso showroom</h2>
       <div class="sar-showroom__acoes">
-        <a href={mapsUrl} target="_blank" rel="noopener" class="sar-pill sar-pill--maps" aria-label="Abrir o endereço no Google Maps">
+        <a href={mapsUrl} target="_blank" rel="noopener" class="btn btn--branco btn--grande sar-pill" aria-label="Abrir o endereço no Google Maps">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path fill="#4285F4" d="M12 2C8.13 2 5 5.13 5 9.1c0 5.25 7 12.9 7 12.9s7-7.65 7-12.9C19 5.13 15.87 2 12 2z"></path>
             <path fill="#EA4335" d="M12 2C8.13 2 5 5.13 5 9.1c0 2.22 1.25 5.24 3.12 8.35L12 9.1V2z"></path>
@@ -285,7 +285,7 @@ const iconeWhats =
           </svg>
           <span>Maps</span>
         </a>
-        <a href={wazeUrl} target="_blank" rel="noopener" class="sar-pill sar-pill--waze" aria-label="Abrir a rota no Waze">
+        <a href={wazeUrl} target="_blank" rel="noopener" class="btn btn--waze btn--grande sar-pill" aria-label="Abrir a rota no Waze">
           <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M25.6 13.2c-.4-4.6-4.2-8.2-8.9-8.2-5 0-9.1 4.1-9.1 9.1 0 1.2.2 2.3.7 3.4l-1.8 3.8c-.3.7.2 1.5 1 1.5h1.2c1.3 2.5 3.9 4.3 7 4.3 3.9 0 7.3-2.6 8.5-6.2 1.1-.3 2-.9 2.5-1.9.8-1.5.5-3.3-.6-4.4.1-.5.1-.9.1-1.4zm-12.4.9c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6.5 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm-5.7 5.7c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4 1-1 2.3-1.5 3.8-1.5s2.8.5 3.8 1.5c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0-.6-.6-1.5-.9-2.4-.9s-1.8.3-2.4.9z"></path></svg>
           <span>Waze</span>
         </a>
@@ -327,7 +327,8 @@ const iconeWhats =
     z-index: 2;
   }
   .sar-hero__content {
-    min-height: calc(100vh - 90px);
+    min-height: 100vh;
+    min-height: 100svh; /* ocupa a primeira dobra inteira */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -336,7 +337,7 @@ const iconeWhats =
     padding: 130px 24px 40px;
   }
   .sar-hero__title {
-    font-size: clamp(36px, 5.7vw, 88px);
+    font-size: clamp(40px, 6.4vw, 124px);
     line-height: 1.12;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -345,10 +346,10 @@ const iconeWhats =
   .sar-hero__title strong { display: block; font-weight: 600; }
   .sar-hero__title span { display: block; font-weight: 300; }
   .sar-hero__text {
-    margin-top: 28px;
-    max-width: 620px;
+    margin-top: clamp(24px, 2.6vw, 48px);
+    max-width: 780px;
     color: #fff;
-    font-size: clamp(15px, 1.35vw, 19px);
+    font-size: clamp(16px, 1.45vw, 28px);
     line-height: 1.55;
     text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
   }
@@ -356,30 +357,12 @@ const iconeWhats =
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 18px;
-    margin-top: 36px;
+    gap: clamp(16px, 1.7vw, 32px);
+    margin-top: clamp(36px, 4.4vw, 80px);
   }
-  .sar-hero__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    min-width: 158px;
-    padding: 16px 32px;
-    background: var(--sar-creme);
-    color: var(--sar-marrom-escuro);
-    border: 1px solid var(--sar-creme);
-    border-radius: var(--raio);
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 0.14em;
-    line-height: 1;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.3s ease;
+  .sar-hero__buttons .btn {
+    min-width: clamp(200px, 15vw, 290px);
   }
-  .sar-hero__btn:hover { background: #fff; border-color: #fff; }
-  .sar-hero__btn svg { width: 20px; height: 20px; flex-shrink: 0; fill: currentColor; }
 
   .sar-hero__bar {
     display: grid;
@@ -424,12 +407,12 @@ const iconeWhats =
     .sar-hero__item:nth-child(3) { border-left: 0; }
   }
   @media (max-width: 600px) {
-    .sar-hero__content { padding: 100px 20px 30px; min-height: calc(100vh - 70px); }
+    .sar-hero__content { padding: 100px 20px 40px; }
     .sar-hero :global(.sar-hero__bg) { object-position: center; }
     .sar-hero__title { letter-spacing: 0.06em; }
     .sar-hero__text { margin-top: 20px; }
-    .sar-hero__buttons { flex-direction: column; width: 100%; max-width: 300px; margin-top: 28px; }
-    .sar-hero__btn { width: 100%; }
+    .sar-hero__buttons { flex-direction: column; width: 100%; max-width: 320px; }
+    .sar-hero__buttons .btn { width: 100%; min-width: 0; }
     .sar-hero__item { justify-content: flex-start; font-size: 10px; padding: 6px 10px; }
     .sar-hero__item svg { width: 26px; height: 26px; }
   }
@@ -549,34 +532,7 @@ const iconeWhats =
     line-height: 1.35;
   }
   .sar-dif__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    min-width: clamp(240px, 21vw, 337px);
-    height: clamp(52px, 4.1vw, 66px);
     margin-top: var(--secao-head);
-    padding: 0 30px;
-    border-radius: var(--raio);
-    background: linear-gradient(90deg, #7f8c62 0%, #abb98b 100%);
-    color: #fff;
-    font-size: clamp(15px, 1.4vw, 22px);
-    letter-spacing: 0.13em;
-    line-height: 1;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: transform 0.25s ease, filter 0.25s ease;
-  }
-  .sar-dif__btn:hover { transform: translateY(-2px); filter: brightness(1.07); }
-  .sar-dif__btn svg {
-    width: clamp(20px, 1.7vw, 27px);
-    height: clamp(20px, 1.7vw, 27px);
-    flex-shrink: 0;
-    fill: none;
-    stroke: #fff;
-    stroke-width: 1.7;
-    stroke-linecap: round;
-    stroke-linejoin: round;
   }
   @media (max-width: 900px) {
     .sar-dif__grid { grid-template-columns: repeat(2, 1fr); }
@@ -610,23 +566,6 @@ const iconeWhats =
     border-top: 1px solid rgba(243, 234, 219, 0.3);
   }
   .sar-projetos__rodape p { font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.6; }
-  .sar-projetos__yt {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px 26px;
-    border: 1px solid var(--sar-creme);
-    border-radius: var(--raio);
-    color: var(--sar-creme);
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-  }
-  .sar-projetos__yt:hover { background: var(--sar-creme); color: var(--sar-marrom-escuro); }
-  .sar-projetos__yt svg { width: 22px; height: 22px; fill: currentColor; }
 
   @media (max-width: 900px) {
     .sar-tradicao__grid { grid-template-columns: 1fr; }
@@ -691,20 +630,6 @@ const iconeWhats =
   .sar-blog__content a::after { content: ''; position: absolute; inset: -400px calc(-1 * var(--gap)) calc(-1 * var(--gap)); }
   .sar-blog__content p { font-size: 13px; line-height: 1.5; opacity: 0.85; }
   .sar-blog__cta { text-align: center; }
-  .sar-blog__cta a {
-    display: inline-block;
-    padding: 14px 44px;
-    background: var(--sar-oliva-botao);
-    color: #fff;
-    border-radius: var(--raio);
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background-color 0.25s ease;
-  }
-  .sar-blog__cta a:hover { background: #727a55; }
   @media (max-width: 991px) {
     .sar-blog__grid { grid-template-columns: repeat(2, 1fr); }
   }
@@ -754,31 +679,15 @@ const iconeWhats =
     width: 100%;
   }
   .sar-pill {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    min-width: 185px;
-    height: 58px;
-    padding: 0 32px;
-    border-radius: var(--raio);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    line-height: 1;
-    text-transform: uppercase;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-    transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+    min-width: 200px;
   }
-  .sar-pill:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); filter: brightness(1.05); }
-  .sar-pill svg { width: 26px; height: 26px; flex-shrink: 0; }
-  .sar-pill--maps { background: #fff; color: #202124; border: 2px solid #e0e0e0; }
-  .sar-pill--maps:hover { border-color: #4285f4; }
-  .sar-pill--waze { background: #33ccff; color: #193644; border: 2px solid #33ccff; }
+  .sar-pill svg {
+    width: 26px;
+    height: 26px;
+  }
   @media (max-width: 580px) {
     .sar-showroom__mapa { height: 320px; }
     .sar-showroom__acoes { flex-direction: column; gap: 12px; }
-    .sar-pill { width: 100%; max-width: 320px; height: 52px; }
+    .sar-pill { width: 100%; max-width: 320px; }
   }
 </style>

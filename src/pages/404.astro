@@ -6,7 +6,7 @@ import Base from '../layouts/Base.astro';
   <section class="msg">
     <h1>Página não encontrada</h1>
     <p>O endereço pode ter mudado. Veja nossos produtos ou fale com a nossa equipe.</p>
-    <a href="/">Voltar para a página inicial</a>
+    <a class="btn btn--verde" href="/">Voltar para a página inicial</a>
   </section>
 </Base>
 
@@ -14,5 +14,5 @@ import Base from '../layouts/Base.astro';
   .msg { max-width: 640px; margin: 0 auto; padding: 100px 20px; text-align: center; }
   h1 { font-family: var(--fonte-titulos); font-size: 38px; color: var(--sar-marrom-escuro); }
   p { margin: 16px 0 32px; font-size: 17px; }
-  a { display: inline-block; padding: 14px 32px; background: var(--sar-oliva-botao); color: #fff; border-radius: var(--raio); text-decoration: none; font-weight: 600; }
+  .msg .btn { margin: 6px; }
 </style>

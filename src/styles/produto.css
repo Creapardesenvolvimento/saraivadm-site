@@ -54,29 +54,7 @@
   }
 
   .pm-btn {
-    display: inline-block;
     margin-top: var(--gap);
-    padding: 16px 30px;
-    background: var(--sar-oliva-botao);
-    color: #fff;
-    border-radius: var(--raio);
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background 0.25s ease, transform 0.25s ease;
-  }
-  .pm-btn:hover {
-    background: #727a55;
-    transform: translateY(-2px);
-  }
-  .pm-btn--claro {
-    background: var(--sar-creme);
-    color: var(--sar-marrom-escuro);
-  }
-  .pm-btn--claro:hover {
-    background: #fff;
   }
   .pm-link {
     display: inline-block;
