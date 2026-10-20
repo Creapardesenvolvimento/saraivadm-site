@@ -1,0 +1,733 @@
+{
+ "slug": "pisos-de-madeira",
+ "nome": "Pisos de madeira",
+ "seo": {
+  "title": "Pisos de Madeira Triângulo: Estruturado e Revestimento | Saraiva Design",
+  "description": "Pisos de madeira Triângulo para salas, quartos, áreas gourmet e tetos. Coleções Carvalho, Sense, Creative, Nordic e Classic com representação Saraiva Design."
+ },
+ "hero": {
+  "titulo": "Pisos de madeira",
+  "texto": "Nossos pisos de madeira unem conforto, sofisticação e durabilidade, valorizando qualquer ambiente com a beleza natural da madeira. O piso estruturado oferece ainda uma solução sustentável, com melhor aproveitamento da matéria-prima e menor impacto ambiental, sem abrir mão da qualidade e resistência.",
+  "imagem": "066-forro-estruturado-jequitiba-harbour.png"
+ },
+ "faixa": [
+  "Representante Triângulo",
+  "Piso estruturado",
+  "Coleções exclusivas",
+  "Origem responsável"
+ ],
+ "relacionados": [
+  "/deck-de-madeira/",
+  "/forro-de-madeira/",
+  "/pergolado-de-madeira/",
+  "/brise-de-madeira/",
+  "/mlc/",
+  "/forro-de-palha/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Pisos de madeira Triângulo",
+   "lead": "A Saraiva Design traduz a essência da madeira em projetos sofisticados, por meio de Pisos de Madeira Estruturados que aliam tecnologia, sustentabilidade e excelência arquitetônica",
+   "blocos": [
+    {
+     "t": "img",
+     "arquivo": "001-piso-madeira.png",
+     "alt": "Piso de Madeira Estruturado Saraiva - Vídeo"
+    },
+    {
+     "t": "html",
+     "html": "<p>O piso de madeira estruturado é composto por uma lamela de madeira nobre sobre uma base estruturada de madeira de reflorestamento, proporcionando maior estabilidade dimensional e reduzindo empenamentos e movimentações naturais da madeira.</p><p>O acabamento recebe 9 camadas de verniz UV com nanotecnologia e ação antibacteriana, garantindo alta resistência ao desgaste, à umidade e aos riscos do uso diário, preservando a beleza natural da madeira por muito mais tempo.</p><p>Livre de formaldeído e com tratamento retardante de chamas, oferece mais segurança, praticidade e fácil manutenção. O sistema de instalação por encaixe dispensa a aplicação de verniz após a instalação.</p><p>Além dos pisos, o revestimento também pode ser aplicado em paredes e forros, criando ambientes sofisticados, aconchegantes e com a elegância atemporal que somente a madeira natural proporciona.</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "História da Triângulo e representação da Saraiva",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "sub",
+     "texto": "Triângulo Pisos & Saraiva Design"
+    },
+    {
+     "t": "html",
+     "html": "<p>Uma parceria que reúne tradição industrial, tecnologia, responsabilidade ambiental e atendimento próximo para entregar soluções em madeira com qualidade e autenticidade.</p><p>Desde 1972, a <strong>Triângulo Pisos</strong> transforma a madeira em superfícies que unem sofisticação, qualidade e autenticidade. Ao longo de mais de cinco décadas, a empresa construiu uma trajetória marcada pela inovação, pelo desenvolvimento tecnológico e pelo respeito à origem da madeira.</p><p>Com forte compromisso socioambiental, a Triângulo investe continuamente em pesquisa, tecnologia e manejo responsável das florestas. Esse compromisso é reconhecido por certificações e iniciativas como <strong>FSC®, PEFC/CERFLOR, GREENGUARD Gold, ISO 22196 e créditos de carbono VCS/REDD+</strong> em sua floresta Manoa, reconhecida pela ONU/FAO. A empresa também possui o selo Empresa Amiga da Educação.</p><p>Essa trajetória reflete o propósito de unir tecnologia, sustentabilidade e a beleza natural da madeira, desenvolvendo produtos de alta qualidade e durabilidade.</p>"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "002-saud4708.jpg",
+       "alt": "Ambiente com piso de madeira representado pela Saraiva Design"
+      },
+      {
+       "arquivo": "003-saud4618.jpg",
+       "alt": "Detalhe do acabamento do piso de madeira"
+      },
+      {
+       "arquivo": "004-saud4765.jpg",
+       "alt": "Aplicação de piso de madeira em projeto de interiores"
+      },
+      {
+       "arquivo": "005-saud4638.jpg",
+       "alt": "Ambiente com madeira em projeto da Saraiva Design"
+      }
+     ]
+    },
+    {
+     "t": "cards",
+     "itens": [
+      {
+       "titulo": "Origem responsável",
+       "html": "<p>Manejo florestal responsável e compromisso com a origem sustentável da madeira.</p>"
+      },
+      {
+       "titulo": "Qualidade reconhecida",
+       "html": "<p>Pesquisa, controle de qualidade e certificações que reforçam a segurança e o desempenho dos produtos.</p>"
+      },
+      {
+       "titulo": "Inovação contínua",
+       "html": "<p>Desenvolvimento tecnológico aplicado a produtos duráveis, precisos e alinhados à arquitetura contemporânea.</p>"
+      },
+      {
+       "titulo": "Representação Saraiva Design",
+       "html": "<p>A <strong>Saraiva representa a Triângulo Pisos</strong>, levando ao mercado sua experiência, qualidade e excelência, com autonomia na condução dos negócios e proximidade com clientes e profissionais. A parceria une a tradição da Triângulo à atuação comercial da Saraiva, proporcionando atendimento personalizado e soluções alinhadas às necessidades de cada projeto.</p>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "usos",
+   "titulo": "Ambientes com piso de madeira",
+   "itens": [
+    {
+     "tipo": "uso",
+     "titulo": "Piso de Madeira Estruturado: conheça suas 3 camadas",
+     "html": "<p>O piso de madeira estruturado é formado por três camadas coladas em sentidos opostos, aumentando sua estabilidade, resistência e durabilidade.</p><ol><li>01  <p><strong>Capa de madeira nobre:</strong> Camada superior e aparente do piso, que valoriza a beleza natural da madeira, seus veios e tonalidades, trazendo autenticidade a cada projeto.</p></li> <li>02  <p><strong>Núcleo sólido:</strong> Camada central de madeira reflorestada responsável pela resistência e estabilidade do piso.</p></li> <li>03  <p><strong>Contracapa:</strong> Camada inferior que equilibra a estrutura e ajuda a evitar deformações.</p></li></ol>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "006-composicao-piso.png",
+      "alt": "Composição das três camadas do piso de madeira estruturado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Piso, parede ou teto",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p><strong>Piso, parede ou teto:</strong> o piso estruturado pode ser aplicado em diferentes superfícies, utilizando o mesmo material para criar sensação de continuidade, amplitude e integração no ambiente.</p><p>Alguns Projetos de Pisos de Madeira usados <br>como revestimento de parede e forros de teto.</p>"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "007-piso-de-madeira-em-forro-na-sala-de-jantar.jpg",
+       "alt": "Pisos de madeira: projeto Saraiva Design 1"
+      },
+      {
+       "arquivo": "008-piso-de-madeira-no-forro-de-area-gourmet.jpg",
+       "alt": "Pisos de madeira: projeto Saraiva Design 2"
+      },
+      {
+       "arquivo": "009-piso-de-madeira-em-sala-comercial.jpg",
+       "alt": "Pisos de madeira: projeto Saraiva Design 3"
+      },
+      {
+       "arquivo": "010-psio-de-madeira-em-quartos.jpg",
+       "alt": "Pisos de madeira: projeto Saraiva Design 4"
+      },
+      {
+       "arquivo": "011-piso-cumaru-linha-classic.png",
+       "alt": "Pisos de madeira: projeto Saraiva Design 5"
+      },
+      {
+       "arquivo": "012-piso-quaruba-atelier-linha-classic.png",
+       "alt": "Pisos de madeira: projeto Saraiva Design 6"
+      },
+      {
+       "arquivo": "013-piso-de-madeira-creative-quaruba-natural.png",
+       "alt": "Pisos de madeira: projeto Saraiva Design 7"
+      },
+      {
+       "arquivo": "014-revestimento-ripado-tauari-boreal.png",
+       "alt": "Pisos de madeira: projeto Saraiva Design 8"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Modelos e cores do piso de madeira",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p>Os pisos de madeira são uma escolha atemporal que se adapta com elegância a projetos clássicos e contemporâneos. Seus veios e diferentes tonalidades criam ambientes sofisticados, acolhedores e naturalmente exclusivos.</p>"
+    },
+    {
+     "t": "cards",
+     "itens": [
+      {
+       "titulo": "Conforto e sofisticação",
+       "html": "<p>Além do apelo estético, a madeira proporciona conforto térmico e acústico, tornando residências e espaços comerciais mais agradáveis, elegantes e funcionais.</p>"
+      },
+      {
+       "titulo": "Tecnologia sustentável",
+       "html": "<p>Na Saraiva Design, trabalhamos com pisos estruturados prontos em madeira de alta qualidade. O uso inteligente da matéria-prima reduz desperdícios sem abrir mão da autenticidade da madeira natural.</p>"
+      },
+      {
+       "titulo": "Variedade de modelos e tonalidades",
+       "html": "<p>Nossa linha oferece diferentes espécies e uma ampla variedade de tons, dos mais claros aos mais escuros, permitindo composições exclusivas para residências, ambientes corporativos e comerciais. Nossa equipe orienta a escolha da opção ideal, unindo estética, qualidade, funcionalidade e sustentabilidade.</p>"
+      }
+     ]
+    },
+    {
+     "t": "html",
+     "html": "<p>Pisos e revestimentos de madeira</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Conheça nossas coleções",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p>Encontre espécies, tonalidades e acabamentos desenvolvidos para diferentes estilos e aplicações.</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Carvalho"
+    },
+    {
+     "t": "html",
+     "html": "<p>Madeira reconhecida mundialmente por sua beleza, durabilidade e autenticidade. O Piso Estruturado Carvalho Triângulo combina lâmina de Carvalho importada à estrutura produzida no Brasil, unindo a essência natural da madeira à qualidade e excelência Triângulo.</p><p><strong>Especificações:</strong> L: 190 mm | E: 14 mm | C: 305 a 2.200 mm | Capa 3 mm | Verniz fosco</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Carvalho — Modelos"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "015-carvalho-madri.jpg",
+       "alt": "Piso de madeira Carvalho Madri"
+      },
+      {
+       "arquivo": "016-carvalho-malta.jpg",
+       "alt": "Piso de madeira Carvalho Malta"
+      },
+      {
+       "arquivo": "017-carvalho-milano.jpg",
+       "alt": "Piso de madeira Carvalho Milano"
+      },
+      {
+       "arquivo": "018-carvalho-oslo.jpg",
+       "alt": "Piso de madeira Carvalho Oslo"
+      },
+      {
+       "arquivo": "019-carvalho-ravenna.jpg",
+       "alt": "Piso de madeira Carvalho Ravenna"
+      }
+     ]
+    },
+    {
+     "t": "sub",
+     "texto": "Sense"
+    },
+    {
+     "t": "html",
+     "html": "<p>A coleção Sense valoriza a experiência natural da madeira, destacando seus poros, veios, tonalidades e textura. Com uma proposta mais sensorial e autêntica, cria ambientes acolhedores, contemporâneos e conectados à natureza.</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Sense — Modelos"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "020-pequi-dusk.jpg",
+       "alt": "Piso de madeira Pequi Dusk"
+      },
+      {
+       "arquivo": "021-pique-temper.jpg",
+       "alt": "Piso de madeira Pequi Temper"
+      },
+      {
+       "arquivo": "022-pique-truffle.jpg",
+       "alt": "Piso de madeira Pequi Truffle"
+      },
+      {
+       "arquivo": "023-tauari-dune.jpg",
+       "alt": "Piso de madeira Tauari Dune"
+      },
+      {
+       "arquivo": "024-tauari-tannin.jpg",
+       "alt": "Piso de madeira Tauari Tannin"
+      },
+      {
+       "arquivo": "025-tauari-terracota-1.jpg",
+       "alt": "Piso de madeira Tauari Terracota"
+      }
+     ]
+    },
+    {
+     "t": "sub",
+     "texto": "Creative"
+    },
+    {
+     "t": "html",
+     "html": "<p>Liberdade criativa para explorar diversas paginações, com uma seleção das melhores espécies e cores que transitam do clássico ao contemporâneo.</p><p><strong>Especificações:</strong> L: 131 mm | E: 12 mm | C: 655 mm | Capa 3 mm | Verniz fosco</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Creative — Modelos"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "026-harbour.jpg",
+       "alt": "Piso de madeira Harbour"
+      },
+      {
+       "arquivo": "027-quaruba-1.jpg",
+       "alt": "Piso de madeira Quaruba"
+      },
+      {
+       "arquivo": "028-tauari-lett-2.jpg",
+       "alt": "Piso de madeira Tauari Lett"
+      },
+      {
+       "arquivo": "029-cumaru-1-1.jpg",
+       "alt": "Piso de madeira Cumaru"
+      },
+      {
+       "arquivo": "030-jord.jpg",
+       "alt": "Piso de madeira Jord"
+      }
+     ]
+    },
+    {
+     "t": "sub",
+     "texto": "Nordic"
+    },
+    {
+     "t": "html",
+     "html": "<p>Inspire-se na leveza e no aconchego da coleção, com cores que evocam o estilo nórdico e valorizam a versatilidade e o conforto.</p><p><strong>Especificações:</strong> L: 131 mm e 190 mm | E: 12 e 14 mm | C: 305 a 2.200 mm | Capa 3 mm | Verniz fosco</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Nordic — Modelos"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "031-tauari-jord.jpg",
+       "alt": "Piso de madeira Tauari Jord"
+      },
+      {
+       "arquivo": "032-tauari-boreal.jpg",
+       "alt": "Piso de madeira Tauari Boreal"
+      },
+      {
+       "arquivo": "033-tauari-nordic.jpg",
+       "alt": "Piso de madeira Tauari Nordic"
+      },
+      {
+       "arquivo": "034-tauari-champagne.jpg",
+       "alt": "Piso de madeira Tauari Champagne"
+      },
+      {
+       "arquivo": "035-tauari-harbour.jpg",
+       "alt": "Piso de madeira Tauari Harbour"
+      },
+      {
+       "arquivo": "036-tauari-lett-1.jpg",
+       "alt": "Piso de madeira Tauari Lett"
+      }
+     ]
+    },
+    {
+     "t": "sub",
+     "texto": "Classic"
+    },
+    {
+     "t": "html",
+     "html": "<p>A tradição define a coleção Classic, com madeiras atemporais que atravessam gerações e marcaram a história da decoração.</p><p><strong>Especificações:</strong> L: 131 mm e 190 mm | E: 12 e 14 mm | C: 305 a 2.200 mm | Capa 3 mm | Verniz fosco e semibrilho</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Classic — Modelos"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "037-cumaru.jpg",
+       "alt": "Piso de madeira Cumaru"
+      },
+      {
+       "arquivo": "038-pequi-wheat.jpg",
+       "alt": "Piso de madeira Pequi Wheat"
+      },
+      {
+       "arquivo": "039-sucupira.jpg",
+       "alt": "Piso de madeira Sucupira"
+      },
+      {
+       "arquivo": "040-quaruba-atelier.jpg",
+       "alt": "Piso de madeira Quaruba Atelier"
+      },
+      {
+       "arquivo": "041-cumaru-wirebrush-1.jpg",
+       "alt": "Piso de madeira Cumaru Wirebrush"
+      }
+     ]
+    },
+    {
+     "t": "sub",
+     "texto": "Forro"
+    },
+    {
+     "t": "html",
+     "html": "<p>Exclusiva para revestimentos de parede e teto, a coleção une leveza e sofisticação, com espessura especialmente desenvolvida para esses ambientes. Disponível em acabamentos lisos, frisados e ripados, oferece versatilidade e elegância para diferentes propostas de projeto.</p><p><strong>Especificações:</strong> L: 131, 82, 55 e 132 mm | E: 9 e 12 mm | C: 724 a 2.200 mm | Capa 3 mm | Verniz fosco</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Forro — Modelos"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "042-jequitiba-jord.jpg",
+       "alt": "Forro Jequitibá Jord frisado"
+      },
+      {
+       "arquivo": "043-jequitiba-harbour.jpg",
+       "alt": "Forro Jequitibá Harbour frisado"
+      },
+      {
+       "arquivo": "044-jequitiba-cinnamon.jpg",
+       "alt": "Forro Jequitibá Cinnamon frisado"
+      },
+      {
+       "arquivo": "045-jequitiba-vanilla.jpg",
+       "alt": "Forro Jequitibá Vanilla frisado"
+      },
+      {
+       "arquivo": "046-jequitiba-amber.jpg",
+       "alt": "Forro Jequitibá Amber frisado"
+      },
+      {
+       "arquivo": "047-tauari-boreal-1.jpg",
+       "alt": "Forro Tauari Boreal ripado"
+      },
+      {
+       "arquivo": "048-jequitiba-jord-1.jpg",
+       "alt": "Forro Jequitibá Jord liso"
+      },
+      {
+       "arquivo": "049-jequitiba-harbour-1.jpg",
+       "alt": "Forro Jequitibá Harbour liso"
+      },
+      {
+       "arquivo": "050-jequitiba-cinnamon-1.jpg",
+       "alt": "Forro Jequitibá Cinnamon liso"
+      },
+      {
+       "arquivo": "051-jequitiba-vanilla-1.jpg",
+       "alt": "Forro Jequitibá Vanilla liso"
+      },
+      {
+       "arquivo": "052-jequitiba-amber-1.jpg",
+       "alt": "Forro Jequitibá Amber liso"
+      },
+      {
+       "arquivo": "053-cumaru-2.jpg",
+       "alt": "Forro Cumaru ripado"
+      }
+     ]
+    },
+    {
+     "t": "html",
+     "html": "<p>Aplicações do Piso de Madeira /</p><p>Painéis de Madeira e Forro de Madeira</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "usos",
+   "titulo": "Mais ideias com pisos de madeira",
+   "itens": [
+    {
+     "tipo": "uso",
+     "titulo": "Salas com Piso de Madeira",
+     "html": "<p>Salas com piso de madeira ganham elegância, conforto térmico e uma atmosfera acolhedora. A madeira também pode estar presente no forro, criando continuidade visual e trazendo ainda mais personalidade ao projeto. Já os revestimentos e painéis de madeira valorizam paredes e detalhes do ambiente, combinando com diferentes estilos de decoração e contribuindo para espaços sofisticados, harmoniosos e cheios de aconchego.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "054-harbour.jpg",
+      "alt": "Salas com Piso de Madeira"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Quartos com piso de madeira",
+     "html": "<p>Quartos com piso de madeira transmitem conforto, beleza e uma sensação acolhedora que torna o ambiente ainda mais agradável. O uso da madeira também pode estar presente no forro, trazendo unidade visual e reforçando o aspecto aconchegante do dormitório. Além disso, revestimentos e painéis de madeira são ótimas escolhas para compor detalhes como a cabeceira, criando um espaço mais elegante, harmonioso e convidativo.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "055-03-quarto-boreal-rgb.jpg",
+      "alt": "Quartos com piso de madeira"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Área gourmet com revestimento de madeira",
+     "html": "<p>Na área gourmet, o piso de madeira contribui para um ambiente mais acolhedor, sofisticado e convidativo, ideal para momentos de convivência. A madeira também pode ser explorada no forro, ampliando a sensação de conforto e dando mais unidade ao projeto. Já os revestimentos e painéis de madeira ajudam a integrar com elegância os espaços internos e externos, além de acrescentarem personalidade e valorizarem a composição decorativa do ambiente.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "056-piso-de-madeira-na-parede.jpg",
+      "alt": "Área gourmet com revestimento de madeira"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Tetos com revestimento de madeira",
+     "html": "<p>Tetos com revestimento de madeira proporcionam um acabamento sofisticado e cheio de personalidade.<br>A madeira no teto melhora a sensação de conforto e valoriza projetos residenciais e comerciais.<br>Painéis de madeira criam detalhes exclusivos e uma atmosfera elegante em qualquer ambiente.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "057-forro-estruturado-jequitiba-cinamonn.jpg",
+      "alt": "Tetos com revestimento de madeira"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Apartamentos com piso de madeira",
+     "html": "<p>Em apartamentos, a madeira pode ser explorada de diferentes formas para criar ambientes mais confortáveis, sofisticados e valorizados. O piso de madeira traz aconchego e elegância, enquanto o forro de madeira pode destacar áreas específicas e deixar o projeto mais acolhedor. Revestimentos e painéis de madeira completam a composição, oferecendo durabilidade, personalidade e uma integração visual moderna entre os diferentes espaços.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "058-piso-de-madeira-em-ambientes-integrados.jpg",
+      "alt": "Apartamentos com piso de madeira"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Suíte com piso de madeira",
+     "html": "<p>Na suíte, a madeira contribui para criar uma atmosfera mais tranquila, elegante e acolhedora. O piso de madeira oferece conforto térmico e valoriza a composição do ambiente, enquanto o forro pode trazer ainda mais aconchego e sofisticação. Revestimentos e painéis de madeira complementam o projeto com beleza natural, permitindo combinações com diferentes estilos de móveis e criando um espaço mais personalizado e harmonioso.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "059-piso-de-madeira-de-alto-padrao.jpg",
+      "alt": "Suíte com piso de madeira"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "Dúvidas, dicas e estilos do piso de madeira",
+   "intro": "<p>Tudo sobre pisos de madeira</p>",
+   "itens": [
+    {
+     "titulo": "Quais são as vantagens do piso de madeira?",
+     "html": "<ol><li><strong>Fácil instalação:</strong> Os pisos da Saraiva Design vêm com sistema de encaixe macho e fêmea, que facilita o processo de instalação.</li> <li><strong>Conforto térmico e acústico:</strong> A madeira ajuda a manter o equilíbrio térmico dos ambientes, retendo o calor no inverno e oferecendo uma sensação agradável no verão. O piso de madeira natural estruturado também reduz a transmissão de sons entre os cômodos, criando espaços mais tranquilos e confortáveis.</li> <li><strong>Naturalidade e exclusividade:</strong> Cada peça apresenta variações naturais de cor, veios e texturas, conferindo personalidade ao ambiente e trazendo um toque acolhedor e elegante.</li> <li><strong>Fácil manutenção:</strong> Com uma rotina simples de limpeza, usando pano levemente úmido e produtos específicos para madeira, o piso mantém sua aparência e seu brilho por muito tempo. Pequenos danos, como arranhões, também podem receber reparos pontuais.</li> <li><strong>Valorização do imóvel:</strong> Por ser um revestimento nobre e valorizado no mercado imobiliário, o piso de madeira pode se tornar um diferencial importante em uma eventual venda do imóvel.</li></ol>",
+     "imagem": null
+    },
+    {
+     "titulo": "Como é instalado o piso de madeira?",
+     "html": "<p>O piso de madeira estruturado é instalado diretamente no contrapiso, utilizando cola de poliuretano (PU), que oferece alta aderência, flexibilidade e acompanha as movimentações naturais da madeira.</p><p><strong>Passo a passo da instalação:</strong></p><ol><li><strong>Preparação do contrapiso:</strong> O contrapiso deve estar nivelado, limpo, seco e resistente. Antes da instalação, é importante verificar sua umidade para garantir que esteja dentro dos limites recomendados pelo fabricante. Em imóveis térreos, o uso de impermeabilizante é obrigatório.</li> <li><strong>Marcação da instalação:</strong> Define-se o sentido das réguas, normalmente acompanhando a maior dimensão do ambiente ou a direção da entrada de luz natural.</li> <li><strong>Aplicação da cola PU:</strong> A cola é aplicada diretamente sobre o contrapiso com uma desempenadeira dentada, formando cordões uniformes. A aplicação deve ser feita em pequenas áreas por vez, respeitando o tempo de trabalho da cola.</li> <li><strong>Assentamento das réguas:</strong> As réguas são encaixadas pelo sistema macho e fêmea e pressionadas sobre a cola. Utilizam-se espaçadores junto às paredes para manter a junta de dilatação. As emendas devem ser desencontradas, garantindo melhor estética e estabilidade.</li> <li><strong>Limpeza e cura:</strong> O excesso de cola deve ser removido imediatamente. Após a instalação, é necessário aguardar 24 horas, ou o período indicado pelo fabricante da cola PU, antes de liberar o tráfego.</li></ol>",
+     "imagem": {
+      "arquivo": "060-whatsapp-image-2026-08-10-at-14-33-35-2.jpeg",
+      "alt": "Como é instalado o piso de madeira?"
+     }
+    },
+    {
+     "titulo": "Os pisos de madeira podem ser instalados sobre outros revestimentos?",
+     "html": "<p>Em muitos casos, sim. Dependendo das condições da superfície existente e do sistema de instalação escolhido, é possível realizar a aplicação sobre determinados revestimentos, <strong>reduzindo o tempo de obra</strong> e as intervenções no ambiente.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "O piso de madeira pode ser utilizado em paredes e tetos?",
+     "html": "<p>Embora o piso de madeira estruturado possa ser utilizado em paredes e tetos, a Saraiva Design possui uma linha específica para essas aplicações, com lamelas mais finas e leves, mais adequadas para revestimentos verticais e forros.</p><p>A linha oferece diversos modelos, acabamentos lisos e frisados e diferentes espessuras de régua, permitindo maior liberdade de composição.</p><p>A instalação é feita por um sistema de encaixe sobre uma estrutura previamente nivelada e dimensionada, em madeira ou perfil metálico. As réguas são fixadas mecanicamente com parafusos, grampos ou sistema específico do produto.</p><p>Para garantir o melhor desempenho e acabamento, recomendamos que a instalação seja realizada por <strong>profissionais especializados</strong>.</p>",
+     "imagem": {
+      "arquivo": "061-whatsapp-image-2026-08-10-at-14-33-35-3.jpeg",
+      "alt": "O piso de madeira pode ser utilizado em paredes e tetos?"
+     }
+    },
+    {
+     "titulo": "Como é instalado o revestimento ou painel de madeira na parede?",
+     "html": "<p>O revestimento de madeira é instalado sobre uma parede limpa, seca e nivelada. A fixação pode ser feita com cola de alta aderência, quando o substrato permite, ou sobre uma estrutura de apoio, conforme o tipo de parede e o projeto.</p><p>As peças são alinhadas e encaixadas cuidadosamente, garantindo um acabamento preciso e elegante. Ao final, são aplicados os perfis e acabamentos necessários para um resultado uniforme e sofisticado.</p><p>Para assegurar o melhor desempenho e a durabilidade do revestimento, recomendamos que a instalação seja realizada por <strong>profissionais especializados</strong>.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Piso de madeira é indicado para apartamentos?",
+     "html": "<p>Sim. Além da estética sofisticada, proporciona <strong>excelente conforto acústico e térmico</strong>, tornando os ambientes mais agradáveis.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "O piso de madeira pode ser usado em ambientes externos?",
+     "html": "<p>Não. O piso de madeira é desenvolvido para uso em ambientes internos e não é recomendado para áreas externas ou locais expostos diretamente à chuva, ao sol intenso e à umidade constante.</p><p>A exposição às intempéries pode comprometer o desempenho, a estabilidade e a durabilidade do produto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "O piso de madeira pode ser usado em regiões litorâneas?",
+     "html": "<p>Sim. O piso de madeira pode ser utilizado em regiões litorâneas, desde que seja instalado corretamente e receba os cuidados de manutenção recomendados.</p><p>Como essas regiões apresentam maior umidade e concentração de sal no ar, é importante manter os ambientes bem ventilados, evitar o acúmulo de água sobre o piso e realizar a limpeza conforme as orientações do fabricante. Recomendamos o uso dos <strong>limpadores Roggen</strong>.</p><p>Com esses cuidados, o piso preserva sua beleza, estabilidade e durabilidade mesmo em cidades litorâneas.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Piso de madeira combina com ambientes modernos?",
+     "html": "<p>Perfeitamente. A madeira natural é um material <strong>atemporal</strong> que harmoniza tanto com projetos clássicos quanto contemporâneos.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Como escolher a tonalidade ideal para o meu projeto?",
+     "html": "<p>A escolha depende do estilo arquitetônico, da iluminação do ambiente e do resultado desejado. Tons claros costumam transmitir leveza e amplitude, enquanto tonalidades médias e escuras agregam <strong>sofisticação, aconchego e elegância</strong>. Nossa equipe pode auxiliar na seleção da melhor opção para cada projeto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Qual é a espessura do piso de madeira?",
+     "html": "<p>A espessura do piso de madeira pode variar conforme a linha e o modelo escolhidos. Essa medida considera a estrutura completa da régua e influencia características como estabilidade, resistência e compatibilidade com os demais revestimentos do ambiente.</p><p>Para definir a opção ideal, é importante considerar o nível do contrapiso, as transições entre os cômodos e as especificações técnicas do projeto. Consulte as medidas disponíveis no esquema abaixo e confirme o modelo com nossa equipe antes da instalação.</p>",
+     "imagem": {
+      "arquivo": "062-screenshot-2026-08-06-at-17-40-59.png",
+      "alt": "Qual é a espessura do piso de madeira?"
+     }
+    },
+    {
+     "titulo": "O piso de madeira é resistente à água? Pode molhar?",
+     "html": "<p>O piso de madeira possui acabamento com verniz de alta resistência, que oferece proteção contra respingos e permite a limpeza rotineira com pano levemente úmido.</p><p>No entanto, ele não deve ficar exposto à água em excesso ou por longos períodos, pois a umidade pode penetrar pelas juntas e comprometer a madeira ao longo do tempo.</p><p>Em caso de derramamento de líquidos, seque o local o mais rápido possível. Com os cuidados adequados, o piso mantém sua beleza e durabilidade por muitos anos.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Piso de madeira risca com facilidade?",
+     "html": "<p>Os pisos recebem <strong>acabamentos de alta qualidade</strong> que oferecem proteção para o uso cotidiano. Como qualquer revestimento natural, alguns cuidados ajudam a preservar sua beleza por muitos anos.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "É possível trocar uma régua depois que o piso foi instalado?",
+     "html": "<p>Sim. Caso alguma régua sofra riscos, impactos ou outro tipo de dano, é possível substituir apenas a peça afetada, sem a necessidade de remover todo o piso.</p><p>A troca deve ser executada por um <strong>profissional qualificado</strong>, utilizando as técnicas adequadas para preservar o acabamento e a integridade do restante do piso. Em caso de necessidade, consulte o instalador responsável pela obra.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Como é feita a manutenção da pintura e quando ela é indicada?",
+     "html": "<p>De fábrica, não há recomendação para manutenção periódica da pintura. O piso recebe <strong>nove camadas de verniz com nanotecnologia</strong>, desenvolvidas para preservar sua estética e durabilidade.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Os pisos de madeira exigem muita manutenção?",
+     "html": "<p>Não. Os pisos de madeira são projetados para oferecer <strong>durabilidade e praticidade</strong> no dia a dia. A limpeza regular pode ser realizada com vassoura de cerdas macias, aspirador de pó ou pano levemente umedecido. Cuidados simples ajudam a preservar a beleza natural da madeira por muitos anos.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Qual é a durabilidade de um piso de madeira?",
+     "html": "<p>Com <strong>instalação adequada e manutenção correta</strong>, um piso de madeira pode manter sua beleza e desempenho por décadas.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Piso de madeira deixa o ambiente mais quente?",
+     "html": "<p>A madeira possui <strong>isolamento térmico natural</strong>, proporcionando maior conforto em diferentes estações do ano.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Os pisos de madeira ajudam no conforto acústico?",
+     "html": "<p>Sim. A madeira possui propriedades naturais que auxiliam na <strong>absorção e redução de ruídos</strong>, tornando os ambientes mais confortáveis e agradáveis, especialmente em residências, apartamentos e escritórios.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Os pisos de madeira são sustentáveis?",
+     "html": "<p>Sim. Quando provenientes de <strong>fontes responsáveis</strong>, contribuem para construções mais sustentáveis e ambientalmente conscientes.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Os pisos de madeira desvalorizam com o tempo?",
+     "html": "<p>Pelo contrário. A madeira natural é um material <strong>nobre e atemporal</strong> que mantém seu apelo estético ao longo dos anos. Quando bem conservado, o piso contribui para a valorização do imóvel e agrega sofisticação aos ambientes.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Como o piso é enviado e quantos metros quadrados vêm em cada caixa?",
+     "html": "<p>O piso é vendido e enviado em caixas. Cada embalagem contém uma quantidade de metros quadrados que varia conforme o modelo escolhido.</p><p>Para calcular a quantidade necessária, dividimos a metragem total do projeto pelo rendimento de cada caixa. Assim, identificamos quantas caixas deverão ser enviadas para a obra. Também é importante considerar a margem de perda recomendada para recortes e ajustes da instalação.</p>",
+     "imagem": null
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Floresta Manoa – Triângulo",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p>A <strong>Floresta Manoa</strong> representa o compromisso da Triângulo com o manejo florestal sustentável, conciliando preservação ambiental, responsabilidade social e produção de madeira de alta qualidade. Há mais de 14 anos, a empresa investe no desenvolvimento e no cuidado contínuo da floresta, garantindo que cada etapa do manejo respeite os ciclos naturais e contribua para sua regeneração.</p><p>O manejo de baixo impacto permite a retirada de apenas <strong>4,7% a 6,8% da floresta por ciclo</strong>, respeitando o tempo necessário para sua recuperação completa. Esse processo, aliado às certificações FSC® e PEFC, assegura o uso responsável da madeira, reduz a pressão sobre florestas nativas, contribui para a captura de carbono e promove o desenvolvimento das comunidades locais por meio da geração de emprego, educação e conhecimento.</p><p>Localizada em <strong>Cujubim, Rondônia</strong>, a Floresta Manoa é referência em sustentabilidade, demonstrando que é possível produzir madeira de forma responsável, preservar a floresta para as futuras gerações e levar aos projetos de arquitetura uma matéria-prima com cuidado, rastreabilidade e respeito à natureza.</p><p>Manejo de baixo impacto que respeita o período de recuperação e regeneração natural da floresta.</p><p>Uma floresta manejada de forma responsável, com controle, rastreabilidade e preservação ambiental.</p><p>Reconhecimentos que reforçam o compromisso com a origem responsável e o manejo florestal sustentável.</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Conheça a Floresta Manoa"
+    },
+    {
+     "t": "videos",
+     "videos": [
+      {
+       "id": "eH_n9H_Yt1c",
+       "capa": "yt-eH_n9H_Yt1c.jpg"
+      }
+     ]
+    },
+    {
+     "t": "html",
+     "html": "<p>Conheça a Floresta Manoa e seu processo de manejo sustentável</p>"
+    },
+    {
+     "t": "videos",
+     "videos": [
+      {
+       "id": "HeBbFldfN_w",
+       "capa": "yt-HeBbFldfN_w.jpg"
+      }
+     ]
+    },
+    {
+     "t": "html",
+     "html": "<p>Preservação, rastreabilidade e produção responsável de madeira</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Reconhecimento internacional"
+    },
+    {
+     "t": "html",
+     "html": "<p>Em 2010, a Triângulo foi reconhecida pela <strong>FAO — Organização das Nações Unidas para a Alimentação e a Agricultura</strong> como um caso exemplar de Manejo Florestal Sustentável entre os países do Caribe e da América Latina.</p><p>A empresa foi citada em seu anuário e conquistou destaque mundial pelo estudo, implantação e administração do Manejo Florestal Sustentável na Floresta Manoa.</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Certificações e reconhecimentos"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "063-screenshot-2026-08-07-at-16-13-38.png",
+       "alt": "Certificação e reconhecimento da Floresta Manoa"
+      },
+      {
+       "arquivo": "064-selo-pefc.png",
+       "alt": "Certificação PEFC"
+      },
+      {
+       "arquivo": "065-verra-1024x341-1.png",
+       "alt": "Verra"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

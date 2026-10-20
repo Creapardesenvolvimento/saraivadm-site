@@ -194,3 +194,34 @@ Cada entrada: data, página, o que mudou e por quê. O histórico completo de ar
 - Os textos estão no HTML da página (o Google lê), sem widget externo e sem carregar scripts do Google.
 - **Não** foi adicionado schema de avaliações (`AggregateRating`/`Review`): o Google não exibe estrelas para avaliações que a própria empresa publica no site e pode tratar como marcação enganosa. As estrelas continuam aparecendo no Perfil da Empresa.
 - Para atualizar: trocar/adicionar avaliações e a nota/total em `src/data/depoimentos.ts`.
+
+---
+
+## 2026-10-20 — 8 páginas de produto importadas do site atual + menu com submenus
+
+**Páginas (mesmas URLs do site atual):** `/forro-de-palha/`, `/forro-em-esteiras-de-bambu/`, `/brise-de-madeira/`,
+`/cobertura-para-pergolado/`, `/deck-de-madeira/`, `/mlc/`, `/pisos-de-madeira/`, `/forro-de-madeira/`.
+
+- Conteúdo integral do site atual (textos, fotos, vídeos, PDFs, dúvidas, dicas e cidades), na identidade nova.
+- Cada página: 1 H1, `<title>` e meta description novos (antes: "Nome - Saraivadm" e sem description), trilha,
+  dados estruturados `Service` + `BreadcrumbList` + `FAQPage` (quando há dúvidas).
+- Limpeza automática: versões duplicadas de celular do Elementor, listas de palavras-chave das cidades,
+  aviso "Você não pode copiar conteúdo desta página", e-mail protegido do Cloudflare, títulos em caixa alta,
+  erros como "lazerz" e "churrasqueria".
+- Fotos convertidas para WebP em vários tamanhos; dúvidas, dicas e cidades em `<details>` (texto indexável).
+- Template único `src/pages/[slug].astro` + importador em `ferramentas/importar/` para as próximas páginas.
+
+**Links corrigidos para as URLs reais** (preserva o SEO e evita redirecionamentos):
+- Cards da home e rodapé: `/forro-de-bambu/` → `/forro-em-esteiras-de-bambu/`, `/brises/` → `/brise-de-madeira/`,
+  `/coberturas/` → `/cobertura-para-pergolado/`, `/decks/` → `/deck-de-madeira/`, `/pergolado-mlc/` → `/mlc/`,
+  `/piso-de-madeira/` → `/pisos-de-madeira/`, `/sobre-nos/` → `/institucional/`, `/antes-e-depois/` → `/antes-depois/`.
+- **Menu do topo com submenus** (como no site atual): Pergolados, Coberturas, Forros e Outros abrem a lista de produtos;
+  Piso de madeira e Deck vão direto para a página. No celular, os submenus aparecem abertos dentro do menu.
+
+### Pendências
+- [ ] Páginas ainda não criadas (links do menu/rodapé já apontam para elas): telha-para-pergolado, pergoconfort,
+  pergoconfort-max, forro-ripado, forro-de-lambril, painel-ripado, caramanchao, gazebo, pergokit, deck-modular,
+  institucionais (institucional, portfolio, antes-depois, catalogos, contato, parcerias, trabalhe-conosco, redes-sociais),
+  políticas e os 101 posts do blog.
+- [ ] `/forro-de-madeira/` no site atual tem pouco texto (~300 caracteres). Vale enriquecer ou apontar para forro ripado/lambril.
+- [ ] Folders e tabelas em PDF continuam apontando para o WordPress atual; precisam ser copiados (e comprimidos) antes de desligar o WordPress.

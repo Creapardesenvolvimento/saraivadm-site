@@ -1,0 +1,528 @@
+{
+ "slug": "deck-de-madeira",
+ "nome": "Deck de madeira",
+ "seo": {
+  "title": "Deck de Madeira para Piscina e Área Externa | Saraiva Design",
+  "description": "Deck de madeira de alto padrão para piscinas, jardins, áreas gourmet e de lazer. Madeiras nobres selecionadas e instalação especializada."
+ },
+ "hero": {
+  "titulo": "Deck de madeira",
+  "texto": "Deck de madeira próprio para área externa e interna. Madeiras selecionadas para deck com o melhor sistema de fixação do mercado",
+  "imagem": "035-deck-de-madeira.jpg"
+ },
+ "faixa": [
+  "Madeiras nobres",
+  "Para piscina e área externa",
+  "Projeto sob medida",
+  "Instalação especializada"
+ ],
+ "relacionados": [
+  "/pergolado-de-madeira/",
+  "/pisos-de-madeira/",
+  "/pergolado-metalico/",
+  "/cobertura-para-pergolado/",
+  "/forro-de-palha/",
+  "/brise-de-madeira/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Conheça o deck de madeira",
+   "lead": "Deck de madeira de alto padrão para piscinas, áreas externas, áreas de lazer, gourmet e jardim. O Deck de madeira da Saraiva Design é especial, com peças selecionadas e tipo exportação o deck de madeira se destaca com material natural em cumarú cerne",
+   "blocos": [
+    {
+     "t": "img",
+     "arquivo": "001-deck-de-madeira-jpg.jpeg",
+     "alt": "Deck de madeira"
+    },
+    {
+     "t": "html",
+     "html": "<p>O <strong>deck de madeira da Saraiva Design</strong> é único e de altíssima qualidade, produzido com <strong>madeiras selecionadas padrão exportação</strong>, como o Cumaru, garantindo beleza e resistência.</p><p>A empresa é especialista na construção de decks de alto padrão, cuidando de todo o processo, desde a estrutura inferior até as réguas do deck, sempre com um rigoroso controle de qualidade.</p><p>Utilizando materiais premium e contando com uma equipe altamente capacitada, composta por <strong>carpinteiros e serralheiros especializados</strong>, a Saraiva garante excelência em cada projeto.</p><p><strong>Qualidade superior:</strong> Madeiras selecionadas e padrão exportação, garantindo durabilidade e acabamento impecável.</p><p><strong>Sistema exclusivo:</strong> Método de fixação desenvolvido para maior resistência, estabilidade e longa vida útil.</p><p><strong>Atendimento amplo:</strong> Atuação em todo o Estado de São Paulo e projetos executados em todo o Brasil.</p><p><strong>Versatilidade:</strong> Ideal para piscina, área gourmet, jardim, pergolados, churrasqueira, terraço e diversos outros ambientes, agregando sofisticação e valorização ao espaço.</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "usos",
+   "titulo": "Onde usar o deck de madeira",
+   "itens": [
+    {
+     "tipo": "uso",
+     "titulo": "Tipos de Deck de Madeira",
+     "html": "<p>Os decks de madeira podem ter diversas utilizações e aplicações. Os mesmos montados com madeiras maciças, naturais, duras, de lei e apropriadas para área externa podem ter contatos direto com sol e chuva, podendo molhar, pegar sol e ações do tempo. Para essas decks externos indicamos madeiras como GARAPEIRA ou CUMARÚ.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "002-madeira-nobre-1-scaled.png",
+      "alt": "Madeira Nobre"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Deck de madeira no pergolado",
+     "html": "<p><strong>O deck de madeira é uma ótima opção para acompanhar o seu pergolado.</strong> Por ser adaptável para todos os ambientes não têm a necessidade de retirar pisos e nem construir alvenaria para a sua sustentação, ou seja, o deck de madeira pode ser apoiado sobre o piso existente no local abaixo do pergolado. Além de combinar com o madeiramento do pergolado e deixar um ambiente harmónico, o deck de madeira é uma solução para acabamento do solo abaixo do pergolado, <strong>as réguas de cumarú do deck combinam e ornam com as madeiras de garapeira do pergolado.</strong> Deck de madeira + Pergolado é uma ótima opção para transformar seu ambiente, parece até que um foi feito para o outro, existem muitos projetos onde o deck de madeira fica ou dentro do pergolado ou ao lado do mesmo, uma harmonia perfeita e arquitetônica.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "003-pergolado-e-deck-de-madeira-11zon.avif",
+      "alt": "Deck de madeira no pergolado"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Deck de madeira no lago",
+     "html": "<p><strong>O deck de madeira</strong> <strong>no lago</strong> cria um espaço natural integrado ao ambiente, valorizando a paisagem e proporcionando uma área de convivência elegante. A estrutura, quando bem projetada, garante resistência à umidade e estabilidade ao longo do tempo. A madeira torna o visual mais acolhedor e harmônico, reforçando a sensação de tranquilidade. Ideal para contemplação, pescaria ou momentos de descanso, o deck transforma o entorno em um ponto de destaque. U<strong>m recurso estético e funcional que complementa projetos residenciais e de lazer com autenticidade.</strong></p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "004-deck-no-lago.avif",
+      "alt": "Deck de madeira no lago"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Deck de madeira com hidro",
+     "html": "<p><strong>O deck de madeira com hidro adiciona conforto e sofisticação à área externa,</strong> criando um ambiente relaxante e visualmente agradável. A madeira traz um acabamento natural que se integra perfeitamente ao espaço, valorizando o conjunto. A estrutura elevada facilita a instalação da jacuzzi, garantindo segurança e estabilidade. Além de funcional, o deck gera sensação de spa, ideal para lazer familiar ou momentos de descanso. É uma solução que une estética, praticidade e bem-estar. Um complemento que transforma qualquer ambiente em refúgio particular.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "005-deck-com-hidro-spa.avif",
+      "alt": "Deck de madeira com hidro"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Deck de madeira beira de piscina",
+     "html": "<p>O deck de madeira é a opção ideal para a piscina, sendo um ótimo acabamento estético e estrutural para a áreas próximas a piscinas. <strong>O deck de madeira harmoniza com a água cristalina das piscinas</strong>, sendo um ponto de apoio para espreguiçadeiras e móveis de área de externa, o deck de madeira suaviza um tablado, pisante que pode ser colocado ao lado da piscina, e ele pode ter contato direto com ações do tempo e respingos da água da piscina. <strong>Um dos melhores pisos para piscina é o deck de madeira.</strong></p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "006-deck-de-madeira-em-beira-de-piscina-11zon-1.avif",
+      "alt": "Deck de madeira beira de piscina"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Deck de madeira na área gourmet",
+     "html": "<p>A área gourmet é um dos locais mais acessado da casa, já que é o ambiente onde todos as comemorações são realizadas, por isso um piso fácil de limpar, antiderrapante, <strong>estético e nobre como o deck de madeira é a opção ideal para trazer aconchego, praticidade e estética.</strong><br>Por ser um piso que pode ser construído em qualquer tipo de solo e elevação, o deck de madeira é ideal para áreas gourmets. Área gourmet, ambiente de churrasco e locais de confraternizações podem ser utilizados sobre o deck de madeira, com estilo e harmonia, <strong>valorizando sempre o princípio de acolhimento e aconchego que uma área gourmet precisa.</strong></p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "007-anyconv-com-perg-gourmet.avif",
+      "alt": "Deck de madeira na área gourmet"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Deck de madeira para jardim",
+     "html": "<p>O jardim é um ambiente natural da casa, <strong>então a melhor opção para criar um espaço de convívio que seja harmonioso com a folhagem e ideia de naturalidade é o deck de madeira</strong>, esse tipo de material fornece uma beleza natural, leve, traz vida e destaque para as plantas, pode ser inclusive utilizado para criar um cachepô para as plantas, ou um painel de madeira para suporte de vasos e até áreas de pisantes. Além de ser uma ótima opção para quem não quer mexer com construção civil, <strong>o deck de madeira fornece uma excelente durabilidade em contato com chuva e sol.</strong></p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "008-deck-para-jardim-11zon.avif",
+      "alt": "Deck de madeira para jardim"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Deck de madeira para área externa",
+     "html": "<p>O deck de madeira para área externa amplia o uso do ambiente e cria uma superfície confortável, resistente e de grande apelo visual. A madeira proporciona elegância natural e combina com diferentes estilos arquitetônicos. A estrutura é ideal para reunir pessoas, acomodar móveis e compor espaços de convivência. Com manutenção adequada, o deck mantém durabilidade mesmo exposto ao clima. É uma solução prática para jardins, piscinas e varandas. Um elemento que valoriza o projeto e melhora a experiência ao ar livre.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "009-deck-para-area-externa-1.avif",
+      "alt": "Deck de madeira para área externa"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Alguns Projetos de Deck de Madeira",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "010-acawa-11zon.webp",
+       "alt": "Deck de madeira: projeto Saraiva Design 1"
+      },
+      {
+       "arquivo": "011-dawawd-11zon.webp",
+       "alt": "Deck de madeira: projeto Saraiva Design 2"
+      },
+      {
+       "arquivo": "012-dqwfqf-11zon.webp",
+       "alt": "Deck de madeira: projeto Saraiva Design 3"
+      },
+      {
+       "arquivo": "013-evwvew-11zon.webp",
+       "alt": "Deck de madeira: projeto Saraiva Design 4"
+      },
+      {
+       "arquivo": "014-sem-titulo-3.webp",
+       "alt": "Deck de madeira: projeto Saraiva Design 5"
+      },
+      {
+       "arquivo": "015-w3wf-11zon.webp",
+       "alt": "Deck de madeira: projeto Saraiva Design 6"
+      },
+      {
+       "arquivo": "016-wdqdwqd-11zon.webp",
+       "alt": "Deck de madeira: projeto Saraiva Design 7"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "Dúvidas sobre o Deck de Madeira",
+   "intro": null,
+   "itens": [
+    {
+     "titulo": "O que é deck de madeira?",
+     "html": "<p>Na arquitetura, deck é uma superfície lisa capaz de suportar peso, similar ao pavimento, mas tipicamente construída ao ar livre. Já no design de interiores o deck de madeira é utilizado para embelezar ambientes externos.</p><p>Na Saraiva Design em madeiras o deck de madeira é desenvolvido como uma forma de ampliação de áreas, soluções de pisos para área de lazer, revestimento de contrapisos, aproveitamento de áreas permeáveis e tudo com um toque de sofisticação, rusticidade e expertise.</p><p>O deck de madeira é um conjunto de madeiras naturais que ao se encaixar e fixar montam um tablado, pisante ou estrutura de madeira que permite a passagem de pessoas e até veículos por cima.</p><p>Para se montar um deck de madeira é necessário: estrutura (parte de baixo) e réguas (parte de cima) e deve ser montado com madeiras apropriadas, fixadores para áreas externas, pintura com verniz ou stain e profissional habilitado.</p>",
+     "imagem": {
+      "arquivo": "017-capa-oq-e-deck-de-madeira-11zon.webp",
+      "alt": "O que é deck de madeira?"
+     }
+    },
+    {
+     "titulo": "Qual a melhor madeira para um deck e o que pôr na estrutura?",
+     "html": "<p>Escolher corretamente o madeiramento que irá utilizar é algo essencial no seu projeto, tendo em vista que isso garantirá a durabilidade, estética e resistência do seu novo ambiente.</p><p>O deck de madeira é dividido em duas partes: 1ª parte: estrutura e a 2ª parte: pisante ou patamar.</p><p><strong>PARTE I: ESTRUTURA</strong><br> A estrutura do deck impacta diretamente na resistência, longevidade e estruturação do projeto. A Saraiva Design em Madeiras utiliza na estrutura do deck a madeira Garapeira, que é uma madeira nobre de 1ª qualidade e tipo exportação. Esse madeiramento é estrutural, possui fibras resistentes, massa robusta, cerne duro e é ideal para ser utilizada no processo de estrutura do deck de madeira, impactando na densidade e durabilidade do deck. A estrutura do deck de madeira pode ser feita com diversas bitolas de madeiras, como:</p><p>– Colunas: 15x15cm - 20x20cm<br> – Pranchas: 8x20cm - 8x30cm<br> – Vigas: 5x20cm - 5x15cm - 5x11cm<br> – Caibros e ripas: 5x7cm - 5x5cm - 3x4cm - 2x4cm</p><p>É importante projetar, calcular e dimensionar as peças e o layout da estrutura do deck, pois a estrutura não pode empenar, entortar ou ceder. É muito importante no momento de fazer a estrutura do deck de madeira, entender qual o tipo de solo e como será a fundação dessa estrutura.</p><p>O deck de madeira pode ser estruturado sobre a terra ou sobre o contrapiso ou piso.</p><p>É importante obedecer o distanciamento de 50cm de eixo a eixo entre os barrotes da estrutura, a fim de não deixar empenar as réguas de deck que estão por cima da estrutura. No momento de fixar a estrutura, utilize fixadores adequados e apropriados para área externa.</p><p><strong>PARTE II: PISANTE / PATAMAR / RÉGUAS DE DECK</strong><br> Essa é a parte de cima, onde todos pisam e visualizam, pode ser chamado de patamar, pisante, deck, área de utilização ou pavimento, entre outras. A Saraiva Design em Madeiras utiliza a madeira Cumaru tipo exportação (1ª linha de qualidade), que é uma madeira nobre, de cerne duro, resistente a intempéries, estética e de alta densidade. As madeiras são produzidas e beneficiadas em formato de réguas (retangulares), possuindo medidas de 2cm de espessura x 10cm de largura e o comprimento de acordo com os vãos e demanda do cliente, sendo normalmente encontradas de 25 em 25cm, até 6,00m de comprimento.</p><p>É importante no momento de fazer a instalação do deck de madeira (réguas de deck) pensar no espaço para dilatação das réguas, que pode variar entre 2mm a 4mm. Esse espaçamento fará com que a madeira se dilate ou se movimente, impedindo a mesma de espanar ou empenar, além de servir como escape para a caída de água da chuva.</p><p>As réguas de deck devem possuir um leve boleado nas laterais, facilitando limpezas e a drenagem ou fluxo de água. As réguas do deck devem ser fixadas com fixadores indicados, apropriados para área externa. A Saraiva Design sugere a utilização do sistema de fixação à base de pinos galvanizados.</p><p>No momento de montar seu deck de madeira, procure utilizar somente madeiras certificadas. A Saraiva Design em Madeiras fornece aos clientes o DOF (Documento de Origem Florestal) emitido pelo IBAMA, documento que garante a rastreabilidade das madeiras, espécie utilizada e o processo de extração por meio de manejo sustentável e correto, garantindo a preservação do nosso bioma e o correto processo de sustentabilidade nativo madeireiro.</p>",
+     "imagem": {
+      "arquivo": "018-qual-madeira-utilizar-na-estrutura-do-deck-11zon.webp",
+      "alt": "Qual a melhor madeira para um deck e o que pôr na estrutura?"
+     }
+    },
+    {
+     "titulo": "Como é feito o deck de madeira?",
+     "html": "<p>O deck de madeira é feito sob medida para os ambientes e de acordo com a individualidade e necessidade de cada projeto. Pode ser utilizado sobre a terra ou contrapiso e com elevação ou sem. O deck deve ser feito com madeira e com um profissional habilitado da área, que normalmente é um carpinteiro. Cada ambiente tem um processo de estruturação e montagem:</p><p><strong>1º Deck de madeira sobre contrapiso e rente ao chão:</strong> Esse é o processo mais simples de instalação, utilizando uma estrutura com ripas em madeira de 2x4cm ou 3x4cm (bitola) fixadas sobre o contrapiso e a cada 50cm de separação entre elas. Após a estrutura ser fixada com parafusos sobre o contrapiso haverá um barroteamento (ripamento) pronto para ser utilizado como apoio para as réguas do deck. Esse processo de instalação requer um contrapiso com caída para escoamento da água da chuva. Nesse processo de instalação as réguas de deck ficam elevadas do solo ou piso entre 2 e 4cm de altura e é o mais próximo possível que se pode deixar as réguas de deck do piso.</p><p><strong>2º Deck de madeira sobre o contrapiso e elevado acima de 10cm:</strong> Nesses casos de instalações elevadas a estrutura do deck de madeira precisa ser engrossada e reforçada para trazer firmeza e segurança. Portanto a Saraiva Design sugere a utilização de caibros de 5x7cm (bitola) para fazer a elevação como pilaretes (vertical) e depois a utilização de caibros com as mesmas bitolas (5x7cm) para fazer os barrotes (horizontal) e em seguida fixar as réguas de deck sobre os barrotes de caibros. A estrutura deve ser reforçada com esses caibros para aguentar o vão entre os pilares, uma vez que os barrotes não serão 100% apoiados sobre o contrapiso. Os pilares (“toquinhos” de caibros 5x7cm) devem ser fixados sobre o contrapiso a cada 50 / 60cm e então a fixação com os barrotes (caibros 5x7cm horizontais) deve ser feita de forma linear sobre esses toquinhos.</p><p>O deck elevado sobre o contrapiso pode precisar de uma estrutura ainda mais robusta e reforçada, nos casos de elevações acima de 70cm, 100cm, entre outras medidas. Esses casos requerem maiores atenções e normalmente necessitam de uma estrutura com colunas, vigas, pranchas e caibros. Os decks de madeira elevados podem ser estruturados em madeira garapeira nobre, sendo toda a estrutura fixada com parafusos apropriados para áreas externas e as réguas de deck fixadas com pinos galvanizados.</p><p><strong>3º Deck de madeira sobre a terra e elevado:</strong> Esse é o cenário com uma estrutura preparada para o contato e fixação na terra, para isso é também necessário a utilização de madeiras nobres como a garapeira e agora a partir de caibros 5x7cm (bitola). Além dos caibros o deck estruturado sobre a terra, dependendo da altura, vai pedir a utilização de colunas, vigas e pranchas e um dos grandes diferenciais desse processo de instalação é que as colunas (pilaretes), independente da bitola, vão precisar ser chumbadas na terra com areia, pedra e cimento. É muito importante fazer a fundação e chumbamento dessa estrutura, sempre averiguando o tipo de solo e a carga que será aplicada sobre a estrutura do deck de madeira.</p><p>É importante ao montar um deck de madeira sobre a terra utilizar mantas bidins, britas e fazer a limpeza na parte de baixo do deck, além de retirar toda a grama e mato, para não crescer vegetação por baixo do deck e ficar sempre limpinho por baixo.</p><p>Todo deck elevado, seja ele sobre a terra ou sobre o contrapiso, é importante pensar nos fechamentos laterais. As famosas saias ripadas ou saias de deck laterais podem bloquear a entrada de animais e bichos peçonhentos por baixo do deck.</p><p>Vale lembrar que para cada tipo de situação, ambiente e projeto, requer algum cuidado extra e processo específico, por isso antes de iniciar a montagem de um deck de madeira entre em contato com a Saraiva Design em Madeiras.</p>",
+     "imagem": {
+      "arquivo": "019-como-e-feito-o-deck-de-madeira.webp",
+      "alt": "Como é feito o deck de madeira?"
+     }
+    },
+    {
+     "titulo": "Qual o melhor sistema de fixação do deck de madeira?",
+     "html": "<p>Antigamente o deck de madeira era fixado com pregos e parafusos, um sistema de fixação arcaico que além de não ter uma estética agradável, danificava o deck de madeira e diminuía a sua vida útil, deixando a água em contato direto com a parte interna da madeira.</p><p>Com a evolução dos maquinários e técnicas construtivas, foi desenvolvida uma forma de fixação através de pinos galvanizados que permitem uma fixação rígida e discreta, principalmente prolongando a vida útil do deck por não danificar a madeira e impedir contato interno (entre fixador e madeira) com a água.</p><p>Recomendamos a utilização de pinos tipo F, galvanizados ou com proteção externa para o contato com sol, chuva e sereno. A fixação do sistema por pinos galvanizados requer alguns equipamentos e maquinários específicos, como: pinadores pneumáticos, compressores a ar, mangueiras, dentre outros. Esse sistema de fixação custa mais caro, e são poucos os profissionais e empresas que atendem esse padrão de qualidade e processo, porém o resultado após montado o deck é bem superior, valendo cada centavo do investimento.</p>",
+     "imagem": {
+      "arquivo": "020-fixacao.webp",
+      "alt": "Qual o melhor sistema de fixação do deck de madeira?"
+     }
+    },
+    {
+     "titulo": "Por que fazer um deck de madeira elevado?",
+     "html": "<p>O deck de madeira elevado serve para ambientes onde há uma irregularidade no terreno, ideal para quem não quer ou não pode fazer uma aterragem ou concretagem.</p><p>Por ser permeável é uma solução para aproveitar ao máximo seu espaço, pode ser utilizado em vielas sanitárias, recuo do terreno, ampliação do jardim em declive ou mezanino. As possibilidades são inúmeras com esse tipo de material. O deck de madeira elevado costuma solucionar problemas quando se trata de recuos de condomínios, terrenos e áreas que não podem ser concretadas.</p><p>Como o deck de madeira pode ser estruturado, e entre as fendas ou espaçamento das réguas de madeira passa água da chuva, o deck de madeira permite a passagem de água, drenando e escoando a mesma para baixo, isso automaticamente resolve muitos problemas de área construída, regularidades com prefeituras, condomínios e recuos.</p><p>O deck de madeira elevado regulariza diferenças de alturas no terreno, servindo como ótima opção para aqueles locais onde existem declives, aclives, ribanceiras e recuos. Essa regularização de nível é uma grande vantagem do deck de madeira elevado, permitindo estruturar o terreno com madeiras, vencendo todo desnível existente e após isso fixando réguas de deck de madeira cumaru em nível sobre essa estrutura, além de deixar a água passar pelo deck, deixando o ambiente permeável à chuva.</p>",
+     "imagem": {
+      "arquivo": "021-por-que-fazer-um-deck-de-madeira-elevado-11zon.webp",
+      "alt": "Por que fazer um deck de madeira elevado?"
+     }
+    },
+    {
+     "titulo": "Qual o melhor deck de madeira do mundo?",
+     "html": "<p>O melhor deck de madeira é aquele que atende à sua necessidade, traz aconchego, madeiramento selecionado, qualidade, melhor fixação, segurança e torna seu ambiente uma obra de arte de carpintaria.</p><p>Por isso a Saraiva Design em madeiras faz cada projeto sob medida, estudando cada caso e detalhe, e passando para os seus clientes as melhores propostas e resultados.</p><p>Para se ter o melhor deck de madeira do mundo, recomendamos a montagem com os melhores materiais do mundo, como:</p><p><strong>Estrutura:</strong><br> Madeiras reforçadas em garapeira ou cumaru, naturais e selecionadas, com fundação adequada, chumbamento, encaixes e concretagem dos pilares.</p><p><strong>Acabamento superior:</strong><br> Réguas de deck tipo exportação em cumaru, que é a madeira nobre brasileira mais exportada hoje. Escolher as madeiras selecionadas e secas em estufas, beneficiadas com maquinários adequados e certificados.</p><p><strong>Fixação:</strong><br> O melhor sistema de fixação, com fixadores adequados para áreas externas, indicados para cada tipo de montagem e que além de fixar o deck, deixe uma estética impecável para o mesmo.</p><p><strong>Acabamento:</strong><br> Utilizando os melhores produtos para madeira, de acordo com o gosto e particularidade de cada acabamento:<br> – Bona<br> – Sparlack<br> – Sayerlack<br> – Suvinil<br> – Montana</p><p><strong>Mão de obra especializada:</strong><br> Carpintaria de alto padrão, mão de obra técnica e habilitada, maquinário em dia e tecnológico são necessários para fazer o melhor deck do mundo.</p><p><strong>Dinheiro:</strong><br> Não podemos esquecer desse item, para se ter o melhor deck de madeira do mundo é necessário investir consciente em todo o processo, tanto no material como na matéria-prima.</p>",
+     "imagem": {
+      "arquivo": "022-o-melhor-deck-de-madeira-do-mundo-11zon.webp",
+      "alt": "Qual o melhor deck de madeira do mundo?"
+     }
+    },
+    {
+     "titulo": "Qual a forma de pagamento do deck de madeira?",
+     "html": "<p>O preço do deck pode variar, de acordo com a região a ser montado, do tamanho dele, das bitolas das madeiras utilizadas no projeto, do tipo de base (terra, contrapiso ou piso) e elevação. A forma de pagamento para o deck de madeira de acordo com o padrão comercial da Saraiva Design em Madeiras são:</p><p>– Pagamento em até 18x no cartão de crédito - sujeito a avaliação e taxas.<br> – Pagamento em até 12x sem juros no cartão de crédito.<br> – Pagamento em até 10x no boleto - sujeito a avaliação e taxas.<br> – Pagamento em até 7x no boleto sem juros.<br> – Pagamento à vista com desconto.</p><p>Sendo aceitos diversos cartões, através de pagamentos físicos ou online.</p><p>Para fazer um orçamento, projeto ou receber uma visita técnica entre em contato através dos canais de atendimento:</p><p>– Email: <a href=\"mailto:contato@saraivadm.com.br\">contato@saraivadm.com.br</a><br> – Whatsapp, celular e fixo: (19) 4141-2204</p>",
+     "imagem": {
+      "arquivo": "023-formas-de-pagamento.jpg",
+      "alt": "Qual a forma de pagamento do deck de madeira?"
+     }
+    },
+    {
+     "titulo": "Qual o melhor tipo de madeira para utilizar?",
+     "html": "<p>No mercado de madeiras temos algumas qualidades, conhecidas comercialmente como:</p><p>– Madeira de 1º qualidade (tipo exportação): madeiramento nobre onde apenas o cerne da madeira é utilizado, ou seja a parte mais densa e resistente da árvore. Essa seleção permite uma maior durabilidade, qualidade e ótima resistência a intempéries do tempo e ataques biológicos.</p><p>– Madeira de 2ª qualidade ou comercial (madeira mesclada): madeiramento onde a parte externa do tronco conhecida como brancal se mistura com o cerne (parte interna). Normalmente esse tipo de madeiramento tem diferenças de coloração, qualidade, durabilidade e uma menor resistência a intempéries e ataques biológicos.</p><p>– Madeira de 3ª qualidade: madeiramento que costuma ser utilizado em cercas, carrocerias de caminhões e outras finalidades onde a seleção das peças e a estética linear sem defeitos ou manchas de branco não são exigidas.</p><p>Portanto a melhor madeira para utilizar em um deck é a de 1ª qualidade (Cumaru tipo exportação - cerne), pois vai trazer mais durabilidade, resistência e segurança ideal para um ambiente que é utilizado como piso em áreas externas.</p>",
+     "imagem": {
+      "arquivo": "024-qual-e-a-melhor-madeira-para-deck.jpg",
+      "alt": "Qual o melhor tipo de madeira para utilizar?"
+     }
+    },
+    {
+     "titulo": "O deck de madeira pode ficar na chuva?",
+     "html": "<p>O deck de madeira pode e é normalmente utilizado em ambientes externos, expostos ao sol e chuva. O contato direto com ações do tempo pede alguns cuidados especiais com as madeiras, porém o deck de madeira pode ficar no tempo e é uma ótima opção para áreas externas ao lado de piscinas, jardins, terraços e outros.</p><p>É importante escolher a madeira certa para montar o seu deck de madeira, visando a exposição ao sol e à chuva. A madeira Cumaru é uma ótima opção para decks externos, sendo muito utilizada como régua para o deck de madeira. A madeira Garapeira também é uma madeira muito utilizada no deck, porém como estrutura (parte de baixo), pois é uma madeira extremamente resistente e muito nobre.</p><p>Outro fator extremamente importante é a utilização dos agentes de proteção corretos como o Cetol Deck e Cetol Stain. Esses dois produtos se adaptam muito bem com o madeiramento e impregnam na madeira trazendo proteção externa e interna da madeira.</p><p>A pintura ou envernizamento do deck de madeira impacta na durabilidade e proteção das madeiras naturais em relação às ações do tempo, principalmente ao sol. A pintura deve ser feita durante e após a montagem do deck de madeira, não deixando as madeiras expostas ao tempo sem proteção.</p><p>A fixação do deck deve ser feita corretamente, com os melhores fixadores e processos, pois o deck de madeira que toma chuva, se não for bem fixado, e utilizado o processo correto de fixação, pode empenar, mofar, apodrecer e ficar com uma estética bem ruim, além de pedir muitas manutenções. Antigamente eram utilizados pregos, o que danifica muito a madeira além de trazer perigo para quem utiliza o ambiente. Com o passar dos anos começaram a utilizar parafusos e cavilhas para a fixação, porém esses materiais permitem que a água entre e se infiltre na parte interna do deck (ponto onde não possui nenhum produto de proteção contra água e que não evapora com o sol), isso reduz a vida do deck de madeira para 1/4 da sua durabilidade. Com a evolução dos métodos de instalação, foram criados os pinos e grampos galvanizados. Esse tipo de fixação impede que a água tenha contato com a parte interna da madeira garantindo assim a durabilidade, firmeza e proteção desse projeto.</p><p>É importante para os decks expostos à chuva, deixar espaço para dilatação das réguas e escoamento da água da chuva. As “frestinhas” que muitas vezes vemos no deck de madeira são essenciais para que a água da chuva não se acumule sobre o deck (patamar ou pisante).</p>",
+     "imagem": {
+      "arquivo": "025-pode-ficar-na-chuva-11zon.webp",
+      "alt": "O deck de madeira pode ficar na chuva?"
+     }
+    },
+    {
+     "titulo": "Como fazer a fundação da estrutura do deck de madeira?",
+     "html": "<p>Na hora de fazer um deck de madeira, uma das preocupações é com a durabilidade do deck exposto à chuva e ao sol, e para se ter um deck que dure muitos anos, não adianta só escolher a madeira para fixar por cima, na área da pisada. É importante estruturar o deck e fazer a fundação correta da estrutura, além dos travamentos, encaixes, pintura e impermeabilização das peças.</p><p>As madeiras da estrutura do deck não podem ficar diretamente em contato com o solo e sua umidade, por isso é necessário fazer uma fundação com concreto, pedrisco e areia nos pilaretes e colunas do deck. Isso proporciona maior durabilidade, resistência e segurança para a sua estrutura.</p><p>No momento de fixar a estrutura no solo, pode ser aplicado nas madeiras Neutrol, óleos queimados e pinturas com verniz ou stain.</p>",
+     "imagem": {
+      "arquivo": "026-como-fazer-a-fundacao-da-estrutura-do-deck-de-made.webp",
+      "alt": "Como fazer a fundação da estrutura do deck de madeira?"
+     }
+    },
+    {
+     "titulo": "O deck de madeira precisa ser sobre o contrapiso?",
+     "html": "<p>O deck de madeira pode ser instalado em todos os ambientes, desde a grama com elevação, terra e até sobre o piso de porcelanato. Para cada situação tem uma forma de estruturar o deck de madeira. Porém quando já existe um contrapiso a estrutura é mais simples e automaticamente o valor final para ser feito o deck é menor.</p><p>No contexto geral, muitas das vezes, vale mais a pena fazer um contrapiso para decks rente ao chão ou com pouca elevação, variando de 5cm do solo a até 50cm. Já para os decks elevados e estruturados, com elevações acima de 50cm, chegando a até 2,00m ou 3,00m normalmente não vale a pena fazer o contrapiso, pois de qualquer forma a estrutura a ser realizada deverá ser chumbada e fundada no solo.</p><p>O deck de madeira pode ser montado dentro da residência, como mezaninos e pisos, e também na área externa da casa, no jardim, próximo à piscina, em ribanceiras e áreas de declive por exemplo. O deck de madeira também pode ser fixado sobre pisos e revestimentos, inclusive em áreas corporativas, industriais e comerciais, como empresas, restaurantes e parques.</p>",
+     "imagem": {
+      "arquivo": "027-deck-de-madera-precisa-ser-instalado-sobre-o-contr.webp",
+      "alt": "O deck de madeira precisa ser sobre o contrapiso?"
+     }
+    },
+    {
+     "titulo": "Quando o deck de madeira é elevado?",
+     "html": "<p>O deck é considerado elevado acima de 10cm de altura, quando passa a ser necessária uma estruturação mais robusta com utilização de pilaretes de 5x7cm, colunas de 15x15 ou 20x20cm, pranchas de 8x20cm, vigas de 5x15cm ou 5x20cm. O tipo de bitola a ser utilizado vai depender da altura do projeto.</p><p>O deck de madeira vai trazer um ambiente em nível sem ter a necessidade de aterramento ou concretagem do ambiente.</p><p>O deck de madeira pode ser elevado a pequenas alturas, como:<br> 10cm - 20cm - 30cm - 40cm - 50cm, e até alturas maiores, como:<br> 1,00m - 2,00m - 3,00m - 4,00m - 5,00m de altura.</p><p>A Saraiva Design em Madeiras faz todo o projeto 3D da estrutura, cálculos e estudos para montar o deck de madeira de uma forma segura, independente se o mesmo será elevado ou rente ao chão. Entre em contato com a equipe técnica para maiores informações:</p><p>(19) 4141-2204<br> <a href=\"mailto:contato@saraivadm.com.br\">contato@saraivadm.com.br</a><br> www.saraivadm.com.br</p>",
+     "imagem": {
+      "arquivo": "028-quando-e-elevado.webp",
+      "alt": "Quando o deck de madeira é elevado?"
+     }
+    },
+    {
+     "titulo": "Posso usar o deck de madeira na viela sanitária?",
+     "html": "<p>A viela sanitária é um fantasma que todo proprietário possui, por se tratar de um local onde qualquer ampliação de área construída é complicada ou proibida. A viela sanitária é o espaço do terreno por onde passam os canos da rede de esgoto e de escoamento pluvial, não podendo ser edificada, devido às possíveis manutenções no local. Mas o que muitos não sabem é que o deck de madeira é a solução para esse problema, pois o mesmo é considerado uma área permeável, podendo ser inclusive móvel, com encaixes ou de monta/desmonta. Isso faz com que o deck de madeira seja a melhor opção para nivelar áreas de desníveis e de vielas sanitárias. O deck de madeira pode ser instalado e é autorizado pelas prefeituras e condomínios, desde que o mesmo possa ser desmontado e possua permeabilidade da água da chuva.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Quais cidades são atendidas com montagem do deck de madeira?",
+     "html": "<p>A Saraiva Design em Madeiras atende todo o estado de São Paulo com material e mão de obra (entregue pronto), havendo pequenas limitações de cidades atendidas de acordo com o tamanho do pergolado ou serviço a ser executado. Para fazer um orçamento grátis entre em contato através dos canais de atendimento:</p><p>– Email: <a href=\"mailto:contato@saraivadm.com.br\">contato@saraivadm.com.br</a><br> – Whatsapp, celular e fixo: (19) 4141-2204</p><p>A matriz da Saraiva Design em Madeiras e toda sua produção fica em Campinas, interior de São Paulo, e a empresa atende toda a região com material + mão de obra, sendo também aplicados os padrões de execução e atendidas todas as cidades do interior de São Paulo. Para cidades acima de um raio de 150km de Campinas - SP é feita uma avaliação do serviço, tamanho e prazos de entrega para o cliente poder ser atendido com mão de obra.</p>",
+     "imagem": {
+      "arquivo": "029-obra-todo-sao-paulo-11zon.webp",
+      "alt": "Quais cidades são atendidas com montagem do deck de madeira?"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "Dicas, Estilos e Cuidados ao montar o seu Deck de Madeira",
+   "intro": null,
+   "itens": [
+    {
+     "titulo": "Madeiras para o deck de madeira",
+     "html": "<p><strong>Estrutura com madeira quadrada / aparelhada:</strong> A garapeira tipo exportação é a melhor opção para a estrutura do deck. Trata-se de uma madeira de alta densidade, nobre, de tonalidade clara, fibra dura, inodora e muito resistente para ambientes externos, além de uma madeira estrutural e muito aceita no meio arquitetônico.</p><p><strong>Madeira para o deck:</strong> O Cumarú tipo exportação é a melhor opção para as réguas de deck em madeiras naturais. Trata-se de uma madeira de alta densidade, nobre, de tonalidade mais escura, fibra dura, inodora e muito resistente para ambientes externos, além de uma madeira estrutural e muito aceita no meio arquitetônico e design.</p><p>A Saraiva Design em Madeiras pensando no melhor conforto e segurança faz o acabamento em todas as quinas do deck, sendo um leve boleado para segurança e escoamento da água da chuva. Todas as réguas de madeira do deck são beneficiadas, através de um processo fabril com máquinas especiais para madeiras.</p>",
+     "imagem": {
+      "arquivo": "030-garapeira-11zon-768x512.webp",
+      "alt": "Madeiras para o deck de madeira"
+     }
+    },
+    {
+     "titulo": "Fixação das madeiras do deck",
+     "html": "<p><strong>FIXAÇÃO COM PINOS GALVANIZADOS</strong><br> Antigamente o deck de madeira era fixado com pregos, parafusos e cavilhas, sistema arcaico que além de não ter estética agradável, danificava o deck de madeira e diminuía a sua vida útil por deixar que a água entrasse em contato direto com a parte interna da madeira no local dos fixadores. Com a evolução dos maquinários e técnicas, foi desenvolvida uma forma de fixação através de pinos galvanizados que permitem uma fixação rígida e discreta, principalmente prolongando a vida útil do deck por não danificar a madeira e impedir contato interno com a água no local dos fixadores.</p><p><strong>FIXAÇÃO COM PARAFUSOS E CAVILHAS (ERRADO)</strong><br> Além de não ficar bonito, pois as cavilhas (tampinhas) marcam a superfície de cima do deck, as mesmas se soltam com o passar dos meses e anos, deixando entrar água no local do fixador que está desprotegido (área interna do local onde foi fixado o parafuso), favorecendo o apodrecimento das madeiras, causando manutenção e sendo necessária a troca do madeiramento. Parafusar o deck de madeira e depois utilizar as cavilhas (tampinhas) podem ser um problema a longo prazo, são muitos os casos de pessoas que topam os dedos dos pés por exemplo, no momento de andar sobre o deck, pois a tendência das cavilhas é de soltarem ou espanarem com o passar do tempo e com a exposição do sol e da chuva. Além de pessoas que reclamam de sentar sobre o deck de madeira e se machucarem devido às cavilhas levantadas. Vale lembrar que sempre um deck é parafusado, os parafusos devem ser escondidos com as cavilhas para acabamento estético e proteção do parafuso. Portanto, no contexto geral, o sistema de fixação do deck, pensando nas réguas (madeiras que ficam na superfície) com parafusos e cavilhas, não é indicado.</p><p><strong>FIXAÇÃO COM PREGOS (ERRADO)</strong><br> É o sistema mais antigo de fixação para deck de madeira, porém é o mais problemático. Os pregos com o passar do tempo se soltam ou levantam, devido à movimentação e dilatação das madeiras, além de que costumam fissurar ou machucar as madeiras no momento da fixação, trazendo pequenas fissuras no ponto de fixação, favorecendo a entrada de água e o apodrecimento das madeiras. A fixação do deck de madeira com pregos traz riscos para as pessoas que utilizam o deck, pois qualquer contato da pele com a cabeça ou corpo dos pregos pode machucar seriamente. Outro fator de desvantagem da fixação do deck com pregos é que os mesmos ficam aparentes vistos de cima, deixando o aspecto visual do deck feio, além de não proteger o fixador (prego) das ações do tempo, já que não existe cavilha ou tampinha para a cabeça dos pregos.</p><p><strong>FIXAÇÃO COM PINOS GALVANIZADOS (CORRETO)</strong><br> Esse é um sistema de fixação para deck de madeira pneumático, moderno e muito resistente, que favorece a durabilidade do material. No momento da fixação dos pinos, uma rajada de pinos é disparada sobre a peça de madeira. Esse disparo automaticamente fixa a régua de deck em vários pontos dificultando a movimentação da madeira e a saída dos pinos, diminuindo qualquer perigo de se machucar, dos pinos se soltarem ou da água entrar nos veios das madeiras. A Saraiva Design em Madeiras recomenda a fixação das réguas de deck com pinos galvanizados, por um sistema de fixação pneumático, com pinadores e pinos tipo F adequados e com proteção para área externa.</p>",
+     "imagem": {
+      "arquivo": "031-fixacao-madeiras-do-deck.jpg",
+      "alt": "Fixação das madeiras do deck"
+     }
+    },
+    {
+     "titulo": "Deck de madeira na piscina: dicas",
+     "html": "<p>O deck de madeira na piscina é muito convidativo.</p><p>Além de ser uma ótima combinação, o deck de madeira ao lado da piscina traz naturalidade, quebra o aspecto civil da obra e faz um ótimo casamento com o jardim e paisagismo. No momento de escolher o seu deck de madeira para a área da piscina, procure utilizar madeiras nobres como o cumaru e a garapeira, estruture o deck da forma correta, envernize as madeiras, utilize um bom sistema de fixação das réguas de deck e principalmente procure um caminho para a água da chuva e a água da piscina que vai cair sobre o deck. O contrapiso precisa ter uma boa caída a fim de não deixar acumular água na parte inferior do deck. Se não for fazer o contrapiso no deck que estará próximo à piscina, estruture o deck com madeiras boas, nobres e duras, concrete os pontos de apoio dessa estrutura e adicione manta bidim e brita na parte de baixo do deck, a fim de drenar melhor a água que cairá na parte inferior.</p><p>O deck próximo à piscina requer extras cuidados em relação à pintura, recomenda-se a manutenção com lixa e verniz ou stain a cada 8 meses.</p><p>Não utilize cavilhas e pregos próximo à piscina, pois esses fixadores e acabamentos podem levantar trazendo danos ao sentar ou andar sobre o deck de madeira na piscina.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de madeira: precisa cortar a grama?",
+     "html": "<p>A Saraiva Design recomenda que seja retirada a grama na parte inferior do deck de madeira. A parte de baixo do deck pegará pouca ou nenhuma luz, atrapalhando o processo de fotossíntese, então é melhor limpar e retirar toda a grama ou vegetação na parte inferior do deck de madeira.</p><p>A Saraiva Design também orienta a colocação de manta bidim e brita nº0 ou nº1 embaixo do deck de madeira, facilitando uma possível limpeza, impedindo o crescimento de algum mato ou vegetação e ajudando na drenagem da água.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "O que pôr embaixo do seu deck de madeira",
+     "html": "<p>Recomenda-se a colocação de brita nº0 ou nº1 e manta bidim.</p><p>Deixe a parte inferior do seu deck de madeira limpa, evite manter vegetação ou grama e cuidado com animais peçonhentos.</p><p>Aranhas, escorpiões, baratas e outros podem achar a parte inferior do deck de madeira uma ótima opção para se abrigar, portanto, quando estiver montado o seu deck de madeira pense em pontos estratégicos para colocar alçapões, facilitando uma possível aplicação de veneno. Não deixe a parte inferior do seu deck suja, com restos de obras ou vegetação. Aplique uma manta bidim, retire os entulhos e coloque pedrisco ou brita. Quanto mais limpo e mais fácil o acesso à parte inferior do deck, melhor.</p><p>Faça fechamentos laterais em seu deck de madeira, com madeiras, plásticos ou mantas, evite deixar frestas ou espaços laterais no seu deck, evitando assim insetos ou bichos de entrarem no seu deck.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "O deck de madeira esquenta?",
+     "html": "<p>Sim, o deck de madeira esquenta.</p><p>A madeira exposta ao sol vai absorver calor, portanto no momento de montar o seu deck de madeira pense no tráfego, na exposição ao sol e em bordas atérmicas para a sua piscina. O deck de madeira pode sim esquentar. O tipo de acabamento, verniz ou stain, também pode impactar em uma absorção maior ou menor de calor no seu deck de madeira.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Lixamento, pintura e manutenção do deck de madeira",
+     "html": "<p>A manutenção do deck de madeira deve ser realizada em um período de 06 a 12 meses. Essa é uma média recomendada para madeiras externas (expostas a sol e chuva). O desgaste por ações do tempo é muito comum, por isso o processo de manutenção deve ser realizado periodicamente, de forma preventiva. Existem alguns passos no processo de manutenção e cuidados para as madeiras do deck, sendo:</p><p><strong>Passo 01: Lixamento das madeiras com lixas especiais</strong><br> Recomendamos o lixamento das madeiras com lixas especiais para madeira. Para um lixamento perfeito é necessário avaliar a situação das madeiras, se é uma madeira com excesso de produto ainda em destaque na madeira, se é uma madeira que está sem a aplicação de verniz ou stain, se ficou muito tempo sem manutenção, tipo de desgaste e outros fatores que podem impactar na situação real da madeira no momento da manutenção.</p><p>Para cada situação exposta da madeira, é necessário a utilização de um grão de lixa, como:</p><p>– Lixa de grão macro<br> . Grão extra fino – 150 / 180 / 220: específico para aplicação pós pintura ou envernizamento.<br> . Grão fino – 100 / 120: específico para aplicação no momento antes da pintura ou envernizamento.<br> . Grão médio – 80: específico para aplicação na preparação da madeira, para remover ferpas e excesso de fibras aparentes.<br> . Grão grosso – 40 / 50 / 60: específico para aplicação nas madeiras que estão com nódoas, excesso de fibras aparentes, ferpas e próximas à forma bruta.<br> . Grão extra grosso – 24 / 36: específico para aplicação em madeiras brutas, ou sujas, com massas, concreto ou outras formas grudadas ao longo das madeiras.<br> – Lixa de micro grão<br> . Grão 800 / 1000: acabamentos extra finos para mobiliários e pinturas pneumáticas.<br> . Grão 500 / 600: acabamentos finos para mobiliários e pinturas pneumáticas.<br> . Grão 240 / 400: acabamento de fundos e primers em mobiliários.</p><p>No geral, indicamos para as manutenções das madeiras dos decks já montados, o uso de lixas 60 – 80 – 100 – 120 respectivamente.</p><p><strong>Passo 02: Pintura ou envernizamento das madeiras</strong><br> Recomendamos a utilização de verniz ou stain para as madeiras do deck. O serviço de pintura ou envernizamento das madeiras deve ser feito durante e após o uso das lixas. A aplicação deve ser feita com pincel de cerdas para madeiras, sendo sintéticas e pretas. Gostamos muito dos produtos naturais, sem adições de corantes e texturas. Acabamentos foscos ou acetinados são os mais indicados e o serviço deve ser realizado com um pintor profissional e habilitado, protegendo sempre o chão, paredes e mobiliários, além de estar portando os EPIs para esse tipo de serviço.</p><p><strong>Verniz recomendado:</strong><br> Sparlack CETOL DECK ou CETOL CLASSIC<br> Sayerlack POLIULACK MARÍTIMO<br> Bona</p><p><strong>Stain recomendado:</strong><br> Sparlack CETOL STAIN<br> Montana química OSMOCOLOR STAIN</p><p><strong>Passo 03: Acompanhamento e manutenções preventivas entre 06 a 12 meses</strong><br> As madeiras precisam de cuidados preventivos e quando necessários corretivos. Se for necessário, utilizar massas para madeira. É muito importante cuidar das madeiras do seu deck, para se ter o mesmo sempre bonito, com aspecto de novo e protegido dos raios solares e ações do tempo.</p>",
+     "imagem": {
+      "arquivo": "032-lixamento-e-pintura-do-deck-11zon-1.jpg",
+      "alt": "Lixamento, pintura e manutenção do deck de madeira"
+     }
+    },
+    {
+     "titulo": "5 dicas de como fazer um deck de madeira elevado",
+     "html": "<p><strong>1º Estudo do local, medição, alturas e desenho técnico:</strong><br> O primeiro passo para montar um deck de madeira é entender o ambiente que o mesmo será instalado ou montado. É necessário entender as medidas de comprimento x largura, altura, forma de estruturar o deck, o que pôr embaixo para drenagem e limpeza do local, qual o tipo de fechamentos laterais, peso e carga que será distribuída sobre o deck, a finalidade do ambiente e então o projeto técnico, detalhando o tipo de estrutura, medidas e alturas.</p><p><strong>2º Madeiras e materiais que serão utilizados na montagem do deck de madeira:</strong><br> O segundo passo para a montagem do deck de madeira é escolher a madeira ideal para o projeto, e para isso é importante entender se o deck será montado na área externa (em contato com sol e chuva e ações do tempo) ou se será montado em áreas internas (em locais protegidos das ações do tempo), além de avaliar quantas pessoas usarão o deck, e o que estará apoiado por cima. Recomendamos para decks de madeira expostos ao tempo, em contato direto com sol, chuva, sereno e intempéries a madeira Cumarú para a superfície de cima e a madeira Garapeira para a estrutura do deck, superfície interna que fica abaixo das réguas de deck.</p><p><strong>3º Fazer a montagem do deck com um carpinteiro experiente e habilitado:</strong><br> O terceiro passo é escolher a mão de obra certa para o serviço, nada de se aventurar com mão de obra de 2ª qualidade ou amadora. O profissional ideal para a montagem do deck de madeira é o carpinteiro, e o mesmo deve possuir experiência na área além de dispor de equipamentos atualizados e de procedência para a execução do serviço. A Saraiva Design em Madeiras conta com uma equipe de habilidosos carpinteiros para a execução de seus projetos.</p><p><strong>4º Montagem da estrutura do deck e fixação das réguas com fixadores e encaixes:</strong><br> O quarto passo é fixar corretamente as réguas do deck, além de fazer o travamento e encaixes na estrutura do deck. Os fixadores devem ser adequados para áreas externas e utilizados de forma correta. Parafusos e pinos são os mais utilizados, sendo os parafusos para a estrutura do deck e os pinos para a fixação das réguas de deck. Não menos importante, na montagem do deck de madeira, a fundação da estrutura deve ser bem feita, utilizando materiais civis para a concretagem das madeiras da estrutura.</p><p><strong>5º Pintura das madeiras, lixamento, fixação e arremates laterais:</strong><br> A quinta dica e passo para a montagem de um deck de madeira elevado é fazer a aplicação de um produto adequado para madeiras expostas ao tempo, como vernizes ou stain. A pintura das madeiras impacta diretamente na proteção das mesmas, aumentando a durabilidade e longevidade, além de deixar o deck mais bonito e acabado. Antes da pintura das madeiras é importante fazer o lixamento com lixas especiais para madeiras, dar acabamento nos fixadores e fazer os arremates ou fechamentos laterais, evitando possíveis bichos, sujeiras e matinhos que podem entrar embaixo da estrutura do deck. Não se esqueça de utilizar britas, mantas e projetar a drenagem da água que escoará entre as madeiras do deck.</p>",
+     "imagem": {
+      "arquivo": "033-5-dicas-deck-de-madeira-11zon.webp",
+      "alt": "5 dicas de como fazer um deck de madeira elevado"
+     }
+    },
+    {
+     "titulo": "Pode deixar os cachorros em cima do deck de madeira?",
+     "html": "<p>Sim, porém cuidado.</p><p>O deck de madeira possui pequenas aberturas para dilatação entre uma régua e a outra, e essas aberturas podem deixar passar pelos, urina e sujeiras do seu animal. Uma vez dentro do deck, dependendo do projeto não será possível retirar, deixando cheiro forte no seu deck de madeira.</p><p>Como o deck de madeira também esquenta, cuidado para seu animal não queimar as patinhas. Se seu animal for ficar em cima do deck em um dia ensolarado e quente jogue água em cima do deck, o contato da madeira com a água diminui a temperatura da superfície da madeira.</p><p>Capriche na limpeza do seu deck, tenha alguns cuidados e aproveite a harmonia do seu deck de madeira, paisagismo, piscina e uso com seus animais, filhos e família.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Quanto custa em média um deck de madeira?",
+     "html": "<p>O preço do deck de madeira pode variar de projeto para projeto.</p><p>Alguns fatores impactam no preço do seu deck de madeira, como:</p><p>- Tipo de madeira<br> - Elevação ou altura<br> - Tipo de vão<br> - Tamanho de casa de máquina<br> - Tipo de fixação<br> - Tipo de acabamento<br> - Qualidade da mão de obra</p><p>Uma referência de preço para um deck de madeira de alta qualidade, com mão de obra profissional, madeiramento selecionado e montado da forma correta é de R$ 700,00/m² a R$ 1.200,00/m² podendo chegar até R$ 2.000,00/m².</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Guarda-corpo no deck de madeira",
+     "html": "<p>O guarda-corpo do deck de madeira pode ser feito com:</p><p>- Guarda-corpo de madeira com cabos de aço<br> - Guarda-corpo de madeira com divisórias em madeira<br> - Guarda-corpo de vidro<br> - Guarda-corpo metálico</p><p>O guarda-corpo é um item importante do seu deck de madeira, principalmente em decks elevados.</p><p>O guarda-corpo pode ser feito todo em madeira, ou em mix entre madeira, aço, cabos de aço, etc.</p><p>Um modelo de guarda-corpo muito tradicional hoje em dia é o guarda-corpo de vidro sobre o deck de madeira, muito bonito, clean e moderno. Para uma melhor vista do horizonte a Saraiva Design recomenda o deck de madeira com guarda-corpo de vidro ou mix de madeira e cabos de aço, devido à limpeza, sem elementos que impeçam a vista do horizonte.</p><p>Quando for montar seu guarda-corpo no deck de madeira procure a melhor fixação e travamento, evitando riscos ao apoiar. Utilize também corrimões.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de madeira elevado: altura do deck",
+     "html": "<p>O deck de madeira é um coringa na construção civil quando montado em um ambiente com desnível, pois a estrutura do deck permite a elevação vencendo desníveis, aclives, declives, ribanceiras e diferenças no terreno.</p><p>No momento de montar seu deck de madeira elevado entenda a altura do seu deck, e estude o projeto estrutural, considerando o tipo de solo, se será necessário o uso de broca, sapata e pilares para a estruturação do deck, tipo de concretagem, fixadores e quais bitolas de madeira serão utilizadas para a estruturação do deck de madeira elevado.</p><p>Importante colocar guarda-corpo no seu deck de madeira elevado.</p>",
+     "imagem": null
+    }
+   ]
+  },
+  {
+   "tipo": "folder",
+   "href": "https://saraivadm.com.br/wp-content/uploads/2025/05/FOLDER-DECK-DE-MADEIRA-2025.pdf",
+   "capa": "034-deck-de-madeira-pg1-2048x1478.jpg"
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "Deck de madeira nas cidades que atendemos",
+   "intro": null,
+   "itens": [
+    {
+     "titulo": "Deck de Madeira em Campinas",
+     "html": "<p>A Saraiva Design em Madeiras é especializada na montagem de decks de madeira na cidade de Campinas. Localizada no interior do estado de São Paulo, Campinas recebe atendimento personalizado e de alto padrão quando o assunto é deck de madeira. Os melhores decks de madeira estão em Campinas-SP com a excelência da Saraiva Design em Madeiras.</p><p>Para a instalação de um deck de madeira em Campinas, é essencial ter as medidas do local, fotos do ambiente e uma ideia clara de como deseja o resultado final. O projeto do deck pode ser elaborado por um arquiteto ou por uma empresa especializada na construção de decks. A Saraiva Design em Madeiras cuida de tudo: do projeto à execução, entregando o deck pronto, com tratamento térmico da madeira, acabamento antiderrapante, estruturas reforçadas, acessórios de fixação e iluminação embutida, se desejado.</p><p>Decks de madeira de alto padrão na cidade de Campinas, interior de São Paulo, executados com agilidade e perfeição pela Saraiva Design em Madeiras. Os decks podem ser elevados ou no nível do solo, com estrutura em madeira maciça, pranchas resistentes e sistema exclusivo de instalação para garantir durabilidade e estabilidade.</p><p>Decks de luxo em Campinas, com o melhor custo-benefício. A Saraiva Design em Madeiras oferece o melhor preço para deck de madeira em Campinas, com atendimento em toda a região, incluindo projetos com madeira tratada, acabamento natural ou envernizado. Seu deck de madeira em Campinas pode incluir iluminação embutida, proteção UV e acabamento contra umidade.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Jundiaí",
+     "html": "<p>São mais de 1.000 m² de decks de madeira executados na cidade de Jundiaí, uma cidade próspera, com grandes condomínios e residenciais de alto padrão. A cidade de Jundiaí é atendida com excelência pela Saraiva Design em Madeiras, especialista em deck de madeira para áreas externas.</p><p>Decks de madeira em Jundiaí devem ser executados com atenção às normas de construção e áreas edificadas, principalmente em residenciais fechados e condomínios. Por isso, é fundamental contratar uma empresa especializada na montagem de decks em Jundiaí.</p><p>Para um deck de alto padrão ou um projeto de luxo em Jundiaí, é essencial utilizar madeiras nobres e tratadas, além de considerar um bom projeto de iluminação embutida, que valoriza ainda mais o espaço.</p><p>A instalação de um deck requer estudo prévio de medidas, desníveis, drenagem, finalidade do ambiente, circulação e estilo do projeto. Pode-se contar com um arquiteto ou optar diretamente pela Saraiva Design em Madeiras, que entrega desde o planejamento até a montagem completa do deck com acabamentos refinados.</p><p><strong>A madeira ideal:</strong><br> Para montar um deck durável em Jundiaí, recomendamos o Cumaru, madeira nobre, indicada para áreas externas, de tonalidade elegante, alta densidade, resistente à umidade e com longa durabilidade. A escolha da bitola adequada para cada vão é crucial: peças finas em vãos largos podem causar instabilidade. A Saraiva Design em Madeiras garante a seleção correta das madeiras e estruturas do seu deck.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Itu",
+     "html": "<p>A cidade de Itu projeta uma média de 1.000 m² de decks de madeira por ano, sendo referência em moradias de alto padrão, condomínios fechados e residenciais sofisticados. Itu, com pouco mais de 150 mil habitantes, é um verdadeiro refúgio para muitos que trabalham na capital São Paulo e buscam qualidade de vida em casas de final de semana e veraneio.</p><p>Decks de madeira em Itu são uma excelente escolha para criar espaços de lazer, áreas gourmet, decks de piscina e ambientes relaxantes com beleza e resistência. Os melhores decks da cidade são executados pela Saraiva Design em Madeiras, empresa especializada em projetos de alto padrão, com acabamento de luxo e design moderno.</p><p>A montagem do deck em Itu deve ser feita por uma empresa com experiência em carpintaria artesanal, utilizando madeira nobre e durável. A melhor opção para decks na cidade é o Cumaru, uma madeira inodora, resistente às intempéries, com excelente durabilidade e ideal para ambientes externos.</p><p>Um deck de madeira bem executado pode transformar completamente o espaço: pode servir como extensão da sala, apoio para a área da piscina, espaço para churrasqueiras, lounge externo ou ambiente de contemplação no jardim. A Saraiva Design em Madeiras é referência em Itu na entrega de projetos sob medida, personalizados e com acabamento impecável.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Santana de Parnaíba",
+     "html": "<p>Santana de Parnaíba é uma cidade do interior paulista com cerca de 140 mil habitantes, próxima à região metropolitana de São Paulo. Por sua localização estratégica e qualidade de vida, a cidade se tornou um polo de condomínios fechados, residenciais de alto padrão e moradia ideal para quem deseja tranquilidade sem abrir mão da proximidade com a capital. Com isso, a procura por decks de madeira cresceu significativamente, e a Saraiva Design em Madeiras passou a atender toda a cidade com projetos exclusivos e sob medida.</p><p>Se você busca um deck de madeira em Santana de Parnaíba, a Saraiva Design em Madeiras é a escolha certa. Nossos decks são projetados com foco na harmonia entre o imóvel e a área externa, valorizando cada detalhe do espaço. Os decks em Santana de Parnaíba podem ser aplicados em áreas gourmet, ao redor da piscina, como solários, passarelas, lounges no jardim, áreas de churrasqueira ou de contemplação.</p><p>A melhor madeira para a execução do seu deck em Santana de Parnaíba é o Cumaru, reconhecida por sua alta resistência, durabilidade, beleza natural e excelente performance em áreas externas. É uma madeira densa, inodora e perfeita para suportar as intempéries do tempo, sendo ideal para projetos de alto padrão.</p><p>Cada deck executado pela Saraiva Design em Madeiras segue um processo técnico de carpintaria artesanal, com estrutura cuidadosamente fixada por parafusos galvanizados, encaixes manuais e acabamentos detalhados. Nosso compromisso é entregar projetos duráveis, funcionais e visualmente impecáveis, com soluções personalizadas para cada cliente.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Atibaia",
+     "html": "<p>Atibaia é um município paulista com mais de 140 mil habitantes, situado em uma área privilegiada do estado de São Paulo. Com excelente qualidade de vida e uma paisagem natural encantadora, Atibaia tem se tornado o destino ideal para projetos arquitetônicos que unem sofisticação e natureza. Por isso, a procura por decks de madeira cresceu e a Saraiva Design em Madeiras atende toda a cidade com projetos de alto padrão e acabamento impecável.</p><p>Os decks de madeira em Atibaia podem ser executados com madeiras naturais e ecológicas como Garapeira e Cumaru, ambas com certificação ambiental (DOF e IBAMA). A Saraiva Design em Madeiras utiliza somente materiais nobres, resistentes e ideais para áreas externas, garantindo beleza, durabilidade e segurança.</p><p>Os melhores decks de Atibaia contam com:</p><p>– Iluminação embutida ou decorativa<br> – Madeira certificada e resistente ao tempo<br> – Execução com carpintaria técnica artesanal</p><p>Esses elementos são essenciais para montar decks em áreas gourmet, áreas de lazer, piscinas, sacadas, jardins, garagens, passarelas e outros ambientes externos. O deck é uma estrutura que além de funcional, transforma o visual da casa, valorizando todo o projeto arquitetônico.</p><p>Na hora da instalação do deck de madeira, é fundamental o uso de fixadores próprios para áreas externas (expostos ao sol e chuva), além de técnicas de encaixe que garantem estabilidade e acabamento refinado. A Saraiva Design em Madeiras é responsável por todas as etapas do projeto: desde o layout e dimensionamento até a instalação final.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Vinhedo",
+     "html": "<p>Vinhedo é uma das cidades mais valorizadas do interior de São Paulo, com pouco mais de 70 mil habitantes e cerca de 80 km² de área total, sendo um verdadeiro refúgio para quem busca qualidade de vida próxima à capital. Com localização privilegiada entre São Paulo, Jundiaí e Campinas, Vinhedo se destaca por seus condomínios de alto padrão e pelas inúmeras residências sofisticadas que impulsionam a demanda por decks de madeira de luxo.</p><p>A cidade estima mais de 3.000 m² de decks executados por ano, e os melhores e mais bem acabados projetos são assinados pela Saraiva Design em Madeiras, referência em carpintaria de alto padrão.</p><p><strong>5 Dicas para um deck de madeira perfeito em Vinhedo:</strong></p><p><strong>1º Madeiramento especial</strong><br> A escolha da madeira é fundamental. Garapeira e Cumaru são espécies nobres ideais para decks, com alta resistência, beleza natural e excelente desempenho em áreas externas. Todas as madeiras utilizadas pela Saraiva Design em Madeiras possuem certificação legal (IBAMA e DOF), garantindo sustentabilidade e rastreabilidade do manejo florestal.</p><p><strong>2º Estrutura bem planejada</strong><br> A estrutura do deck deve ser resistente, com suporte adequado para o peso e para uso contínuo. Utilizamos bases de apoio tratadas, espaçamentos corretos entre as ripas e travamentos reforçados para garantir segurança, durabilidade e estabilidade.</p><p><strong>3º Acabamento técnico</strong><br> O acabamento faz toda a diferença: parafusos galvanizados, encaixes precisos e nivelamento perfeito. Tudo é feito com carpintaria artesanal, trazendo sofisticação ao projeto. O deck pode ser natural ou receber vernizes e óleos específicos para proteção contra sol, chuva e fungos.</p><p><strong>4º Iluminação embutida</strong><br> Embora decks não utilizem cobertura térmica nem ventiladores, é possível aplicar iluminação estratégica nos contornos, degraus ou painéis próximos ao deck. Perfis de LED embutidos ou luminárias externas valorizam o espaço e possibilitam uso noturno com estilo.</p><p><strong>5º Integração com o ambiente</strong><br> Um bom projeto de deck deve considerar o uso: área da piscina, espaço gourmet, jardim ou lounge externo. Pensar no layout, no fluxo de pessoas, no mobiliário e nos elementos paisagísticos é essencial para criar um espaço funcional e acolhedor.</p><p>A Saraiva Design em Madeiras é especialista em decks de madeira sob medida, atendendo a cidade de Vinhedo com excelência, experiência e compromisso com a qualidade. Cada projeto é exclusivo, pensado de acordo com o espaço, o estilo da casa e a finalidade do ambiente.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Sumaré",
+     "html": "<p>Sumaré, cidade do interior paulista com mais de 270 mil habitantes, próxima a Campinas, está em constante crescimento residencial e paisagístico. Com a valorização de imóveis e áreas externas, cresce também a procura por decks de madeira de alto padrão, especialmente em residências com piscina, jardins ou áreas gourmet. Estima-se que sejam construídos mais de 2.000 m² de decks por ano na cidade, e os melhores projetos são executados pela Saraiva Design em Madeiras.</p><p>Se você procura deck de madeira em Sumaré, conte com a excelência da Saraiva Design, que atua com carpintaria técnica, projetos personalizados e madeiras nobres de origem legal e rastreável.</p><p><strong>Madeiramento ideal para decks em Sumaré:</strong><br> Garapeira para a estrutura do deck: madeira robusta, ideal para suportar peso, umidade e exposição constante ao tempo.<br> Cumaru para as réguas superiores (superfície do deck): madeira nobre, de alta densidade, beleza marcante e extrema durabilidade.</p><p><strong>Diferenciais da Saraiva Design em Madeiras:</strong><br> Carpintaria artesanal com encaixes precisos e acabamento técnico<br> Uso de fixadores galvanizados para áreas externas<br> Nivelamento perfeito, estrutura reforçada e alta durabilidade<br> Acabamento com verniz ou stain, nunca com óleo, para proteger e valorizar a madeira de forma elegante e funcional</p><p>Os decks podem ser utilizados em diversas aplicações: área da piscina, passarelas de jardim, espaços gourmet, áreas de convivência ou descanso, agregando valor estético, conforto e funcionalidade ao ambiente.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Piracicaba",
+     "html": "<p>Os melhores decks de madeira em Piracicaba são executados pela Saraiva Design em Madeiras. Piracicaba é uma cidade grande e próspera, com mais de 400 mil habitantes e uma área superior a 1.300 km², conhecida por seus condomínios fechados, residenciais de alto padrão e forte demanda por projetos de madeira premium para áreas externas.</p><p>Para a construção de decks em Piracicaba, a escolha da madeira é fundamental. A Saraiva Design em Madeiras recomenda as madeiras nobres Garapeira para a estrutura e Cumaru para as réguas, ambas com alta resistência, durabilidade e certificação para uso externo.</p><p>A execução do deck envolve:</p><p>Estrutura robusta em Garapeira, garantindo segurança e durabilidade.<br> Superfície em réguas de Cumaru, para um acabamento elegante e resistente.<br> Fixação com parafusos galvanizados próprios para áreas externas.<br> Acabamento com verniz ou stain, protegendo e realçando a beleza natural da madeira.</p><p>Um deck bem planejado valoriza a área de lazer, piscina, jardim ou varanda, criando ambientes aconchegantes, funcionais e sofisticados.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira no Litoral",
+     "html": "<p>Os melhores decks de madeira no litoral de São Paulo são executados pela Saraiva Design em Madeiras. As condições climáticas do litoral exigem o uso de madeiras nobres e resistentes à maresia, como a Garapeira para a estrutura e o Cumaru para as réguas do deck, garantindo durabilidade e beleza natural mesmo em ambientes expostos ao sol, vento e salinidade.</p><p>A Saraiva Design em Madeiras oferece projetos personalizados de decks para residências, áreas de lazer, piscinas e espaços gourmet em cidades litorâneas, sempre com materiais certificados e acompanhamento técnico em todas as etapas da obra.</p><p><strong>Madeira para deck no litoral:</strong><br> A Garapeira e o Cumaru são as melhores opções para decks em áreas externas do litoral paulista, pois possuem alta resistência às intempéries e ao ataque da maresia. Além disso, a madeira utilizada é certificada e acompanha DOF (Documento de Origem Florestal), garantindo legalidade e sustentabilidade.</p><p><strong>Execução técnica:</strong><br> Os decks são construídos com carpintaria artesanal, encaixes precisos e fixadores galvanizados próprios para área externa e maresia. Isso assegura um acabamento durável, seguro e esteticamente impecável.</p><p><strong>Acabamento:</strong><br> A proteção do deck é feita com verniz ou stain especiais para madeira externa, que garantem resistência, realçam a beleza natural da madeira e prolongam a vida útil da estrutura sem a necessidade de óleo.</p><p>Os decks da Saraiva Design são ideais para áreas de piscina, jardins, varandas e passarelas no litoral, criando ambientes confortáveis, elegantes e integrados à natureza.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Hortolândia",
+     "html": "<p>Os decks de madeira em Hortolândia são construídos com madeiras nobres, certificadas e especialmente selecionadas para oferecer alta durabilidade e beleza em áreas externas. A cidade de Hortolândia, com grande crescimento residencial, tem alta demanda por decks personalizados e de alto padrão, com mais de 500 m² construídos por mês.</p><p>A Saraiva Design em Madeiras é referência na execução de decks de madeira em Hortolândia, oferecendo projetos sob medida, carpintaria artesanal e acabamento impecável.</p><p><strong>Madeiras ideais para decks em Hortolândia:</strong><br> Estrutura em Garapeira: madeira resistente e robusta, perfeita para garantir a estabilidade do deck.<br> Réguas em Cumaru: madeira nobre, de alta densidade e resistência, com acabamento sofisticado para a superfície do deck.</p><p><strong>Características do deck Saraiva Design:</strong><br> Montagem com encaixes artesanais e fixadores galvanizados adequados para áreas externas.<br> Acabamento com verniz ou stain, que protege a madeira e realça sua beleza natural, sem uso de óleo.<br> Projetos versáteis para áreas de piscina, jardins, varandas, áreas gourmet e muito mais.</p><p>A Saraiva Design entrega decks duráveis, elegantes e funcionais, valorizando sua residência e proporcionando conforto em ambientes externos.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Boituva",
+     "html": "<p>A cidade de Boituva, com mais de 60 mil habitantes e uma área de aproximadamente 240 km², tem uma demanda crescente por projetos de decks de madeira de alto padrão. A região conta com diversos condomínios fechados, residenciais nobres e bairros sofisticados, que valorizam áreas externas aconchegantes e elegantes.</p><p>A Saraiva Design em Madeiras oferece os melhores projetos de deck de madeira em Boituva, utilizando madeiras nobres, certificadas e apropriadas para áreas externas.</p><p><strong>Madeiras indicadas para decks em Boituva:</strong><br> Garapeira para a estrutura do deck, garantindo resistência e durabilidade.<br> Cumaru para as réguas da superfície, com alta densidade, beleza natural e resistência às intempéries.</p><p><strong>Diferenciais Saraiva Design:</strong><br> Montagem com carpintaria artesanal e encaixes precisos<br> Uso de fixadores galvanizados próprios para área externa<br> Acabamento com verniz ou stain, que protege a madeira e valoriza sua aparência natural</p><p>Os decks da Saraiva Design são ideais para áreas de piscina, jardins, varandas e espaços gourmet, proporcionando conforto, segurança e sofisticação para sua residência.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Jaguariúna",
+     "html": "<p>Os melhores decks de madeira em Jaguariúna são executados pela Saraiva Design em Madeiras. Jaguariúna, com mais de 50 mil habitantes e uma área aproximada de 140 km², é uma cidade estratégica, próxima a Campinas e São Paulo, com condomínios de alto padrão e residenciais sofisticados. A demanda por decks de madeira premium cresce ano a ano, com mais de 1.500 m² construídos por ano na cidade.</p><p>Para garantir qualidade e durabilidade, os decks devem ser construídos com carpintaria artesanal, utilizando madeiras nobres e certificadas:</p><p>Estrutura em Garapeira, madeira resistente, ideal para áreas externas.<br> Réguas em Cumaru, madeira nobre, densa e resistente, que confere um acabamento sofisticado à superfície do deck.</p><p>A montagem do deck envolve encaixes precisos e o uso de fixadores galvanizados próprios para ambientes externos, garantindo estabilidade e segurança.</p><p>O acabamento é feito com verniz ou stain, que protege a madeira e realça sua beleza natural, mantendo o deck sempre elegante e durável.</p><p>Os decks da Saraiva Design são perfeitos para áreas de piscina, jardins, varandas, espaços gourmet e outros ambientes externos, agregando conforto e valorizando seu imóvel.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Ribeirão Preto",
+     "html": "<p>Ribeirão Preto é uma potência regional, com mais de 690 mil habitantes e uma área superior a 650 km². A região metropolitana conta com bairros nobres, condomínios fechados e residenciais de alto padrão, onde a demanda por decks de madeira personalizados e de alta qualidade é crescente.</p><p>A Saraiva Design em Madeiras atua em toda a região de Ribeirão Preto, oferecendo decks de madeira completos, executados com materiais selecionados e mão de obra especializada.</p><p><strong>Madeiras recomendadas para decks em Ribeirão Preto:</strong><br> Garapeira para a estrutura do deck, garantindo resistência e durabilidade.<br> Cumaru para as réguas da superfície, madeira nobre, densa e ideal para áreas externas.</p><p><strong>Diferenciais Saraiva Design para decks:</strong><br> Carpintaria técnica artesanal com encaixes perfeitos e fixadores galvanizados próprios para áreas externas<br> Acabamento com verniz ou stain, que protege a madeira contra intempéries e realça sua beleza natural<br> Projetos personalizados para decks em áreas gourmet, jardins, varandas, piscinas e outros ambientes externos</p><p>A escolha da empresa certa, com equipe qualificada, garantia e compromisso, faz toda a diferença para um deck durável, funcional e esteticamente impecável.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Guarulhos",
+     "html": "<p>A Saraiva Design em Madeiras é especialista na construção de decks de madeira de alto padrão na cidade de Guarulhos-SP. Utilizamos madeiras nobres, garantindo durabilidade, beleza e resistência para seu deck.</p><p><strong>Madeira para deck em Guarulhos:</strong><br> A estrutura do deck é feita em Garapeira, uma madeira forte e estável, ideal para suportar toda a base do deck. Já as réguas, ou tábuas da superfície, são em Cumaru, uma madeira nobre, de alta densidade, resistente às intempéries e que oferece um acabamento elegante.</p><p><strong>Acabamento do deck:</strong><br> Na Saraiva Design em Madeiras, não utilizamos óleo para acabamento. O deck recebe verniz ou stain de alta qualidade, que protegem a madeira contra o desgaste do tempo, realçam a tonalidade natural do Cumaru e garantem maior durabilidade e fácil manutenção.</p><p><strong>Características do deck:</strong></p><p>Decks não possuem cobertura térmica, forração ou ventilador.</p><p>São projetados para proporcionar ambientes confortáveis e aconchegantes, ideais para áreas externas, jardins, varandas, piscinas e espaços gourmet.</p><p>A montagem é realizada por profissionais especializados em carpintaria artesanal, que fazem encaixes precisos e acabamento perfeito.</p><p>A Saraiva Design em Madeiras entrega decks completos, com estrutura robusta, acabamento impecável e instalação feita com cuidado para garantir segurança e beleza ao seu espaço.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Taubaté",
+     "html": "<p>Os melhores decks de madeira de Taubaté são executados pela Saraiva Design em Madeiras. A Saraiva Design em Madeiras passou a atender a cidade de Taubaté com decks de madeira de alto padrão, utilizando madeiras selecionadas e certificadas pelo IBAMA, com estrutura em Garapeira e réguas em Cumaru, garantindo durabilidade e beleza para seu projeto.</p><p>Escolha sempre as melhores madeiras para a construção do seu deck em Taubaté. A Garapeira é indicada para a estrutura do deck, pois é resistente e adequada para áreas externas, enquanto o Cumaru é ideal para as réguas da superfície, pela sua alta densidade e acabamento superior. Selecione as peças e bitolas adequadas para a execução do seu deck.</p><p>A mão de obra deve ser especializada em carpintaria artesanal para garantir encaixes perfeitos, acabamento primoroso e segurança estrutural. A Saraiva Design em Madeiras conta com profissionais habilitados e experientes na montagem de decks em Taubaté, atendendo diversos tipos de projetos com qualidade e eficiência.</p><p>Use acabamento com verniz ou stain para proteger e valorizar a madeira do seu deck, garantindo resistência contra sol, chuva e desgaste natural, sempre mantendo a beleza e o conforto do ambiente.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Indaiatuba",
+     "html": "<p>Os melhores decks de madeira em Indaiatuba são executados pela Saraiva Design em Madeiras e Aços. A cidade de Indaiatuba, no interior de São Paulo, possui diversos condomínios fechados, residenciais e bairros que valorizam projetos de decks de madeira premium e de alto padrão. A Saraiva Design em Madeiras atende toda a região com decks completos, utilizando madeiras nobres e selecionadas.</p><p>Já foram construídos mais de 1.000m² de decks de madeira em Indaiatuba, sempre com madeira de alta qualidade. Para seu deck, utilize madeiras resistentes a intempéries e estruturais, como Garapeira para a estrutura e Cumaru para as réguas do deck, garantindo durabilidade e beleza ao projeto.</p><p>A montagem do deck deve ser feita por profissionais especializados em carpintaria artesanal, que realizem encaixes perfeitos e fixação adequada para maior segurança e acabamento refinado.</p><p>Para o acabamento do deck em Indaiatuba, utilize verniz ou stain, que protegem a madeira contra o sol, chuva e desgaste natural, mantendo a beleza e a durabilidade do seu deck.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Sorocaba",
+     "html": "<p>A cidade de Sorocaba, no interior de São Paulo, é uma das mais ricas do estado e conta com grande variedade de residenciais, condomínios fechados e bairros de alto padrão. Por isso, existe uma crescente procura por decks de madeira em Sorocaba. Já foram executados mais de 1.000m² de decks na cidade com excelência pela Saraiva Design em Madeiras.</p><p>A Saraiva Design em Madeiras atende Sorocaba com decks de alto padrão, utilizando materiais selecionados e mão de obra especializada em carpintaria artesanal. Os decks são ideais para áreas externas, como piscinas, varandas, jardins e espaços de lazer.</p><p>A madeira ideal para a construção de decks em Sorocaba é o Cumaru, utilizado para as réguas de piso, por sua extrema resistência, beleza natural e durabilidade. Para a estrutura do deck, a Garapeira é recomendada, sendo uma madeira nobre, clara e muito resistente às intempéries e ao contato com o solo.</p><p>A montagem dos decks é feita com encaixes e fixações seguras, respeitando o nível, espaçamento entre as réguas e a ventilação da base, garantindo maior vida útil à madeira.</p><p>O acabamento do deck é feito com stain ou verniz marítimo, protegendo a madeira contra sol, chuva e desgaste natural, além de realçar sua coloração e textura.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Barueri",
+     "html": "<p>Deck de madeira em Barueri-SP é com a Saraiva Design em Madeiras. A cidade de Barueri conta com diversos condomínios de alto padrão, residenciais modernos e áreas de lazer que valorizam a instalação de decks de madeira como acabamento nobre, funcional e elegante.</p><p>Com média superior a 1.500m² de decks executados por ano na região, a Saraiva Design em Madeiras é referência em decks de alto padrão em Barueri, atendendo projetos residenciais e comerciais com excelência em madeira natural.</p><p>Os decks de madeira são indicados para áreas externas como piscinas, jardins, varandas, sacadas e espaços gourmet. A estrutura dos decks é feita com Garapeira, uma madeira nobre e extremamente resistente ao contato com o solo e à umidade. Já as réguas do piso são feitas em Cumaru, madeira de alta densidade, com excelente durabilidade e beleza natural.</p><p>A montagem dos decks em Barueri segue um padrão técnico rigoroso, com estrutura nivelada, espaçamento adequado entre as réguas e sistemas de fixação resistentes, garantindo maior durabilidade e acabamento refinado.</p><p>O acabamento é realizado com stain ou verniz marítimo premium, que protegem contra sol e chuva, valorizando os veios da madeira e proporcionando um visual sofisticado ao ambiente.</p><p>Barueri é uma cidade desenvolvida e com moradores exigentes, que buscam o melhor em design e durabilidade. Por isso, escolher uma empresa especializada como a Saraiva Design em Madeiras é essencial para garantir um resultado de qualidade superior em decks.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Bragança Paulista",
+     "html": "<p>Deck de madeira em Bragança Paulista é com a Saraiva Design em Madeiras. A cidade de Bragança Paulista, com mais de 170 mil habitantes e extensa área territorial, é marcada por condomínios fechados, bairros nobres, residenciais de alto padrão e espaços comerciais que valorizam soluções elegantes e duráveis como os decks de madeira.</p><p>Com mais de 1.000m² de decks executados por ano, a Saraiva Design em Madeiras se destaca pela excelência na montagem de decks de madeira para áreas externas como piscinas, jardins, varandas, sacadas e espaços gourmet.</p><p>Os decks em Bragança Paulista são construídos com estrutura em Garapeira, madeira de alta resistência e durabilidade, e réguas em Cumaru, madeira nobre, densa e naturalmente bela. Essa combinação garante segurança estrutural, resistência às intempéries e estética refinada.</p><p>A montagem é feita com encaixes técnicos, fixadores de qualidade e acabamento profissional, incluindo lixamento detalhado e aplicação de verniz ou stain, protegendo a madeira contra ação do sol e da umidade.</p><p>Os decks valorizam qualquer espaço externo, criando áreas de convívio agradáveis e sofisticadas. Ideal para quem busca um acabamento de luxo com durabilidade e beleza natural.</p><p>Saraiva Design em Madeiras é a escolha certa para quem busca deck de madeira de alto padrão em Bragança Paulista com qualidade, capricho artesanal e madeira selecionada.</p><p>Deck de madeira em Bragança Paulista, Madeira para deck Bragança Paulista, Estrutura de Garapeira Bragança Paulista, Réguas de Cumaru Bragança Paulista, Acabamento com verniz para deck Bragança Paulista, Stain para deck Bragança Paulista, Montagem de deck Bragança Paulista, Carpintaria especializada Bragança Paulista, Deck para piscina Bragança Paulista, Deck para jardim Bragança Paulista.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Itatiba",
+     "html": "<p>Deck de madeira em Itatiba é com a Saraiva Design em Madeiras. A cidade de Itatiba, com mais de 120 mil habitantes e forte presença de condomínios fechados, residenciais de alto padrão e bairros nobres, apresenta uma demanda crescente por projetos sofisticados para áreas externas, como decks de madeira.</p><p>A projeção é de que mais de 2.000m² de decks sejam executados em Itatiba ao longo de 2024, acompanhando a valorização dos espaços ao ar livre em residências e empreendimentos comerciais.</p><p>A Saraiva Design em Madeiras atua em Itatiba com deck de madeira de alto padrão, utilizando estrutura em Garapeira, uma madeira nobre, resistente e indicada para uso externo, e réguas de Cumaru, madeira de alta densidade, beleza natural e longa durabilidade.</p><p>O processo de montagem é feito com encaixes técnicos, fixadores de qualidade e acabamento profissional com lixamento, verniz ou stain, garantindo proteção contra umidade e ação solar. Os decks são ideais para áreas de piscina, jardim, varanda, sacadas e espaços gourmet, valorizando o ambiente com sofisticação e resistência.</p><p>A manutenção dos decks deve ser feita ao menos uma vez ao ano com lixa especial e reaplicação do verniz ou stain, mantendo a estética e aumentando a vida útil da madeira.</p><p>Saraiva Design em Madeiras entrega soluções completas em carpintaria para ambientes externos, com acabamentos elegantes, aplicação de madeiras certificadas e atenção aos detalhes em cada projeto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Paulínia",
+     "html": "<p>Deck de madeira em Paulínia é com a Saraiva Design em Madeiras. A cidade de Paulínia, com mais de 100 mil habitantes e uma área de 139 km², é uma região de alto padrão, com muitos condomínios fechados, residenciais de luxo e bairros nobres. A procura por deck de madeira em Paulínia tem crescido devido à valorização de áreas externas como piscinas, varandas, jardins e áreas gourmet.</p><p>A Saraiva Design em Madeiras atende Paulínia com deck de madeira sob medida, utilizando estrutura em Garapeira, uma madeira de excelente desempenho estrutural, e réguas em Cumaru, ideais para ambientes externos por sua alta densidade, durabilidade e beleza natural.</p><p>A montagem dos decks é feita com carpintaria de alto padrão, incluindo fixadores de qualidade, encaixes bem elaborados, lixamento técnico e acabamento com verniz ou stain, nunca com óleo, garantindo resistência à ação do tempo e estética refinada. O acabamento pode ser feito com verniz marítimo ou com Stain Cetol da Sparlack, conforme o projeto e a necessidade do cliente.</p><p>Estima-se que mais de 500m² de decks sejam construídos mensalmente na cidade, refletindo a alta demanda por soluções que aliam beleza, resistência e praticidade. A Saraiva Design se destaca em Paulínia pela entrega de projetos personalizados, com materiais nobres e execução especializada.</p><p>A manutenção dos decks pode ser feita ao menos uma vez por ano, com lixamento e reaplicação de verniz ou stain, mantendo a madeira sempre protegida e com aparência renovada.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Americana",
+     "html": "<p>Deck de madeira em Americana é um item de alto valor agregado para áreas externas como piscinas, jardins, varandas e áreas gourmet. A cidade de Americana, com cerca de 237 mil habitantes e uma área de mais de 130 km², é referência em imóveis de alto padrão, condomínios fechados e bairros valorizados, o que impulsiona a procura por deck de madeira sob medida e de alta durabilidade.</p><p>A Saraiva Design em Madeiras é especializada na execução de deck de madeira em Americana, utilizando estrutura em Garapeira e réguas de Cumaru, duas madeiras nobres ideais para resistir às variações climáticas, umidade e sol intenso. Ambas são conhecidas pela alta densidade, durabilidade, acabamento impecável e coloração natural marcante.</p><p>Os projetos são executados com carpintaria técnica e montagem refinada, respeitando o layout da área externa e o fluxo do ambiente. A fixação é feita com materiais de primeira linha e o acabamento recebe lixamento técnico e aplicação de verniz ou stain premium, nunca óleo, garantindo proteção e valorização da madeira.</p><p>Estima-se que mais de 1.500 m² de decks de madeira sejam instalados anualmente em Americana, o que demonstra a alta demanda por esse tipo de acabamento em áreas externas.</p><p>A manutenção do deck pode ser feita anualmente, com reaplicação de verniz marítimo ou Stain Cetol da Sparlack, além de um leve lixamento, mantendo o brilho, a integridade e a resistência do material ao longo dos anos.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Arujá",
+     "html": "<p>Deck de madeira em Arujá é uma solução sofisticada e resistente para quem deseja valorizar ambientes externos com elegância, durabilidade e um toque natural. A cidade de Arujá, localizada na Grande São Paulo, é reconhecida por seus condomínios de alto padrão e imóveis com grande valorização, o que impulsiona a procura por deck de madeira sob medida e de qualidade superior.</p><p>A Saraiva Design em Madeiras atende Arujá com deck de madeira premium, fabricado com estrutura em Garapeira e réguas de Cumaru, madeiras nobres e resistentes, ideais para exposição ao sol e à chuva. Ambas possuem cerne duro, aroma suave e acabamento de excelência, sendo amplamente usadas em projetos de luxo.</p><p>Um deck de madeira em Arujá deve ser montado com madeira certificada pelo IBAMA, com o selo DOF (Documento de Origem Florestal), garantindo procedência legal e sustentabilidade na escolha do material.</p><p>A montagem dos decks é feita com carpintaria de alto nível, utilizando fixadores apropriados e técnicas de nivelamento que asseguram segurança, firmeza e beleza ao projeto. O acabamento é realizado com lixas técnicas e pintura com verniz marítimo ou stain, protegendo a madeira e realçando sua tonalidade natural, sem uso de óleo, conforme o padrão da Saraiva Design.</p><p>Os decks de madeira em Arujá são amplamente utilizados em áreas de piscina, jardins, varandas, sacadas e espaços gourmet. Com um estilo que une rusticidade e sofisticação, os decks agregam valor estético e funcional à área externa da residência.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Cotia",
+     "html": "<p>Deck de madeira em Cotia é uma excelente escolha para valorizar áreas externas com sofisticação, resistência e beleza natural. A cidade de Cotia-SP, com seus condomínios e residências de alto padrão, é um dos locais atendidos pela Saraiva Design em Madeiras, empresa especializada na construção de deck de madeira sob medida com acabamento de alto nível.</p><p>Os decks de madeira em Cotia são fabricados com estrutura em Garapeira e réguas de Cumaru, duas madeiras nobres, selecionadas, com alta durabilidade e resistência à exposição ao sol e à chuva. A Saraiva Design trabalha exclusivamente com madeira certificada pelo IBAMA e com selo DOF (Documento de Origem Florestal), garantindo qualidade e sustentabilidade em todos os projetos.</p><p>A montagem dos decks é feita com carpintaria artesanal, utilizando técnicas de encaixe refinadas, para criar um resultado seguro, nivelado e esteticamente impecável. O acabamento é realizado com verniz marítimo ou stain, que protegem a madeira sem alterar sua cor natural, a Saraiva Design não utiliza óleo em seus projetos, priorizando produtos de maior durabilidade e eficiência.</p><p>Seja para áreas de piscina, varandas, sacadas, jardins ou espaços gourmet, um deck de madeira em Cotia proporciona um toque de luxo e conforto ao ambiente, tornando-o mais convidativo e valorizando o imóvel.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Salto",
+     "html": "<p>Os melhores decks de madeira em Salto-SP são executados pela Saraiva Design em Madeiras, referência na construção de decks de alto padrão com madeira nobre e acabamento premium. Se você deseja montar um deck em sua área externa, piscina, jardim ou varanda, é fundamental contar com uma empresa especializada no assunto.</p><p>A seguir, alguns pontos essenciais para a montagem de um deck de madeira perfeito em Salto:</p><p>– Madeira selecionada: A Saraiva Design utiliza estrutura em Garapeira e réguas em Cumaru, madeiras nobres, resistentes ao tempo e com excelente acabamento estético.<br> – Mão de obra artesanal: A montagem dos decks é realizada com carpintaria profissional, utilizando técnicas precisas para garantir nivelamento, segurança e acabamento impecável.<br> – Fixadores de alta qualidade: Todos os fixadores utilizados são apropriados para áreas externas, garantindo durabilidade e resistência à umidade.<br> – Madeira com origem legal: Toda madeira utilizada é certificada pelo IBAMA com selo DOF (Documento de Origem Florestal), assegurando sustentabilidade e responsabilidade ambiental.<br> – Acabamento profissional: A Saraiva Design finaliza os decks com verniz marítimo ou stain, protegendo a madeira sem alterar sua aparência natural. A empresa não utiliza óleo em seus acabamentos.</p><p>Esses são os principais elementos para garantir um deck de madeira sofisticado, durável e funcional na cidade de Salto-SP. Ideal para áreas externas que buscam unir conforto, naturalidade e valorização estética do imóvel.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Limeira",
+     "html": "<p>A cidade de Limeira, no interior de São Paulo, possui uma crescente demanda por decks de madeira para áreas externas, piscinas, jardins e varandas. Com mais de 580.000 km² e cerca de 290.000 habitantes, Limeira conta com diversos condomínios residenciais, bairros nobres e grandes empreendimentos, que valorizam cada vez mais a instalação de decks de alto padrão na região.</p><p>A Saraiva Design em Madeiras atua em Limeira com a construção de decks de madeira premium, utilizando madeiras nobres, certificadas pelo IBAMA e com selo DOF (Documento de Origem Florestal). Os decks são executados com madeira Garapeira para estrutura e Cumaru para réguas, garantindo alta resistência, durabilidade e beleza natural.</p><p>A montagem dos decks é feita por uma mão de obra artesanal e profissional, que utiliza fixadores apropriados para ambientes externos e técnicas precisas para garantir estabilidade e acabamento perfeito. A Saraiva Design finaliza o deck com verniz marítimo ou stain, preservando a madeira contra o desgaste do tempo e realçando sua tonalidade natural.</p><p>A manutenção do deck em Limeira deve ser feita anualmente, com lixamento e reaplicação de verniz ou stain para prolongar a vida útil e o aspecto visual.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em São José dos Campos",
+     "html": "<p>A cidade de São José dos Campos possui mais de 1.000.000 km² e cerca de 690.000 habitantes, sendo um dos maiores e mais ricos municípios brasileiros. Com diversos residenciais de luxo, condomínios fechados, empreendimentos e bairros nobres, a demanda por decks de madeira de alto padrão na cidade é crescente.</p><p>A Saraiva Design em Madeiras se destaca na construção de decks de madeira em São José dos Campos, utilizando os melhores materiais para garantir resistência, durabilidade e acabamento sofisticado. Para isso, utiliza madeiras nobres e certificadas pelo IBAMA, como Garapeira para a estrutura e Cumaru para as réguas do deck.</p><p>A montagem dos decks em São José dos Campos é feita com encaixes precisos entre as peças de madeira, garantindo um acabamento perfeito e fixadores embutidos para um visual mais limpo e elegante. A mão de obra especializada realiza um acabamento com verniz marítimo ou stain, protegendo o deck contra as intempéries e valorizando a beleza natural da madeira.</p><p>Para maior durabilidade e beleza, recomenda-se manutenção periódica com lixamento e reaplicação do verniz ou stain.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Osasco",
+     "html": "<p>A Saraiva Design em Madeiras atua na construção de decks de madeira de alto padrão na cidade de Osasco, sendo uma empresa especializada na montagem de decks com madeira selecionada e certificada para maior durabilidade e beleza.</p><p>A cidade de Osasco-SP possui mais de 700.000 habitantes e uma área total acima de 64.000 km², sendo um importante município da região metropolitana de São Paulo. A demanda por decks de madeira cresce ano a ano, atendendo condomínios fechados, residenciais, empresas e bairros diversos.</p><p>Para um deck de madeira em Osasco, a escolha das madeiras é fundamental. A Saraiva Design em Madeiras recomenda o uso das espécies Garapeira para a estrutura e Cumaru para as réguas do deck, ambas certificadas pelo IBAMA e de qualidade exportação.</p><p>A montagem do deck deve considerar bitolas adequadas para suportar o peso e a robustez necessária, além de fixadores resistentes e embutidos, garantindo um acabamento perfeito e visual limpo. A mão de obra especializada da Saraiva Design em Madeiras realiza todos os acabamentos, como lixamento e aplicação de verniz marítimo ou stain, para proteção contra intempéries e valorização da madeira.</p><p>A manutenção do deck deve ser realizada regularmente, com lixamento e reaplicação do verniz ou stain para preservar a beleza e a resistência da madeira ao longo do tempo.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Mogi das Cruzes",
+     "html": "<p>A cidade de Mogi das Cruzes possui mais de 450 mil habitantes e, diante dessa grande população, há uma crescente demanda por decks de madeira na região. A Saraiva Design em Madeiras atende Mogi das Cruzes com os melhores decks de madeira de alto padrão, entregando soluções que unem beleza, resistência e funcionalidade.</p><p><strong>Dica 1 – Madeiramento:</strong> Para um deck de madeira em Mogi das Cruzes, utilize madeiras nobres como Garapeira ou Cumaru, sempre selecionadas e certificadas. A escolha das melhores madeiras garante maior durabilidade e um acabamento sofisticado para seu deck. É importante dimensionar corretamente as peças, considerando bitolas adequadas para suportar o peso e o uso constante do ambiente.</p><p><strong>Dica 2 – Montagem:</strong> A montagem do deck deve ser feita por mão de obra especializada, garantindo um encaixe perfeito entre as peças, fixação segura e alinhamento uniforme, o que contribui para a beleza e segurança do projeto.</p><p><strong>Dica 3 – Acabamento e manutenção:</strong> O acabamento do deck de madeira em Mogi das Cruzes deve incluir lixamento especial e aplicação de verniz ou stain marítimo para proteger a madeira contra intempéries, umidade e ataques biológicos. A manutenção periódica, recomendada ao menos uma vez por ano, prolonga a vida útil do deck e mantém sua aparência renovada.</p><p><strong>Dica 4 – Complementos:</strong> Para deixar o ambiente mais agradável, é possível integrar o deck a outros elementos de área externa, como pergolados, painéis ripados e iluminação, valorizando ainda mais o espaço.</p><p>Deck de madeira em Mogi das Cruzes, Madeira para deck em Mogi das Cruzes, Construção de deck em Mogi das Cruzes, Acabamento para deck em Mogi das Cruzes, Manutenção de deck em Mogi das Cruzes.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Deck de Madeira em Louveira",
+     "html": "<p>Decks de madeira em Louveira são executados pela Saraiva Design em Madeiras, referência em qualidade e acabamento. Os decks em Louveira são feitos com madeiramento nobre, acabamento artesanal e oferecem beleza, durabilidade e conforto para áreas externas como jardins, varandas e áreas gourmet.</p><p><strong>Madeira para deck em Louveira:</strong> A Garapeira e o Cumaru são as madeiras indicadas para decks, por serem nobres, duras, resistentes às intempéries e com ótima aparência natural. A seleção das melhores madeiras garante um deck robusto e elegante.</p><p><strong>Acabamento e proteção:</strong> Os decks de madeira em Louveira recebem acabamento com lixa especial e verniz marítimo ou stain, para proteger contra sol, chuva e garantir durabilidade por muitos anos.</p><p><strong>Montagem artesanal:</strong> A Saraiva Design em Madeiras utiliza técnicas de carpintaria artesanal para montagem dos decks, garantindo encaixes perfeitos, segurança estrutural e um visual impecável.</p><p><strong>Aplicações do deck:</strong> Os decks de madeira em Louveira são ideais para áreas de lazer, piscinas, jardins, varandas e espaços gourmet, valorizando e integrando o ambiente externo.</p><p><strong>Manutenção:</strong> A manutenção dos decks é simples e deve ser feita periodicamente com limpeza, lixamento leve e aplicação de verniz ou stain para manter a beleza e proteção da madeira.</p><p>Ao escolher sua empresa para executar decks de madeira em Louveira, conte com a Saraiva Design em Madeiras, especialista em decks de alto padrão, com mão de obra qualificada e materiais certificados.</p>",
+     "imagem": null
+    }
+   ]
+  }
+ ]
+}

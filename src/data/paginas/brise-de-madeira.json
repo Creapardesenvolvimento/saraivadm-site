@@ -1,0 +1,148 @@
+{
+ "slug": "brise-de-madeira",
+ "nome": "Brise de madeira",
+ "seo": {
+  "title": "Brise de Madeira Sob Medida para Fachadas | Saraiva Design",
+  "description": "Brise de madeira sob medida para fachadas, muros, áreas gourmet e de lazer. Controle de luz e ventilação com acabamento de alto padrão."
+ },
+ "hero": {
+  "titulo": "Brise de madeira",
+  "texto": "Temos variedades de brises de madeira para sua área gourmet, área de lazer e entre outros ambientes. Consulte um dos nossos vendedores",
+  "imagem": "011-painel-ripado-de-madeira-capa.png"
+ },
+ "faixa": [
+  "Madeira nobre",
+  "Controle de luz e calor",
+  "Projeto sob medida",
+  "Instalação especializada"
+ ],
+ "relacionados": [
+  "/forro-de-madeira/",
+  "/pergolado-de-madeira/",
+  "/deck-de-madeira/",
+  "/mlc/",
+  "/forro-de-palha/",
+  "/pergolado-metalico/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Conheça o brise de madeira",
+   "lead": "A Saraiva Design desenvolve os melhores projetos em Brise de Madeira, que é um elemento bastante presente e importante em projetos arquitetônicos",
+   "blocos": [
+    {
+     "t": "img",
+     "arquivo": "001-paineis-ripados-e-brises-de-madeira-jpg.jpeg",
+     "alt": "Brise de madeira"
+    },
+    {
+     "t": "html",
+     "html": "<p><strong>O Brise de Madeira</strong> utilizado com o objetivo de reduzir a incidência direta de luz solar nos interiores do ambiente, sem, contudo, prejudicar a ventilação.</p><p>Além de bloquear a luz solar e o acesso de intrusos, permitindo a circulação de ar em ambientes que precisam de proteção, os brises de madeira têm sido cada vez mais usados como elementos decorativos, tanto em ambientes internos quanto externos.</p><p>Os brises de madeira normalmente são fixados em muros, paredes ou entre colunas, sendo estruturados de forma a decorar os ambientes com o aconchego e o charme natural da madeira.</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Alguns Projetoscom Brise de Madeira"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "002-brise-de-madeira6.jpg",
+       "alt": "pergolado metálico - amenidade"
+      },
+      {
+       "arquivo": "003-brise-de-madeira7.jpg",
+       "alt": "pergolado em madeira - bem rústico"
+      },
+      {
+       "arquivo": "004-brise-de-madeira5.jpg",
+       "alt": "pergolado em madeira - regularidade"
+      },
+      {
+       "arquivo": "005-brise-de-madeira8.jpg",
+       "alt": "Guarda-corpo de madeira - bem seguro"
+      },
+      {
+       "arquivo": "006-brise-de-madeira4.jpg",
+       "alt": "Deck de madeira vertical - tropicalidade"
+      },
+      {
+       "arquivo": "007-brise-de-madeira3.jpg",
+       "alt": "Painel ripado - desestresse"
+      },
+      {
+       "arquivo": "008-brise-de-madeira2.jpg",
+       "alt": "Pergolado com brise - calmaria"
+      },
+      {
+       "arquivo": "009-brise-de-madeira1.jpg",
+       "alt": "Brise de madeira - discrição"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "Dicas para seu Brise de Madeira",
+   "intro": "<p>Tudo o que você precisa saber para um projeto impecável</p>",
+   "itens": [
+    {
+     "titulo": "Tipos de Madeira",
+     "html": "<p><strong>Escolha madeiras resistentes às intempéries, como cumaru</strong>, ipê ou madeira tratada. Isso garante maior durabilidade e menor manutenção ao longo do tempo.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Orientação das Lâminas",
+     "html": "<p><strong>As lâminas podem ser instaladas na</strong> horizontal ou vertical, dependendo do efeito desejado. Horizontais trazem modernidade, enquanto verticais valorizam altura e elegância.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Espaçamento Ideal",
+     "html": "<p><strong>O espaçamento entre as peças influencia</strong> na entrada de luz e ventilação. Quanto menor o vão, maior o sombreamento e privacidade.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Proteção e Acabamento",
+     "html": "<p><strong>Utilize vernizes, stains ou seladores específicos</strong> para madeira externa. Isso protege contra sol, chuva e evita o desgaste precoce.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Fixação Estrutural",
+     "html": "<p><strong>Use fixadores adequados e resistentes à corrosão</strong>, como parafusos galvanizados ou inox. Isso aumenta a segurança e a vida útil da estrutura.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Estilo Arquitetônico",
+     "html": "<p><strong>O brise pode ser usado tanto em projetos modernos</strong> quanto rústicos. Combine com o restante da fachada para um resultado harmonioso.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Ventilação e Conforto Térmico",
+     "html": "<p><strong>Além de bloquear o sol</strong>, o brise permite circulação de ar, ajudando a reduzir o calor interno de forma natural.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Manutenção Periódica",
+     "html": "<p><strong>Realize limpezas e reaplicação de proteção</strong> a cada período recomendado para manter a estética e resistência da madeira.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Integração com Iluminação",
+     "html": "<p><strong>Adicionar iluminação indireta</strong> valoriza o brise à noite, criando um efeito sofisticado e aconchegante.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Sustentabilidade",
+     "html": "<p><strong>Prefira madeiras certificadas e de origem</strong> legal, contribuindo para um projeto mais sustentável e responsável.</p>",
+     "imagem": null
+    }
+   ]
+  },
+  {
+   "tipo": "folder",
+   "href": "https://saraivadm.com.br/wp-content/uploads/2025/05/FOLDER-PAINEL-RIPADO-2025.pdf",
+   "capa": "010-painel-ripado-pg1-768x554-1.jpg"
+  }
+ ]
+}

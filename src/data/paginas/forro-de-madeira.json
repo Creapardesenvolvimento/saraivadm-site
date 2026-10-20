@@ -1,0 +1,53 @@
+{
+ "slug": "forro-de-madeira",
+ "nome": "Forro de madeira",
+ "seo": {
+  "title": "Forro de Madeira Ripado Sob Medida | Saraiva Design",
+  "description": "Forro de madeira ripado sob medida para tetos, varandas e áreas gourmet. Modelos ripado e lambril com madeiras nobres e acabamento de alto padrão."
+ },
+ "hero": {
+  "titulo": "Forro de madeira",
+  "texto": null,
+  "imagem": "003-forro-de-madeira.jpg"
+ },
+ "faixa": [
+  "Madeiras nobres",
+  "Ripado e lambril",
+  "Produção sob medida",
+  "Instalação especializada"
+ ],
+ "relacionados": [
+  "/forro-de-palha/",
+  "/forro-em-esteiras-de-bambu/",
+  "/brise-de-madeira/",
+  "/pisos-de-madeira/",
+  "/pergolado-de-madeira/",
+  "/deck-de-madeira/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Forro de madeira",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p>O Forro de Madeira Ripado, oferecido pela Saraiva Design Madeiras, <strong>é a mais recente adição ao nosso catálogo de produtos de alta qualidade.</strong> Projetado para trazer um toque sofisticado e aconchegante aos espaços, <strong>nosso forro ripado é perfeito para transformar o teto das casas em verdadeiras obras de arte.</strong></p>"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "001-modelos-forro-de-madeira.jpg",
+       "alt": "Modelos forro de madeira Saraiva"
+      },
+      {
+       "arquivo": "002-forro-de-madeira-capa-folder-11zon-2048x1434.webp",
+       "alt": "FORRO DE MADEIRA Modelo Saraiva"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

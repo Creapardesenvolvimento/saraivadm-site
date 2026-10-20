@@ -47,27 +47,67 @@ export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encode
 
 export const wazeUrl = `https://waze.com/ul?ll=${site.endereco.lat},${site.endereco.lng}&navigate=yes`;
 
-export const menuPrincipal = [
-  { label: 'Pergolados', href: '/pergolados/' },
-  { label: 'Coberturas', href: '/coberturas/' },
-  { label: 'Forros', href: '/forros/' },
-  { label: 'Piso de Madeira', href: '/piso-de-madeira/' },
-  { label: 'Deck', href: '/deck/' },
-  { label: 'Outros', href: '/outros/' },
+export interface ItemMenu {
+  label: string;
+  href?: string;
+  filhos?: { label: string; href: string }[];
+}
+
+// Menu do topo. Os endereços são os mesmos do site antigo (preserva o SEO).
+export const menuPrincipal: ItemMenu[] = [
+  {
+    label: 'Pergolados',
+    filhos: [
+      { label: 'Pergolado de madeira', href: '/pergolado-de-madeira/' },
+      { label: 'Pergolado metálico', href: '/pergolado-metalico/' },
+      { label: 'Pergolado em MLC', href: '/mlc/' },
+    ],
+  },
+  {
+    label: 'Coberturas',
+    filhos: [
+      { label: 'Cobertura para pergolado', href: '/cobertura-para-pergolado/' },
+      { label: 'Telha para pergolado', href: '/telha-para-pergolado/' },
+      { label: 'PergoConfort', href: '/pergoconfort/' },
+      { label: 'PergoConfort Max', href: '/pergoconfort-max/' },
+    ],
+  },
+  {
+    label: 'Forros',
+    filhos: [
+      { label: 'Forro de palha', href: '/forro-de-palha/' },
+      { label: 'Forro de bambu', href: '/forro-em-esteiras-de-bambu/' },
+      { label: 'Forro de madeira', href: '/forro-de-madeira/' },
+      { label: 'Forro ripado', href: '/forro-ripado/' },
+      { label: 'Forro de lambril', href: '/forro-de-lambril/' },
+    ],
+  },
+  { label: 'Piso de Madeira', href: '/pisos-de-madeira/' },
+  { label: 'Deck', href: '/deck-de-madeira/' },
+  {
+    label: 'Outros',
+    filhos: [
+      { label: 'Brise de madeira', href: '/brise-de-madeira/' },
+      { label: 'Painel ripado', href: '/painel-ripado/' },
+      { label: 'Caramanchão', href: '/caramanchao/' },
+      { label: 'Gazebo', href: '/gazebo/' },
+      { label: 'Pergokit', href: '/pergokit/' },
+      { label: 'Deck modular', href: '/deck-modular/' },
+    ],
+  },
 ];
 
 export const rodapeProdutos = [
   { label: 'Pergolado de madeira', href: '/pergolado-de-madeira/' },
   { label: 'Pergolado metálico', href: '/pergolado-metalico/' },
-  { label: 'Pergolado MLC', href: '/pergolado-mlc/' },
+  { label: 'Pergolado MLC', href: '/mlc/' },
   { label: 'Cobertura para pergolado', href: '/cobertura-para-pergolado/' },
   { label: 'Telha para pergolado', href: '/telha-para-pergolado/' },
   { label: 'Forro de palha', href: '/forro-de-palha/' },
-  { label: 'Forro de bambu', href: '/forro-de-bambu/' },
+  { label: 'Forro de bambu', href: '/forro-em-esteiras-de-bambu/' },
   { label: 'Forro de madeira', href: '/forro-de-madeira/' },
-  { label: 'Piso de madeira', href: '/piso-de-madeira/' },
+  { label: 'Piso de madeira', href: '/pisos-de-madeira/' },
   { label: 'Deck de madeira', href: '/deck-de-madeira/' },
-  { label: 'MLC', href: '/mlc/' },
   { label: 'Pergokit', href: '/pergokit/' },
   { label: 'Brise de madeira', href: '/brise-de-madeira/' },
   { label: 'Pergoconfort', href: '/pergoconfort/' },
@@ -75,13 +115,13 @@ export const rodapeProdutos = [
 ];
 
 export const rodapeInstitucional = [
-  { label: 'Sobre nós', href: '/sobre-nos/' },
+  { label: 'Sobre nós', href: '/institucional/' },
   { label: 'Portfólio', href: '/portfolio/' },
-  { label: 'Antes e depois', href: '/antes-e-depois/' },
+  { label: 'Antes e depois', href: '/antes-depois/' },
   { label: 'Catálogos', href: '/catalogos/' },
   { label: 'Parcerias', href: '/parcerias/' },
   { label: 'Trabalhe conosco', href: '/trabalhe-conosco/' },
   { label: 'Blog', href: '/blog/' },
-  { label: 'Mídias', href: '/midias/' },
+  { label: 'Mídias', href: '/redes-sociais/' },
   { label: 'Contato', href: '/contato/' },
 ];

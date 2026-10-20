@@ -1,0 +1,270 @@
+---
+// Páginas de produto geradas a partir dos arquivos de conteúdo em src/data/paginas/*.json.
+// Para criar uma página nova: adicione o JSON (e as imagens em src/assets/img/paginas/<slug>/).
+import { Image, getImage } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import VideoYoutube from '../components/VideoYoutube.astro';
+import Galeria from '../components/Galeria.astro';
+import Acordeao from '../components/Acordeao.astro';
+import ProdutosGrid from '../components/ProdutosGrid.astro';
+import ContactForm from '../components/ContactForm.astro';
+import { site, whatsappUrl } from '../data/site';
+import { catalogo, type ProdutoCatalogo } from '../data/catalogo';
+import heroPadrao from '../assets/img/hero-pergolado-piscina.png';
+import '../styles/produto.css';
+
+const arquivos = import.meta.glob<{ default: any }>('../data/paginas/*.json', { eager: true });
+const todasImagens = import.meta.glob<{ default: ImageMetadata }>('../assets/img/paginas/**/*.{jpg,jpeg,png,webp,avif}', {
+  eager: true,
+});
+const paginas = Object.values(arquivos).map((m) => m.default);
+
+export function getStaticPaths() {
+  const arq = import.meta.glob<{ default: any }>('../data/paginas/*.json', { eager: true });
+  return Object.values(arq).map((m) => ({ params: { slug: m.default.slug } }));
+}
+
+const { slug } = Astro.params;
+const p = paginas.find((x) => x.slug === slug)!;
+
+const imagens = Object.fromEntries(Object.entries(todasImagens).filter(([k]) => k.includes(`/paginas/${slug}/`)));
+const img = (arquivo?: string | null, pg = slug) =>
+  arquivo ? Object.entries(todasImagens).find(([k]) => k.includes(`/paginas/${pg}/`) && k.endsWith('/' + arquivo))?.[1].default : undefined;
+
+const hero = img(p.hero.imagem) ?? heroPadrao;
+const nome: string = p.nome;
+const nomeMin = nome.charAt(0).toLowerCase() + nome.slice(1);
+const msg = (sobre = nomeMin) => whatsappUrl(`Olá! Vim do site e quero saber mais sobre ${sobre}.`);
+
+// Fundo alternado (branco / bege) entre as seções
+let alterna = 0;
+const fundo = (s: any) => (s.tipo === 'folder' ? '' : alterna++ % 2 === 0 ? '' : 'pm-sec--bege');
+
+const rotuloPdf = (href: string, texto: string) => {
+  const t = (texto || '').trim();
+  if (t && !/download|clique|aqui/i.test(t) && t.length < 60) return t;
+  if (/tabela/i.test(href)) return 'Tabela de preços (PDF)';
+  if (/folder|catalogo/i.test(href)) return 'Baixar o folder (PDF)';
+  return 'Baixar PDF';
+};
+
+// Produtos relacionados: do catálogo ou das próprias páginas geradas
+const relacionados: ProdutoCatalogo[] = (p.relacionados ?? [])
+  .map((href: string) => {
+    const doCatalogo = catalogo.find((c) => c.href === href);
+    if (doCatalogo) return doCatalogo;
+    const pg = paginas.find((x) => `/${x.slug}/` === href);
+    const capa = pg && img(pg.hero.imagem, pg.slug);
+    return pg && capa ? { nome: pg.nome, href, img: capa, alt: pg.nome } : null;
+  })
+  .filter(Boolean);
+
+// ---------- Dados estruturados ----------
+const url = `${site.url}/${slug}/`;
+const heroSchema = await getImage({ src: hero, width: 1200, format: 'jpg', quality: 80 });
+const textoPuro = (html: string) => html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+const duvidas = p.secoes.find((s: any) => s.tipo === 'acordeao' && /d[úu]vidas/i.test(s.titulo ?? ''));
+const schema: Record<string, unknown>[] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${url}#servico`,
+    name: nome,
+    description: p.seo.description,
+    url,
+    image: new URL(heroSchema.src, site.url).href,
+    provider: { '@id': `${site.url}/#empresa` },
+    areaServed: { '@type': 'Country', name: 'Brasil' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: `${site.url}/` },
+      { '@type': 'ListItem', position: 2, name: nome, item: url },
+    ],
+  },
+];
+if (duvidas) {
+  schema.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: duvidas.itens.map((f: any) => ({
+      '@type': 'Question',
+      name: f.titulo,
+      acceptedAnswer: { '@type': 'Answer', text: textoPuro(f.html) },
+    })),
+  });
+}
+---
+
+<Base title={p.seo.title} description={p.seo.description} image={hero} schema={schema} headerSobreposto>
+  <PageHero
+    imagem={hero}
+    titulo={p.hero.titulo}
+    texto={p.hero.texto ?? undefined}
+    trilha={[{ label: 'Início', href: '/' }, { label: nome }]}
+    botoes={[
+      { label: 'Orçamento imediato', href: msg(), whatsapp: true },
+      { label: 'Ver produtos', href: '#conteudo-produto' },
+    ]}
+    faixa={p.faixa ?? undefined}
+  />
+
+  <div id="conteudo-produto"></div>
+  {
+    p.secoes.map((s: any) => {
+      const classe = fundo(s);
+      if (s.tipo === 'folder')
+        return (
+          <section class="pm-folder">
+            <div class:list={['sar-wrap', s.capa && img(s.capa) ? 'pm-folder__grid' : 'pm-folder__solo']}>
+              {s.capa && img(s.capa) && (
+                <Image src={img(s.capa)!} alt={`Folder ${nome} Saraiva Design`} widths={[300, 500]} sizes="260px" class="pm-folder__img" />
+              )}
+              <div>
+                <h2 class="titulo-secao">Faça o download do nosso folder e fique por dentro das novidades</h2>
+                <p>Modelos, medidas e acabamentos de {nomeMin} em um só arquivo.</p>
+                <a class="btn btn--creme pm-btn" href={s.href} target="_blank" rel="noopener">Baixar o folder (PDF)</a>
+              </div>
+            </div>
+          </section>
+        );
+
+      if (s.tipo === 'usos')
+        return (
+          <section class:list={['pm-sec', classe]}>
+            <div class="sar-wrap">
+              <header class="pm-head">
+                <span class="pm-selo">Aplicações</span>
+                <h2 class="titulo-secao">{s.titulo}</h2>
+              </header>
+              <div class="pm-usos">
+                {s.itens.map((u: any) =>
+                  img(u.imagem.arquivo) ? (
+                    <article class="pm-uso">
+                      <Image src={img(u.imagem.arquivo)!} alt={u.imagem.alt} widths={[500, 800]} sizes="(max-width: 900px) 100vw, 560px" class="pm-uso__img" />
+                      <div class="pm-uso__texto">
+                        <h3>{u.titulo}</h3>
+                        <div set:html={u.html} />
+                        <a class="pm-link" href={msg(u.titulo.toLowerCase())} target="_blank" rel="noopener">
+                          Quero saber mais →
+                        </a>
+                      </div>
+                    </article>
+                  ) : (
+                    <article class="pm-uso pm-uso--sem-foto">
+                      <div class="pm-uso__texto">
+                        <h3>{u.titulo}</h3>
+                        <div set:html={u.html} />
+                      </div>
+                    </article>
+                  ),
+                )}
+              </div>
+            </div>
+          </section>
+        );
+
+      if (s.tipo === 'acordeao')
+        return (
+          <section class:list={['pm-sec', classe]}>
+            <div class="sar-wrap">
+              <header class="pm-head">
+                <span class="pm-selo">{/d[úu]vidas/i.test(s.titulo) ? 'Perguntas frequentes' : /cidades/i.test(s.titulo) ? 'Onde atendemos' : 'Guia'}</span>
+                <h2 class="titulo-secao">{s.titulo}</h2>
+                {s.intro && <div set:html={s.intro} />}
+              </header>
+              <Acordeao itens={s.itens} imagens={imagens} />
+            </div>
+          </section>
+        );
+
+      // conteúdo livre (texto, subtítulos, cards, fotos, vídeos, PDFs) na ordem original
+      const blocos: any[] = s.blocos;
+      const introVideo = blocos[0]?.t === 'videos' && blocos[0].videos.length === 1 && blocos[1]?.t === 'html';
+      const resto = introVideo ? blocos.slice(2) : blocos;
+      return (
+        <section class:list={['pm-sec', classe]}>
+          <div class="sar-wrap">
+            {introVideo ? (
+              <div class="pm-intro__grid">
+                <div>
+                  {s.titulo && <h2 class="titulo-secao">{s.titulo}</h2>}
+                  {s.lead && <p class="pm-lead">{s.lead}</p>}
+                  <div class="pm-texto" set:html={blocos[1].html} />
+                  <a class="btn btn--verde pm-btn" href={msg()} target="_blank" rel="noopener">Fale com um especialista</a>
+                </div>
+                <VideoYoutube id={blocos[0].videos[0].id} capa={img(blocos[0].videos[0].capa) ?? hero} titulo={`${nome}: vídeo Saraiva Design`} />
+              </div>
+            ) : (
+              (s.titulo || s.lead) && (
+                <header class="pm-head">
+                  {s.titulo && <h2 class="titulo-secao">{s.titulo}</h2>}
+                  {s.lead && <p class="pm-lead">{s.lead}</p>}
+                </header>
+              )
+            )}
+            <div class="pm-fluxo">
+              {resto.map((b: any) => {
+                if (b.t === 'html') return <div class="pm-fluxo__texto" set:html={b.html} />;
+                if (b.t === 'sub') return <h3 class="pm-fluxo__sub">{b.texto}</h3>;
+                if (b.t === 'img' && img(b.arquivo))
+                  return <Image src={img(b.arquivo)!} alt={b.alt} widths={[600, 1000, 1400]} sizes="(max-width: 1000px) 100vw, 960px" class="pm-fluxo__img" />;
+                if (b.t === 'galeria') {
+                  const fotos = b.fotos.filter((f: any) => img(f.arquivo)).map((f: any) => ({ src: img(f.arquivo)!, alt: f.alt }));
+                  return fotos.length ? <Galeria fotos={fotos} colunas={fotos.length <= 5 ? Math.max(fotos.length, 3) : fotos.length % 3 === 0 && fotos.length < 10 ? 3 : 4} /> : null;
+                }
+                if (b.t === 'videos')
+                  return (
+                    <div class:list={['pm-videos', { 'pm-videos--um': b.videos.length === 1 }]}>
+                      {b.videos.map((v: any) => (
+                        <VideoYoutube id={v.id} capa={img(v.capa) ?? hero} titulo={`${nome}: vídeo Saraiva Design`} largura={700} />
+                      ))}
+                    </div>
+                  );
+                if (b.t === 'pdf')
+                  return (
+                    <div class="pm-fluxo__acao">
+                      <a class="btn btn--escuro-contorno" href={b.href} target="_blank" rel="noopener">
+                        {rotuloPdf(b.href, b.texto)}
+                      </a>
+                    </div>
+                  );
+                if (b.t === 'cards')
+                  return (
+                    <ul class="pm-cards">
+                      {b.itens.map((c: any) => (
+                        <li class="pm-card">
+                          <h3>{c.titulo}</h3>
+                          <div set:html={c.html} />
+                        </li>
+                      ))}
+                    </ul>
+                  );
+                return null;
+              })}
+            </div>
+          </div>
+        </section>
+      );
+    })
+  }
+
+  {
+    relacionados.length > 0 && (
+      <section class="pm-sec pm-sec--bege">
+        <div class="sar-wrap">
+          <header class="pm-head">
+            <h2 class="titulo-secao">Complete seu projeto</h2>
+            <p>Produtos que combinam com {nomeMin}.</p>
+          </header>
+          <ProdutosGrid produtos={relacionados} />
+        </div>
+      </section>
+    )
+  }
+
+  <ContactForm titulo={`Quer ${nomeMin}?<br> Receba o contato da nossa equipe`} />
+</Base>

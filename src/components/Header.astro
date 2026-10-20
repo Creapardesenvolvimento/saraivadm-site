@@ -32,13 +32,29 @@ const atual = Astro.url.pathname;
     <nav class="sar-nav" aria-label="Menu principal">
       <ul class="sar-menu">
         {
-          menuPrincipal.map((item) => (
-            <li>
-              <a href={item.href} aria-current={atual.startsWith(item.href) ? 'page' : undefined}>
-                {item.label}
-              </a>
-            </li>
-          ))
+          menuPrincipal.map((item) =>
+            item.filhos ? (
+              <li class="sar-menu__item sar-menu__item--pai">
+                <button type="button" class="sar-menu__link" aria-haspopup="true">
+                  {item.label}
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+                </button>
+                <ul class="sar-sub">
+                  {item.filhos.map((f) => (
+                    <li>
+                      <a href={f.href} aria-current={atual === f.href ? 'page' : undefined}>{f.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li class="sar-menu__item">
+                <a class="sar-menu__link" href={item.href} aria-current={atual === item.href ? 'page' : undefined}>
+                  {item.label}
+                </a>
+              </li>
+            ),
+          )
         }
       </ul>
       <a class="btn btn--verde btn--pequeno sar-btn" href={whatsappUrl()} target="_blank" rel="noopener"><IconeWhatsApp />Atendimento</a>
@@ -146,20 +162,27 @@ const atual = Astro.url.pathname;
     margin: 0;
     padding: 0;
   }
-  .sar-menu li {
+  .sar-menu__item {
+    position: relative;
     display: flex;
     align-items: center;
   }
-  .sar-menu li + li::before {
+  .sar-menu__item + .sar-menu__item::before {
     content: '';
     display: block;
     width: 1px;
     height: 18px;
     background: rgba(255, 255, 255, 0.65);
   }
-  .sar-menu a {
-    display: block;
+  .sar-menu__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     padding: 8px var(--sar-espaco-itens);
+    border: 0;
+    background: none;
+    font-family: inherit;
+    cursor: pointer;
     color: #fff;
     font-size: var(--sar-fonte);
     font-weight: 400;
@@ -170,9 +193,64 @@ const atual = Astro.url.pathname;
     white-space: nowrap;
     transition: color 0.25s ease;
   }
-  .sar-menu a:hover,
-  .sar-menu a[aria-current='page'] {
+  .sar-menu__link:hover,
+  .sar-menu__link[aria-current='page'],
+  .sar-menu__item--pai:hover > .sar-menu__link,
+  .sar-menu__item--pai:focus-within > .sar-menu__link {
     color: #d9e4c0;
+  }
+  .sar-menu__link svg {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    transition: transform 0.3s ease;
+  }
+  .sar-menu__item--pai:hover > .sar-menu__link svg,
+  .sar-menu__item--pai:focus-within > .sar-menu__link svg {
+    transform: rotate(180deg);
+  }
+
+  /* Submenu (desktop: abre ao passar o mouse ou com o teclado) */
+  .sar-sub {
+    position: absolute;
+    top: 100%;
+    left: calc(var(--sar-espaco-itens) - 18px);
+    z-index: 10;
+    min-width: 240px;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    background: rgba(124, 81, 67, 0.98);
+    border-radius: var(--raio);
+    box-shadow: 0 14px 34px rgba(30, 18, 12, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+  }
+  .sar-menu__item--pai:hover > .sar-sub,
+  .sar-menu__item--pai:focus-within > .sar-sub {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+  .sar-sub a {
+    display: block;
+    padding: 11px 22px;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease, padding-left 0.25s ease;
+  }
+  .sar-sub a:hover,
+  .sar-sub a:focus-visible,
+  .sar-sub a[aria-current='page'] {
+    background: rgba(255, 255, 255, 0.08);
+    padding-left: 28px;
   }
 
   .sar-btn {
@@ -237,12 +315,26 @@ const atual = Astro.url.pathname;
       transition: all 0.35s ease;
     }
     .sar-menu { flex-direction: column; align-items: stretch; }
-    .sar-menu li { display: block; border-bottom: 1px solid rgba(255, 255, 255, 0.14); }
-    .sar-menu li + li::before { display: none; }
-    .sar-menu a { padding: 18px 4px; font-size: 14px; }
+    .sar-menu__item { display: block; border-bottom: 1px solid rgba(255, 255, 255, 0.14); }
+    .sar-menu__item + .sar-menu__item::before { display: none; }
+    .sar-menu__item--pai > .sar-menu__link { cursor: default; color: rgba(255, 255, 255, 0.6); }
+    .sar-menu__link svg { display: none; }
+    .sar-sub {
+      position: static;
+      min-width: 0;
+      padding: 0 0 12px;
+      background: none;
+      box-shadow: none;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+    }
+    .sar-sub a { padding: 10px 4px 10px 16px; font-size: 14px; }
+    .sar-sub a:hover { padding-left: 20px; }
+    .sar-menu__link { padding: 18px 4px; font-size: 14px; }
     .sar-btn { margin: 22px 0 0; min-height: 52px; }
 
-    .sar-toggle:checked ~ .sar-nav { max-height: 640px; opacity: 1; visibility: visible; }
+    .sar-toggle:checked ~ .sar-nav { max-height: calc(100vh - 70px); overflow-y: auto; opacity: 1; visibility: visible; }
     .sar-toggle:checked ~ .sar-burger span:nth-child(1) { top: 11px; transform: rotate(45deg); }
     .sar-toggle:checked ~ .sar-burger span:nth-child(2) { opacity: 0; }
     .sar-toggle:checked ~ .sar-burger span:nth-child(3) { top: 11px; transform: rotate(-45deg); }

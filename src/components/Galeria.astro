@@ -5,7 +5,7 @@ import { Image, getImage } from 'astro:assets';
 interface Props {
   fotos: { src: ImageMetadata; alt: string }[];
   /** Colunas no desktop */
-  colunas?: 3 | 4;
+  colunas?: number;
 }
 const { fotos, colunas = 4 } = Astro.props;
 

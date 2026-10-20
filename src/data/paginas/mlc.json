@@ -1,0 +1,453 @@
+{
+ "slug": "mlc",
+ "nome": "Pergolado em MLC",
+ "seo": {
+  "title": "Pergolado em MLC (Madeira Laminada Colada) | Saraiva Design",
+  "description": "Estruturas e pergolados em MLC, madeira laminada colada: grandes vãos, alta resistência, obra rápida e sustentabilidade em projetos de alto padrão."
+ },
+ "hero": {
+  "titulo": "Pergolado em MLC",
+  "texto": "Soluções em MLC (Madeira lamelada colada) ou madeira engenheirada que unem tecnologia, resistência estrutural e naturalidade para projetos de pergolados, casas, galpões e outras soluções para construção civil.",
+  "imagem": null
+ },
+ "faixa": [
+  "Madeira engenheirada",
+  "Grandes vãos",
+  "Alta resistência",
+  "Sustentabilidade"
+ ],
+ "relacionados": [
+  "/pergolado-de-madeira/",
+  "/pergolado-metalico/",
+  "/cobertura-para-pergolado/",
+  "/deck-de-madeira/",
+  "/forro-de-palha/",
+  "/brise-de-madeira/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Madeira laminada colada (MLC)",
+   "lead": "A Saraiva Design desenvolve estruturas em Madeira Laminada Colada (MLC), uma tecnologia que transforma a madeira natural em um produto estrutural de alta precisão, resistência e segurança",
+   "blocos": [
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "001-madeira-engenheirada.png",
+       "alt": "Madeira Laminada Colada Saraiva - Vídeo"
+      },
+      {
+       "arquivo": "002-saud4680.jpg",
+       "alt": "Desenvolvimento de projeto em madeira laminada colada"
+      },
+      {
+       "arquivo": "003-saud4799.jpg",
+       "alt": "Especialista da Saraiva Design com peças de madeira"
+      },
+      {
+       "arquivo": "004-saud4770.jpg",
+       "alt": "Detalhe do desenvolvimento técnico de um projeto"
+      }
+     ]
+    },
+    {
+     "t": "html",
+     "html": "<p><strong>A Madeira Laminada Colada (MLC)</strong> é uma solução estrutural de alta performance, produzida pela união de lamelas de madeira selecionadas (pinus ou eucalipto) coladas com adesivos estruturais de alta resistência. Para a fabricação de pilares e vigas de grandes dimensões, as lamelas recebem emendas longitudinais do tipo finger joint, permitindo a produção de peças com maiores comprimentos e elevado desempenho estrutural.</p><p>Mais do que unir peças de madeira, a madeira engenheirada transforma um material natural em um produto controlado, preciso e previsível. Todo o processo produtivo passa por um rigoroso controle de qualidade, garantindo a seleção de madeiras com teor de umidade adequado e sem defeitos estruturais significativos, proporcionando maior resistência, estabilidade dimensional, precisão de fabricação e segurança estrutural.</p><p>Essa tecnologia permite vencer grandes vãos e suportar elevadas cargas, oferecendo liberdade arquitetônica para projetos residenciais, comerciais e corporativos, sem abrir mão da estética e da beleza natural da madeira.</p><p>Na Saraiva Design, desenvolvemos estruturas em MLC que unem engenharia, design e sustentabilidade, criando soluções duráveis, elegantes e de alto desempenho para cada projeto.</p><p>A MLC também é conhecida como <strong>Madeira Lamelada Colada</strong>, <strong>Madeira Engenheirada</strong> ou <strong>Mass Timber</strong>.</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Como nasce a Madeira Engenheirada?",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p>A Madeira Laminada Colada é produzida a partir de <strong>lâminas cuidadosamente selecionadas</strong>, secas, classificadas e unidas com adesivos estruturais de alta resistência. O resultado são peças estáveis, resistentes e preparadas para projetos arquitetônicos e estruturais de alto desempenho.</p>"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "005-imagem-estoque-madeiras.png",
+       "alt": "Equipe da Saraiva Design visitando a fábrica de madeira engenheirada"
+      },
+      {
+       "arquivo": "006-visita-mlc.png",
+       "alt": "Detalhes da produção das peças de madeira engenheirada"
+      }
+     ]
+    },
+    {
+     "t": "cards",
+     "itens": [
+      {
+       "titulo": "Seleção da madeira",
+       "html": "<p>A matéria-prima é selecionada conforme critérios técnicos de qualidade e resistência.</p>"
+      },
+      {
+       "titulo": "Secagem e classificação",
+       "html": "<p>As lâminas são secas e classificadas para proporcionar estabilidade e desempenho estrutural.</p>"
+      },
+      {
+       "titulo": "Colagem estrutural",
+       "html": "<p>As lâminas são unidas com adesivos estruturais de alta resistência e submetidas à prensagem.</p>"
+      },
+      {
+       "titulo": "Controle de qualidade",
+       "html": "<p>Cada peça passa por controle dimensional, acabamento e verificação antes de seguir para a obra.</p>"
+      }
+     ]
+    },
+    {
+     "t": "html",
+     "html": "<p>Em nossa visita à fábrica que produz as madeiras engenheiradas utilizadas em nossos projetos, acompanhamos cada etapa do processo e reforçamos nosso compromisso com <strong>qualidade, tecnologia e segurança estrutural</strong>.</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Como a MLC ganha resistência?",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p>A resistência da Madeira Laminada Colada não depende de um único elemento. Ela é resultado da combinação entre emendas precisas, adesivos estruturais de alto desempenho e lâminas posicionadas para trabalhar na mesma direção.</p>"
+    },
+    {
+     "t": "cards",
+     "itens": [
+      {
+       "titulo": "Continuidade estrutural União Finger Joint",
+       "html": "<p>As extremidades das lâminas recebem cortes dentados de alta precisão. Esses encaixes aumentam a área de contato entre as peças e proporcionam continuidade estrutural, permitindo a fabricação de elementos de grandes comprimentos.</p>"
+      },
+      {
+       "titulo": "União de alta performance Adesivo estrutural",
+       "html": "<p>Adesivos estruturais de alta resistência são aplicados uniformemente entre as lâminas. Após a prensagem e a cura, as camadas passam a trabalhar como uma única peça, garantindo resistência, estabilidade e durabilidade ao conjunto.</p>"
+      },
+      {
+       "titulo": "Fibras estrategicamente alinhadas Lâminas unidirecionais",
+       "html": "<p>As lâminas são posicionadas com as fibras orientadas predominantemente na mesma direção. Esse alinhamento otimiza o desempenho estrutural, melhora a distribuição dos esforços e amplia a capacidade de carga da peça.</p>"
+      },
+      {
+       "titulo": "O resultado dessa combinação",
+       "html": "<p>Peças de madeira com excelente relação entre peso e resistência, maior estabilidade dimensional e capacidade para vencer grandes vãos com segurança e precisão.</p>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Como são feitas as fixações da Madeira Laminada Colada?",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p>As ligações entre pilares, vigas e bases são desenvolvidas conforme as cargas, os vãos, as dimensões das peças e o acabamento desejado. Conectores metálicos aparentes ou ocultos garantem resistência, precisão de montagem e segurança estrutural.</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Fixações de pilares na base"
+    },
+    {
+     "t": "cards",
+     "itens": [
+      {
+       "titulo": "Base com ligação em “T”",
+       "html": "<p>Conector oculto inserido no pilar e ancorado à fundação, oferecendo resistência e acabamento discreto.</p>"
+      },
+      {
+       "titulo": "Base com ligação em cruz",
+       "html": "<p>Chapas cruzadas trabalham em duas direções e são indicadas para ligações submetidas a esforços multidirecionais.</p>"
+      },
+      {
+       "titulo": "Cruz com contrabase",
+       "html": "<p>A contrabase acrescenta apoio e facilita a compatibilização da ligação com a fundação e o sistema de ancoragem.</p>"
+      },
+      {
+       "titulo": "Base sobrelevada",
+       "html": "<p>Mantém a madeira afastada do piso e de respingos, contribuindo para a proteção e a durabilidade do pilar.</p>"
+      }
+     ]
+    },
+    {
+     "t": "sub",
+     "texto": "Fixações e encontros de vigas"
+    },
+    {
+     "t": "cards",
+     "itens": [
+      {
+       "titulo": "Conector em “T”",
+       "html": "<p>Une uma viga secundária à principal com chapa metálica embutida, transmitindo os esforços com pouca interferência visual.</p>"
+      },
+      {
+       "titulo": "Ligador oculto madeira–madeira",
+       "html": "<p>O conector fica inserido nas peças, criando um encontro limpo entre as vigas e preservando a leitura natural da madeira.</p>"
+      },
+      {
+       "titulo": "Ligador oculto concreto–madeira",
+       "html": "<p>Conecta a viga de MLC a paredes, pilares ou núcleos de concreto com ancoragem dimensionada para os esforços do projeto.</p>"
+      },
+      {
+       "titulo": "Continuação com ligador oculto",
+       "html": "<p>Permite unir duas peças no mesmo eixo, transferindo esforços e mantendo a ferragem protegida no interior da madeira.</p>"
+      }
+     ]
+    },
+    {
+     "t": "html",
+     "html": "<p><strong>Cada ligação deve ser calculada individualmente.</strong> A solução final considera cargas, esforços, dimensões, exposição à umidade, resistência ao fogo, sequência de montagem e intenção estética.</p><p>Madeira Engenheirada: Projetos pelo Mundo</p>"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "007-pergolado-em-mlc-madeira-lamelada-colada.jpg",
+       "alt": "Pergolado em MLC: projeto Saraiva Design 1"
+      },
+      {
+       "arquivo": "008-audiotorio-com-cobertura-em-madeira-mlc.png",
+       "alt": "Pergolado em MLC: projeto Saraiva Design 2"
+      },
+      {
+       "arquivo": "009-museu-com-madeira-mlc.png",
+       "alt": "Pergolado em MLC: projeto Saraiva Design 3"
+      },
+      {
+       "arquivo": "010-estrutura-em-madeira-engenheirada.png",
+       "alt": "Pergolado em MLC: projeto Saraiva Design 4"
+      },
+      {
+       "arquivo": "011-madeira-lamelada-colada-em-cafeteria.png",
+       "alt": "Pergolado em MLC: projeto Saraiva Design 5"
+      },
+      {
+       "arquivo": "012-galpao-em-madeira-mlc-1.jpg",
+       "alt": "Pergolado em MLC: projeto Saraiva Design 6"
+      },
+      {
+       "arquivo": "013-madeira-mlc-fabrica-1.jpg",
+       "alt": "Pergolado em MLC: projeto Saraiva Design 7"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Sustentabilidade que constrói o futuro",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "sub",
+     "texto": "Madeira: um recurso renovável"
+    },
+    {
+     "t": "html",
+     "html": "<p>Quando proveniente de florestas plantadas e manejadas de forma responsável, a madeira combina desempenho estrutural, renovação de recursos e menor impacto ambiental.</p><p>A <strong>Madeira Laminada Colada (MLC)</strong> representa a evolução da construção em madeira, reunindo engenharia, inovação e sustentabilidade em uma solução estrutural de alto desempenho. Produzida a partir de madeira proveniente de florestas plantadas e manejadas de forma responsável, alia resistência, precisão e liberdade arquitetônica para projetos de diferentes escalas.</p><p>Além de ser um recurso renovável, a madeira desempenha um papel fundamental na redução da pegada de carbono das edificações. Durante o crescimento das árvores, o dióxido de carbono (CO2) é capturado da atmosfera e permanece armazenado na estrutura da madeira ao longo da vida útil da construção, contribuindo para edificações com menor impacto ambiental.</p><p>Com elevado controle de qualidade, excelente estabilidade dimensional e otimização da matéria-prima, a MLC amplia as possibilidades da arquitetura, unindo <strong>desempenho estrutural, estética e responsabilidade ambiental</strong>.</p>"
+    },
+    {
+     "t": "cards",
+     "itens": [
+      {
+       "titulo": "Origem responsável",
+       "html": "<p>Madeira proveniente de florestas plantadas e manejadas com responsabilidade.</p>"
+      },
+      {
+       "titulo": "Carbono armazenado",
+       "html": "<p>O carbono capturado durante o crescimento permanece armazenado na madeira.</p>"
+      },
+      {
+       "titulo": "Uso eficiente",
+       "html": "<p>Controle de qualidade e otimização da matéria-prima em peças de alto desempenho.</p>"
+      }
+     ]
+    },
+    {
+     "t": "img",
+     "arquivo": "014-selo-pefc.png",
+     "alt": "Certificação PEFC"
+    },
+    {
+     "t": "html",
+     "html": "<p>Produzida a partir de madeira proveniente de fontes certificadas, com rastreabilidade e manejo florestal responsável.</p><p>Aplicações da Madeira Lamelada Colada / Pergolado em MLC</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "usos",
+   "titulo": "Onde usar a madeira laminada colada",
+   "itens": [
+    {
+     "tipo": "uso",
+     "titulo": "Residências de Alto Padrão",
+     "html": "<p>Com a Madeira MLC, criamos pergolados com grandes vãos e menos interferências visuais, valorizando cada espaço e ampliando a conexão entre arquitetura e natureza. O resultado são ambientes externos sofisticados, leves e atemporais, pensados para transformar o simples ato de estar ao ar livre em uma experiência de conforto, convivência e conexão.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "015-07-dsc02563-madeira-mel-1080x1350-1.png",
+      "alt": "Residências de Alto Padrão"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Pergolados e Áreas Externas",
+     "html": "<p>Estruturas em MLC unem durabilidade, resistência às intempéries e um acabamento natural que dialoga perfeitamente com áreas de lazer e convivência. O material permite curvas e formatos personalizados, criando pergolados únicos que se tornam o ponto focal do projeto. Além da estética, garante segurança estrutural mesmo em grandes dimensões e exposição direta ao clima.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "016-imagem-2.png",
+      "alt": "Pergolados e Áreas Externas"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Coberturas e Espaços Gourmet",
+     "html": "<p>O que começa como um pergolado pode ganhar novas proporções. Com a Madeira MLC, criamos grandes coberturas e estruturas com vãos amplos, unindo resistência, leveza e liberdade arquitetônica. Uma solução que transforma grandes espaços em ambientes acolhedores, funcionais e visualmente marcantes.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "017-01-img-5263-madeira-mel-1080x1350-1.png",
+      "alt": "Coberturas e Espaços Gourmet"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Espaços Comerciais e Institucionais",
+     "html": "<p>A Madeira MLC se adapta a diferentes projetos, de lojas, restaurantes e hotéis a escolas, faculdades e áreas sociais corporativas. Sua resistência, precisão e versatilidade permitem criar ambientes marcantes e acolhedores, desde grandes estruturas e coberturas até pergolados e áreas de convivência.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "018-imagem-4.png",
+      "alt": "Espaços Comerciais e Institucionais"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Galpões e Grandes Estruturas",
+     "html": "<p>A MLC vence vãos de 30 metros ou mais, dependendo da carga, com poucos ou nenhum pilar.<br>Sua alta resistência permite estruturas robustas para grandes cargas.<br>A fabricação industrial garante precisão, qualidade e rapidez na montagem.<br>Produzida com madeira renovável, é uma solução eficiente e sustentável.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "019-imagem-3.png",
+      "alt": "Galpões e Grandes Estruturas"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Vantagens e diferenciais da Madeira Laminada Colada",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "cards",
+     "itens": [
+      {
+       "titulo": "Projetos personalizados",
+       "html": "<p>Cada estrutura é desenvolvida sob medida para atender às necessidades do seu projeto, unindo funcionalidade, estética e desempenho.</p>"
+      },
+      {
+       "titulo": "Alta resistência estrutural",
+       "html": "<p>Cada estrutura é desenvolvida para atender às necessidades do projeto, combinando engenharia, estética e funcionalidade.</p>"
+      },
+      {
+       "titulo": "Obra rápida",
+       "html": "<p>Material pré-fabricado, reduzindo o tempo de montagem e otimizando a execução da obra.</p>"
+      },
+      {
+       "titulo": "Sustentabilidade",
+       "html": "<p>Utiliza madeira proveniente de florestas manejadas, aliando desempenho estrutural e responsabilidade ambiental.</p>"
+      },
+      {
+       "titulo": "Longevidade",
+       "html": "<p>Com especificação e manutenção adequadas, a MLC mantém sua resistência e beleza ao longo do tempo.</p>"
+      },
+      {
+       "titulo": "Estabilidade dimensional",
+       "html": "<p>O processo de fabricação proporciona maior controle das características da madeira, contribuindo para a estabilidade da estrutura.</p>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "Dúvidas sobre Madeira Engenheirada",
+   "intro": "<p>Tudo sobre Madeira Laminada Colada (MLC)</p>",
+   "itens": [
+    {
+     "titulo": "Quanto tempo dura a madeira engenheirada?",
+     "html": "<p>A madeira engenheirada pode durar <strong>mais de 50 anos</strong> quando fabricada conforme as normas técnicas, instalada corretamente e submetida à manutenção recomendada. Sua estabilidade, resistência e desempenho fazem dela uma solução segura e durável para residências, comércios e projetos de grandes vãos.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "A madeira MLC pode molhar?",
+     "html": "<p>Sim. A MLC pode ser utilizada em áreas externas e é resistente à exposição à chuva, desde que receba o acabamento adequado, rufos sobre as peças de madeira e a manutenção recomendada.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Quanto pesa a madeira engenheirada (MLC)?",
+     "html": "<p>O peso da MLC varia conforme a espécie de madeira utilizada. Como valores de referência, considere:</p><ul><li><strong>Pinus:</strong> aproximadamente 550 kg/m³;</li> <li><strong>Eucalipto:</strong> aproximadamente 650 kg/m³.</li></ul><p>A MLC apresenta excelente relação entre resistência e peso, permitindo criar estruturas robustas, leves e eficientes, além de reduzir as cargas sobre a edificação. Os valores podem variar conforme a espécie, o teor de umidade e o fabricante.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Quais espécies de madeira são utilizadas na MLC?",
+     "html": "<p>As espécies mais utilizadas na fabricação da madeira engenheirada são <strong>Pinus e Eucalipto</strong>. A escolha depende das características estruturais do projeto, do acabamento desejado e das condições de uso da estrutura.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Como fazer a manutenção e o acabamento da MLC?",
+     "html": "<p>A madeira engenheirada pode receber diferentes acabamentos, como <strong>stain, verniz ou pintura específica para madeira</strong>. Também podem ser utilizados produtos para pigmentação, impermeabilização e proteção contra raios UV, sempre de acordo com a exposição e a especificação do projeto.</p><p>A manutenção deve incluir:</p><ul><li>Ações preventivas e, quando necessário, corretivas;</li> <li>Inspeções periódicas para identificar fissuras, desgaste do acabamento ou outros sinais de exposição;</li> <li>Reaplicação de vernizes, stains ou óleos protetores nos intervalos recomendados pelo fabricante;</li> <li>Tratamentos de proteção contra umidade, fungos e insetos.</li></ul><p>Em áreas externas, a periodicidade depende da incidência de sol, chuva e umidade. Por isso, a estrutura deve ser acompanhada regularmente para preservar sua proteção, durabilidade e aparência natural.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Sua área gourmet pode ficar mais aconchegante com MLC?",
+     "html": "<p>Sim! A madeira engenheirada é uma excelente opção para áreas gourmet, proporcionando um ambiente acolhedor, elegante e integrado à arquitetura. Além da beleza natural, a MLC oferece alta resistência, estabilidade e durabilidade, sendo ideal para pergolados, coberturas e espaços de convivência.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Madeira engenheirada pode substituir o concreto/aço?",
+     "html": "<p>Sim. Em determinadas aplicações, o MLC pode substituir elementos de concreto ou aço, oferecendo alta resistência, menor peso próprio e rapidez de montagem, desde que dimensionado para cada projeto. Também apresenta comportamento previsível ao fogo. A madeira forma uma camada carbonizada que protege o núcleo estrutural, permitindo manter sua capacidade resistente por determinado período. Já o aço perde resistência rapidamente com o aumento da temperatura, podendo exigir proteção adicional.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "O pergolado em MLC é considerado área construída?",
+     "html": "<p>Depende da legislação do seu município. Em muitos casos, pergolados abertos não são considerados área construída, porém essa classificação pode variar conforme o tipo de cobertura e as normas urbanísticas locais. Antes da execução do projeto, recomendamos consultar a legislação vigente ou contar com o suporte de um profissional especializado.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Onde a madeira engenheirada (MLC) pode ser utilizada?",
+     "html": "<p>A madeira engenheirada é uma solução estrutural que une engenharia, arquitetura e design, permitindo projetos com grandes vãos, alta resistência e estética sofisticada.</p><p>Sua versatilidade possibilita aplicações em:</p><ul><li>Pergolados para áreas gourmet, jardins, piscinas e rooftops;</li> <li>Coberturas para garagens, churrasqueiras e áreas de lazer;</li> <li>Varandas, lounges, quiosques e espaços de convivência;</li> <li>Telhados aparentes, beirais e marquises;</li> <li>Residências de alto padrão;</li> <li>Hotéis, restaurantes, condomínios e empreendimentos comerciais;</li> <li>Estruturas personalizadas e projetos de grandes vãos.</li></ul><p>Cada projeto é desenvolvido sob medida para oferecer segurança estrutural, durabilidade e um acabamento que valoriza a arquitetura.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "A madeira engenheirada é sustentável?",
+     "html": "<p>Sim. A madeira engenheirada é produzida a partir de matéria-prima proveniente de florestas plantadas e manejadas de forma responsável. Além de ser um recurso renovável, a madeira armazena carbono durante toda a sua vida útil, contribuindo para reduzir o impacto ambiental da construção.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "A madeira engenheirada é resistente ao fogo?",
+     "html": "<p>Sim. A madeira engenheirada é projetada para oferecer segurança também em situações de incêndio. Quando exposta ao fogo, sua camada externa se carboniza e ajuda a proteger a parte interna da estrutura, retardando a perda de resistência. As estruturas em MLC são dimensionadas conforme as normas técnicas de segurança.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "A MLC perde sua função estrutural imediatamente em um incêndio?",
+     "html": "<p>Não. A madeira laminada colada não perde sua capacidade estrutural imediatamente quando exposta ao fogo.</p><p>Durante um incêndio, ocorre uma carbonização progressiva da superfície. Essa camada carbonizada atua como proteção térmica e retarda o avanço do calor para o núcleo da peça, que continua contribuindo para a resistência da estrutura. Por isso, a MLC apresenta comportamento previsível em uma situação de incêndio.</p><p>Conforme o dimensionamento e a solução adotada, a estrutura pode ser projetada para atender ao tempo de resistência ao fogo exigido, inclusive soluções de até 90 minutos. O desempenho depende da seção das peças, das conexões, dos encontros e das proteções previstas no projeto de segurança contra incêndio.</p>",
+     "imagem": {
+      "arquivo": "020-screenshot-2026-08-13-at-08-55-26.png",
+      "alt": "A MLC perde sua função estrutural imediatamente em um incêndio?"
+     }
+    },
+    {
+     "titulo": "Madeira CLT pega cupim ou apodrece com o tempo?",
+     "html": "<p>Não, se for bem especificada. A madeira engenheirada é tratada, seca, selada e projetada para resistir a cupins, fungos e umidade. A chave está na engenharia, na correta instalação e na proteção da estrutura.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Qual é a diferença entre CLT e MLC?",
+     "html": "<p>O material CLT funciona como parede, laje e cobertura. A MLC é ideal para vigas, pilares e estruturas de grandes vãos.</p>",
+     "imagem": null
+    }
+   ]
+  }
+ ]
+}
