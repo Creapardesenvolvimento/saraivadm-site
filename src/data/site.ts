@@ -51,51 +51,57 @@ export const wazeUrl = `https://waze.com/ul?ll=${site.endereco.lat},${site.ender
 export interface ItemMenu {
   label: string;
   href?: string;
-  filhos?: { label: string; href: string }[];
+  /** Texto curto do mega menu (desktop) */
+  descricao?: string;
+  filhos?: { label: string; href: string; descricao?: string }[];
 }
 
 // Menu do topo. Os endereços são os mesmos do site antigo (preserva o SEO).
 export const menuPrincipal: ItemMenu[] = [
   {
     label: 'Pergolados',
+    descricao: 'Estruturas sob medida em madeira nobre, aço carbono e madeira laminada colada.',
     filhos: [
-      { label: 'Pergolado de madeira', href: '/pergolado-de-madeira/' },
-      { label: 'Pergolado metálico', href: '/pergolado-metalico/' },
-      { label: 'Pergolado em MLC', href: '/mlc/' },
+      { label: 'Pergolado de madeira', href: '/pergolado-de-madeira/', descricao: 'Garapeira tipo exportação, sob medida' },
+      { label: 'Pergolado metálico', href: '/pergolado-metalico/', descricao: 'Aço carbono com tratamento anticorrosivo' },
+      { label: 'Pergolado em MLC', href: '/mlc/', descricao: 'Madeira engenheirada para grandes vãos' },
     ],
   },
   {
     label: 'Coberturas',
+    descricao: 'Proteção contra sol, chuva e calor com telhas exclusivas Saraiva Design.',
     filhos: [
-      { label: 'Cobertura para pergolado', href: '/cobertura-para-pergolado/' },
-      { label: 'Telha para pergolado', href: '/telha-para-pergolado/' },
-      { label: 'PergoConfort', href: '/pergoconfort/' },
-      { label: 'PergoConfort Max', href: '/pergoconfort-max/' },
-      { label: 'PergoPlac', href: '/pergoplac/' },
+      { label: 'Cobertura para pergolado', href: '/cobertura-para-pergolado/', descricao: 'Sistema completo com calhas e vedação' },
+      { label: 'Telha para pergolado', href: '/telha-para-pergolado/', descricao: 'Translúcida, com proteção UV' },
+      { label: 'PergoConfort', href: '/pergoconfort/', descricao: 'Telha exclusiva com 10 anos de garantia' },
+      { label: 'PergoConfort Max', href: '/pergoconfort-max/', descricao: 'Termoacústica, máximo conforto' },
+      { label: 'PergoPlac', href: '/pergoplac/', descricao: 'Placa térmica entre forro e cobertura' },
     ],
   },
   {
     label: 'Forros',
+    descricao: 'Acabamentos naturais que trazem sombra, conforto térmico e beleza ao ambiente.',
     filhos: [
-      { label: 'Forro de palha', href: '/forro-de-palha/' },
-      { label: 'Forro de bambu', href: '/forro-em-esteiras-de-bambu/' },
-      { label: 'Forro de madeira', href: '/forro-de-madeira/' },
-      { label: 'Forro ripado', href: '/forro-ripado/' },
-      { label: 'Forro de lambril', href: '/forro-de-lambril/' },
+      { label: 'Forro de palha', href: '/forro-de-palha/', descricao: 'Natural e sintético, coleções exclusivas' },
+      { label: 'Forro de bambu', href: '/forro-em-esteiras-de-bambu/', descricao: 'Esteiras artesanais tratadas' },
+      { label: 'Forro de madeira', href: '/forro-de-madeira/', descricao: 'Madeira nobre sob medida' },
+      { label: 'Forro ripado', href: '/forro-ripado/', descricao: 'Visual moderno com ripas de madeira' },
+      { label: 'Forro de lambril', href: '/forro-de-lambril/', descricao: 'Clássico e aconchegante' },
     ],
   },
   { label: 'Piso de Madeira', href: '/pisos-de-madeira/' },
   { label: 'Deck', href: '/deck-de-madeira/' },
   {
     label: 'Outros',
+    descricao: 'Soluções em madeira para completar o seu projeto de área externa.',
     filhos: [
-      { label: 'Brise de madeira', href: '/brise-de-madeira/' },
-      { label: 'Painel ripado', href: '/painel-ripado/' },
-      { label: 'Caramanchão', href: '/caramanchao/' },
-      { label: 'Gazebo', href: '/gazebo/' },
-      { label: 'Pergokit', href: '/pergokit/' },
-      { label: 'Deck modular', href: '/deck-modular/' },
-      { label: 'Deck hidro-spa', href: '/deck-hidro-spa/' },
+      { label: 'Brise de madeira', href: '/brise-de-madeira/', descricao: 'Controle de luz e ventilação' },
+      { label: 'Painel ripado', href: '/painel-ripado/', descricao: 'Paredes, fachadas e muros' },
+      { label: 'Caramanchão', href: '/caramanchao/', descricao: 'Charme para jardins e piscinas' },
+      { label: 'Gazebo', href: '/gazebo/', descricao: 'Estrutura independente para lazer' },
+      { label: 'Pergokit', href: '/pergokit/', descricao: 'Kit completo para todo o Brasil' },
+      { label: 'Deck modular', href: '/deck-modular/', descricao: 'Cumaru com fixação oculta' },
+      { label: 'Deck hidro-spa', href: '/deck-hidro-spa/', descricao: 'Deck sob medida para hidro e spa' },
     ],
   },
 ];

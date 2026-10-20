@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import logo from '../assets/img/logo-saraiva.png';
 import { menuPrincipal, whatsappUrl } from '../data/site';
 import IconeWhatsApp from './IconeWhatsApp.astro';
+import { imagemDaPagina } from '../lib/imagemDaPagina';
 
 interface Props {
   /** Transparente por cima da foto do topo (home). Nas demais páginas fica com fundo marrom. */
@@ -39,13 +40,40 @@ const atual = Astro.url.pathname;
                   {item.label}
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
                 </button>
-                <ul class="sar-sub">
-                  {item.filhos.map((f) => (
-                    <li>
-                      <a href={f.href} aria-current={atual === f.href ? 'page' : undefined}>{f.label}</a>
-                    </li>
-                  ))}
-                </ul>
+                <div class="sar-mega">
+                  <div class="sar-mega__inner">
+                    <div class="sar-mega__intro">
+                      <span class="sar-mega__selo">{item.label === 'Outros' ? 'Outros produtos' : item.label}</span>
+                      {item.descricao && <p>{item.descricao}</p>}
+                      <a
+                        class="btn btn--verde btn--pequeno"
+                        href={whatsappUrl(`Olá! Vim pelo site e quero saber mais sobre ${item.label === 'Outros' ? 'os produtos da Saraiva' : item.label.toLowerCase()}.`)}
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <IconeWhatsApp />Fale com um especialista
+                      </a>
+                    </div>
+                    <ul class="sar-mega__grid">
+                      {item.filhos.map((f) => {
+                        const foto = imagemDaPagina(f.href);
+                        return (
+                          <li>
+                            <a class="sar-mega__card" href={f.href} aria-current={atual === f.href ? 'page' : undefined}>
+                              {foto && (
+                                <span class="sar-mega__foto">
+                                  <Image src={foto} alt="" widths={[240, 400]} sizes="200px" loading="lazy" />
+                                </span>
+                              )}
+                              <span class="sar-mega__nome">{f.label}</span>
+                              {f.descricao && <span class="sar-mega__desc">{f.descricao}</span>}
+                            </a>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </div>
               </li>
             ) : (
               <li class="sar-menu__item">
@@ -126,6 +154,7 @@ const atual = Astro.url.pathname;
   }
 
   .sar-inner {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -212,45 +241,119 @@ const atual = Astro.url.pathname;
     transform: rotate(180deg);
   }
 
-  /* Submenu (desktop: abre ao passar o mouse ou com o teclado) */
-  .sar-sub {
+  /* Mega menu (desktop: abre ao passar o mouse ou com o teclado) */
+  .sar-menu__item--pai {
+    position: static;
+  }
+  .sar-mega {
     position: absolute;
     top: 100%;
-    left: calc(var(--sar-espaco-itens) - 18px);
+    left: 0;
+    right: 0;
     z-index: 10;
-    min-width: 240px;
-    margin: 0;
-    padding: 10px 0;
-    list-style: none;
-    background: rgba(124, 81, 67, 0.98);
-    border-radius: var(--raio);
-    box-shadow: 0 14px 34px rgba(30, 18, 12, 0.25);
+    padding-top: 26px; /* "ponte" para o mouse não perder o menu entre o link e o painel */
     opacity: 0;
     visibility: hidden;
-    transform: translateY(8px);
-    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
   }
-  .sar-menu__item--pai:hover > .sar-sub,
-  .sar-menu__item--pai:focus-within > .sar-sub {
+  .sar-menu__item--pai:hover > .sar-mega,
+  .sar-menu__item--pai:focus-within > .sar-mega {
     opacity: 1;
     visibility: visible;
     transform: none;
   }
-  .sar-sub a {
-    display: block;
-    padding: 11px 22px;
-    color: #fff;
-    font-size: 13px;
-    letter-spacing: 0.06em;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: background 0.2s ease, padding-left 0.25s ease;
+  .sar-mega__inner {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 36px;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 32px;
+    background: #fff;
+    border-radius: var(--raio);
+    box-shadow: 0 24px 60px rgba(30, 18, 12, 0.28);
+    text-transform: none;
+    letter-spacing: normal;
   }
-  .sar-sub a:hover,
-  .sar-sub a:focus-visible,
-  .sar-sub a[aria-current='page'] {
-    background: rgba(255, 255, 255, 0.08);
-    padding-left: 28px;
+  .sar-mega__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding-right: 32px;
+    border-right: 1px solid #ece4d8;
+  }
+  .sar-mega__selo {
+    font-family: var(--fonte-titulos);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--sar-marrom-escuro);
+  }
+  .sar-mega__intro p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6d5c55;
+  }
+  .sar-mega__intro .btn {
+    margin-top: auto;
+  }
+  .sar-mega__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .sar-mega__card {
+    display: block;
+    text-decoration: none;
+  }
+  .sar-mega__foto {
+    display: block;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--sar-bege);
+    border-radius: var(--raio);
+  }
+  .sar-mega__foto :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+  .sar-mega__nome {
+    display: block;
+    margin-top: 10px;
+    font-family: var(--fonte-titulos);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--sar-marrom-escuro);
+    transition: color 0.25s ease;
+  }
+  .sar-mega__desc {
+    display: block;
+    margin-top: 3px;
+    font-size: 12.5px;
+    line-height: 1.45;
+    color: #7a6a63;
+  }
+  .sar-mega__card:hover .sar-mega__foto :global(img),
+  .sar-mega__card:focus-visible .sar-mega__foto :global(img) {
+    transform: scale(1.06);
+  }
+  .sar-mega__card:hover .sar-mega__nome,
+  .sar-mega__card:focus-visible .sar-mega__nome,
+  .sar-mega__card[aria-current='page'] .sar-mega__nome {
+    color: var(--sar-oliva-escuro);
+  }
+  .sar-mega__card:focus-visible {
+    outline: 2px solid var(--sar-oliva);
+    outline-offset: 4px;
+  }
+  .sar-header.is-fixo .sar-mega {
+    padding-top: 14px;
   }
 
   .sar-btn {
@@ -319,18 +422,36 @@ const atual = Astro.url.pathname;
     .sar-menu__item + .sar-menu__item::before { display: none; }
     .sar-menu__item--pai > .sar-menu__link { cursor: default; color: rgba(255, 255, 255, 0.6); }
     .sar-menu__link svg { display: none; }
-    .sar-sub {
+    /* No celular o mega menu vira uma lista simples */
+    .sar-mega {
       position: static;
-      min-width: 0;
       padding: 0 0 12px;
-      background: none;
-      box-shadow: none;
       opacity: 1;
       visibility: visible;
       transform: none;
     }
-    .sar-sub a { padding: 10px 4px 10px 16px; font-size: 14px; }
-    .sar-sub a:hover { padding-left: 20px; }
+    .sar-mega__inner {
+      display: block;
+      padding: 0;
+      background: none;
+      box-shadow: none;
+    }
+    .sar-mega__intro,
+    .sar-mega__foto,
+    .sar-mega__desc {
+      display: none;
+    }
+    .sar-mega__grid { display: block; }
+    .sar-mega__nome {
+      margin: 0;
+      padding: 10px 4px 10px 16px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+      letter-spacing: 0.06em;
+    }
+    .sar-mega__card:hover .sar-mega__nome { color: #d9e4c0; }
     .sar-menu__link { padding: 18px 4px; font-size: 14px; }
     .sar-btn { margin: 22px 0 0; min-height: 52px; }
 

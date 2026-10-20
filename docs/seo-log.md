@@ -277,3 +277,14 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - [ ] **Revisão jurídica** da Política de privacidade e dos Termos de uso antes da publicação definitiva.
 - [ ] Confirmar o e-mail para currículos (hoje: contato@saraivadm.com.br).
 - [ ] PDFs (folders e tabelas) ainda hospedados no WordPress atual.
+
+---
+
+## 2026-10-20 — Mega menu no desktop
+
+- Ao passar o mouse (ou navegar pelo teclado) em **Pergolados, Coberturas, Forros e Outros**, abre um painel com
+  todos os produtos do grupo: foto, nome e descrição curta, além de um texto do grupo e botão "Fale com um especialista"
+  (WhatsApp com mensagem do grupo).
+- Fotos vêm automaticamente da capa de cada página (`src/lib/imagemDaPagina.ts`); descrições em `src/data/site.ts`.
+- No celular o menu continua em lista simples (as fotos nem são carregadas).
+- SEO: os links continuam sendo links HTML comuns (rastreáveis), agora com texto descritivo.
