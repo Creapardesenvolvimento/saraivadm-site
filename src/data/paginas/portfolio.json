@@ -1,0 +1,398 @@
+{
+ "slug": "portfolio",
+ "nome": "Portfólio",
+ "seo": {
+  "title": "Portfólio de Pergolados, Decks e Coberturas | Saraiva Design",
+  "description": "Mais de 100 fotos de projetos reais da Saraiva Design: pergolados de madeira e metálicos, decks, coberturas e forros em residências e empresas."
+ },
+ "hero": {
+  "titulo": "Portfólio",
+  "texto": null,
+  "imagem": "084-capa-parcerias.jpg"
+ },
+ "faixa": null,
+ "tipo": "institucional",
+ "botoes": [
+  {
+   "label": "Solicitar orçamento",
+   "href": "__whats__",
+   "whatsapp": true
+  },
+  {
+   "label": "Ver as fotos",
+   "href": "#conteudo-produto"
+  }
+ ],
+ "tituloForm": null,
+ "relacionados": [
+  "/pergolado-de-madeira/",
+  "/pergolado-metalico/",
+  "/cobertura-para-pergolado/",
+  "/forro-de-palha/",
+  "/forro-em-esteiras-de-bambu/",
+  "/deck-de-madeira/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Somos especialistas em Pergolado de Madeira e Metálico!",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "sub",
+     "texto": "+ de 100 Fotos de Projetos Com a Saraiva Design"
+    },
+    {
+     "t": "html",
+     "html": "<p>A <strong>Saraiva Design</strong> é líder e referência no setor, reconhecida como uma das maiores e mais respeitadas empresas em projetos de <strong>pergolados, decks de madeira e soluções premium para áreas externas</strong>. Com expertise consolidada, materiais de alta performance e execução impecável, entregamos estruturas duráveis, elegantes e alinhadas às tendências arquitetônicas modernas. Nossa autoridade no mercado foi construída por meio de trabalhos consistentes, atendimento especializado e resultados que transformam ambientes. Na Saraiva, cada projeto é pensado para elevar a estética e a funcionalidade do espaço, reforçando nosso compromisso com qualidade, inovação e excelência.</p>"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "001-pergolado-metalico-para-area-externa.jpg",
+       "alt": "pergolado metalico para area externa"
+      },
+      {
+       "arquivo": "002-pergolado-metalico-requinte-e-luxo.jpg",
+       "alt": "pergolado metalico requinte e luxo"
+      },
+      {
+       "arquivo": "003-pergolado-e-deck-conforto-e-luxo.jpg",
+       "alt": "pergolado metálico e deck conforto e luxo"
+      },
+      {
+       "arquivo": "004-pergolado-de-luxo.jpg",
+       "alt": "pergolado metálico de luxo"
+      },
+      {
+       "arquivo": "005-pergolado-e-deck-com-piscina.jpg",
+       "alt": "pergolado de madeira e deck com piscina"
+      },
+      {
+       "arquivo": "006-pergolado-para-area-externa.jpg",
+       "alt": "pergolado de madeira para area externa"
+      },
+      {
+       "arquivo": "007-pergolado-mix-com-piscina.jpg",
+       "alt": "pergolado mix com piscina"
+      },
+      {
+       "arquivo": "008-pergolado-de-ferro-com-piscina.jpg",
+       "alt": "pergolado de ferro com piscina"
+      },
+      {
+       "arquivo": "009-deck-de-madeira-com-lago.jpg",
+       "alt": "deck de madeira com lago"
+      },
+      {
+       "arquivo": "010-pergolado-metalico-para-area-gourmet.jpg",
+       "alt": "pergolado metalico para area gourmet"
+      },
+      {
+       "arquivo": "011-pergolado-de-madeira-no-litoral.jpg",
+       "alt": "pergolado de madeira no litoral"
+      },
+      {
+       "arquivo": "012-pergolado-e-deck-com-lago.jpg",
+       "alt": "pergolado e deck de madeira com lago"
+      },
+      {
+       "arquivo": "013-pergolado-e-deck-com-hidro.jpg",
+       "alt": "pergolado de madeira e deck com hidro"
+      },
+      {
+       "arquivo": "014-pergolado-metalico-na-quinta-da-baronesa.jpg",
+       "alt": "pergolado metalico na quinta da baronesa"
+      },
+      {
+       "arquivo": "015-pergolado-de-madeira-e-quadra-de-tenis.jpg",
+       "alt": "pergolado de madeira e quadra de tenis"
+      },
+      {
+       "arquivo": "016-pergolado-de-madeira-para-area-de-lazer.jpg",
+       "alt": "pergolado de madeira para area de lazer"
+      },
+      {
+       "arquivo": "017-pergolado-metalico-com-piscina.jpg",
+       "alt": "pergolado metalico com piscina"
+      },
+      {
+       "arquivo": "018-pergolado-de-madeira-com-hidro.jpg",
+       "alt": "pergolado de madeira com hidro"
+      },
+      {
+       "arquivo": "019-pergolado-na-puc-campinas.jpg",
+       "alt": "pergolado de madeira na puc - campinas"
+      },
+      {
+       "arquivo": "020-pergolado-na-puc.jpg",
+       "alt": "pergolado de madeira  na puc"
+      },
+      {
+       "arquivo": "021-pergolado-em-sao-paulo.jpg",
+       "alt": "pergolado de madeira em são paulo"
+      },
+      {
+       "arquivo": "022-pergolado-em-vinicola-sofisticacao.jpg",
+       "alt": "pergolado em vinicola - sofisticação"
+      },
+      {
+       "arquivo": "023-pergolado-de-ferro-piscina.jpg",
+       "alt": "pergolado de ferro - piscina"
+      },
+      {
+       "arquivo": "024-pergola-metalico-gourmet.jpg",
+       "alt": "pergola metalico - gourmet"
+      },
+      {
+       "arquivo": "025-pergolado-para-descanso.jpg",
+       "alt": "pergolado de madeira para descanso"
+      },
+      {
+       "arquivo": "026-pergolado-em-indaiatuba.jpg",
+       "alt": "pergolado de madeira em indaiatuba"
+      },
+      {
+       "arquivo": "027-pergolados-para-area-de-lazer.jpg",
+       "alt": "pergolados de madeira para area de lazer"
+      },
+      {
+       "arquivo": "028-deck-para-area-de-descanso.jpg",
+       "alt": "deck para area de descanso"
+      },
+      {
+       "arquivo": "029-pergolado-para-academia.jpg",
+       "alt": "pergolado de madeira para academia"
+      },
+      {
+       "arquivo": "030-pergolado-na-cobertura-luxo.jpg",
+       "alt": "pergolado de madeira na cobertura - luxo"
+      },
+      {
+       "arquivo": "031-pergolado-em-cobertura.jpg",
+       "alt": "pergolado de madeira  em cobertura"
+      },
+      {
+       "arquivo": "032-pergolado-de-luxo-requinte.jpg",
+       "alt": "pergolado de madeira  de luxo - requinte"
+      },
+      {
+       "arquivo": "033-pergolado-de-madeira-jau.jpg",
+       "alt": "pergolado de madeira - jaú"
+      },
+      {
+       "arquivo": "034-cobertura-pergoconfort.jpg",
+       "alt": "cobertura pergoconfort"
+      },
+      {
+       "arquivo": "035-pergolado-como-garagem-protecao.jpg",
+       "alt": "pergolado de madeira como garagem - proteção"
+      },
+      {
+       "arquivo": "036-pergolado-rustico-conforto.jpg",
+       "alt": "pergolado de madeira rustico - conforto"
+      },
+      {
+       "arquivo": "037-pergolado-metalico-requinte.jpg",
+       "alt": "pergolado metalico - requinte"
+      },
+      {
+       "arquivo": "038-pergolado-metalico-conforto.jpg",
+       "alt": "pergolado metalico - conforto"
+      },
+      {
+       "arquivo": "039-pergolado-branco-requinte-e-luxo.jpg",
+       "alt": "pergolado branco - requinte e luxo"
+      },
+      {
+       "arquivo": "040-pergolado-metalico-litoral-paulista.jpg",
+       "alt": "pergolado metalico - litoral paulista"
+      },
+      {
+       "arquivo": "041-pergolado-metalico-em-limeira.jpg",
+       "alt": "pergolado metalico em limeira"
+      },
+      {
+       "arquivo": "042-pergolado-metalico-limeira.jpg",
+       "alt": "pergolado metalico - limeira"
+      },
+      {
+       "arquivo": "043-pergolado-metalico-jardim.jpg",
+       "alt": "pergolado metalico - jardim"
+      },
+      {
+       "arquivo": "044-pergolado-metalico-descanso-e-luxo.jpg",
+       "alt": "pergolado metalico - descanso e luxo"
+      },
+      {
+       "arquivo": "045-pergolado-de-madeira-com-piscina.jpg",
+       "alt": "pergolado de madeira com piscina"
+      },
+      {
+       "arquivo": "046-pergolado-grande-cotia.jpg",
+       "alt": "pergolado de madeira grande - cotia"
+      },
+      {
+       "arquivo": "047-pergolado-na-fazenda-da-grama.jpg",
+       "alt": "pergolado de madeira na fazenda da grama"
+      },
+      {
+       "arquivo": "048-pergolado-para-eventos.jpg",
+       "alt": "pergolado de madeira para eventos"
+      },
+      {
+       "arquivo": "049-pergolado-para-garagem-protecao-e-seguranca.jpg",
+       "alt": "pergolado de madeira para garagem - proteção e segurança"
+      },
+      {
+       "arquivo": "050-pergolado-em-itu.jpg",
+       "alt": "pergolado de madeira em itu"
+      },
+      {
+       "arquivo": "051-pergolado-com-forro-de-bambu.jpg",
+       "alt": "pergolado com forro de bambu"
+      },
+      {
+       "arquivo": "052-pergolado-de-ferro-sao-paulo.jpg",
+       "alt": "pergolado de ferro - são paulo"
+      },
+      {
+       "arquivo": "053-alta-1.jpg",
+       "alt": "Pergolado de ferro em Paulinia"
+      },
+      {
+       "arquivo": "054-pergolado-metalico-com-forro-de-palha.jpg",
+       "alt": "pergolado metálico com forro de palha"
+      },
+      {
+       "arquivo": "055-pergolado-metalico-com-piscina-1.jpg",
+       "alt": "pergolado metálico com piscina"
+      },
+      {
+       "arquivo": "056-pergolado-metalico-na-sacada.jpg",
+       "alt": "pergolado metálico na sacada"
+      },
+      {
+       "arquivo": "057-pergolado-para-area-gourmet.jpg",
+       "alt": "pergolado metálico para area gourmet"
+      },
+      {
+       "arquivo": "058-pergolado-metalico-para-area-gourmet-1.jpg",
+       "alt": "pergolado metalico para area gourmet"
+      },
+      {
+       "arquivo": "059-pergolado-metalico-branco-para-area-de-descanso.jpg",
+       "alt": "pergolado metalico branco para area de descanso"
+      },
+      {
+       "arquivo": "060-pergolado-metalico-branco-e-piscina.jpg",
+       "alt": "pergolado metalico branco e piscina"
+      },
+      {
+       "arquivo": "061-pergolado-de-madeira-no-jardim.jpg",
+       "alt": "pergolado de madeira no jardim"
+      },
+      {
+       "arquivo": "062-pergolado-de-ferro-na-area-gourmet.jpg",
+       "alt": "pergolado de ferro na area gourmet"
+      },
+      {
+       "arquivo": "063-pergolado-metalico-com-piscina-2.jpg",
+       "alt": "pergolado metalico com piscina"
+      },
+      {
+       "arquivo": "064-pergolado-de-ferro-para-area-gourmet.jpg",
+       "alt": "pergolado de ferro para area gourmet"
+      },
+      {
+       "arquivo": "065-pergolado-de-ferro-com-piscina-1.jpg",
+       "alt": "pergolado de ferro com piscina"
+      },
+      {
+       "arquivo": "066-pergolado-de-madeira-requinte-e-luxo.jpg",
+       "alt": "pergolado de madeira - requinte e luxo"
+      },
+      {
+       "arquivo": "067-pergolado-de-madeira-sem-cobertura.jpg",
+       "alt": "pergolado de madeira sem cobertura"
+      },
+      {
+       "arquivo": "068-pergolado-de-madeira-na-sacada-de-quartos.jpg",
+       "alt": "pergolado de madeira na sacada de quartos"
+      },
+      {
+       "arquivo": "069-pergolado-metalico-em-piracicaba.jpg",
+       "alt": "pergolado metalico em piracicaba"
+      },
+      {
+       "arquivo": "070-pergolado-de-madeira-com-hidro-e-piscina.jpg",
+       "alt": "pergolado de madeira com hidro e piscina"
+      },
+      {
+       "arquivo": "071-pergolado-de-ferro-em-campinas.jpg",
+       "alt": "pergolado de ferro em campinas"
+      },
+      {
+       "arquivo": "072-pergolado-de-ferro-com-churrasqueira.jpg",
+       "alt": "pergolado de ferro com churrasqueira"
+      },
+      {
+       "arquivo": "073-pergolado-de-ferro-em-valinhos.jpg",
+       "alt": "pergolado de ferro em valinhos"
+      },
+      {
+       "arquivo": "074-pergolado-de-madeira-para-area-externa.jpg",
+       "alt": "pergolado de madeira para area externa"
+      },
+      {
+       "arquivo": "075-pergolado-metalico-no-litoral-paulista.jpg",
+       "alt": "pergolado metalico no litoral paulista"
+      }
+     ]
+    },
+    {
+     "t": "html",
+     "html": "<p>Empresas que já atendemos:</p>"
+    },
+    {
+     "t": "logos",
+     "fotos": [
+      {
+       "arquivo": "076-qh2xpfdikxae27xfmjwnwlkqxag-2048x1152.png",
+       "alt": "Portfólio Bionovis - Saraiva"
+      },
+      {
+       "arquivo": "077-1743613181479.png",
+       "alt": "Portfólio WSNET- Saraiva"
+      },
+      {
+       "arquivo": "078-thumb.jpg",
+       "alt": "logotipo - Ville Sainte Anne"
+      },
+      {
+       "arquivo": "079-alphaville.png",
+       "alt": "logo - Alphaville"
+      },
+      {
+       "arquivo": "080-image.png",
+       "alt": "logo - Unicamp"
+      },
+      {
+       "arquivo": "081-shopping-ibirapuera.png",
+       "alt": "logo comercial - shopping Ibirapuera"
+      },
+      {
+       "arquivo": "082-pecorino.jpg",
+       "alt": "logo restaurante - gastronomia"
+      },
+      {
+       "arquivo": "083-images.jpg",
+       "alt": "logo comercial - shopping"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

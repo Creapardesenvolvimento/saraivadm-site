@@ -16,6 +16,9 @@
   "Projeto sob medida",
   "Instalação especializada"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/pergolado-de-madeira/",
   "/pisos-de-madeira/",
@@ -31,12 +34,9 @@
    "lead": "Deck de madeira de alto padrão para piscinas, áreas externas, áreas de lazer, gourmet e jardim. O Deck de madeira da Saraiva Design é especial, com peças selecionadas e tipo exportação o deck de madeira se destaca com material natural em cumarú cerne",
    "blocos": [
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "001-deck-de-madeira-jpg.jpeg",
-     "alt": "Deck de madeira"
-    },
-    {
-     "t": "html",
+     "alt": "",
      "html": "<p>O <strong>deck de madeira da Saraiva Design</strong> é único e de altíssima qualidade, produzido com <strong>madeiras selecionadas padrão exportação</strong>, como o Cumaru, garantindo beleza e resistência.</p><p>A empresa é especialista na construção de decks de alto padrão, cuidando de todo o processo, desde a estrutura inferior até as réguas do deck, sempre com um rigoroso controle de qualidade.</p><p>Utilizando materiais premium e contando com uma equipe altamente capacitada, composta por <strong>carpinteiros e serralheiros especializados</strong>, a Saraiva garante excelência em cada projeto.</p><p><strong>Qualidade superior:</strong> Madeiras selecionadas e padrão exportação, garantindo durabilidade e acabamento impecável.</p><p><strong>Sistema exclusivo:</strong> Método de fixação desenvolvido para maior resistência, estabilidade e longa vida útil.</p><p><strong>Atendimento amplo:</strong> Atuação em todo o Estado de São Paulo e projetos executados em todo o Brasil.</p><p><strong>Versatilidade:</strong> Ideal para piscina, área gourmet, jardim, pergolados, churrasqueira, terraço e diversos outros ambientes, agregando sofisticação e valorização ao espaço.</p>"
     }
    ]
@@ -50,7 +50,6 @@
      "titulo": "Tipos de Deck de Madeira",
      "html": "<p>Os decks de madeira podem ter diversas utilizações e aplicações. Os mesmos montados com madeiras maciças, naturais, duras, de lei e apropriadas para área externa podem ter contatos direto com sol e chuva, podendo molhar, pegar sol e ações do tempo. Para essas decks externos indicamos madeiras como GARAPEIRA ou CUMARÚ.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "002-madeira-nobre-1-scaled.png",
       "alt": "Madeira Nobre"
      }
@@ -60,7 +59,6 @@
      "titulo": "Deck de madeira no pergolado",
      "html": "<p><strong>O deck de madeira é uma ótima opção para acompanhar o seu pergolado.</strong> Por ser adaptável para todos os ambientes não têm a necessidade de retirar pisos e nem construir alvenaria para a sua sustentação, ou seja, o deck de madeira pode ser apoiado sobre o piso existente no local abaixo do pergolado. Além de combinar com o madeiramento do pergolado e deixar um ambiente harmónico, o deck de madeira é uma solução para acabamento do solo abaixo do pergolado, <strong>as réguas de cumarú do deck combinam e ornam com as madeiras de garapeira do pergolado.</strong> Deck de madeira + Pergolado é uma ótima opção para transformar seu ambiente, parece até que um foi feito para o outro, existem muitos projetos onde o deck de madeira fica ou dentro do pergolado ou ao lado do mesmo, uma harmonia perfeita e arquitetônica.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "003-pergolado-e-deck-de-madeira-11zon.avif",
       "alt": "Deck de madeira no pergolado"
      }
@@ -70,7 +68,6 @@
      "titulo": "Deck de madeira no lago",
      "html": "<p><strong>O deck de madeira</strong> <strong>no lago</strong> cria um espaço natural integrado ao ambiente, valorizando a paisagem e proporcionando uma área de convivência elegante. A estrutura, quando bem projetada, garante resistência à umidade e estabilidade ao longo do tempo. A madeira torna o visual mais acolhedor e harmônico, reforçando a sensação de tranquilidade. Ideal para contemplação, pescaria ou momentos de descanso, o deck transforma o entorno em um ponto de destaque. U<strong>m recurso estético e funcional que complementa projetos residenciais e de lazer com autenticidade.</strong></p>",
      "imagem": {
-      "t": "img",
       "arquivo": "004-deck-no-lago.avif",
       "alt": "Deck de madeira no lago"
      }
@@ -80,7 +77,6 @@
      "titulo": "Deck de madeira com hidro",
      "html": "<p><strong>O deck de madeira com hidro adiciona conforto e sofisticação à área externa,</strong> criando um ambiente relaxante e visualmente agradável. A madeira traz um acabamento natural que se integra perfeitamente ao espaço, valorizando o conjunto. A estrutura elevada facilita a instalação da jacuzzi, garantindo segurança e estabilidade. Além de funcional, o deck gera sensação de spa, ideal para lazer familiar ou momentos de descanso. É uma solução que une estética, praticidade e bem-estar. Um complemento que transforma qualquer ambiente em refúgio particular.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "005-deck-com-hidro-spa.avif",
       "alt": "Deck de madeira com hidro"
      }
@@ -90,7 +86,6 @@
      "titulo": "Deck de madeira beira de piscina",
      "html": "<p>O deck de madeira é a opção ideal para a piscina, sendo um ótimo acabamento estético e estrutural para a áreas próximas a piscinas. <strong>O deck de madeira harmoniza com a água cristalina das piscinas</strong>, sendo um ponto de apoio para espreguiçadeiras e móveis de área de externa, o deck de madeira suaviza um tablado, pisante que pode ser colocado ao lado da piscina, e ele pode ter contato direto com ações do tempo e respingos da água da piscina. <strong>Um dos melhores pisos para piscina é o deck de madeira.</strong></p>",
      "imagem": {
-      "t": "img",
       "arquivo": "006-deck-de-madeira-em-beira-de-piscina-11zon-1.avif",
       "alt": "Deck de madeira beira de piscina"
      }
@@ -100,7 +95,6 @@
      "titulo": "Deck de madeira na área gourmet",
      "html": "<p>A área gourmet é um dos locais mais acessado da casa, já que é o ambiente onde todos as comemorações são realizadas, por isso um piso fácil de limpar, antiderrapante, <strong>estético e nobre como o deck de madeira é a opção ideal para trazer aconchego, praticidade e estética.</strong><br>Por ser um piso que pode ser construído em qualquer tipo de solo e elevação, o deck de madeira é ideal para áreas gourmets. Área gourmet, ambiente de churrasco e locais de confraternizações podem ser utilizados sobre o deck de madeira, com estilo e harmonia, <strong>valorizando sempre o princípio de acolhimento e aconchego que uma área gourmet precisa.</strong></p>",
      "imagem": {
-      "t": "img",
       "arquivo": "007-anyconv-com-perg-gourmet.avif",
       "alt": "Deck de madeira na área gourmet"
      }
@@ -110,7 +104,6 @@
      "titulo": "Deck de madeira para jardim",
      "html": "<p>O jardim é um ambiente natural da casa, <strong>então a melhor opção para criar um espaço de convívio que seja harmonioso com a folhagem e ideia de naturalidade é o deck de madeira</strong>, esse tipo de material fornece uma beleza natural, leve, traz vida e destaque para as plantas, pode ser inclusive utilizado para criar um cachepô para as plantas, ou um painel de madeira para suporte de vasos e até áreas de pisantes. Além de ser uma ótima opção para quem não quer mexer com construção civil, <strong>o deck de madeira fornece uma excelente durabilidade em contato com chuva e sol.</strong></p>",
      "imagem": {
-      "t": "img",
       "arquivo": "008-deck-para-jardim-11zon.avif",
       "alt": "Deck de madeira para jardim"
      }
@@ -120,7 +113,6 @@
      "titulo": "Deck de madeira para área externa",
      "html": "<p>O deck de madeira para área externa amplia o uso do ambiente e cria uma superfície confortável, resistente e de grande apelo visual. A madeira proporciona elegância natural e combina com diferentes estilos arquitetônicos. A estrutura é ideal para reunir pessoas, acomodar móveis e compor espaços de convivência. Com manutenção adequada, o deck mantém durabilidade mesmo exposto ao clima. É uma solução prática para jardins, piscinas e varandas. Um elemento que valoriza o projeto e melhora a experiência ao ar livre.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "009-deck-para-area-externa-1.avif",
       "alt": "Deck de madeira para área externa"
      }

@@ -36,6 +36,7 @@ const origem = Astro.url.pathname;
       <textarea id="f-msg" name="mensagem" rows="4" placeholder="Deixe sua mensagem:" maxlength="3000"></textarea>
 
       <button type="submit" class="btn btn--verde btn--grande btn--bloco">Solicitar contato</button>
+      <p class="sar-form__aviso">Ao enviar, você concorda com a nossa <a href="/politica-de-privacidade/">Política de privacidade</a>.</p>
     </form>
   </div>
 </section>
@@ -91,5 +92,14 @@ const origem = Astro.url.pathname;
   .sar-form__form textarea {
     min-height: 120px;
     resize: vertical;
+  }
+  .sar-form__aviso {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #7a6a63;
+    text-align: center;
+  }
+  .sar-form__aviso a {
+    color: inherit;
   }
 </style>

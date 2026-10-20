@@ -16,6 +16,9 @@
   "Filtro UV",
   "10 anos de garantia"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/pergoconfort-max/",
   "/telha-para-pergolado/",

@@ -1,0 +1,146 @@
+{
+ "slug": "institucional",
+ "nome": "Institucional",
+ "seo": {
+  "title": "Sobre a Saraiva Design: Pergolados e Estruturas em Madeira e Aço",
+  "description": "Conheça a Saraiva Design em Madeiras e Aços: mais de 25 anos em pergolados, coberturas, forros e decks de alto padrão, com fábrica própria em Campinas-SP."
+ },
+ "hero": {
+  "titulo": "Sobre a Saraiva Design",
+  "texto": null,
+  "imagem": "010-capa-site-artes-novo-industria.jpg"
+ },
+ "faixa": [
+  "+25 anos de experiência",
+  "Fábrica própria em Campinas",
+  "Atendimento em todo o Brasil",
+  "Garantia e pós-venda"
+ ],
+ "tipo": "institucional",
+ "botoes": null,
+ "tituloForm": null,
+ "relacionados": [
+  "/pergolado-de-madeira/",
+  "/pergolado-metalico/",
+  "/cobertura-para-pergolado/",
+  "/forro-de-palha/",
+  "/forro-em-esteiras-de-bambu/",
+  "/deck-de-madeira/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Quem somos",
+   "lead": "Atendendo todo o Brasil com Projetos em Madeira, Aço, Bambu e Palha. Com a alma familiar e excelência em cada detalhe",
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p>Atendemos com excelência, do primeiro contato à entrega final.<br>Produzimos com responsabilidade para transformar ideias em grandes projetos.</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Propósito, Valores e missão",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "linha",
+     "arquivo": "001-fotos-saraiva.jpg",
+     "alt": "institucional saraiva - time",
+     "html": "<p><strong>Missão:</strong> Construir estruturas em madeira e aço com excelência, forrar ambientes com <a href=\"/forro-de-palha/\">palha</a>, bambu e madeira de forma artesanal. Unir tradição e inovação para entregar projetos artísticos em carpintaria e serralheria de alto padrão.</p><p><strong>Visão:</strong> Ser referência mundial na construção de pergolados de alto padrão de forma sustentável – Ser líder de mercado no fornecimento de palhas naturais e sintéticas, forros de <a href=\"/forro-em-esteiras-de-bambu/\">bambu</a>, madeira e kits de pergolados e gazebos pré-fabricados.</p><p><strong>Valores:</strong> Transparência – Ética – Responsabilidade – Sustentabilidade – Inovação – Amor ao próximo – Paixão pelo trabalho – Inclusão – Criatividade – Respeito</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": null,
+   "lead": "Conheça um pouco dos nossos diferenciais e se surpreenda com a qualidade dos nossos serviços e produtos",
+   "blocos": [
+    {
+     "t": "sub",
+     "texto": "Projetos em 3d"
+    },
+    {
+     "t": "cards",
+     "itens": [
+      {
+       "titulo": "Mão de obra profissional",
+       "html": "<p>Profissionais qualificados e artesanais, mestres na carpintaria artesanal e no fino acabamento. Mão de obra habilitada e treinada para os mais diversos projetos.</p>"
+      },
+      {
+       "titulo": "Atendimento exclusivo",
+       "html": "<p>Receba o melhor atendimento da região, consultores e técnicos especializados na área. Showroom localizado em Campinas/SP e uma ótima equipe de vendas a sua disposição.</p>"
+      },
+      {
+       "titulo": "Prazo reduzido de obra",
+       "html": "<p>Cronograma inteligente, prazos reduzidos e equipes prontas para as mais variadas obras. Serviços rápidos e de altíssima qualidade.</p>"
+      },
+      {
+       "titulo": "Carpintaria premium",
+       "html": "<p>Amantes de madeiras, trabalhamos com muito amor em nossos projetos. Carpintarias Premium e Altíssima Expertise.</p>"
+      },
+      {
+       "titulo": "Serralheria artística",
+       "html": "<p>Transformamos metal em arte, unindo técnica e criatividade. Cada peça é única, onde forma e função se encontram.</p>"
+      }
+     ]
+    },
+    {
+     "t": "img",
+     "arquivo": "002-madeira-nobre-1-scaled.png",
+     "alt": "Caramanchão Produto Saraiva"
+    },
+    {
+     "t": "sub",
+     "texto": "Especialidades da Saraiva"
+    },
+    {
+     "t": "html",
+     "html": "<p>A <strong>Saraiva Design em Madeiras e Aços</strong> oferece soluções completas em estruturas de madeira e metal para ambientes residenciais e comerciais. Atuamos com a fabricação e instalação de <strong>pergolados de madeira</strong> e <strong>pergolados metálicos</strong>, unindo resistência e sofisticação ao seu espaço. Trabalhamos também com <strong>forros de bambu</strong>, <strong>forros de palha</strong> e <strong>decks de madeira</strong>, trazendo charme, rusticidade e conforto térmico. Nossas <strong>coberturas para pergolado</strong> garantem proteção e funcionalidade, com destaque para a exclusiva <strong><a href=\"/telha-para-pergolado/\">Telha</a> PergoConfort</strong>, que oferece isolamento térmico, proteção contra raios UV e acabamento refinado. Com mão de obra especializada e estrutura própria, entregamos projetos personalizados com qualidade, eficiência e responsabilidade em todo o estado de São Paulo, além do envio de materiais para todo o Brasil.</p>"
+    },
+    {
+     "t": "linha",
+     "arquivo": "003-pergolado-para-area-gourmet.webp",
+     "alt": "",
+     "html": "<p>O pergolado é um coringa na construção, <strong>pois substituiu o famoso “puxadinho de telhado” de uma forma muito requintada</strong>, bonita e rápida de ser executada. Hoje em dia o pergolado pode ser desde um avanço da área gourmet como um avulso no área de lazer para sombreamento.</p><p>A Saraiva Design em Madeiras trabalha com <a href=\"/portfolio/\">pergolados de madeira</a> personalizados, <strong>desde modelos mais simples até projetos grandes.</strong> A empresa possui expertise no assunto e possui uma equipe de técnicos e carpinteiros com anos de experiência na área. Os materiais são adequados e exclusivos para atender a necessidade de cada cliente.</p>"
+    },
+    {
+     "t": "linha",
+     "arquivo": "004-dji-20000220131732-0035-d-scaled.jpg",
+     "alt": "",
+     "html": "<p>O <a href=\"/pergolado-metalico/\">pergolado metálico</a> se tornou um verdadeiro coringa na construção moderna, substituindo estruturas improvisadas com uma solução elegante, durável e de execução rápida. Versátil, ele pode funcionar como extensão da área gourmet, cobertura para passagem, ou como um elemento independente na área de lazer, oferecendo sombreamento e um visual contemporâneo.</p><p>A <strong>Saraiva Design em Madeiras</strong> também é referência em <strong>pergolados metálicos</strong>, desenvolvendo projetos personalizados que vão desde modelos minimalistas até grandes estruturas arquitetônicas. A empresa conta com uma equipe especializada, unindo técnicos e serralheiros experientes para garantir precisão, segurança e acabamento impecável.</p>"
+    },
+    {
+     "t": "linha",
+     "arquivo": "005-dsc9062-aprimorado-nr-scaled.jpg",
+     "alt": "",
+     "html": "<p>Nós da Saraiva Design em madeiras <strong>trabalhamos com alto padrão de qualidade em montagens de <a href=\"/deck-de-madeira/\">deck</a> de madeira,</strong> trabalhando com <strong>madeiramento adequado</strong>, <strong>eliminando ao máximo emendas desnecessárias</strong> (utilizamos com as maiores réguas do mercado), não trabalhando com sobras, e <strong>a mão de obra é especializada e qualificada.</strong></p><p>Desde a seleção das madeiras na madeireira, até a aplicação do verniz nas madeiras, existe <strong>um cuidado especial para que tudo saia perfeito.<br></strong>O deck de madeira pode aproveitar desníveis de terrenos, ser utilizados em área permeáveis, embelezar ambientes, tampar casas de máquinas e ser utilizado nos mais variados projetos.</p>"
+    },
+    {
+     "t": "linha",
+     "arquivo": "006-dsc05213-aprimorado-nr-scaled.jpg",
+     "alt": "",
+     "html": "<p>O <strong>Forro de Bambu</strong> é um produto <a href=\"https://www.sienge.com.br/blog/marceneiro-ou-carpinteiro-qual-a-diferenca/#:~:text=%C3%89%20uma%20atividade%20artesanal%20que,%2C%20lajes%2C%20caibros%20e%20telhados.\" target=\"_blank\" rel=\"noopener\">artesanal</a> e utilizado como <strong><a href=\"/5-dicas-de-decoracao-para-pergolado/\">decoração</a></strong>de residências, resorts, hotéis, pergolados, quiosques e outros. Um produto harmonioso com a madeira, <strong>que não inibi a passagem de claridade</strong>, o que é indispensável para um ambiente que <strong>necessita de claridade natural e ao mesmo tempo de sombra.</strong></p><p>As esteiras de Bambu <strong>estão em alta com os decoradores e arquitetos</strong>, são utilizadas para dar vida aos mais variados ambientes. Partindo de um<strong>produto <a href=\"https://meiosustentavel.com.br/bambu-a-materia-prima-do-futuro/\" target=\"_blank\" rel=\"noopener\">ecologicamente</a> correto e que é tendência em todo o mundo</strong>, quem opta por forrar seu pergolado, teto ou outras estruturas com forro de bambu não ficará arrependido.</p>"
+    },
+    {
+     "t": "linha",
+     "arquivo": "007-dsc05045-aprimorado-nr-scaled.jpg",
+     "alt": "",
+     "html": "<p>A Saraiva Design em Madeiras <strong>se destaca na criação de forros exclusivos para pergolados,</strong> oferecendo <em>opções</em><strong>sintéticas e naturais testadas para revestir e embelezar essas estruturas</strong><em>,</em> proporcionando sombra, privacidade e bloqueando a visão de elementos indesejados sobre a cobertura, resultando em ambientes atraentes e funcionais. Com uma equipe especializada e materiais de alta qualidade, <strong>nossa empresa se empenha em transformar seu pergolado em um espaço de beleza e conforto excepcionais.</strong></p>"
+    },
+    {
+     "t": "linha",
+     "arquivo": "008-dji-0395-aprimorado-nr-scaled.jpg",
+     "alt": "",
+     "html": "<p><strong>A Pergo-confort é uma telha de poliéster reforçado com fibra de vidro, fabricadas sob medida no comprimento do seu projeto.</strong> Essas coberturas oferecem proteção contra os <a href=\"https://mundoeducacao.uol.com.br/fisica/radiacao-ultravioleta-uv.htm\" target=\"_blank\" rel=\"noopener\">raios UV</a>, reduzem a entrada de calor e possuem uma garantia de 10 anos contra o afloramento das fibras. Isso não apenas cria um ambiente confortável e aconchegante, mas também é uma escolha <strong><a href=\"https://www.wwf.org.br/natureza_brasileira/questoes_ambientais/desenvolvimento_sustentavel/\" target=\"_blank\" rel=\"noopener\">sustentável</a></strong>.</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "folder",
+   "href": "https://saraivadm.com.br/wp-content/uploads/2025/05/FOLDER-INSTITUCIONAL-2025.pdf",
+   "capa": "009-institucional-1.jpg"
+  }
+ ]
+}

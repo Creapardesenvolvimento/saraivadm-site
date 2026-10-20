@@ -16,6 +16,9 @@
   "Produção sob medida",
   "Envio para todo o Brasil"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/forro-de-palha/",
   "/pergolado-de-madeira/",
@@ -48,12 +51,9 @@
      "texto": "Forro de Bambu – Coleção Bamboo Concept"
     },
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "001-colecao-bamboo-concept-2048x1159.png",
-     "alt": "coleção bamboo - concept"
-    },
-    {
-     "t": "html",
+     "alt": "coleção bamboo - concept",
      "html": "<p>Apresentamos a <strong>Coleção Bamboo Concept</strong>, uma linha de forros desenvolvida a partir do <strong>bambu</strong>, um material 100% natural, renovável e de alta durabilidade. A coleção une estética e responsabilidade ambiental, valorizando a beleza orgânica do bambu e seu papel como recurso altamente sustentável.</p><p>Cada modelo da Bamboo Concept preserva a personalidade única das fibras naturais, permitindo composições versáteis, acolhedoras e cheias de autenticidade. Ideal para projetos que buscam integração com a natureza, conforto visual e compromisso com práticas sustentáveis.</p>"
     },
     {
@@ -218,7 +218,6 @@
      "titulo": "Forro de bambu para área gourmet",
      "html": "<p><strong>O forro de bambu</strong> na área gourmet transforma o ambiente em um espaço aconchegante e sofisticado, proporcionando conforto térmico durante as refeições e encontros sociais. Além de <strong>reduzir o calor, ele garante sombreamento</strong> ideal e valoriza a decoração, trazendo um toque natural que harmoniza perfeitamente com móveis e revestimentos modernos ou rústicos.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "008-dsc04718-aprimorado-nr-scaled-1.avif",
       "alt": "Forro de bambu para área gourmet"
      }
@@ -228,7 +227,6 @@
      "titulo": "Forro de bambu na garagem",
      "html": "<p>Aplicar <strong>forro de bambu</strong> na garagem é uma solução prática e elegante para reduzir a temperatura e criar um ambiente mais agradável. Sua resistência a intempéries e a facilidade de instalação fazem dele uma escolha <strong>eficiente, protegendo o espaço contra o calor excessivo e oferecendo um acabamento diferenciado</strong> que valoriza o imóvel.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "009-img-3529-enhanced-nr-scaled-1.avif",
       "alt": "Forro de bambu na garagem"
      }
@@ -238,7 +236,6 @@
      "titulo": "Forro de bambu na academia",
      "html": "<p><strong>Na academia, o forro de bambu</strong> ajuda a manter o espaço mais fresco e confortável para a prática de atividades físicas. Além da eficiência térmica, seu design natural proporciona um visual agradável e acolhedor, tornando o ambiente motivador e convidativo para treinos diários.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "010-dsc06295-aprimorado-nr-scaled-1.avif",
       "alt": "Forro de bambu na academia"
      }
@@ -248,7 +245,6 @@
      "titulo": "Forro de bambu na sala de TV e estar",
      "html": "<p>A sala de TV e estar ganha sofisticação e aconchego com o forro de bambu, que alia estética e funcionalidade. <strong>Ele melhora o conforto térmico, reduz a incidência de calor</strong> e cria uma atmosfera mais intimista, ideal para momentos de descanso e lazer em família.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "011-dsc06863-scaled-1.avif",
       "alt": "Forro de bambu na sala de TV e estar"
      }
@@ -258,7 +254,6 @@
      "titulo": "Forro de bambu no jardim",
      "html": "<p>No jardim, <strong>o forro de bambu</strong> é a escolha perfeita para trazer sombreamento natural e charme rústico ao espaço. Ele contribui para reduzir a temperatura em áreas de convivência ao ar livre, tornando o ambiente mais agradável para relaxar, cultivar plantas ou receber visitas.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "012-dsc03806-aprimorado-nr-scaled-1.avif",
       "alt": "Forro de bambu no jardim"
      }
@@ -268,7 +263,6 @@
      "titulo": "Forro de bambu na área de lazer",
      "html": "<p>A <strong>área de lazer</strong> se torna ainda mais convidativa com o forro de bambu, que combina beleza, conforto térmico e durabilidade. Sua aplicação <strong>garante sombreamento eficiente,</strong> reduzindo o calor e criando um ambiente descontraído e sofisticado, perfeito para confraternizações e momentos de descanso.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "013-img-5415-enhanced-nr-scaled-1.avif",
       "alt": "Forro de bambu na área de lazer"
      }
@@ -278,7 +272,6 @@
      "titulo": "Forro de bambu na sacada",
      "html": "<p>Na sacada, <strong>o forro de bambu proporciona</strong> conforto térmico e um acabamento elegante, tornando o espaço mais agradável para leitura, descanso ou encontros rápidos. Sua <strong>textura natural valoriza a decoração e se adapta a diferentes estilos arquitetônicos</strong>, agregando charme e funcionalidade ao ambiente.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "014-dsc02852-aprimorado-nr-scaled-1.avif",
       "alt": "Forro de bambu na sacada"
      }
@@ -288,7 +281,6 @@
      "titulo": "Forro de bambu e churrasqueira",
      "html": "<p>A combinação do <strong>forro em esteiras de bambu com a churrasqueira</strong> cria um ambiente acolhedor e cheio de personalidade. O bambu traz um toque natural e rústico, equilibrando perfeitamente com o clima descontraído das áreas gourmet. Além de bonito, o material ajuda a suavizar a luz e a temperatura do espaço. Um detalhe que transforma o local em um verdadeiro refúgio para receber e relaxar.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "015-dsc03720-aprimorado-nr-scaled-1.avif",
       "alt": "Forro de bambu e churrasqueira"
      }
@@ -298,7 +290,6 @@
      "titulo": "Forro de bambu no teto",
      "html": "<p>O <strong>forro de bambu no teto</strong> é sinônimo de <strong>elegância e requinte</strong>. Seu visual natural e sofisticado valoriza qualquer ambiente, trazendo uma sensação de aconchego e exclusividade. Além de estético, o bambu é resistente e sustentável, tornando-se uma escolha perfeita para quem busca beleza aliada à responsabilidade ambiental.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "016-img-4578-enhanced-nr-scaled-1.avif",
       "alt": "Forro de bambu no teto"
      }

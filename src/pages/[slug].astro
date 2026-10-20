@@ -65,8 +65,20 @@ const url = `${site.url}/${slug}/`;
 const heroSchema = await getImage({ src: hero, width: 1200, format: 'jpg', quality: 80 });
 const textoPuro = (html: string) => html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 const duvidas = p.secoes.find((s: any) => s.tipo === 'acordeao' && /d[úu]vidas/i.test(s.titulo ?? ''));
+const institucional = p.tipo === 'institucional';
 const schema: Record<string, unknown>[] = [
-  {
+  institucional
+    ? {
+        '@context': 'https://schema.org',
+        '@type': slug === 'institucional' ? 'AboutPage' : 'WebPage',
+        name: p.hero.titulo,
+        description: p.seo.description,
+        url,
+        inLanguage: 'pt-BR',
+        about: { '@id': `${site.url}/#empresa` },
+        isPartOf: { '@id': `${site.url}/#site` },
+      }
+    : {
     '@context': 'https://schema.org',
     '@type': 'Service',
     '@id': `${url}#servico`,
@@ -76,7 +88,7 @@ const schema: Record<string, unknown>[] = [
     image: new URL(heroSchema.src, site.url).href,
     provider: { '@id': `${site.url}/#empresa` },
     areaServed: { '@type': 'Country', name: 'Brasil' },
-  },
+      },
   {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -105,10 +117,21 @@ if (duvidas) {
     titulo={p.hero.titulo}
     texto={p.hero.texto ?? undefined}
     trilha={[{ label: 'Início', href: '/' }, { label: nome }]}
-    botoes={[
-      { label: 'Orçamento imediato', href: msg(), whatsapp: true },
-      { label: 'Ver produtos', href: '#conteudo-produto' },
-    ]}
+    botoes={
+      p.botoes?.map((b: any) => ({
+        ...b,
+        href: b.href === '__whats__' ? msg('um projeto com a Saraiva Design') : b.href === '__whats_parceria__' ? whatsappUrl('Olá! Sou profissional da área e tenho interesse em parceria com a Saraiva Design.') : b.href,
+      })) ??
+      (institucional
+        ? [
+            { label: 'Fale conosco', href: msg('a Saraiva Design'), whatsapp: true },
+            { label: 'Ver produtos', href: '/#produtos' },
+          ]
+        : [
+            { label: 'Orçamento imediato', href: msg(), whatsapp: true },
+            { label: 'Ver produtos', href: '#conteudo-produto' },
+          ])
+    }
     faixa={p.faixa ?? undefined}
   />
 
@@ -216,6 +239,23 @@ if (duvidas) {
                   const fotos = b.fotos.filter((f: any) => img(f.arquivo)).map((f: any) => ({ src: img(f.arquivo)!, alt: f.alt }));
                   return fotos.length ? <Galeria fotos={fotos} colunas={fotos.length <= 5 ? Math.max(fotos.length, 3) : fotos.length % 3 === 0 && fotos.length < 10 ? 3 : 4} /> : null;
                 }
+                if (b.t === 'linha' && img(b.arquivo))
+                  return (
+                    <article class="pm-uso pm-uso--linha">
+                      <Image src={img(b.arquivo)!} alt={b.alt || nome} widths={[500, 800]} sizes="(max-width: 900px) 100vw, 560px" class="pm-uso__img" />
+                      <div class="pm-uso__texto" set:html={b.html} />
+                    </article>
+                  );
+                if (b.t === 'logos')
+                  return (
+                    <ul class="pm-logos">
+                      {b.fotos.filter((f: any) => img(f.arquivo)).map((f: any) => (
+                        <li>
+                          <Image src={img(f.arquivo)!} alt={f.alt || 'Cliente Saraiva Design'} widths={[240, 400]} sizes="200px" />
+                        </li>
+                      ))}
+                    </ul>
+                  );
                 if (b.t === 'videos')
                   return (
                     <div class:list={['pm-videos', { 'pm-videos--um': b.videos.length === 1 }]}>
@@ -266,5 +306,5 @@ if (duvidas) {
     )
   }
 
-  <ContactForm titulo={`Quer ${nomeMin}?<br> Receba o contato da nossa equipe`} />
+  <ContactForm titulo={p.tituloForm ?? (institucional ? 'Preencha o formulário e receba o contato<br> da nossa equipe comercial' : `Quer ${nomeMin}?<br> Receba o contato da nossa equipe`)} />
 </Base>

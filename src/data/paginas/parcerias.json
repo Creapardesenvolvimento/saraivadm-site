@@ -1,0 +1,48 @@
+{
+ "slug": "parcerias",
+ "nome": "Parcerias",
+ "seo": {
+  "title": "Parcerias para Arquitetos, Engenheiros e Construtoras | Saraiva Design",
+  "description": "Arquitetos, engenheiros, paisagistas e construtoras: seja parceiro da Saraiva Design em projetos de pergolados, coberturas, forros e decks de alto padrão."
+ },
+ "hero": {
+  "titulo": "Parcerias",
+  "texto": null,
+  "imagem": "001-capa-site-parcerias.jpg"
+ },
+ "faixa": null,
+ "tipo": "institucional",
+ "botoes": [
+  {
+   "label": "Quero ser parceiro",
+   "href": "__whats_parceria__",
+   "whatsapp": true
+  },
+  {
+   "label": "Deixar meu contato",
+   "href": "#contato"
+  }
+ ],
+ "tituloForm": "Deixe aqui o seu contato<br> e fale com a nossa equipe",
+ "relacionados": [
+  "/pergolado-de-madeira/",
+  "/pergolado-metalico/",
+  "/cobertura-para-pergolado/",
+  "/forro-de-palha/",
+  "/forro-em-esteiras-de-bambu/",
+  "/deck-de-madeira/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Parcerias com arquitetos, engenheiros e construtoras",
+   "lead": "Se você é Arquiteto, Engenheiro, Paisagista, ou tem uma Construtora, conte conosco para parceria e produzirmos os melhores projetos!",
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p>Arquitetos, Engenheiros e Construtoras: Juntos, realizamos grandes projetos</p><p>Deixe aqui o seu contato!</p>"
+    }
+   ]
+  }
+ ]
+}

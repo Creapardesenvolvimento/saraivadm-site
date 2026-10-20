@@ -1,0 +1,68 @@
+---
+// Texto-base de termos de uso. Recomendado: revisão jurídica antes da publicação definitiva.
+import Legal from '../layouts/Legal.astro';
+import { site } from '../data/site';
+---
+
+<Legal
+  title="Termos de Uso | Saraiva Design"
+  description="Condições de uso do site da Saraiva Design em Madeiras e Aço: conteúdo, imagens, orçamentos, preços e links para outros sites."
+  titulo="Termos de uso"
+  atualizado="20 de outubro de 2026"
+>
+  <p>
+    Estes termos regulam o uso do site <a href={site.url}>saraivadm.com.br</a>, mantido pela
+    <strong>{site.nome}</strong>, CNPJ {site.cnpj}. Ao navegar pelo site, você concorda com as condições abaixo.
+  </p>
+
+  <h2>1. Finalidade do site</h2>
+  <p>
+    O site apresenta a empresa, seus produtos e serviços (pergolados, coberturas, forros, decks, pisos e demais
+    soluções em madeira e aço) e oferece canais para contato e solicitação de orçamento.
+  </p>
+
+  <h2>2. Informações, preços e orçamentos</h2>
+  <ul>
+    <li>
+      As informações técnicas, fotos, medidas e materiais apresentados têm caráter ilustrativo e podem variar conforme o
+      projeto, o lote de matéria-prima e as condições da obra.
+    </li>
+    <li>
+      Valores, tabelas de preço e condições de pagamento divulgados no site ou em catálogos são referências e podem ser
+      alterados sem aviso prévio. As condições válidas são as do orçamento formal enviado pela Saraiva Design.
+    </li>
+    <li>O envio de um formulário ou mensagem não gera obrigação de compra nem de contratação.</li>
+  </ul>
+
+  <h2>3. Propriedade intelectual</h2>
+  <p>
+    Textos, fotografias, vídeos, projetos, marcas (incluindo Saraiva Design, PergoConfort, PergoConfort Max, PergoPlac e
+    Pergokit), logotipos e demais conteúdos do site pertencem à Saraiva Design ou são usados com autorização. Não é
+    permitido copiar, reproduzir ou usar esse conteúdo para fins comerciais sem autorização prévia por escrito.
+  </p>
+
+  <h2>4. Links para outros sites</h2>
+  <p>
+    O site contém links para serviços de terceiros, como WhatsApp, YouTube, Instagram, TikTok, Pinterest, LinkedIn e
+    Google Maps. Esses serviços têm termos e políticas próprios, pelos quais a Saraiva Design não se responsabiliza.
+  </p>
+
+  <h2>5. Uso adequado</h2>
+  <p>
+    Ao usar o site, você se compromete a não enviar informações falsas, conteúdo ilícito ou mensagens automatizadas
+    (spam), nem tentar prejudicar o funcionamento ou a segurança do site.
+  </p>
+
+  <h2>6. Privacidade</h2>
+  <p>
+    O tratamento de dados pessoais segue a nossa <a href="/politica-de-privacidade/">Política de privacidade</a>.
+  </p>
+
+  <h2>7. Alterações e foro</h2>
+  <p>
+    Estes termos podem ser atualizados a qualquer momento. Fica eleito o foro da comarca de Campinas-SP para dirimir
+    eventuais questões, ressalvados os direitos do consumidor previstos em lei.
+  </p>
+
+  <p>Dúvidas: <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+</Legal>

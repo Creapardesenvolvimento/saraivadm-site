@@ -16,6 +16,9 @@
   "Produção sob medida",
   "Instalação especializada"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/forro-de-palha/",
   "/forro-em-esteiras-de-bambu/",

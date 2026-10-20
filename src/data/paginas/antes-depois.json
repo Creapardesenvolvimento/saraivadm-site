@@ -1,0 +1,321 @@
+{
+ "slug": "antes-depois",
+ "nome": "Antes e depois",
+ "seo": {
+  "title": "Antes e Depois: Transformações com Pergolados | Saraiva Design",
+  "description": "Veja o antes e depois de áreas externas transformadas pela Saraiva Design com pergolados, coberturas, forros e decks de madeira."
+ },
+ "hero": {
+  "titulo": "Antes e depois",
+  "texto": null,
+  "imagem": "068-capa-site-antes-e-depois.jpg"
+ },
+ "faixa": null,
+ "tipo": "institucional",
+ "botoes": [
+  {
+   "label": "Quero transformar meu espaço",
+   "href": "__whats__",
+   "whatsapp": true
+  },
+  {
+   "label": "Ver as fotos",
+   "href": "#conteudo-produto"
+  }
+ ],
+ "tituloForm": null,
+ "relacionados": [
+  "/pergolado-de-madeira/",
+  "/pergolado-metalico/",
+  "/cobertura-para-pergolado/",
+  "/forro-de-palha/",
+  "/forro-em-esteiras-de-bambu/",
+  "/deck-de-madeira/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Veja as transformações feitas pela Saraiva Design em Madeiras e Aços",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "sub",
+     "texto": "Diversas transformações de ambiente para você se inspirar!"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "001-antes-e-depois-saraiva-alan-douglas.jpg",
+       "alt": "pergolado metálico -  piscina"
+      },
+      {
+       "arquivo": "002-antes-e-depois-saraiva-carlos-jundiai.jpg",
+       "alt": "pergolado de madeira - Jundiaí"
+      },
+      {
+       "arquivo": "003-maria-ione-antes-e-depois.jpg",
+       "alt": "pergolado de madeira - Limeira"
+      },
+      {
+       "arquivo": "004-antes-e-depois-saraiva-andre-jandira.jpg",
+       "alt": "pergolado metálico - lazer"
+      },
+      {
+       "arquivo": "005-antes-e-depois-saraiva-fer-jr.jpg",
+       "alt": "pergolado de madeira - deck de madeira"
+      },
+      {
+       "arquivo": "006-antes-e-depois-saraiva-luiz-itu.jpg",
+       "alt": "pergolado metálico -  Itupeva"
+      },
+      {
+       "arquivo": "007-antes-e-depois-saraiva-sergio-saraiva.jpg",
+       "alt": "pergolado de madeira - reforma"
+      },
+      {
+       "arquivo": "008-antes-e-depois-saraiva-frank-bender.jpg",
+       "alt": "pergolado de madeira - churrasqueira"
+      },
+      {
+       "arquivo": "009-antes-e-depois-saraiva-isaura-campinas.jpg",
+       "alt": "pergolado de madeira - minimalista"
+      },
+      {
+       "arquivo": "010-antes-e-depois-saraiva-conrado.jpg",
+       "alt": "pergolado de madeira - alameda"
+      },
+      {
+       "arquivo": "011-antes-e-depois-saraiva-boituva.jpg",
+       "alt": "pergolado metálico -  Boituva"
+      },
+      {
+       "arquivo": "012-antes-e-depois-saraiva-christian-sorocaba.jpg",
+       "alt": "pergolado de madeira - jardineira"
+      },
+      {
+       "arquivo": "013-antes-e-depois-saraivasas.jpg",
+       "alt": "pergolado - varandaço"
+      },
+      {
+       "arquivo": "014-antes-e-depois-saraiva-ednea.jpg",
+       "alt": "pergolado metálico - corredor"
+      },
+      {
+       "arquivo": "015-antes-e-depois-saraiva-daniel-farah.jpg",
+       "alt": "pergolado metálico piscina - fachada"
+      },
+      {
+       "arquivo": "016-antes-e-depois-saraiva-claudio-salvador.jpg",
+       "alt": "pergolado em madeira - condomínio"
+      },
+      {
+       "arquivo": "017-antes-e-depois-saraiva-airton.jpg",
+       "alt": "pergolado metálico - conforto"
+      },
+      {
+       "arquivo": "018-antes-e-depois-feed-pergolado-madeira-2.jpg",
+       "alt": "pergolado de madeira - mirante"
+      },
+      {
+       "arquivo": "019-antes-e-depois-saraiva-ana-carolina.jpg",
+       "alt": "pergolado metálico -   em Campinas"
+      },
+      {
+       "arquivo": "020-antes-e-depois-feed-metalico-3.jpg",
+       "alt": "pergolado metálico -  elegante"
+      },
+      {
+       "arquivo": "021-antes-e-depois-feed-metalico-2.jpg",
+       "alt": "pergolado metálico -  renovação"
+      },
+      {
+       "arquivo": "022-antes-e-depois-feed-metalico-1.jpg",
+       "alt": "pergolado metálico - cobertura"
+      },
+      {
+       "arquivo": "023-antes-e-depois-marcio-coutinho-01-copia.jpg",
+       "alt": "pergolado de madeira - recém concluído"
+      },
+      {
+       "arquivo": "024-antes-e-depois-saraiva-rodrigo-cesar.jpg",
+       "alt": "pergolado  metálico - Marília"
+      },
+      {
+       "arquivo": "025-antes-e-depois-saraiva-bl-servicos.jpg",
+       "alt": "pergolado metálico - em Piracicaba"
+      },
+      {
+       "arquivo": "026-antes-e-depois-marcio-coutinho-02-copia.jpg",
+       "alt": "pergolado de madeira - feito recentemente"
+      },
+      {
+       "arquivo": "027-antes-e-depois-saraiva-anderson.jpg",
+       "alt": "pergolado metálico - para fins estéticos"
+      },
+      {
+       "arquivo": "028-antes-e-depois-saraiva-braz-copia.jpg",
+       "alt": "pergolado de madeira -  para proteção de chuva"
+      },
+      {
+       "arquivo": "029-snapinst-app-453732866-1220262108920705-6211740900.jpg",
+       "alt": "deck de madeira - reordenado"
+      },
+      {
+       "arquivo": "030-snapinst-app-460664204-469706682732435-52953108845.jpg",
+       "alt": "pergolado de madeira - modernização funcional"
+      },
+      {
+       "arquivo": "031-snapinst-app-460710084-974368577778538-77127207305.jpg",
+       "alt": "pergolado de madeira - reordenação"
+      },
+      {
+       "arquivo": "032-snapinst-app-476183009-1183900889965564-1188394640.jpg",
+       "alt": "pergolado metálico - em construção"
+      },
+      {
+       "arquivo": "033-afstdgd.jpg",
+       "alt": "pergolado de madeira -  para uma melhor integração"
+      },
+      {
+       "arquivo": "034-xzfafs.jpg",
+       "alt": "pergolado de madeira - para bom resguardo"
+      },
+      {
+       "arquivo": "035-antes-e-depois-saraiva-sadsf.jpg",
+       "alt": "pergolado de madeira - defesa contra chuva"
+      },
+      {
+       "arquivo": "036-acej-antes-e-depois.jpg",
+       "alt": "forro de bambu - para blindagem"
+      },
+      {
+       "arquivo": "037-alessandro-itu.jpg",
+       "alt": "pergolado de madeira - para novo ar"
+      },
+      {
+       "arquivo": "038-alexandre-pansiera.jpg",
+       "alt": "pergolado metálico - para refinamento"
+      },
+      {
+       "arquivo": "039-antes-e-depois-saraiva-renato-correa.jpg",
+       "alt": "pergolado de madeira - para melhor lazer"
+      },
+      {
+       "arquivo": "040-monize.jpg",
+       "alt": "pergolado de madeira - novo ambiente"
+      },
+      {
+       "arquivo": "041-antes-e-depois-saraiva-marco-antonio.jpg",
+       "alt": "pergolado metálico - para zelo"
+      },
+      {
+       "arquivo": "042-antes-e-depois-georgete.jpg",
+       "alt": "pergolado metálico - para preservação"
+      },
+      {
+       "arquivo": "043-antes-e-depois-saraiva-gabriela.jpg",
+       "alt": "forro de bambu - para proteção especial"
+      },
+      {
+       "arquivo": "044-alexandre-boituva-01-copia.jpg",
+       "alt": "forro de palha - para proteção extra"
+      },
+      {
+       "arquivo": "045-alexandre-boituva-02-copia.jpg",
+       "alt": "telha pergolada - para nova proteção"
+      },
+      {
+       "arquivo": "046-antes-e-depois-saraiva-sylvio-copia.jpg",
+       "alt": "pergolado metálico - na varanda"
+      },
+      {
+       "arquivo": "047-snapinst-app-449650179-1006343384217143-8977758857.jpg",
+       "alt": "forro de palha - recém reordenado"
+      },
+      {
+       "arquivo": "048-snapinst-app-449703191-1645984182833531-4093986298.jpg",
+       "alt": "cobertura para pergolado - reconfigurado"
+      },
+      {
+       "arquivo": "049-snapinst-app-449871001-1195017351813070-1464691064.jpg",
+       "alt": "pergolado de madeira - recém estabelecido"
+      },
+      {
+       "arquivo": "050-snapinst-app-449872289-1833031943855408-1258724767.jpg",
+       "alt": "pergolado de madeira - instalado recentemente"
+      },
+      {
+       "arquivo": "051-snapinst-app-452602332-922607496338461-42354155340.jpg",
+       "alt": "forro de bambu - recém finalizado"
+      },
+      {
+       "arquivo": "052-snapinst-app-452648590-796400822683628-16380369674.jpg",
+       "alt": "forro de bambu - original"
+      },
+      {
+       "arquivo": "053-snapinst-app-453989591-383250331104077-40126094478.jpg",
+       "alt": "pergolado de madeira - recém implementado"
+      },
+      {
+       "arquivo": "054-snapinst-app-454284638-1623368615169960-1535639894.jpg",
+       "alt": "forro de palha - recém aplicado"
+      },
+      {
+       "arquivo": "055-snapinst-app-458471834-1040821597540715-3049845414.jpg",
+       "alt": "pergolado de madeira - recém criado"
+      },
+      {
+       "arquivo": "056-snapinst-app-458794502-500551822700294-57896324740.jpg",
+       "alt": "pergolado de madeira - renovado"
+      },
+      {
+       "arquivo": "057-snapinst-app-460116305-26824774933803803-641124820.jpg",
+       "alt": "pergolado de madeira - formalizado"
+      },
+      {
+       "arquivo": "058-snapinst-app-460430255-832911982245676-51380315879.jpg",
+       "alt": "pergolado de madeira - nova implementação"
+      },
+      {
+       "arquivo": "059-snapinst-app-461654026-567303785765760-46324769438.jpg",
+       "alt": "forro de palha - reformulação"
+      },
+      {
+       "arquivo": "060-snapinst-app-461684863-1067646698049521-7154661928.jpg",
+       "alt": "forro de palha - reorganização"
+      },
+      {
+       "arquivo": "061-snapinst-app-462421093-2275416376141559-6966832919.jpg",
+       "alt": "pergolado de madeira - concretude"
+      },
+      {
+       "arquivo": "062-snapinst-app-463187308-462839679488282-30543419857.jpg",
+       "alt": "pergolado de madeira - implementação"
+      },
+      {
+       "arquivo": "063-snapinst-app-474601966-652090673920614-76513560448.jpg",
+       "alt": "pergolado de maneira - valorização"
+      },
+      {
+       "arquivo": "064-snapinst-app-476452577-614101237889679-76580999183.jpg",
+       "alt": "pergolado metálico - nova renovação"
+      },
+      {
+       "arquivo": "065-snapinst-app-476474650-1320472185938755-8242843299.jpg",
+       "alt": "deck de madeira - nova elevação"
+      },
+      {
+       "arquivo": "066-snapinst-app-476761938-1542498349681289-4668245485.jpg",
+       "alt": "pergolado metálico - contemporâneo"
+      },
+      {
+       "arquivo": "067-antes-e-depois-saraiva-fernanda-costa.jpg",
+       "alt": "pergolado metálico - área de relaxamento"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

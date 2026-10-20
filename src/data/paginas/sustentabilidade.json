@@ -1,0 +1,77 @@
+{
+ "slug": "sustentabilidade",
+ "nome": "Sustentabilidade",
+ "seo": {
+  "title": "Sustentabilidade | Saraiva Design em Madeiras e Aços",
+  "description": "Madeira certificada, origem responsável e uso eficiente dos materiais: conheça o compromisso da Saraiva Design com a sustentabilidade em cada projeto."
+ },
+ "hero": {
+  "titulo": "Sustentabilidade",
+  "texto": null,
+  "imagem": "009-capa-sustentabilidade.jpg"
+ },
+ "faixa": null,
+ "tipo": "institucional",
+ "botoes": null,
+ "tituloForm": null,
+ "relacionados": [
+  "/mlc/",
+  "/pergolado-de-madeira/",
+  "/deck-de-madeira/",
+  "/forro-de-palha/",
+  "/forro-em-esteiras-de-bambu/",
+  "/pisos-de-madeira/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Nosso compromisso com o meio ambiente",
+   "lead": "Na Saraiva Design, sustentabilidade não é tendência — é compromisso. Cada projeto é pensado para respeitar a natureza e valorizar o futuro",
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p>Construir com madeira é, para a Saraiva Design, mais do que executar projetos — <strong>é honrar a natureza, valorizar cada recurso natural, respeitar o ciclo da vida</strong>, atuar com responsabilidade ambiental e garantir que cada obra deixe um legado de beleza e consciência para o futuro.</p>"
+    },
+    {
+     "t": "linha",
+     "arquivo": "001-arvore-png.png",
+     "alt": "Footer 3 Mascote arvore Saraiva",
+     "html": "<p>E Como a Saraiva faz sua parte??</p><p>Na <strong>Saraiva Design em Madeiras e Aços</strong>, a sustentabilidade está presente em cada detalhe da nossa produção. Adotamos práticas responsáveis desde a escolha das matérias-primas até o descarte final, utilizando exclusivamente <strong>madeiras legalizadas e certificadas com DOF</strong>, por meio de um rigoroso <strong>manejo florestal responsável</strong>. Apoiamos ativamente programas de <strong>reflorestamento</strong>, contribuindo para a renovação das florestas, e mantemos um sistema de <strong>destinação correta de resíduos</strong>, com separação, reaproveitamento e descarte consciente. Para nós, construir com madeira é também construir um futuro melhor, com equilíbrio entre desenvolvimento e respeito ao meio ambiente.</p>"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "002-foto-4-madeira-galpao.jpg",
+       "alt": "madeira sustentável - pranchas"
+      },
+      {
+       "arquivo": "003-foto-3-madeira-galpao.jpg",
+       "alt": "saraiva - toras"
+      },
+      {
+       "arquivo": "004-foto-2-madeira-galpao.jpg",
+       "alt": "saraiva - galpão"
+      },
+      {
+       "arquivo": "005-foto-1-madeira-galpao.jpg",
+       "alt": "saraiva - madeira sustentável"
+      },
+      {
+       "arquivo": "006-foto-vertical-dos-ramos-de-uma-arvore-verde-perfei.jpg",
+       "alt": "floresta - densa"
+      },
+      {
+       "arquivo": "007-tiro-vertical-foret-de-soignes-belgica-bruxelas-co.jpg",
+       "alt": "floresta - trilha"
+      },
+      {
+       "arquivo": "008-bela-paisagem-bosque-de-bambu-na-floresta-em-arash.jpg",
+       "alt": "floresta de bambu - paisagem"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

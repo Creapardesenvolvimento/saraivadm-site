@@ -1,0 +1,117 @@
+---
+// Texto-base em conformidade com a LGPD (Lei 13.709/2018), descrevendo o que o site realmente faz.
+// Recomendado: revisão jurídica antes da publicação definitiva. Atualize se incluir Google Analytics, pixels etc.
+import Legal from '../layouts/Legal.astro';
+import { site } from '../data/site';
+---
+
+<Legal
+  title="Política de Privacidade | Saraiva Design"
+  description="Como a Saraiva Design em Madeiras e Aço coleta, usa e protege os dados pessoais de quem visita o site e entra em contato, conforme a LGPD."
+  titulo="Política de privacidade"
+  atualizado="20 de outubro de 2026"
+>
+  <p>
+    Esta política explica como a <strong>{site.nome}</strong>, inscrita no CNPJ {site.cnpj}, com sede na
+    {site.endereco.rua}, {site.endereco.bairro}, {site.endereco.cidade}-{site.endereco.uf} ("Saraiva Design", "nós"),
+    trata os dados pessoais de quem visita o site <a href={site.url}>saraivadm.com.br</a> e entra em contato conosco, em
+    conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 – LGPD).
+  </p>
+
+  <h2>1. Quais dados coletamos</h2>
+  <ul>
+    <li>
+      <strong>Formulário de contato:</strong> nome, telefone, e-mail, cidade e a mensagem que você escrever. Junto com a
+      mensagem registramos a data, a hora e o endereço IP do envio, para segurança e prevenção de spam.
+    </li>
+    <li>
+      <strong>WhatsApp, telefone e e-mail:</strong> quando você fala conosco por esses canais, recebemos os dados que você
+      compartilhar na conversa (como nome, número de telefone, endereço da obra, fotos e medidas do projeto).
+    </li>
+    <li>
+      <strong>Navegação:</strong> o servidor do site registra informações técnicas de acesso (endereço IP, data, hora,
+      navegador e página acessada), como ocorre em qualquer site, para segurança e funcionamento.
+    </li>
+  </ul>
+
+  <h2>2. Para que usamos os dados</h2>
+  <ul>
+    <li>Responder ao seu contato, elaborar orçamentos, agendar visitas técnicas e prestar atendimento;</li>
+    <li>Executar o contrato, quando você se torna nosso cliente (projeto, fabricação, entrega, instalação e pós-venda);</li>
+    <li>Cumprir obrigações legais e fiscais;</li>
+    <li>Manter a segurança do site e evitar fraudes e spam.</li>
+  </ul>
+  <p>
+    As bases legais são o procedimento preliminar e a execução de contrato a pedido do titular, o cumprimento de
+    obrigação legal e o legítimo interesse (art. 7º, incisos II, V e IX, da LGPD). Não vendemos nem alugamos seus dados.
+  </p>
+
+  <h2>3. Serviços de terceiros no site</h2>
+  <ul>
+    <li>
+      <strong>WhatsApp (Meta):</strong> os botões de atendimento abrem uma conversa no WhatsApp. A partir daí, aplica-se
+      também a política de privacidade do WhatsApp.
+    </li>
+    <li>
+      <strong>YouTube (Google):</strong> os vídeos só são carregados quando você clica para assistir, no modo de
+      privacidade aprimorada (youtube-nocookie.com).
+    </li>
+    <li>
+      <strong>Google Maps:</strong> o mapa do showroom é carregado do Google, que pode usar cookies próprios conforme a
+      política de privacidade do Google.
+    </li>
+    <li>
+      <strong>Hospedagem:</strong> o site e os e-mails do formulário passam por provedores de hospedagem e de e-mail
+      contratados pela Saraiva Design, que tratam os dados apenas para prestar esse serviço.
+    </li>
+  </ul>
+  <p>O site não utiliza ferramentas de publicidade ou de rastreamento de terceiros.</p>
+
+  <h2>4. Cookies</h2>
+  <p>
+    O site não grava cookies próprios de rastreamento. Cookies podem ser definidos apenas pelos serviços de terceiros
+    citados acima (Google Maps e YouTube, quando você assiste a um vídeo). Você pode bloquear ou apagar cookies nas
+    configurações do seu navegador.
+  </p>
+
+  <h2>5. Por quanto tempo guardamos os dados</h2>
+  <p>
+    Os dados de contato são mantidos pelo tempo necessário para o atendimento e, no caso de clientes, durante o contrato
+    e pelos prazos exigidos pela legislação (por exemplo, fiscal e de defesa do consumidor). Depois disso, são excluídos
+    ou anonimizados.
+  </p>
+
+  <h2>6. Com quem compartilhamos</h2>
+  <p>
+    Os dados podem ser compartilhados apenas com prestadores de serviço necessários para atender você (hospedagem,
+    e-mail, transportadoras e equipes de instalação, quando houver contrato) e com autoridades, quando exigido por lei.
+  </p>
+
+  <h2>7. Segurança</h2>
+  <p>
+    Adotamos medidas técnicas e administrativas para proteger os dados, como conexão criptografada (HTTPS) e acesso
+    restrito às informações recebidas.
+  </p>
+
+  <h2>8. Seus direitos</h2>
+  <p>Nos termos do art. 18 da LGPD, você pode, a qualquer momento:</p>
+  <ul>
+    <li>confirmar se tratamos seus dados e acessá-los;</li>
+    <li>corrigir dados incompletos, inexatos ou desatualizados;</li>
+    <li>pedir a anonimização, o bloqueio ou a eliminação de dados desnecessários ou tratados em desacordo com a LGPD;</li>
+    <li>pedir a portabilidade dos dados;</li>
+    <li>pedir a eliminação dos dados tratados com base no seu consentimento e revogar esse consentimento;</li>
+    <li>saber com quem compartilhamos seus dados.</li>
+  </ul>
+  <p>
+    Para exercer seus direitos ou tirar dúvidas sobre esta política, escreva para
+    <a href={`mailto:${site.email}`}>{site.email}</a>. Você também pode apresentar reclamação à Autoridade Nacional de
+    Proteção de Dados (ANPD).
+  </p>
+
+  <h2>9. Alterações desta política</h2>
+  <p>
+    Esta política pode ser atualizada para refletir mudanças no site ou na legislação. A data da última atualização fica
+    no início desta página.
+  </p>
+</Legal>

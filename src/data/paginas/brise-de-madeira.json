@@ -16,6 +16,9 @@
   "Projeto sob medida",
   "Instalação especializada"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/forro-de-madeira/",
   "/pergolado-de-madeira/",
@@ -31,12 +34,9 @@
    "lead": "A Saraiva Design desenvolve os melhores projetos em Brise de Madeira, que é um elemento bastante presente e importante em projetos arquitetônicos",
    "blocos": [
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "001-paineis-ripados-e-brises-de-madeira-jpg.jpeg",
-     "alt": "Brise de madeira"
-    },
-    {
-     "t": "html",
+     "alt": "",
      "html": "<p><strong>O Brise de Madeira</strong> utilizado com o objetivo de reduzir a incidência direta de luz solar nos interiores do ambiente, sem, contudo, prejudicar a ventilação.</p><p>Além de bloquear a luz solar e o acesso de intrusos, permitindo a circulação de ar em ambientes que precisam de proteção, os brises de madeira têm sido cada vez mais usados como elementos decorativos, tanto em ambientes internos quanto externos.</p><p>Os brises de madeira normalmente são fixados em muros, paredes ou entre colunas, sendo estruturados de forma a decorar os ambientes com o aconchego e o charme natural da madeira.</p>"
     },
     {

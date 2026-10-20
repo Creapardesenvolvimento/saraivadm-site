@@ -204,6 +204,9 @@ def walk(el):
                 add_vid(m.group(1))
             if href.lower().split('?')[0].endswith('.pdf'):
                 blocos.append({'tipo': 'pdf', 'href': abs_url(href), 'texto': txt(ch)})
+            # galerias do Elementor: o link aponta para a foto grande
+            if re.search(r'/wp-content/uploads/.+\.(jpe?g|png|webp|avif)$', href.lower().split('?')[0]):
+                add_img(href, ch.get('data-elementor-lightbox-title') or '')
         walk(ch)
 
 

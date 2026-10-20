@@ -16,6 +16,9 @@
   "Máximo conforto térmico",
   "Redução de ruído"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/pergoconfort/",
   "/telha-para-pergolado/",
@@ -35,12 +38,9 @@
      "html": "<p><strong>PergoConfort Max:</strong> a telha sanduíche ideal para <strong>pergolados com conforto térmico, resistência e estilo</strong></p>"
     },
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "001-pergoconfort-max-jpg.jpeg",
-     "alt": "PergoConfort Max"
-    },
-    {
-     "t": "html",
+     "alt": "",
      "html": "<p>A <strong>telha PergoConfort Max</strong> é a solução ideal para quem busca eficiência térmica, resistência e acabamento superior em coberturas de pergolados, áreas gourmet, varandas e ambientes externos. Trata-se de uma <strong>telha sanduíche</strong> de alto desempenho, composta por duas lâminas externas de material resistente (como aço pré-pintado ou galvanizado) e um núcleo isolante em EPS (<strong>Poliestireno Expandido</strong>), que proporciona excelente isolamento térmico e acústico.</p><p>Com tecnologia de ponta, a PergoConfort Max é capaz de <strong>bloquear até 95% da radiação térmica</strong>, reduzindo significativamente a transferência de calor para o ambiente interno, tornando os espaços mais confortáveis em dias quentes e contribuindo para a economia de energia em ambientes climatizados.<br><br></p><p>Sua estrutura rígida confere <strong>alta resistência mecânica</strong>, suportando ventos fortes, chuvas intensas e outras intempéries. Além disso, o sistema de encaixe preciso entre as telhas garante <strong>vedação total contra vazamentos e goteiras</strong>, mesmo após anos de uso.<br><br></p><p>A PergoConfort Max também se destaca por seu visual moderno e acabamento refinado, ideal para projetos de arquitetura contemporânea que exigem <strong>funcionalidade e estética</strong>. Disponível em diferentes cores, perfis e acabamentos, ela se adapta perfeitamente a diversos estilos de construção.</p>"
     },
     {

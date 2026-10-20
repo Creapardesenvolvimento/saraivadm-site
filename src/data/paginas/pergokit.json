@@ -16,6 +16,9 @@
   "Manual de instalação",
   "Envio para todo o Brasil"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/pergolado-de-madeira/",
   "/pergolado-metalico/",
@@ -66,7 +69,6 @@
      "titulo": "Projeto exclusivo",
      "html": "<p>Na Pergokit, <strong>nossa equipe altamente capacitada está pronta para criar um projeto personalizado para o seu Pergokit</strong>, garantindo todas as informações essenciais para uma montagem eficiente. Oferecemos suporte técnico dedicado e disponibilizamos vídeos instrutivos para facilitar cada etapa do processo. <strong>Nosso compromisso é proporcionar não apenas um pergolado, mas sim uma solução ideal para o seu ambiente, refletindo sua visão e elevando o charme do espaço.</strong>Conte conosco para transformar suas ideias em realidade com expertise e qualidade incomparáveis.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "001-foto-pergokit-site-1-11zon.avif",
       "alt": "Projeto exclusivo"
      }
@@ -76,7 +78,6 @@
      "titulo": "Kit pintura",
      "html": "<p>Kit de pintura desenvolvido para garantir acabamento profissional e proteção duradoura ao <a href=\"/pergolado-de-madeira/\">pergolado de madeira</a>. Inclui opções de verniz ou stain, permitindo escolher o visual e o nível de proteção desejados. Acompanha lixas especiais para preparo adequado da superfície, assegurando melhor aderência e resultado final uniforme. Todos os materiais são enviados prontos para uso, facilitando o processo de aplicação. O kit protege a madeira contra sol, chuva e desgaste natural. Solução prática para manter o pergolado bonito, resistente e bem conservado.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "002-nerniz-madeiras.jpg",
       "alt": "Kit pintura"
      }
@@ -86,7 +87,6 @@
      "titulo": "Madeiramento selecionado",
      "html": "<p>Oferecemos na Pergokit <strong>um madeiramento exclusivo e certificado pelo DOF (IBAMA)</strong>, garantindo não apenas a beleza, mas também a sustentabilidade do seu pergolado. <strong>Priorizamos a segurança, utilizando materiais de alta qualidade em todo o processo de fabricação.</strong> Ao escolher nosso kit, você recebe todas as madeiras necessárias para a montagem, proporcionando praticidade e eficiência. <strong>Além disso, incluímos fixadores de alta durabilidade no kit e também verniz ou stain para acabamento do madeiramento, assegurando uma instalação segura e estável.</strong> Na Pergokit, estamos comprometidos em oferecer não apenas um pergolado esteticamente atraente, mas também uma solução confiável e duradoura para transformar seu espaço ao ar livre.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "003-madeiramento-selecionado.jpg",
       "alt": "Madeiramento selecionado"
      }
@@ -122,7 +122,6 @@
      "titulo": "Forro especiais",
      "html": "<p>Na Pergokit, destacamos nossa forração exclusiva, <strong>oferecendo uma variedade de modelos para personalizar o seu pergolado</strong> de acordo com o seu estilo. <strong>Escolha entre forros em <a href=\"/forro-de-palha/\">palha</a> sintética ou natural, assim como esteiras de bambu</strong>, proporcionando uma estética única e aconchegante ao seu espaço. Todos os nossos forros são feitos sob medida, adaptando-se perfeitamente ao seu projeto. Com a Pergokit, <strong>garantimos não apenas a qualidade dos materiais, mas também a customização precisa</strong>, permitindo que seu pergolado seja uma expressão autêntica do seu gosto e personalidade.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "005-forros-pergokit-11zon.webp",
       "alt": "Forro especiais"
      }
@@ -132,7 +131,6 @@
      "titulo": "Cobertura premium",
      "html": "<p>Introduzindo a inovação no seu Pergokit,<strong>apresentamos a <a href=\"/telha-para-pergolado/\">telha</a> Pergo-Confort, uma solução translúcida que vai além da estética, proporcionando proteção essencial para o seu pergolado.</strong> Além de conferir um toque elegante, a telha Pergo-Confort garante conforto térmico ao ambiente, criando um espaço agradável em todas as estações. <strong>Sua construção oferece uma eficiente proteção contra raios UV, assegurando não apenas beleza, mas também durabilidade.</strong> O kit inclui parafusos e calços para uma fixação segura, enquanto os materiais de vedação, como PU´s, silicone e manta asfáltica aluminizada, garantem uma montagem resistente e confiável. Com a telha Pergo-Confort, seu pergolado não apenas encanta visualmente, mas também proporciona um ambiente protegido.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "006-d-1-hdr-scaled.jpg",
       "alt": "Cobertura premium"
      }
@@ -142,7 +140,6 @@
      "titulo": "Ventiladores e iluminação",
      "html": "<p>Na Pergokit temos uma variedade de opções para personalizar ainda mais o seu espaço, <strong>incluindo ventiladores de diversos modelos para que você escolha aquele que melhor se harmoniza com o seu ambiente.</strong> Além disso, <strong>nosso kit de iluminação é completo</strong>, apresentando arandelas, trilhos, balizadores e lâmpadas, proporcionando não apenas funcionalidade, mas também um toque de elegância à sua área externa. Com a Pergokit, cada detalhe é pensado para oferecer opções que atendam não apenas às suas necessidades práticas, mas também ao seu gosto estético,<strong>garantindo um pergolado personalizado e encantador.</strong></p>",
      "imagem": {
-      "t": "img",
       "arquivo": "007-ventiladores-e-iluminacao.webp",
       "alt": "Ventiladores e iluminação"
      }
@@ -152,7 +149,6 @@
      "titulo": "Decks e painéis ripados",
      "html": "<p>E para complementar o seu Pergokit, <strong>disponibilizamos materiais de alta qualidade para a construção do seu deck de madeira ou painel <a href=\"/forro-ripado/\">ripado</a>.</strong> Garantimos durabilidade e beleza para a sua área externa. Juntamente com os fixadores inclusos, <strong>o kit oferece tudo o que você precisa para uma montagem segura e eficiente.</strong> Além disso, nosso projeto é desenvolvido sob medida, assegurando uma integração perfeita com o seu pergolado, proporcionando um espaço ao ar livre verdadeiramente personalizado e sofisticado. <strong>Na Pergokit, cuidamos de cada detalhe para garantir que seu ambiente exterior seja não apenas funcional, mas também esteticamente impressionante.</strong></p>",
      "imagem": {
-      "t": "img",
       "arquivo": "008-deck-e-painel-ripado-11zon.webp",
       "alt": "Decks e painéis ripados"
      }

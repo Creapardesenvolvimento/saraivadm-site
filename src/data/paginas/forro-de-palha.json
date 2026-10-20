@@ -16,6 +16,9 @@
   "Produção sob medida",
   "Envio para todo o Brasil"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/forro-em-esteiras-de-bambu/",
   "/pergolado-de-madeira/",
@@ -48,12 +51,9 @@
      "texto": "Forro de Palha – Coleção Time Line"
     },
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "001-colecao-time-line-2048x1504.png",
-     "alt": "saraiva - Coleção TIME LINE"
-    },
-    {
-     "t": "html",
+     "alt": "saraiva - Coleção TIME LINE",
      "html": "<p>Apresentamos a Coleção <strong>Time Line</strong>, uma linha exclusiva de <strong>forros de palha sintética</strong> que combina resistência, praticidade e design atemporal. Desenvolvida para suportar <strong>sol, chuva e umidade</strong>, essa coleção é ideal para ambientes externos ou internos que buscam charme e durabilidade. Seu material de <strong>fácil limpeza</strong> mantém a beleza natural da palha com aparência sempre nova.</p>"
     },
     {
@@ -91,12 +91,9 @@
      "texto": "Forro de Palha – Coleção Fibré"
     },
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "007-colecao-fibre-2048x704.png",
-     "alt": "logo - Coleção Fibré"
-    },
-    {
-     "t": "html",
+     "alt": "logo - Coleção Fibré",
      "html": "<p>Apresentamos a Coleção <strong>Fibré</strong>, uma linha exclusiva de <strong>forros de palha natural</strong> desenvolvida com matérias-primas como <strong>algodão, juta, sisal e rami</strong>, valorizando texturas orgânicas e um design atemporal. Indicada para ambientes internos, essa coleção traz sofisticação e aconchego aos projetos. Por se tratar de um material natural, não é recomendada para áreas litorâneas ou locais com contato direto com chuva, água e umidade excessiva.</p>"
     },
     {
@@ -204,7 +201,6 @@
      "titulo": "Forro de palha para área gourmet",
      "html": "<p><strong>O forro de palha na área gourmet</strong> transforma o ambiente em um espaço aconchegante e sofisticado, proporcionando conforto térmico durante as refeições e encontros sociais. <strong>Além de reduzir o calor, ele garante sombreamento ideal e valoriza a decoração</strong>, trazendo um toque natural que harmoniza perfeitamente com móveis e revestimentos modernos ou rústicos.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "020-dsc05052-aprimorado-nr-scaled-1.avif",
       "alt": "Forro de palha para área gourmet"
      }
@@ -214,7 +210,6 @@
      "titulo": "Forro de palha na garagem",
      "html": "<p>Aplicar <strong>forro de palha na garagem</strong> é uma<strong>solução prática e elegante para reduzir a temperatura</strong> e criar um ambiente mais agradável. Sua resistência a intempéries e a facilidade de instalação fazem dele uma escolha eficiente, protegendo o espaço contra o calor excessivo e oferecendo um acabamento diferenciado que valoriza o imóvel.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "021-dsc01329-aprimorado-nr-scaled-1.avif",
       "alt": "Forro de palha na garagem"
      }
@@ -224,7 +219,6 @@
      "titulo": "Forro de palha na academia",
      "html": "<p>Na academia, <strong>o forro de palha</strong> ajuda a manter o espaço mais fresco e confortável para a prática de atividades físicas. Além da <strong>eficiência térmica</strong>, seu design natural proporciona um visual agradável e acolhedor, tornando o ambiente motivador e convidativo para treinos diários.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "022-dsc06679-aprimorado-nr-scaled-1.avif",
       "alt": "Forro de palha na academia"
      }
@@ -234,7 +228,6 @@
      "titulo": "Forro de palha na sala de tv e estar",
      "html": "<p>A sala de TV e estar ganha sofisticação e aconchego com o <strong>forro de palha</strong>, que alia estética e funcionalidade. Ele melhora o <strong>conforto térmico, reduz a incidência de calor</strong> e cria uma atmosfera mais intimista, ideal para momentos de descanso e lazer em família.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "023-dsc00011-aprimorado-nr-scaled-1.avif",
       "alt": "Forro de palha na sala de tv e estar"
      }
@@ -244,7 +237,6 @@
      "titulo": "Forro de palha no jardim",
      "html": "<p><strong>No jardim, o forro de palha</strong> é a escolha perfeita para trazer sombreamento natural e charme rústico ao espaço. <strong>Ele contribui para reduzir a temperatura em áreas de convivência ao ar livre</strong>, tornando o ambiente mais agradável para relaxar, cultivar plantas ou receber visitas.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "024-img-6833-enhanced-nr-scaled-1.avif",
       "alt": "Forro de palha no jardim"
      }
@@ -254,7 +246,6 @@
      "titulo": "Forro de palha na área de lazer",
      "html": "<p><strong>A área de lazer</strong> se torna ainda mais convidativa com o <strong>forro de palha,</strong> que combina beleza, conforto térmico e durabilidade. Sua aplicação garante sombreamento eficiente, reduzindo o calor e criando um ambiente descontraído e <strong>sofisticado, perfeito para confraternizações</strong> e momentos de descanso.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "025-dsc02787-aprimorado-nr-scaled-1.avif",
       "alt": "Forro de palha na área de lazer"
      }
@@ -264,7 +255,6 @@
      "titulo": "Forro de palha na sacada",
      "html": "<p>Na sacada, <strong>o forro de palha proporciona conforto térmico e um acabamento elegante,</strong> tornando o espaço mais agradável para leitura, descanso ou encontros rápidos. Sua textura natural valoriza a decoração e se adapta a diferentes estilos arquitetônicos, agregando charme e funcionalidade ao ambiente.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "026-pergolado-de-madeira-6-1.avif",
       "alt": "Forro de palha na sacada"
      }
@@ -274,7 +264,6 @@
      "titulo": "Forro de palha em pergolado branco",
      "html": "<p>O forro de palha em pergolado branco une leveza e sofisticação em um só projeto. <strong>A palha traz o charme rústico e o conforto térmico</strong>, enquanto a estrutura branca adiciona elegância e luminosidade ao ambiente. Essa combinação cria um visual natural e acolhedor, ideal para transformar áreas externas em espaços convidativos e cheios de estilo.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "027-img-8294-hdr-scaled-1.avif",
       "alt": "Forro de palha em pergolado branco"
      }
@@ -284,7 +273,6 @@
      "titulo": "Forro de palha no teto",
      "html": "<p><strong>O forro de palha no teto</strong> é uma opção que alia beleza natural e conforto térmico. Seu aspecto rústico traz uma sensação acolhedora ao ambiente, enquanto <strong>ajuda a amenizar o calor, tornando o espaço mais agradável em dias quentes</strong>. Versátil e elegante, o forro de palha combina com diferentes estilos de decoração, desde o rústico ao contemporâneo, adicionando um toque de charme e autenticidade ao local.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "028-img-4314-enhanced-nr-scaled-1.avif",
       "alt": "Forro de palha no teto"
      }

@@ -456,5 +456,138 @@
       "/forro-em-esteiras-de-bambu/",
       "/pergolado-de-madeira/"
     ]
+  },
+  "institucional": {
+    "nome": "Institucional",
+    "artigo": "o",
+    "tipo": "institucional",
+    "h1": "Sobre a Saraiva Design",
+    "tituloIntro": "Quem somos",
+    "seo": {
+      "title": "Sobre a Saraiva Design: Pergolados e Estruturas em Madeira e Aço",
+      "description": "Conheça a Saraiva Design em Madeiras e Aços: mais de 25 anos em pergolados, coberturas, forros e decks de alto padrão, com fábrica própria em Campinas-SP."
+    },
+    "faixa": [
+      "+25 anos de experiência",
+      "Fábrica própria em Campinas",
+      "Atendimento em todo o Brasil",
+      "Garantia e pós-venda"
+    ],
+    "relacionados": [
+      "/pergolado-de-madeira/",
+      "/pergolado-metalico/",
+      "/cobertura-para-pergolado/",
+      "/forro-de-palha/",
+      "/forro-em-esteiras-de-bambu/",
+      "/deck-de-madeira/"
+    ],
+    "semUsos": true
+  },
+  "sustentabilidade": {
+    "nome": "Sustentabilidade",
+    "artigo": "a",
+    "tipo": "institucional",
+    "tituloIntro": "Nosso compromisso com o meio ambiente",
+    "seo": {
+      "title": "Sustentabilidade | Saraiva Design em Madeiras e Aços",
+      "description": "Madeira certificada, origem responsável e uso eficiente dos materiais: conheça o compromisso da Saraiva Design com a sustentabilidade em cada projeto."
+    },
+    "relacionados": [
+      "/mlc/",
+      "/pergolado-de-madeira/",
+      "/deck-de-madeira/",
+      "/forro-de-palha/",
+      "/forro-em-esteiras-de-bambu/",
+      "/pisos-de-madeira/"
+    ]
+  },
+  "portfolio": {
+    "nome": "Portfólio",
+    "artigo": "o",
+    "tipo": "institucional",
+    "tituloIntro": "Projetos Saraiva Design",
+    "seo": {
+      "title": "Portfólio de Pergolados, Decks e Coberturas | Saraiva Design",
+      "description": "Mais de 100 fotos de projetos reais da Saraiva Design: pergolados de madeira e metálicos, decks, coberturas e forros em residências e empresas."
+    },
+    "botoes": [
+      {
+        "label": "Solicitar orçamento",
+        "href": "__whats__",
+        "whatsapp": true
+      },
+      {
+        "label": "Ver as fotos",
+        "href": "#conteudo-produto"
+      }
+    ],
+    "relacionados": [
+      "/pergolado-de-madeira/",
+      "/pergolado-metalico/",
+      "/cobertura-para-pergolado/",
+      "/forro-de-palha/",
+      "/forro-em-esteiras-de-bambu/",
+      "/deck-de-madeira/"
+    ]
+  },
+  "antes-depois": {
+    "nome": "Antes e depois",
+    "artigo": "o",
+    "tipo": "institucional",
+    "h1": "Antes e depois",
+    "tituloIntro": "Transformações de ambientes",
+    "seo": {
+      "title": "Antes e Depois: Transformações com Pergolados | Saraiva Design",
+      "description": "Veja o antes e depois de áreas externas transformadas pela Saraiva Design com pergolados, coberturas, forros e decks de madeira."
+    },
+    "botoes": [
+      {
+        "label": "Quero transformar meu espaço",
+        "href": "__whats__",
+        "whatsapp": true
+      },
+      {
+        "label": "Ver as fotos",
+        "href": "#conteudo-produto"
+      }
+    ],
+    "relacionados": [
+      "/pergolado-de-madeira/",
+      "/pergolado-metalico/",
+      "/cobertura-para-pergolado/",
+      "/forro-de-palha/",
+      "/forro-em-esteiras-de-bambu/",
+      "/deck-de-madeira/"
+    ]
+  },
+  "parcerias": {
+    "nome": "Parcerias",
+    "artigo": "a",
+    "tipo": "institucional",
+    "tituloIntro": "Parcerias com arquitetos, engenheiros e construtoras",
+    "seo": {
+      "title": "Parcerias para Arquitetos, Engenheiros e Construtoras | Saraiva Design",
+      "description": "Arquitetos, engenheiros, paisagistas e construtoras: seja parceiro da Saraiva Design em projetos de pergolados, coberturas, forros e decks de alto padrão."
+    },
+    "botoes": [
+      {
+        "label": "Quero ser parceiro",
+        "href": "__whats_parceria__",
+        "whatsapp": true
+      },
+      {
+        "label": "Deixar meu contato",
+        "href": "#contato"
+      }
+    ],
+    "tituloForm": "Deixe aqui o seu contato<br> e fale com a nossa equipe",
+    "relacionados": [
+      "/pergolado-de-madeira/",
+      "/pergolado-metalico/",
+      "/cobertura-para-pergolado/",
+      "/forro-de-palha/",
+      "/forro-em-esteiras-de-bambu/",
+      "/deck-de-madeira/"
+    ]
   }
 }

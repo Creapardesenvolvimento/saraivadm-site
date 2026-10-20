@@ -25,14 +25,15 @@ export const site = {
     lng: -47.06469526309858,
   },
 
-  // Preencha as URLs reais. Os perfis preenchidos também entram no schema (sameAs).
+  // Perfis oficiais (copiados do site atual). Os preenchidos aparecem no rodapé e entram no schema (sameAs).
   redes: {
-    instagram: '',
+    instagram: 'https://www.instagram.com/saraivadesignoficial/',
     facebook: '',
-    youtube: '',
-    pinterest: '',
-    google: '',
-    tiktok: '',
+    youtube: 'https://www.youtube.com/@saraivadesignoficial',
+    pinterest: 'https://br.pinterest.com/saraivadesignoficial/',
+    google: 'https://maps.google.com/?cid=9687738465255098180',
+    tiktok: 'https://www.tiktok.com/@saraivadesignoficial',
+    linkedin: 'https://www.linkedin.com/company/saraiva-design-em-madeirass/',
   },
 };
 

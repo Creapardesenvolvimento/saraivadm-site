@@ -250,3 +250,30 @@ Cada entrada: data, página, o que mudou e por quê. O histórico completo de ar
 Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/`, `/parcerias/`, `/trabalhe-conosco/`,
 `/redes-sociais/`, `/contato/`), `/politica-de-privacidade/`, `/termos-de-uso/` e posts antigos do blog citados nos textos
 (`/5-dicas-para-montar-seu-pergolado/`, `/habitos-saudaveis-para-curtir-seu-pergolado/`).
+
+---
+
+## 2026-10-20 — Páginas institucionais, políticas e redes sociais
+
+**Páginas (mesmas URLs do site atual):** `/institucional/`, `/sustentabilidade/`, `/portfolio/`, `/antes-depois/`,
+`/parcerias/`, `/catalogos/`, `/contato/`, `/trabalhe-conosco/`, `/redes-sociais/`.
+**Novas:** `/politica-de-privacidade/` e `/termos-de-uso/` (o site atual não tinha; os links redirecionavam para a home).
+
+- Institucional, sustentabilidade, portfólio (75 fotos de projetos + logos de clientes), antes e depois (67 fotos)
+  e parcerias: importados com o mesmo template das páginas de produto, com dados estruturados `AboutPage`/`WebPage`.
+- Catálogos: grade com capa, "Baixar PDF" e link para o produto (10 folders + 4 tabelas de preço).
+- Contato: WhatsApp, telefones, e-mail, showroom com Maps/Waze, mapa e formulário (`ContactPage`).
+- Trabalhe conosco: 21 áreas + candidatura pelo LinkedIn ou por e-mail.
+- Redes sociais: YouTube, Instagram, TikTok, Pinterest, Google e LinkedIn com os textos do site atual.
+- **Redes no rodapé e no schema (`sameAs`)**: perfis oficiais @saraivadesignoficial (Instagram, YouTube, TikTok,
+  Pinterest), LinkedIn e Google Maps. O ícone do Facebook foi removido (o site atual não tem página no Facebook).
+- Política de privacidade (LGPD) descrevendo o que o site faz (formulário, WhatsApp, YouTube sem cookies, Google Maps,
+  sem rastreamento) e termos de uso. Aviso com link para a política abaixo do botão do formulário.
+- Link antigo `/portfolio-pergolado-de-madeira/` → `/portfolio/`.
+- Site completo: **36 páginas**, todas com 1 H1. Único link interno quebrado restante: posts antigos do blog citados
+  nos textos (serão resolvidos na migração do blog).
+
+### Pendências
+- [ ] **Revisão jurídica** da Política de privacidade e dos Termos de uso antes da publicação definitiva.
+- [ ] Confirmar o e-mail para currículos (hoje: contato@saraivadm.com.br).
+- [ ] PDFs (folders e tabelas) ainda hospedados no WordPress atual.

@@ -16,6 +16,9 @@
   "Coleções exclusivas",
   "Origem responsável"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/deck-de-madeira/",
   "/forro-de-madeira/",
@@ -31,12 +34,9 @@
    "lead": "A Saraiva Design traduz a essência da madeira em projetos sofisticados, por meio de Pisos de Madeira Estruturados que aliam tecnologia, sustentabilidade e excelência arquitetônica",
    "blocos": [
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "001-piso-madeira.png",
-     "alt": "Piso de Madeira Estruturado Saraiva - Vídeo"
-    },
-    {
-     "t": "html",
+     "alt": "Piso de Madeira Estruturado Saraiva - Vídeo",
      "html": "<p>O piso de madeira estruturado é composto por uma lamela de madeira nobre sobre uma base estruturada de madeira de reflorestamento, proporcionando maior estabilidade dimensional e reduzindo empenamentos e movimentações naturais da madeira.</p><p>O acabamento recebe 9 camadas de verniz UV com nanotecnologia e ação antibacteriana, garantindo alta resistência ao desgaste, à umidade e aos riscos do uso diário, preservando a beleza natural da madeira por muito mais tempo.</p><p>Livre de formaldeído e com tratamento retardante de chamas, oferece mais segurança, praticidade e fácil manutenção. O sistema de instalação por encaixe dispensa a aplicação de verniz após a instalação.</p><p>Além dos pisos, o revestimento também pode ser aplicado em paredes e forros, criando ambientes sofisticados, aconchegantes e com a elegância atemporal que somente a madeira natural proporciona.</p>"
     }
    ]
@@ -107,7 +107,6 @@
      "titulo": "Piso de Madeira Estruturado: conheça suas 3 camadas",
      "html": "<p>O piso de madeira estruturado é formado por três camadas coladas em sentidos opostos, aumentando sua estabilidade, resistência e durabilidade.</p><ol><li>01  <p><strong>Capa de madeira nobre:</strong> Camada superior e aparente do piso, que valoriza a beleza natural da madeira, seus veios e tonalidades, trazendo autenticidade a cada projeto.</p></li> <li>02  <p><strong>Núcleo sólido:</strong> Camada central de madeira reflorestada responsável pela resistência e estabilidade do piso.</p></li> <li>03  <p><strong>Contracapa:</strong> Camada inferior que equilibra a estrutura e ajuda a evitar deformações.</p></li></ol>",
      "imagem": {
-      "t": "img",
       "arquivo": "006-composicao-piso.png",
       "alt": "Composição das três camadas do piso de madeira estruturado"
      }
@@ -476,7 +475,6 @@
      "titulo": "Salas com Piso de Madeira",
      "html": "<p>Salas com piso de madeira ganham elegância, conforto térmico e uma atmosfera acolhedora. A madeira também pode estar presente no forro, criando continuidade visual e trazendo ainda mais personalidade ao projeto. Já os revestimentos e painéis de madeira valorizam paredes e detalhes do ambiente, combinando com diferentes estilos de decoração e contribuindo para espaços sofisticados, harmoniosos e cheios de aconchego.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "054-harbour.jpg",
       "alt": "Salas com Piso de Madeira"
      }
@@ -486,7 +484,6 @@
      "titulo": "Quartos com piso de madeira",
      "html": "<p>Quartos com piso de madeira transmitem conforto, beleza e uma sensação acolhedora que torna o ambiente ainda mais agradável. O uso da madeira também pode estar presente no forro, trazendo unidade visual e reforçando o aspecto aconchegante do dormitório. Além disso, revestimentos e painéis de madeira são ótimas escolhas para compor detalhes como a cabeceira, criando um espaço mais elegante, harmonioso e convidativo.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "055-03-quarto-boreal-rgb.jpg",
       "alt": "Quartos com piso de madeira"
      }
@@ -496,7 +493,6 @@
      "titulo": "Área gourmet com revestimento de madeira",
      "html": "<p>Na área gourmet, o piso de madeira contribui para um ambiente mais acolhedor, sofisticado e convidativo, ideal para momentos de convivência. A madeira também pode ser explorada no forro, ampliando a sensação de conforto e dando mais unidade ao projeto. Já os revestimentos e painéis de madeira ajudam a integrar com elegância os espaços internos e externos, além de acrescentarem personalidade e valorizarem a composição decorativa do ambiente.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "056-piso-de-madeira-na-parede.jpg",
       "alt": "Área gourmet com revestimento de madeira"
      }
@@ -506,7 +502,6 @@
      "titulo": "Tetos com revestimento de madeira",
      "html": "<p>Tetos com revestimento de madeira proporcionam um acabamento sofisticado e cheio de personalidade.<br>A madeira no teto melhora a sensação de conforto e valoriza projetos residenciais e comerciais.<br>Painéis de madeira criam detalhes exclusivos e uma atmosfera elegante em qualquer ambiente.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "057-forro-estruturado-jequitiba-cinamonn.jpg",
       "alt": "Tetos com revestimento de madeira"
      }
@@ -516,7 +511,6 @@
      "titulo": "Apartamentos com piso de madeira",
      "html": "<p>Em apartamentos, a madeira pode ser explorada de diferentes formas para criar ambientes mais confortáveis, sofisticados e valorizados. O piso de madeira traz aconchego e elegância, enquanto o forro de madeira pode destacar áreas específicas e deixar o projeto mais acolhedor. Revestimentos e painéis de madeira completam a composição, oferecendo durabilidade, personalidade e uma integração visual moderna entre os diferentes espaços.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "058-piso-de-madeira-em-ambientes-integrados.jpg",
       "alt": "Apartamentos com piso de madeira"
      }
@@ -526,7 +520,6 @@
      "titulo": "Suíte com piso de madeira",
      "html": "<p>Na suíte, a madeira contribui para criar uma atmosfera mais tranquila, elegante e acolhedora. O piso de madeira oferece conforto térmico e valoriza a composição do ambiente, enquanto o forro pode trazer ainda mais aconchego e sofisticação. Revestimentos e painéis de madeira complementam o projeto com beleza natural, permitindo combinações com diferentes estilos de móveis e criando um espaço mais personalizado e harmonioso.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "059-piso-de-madeira-de-alto-padrao.jpg",
       "alt": "Suíte com piso de madeira"
      }
@@ -711,7 +704,7 @@
      "texto": "Certificações e reconhecimentos"
     },
     {
-     "t": "galeria",
+     "t": "logos",
      "fotos": [
       {
        "arquivo": "063-screenshot-2026-08-07-at-16-13-38.png",

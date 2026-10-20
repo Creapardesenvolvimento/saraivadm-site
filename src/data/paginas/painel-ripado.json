@@ -16,6 +16,9 @@
   "Interno e externo",
   "Instalação especializada"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/brise-de-madeira/",
   "/forro-ripado/",
@@ -35,12 +38,9 @@
      "html": "<p><strong>A Saraiva Design desenvolve os melhores projetos em Painel Ripado de Madeira que é um elemento bastante presente e importante em um projeto arquitetônico.</strong></p>"
     },
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "001-paineis-ripados-e-brises-de-madeira-jpg.jpeg",
-     "alt": "Painel Ripado"
-    },
-    {
-     "t": "html",
+     "alt": "",
      "html": "<p>O Painel ripado de Madeira é utilizado com o objetivo de minorar a incidência direta de luz solar nos interiores do ambiente sem, contudo, prejudicar a ventilação.</p><p>Além de bloqueio do sol, intrusos, e deixar passar a ventilação para ambientes a serem protegidos, hoje os painel ripado de madeira / brises de madeira estão sendo utilizados de forma a decorar casas, sejam em ambientes internos ou externos.</p><p>Os painéis ripados de madeira normalmente são fixados nos muros, nas paredes, entre colunas e estruturados de forma a decorar ambientes com o aconchego e o charme da madeira.</p>"
     },
     {

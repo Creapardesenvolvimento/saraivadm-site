@@ -16,6 +16,9 @@
   "Projeto sob medida",
   "Instalação especializada"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/deck-de-madeira/",
   "/deck-modular/",
@@ -40,12 +43,9 @@
      ]
     },
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "001-deck-sustentavel-11zon.webp",
-     "alt": "Deck hidro-spa"
-    },
-    {
-     "t": "html",
+     "alt": "",
      "html": "<p>O <a href=\"/deck-de-madeira/\">deck</a> de madeira para hidro ou spa é a escolha perfeita para quem busca aliar conforto, beleza natural e funcionalidade em áreas de lazer. Com um visual sofisticado e aconchegante, o deck proporciona um acabamento elegante ao redor da hidromassagem, além de oferecer uma superfície antiderrapante e agradável ao toque, mesmo com os pés molhados. A madeira utilizada é tratada para resistir à umidade, ao sol e às variações climáticas, garantindo durabilidade e fácil manutenção. Ideal para momentos de relaxamento e convívio, o deck de madeira transforma o ambiente em um verdadeiro refúgio de bem-estar.</p>"
     },
     {

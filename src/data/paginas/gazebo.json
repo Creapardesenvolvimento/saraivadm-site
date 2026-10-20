@@ -16,6 +16,9 @@
   "Telha PergoConfort",
   "Mão de obra artesanal"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/caramanchao/",
   "/pergolado-de-madeira/",
@@ -50,7 +53,6 @@
      "titulo": "Tipos de Gazebo de Madeira",
      "html": "<p>Os gazebos de madeira podem ter diversas utilizações e aplicações. Os mesmos montados com madeiras maciças, naturais, duras, de lei e apropriadas para área externa podem ter contatos direto com sol e chuva, podendo molhar, pegar sol e ações do tempo. Para esses gazebos externos indicamos madeiras como <strong>GARAPEIRA ou CUMARÚ</strong>.</p><p>Os gazebos de madeira também podem ser utilizados em áreas internas, como varandas, salas, estruturas estéticas para cozinhas, quartos e adegas. O pergolado se tornou um grande coringa na construção civil e um artefato de desejo, requinte e solução para a arquitetura moderna e contemporânea.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "001-madeira-nobre-1-scaled.png",
       "alt": "Tipos de Gazebo de Madeira"
      }
@@ -60,7 +62,6 @@
      "titulo": "Gazebo na área gourmet",
      "html": "<p>Ter um <strong>gazebo na área gourmet</strong> é uma adição encantadora e funcional para qualquer espaço ao ar livre. Esse elemento arquitetônico não apenas adiciona um toque de charme e elegância ao ambiente, mas também oferece uma série de benefícios práticos. Com sua estrutura de madeira, o <strong>gazebo</strong> proporciona sombra agradável e proteção contra os elementos, tornando a área gourmet um local aconchegante para desfrutar de refeições ao ar livre em qualquer clima. Além disso, o design do <strong>gazebo</strong> permite a instalação de iluminação e cortinas, criando uma atmosfera acolhedora durante a noite. Combinando estilo e funcionalidade, ter um <strong>gazebo na área gourmet</strong> é uma escolha inteligente para transformar seu espaço ao ar livre em um refúgio relaxante e convidativo.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "002-caramanchao-9.jpg",
       "alt": "Gazebo na área gourmet"
      }
@@ -70,7 +71,6 @@
      "titulo": "Gazebo na piscina",
      "html": "<p>Muitos <strong>gazebos</strong> ficam próximos a piscinas, na área de lazer. O <strong>gazebo</strong> muitas vezes serve como apoio para a piscina: quando se quer tomar sol, você vai para o <a href=\"/deck-de-madeira/\">deck</a> e toma sol; quando quer aproveitar a brisa da piscina, do dia, mas sem receber o sol direto em você, a primeira coisa que vem à mente é uma sombra, e nada como um <strong>gazebo</strong> de apoio para você pegar uma sombra com muito estilo. O <strong>gazebo</strong> pode ser fixado no solo pelo processo de enterramento e concretagem das colunas, ou somente pinado sobre o piso, portanto, se você já tem o piso instalado e não quer quebrá-lo para instalar o <strong>gazebo</strong>, não se preocupe.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "003-pergolado-de-madeira-2.jpg",
       "alt": "Gazebo na piscina"
      }
@@ -80,7 +80,6 @@
      "titulo": "Gazebo na garagem",
      "html": "<p>O <strong>Pergolado em formato de garagem é muito utilizado quando o cliente já possui a casapronta, mas não possui a garagem</strong>, sendo assim uma forma de fazer uma garagem rápida,bonita, com proteção UV e muito segura, é fazer em <a href=\"/cobertura-para-pergolado/\">pergolado com cobertura</a> de telha ouvidro e forração de bambu ou palha. O pergolado de garagem quando executado na construção da casa, vem com um pegada mais decorativa, pois devido a sua estética de tirar o folego, a fachada da casa fica muito bonita. <strong>Ao montar a garagem em pergolado tome cuidado com questões de altura e proteção solar (principalmente sombra).</strong>A Saraiva Design em madeira já fez pergolados como garagem, solicite um orçamento e sugestões para sua casa, esteja pronta ou em construção.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "004-pergolado-com-beiral-1.jpg",
       "alt": "Gazebo na garagem"
      }
@@ -90,7 +89,6 @@
      "titulo": "Gazebo na academia",
      "html": "<p>O <strong>gazebo</strong> para um espaço de academia é uma adição versátil e inspiradora. Esta estrutura de madeira pode criar um ambiente agradável e ao ar livre para exercícios, combinando a beleza da natureza com a funcionalidade do espaço de treino. A sombra proporcionada pelo <strong>gazebo</strong> ajuda a manter os usuários frescos durante os exercícios ao ar livre, enquanto a estrutura pode ser usada para pendurar equipamentos de treinamento, como barras ou argolas. Com a possibilidade de adicionar plantas trepadeiras e iluminação, o <strong>gazebo</strong> de madeira pode criar um ambiente motivador e atraente para atividades físicas ao ar livre, tornando o espaço da academia mais agradável e sofisticado.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "005-pergolado-com-academia.webp",
       "alt": "Gazebo na academia"
      }
@@ -100,7 +98,6 @@
      "titulo": "Gazebo na sala",
      "html": "<p>Quer fazer uma sala com um <strong>gazebo</strong>? É possível e fica muito bonito. A montagem é simples, basta montar o <strong>gazebo</strong>, forrar e cobrir com uma cobertura especial para <strong>gazebo</strong>, e após esses serviços feitos, entre com o piso e com os fechamentos laterais em alvenaria ou em vidro.<br>Para <strong>gazebo</strong> como salas, recomendamos ar-condicionado para um melhor aconchego térmico.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "006-caramanchao-13.jpg",
       "alt": "Gazebo na sala"
      }
@@ -110,7 +107,6 @@
      "titulo": "Gazebo no jardim",
      "html": "<p>Os <strong>gazebos</strong> para jardins são ótimas opções para quem quer decorar a sua área de lazer. O <strong>gazebo</strong> no jardim pode ser montado com cobertura de trepadeiras ou deixando somente as madeiras aparentes, de forma a agregar à residência um local de descanso, para leitura ou de decoração.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "007-pergolado-com-jardim-11zon.webp",
       "alt": "Gazebo no jardim"
      }
@@ -120,7 +116,6 @@
      "titulo": "Gazebo na área de lazer",
      "html": "<p>Ter um <strong>gazebo</strong> em sua área de lazer é como adicionar um toque de requinte e funcionalidade a um espaço já dedicado à diversão e ao relaxamento. Essa estrutura de madeira proporciona uma sombra agradável, criando um ambiente aconchegante para reuniões com amigos e familiares, churrascos ao ar livre, ou simplesmente para relaxar em uma tarde ensolarada. Com a possibilidade de personalização, você pode adaptar o <strong>gazebo</strong> para atender às suas preferências de estilo, adicionando iluminação decorativa, mesa de bilhar ou jogos para diversão. Em resumo, um <strong>gazebo</strong> na área de lazer combina funcionalidade e elegância, tornando seu espaço ao ar livre um local perfeito para criar memórias inesquecíveis e desfrutar de momentos de lazer.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "008-pergolado-para-area-de-lazer-11zon.webp",
       "alt": "Gazebo na área de lazer"
      }
@@ -130,7 +125,6 @@
      "titulo": "Gazebo na sacada",
      "html": "<p>Os <strong>gazebos</strong> de sacada estão em alta, muitos arquitetos fazem as sacadas com <strong>gazebos</strong> para dar uma estética diferenciada à casa. Fica muito bonito e funcional fazer o <strong>gazebo</strong> na sacada. Ao montar o <strong>gazebo</strong> na sacada da casa, tome cuidado com questões de ventilação; normalmente esses <strong>gazebos</strong> são montados em lugares altos, sendo assim procure o melhor sistema de fixação, encaixes das madeiras e sistema de cobertura, para que você não tenha nenhuma surpresa. A equipe da Saraiva Design em Madeiras está à disposição para te auxiliar a montar seu <strong>gazebo</strong> na sacada de forma segura, bonita e muito funcional.</p>",
      "imagem": {
-      "t": "img",
       "arquivo": "009-sacada-pergolado-11zon.webp",
       "alt": "Gazebo na sacada"
      }
@@ -143,12 +137,9 @@
    "lead": null,
    "blocos": [
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "010-pergolado-para-eventos-11zon.webp",
-     "alt": "Gazebo área de festa"
-    },
-    {
-     "t": "html",
+     "alt": "",
      "html": "<p>Ter um <strong>gazebo</strong> de madeira para eventos é como investir em um espaço versátil e encantador para celebrações memoráveis. Essa estrutura arquitetônica proporciona uma atmosfera única, onde a elegância natural da madeira se combina com a funcionalidade para acomodar uma variedade de ocasiões especiais, como casamentos, festas, churrascos e reuniões familiares. Sob o <strong>gazebo</strong>, os convidados podem desfrutar de sombra agradável e uma sensação de intimidade, enquanto ainda apreciam o ambiente ao ar livre. Com a adição de decoração, iluminação e elementos personalizados, o <strong>gazebo</strong> se transforma em um espaço verdadeiramente mágico, pronto para criar momentos inesquecíveis e experiências memoráveis para todos os presentes.</p>"
     },
     {

@@ -15,7 +15,7 @@ LIXO = re.compile(r'você não pode copiar|etiqueta-com-sombra', re.I)
 SIGLAS = ['MLC', 'TV', 'UV', 'UVB', 'PVC', 'SP', 'IBAMA', 'LED', 'DuPont', 'Melinex', 'PergoConfort', 'Pergoconfort', 'Triângulo', 'Saraiva', 'Design', 'Manoa']
 
 
-CORRECOES = {'/cobertura-para-pergolados-2/': '/cobertura-para-pergolado/', 'lazerz': 'lazer', 'CHURRASQUERIA': 'CHURRASQUEIRA', 'Churrasqueria': 'Churrasqueira', 'churrasqueria': 'churrasqueira'}
+CORRECOES = {'/portfolio-pergolado-de-madeira/': '/portfolio/', 'Duvidas pergoplac': 'Dúvidas sobre a PergoPlac', '/cobertura-para-pergolados-2/': '/cobertura-para-pergolado/', 'lazerz': 'lazer', 'CHURRASQUERIA': 'CHURRASQUEIRA', 'Churrasqueria': 'Churrasqueira', 'churrasqueria': 'churrasqueira'}
 
 
 def corrigir(t):
@@ -50,21 +50,54 @@ def baixar(url):
     base = os.path.basename(url.split('?')[0])
     nome_arq, ext = os.path.splitext(base)
     ext = ext.lower() if ext.lower() in ('.jpg', '.jpeg', '.png', '.webp', '.avif') else '.jpg'
-    arq = f'{len(mapa_img) + 1:03d}-{slugify(nome_arq)}{ext}'
+    raiz = f'{len(mapa_img) + 1:03d}-{slugify(nome_arq)}'
+    # reaproveita o arquivo já existente (mesmo que tenha sido convertido para outra extensão)
+    for e in ('.jpg', '.jpeg', '.png', '.webp', '.avif'):
+        if os.path.exists(os.path.join(img_dir, raiz + e)):
+            mapa_img[url] = raiz + e
+            return raiz + e
+    arq = raiz + ext
     destino = os.path.join(img_dir, arq)
-    if not os.path.exists(destino):
-        original = re.sub(r'-\d+x\d+(?=\.\w+$)', '', url)
-        ok = False
-        for u in ([original, url] if original != url else [url]):
-            if subprocess.run(['curl', '-sfL', u, '-o', destino]).returncode == 0 and os.path.getsize(destino) > 2000:
-                ok = True
-                break
-        if not ok:
-            if os.path.exists(destino):
-                os.remove(destino)
-            mapa_img[url] = None
-            return None
+    original = re.sub(r'-\d+x\d+(?=\.\w+$)', '', url)
+    ok = False
+    for u in ([original, url] if original != url else [url]):
+        if subprocess.run(['curl', '-sfL', u, '-o', destino]).returncode == 0 and os.path.getsize(destino) > 2000:
+            ok = True
+            break
+    if not ok:
+        if os.path.exists(destino):
+            os.remove(destino)
+        mapa_img[url] = None
+        return None
+    arq = otimizar(destino, arq)
     mapa_img[url] = arq
+    return arq
+
+
+def otimizar(destino, arq):
+    """Reduz fotos muito grandes (máx. 2400px) e converte PNG sem transparência em JPG."""
+    try:
+        from PIL import Image as PImg
+        im = PImg.open(destino)
+        im.load()
+    except Exception:
+        return arq
+    grande = os.path.getsize(destino) > 1.5 * 1024 * 1024 or im.width > 2400
+    png_opaco = arq.endswith('.png') and im.mode in ('RGB', 'P', 'L') and 'transparency' not in im.info
+    if not grande and not png_opaco:
+        return arq
+    if im.width > 2400:
+        im = im.resize((2400, round(im.height * 2400 / im.width)), PImg.LANCZOS)
+    if png_opaco or arq.endswith(('.jpg', '.jpeg')):
+        novo = os.path.splitext(arq)[0] + '.jpg'
+        im.convert('RGB').save(os.path.join(img_dir, novo), 'JPEG', quality=82, optimize=True, progressive=True)
+        if novo != arq:
+            os.remove(destino)
+        return novo
+    if arq.endswith('.webp'):
+        im.save(destino, 'WEBP', quality=82)
+    elif arq.endswith('.png'):
+        im.save(destino, 'PNG', optimize=True)
     return arq
 
 
@@ -185,7 +218,11 @@ def agrupar(itens, titulo_secao):
             if len(run) == 1:
                 out.append({'t': 'img', **run[0]})
             elif run:
-                out.append({'t': 'galeria', 'fotos': run})
+                # logos de clientes/parceiros: maioria PNG ou texto anterior fala de empresas/clientes
+                anterior = ' '.join(x.get('texto', '') + x.get('html', '') for x in out[-2:])
+                pngs = sum(f['arquivo'].endswith('.png') for f in run)
+                logos = len(run) >= 3 and (pngs >= len(run) * 0.7 or re.search(r'empresas que|clientes|parceiros', anterior, re.I))
+                out.append({'t': 'logos' if logos else 'galeria', 'fotos': run})
         elif it['t'] == 'video':
             run = []
             while k < len(itens) and itens[k]['t'] == 'video':
@@ -195,7 +232,17 @@ def agrupar(itens, titulo_secao):
         elif it['t'] == 'pdf':
             out.append({'t': 'pdf', 'href': it['href'], 'texto': it['texto']})
             k += 1
-    return out
+    # foto seguida de texto (ou texto seguido de foto) vira linha lado a lado
+    final_out = []
+    for x in out:
+        ant = final_out[-1] if final_out else None
+        if ant and ((ant['t'] == 'img' and x['t'] == 'html') or (ant['t'] == 'html' and x['t'] == 'img' and len(final_out) >= 2 and final_out[-2]['t'] == 'linha')):
+            img = ant if ant['t'] == 'img' else x
+            html = x if x['t'] == 'html' else ant
+            final_out[-1] = {'t': 'linha', 'arquivo': img['arquivo'], 'alt': img['alt'], 'html': html['html']}
+        else:
+            final_out.append(x)
+    return final_out
 
 
 final = []
@@ -227,18 +274,18 @@ for s in secoes:
         lead, titulo = titulo, None
     tipos = [x['t'] for x in blocos_exib]
     texto_total = sum(len(re.sub('<[^>]+>', '', x.get('html', ''))) for x in blocos_exib)
+    def como_uso(linha):
+        return {'tipo': 'uso', 'titulo': titulo, 'html': linha['html'], 'imagem': {'arquivo': linha['arquivo'], 'alt': linha['alt'] or titulo}}
+
+    usa_usos = not cfg.get('semUsos')
     # aplicação: um texto + uma foto
-    if titulo and sorted(tipos) == ['html', 'img'] and texto_total < 1400:
-        img = next(x for x in blocos_exib if x['t'] == 'img')
-        img['alt'] = img['alt'] or titulo
-        final.append({'tipo': 'uso', 'titulo': titulo, 'html': next(x['html'] for x in blocos_exib if x['t'] == 'html'), 'imagem': img})
+    if usa_usos and titulo and tipos == ['linha'] and texto_total < 1400:
+        final.append(como_uso(blocos_exib[0]))
         continue
     # "texto + foto" seguido de "Algumas obras..." + galeria: separa em aplicação + galeria
-    if titulo and len(tipos) >= 4 and sorted(tipos[:2]) == ['html', 'img'] and tipos[2] == 'sub' and 'galeria' in tipos[3:]:
-        img = next(x for x in blocos_exib[:2] if x['t'] == 'img')
-        img['alt'] = img['alt'] or titulo
-        final.append({'tipo': 'uso', 'titulo': titulo, 'html': next(x['html'] for x in blocos_exib[:2] if x['t'] == 'html'), 'imagem': img})
-        titulo, blocos_exib = blocos_exib[2]['texto'], blocos_exib[3:]
+    if usa_usos and titulo and len(tipos) >= 3 and tipos[0] == 'linha' and tipos[1] == 'sub' and 'galeria' in tipos[2:]:
+        final.append(como_uso(blocos_exib[0]))
+        titulo, blocos_exib = blocos_exib[1]['texto'], blocos_exib[2:]
     for x in blocos_exib:
         if x['t'] == 'galeria':
             for n, f in enumerate(x['fotos'], 1):
@@ -274,6 +321,9 @@ saida = {
     'seo': cfg['seo'],
     'hero': {'titulo': cfg.get('h1') or nome, 'texto': hero_texto, 'imagem': hero_arq},
     'faixa': cfg.get('faixa'),
+    'tipo': cfg.get('tipo', 'produto'),
+    'botoes': cfg.get('botoes'),
+    'tituloForm': cfg.get('tituloForm'),
     'relacionados': cfg.get('relacionados', []),
     'secoes': agrupado,
 }

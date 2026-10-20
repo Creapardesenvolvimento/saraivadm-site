@@ -16,6 +16,9 @@
   "Instalação em SP",
   "Acabamento refinado"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/forro-ripado/",
   "/forro-de-madeira/",
@@ -44,12 +47,9 @@
      "html": "<p>O <strong>forro de madeira tipo lambril</strong>, oferecido pela Saraiva Design, é uma excelente alternativa para quem busca <strong>personalizar seu espaço com naturalidade, elegância e requinte</strong>.</p><p>Trata-se de uma solução estética, térmica e acústica para os mais variados ambientes, proporcionando conforto e valorização do espaço.</p><p>Com encaixes perfeitos tipo <strong>macho e fêmea</strong>, o lambril oferece um acabamento contínuo, discreto e de alta qualidade para tetos, varandas e áreas internas ou externas.</p><p>Além da estética refinada, proporciona <strong>excelente isolamento térmico e acústico</strong>, agregando ainda mais conforto e charme ao ambiente com a beleza natural da madeira.</p><p><strong>Elegância Natural:</strong> Produzido com madeiras selecionadas como Cumaru, Garapeira, Cedro, Tauari e Jatobá, proporcionando sofisticação e charme rústico.</p><p><strong>Durabilidade Excepcional:</strong> Madeiras tratadas com rigor para garantir alta resistência e longa vida útil.</p><p><strong>Fácil Instalação:</strong> Sistema de encaixe prático que permite uma instalação rápida, segura e com acabamento impecável.</p><p><strong>Versatilidade:</strong> Ideal para residências, escritórios, comércios e ambientes corporativos, adaptando-se a diferentes projetos.</p>"
     },
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "001-imagem-forro-de-lambril.avif",
-     "alt": "Forro de Lambril para casas Saraiva"
-    },
-    {
-     "t": "html",
+     "alt": "Forro de Lambril para casas Saraiva",
      "html": "<p>O forro de madeira de lambril é um revestimento composto por réguas de madeira com encaixe tipo macho e fêmea, utilizado para cobrir tetos de forma contínua e uniforme. Além de proporcionar um acabamento elegante e aconchegante, o lambril ajuda no isolamento térmico e acústico dos ambientes. Ele pode ser instalado em áreas internas e externas, trazendo o charme natural da madeira para o espaço, com excelente durabilidade e fácil manutenção. É uma opção versátil e muito utilizada em projetos residenciais e comerciais.</p>"
     },
     {

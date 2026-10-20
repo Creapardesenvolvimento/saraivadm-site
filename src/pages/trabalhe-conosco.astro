@@ -1,0 +1,110 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { site } from '../data/site';
+import hero from '../assets/img/institucional/hero-trabalhe-conosco.jpg';
+import '../styles/produto.css';
+
+// Áreas de atuação (do site atual)
+const areas = [
+  'Engenheiro', 'Arquiteto', 'Paisagista', 'Administrativo', 'Auxiliar de produção', 'Carpinteiro', 'Serralheiro',
+  'Auxiliar de marketing', 'Fotógrafo', 'Departamento pessoal', 'Ajudante geral', 'Encarregado de logística',
+  'Social media', 'Auxiliar de limpeza', 'Financeiro', 'Vendedor', 'Motorista', 'Soldador', 'Caldeireiro',
+  'Operador de máquina', 'Jardineiro',
+];
+// E-mail para currículos. TODO: confirmar com o cliente se existe um e-mail específico de RH.
+const emailCurriculo = site.email;
+const mailto = `mailto:${emailCurriculo}?subject=${encodeURIComponent('Currículo - Trabalhe conosco')}`;
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Trabalhe conosco',
+    url: `${site.url}/trabalhe-conosco/`,
+    inLanguage: 'pt-BR',
+    about: { '@id': `${site.url}/#empresa` },
+  },
+];
+---
+
+<Base
+  title="Trabalhe Conosco | Saraiva Design em Madeiras e Aços"
+  description="Faça parte do time da Saraiva Design: oportunidades em carpintaria, serralheria, produção, engenharia, arquitetura, vendas, marketing e administrativo em Campinas-SP."
+  image={hero}
+  schema={schema}
+  headerSobreposto
+>
+  <PageHero
+    imagem={hero}
+    titulo="Trabalhe conosco"
+    texto="Faça parte de um time que transforma projetos em experiências únicas. Na Saraiva Design, talento e paixão constroem nosso sucesso."
+    trilha={[{ label: 'Início', href: '/' }, { label: 'Trabalhe conosco' }]}
+    botoes={[
+      { label: 'Ver vagas no LinkedIn', href: site.redes.linkedin, externo: true },
+      { label: 'Enviar currículo', href: mailto },
+    ]}
+  />
+
+  <section class="pm-sec">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">Junte-se à nossa equipe</span>
+        <h2 class="titulo-secao">Áreas em que atuamos</h2>
+        <p>
+          Buscamos pessoas que gostam de fazer bem feito: da produção na fábrica à montagem em obra, do projeto ao
+          atendimento ao cliente.
+        </p>
+      </header>
+      <ul class="tc-areas">
+        {areas.map((a) => <li>{a}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="pm-sec pm-sec--bege">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">Como se candidatar</span>
+        <h2 class="titulo-secao">Envie o seu currículo</h2>
+        <p>
+          Acompanhe as vagas abertas no nosso LinkedIn ou envie o seu currículo por e-mail, informando no assunto a área de
+          interesse.
+        </p>
+      </header>
+      <div class="tc-acoes">
+        <a class="btn btn--verde" href={site.redes.linkedin} target="_blank" rel="noopener">Vagas no LinkedIn</a>
+        <a class="btn btn--escuro-contorno" href={mailto}>Enviar currículo por e-mail</a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .tc-areas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+  .tc-areas li {
+    padding: 12px 20px;
+    background: var(--sar-bege);
+    border: 1px solid #e6ddd0;
+    border-radius: var(--raio);
+    font-family: var(--fonte-titulos);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--sar-marrom-escuro);
+  }
+  .tc-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+</style>

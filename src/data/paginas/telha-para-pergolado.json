@@ -16,6 +16,9 @@
   "Redução de calor",
   "Proteção contra granizo"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/cobertura-para-pergolado/",
   "/pergoconfort/",
@@ -48,12 +51,9 @@
      "texto": "Composição da Telha para Pergolado"
     },
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "001-composicao-telha.avif",
-     "alt": "Telha para Pergolado Camadas Saraiva"
-    },
-    {
-     "t": "html",
+     "alt": "Telha para Pergolado Camadas Saraiva",
      "html": "<p>O filme melinex389 da Dupont que vem termofundido na <strong>PergoConfort é capaz de bloquear até́ 90% da energia solar e 99% dos raios UVA e UVB</strong>, proporcionando conforto térmico e tornando o ambiente mais agradável, seja em dias de sol e calor, como de dias e frio.</p><p>Seu design inovador assegura um encaixe perfeito entre as telhas, garantindo vedação total contra goteiras e vazamentos. <strong>A telha PergoConfort é produzida dentro dos padrões ABNT NBR 16,753</strong> e é produzida no formato industrial de trapézio 40/980.</p><p>A Telha para Pergolado PergoConfort é <strong>produzida em resina de poliéster reforçado com fibra de vidro</strong> e conta com um revestimento exclusivo de filme Melinex 389 da DuPont, termofundido à estrutura da telha. Esse filme traz proteção contra os raios UVs, reduzindo o calor e retardando amarelamento e a perda de translucidez, garantindo um desempenho superior a 90% das coberturas tradicionais.</p>"
     },
     {

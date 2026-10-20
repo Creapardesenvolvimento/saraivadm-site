@@ -16,6 +16,9 @@
   "Conforto térmico",
   "Fácil instalação"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/pergoconfort/",
   "/pergoconfort-max/",

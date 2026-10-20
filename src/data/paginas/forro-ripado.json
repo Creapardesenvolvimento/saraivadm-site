@@ -16,6 +16,9 @@
   "Produção sob medida",
   "Variedade de espécies"
  ],
+ "tipo": "produto",
+ "botoes": null,
+ "tituloForm": null,
  "relacionados": [
   "/forro-de-lambril/",
   "/forro-de-madeira/",
@@ -31,21 +34,15 @@
    "lead": null,
    "blocos": [
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "001-forro-ripado-jpg.jpeg",
-     "alt": "Forro de madeira ripado para ambientes modernos, sofisticados e naturais"
-    },
-    {
-     "t": "html",
+     "alt": "",
      "html": "<p>O <strong>forro de madeira ripado (ou frisado)</strong> é uma excelente alternativa para substituir o tradicional forro de gesso, trazendo <strong>sofisticação, requinte e naturalidade</strong> para o ambiente.</p><p>A <strong>Saraiva Design em Madeiras</strong> trabalha com diversas espécies de madeira, oferecendo soluções personalizadas que atendem às necessidades de cada projeto com alto padrão de acabamento.</p><p><strong>Espécies de madeira:</strong> Utilizamos madeiras selecionadas, secas em estufa e beneficiadas, como Garapeira, Cumaru, Cedrinho, Tauari, Jatobá e Itaúba, garantindo qualidade e durabilidade.</p><p><strong>Versatilidade:</strong> Ideal para ambientes residenciais e comerciais, podendo ser aplicado em áreas gourmet, lazer, garagens, beirais, quiosques, paredes e pergolados.</p><p><strong>Durabilidade:</strong> Produto natural, nobre e altamente resistente, com vida útil superior a 20 anos quando instalado corretamente.</p><p><strong>Fácil instalação:</strong> Sistema de encaixe que permite uma instalação rápida, segura e com acabamento profissional impecável.</p>"
     },
     {
-     "t": "img",
+     "t": "linha",
      "arquivo": "002-forro-ripado-1.avif",
-     "alt": "Forro Ripado para casa Saraiva"
-    },
-    {
-     "t": "html",
+     "alt": "Forro Ripado para casa Saraiva",
      "html": "<p>O forro de madeira ripado é um revestimento natural composto por réguas com um exclusivo sistema de encaixes, facilitando a instalação e sendo utilizado para forrar tetos, pergolados, quiosques e os mais variados ambientes, como: Forro ripado de madeira para área gourmet, área de lazer, garagem, quiosques, telhados, pergolados, estruturas metálicas e paredes com forros ripadinhos. O uso indicado é para ambientes cobertos e protegidos da chuva. Versátil, natural, ótimo para tratamento térmico e acústico, o <a href=\"/forro-de-lambril/\">forro de madeira</a> ripado é uma solução para sua obra.</p>"
     },
     {
