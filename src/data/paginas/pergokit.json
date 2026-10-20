@@ -1,0 +1,216 @@
+{
+ "slug": "pergokit",
+ "nome": "Pergokit",
+ "seo": {
+  "title": "Pergokit: Kit de Pergolado Sob Medida para Todo o Brasil | Saraiva Design",
+  "description": "Pergokit, kit de pergolado sob medida completo: projeto exclusivo, madeiramento selecionado, metais, forros, cobertura e envio para todo o Brasil."
+ },
+ "hero": {
+  "titulo": "Pergokit",
+  "texto": "Um Kit de Pergolado sob medida Completo Para Você! Desde o projeto, até o envio dos materiais. Um kit desenvolvido exclusivamente para o seu ambiente!",
+  "imagem": "018-pergokit.avif"
+ },
+ "faixa": [
+  "Projeto exclusivo",
+  "Kit completo",
+  "Manual de instalação",
+  "Envio para todo o Brasil"
+ ],
+ "relacionados": [
+  "/pergolado-de-madeira/",
+  "/pergolado-metalico/",
+  "/cobertura-para-pergolado/",
+  "/forro-de-palha/",
+  "/forro-em-esteiras-de-bambu/",
+  "/deck-de-madeira/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Toda Nossa Expertise Para Projetarmos o Pergolado Perfeito na Sua Casa",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "videos",
+     "videos": [
+      {
+       "id": "IXiKgsYgz3g",
+       "capa": "yt-IXiKgsYgz3g.jpg"
+      },
+      {
+       "id": "1Gqcssu-Md4",
+       "capa": "yt-1Gqcssu-Md4.jpg"
+      }
+     ]
+    },
+    {
+     "t": "html",
+     "html": "<p>A <strong>Pergokit</strong> foi idealizada para atender quem deseja criar um pergolado perfeito desde o início, com planejamento completo e suporte especializado.</p><p>Ao adquirir o kit completo, você conta com toda a <strong>expertise da Saraiva Design</strong>, trabalhando em conjunto para definir cada detalhe do seu projeto com padrão premium.</p><p>Oferecemos opções flexíveis de entrega, incluindo envio por transportadora, logística própria ou retirada diretamente conosco.</p><p>A instalação é realizada seguindo o projeto e orientações fornecidas, garantindo uma montagem prática, segura e com acabamento de alto padrão.</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "E o que está incluso no seu pergokit?"
+    },
+    {
+     "t": "html",
+     "html": "<p><strong>O Kit inclui:</strong> madeiramento premium e selecionado, forro em fibras naturais, sintéticas ou esteiras de <a href=\"/forro-em-esteiras-de-bambu/\">bambu</a>, cobertura especial para pergolado, fixadores como parafusos e pregos, materiais para pintura como vernizes, lixas e pincéis, além de acessórios como luminárias, ventiladores, suporte para redes, entre outros.</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "usos",
+   "titulo": "O que vem no Pergokit",
+   "itens": [
+    {
+     "tipo": "uso",
+     "titulo": "Projeto exclusivo",
+     "html": "<p>Na Pergokit, <strong>nossa equipe altamente capacitada está pronta para criar um projeto personalizado para o seu Pergokit</strong>, garantindo todas as informações essenciais para uma montagem eficiente. Oferecemos suporte técnico dedicado e disponibilizamos vídeos instrutivos para facilitar cada etapa do processo. <strong>Nosso compromisso é proporcionar não apenas um pergolado, mas sim uma solução ideal para o seu ambiente, refletindo sua visão e elevando o charme do espaço.</strong>Conte conosco para transformar suas ideias em realidade com expertise e qualidade incomparáveis.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "001-foto-pergokit-site-1-11zon.avif",
+      "alt": "Projeto exclusivo"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Kit pintura",
+     "html": "<p>Kit de pintura desenvolvido para garantir acabamento profissional e proteção duradoura ao <a href=\"/pergolado-de-madeira/\">pergolado de madeira</a>. Inclui opções de verniz ou stain, permitindo escolher o visual e o nível de proteção desejados. Acompanha lixas especiais para preparo adequado da superfície, assegurando melhor aderência e resultado final uniforme. Todos os materiais são enviados prontos para uso, facilitando o processo de aplicação. O kit protege a madeira contra sol, chuva e desgaste natural. Solução prática para manter o pergolado bonito, resistente e bem conservado.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "002-nerniz-madeiras.jpg",
+      "alt": "Kit pintura"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Madeiramento selecionado",
+     "html": "<p>Oferecemos na Pergokit <strong>um madeiramento exclusivo e certificado pelo DOF (IBAMA)</strong>, garantindo não apenas a beleza, mas também a sustentabilidade do seu pergolado. <strong>Priorizamos a segurança, utilizando materiais de alta qualidade em todo o processo de fabricação.</strong> Ao escolher nosso kit, você recebe todas as madeiras necessárias para a montagem, proporcionando praticidade e eficiência. <strong>Além disso, incluímos fixadores de alta durabilidade no kit e também verniz ou stain para acabamento do madeiramento, assegurando uma instalação segura e estável.</strong> Na Pergokit, estamos comprometidos em oferecer não apenas um pergolado esteticamente atraente, mas também uma solução confiável e duradoura para transformar seu espaço ao ar livre.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "003-madeiramento-selecionado.jpg",
+      "alt": "Madeiramento selecionado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Metais selecionados",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "img",
+     "arquivo": "004-aco-foto.jpg",
+     "alt": "Metais selecionados"
+    },
+    {
+     "t": "sub",
+     "texto": "O ChatGPT disse"
+    },
+    {
+     "t": "html",
+     "html": "<p>O aço carbono é um dos metais mais utilizados em pergolados metálicos pela combinação de resistência e custo-benefício.<br>Sua estrutura robusta garante estabilidade mesmo em vãos maiores, permitindo projetos modernos e bem definidos.<br>O material suporta impactos e deformações com eficiência, mantendo a integridade ao longo do tempo.<br>Com tratamentos como galvanização ou pintura eletrostática, sua durabilidade em áreas externas aumenta significativamente.</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "usos",
+   "titulo": "Mais ideias com pergokit",
+   "itens": [
+    {
+     "tipo": "uso",
+     "titulo": "Forro especiais",
+     "html": "<p>Na Pergokit, destacamos nossa forração exclusiva, <strong>oferecendo uma variedade de modelos para personalizar o seu pergolado</strong> de acordo com o seu estilo. <strong>Escolha entre forros em <a href=\"/forro-de-palha/\">palha</a> sintética ou natural, assim como esteiras de bambu</strong>, proporcionando uma estética única e aconchegante ao seu espaço. Todos os nossos forros são feitos sob medida, adaptando-se perfeitamente ao seu projeto. Com a Pergokit, <strong>garantimos não apenas a qualidade dos materiais, mas também a customização precisa</strong>, permitindo que seu pergolado seja uma expressão autêntica do seu gosto e personalidade.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "005-forros-pergokit-11zon.webp",
+      "alt": "Forro especiais"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Cobertura premium",
+     "html": "<p>Introduzindo a inovação no seu Pergokit,<strong>apresentamos a <a href=\"/telha-para-pergolado/\">telha</a> Pergo-Confort, uma solução translúcida que vai além da estética, proporcionando proteção essencial para o seu pergolado.</strong> Além de conferir um toque elegante, a telha Pergo-Confort garante conforto térmico ao ambiente, criando um espaço agradável em todas as estações. <strong>Sua construção oferece uma eficiente proteção contra raios UV, assegurando não apenas beleza, mas também durabilidade.</strong> O kit inclui parafusos e calços para uma fixação segura, enquanto os materiais de vedação, como PU´s, silicone e manta asfáltica aluminizada, garantem uma montagem resistente e confiável. Com a telha Pergo-Confort, seu pergolado não apenas encanta visualmente, mas também proporciona um ambiente protegido.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "006-d-1-hdr-scaled.jpg",
+      "alt": "Cobertura premium"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Ventiladores e iluminação",
+     "html": "<p>Na Pergokit temos uma variedade de opções para personalizar ainda mais o seu espaço, <strong>incluindo ventiladores de diversos modelos para que você escolha aquele que melhor se harmoniza com o seu ambiente.</strong> Além disso, <strong>nosso kit de iluminação é completo</strong>, apresentando arandelas, trilhos, balizadores e lâmpadas, proporcionando não apenas funcionalidade, mas também um toque de elegância à sua área externa. Com a Pergokit, cada detalhe é pensado para oferecer opções que atendam não apenas às suas necessidades práticas, mas também ao seu gosto estético,<strong>garantindo um pergolado personalizado e encantador.</strong></p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "007-ventiladores-e-iluminacao.webp",
+      "alt": "Ventiladores e iluminação"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Decks e painéis ripados",
+     "html": "<p>E para complementar o seu Pergokit, <strong>disponibilizamos materiais de alta qualidade para a construção do seu deck de madeira ou painel <a href=\"/forro-ripado/\">ripado</a>.</strong> Garantimos durabilidade e beleza para a sua área externa. Juntamente com os fixadores inclusos, <strong>o kit oferece tudo o que você precisa para uma montagem segura e eficiente.</strong> Além disso, nosso projeto é desenvolvido sob medida, assegurando uma integração perfeita com o seu pergolado, proporcionando um espaço ao ar livre verdadeiramente personalizado e sofisticado. <strong>Na Pergokit, cuidamos de cada detalhe para garantir que seu ambiente exterior seja não apenas funcional, mas também esteticamente impressionante.</strong></p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "008-deck-e-painel-ripado-11zon.webp",
+      "alt": "Decks e painéis ripados"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Alguns Projetos de Pergokit",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "009-3-2.jpg",
+       "alt": "Pergokit: projeto Saraiva Design 1"
+      },
+      {
+       "arquivo": "010-8-1.png",
+       "alt": "Pergokit: projeto Saraiva Design 2"
+      },
+      {
+       "arquivo": "011-4-2.jpg",
+       "alt": "Pergokit: projeto Saraiva Design 3"
+      },
+      {
+       "arquivo": "012-5-2.jpg",
+       "alt": "Pergokit: projeto Saraiva Design 4"
+      },
+      {
+       "arquivo": "013-6-2.jpg",
+       "alt": "Pergokit: projeto Saraiva Design 5"
+      },
+      {
+       "arquivo": "014-2-2.jpg",
+       "alt": "Pergokit: projeto Saraiva Design 6"
+      },
+      {
+       "arquivo": "015-1-11.jpg",
+       "alt": "Pergokit: projeto Saraiva Design 7"
+      },
+      {
+       "arquivo": "016-7-1.jpg",
+       "alt": "Pergokit: projeto Saraiva Design 8"
+      }
+     ]
+    },
+    {
+     "t": "sub",
+     "texto": "Veja algumas entregas de Pergokit"
+    }
+   ]
+  },
+  {
+   "tipo": "folder",
+   "href": "https://saraivadm.com.br/wp-content/uploads/2025/05/FOLDER-PERGOKIT-2025.pdf",
+   "capa": "017-pg-1-2048x1451.jpg"
+  }
+ ]
+}

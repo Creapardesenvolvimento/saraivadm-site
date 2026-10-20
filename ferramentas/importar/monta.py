@@ -15,7 +15,7 @@ LIXO = re.compile(r'você não pode copiar|etiqueta-com-sombra', re.I)
 SIGLAS = ['MLC', 'TV', 'UV', 'UVB', 'PVC', 'SP', 'IBAMA', 'LED', 'DuPont', 'Melinex', 'PergoConfort', 'Pergoconfort', 'Triângulo', 'Saraiva', 'Design', 'Manoa']
 
 
-CORRECOES = {'lazerz': 'lazer', 'CHURRASQUERIA': 'CHURRASQUEIRA', 'Churrasqueria': 'Churrasqueira', 'churrasqueria': 'churrasqueira'}
+CORRECOES = {'/cobertura-para-pergolados-2/': '/cobertura-para-pergolado/', 'lazerz': 'lazer', 'CHURRASQUERIA': 'CHURRASQUEIRA', 'Churrasqueria': 'Churrasqueira', 'churrasqueria': 'churrasqueira'}
 
 
 def corrigir(t):

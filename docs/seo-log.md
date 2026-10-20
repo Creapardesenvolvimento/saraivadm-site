@@ -225,3 +225,28 @@ Cada entrada: data, página, o que mudou e por quê. O histórico completo de ar
   políticas e os 101 posts do blog.
 - [ ] `/forro-de-madeira/` no site atual tem pouco texto (~300 caracteres). Vale enriquecer ou apontar para forro ripado/lambril.
 - [ ] Folders e tabelas em PDF continuam apontando para o WordPress atual; precisam ser copiados (e comprimidos) antes de desligar o WordPress.
+
+---
+
+## 2026-10-20 — Mais 12 páginas de produto importadas (todas as de produto do site atual)
+
+**Páginas (mesmas URLs do site atual):** `/telha-para-pergolado/`, `/pergoconfort/`, `/pergoconfort-max/`, `/pergoplac/`,
+`/forro-ripado/`, `/forro-de-lambril/`, `/painel-ripado/`, `/caramanchao/`, `/gazebo/`, `/pergokit/`, `/deck-modular/`, `/deck-hidro-spa/`.
+
+- Mesmo tratamento das anteriores: conteúdo integral, 1 H1, title/description novos, trilha, `Service` + `BreadcrumbList` + `FAQPage`.
+- Menu e rodapé: PergoPlac (Coberturas) e Deck hidro-spa (Outros) incluídos; rodapé lista todos os produtos.
+- **Imagens-fonte reduzidas:** 74 fotos acima de 2400px/1,5 MB foram redimensionadas (113 MB → 24 MB) com
+  `ferramentas/otimizar-imagens.mjs`. O site continua servindo WebP otimizado; isso só deixa o repositório e o build leves.
+- Links corrigidos: trilha "Início › Pergolados" (página inexistente) → "Início › Pergolado de madeira/metálico";
+  `/cobertura-para-pergolados-2/` → `/cobertura-para-pergolado/` dentro dos textos.
+- Título "Duvidas pergoplac" → "Dúvidas sobre a PergoPlac".
+
+### Observações de conteúdo (site atual)
+- `/deck-modular/` e `/deck-hidro-spa/` têm o **mesmo texto de introdução** (conteúdo duplicado). Vale reescrever um deles.
+- `/pergoplac/` tem pouco conteúdo (1 parágrafo + dúvidas). Vale enriquecer.
+- `/deck-modular/` tem duas seções com o mesmo título "Deck de madeira na piscina".
+
+### Links internos ainda sem página (próximas etapas)
+Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/`, `/parcerias/`, `/trabalhe-conosco/`,
+`/redes-sociais/`, `/contato/`), `/politica-de-privacidade/`, `/termos-de-uso/` e posts antigos do blog citados nos textos
+(`/5-dicas-para-montar-seu-pergolado/`, `/habitos-saudaveis-para-curtir-seu-pergolado/`).

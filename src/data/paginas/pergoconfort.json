@@ -1,0 +1,456 @@
+{
+ "slug": "pergoconfort",
+ "nome": "PergoConfort",
+ "seo": {
+  "title": "PergoConfort: Telha Translúcida para Pergolado | Saraiva Design",
+  "description": "PergoConfort, telha translúcida exclusiva da Saraiva Design: reduz o calor, filtra raios UV, resiste a granizo e tem 10 anos de garantia."
+ },
+ "hero": {
+  "titulo": "PergoConfort",
+  "texto": null,
+  "imagem": "022-pergoconfort-telha-capa.jpg"
+ },
+ "faixa": [
+  "Exclusiva Saraiva Design",
+  "Translúcida",
+  "Filtro UV",
+  "10 anos de garantia"
+ ],
+ "relacionados": [
+  "/pergoconfort-max/",
+  "/telha-para-pergolado/",
+  "/cobertura-para-pergolado/",
+  "/pergolado-de-madeira/",
+  "/pergolado-metalico/",
+  "/forro-em-esteiras-de-bambu/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Telha PergoConfort",
+   "lead": "A Telha Pergoconfort é uma telha exclusiva da Saraiva Design, ela é translúcida e ajuda a reduzir o calor do seu ambiente",
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p>A <strong>PergoConfort</strong> é a cobertura exclusiva e <strong>desenvolvida para pergolado</strong>, possui alto desempenho em conforto térmico, resistência mecânica e translucidez.</p><p>A <strong>Telha PergoConfort</strong> é fabricada em resina de poliéster reforçada com fibra de vidro, oferecendo leveza, alta resistência e longa durabilidade para pergolados. Com formato trapezoidal 40/980, garante encaixe perfeito e vedação eficiente, além de ser produzida sob medida no comprimento, evitando desperdícios e adaptando-se a qualquer projeto. Sua translucidez permite a entrada de luz natural com conforto térmico, podendo ainda contar com pigmentação metalizada que reduz o calor e proporciona acabamento sofisticado. O filme <strong>Melinex® 389 da DuPont</strong>, aplicado por termofusão, assegura proteção contra raios UVA e UVB, evita o amarelamento e preserva a transparência da <a href=\"/telha-para-pergolado/\">telha</a>, contribuindo para maior eficiência energética e ambientes mais agradáveis e modernos.</p>"
+    },
+    {
+     "t": "pdf",
+     "href": "https://saraivadm.com.br/wp-content/uploads/2025/03/TABELA-DE-PRECOS-PERGOCONFORT-1.pdf",
+     "texto": "Tabela de preço"
+    },
+    {
+     "t": "pdf",
+     "href": "https://saraivadm.com.br/wp-content/uploads/2025/03/FOLDER-PERGOCONFORT-2025.pdf",
+     "texto": "Catálogo"
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Vantagens e Diferenciais da PergoConfort",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "cards",
+     "itens": [
+      {
+       "titulo": "Fácil instalação",
+       "html": "<p>A PergoConfort Max foi desenvolvida para instalação rápida e prática. Nossa equipe técnica oferece suporte total durante o processo.</p>"
+      },
+      {
+       "titulo": "Produção sob medida",
+       "html": "<p>Telhas fabricadas sob medida para o seu projeto, evitando cortes desnecessários e garantindo melhor acabamento e desempenho estrutural.</p>"
+      },
+      {
+       "titulo": "Proteção contra granizo",
+       "html": "<p>Com estrutura rígida e núcleo isolante, a PergoConfort Max suporta impactos de granizo, oferecendo maior segurança e durabilidade à cobertura.</p>"
+      },
+      {
+       "titulo": "10 anos de garantia",
+       "html": "<p>Telhas com 10 anos de garantia para a satisfação e tranquilidade de nossos clientes.</p>"
+      },
+      {
+       "titulo": "Acompanham materiais para fixação",
+       "html": "<p>As telhas enviadas pela Saraiva Design em Madeiras acompanham calços e parafusos para fixação.</p>"
+      },
+      {
+       "titulo": "Resistência mecânica",
+       "html": "<p>PergoConfort Max oferece alta rigidez estrutural e excelente resistência mecânica, suportando ventos fortes, chuvas intensas e impactos externos sem deformações.</p>"
+      },
+      {
+       "titulo": "Redução de concentração de calor e ruído",
+       "html": "<p>O núcleo isolante de Poliestireno Expandido (EPS) proporciona um ambiente termicamente confortável e com ótimo isolamento acústico, mesmo em dias quentes e locais com ruído externo.</p>"
+      },
+      {
+       "titulo": "Design inovador",
+       "html": "<p>O formato trapezoidal moderno proporciona encaixe perfeito entre as telhas, evitando goteiras e vazamentos mesmo após anos de uso.</p>"
+      },
+      {
+       "titulo": "Proteção ao clima",
+       "html": "<p>Projetada para resistir a chuvas intensas, ventos fortes e variações climáticas, a PergoConfort Max mantém seu ambiente sempre protegido.</p>"
+      }
+     ]
+    },
+    {
+     "t": "sub",
+     "texto": "Alguns Projetos com PergoConfort"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "001-4.jpg",
+       "alt": "PergoConfort: projeto Saraiva Design 1"
+      },
+      {
+       "arquivo": "002-3.jpg",
+       "alt": "PergoConfort: projeto Saraiva Design 2"
+      },
+      {
+       "arquivo": "003-2.jpg",
+       "alt": "PergoConfort: projeto Saraiva Design 3"
+      },
+      {
+       "arquivo": "004-1-9.jpg",
+       "alt": "PergoConfort: projeto Saraiva Design 4"
+      },
+      {
+       "arquivo": "005-7.jpg",
+       "alt": "PergoConfort: projeto Saraiva Design 5"
+      },
+      {
+       "arquivo": "006-8.jpg",
+       "alt": "PergoConfort: projeto Saraiva Design 6"
+      },
+      {
+       "arquivo": "007-6.jpg",
+       "alt": "PergoConfort: projeto Saraiva Design 7"
+      },
+      {
+       "arquivo": "008-5.jpg",
+       "alt": "PergoConfort: projeto Saraiva Design 8"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "Dúvidas sobre a PergoConfort",
+   "intro": "<p>Confira nesse vídeo abaixo como fazemos a instalação do sistema de cobertura.</p>",
+   "itens": [
+    {
+     "titulo": "Quais são as principais características da Telha PergoConfort?",
+     "html": "<p>A Telha PergoConfort é uma cobertura moderna, resistente e especialmente desenvolvida para pergolados. Produzida em poliéster reforçado com fibra de vidro e espessura de 1,5 mm, ela combina leveza, durabilidade e alta performance, garantindo segurança e facilidade na instalação.</p><p>Seu formato trapezoidal 40/980 proporciona encaixe perfeito, vedação eficiente e instalação rápida, enquanto o material anticorrosivo garante longa vida útil mesmo em condições adversas. A PergoConfort conta com filme DuPont e proteção UV, que impede o amarelamento e protege contra os raios solares, reduzindo significativamente o calor e aumentando o conforto térmico do ambiente.</p><p>Disponível em versões translúcidas, a telha permite a entrada de luz natural, valorizando o pergolado e diminuindo a necessidade de iluminação artificial. Ela também é resistente a impactos, como granizo, e sustentável, já que sua produção sob medida elimina desperdícios de material e cortes desnecessários.</p><p>Além disso, a PergoConfort oferece 10 anos de garantia contra defeitos de fabricação, combinando estética, proteção e praticidade para qualquer projeto de pergolado, seja residencial ou comercial.</p>",
+     "imagem": {
+      "arquivo": "009-caracteristicas-da-pergoconfort-1536x864.jpg",
+      "alt": "Quais são as principais características da Telha PergoConfort?"
+     }
+    },
+    {
+     "titulo": "Como a Telha PergoConfort contribui para o conforto térmico do ambiente?",
+     "html": "<p>A Telha PergoConfort é projetada para oferecer excelente conforto térmico ao ambiente. Sua composição em poliéster reforçado com fibra de vidro, combinada com aditivos anti-UV, reduz significativamente a entrada de calor no espaço coberto.</p><p>Essa tecnologia ajuda a manter o ambiente fresco, mesmo em dias ensolarados, evitando a sensação de abafamento comum em coberturas convencionais. Além disso, sua translucidez controlada permite a entrada de luz natural, proporcionando luminosidade sem aquecer excessivamente o ambiente. Essa característica é ideal para espaços externos como áreas gourmet, jardins e piscinas, onde o equilíbrio entre luz e temperatura é essencial. A PergoConfort também evita o acúmulo de calor sob o pergolado, tornando o local mais agradável para atividades ao ar livre. Assim, ela combina estética e funcionalidade, criando um ambiente confortável e convidativo durante o dia, com menos dependência de sistemas de refrigeração ou ventilação artificial.</p>",
+     "imagem": {
+      "arquivo": "010-conforto-termico-pergoconfort-1536x864.jpg",
+      "alt": "Como a Telha PergoConfort contribui para o conforto térmico do ambiente?"
+     }
+    },
+    {
+     "titulo": "Quais são os materiais utilizados na fabricação da Telha PergoConfort?",
+     "html": "<p>A Telha PergoConfort é fabricada com materiais de alta qualidade, garantindo durabilidade, resistência e eficiência. Sua composição principal inclui poliéster reforçado com fibra de vidro, um material que combina leveza com elevada resistência mecânica. Essa combinação proporciona uma estrutura robusta, capaz de suportar impactos como granizo e condições climáticas adversas, além de ser anticorrosiva.</p><p>A telha também possui uma camada de resina protetora em ambas as faces, o que aumenta sua durabilidade e protege contra o desgaste natural. Um diferencial importante é o véu de proteção que impede o afloramento de fibras, garantindo maior segurança e um acabamento impecável. Além disso, ela contém aditivos anti-UV, que bloqueiam os raios ultravioleta, protegendo o ambiente coberto do excesso de calor e prolongando a vida útil do material.</p><p>Outro grande diferencial é a aplicação do insulfilm Dupont, que potencializa a redução de calor no ambiente, oferecendo ainda mais conforto térmico sob o pergolado.</p><p>Esses componentes de alta tecnologia fazem da Telha PergoConfort uma solução confiável, segura e eficiente para coberturas de pergolados.</p>",
+     "imagem": {
+      "arquivo": "011-composicao-telha-768x542.jpg",
+      "alt": "Quais são os materiais utilizados na fabricação da Telha PergoConfort?"
+     }
+    },
+    {
+     "titulo": "Como é feita a instalação da Telha PergoConfort? É necessário um profissional?",
+     "html": "<p>A instalação da Telha PergoConfort é prática e pode ser realizada de forma eficiente seguindo orientações básicas. Cada telha é fabricada sob medida, o que elimina cortes e ajustes desnecessários durante a aplicação. O processo começa com a medição precisa da estrutura do pergolado e o posicionamento adequado das telhas. A fixação é feita utilizando calços e parafusos que acompanham o produto, garantindo uma vedação eficaz e estabilidade.</p><p>Além disso, é recomendado o uso de mantas asfálticas aluminizadas e silicones PU para reforçar a vedação contra infiltrações.</p><p>Embora a instalação seja simples, especialmente para quem já possui alguma experiência com montagens, recomenda-se a contratação de um profissional especializado. Isso assegura que o alinhamento, a sobreposição e a fixação sejam feitos corretamente, otimizando o desempenho térmico e a durabilidade da cobertura. A Saraiva Design fornece um vídeo detalhado com o passo a passo do processo, facilitando a execução. A instalação profissional também minimiza erros que poderiam comprometer a estética e a funcionalidade, garantindo o máximo aproveitamento dos benefícios da Telha PergoConfort.</p>",
+     "imagem": {
+      "arquivo": "012-calco-telha-768x614.jpg",
+      "alt": "Como é feita a instalação da Telha PergoConfort? É necessário um profissional?"
+     }
+    },
+    {
+     "titulo": "Qual é a durabilidade estimada da Telha PergoConfort?",
+     "html": "<p>A durabilidade estimada da Telha PergoConfort é de pelo menos 10 anos, conforme garantido pelo fabricante, Saraiva Design. Essa longevidade é resultado de sua composição de poliéster reforçado com fibra de vidro, um material altamente resistente a impactos, intempéries e corrosão. Além disso, a telha conta com uma camada de proteção contra raios UV e um véu que impede o afloramento de fibras, preservando sua integridade estrutural e estética ao longo do tempo.</p><p>Essa durabilidade pode ser ainda maior com manutenção adequada, como limpeza periódica e inspeções regulares para garantir que a vedação esteja intacta. A Telha PergoConfort também resiste bem a chuvas de granizo, ventos fortes e exposições prolongadas ao sol, sem apresentar rachaduras ou deformações. Embora possam ocorrer leves alterações na cor, como amarelamento, isso é uma reação natural de materiais compostos por resina e não afeta o desempenho. Assim, a Telha PergoConfort é uma escolha confiável e de longa duração para coberturas de pergolados em diferentes tipos de projetos.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "A Telha PergoConfort possui alguma garantia contra defeitos ou danos?",
+     "html": "<p>Sim, a Telha PergoConfort possui uma garantia de 10 anos oferecida pela Saraiva Design, cobrindo defeitos de fabricação e danos relacionados à sua estrutura. Essa garantia abrange aspectos importantes, como resistência ao afloramento de fibras, integridade contra alongamento na ruptura, desempenho em tração e flexão, e manutenção do teor adequado de fibra de vidro na composição. Esses itens garantem que a telha manterá sua funcionalidade e durabilidade dentro do período estipulado.</p><p>A garantia também inclui a proteção contra problemas causados por impactos, como chuvas de granizo, e assegura que a proteção UV seguirá eficaz durante toda a sua vida útil. É importante observar que condições naturais, como leve amarelamento e microfissuras com o passar dos anos, são características normais de produtos fabricados com resina e não afetam sua eficiência ou cobertura garantida. Para ativar e manter a garantia, recomenda-se seguir as orientações de instalação e manutenção fornecidas pela Saraiva Design, assegurando o melhor desempenho e longevidade do produto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Existem diferentes modelos ou cores disponíveis para a Telha PergoConfort?",
+     "html": "<p>Sim, a Telha PergoConfort está disponível em diferentes modelos e cores, oferecendo versatilidade para atender às necessidades estéticas e funcionais de diversos projetos. As opções incluem cores translúcidas, que permitem a entrada de luz natural, promovendo ambientes mais claros e econômicos em termos de energia. Além disso, a Saraiva Design disponibiliza um processo de pigmentação industrializado, que garante cores uniformes e duráveis, com acabamento de alta qualidade.</p><p>Para clientes que buscam personalização, é possível consultar a tabela de cores disponíveis ou solicitar tonalidades exclusivas, adaptadas ao estilo do ambiente. Essa flexibilidade permite integrar as Telhas PergoConfort a diferentes estilos arquitetônicos, sejam modernos, rústicos ou contemporâneos. Além disso, todas as telhas são fabricadas sob medida, garantindo um ajuste perfeito ao projeto e eliminando cortes desnecessários. Essa combinação de variedade de cores e personalização torna a Telha PergoConfort uma escolha prática e elegante para coberturas de pergolados residenciais ou comerciais.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "A Telha PergoConfort é indicada para quais tipos de pergolados?",
+     "html": "<p>A Telha PergoConfort é amplamente indicada para diferentes tipos de pergolados, incluindo estruturas de madeira, alumínio e ferro. Seu design moderno e funcionalidade tornam-na uma excelente escolha para áreas externas como jardins, áreas gourmet, espaços de convivência, piscinas e garagens.</p><p>A leveza e a alta resistência mecânica permitem que seja usada tanto em projetos residenciais quanto comerciais, sejam eles contemporâneos ou rústicos. A translucidez das telhas permite a entrada de luz natural, reduzindo a necessidade de iluminação artificial durante o dia. Além disso, sua proteção contra raios UV garante que o ambiente fique fresco e protegido, mesmo sob exposição solar intensa. As Telhas PergoConfort também resistem a chuvas fortes e granizo, tornando-as ideais para locais sujeitos a condições climáticas variadas. Produzidas sob medida, adaptam-se perfeitamente ao tamanho do projeto, evitando desperdícios e garantindo uma instalação eficiente e de alta qualidade.</p>",
+     "imagem": {
+      "arquivo": "013-pergoconfort-em-pergolados-768x614.jpg",
+      "alt": "A Telha PergoConfort é indicada para quais tipos de pergolados?"
+     }
+    },
+    {
+     "titulo": "É possível utilizar a Telha PergoConfort em ambientes comerciais e residenciais?",
+     "html": "<p>Sim, a Telha PergoConfort é extremamente versátil e pode ser utilizada tanto em ambientes comerciais quanto residenciais. Em projetos residenciais, ela é amplamente aplicada em áreas gourmet, jardins, piscinas, garagens e varandas, proporcionando conforto térmico e luminosidade natural. Já em ambientes comerciais, a Telha PergoConfort é ideal para espaços como restaurantes, cafés, lojas e áreas de eventos, onde é necessário aliar proteção contra intempéries, estética e funcionalidade.</p><p>Sua resistência a raios UV, granizo e chuvas fortes garante durabilidade em diferentes cenários, enquanto sua translucidez reduz a necessidade de iluminação artificial durante o dia. Além disso, por ser fabricada sob medida, adapta-se facilmente a projetos de diferentes dimensões e estilos, eliminando desperdícios e otimizando a instalação. Seja em um espaço doméstico ou empresarial, a Telha PergoConfort combina proteção, economia de energia e beleza, elevando o padrão de qualquer projeto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "A Telha PergoConfort permite a entrada de luz natural?",
+     "html": "<p>Sim, a Telha PergoConfort permite a entrada de luz natural de maneira eficiente e controlada. Sua composição translúcida foi projetada para aproveitar ao máximo a luminosidade natural, criando ambientes mais claros e agradáveis durante o dia.</p><p>Essa característica é especialmente vantajosa em projetos que buscam reduzir a dependência de iluminação artificial, resultando em economia de energia. Apesar de permitir a passagem de luz, a telha também conta com aditivos anti-UV, que filtram os raios ultravioleta, garantindo conforto térmico e proteção contra os danos causados pela exposição solar. Essa combinação torna a Telha PergoConfort ideal para espaços como áreas gourmet, jardins, piscinas e ambientes comerciais, onde a iluminação natural valoriza a estética e a funcionalidade. Além disso, a entrada de luz é equilibrada, evitando ofuscamento e garantindo uma atmosfera agradável e bem iluminada. Isso faz da Telha PergoConfort uma escolha sustentável e prática para diferentes tipos de projetos.</p>",
+     "imagem": {
+      "arquivo": "014-iluminacao-com-a-pergoconfort-768x614.jpg",
+      "alt": "A Telha PergoConfort permite a entrada de luz natural?"
+     }
+    },
+    {
+     "titulo": "Quais são os benefícios da proteção UV nas Telhas PergoConfort?",
+     "html": "<p>A proteção UV nas Telhas PergoConfort traz diversos benefícios que elevam a qualidade e a durabilidade da cobertura para pergolados. Primeiramente, os aditivos anti-UV bloqueiam os raios ultravioleta, protegendo o ambiente coberto contra o excesso de calor e evitando o desconforto térmico. Isso torna o espaço mais fresco e agradável, mesmo em dias ensolarados. Além disso, essa proteção previne o desbotamento e o desgaste precoce da telha causado pela exposição prolongada ao sol, garantindo sua aparência e funcionalidade por mais tempo.</p><p>Outro benefício importante é a proteção dos objetos e móveis sob o pergolado, que ficam menos expostos aos efeitos prejudiciais dos raios UV, como ressecamento e alterações de cor. A camada UV incorporada à Telha PergoConfort, reforçada pelo uso do filme DuPont Melinex, atua como uma barreira altamente eficiente contra a radiação ultravioleta, ajudando a evitar microfissuras, o afloramento de fibras e a degradação precoce do material.</p><p>O Melinex é um filme de poliéster reconhecido por sua durabilidade, resistência térmica, estabilidade dimensional e transparência, características que garantem à telha um desempenho superior mesmo sob exposição contínua ao sol e às intempéries. Com isso, a vida útil da telha é significativamente prolongada, preservando também a estética e a integridade dos ambientes protegidos.</p><p>Assim, a Telha PergoConfort combina eficiência térmica, resistência mecânica, estética refinada e proteção avançada contra os raios solares, criando um ambiente mais confortável, seguro e durável, ideal para áreas externas que exigem qualidade, beleza e desempenho a longo prazo.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "As Telhas PergoConfort são resistentes a chuvas fortes e ventos?",
+     "html": "<p>Sim, as Telhas PergoConfort são altamente resistentes a chuvas fortes e ventos, sendo projetadas para suportar condições climáticas adversas com eficiência. Fabricadas em poliéster reforçado com fibra de vidro, essas telhas possuem uma estrutura robusta que proporciona elevada resistência mecânica, garantindo sua integridade mesmo em situações de intempéries severas. Além disso, o design trapezoidal e a instalação com calços e parafusos especiais asseguram uma fixação firme e vedação eficaz, impedindo infiltrações de água durante chuvas intensas.</p><p>Outro ponto de destaque é a capacidade de resistência ao granizo, característica essencial para regiões com clima imprevisível. As Telhas PergoConfort também são leves, o que reduz a carga sobre a estrutura do pergolado, mantendo sua estabilidade em ventos fortes. Combinadas com a aplicação de mantas asfálticas aluminizadas e silicones PU, elas oferecem um sistema de proteção completo contra as intempéries, garantindo durabilidade e segurança para o ambiente coberto. Por isso, são uma solução confiável para quem busca qualidade e proteção em qualquer condição climática.</p>",
+     "imagem": {
+      "arquivo": "015-resistencia-telha-pergoconfort-768x614.jpg",
+      "alt": "As Telhas PergoConfort são resistentes a chuvas fortes e ventos?"
+     }
+    },
+    {
+     "titulo": "Como fazer a manutenção e limpeza adequada das Telhas PergoConfort?",
+     "html": "<p>A manutenção e limpeza das Telhas PergoConfort são simples e garantem sua durabilidade e aparência ao longo do tempo. Para manter as telhas em ótimo estado, é recomendada uma limpeza periódica, que pode ser feita utilizando água, detergente neutro e uma esponja ou pano macio. Evite o uso de produtos abrasivos ou químicos agressivos, pois podem danificar a camada protetora da telha e comprometer sua eficiência.</p><p>Durante a limpeza, é importante remover sujeiras acumuladas, como poeira, folhas ou resíduos, que podem impactar a translucidez e o desempenho térmico. Inspeções regulares após eventos climáticos intensos, como chuvas fortes ou ventos, também são recomendadas para verificar a integridade da vedação e dos parafusos de fixação.</p><p>No caso de manchas difíceis, pode-se utilizar jatos de água com pressão moderada, sempre tomando cuidado para não forçar as extremidades das telhas. Adicionalmente, certifique-se de que os parafusos e calços estão firmes para evitar deslocamentos. Seguindo essas orientações, as Telhas PergoConfort manterão sua funcionalidade, estética e resistência ao longo dos anos, assegurando a proteção e o conforto do ambiente.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "A Telha PergoConfort é sustentável ou fabricada com foco ambiental?",
+     "html": "<p>Sim, a Telha PergoConfort é uma opção sustentável e fabricada com foco em minimizar impactos ambientais. Sua composição em poliéster reforçado com fibra de vidro é altamente durável, o que reduz a necessidade de substituições frequentes e, consequentemente, o descarte de materiais. Além disso, as telhas são leves e de fácil transporte, o que contribui para a redução de emissões de carbono durante o envio e manuseio.</p><p>Outro ponto importante é a possibilidade de aproveitar a luz natural graças à translucidez das telhas, o que diminui o uso de energia elétrica durante o dia, promovendo economia e sustentabilidade. O processo de fabricação também inclui cuidados com o uso de matérias-primas de alta qualidade e com a aplicação de aditivos que prolongam a vida útil das telhas, evitando desperdícios. Por serem resistentes à corrosão e a intempéries, as Telhas PergoConfort têm um ciclo de vida prolongado, o que reduz o impacto ambiental a longo prazo, tornando-as uma escolha sustentável para projetos residenciais e comerciais.</p>",
+     "imagem": {
+      "arquivo": "016-pergoconfort-e-sustentavel-768x614.jpg",
+      "alt": "A Telha PergoConfort é sustentável ou fabricada com foco ambiental?"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "Dicas, Estilos e Cuidados montar a sua telha Pergoconfort",
+   "intro": null,
+   "itens": [
+    {
+     "titulo": "Dicas para Instalação da PergoConfort",
+     "html": "<p><strong>1º</strong> Meça e recorte as telhas de acordo com o tamanho necessário para a instalação.</p><p><strong>2º</strong> Com a ajuda de uma parafusadeira, faça a fixação das telhas com calços e parafusos.</p><p><strong>OBS:</strong> A nossa Telha PergoConfort contém uma película de proteção necessária para proteger a telha durante o transporte contra possíveis riscos e ranhuras. Para fazer a instalação da telha, pode retirar esse filme de proteção.</p>",
+     "imagem": {
+      "arquivo": "017-foto-1-corte-telha-11zon-300x175-1.webp",
+      "alt": "Dicas para Instalação da PergoConfort"
+     }
+    },
+    {
+     "titulo": "Vídeo de Instalação",
+     "html": "<p>Junto com o envio do produto, encaminhamos o vídeo de instalação, onde mostramos o passo a passo da instalação da Telha PergoConfort.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Termo de Garantia da PergoConfort",
+     "html": "<p>10 anos de garantia contra defeitos de fabricação, afloramento das fibras, alongamento na ruptura, resistência na tração e flexão e no teor da fibra de vidro.</p><p>As telhas translúcidas permitem a passagem de luminosidade natural, impactando na redução de calor e possuem ótima vedação para pergolado.</p><p>As telhas podem apresentar ao longo dos anos amarelamento e microfissuras, que são reações naturais de produtos com matérias compostas com resina.</p><p>A garantia das Telhas PergoConfort se estende aos informativos do termo de garantia PergoConfort.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Telha PergoConfort: A Melhor Telha para Pergolados",
+     "html": "<p>As telhas PergoConfort são uma solução moderna e eficiente para coberturas de pergolados. Com alta eficiência térmica e design trapezoidal, elas oferecem uma combinação única de funcionalidade e estética.</p><p>Fabricadas em resina de poliéster reforçada com fibra de vidro, essas telhas garantem durabilidade e resistência, sendo ideais para quem busca uma cobertura que permite a entrada de luz natural enquanto reduz o calor excessivo no ambiente.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Por que Escolher a Telha PergoConfort?",
+     "html": "<p><strong>Luminosidade natural:</strong> Permite a entrada de luz solar, economizando energia e criando um ambiente mais natural.</p><p><strong>Redução de calor:</strong> Com aditivos térmicos, a telha reduz significativamente a temperatura sob o pergolado.</p><p><strong>Durabilidade garantida:</strong> Material resistente a impactos e condições climáticas extremas, com garantia de 10 anos.</p><p><strong>Fácil instalação:</strong> Design que favorece a aplicação rápida e segura.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Invista na Qualidade Saraiva Design",
+     "html": "<p>As Telhas PergoConfort são produzidas pela Saraiva Design, uma referência no mercado de estruturas e coberturas para pergolados.</p><p>Além da PergoConfort, oferecemos também a linha PergoConfort-Max, que alia isolamento termoacústico à qualidade inigualável.</p><p>Entre em contato e transforme seu pergolado com as melhores soluções do mercado.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Sustentabilidade e Responsabilidade Ambiental",
+     "html": "<p>As telhas PergoConfort são fabricadas com materiais que respeitam o meio ambiente. Produzidas em resina de poliéster reforçada, elas oferecem uma solução durável e reciclável.</p><p>Optar por essas telhas significa contribuir para um mundo mais sustentável, sem renunciar a conforto e qualidade. Além disso, a utilização de fibras de vidro confere resistência sem impactar negativamente o ecossistema.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Iluminação e Integração com Telhas PergoConfort",
+     "html": "<p>Uma das vantagens das Telhas PergoConfort é a possibilidade de integração com sistemas de iluminação. Graças à translucidez, é possível criar efeitos luminosos naturais durante o dia, economizando energia e valorizando o design do pergolado.</p><p>Durante a noite, a iluminação artificial pode ser instalada sem interferir na funcionalidade das telhas.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Cobertura para Pergolados de Madeira",
+     "html": "<p>A beleza de um pergolado de madeira deve ser vivenciada em qualquer estação, e a cobertura escolhida é o que transforma esse espaço em um verdadeiro refúgio.</p><p>A Telha PergoConfort alia estética sofisticada à proteção completa: seu revestimento exclusivo com filme Melinex 389 da DuPont reduz drasticamente a incidência de calor, proporciona conforto térmico superior nos dias ensolarados e minimiza vazamentos em períodos de chuva, tudo isso sem abrir mão da luminosidade natural.</p><p>Mais do que cobertura, a PergoConfort entrega funcionalidade e bem-estar o ano todo.</p>",
+     "imagem": {
+      "arquivo": "018-pergolado-de-madeira-pergoconfor-768x614.jpg",
+      "alt": "Cobertura para Pergolados de Madeira"
+     }
+    },
+    {
+     "titulo": "Cobertura para Pergolados de Ferro",
+     "html": "<p>A cobertura com Telha PergoConfort valoriza cada detalhe do pergolado de ferro, unindo proteção, beleza e eficiência. Seu formato trapezoidal inteligente garante encaixe preciso entre as telhas, proporcionando uma vedação superior contra infiltrações e preservando a estrutura por muito mais tempo.</p><p>Além disso, a translucidez equilibrada da PergoConfort permite a entrada de uma luz suave e agradável, criando ambientes mais aconchegantes e esteticamente sofisticados, com proteção UV de alta performance graças ao exclusivo filme Melinex 389 da DuPont.</p><p>A escolha ideal para quem busca funcionalidade com acabamento refinado.</p>",
+     "imagem": {
+      "arquivo": "019-pergolado-metalico-pergoconfort-768x614.jpg",
+      "alt": "Cobertura para Pergolados de Ferro"
+     }
+    },
+    {
+     "titulo": "Calços, Parafusos e Vedação",
+     "html": "<p>Na vedação das telhas nós utilizamos calços e parafusos que, além de ajudar na fixação da telha, compõem a vedação junto com a manta asfáltica aluminizada e silicones PU para área externa.</p>",
+     "imagem": {
+      "arquivo": "020-cedacao-foto-300x175-1.jpg",
+      "alt": "Calços, Parafusos e Vedação"
+     }
+    },
+    {
+     "titulo": "Envio para Todo o Brasil",
+     "html": "<p>A Saraiva Design em Madeiras envia a Telha PergoConfort para todo o Brasil, garantindo que o material chegue em perfeitas condições.</p><p>O envio é feito por transportadora, com embalagem cuidadosa para preservar a qualidade do produto. Trabalhamos com transportadoras parceiras, mas o cliente tem total liberdade para escolher a transportadora de sua preferência.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Cobertura para Pergolados com Estilo e Função",
+     "html": "<p>Ao escolher a Telha PergoConfort, você assegura conforto e sofisticação ao seu pergolado. Essa telha não apenas valoriza o visual do ambiente, mas também protege contra os raios UV, contribuindo para um espaço mais fresco e protegido.</p><p>Graças ao seu formato trapezoidal, a sobreposição perfeita das peças garante uma excelente vedação contra chuvas e ventos, evitando infiltrações e manutenções frequentes.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Aplicabilidade e Benefícios",
+     "html": "<p>Seja para áreas gourmet, jardins ou espaços de convivência, a Telha PergoConfort é a solução perfeita para criar um ambiente aconchegante e funcional.</p><p>Sua alta eficiência energética e proteção térmica tornam-na ideal para quem busca conforto e sustentabilidade em um só produto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Quanto Tempo Demora para Montar uma Cobertura com Telha PergoConfort?",
+     "html": "<p>A montagem de uma cobertura com Telha PergoConfort é rápida e eficiente. Um pergolado de 25m², por exemplo, pode ser coberto em apenas 1 dia.</p><p>Esse tempo pode variar dependendo do tipo de projeto e das condições climáticas no momento da instalação. Graças ao design trapezoidal das telhas, o processo de sobreposição é simplificado, garantindo uma instalação ágil e com excelente vedação.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Dicas para Manutenção das Telhas PergoConfort",
+     "html": "<p><strong>Limpeza regular:</strong> Utilize água e detergente neutro para remover sujeiras acumuladas.</p><p><strong>Inspeções periódicas:</strong> Verifique a vedação e o estado das telhas após chuvas fortes ou ventos intensos.</p><p><strong>Reapertos:</strong> Certifique-se de que os parafusos de fixação estejam firmes e ajustados para evitar deslocamentos.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Escolha PergoConfort: Qualidade e Confiança",
+     "html": "<p>A Telha PergoConfort não é apenas uma cobertura, mas uma solução que transforma ambientes. Seja para residências ou comércios, ela alia beleza, conforto e durabilidade.</p><p>Entre em contato com a Saraiva Design e descubra como elevar o nível do seu projeto com nossas telhas exclusivas.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Cobertura para Pergolados de Alumínio",
+     "html": "<p>A Telha PergoConfort eleva a versatilidade dos pergolados em alumínio, unindo leveza, durabilidade e sofisticação em uma única cobertura. Com garantia de fábrica de 10 anos e estrutura reforçada em poliéster com fibra de vidro, é uma solução resistente e fácil de instalar.</p><p>Seu acabamento translúcido e suave se integra com elegância ao ambiente, oferecendo proteção térmica e visual leve, com mínima interferência na decoração. O exclusivo filme Melinex 389 da DuPont ainda proporciona proteção avançada contra os raios UV, preservando a beleza e o conforto do espaço por muitos anos.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Cobertura para Estruturas de Alvenaria",
+     "html": "<p>A inovação da Telha PergoConfort se conecta perfeitamente com o estilo minimalista e elegante dos pergolados em alvenaria. Seu formato trapezoidal proporciona um acabamento visual moderno e tecnológico, valorizando a arquitetura com sofisticação.</p><p>O grande diferencial está no exclusivo filme Melinex 389 da DuPont, termofundido à estrutura da telha, que bloqueia até 99% dos raios UVA e UVB e reduz significativamente a entrada de calor, promovendo um ambiente mais agradável, saudável e protegido contra os danos solares. É desempenho térmico e proteção de alto nível, com a leveza estética que o seu projeto merece.</p>",
+     "imagem": null
+    }
+   ]
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "PergoConfort nas cidades que atendemos",
+   "intro": null,
+   "itens": [
+    {
+     "titulo": "PergoConfort em Campinas",
+     "html": "<p>A Telha PergoConfort em Campinas é a solução perfeita para enfrentar o clima quente e ensolarado da cidade, que conta com mais de 1,2 milhão de habitantes e está entre os principais polos de qualidade de vida do interior paulista.</p><p>Produzida sob medida e no formato trapezoidal 40/980, ela oferece encaixe preciso, vedação completa e se adapta a qualquer projeto de pergolado. Seu material em resina de poliéster com fibra de vidro garante leveza e durabilidade, enquanto o filme Melinex 389 da DuPont protege contra raios UVA e UVB, mantendo a telha translúcida e sem amarelamento ao longo do tempo.</p><p>Além disso, a translucidez natural e a opção de pigmentação metalizada proporcionam ambientes mais frescos, iluminados e sofisticados, entregando o conforto térmico que Campinas precisa em seus dias de calor intenso.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Jundiaí",
+     "html": "<p>A Telha PergoConfort em Jundiaí é a escolha ideal para quem busca resistência e conforto em uma cidade marcada pelo clima quente e ensolarado. Com mais de 400 mil habitantes e um forte desenvolvimento urbano, Jundiaí valoriza soluções modernas que unem praticidade e estética em projetos residenciais e comerciais.</p><p>Produzida em resina de poliéster com fibra de vidro, a PergoConfort garante leveza e alta durabilidade. Seu formato trapezoidal 40/980 proporciona encaixe perfeito e vedação eficiente, enquanto a produção sob medida elimina desperdícios e se adapta a qualquer tipo de pergolado.</p><p>O grande diferencial está no filme Melinex 389 da DuPont, que bloqueia os raios UVA e UVB, evitando o amarelamento e mantendo a telha sempre translúcida. Além disso, a opção de pigmentação metalizada contribui para reduzir a absorção de calor, tornando os ambientes mais frescos, iluminados e agradáveis, ideais para os dias ensolarados de Jundiaí.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Itu",
+     "html": "<p>A Telha PergoConfort em Itu é perfeita para quem deseja unir beleza, resistência e conforto térmico em projetos de pergolados. Conhecida nacionalmente como a cidade dos exageros, Itu se destaca também pelo calor intenso em grande parte do ano, o que torna essencial investir em soluções inteligentes que garantam sombra, luminosidade controlada e eficiência energética.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, a PergoConfort possui formato trapezoidal 40/980 para encaixe preciso, é fabricada sob medida no comprimento desejado e conta com o filme Melinex 389 da DuPont, que protege contra raios UVA e UVB, evitando o amarelamento e mantendo a translucidez por muitos anos.</p><p>Com a opção de pigmentação metalizada, a telha proporciona ambientes mais frescos e sofisticados, tornando-se a escolha ideal para os dias ensolarados e o estilo de vida vibrante de Itu.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Santana de Parnaíba",
+     "html": "<p>A Telha PergoConfort em Santana de Parnaíba é a solução ideal para quem busca sofisticação e praticidade em uma das cidades mais charmosas da Grande São Paulo.</p><p>Produzida sob medida no comprimento e com formato trapezoidal 40/980, ela garante encaixe perfeito e vedação eficiente em qualquer projeto de pergolado. Fabricada em resina de poliéster com fibra de vidro, alia leveza e durabilidade, enquanto o filme Melinex 389 da DuPont protege contra raios UVA e UVB, mantendo a telha translúcida, sem amarelamento e com maior eficiência térmica.</p><p>A translucidez natural e a opção de pigmentação metalizada tornam os espaços mais frescos, iluminados e elegantes, ideais para o clima quente e os dias ensolarados de Santana de Parnaíba.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Atibaia",
+     "html": "<p>A Telha PergoConfort em Atibaia é sinônimo de conforto e modernidade para quem deseja aproveitar o melhor da cidade conhecida por seu clima agradável e pelas belas paisagens. Em uma região que valoriza espaços abertos, jardins e áreas de lazer, contar com um pergolado bem projetado faz toda a diferença no dia a dia.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, a PergoConfort une leveza e alta durabilidade. Seu formato trapezoidal 40/980 proporciona encaixe perfeito, vedação eficiente e fácil instalação, enquanto a fabricação sob medida elimina desperdícios e se adapta a qualquer tipo de projeto.</p><p>Com o exclusivo filme Melinex 389 da DuPont, a telha recebe proteção contra raios UVA e UVB, permanecendo translúcida e sem amarelamento ao longo do tempo. Além disso, a translucidez natural e a opção de pigmentação metalizada ajudam a reduzir o calor, garantindo ambientes mais frescos, iluminados e acolhedores, ideais para os dias ensolarados de Atibaia.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Piracicaba",
+     "html": "<p>A Telha PergoConfort em Piracicaba é a escolha perfeita para enfrentar o calor típico da região e valorizar os projetos arquitetônicos da terra da pamonha, que conta com mais de 400 mil habitantes. Em uma cidade marcada pelo sol forte e pelas áreas de lazer ao ar livre, a PergoConfort garante conforto térmico, iluminação natural e um visual moderno para pergolados residenciais e comerciais.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, a telha possui formato trapezoidal 40/980, que assegura encaixe preciso e vedação eficiente. Fabricada sob medida, evita desperdícios e se adapta a qualquer projeto, enquanto o filme Melinex 389 da DuPont oferece proteção contra raios UVA e UVB, preservando a translucidez e evitando o amarelamento.</p><p>Com a opção de pigmentação metalizada, a PergoConfort proporciona ambientes mais frescos e sofisticados, ideais para os dias ensolarados de Piracicaba.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort no Litoral",
+     "html": "<p>A Telha PergoConfort no Litoral é a solução ideal para enfrentar o sol intenso, a maresia e as altas temperaturas típicas da região costeira, garantindo durabilidade e conforto térmico em projetos de pergolados.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, a telha combina leveza e resistência, sendo fabricada sob medida no comprimento desejado. Seu formato trapezoidal 40/980 proporciona encaixe perfeito e vedação eficiente, enquanto o filme Melinex 389 da DuPont protege contra raios UVA e UVB, mantendo a translucidez e evitando o amarelamento mesmo em contato com o ambiente marítimo.</p><p>Com a opção de pigmentação metalizada, a PergoConfort oferece um acabamento sofisticado e reduz a absorção de calor, tornando os espaços mais frescos, iluminados e ideais para aproveitar os dias ensolarados do litoral.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Jaguariúna",
+     "html": "<p>A Telha PergoConfort em Jaguariúna é a escolha perfeita para quem deseja unir sofisticação e eficiência em uma cidade que se destaca pela qualidade de vida e pelo turismo, especialmente com o famoso rodeio. Com clima quente na maior parte do ano, os pergolados se tornam espaços essenciais para lazer e convivência.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, a PergoConfort entrega resistência, leveza e longa durabilidade. Seu formato trapezoidal 40/980 proporciona encaixe perfeito e vedação confiável, enquanto a fabricação sob medida elimina desperdícios e garante adaptação a qualquer tipo de projeto.</p><p>O grande diferencial está no filme Melinex 389 da DuPont, que oferece proteção contra os raios UVA e UVB, evitando o amarelamento e mantendo a telha sempre translúcida. Aliada à opção de pigmentação metalizada, a PergoConfort cria ambientes mais frescos, iluminados e elegantes, ideais para os dias ensolarados de Jaguariúna.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Niterói",
+     "html": "<p>A Telha PergoConfort em Niterói é ideal para projetos que buscam conforto e sofisticação em uma cidade marcada pelo clima quente, sol forte e belas paisagens litorâneas. Com mais de 500 mil habitantes e qualidade de vida reconhecida, Niterói pede soluções modernas que valorizem tanto a estética quanto a eficiência térmica dos ambientes.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, a PergoConfort possui formato trapezoidal 40/980, garantindo encaixe perfeito e vedação eficiente. Cada peça é fabricada sob medida, evitando desperdícios e se adaptando a qualquer projeto de pergolado.</p><p>Além disso, conta com o filme Melinex 389 da DuPont, que protege contra raios UVA e UVB, mantendo a translucidez e evitando o amarelamento. Com a opção de pigmentação metalizada, a telha proporciona ambientes mais frescos, iluminados e sofisticados, ideais para o estilo de vida ensolarado e vibrante de Niterói.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Ribeirão Preto",
+     "html": "<p>A Telha PergoConfort em Ribeirão Preto é a solução ideal para enfrentar o forte calor característico da Califórnia Brasileira, onde as altas temperaturas exigem projetos que tragam conforto térmico e eficiência.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, ela alia leveza e resistência, sendo fabricada sob medida no comprimento desejado. Seu formato trapezoidal 40/980 assegura encaixe preciso e vedação confiável, enquanto o filme Melinex 389 da DuPont protege contra raios UVA e UVB, mantendo a translucidez e evitando o amarelamento.</p><p>Com a opção de pigmentação metalizada, a PergoConfort cria ambientes mais frescos, iluminados e sofisticados, perfeitos para os dias ensolarados de Ribeirão Preto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Sorocaba",
+     "html": "<p>A Telha PergoConfort em Sorocaba é a escolha perfeita para quem busca qualidade e conforto em uma das maiores cidades do interior paulista, conhecida pelo crescimento acelerado e pelo clima quente durante grande parte do ano. Em projetos de pergolados, a PergoConfort se destaca por unir estética sofisticada e desempenho superior.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, a telha garante leveza, resistência e longa durabilidade. Seu formato trapezoidal 40/980 proporciona encaixe preciso, vedação eficiente e fácil instalação, enquanto a fabricação sob medida elimina desperdícios e assegura adaptação a qualquer projeto.</p><p>Outro diferencial está no filme Melinex 389 da DuPont, que bloqueia os raios UVA e UVB, preservando a translucidez e evitando o amarelamento. Aliado à possibilidade de pigmentação metalizada, o produto entrega ambientes mais frescos, iluminados e sofisticados, ideais para o estilo de vida dinâmico e ensolarado de Sorocaba.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Bragança Paulista",
+     "html": "<p>A Telha PergoConfort em Bragança Paulista é ideal para quem deseja unir sofisticação e conforto térmico em uma cidade conhecida como a Capital da Linguiça e marcada pelo clima quente em grande parte do ano. Com mais de 170 mil habitantes e forte valorização de áreas de lazer e espaços abertos, a PergoConfort se adapta perfeitamente a projetos residenciais e comerciais, oferecendo beleza e funcionalidade em pergolados.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, a telha é leve, resistente e fabricada sob medida para evitar desperdícios. Seu formato trapezoidal 40/980 garante encaixe preciso e vedação eficiente, enquanto o filme Melinex 389 da DuPont protege contra raios UVA e UVB, mantendo a translucidez e evitando o amarelamento.</p><p>Com a opção de pigmentação metalizada, a PergoConfort cria ambientes mais frescos, iluminados e sofisticados, perfeitos para os dias ensolarados e o estilo de vida acolhedor de Bragança Paulista.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Itatiba",
+     "html": "<p>A Telha PergoConfort em Itatiba é a solução perfeita para projetos de pergolados em uma cidade reconhecida como a Princesa da Colina e marcada pelo clima quente e ensolarado.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, ela alia leveza, resistência e longa durabilidade, sendo fabricada sob medida no comprimento desejado. Seu formato trapezoidal 40/980 garante encaixe preciso e vedação eficiente, enquanto o filme Melinex 389 da DuPont protege contra raios UVA e UVB, evitando o amarelamento e mantendo a translucidez ao longo dos anos.</p><p>Com a opção de pigmentação metalizada, a PergoConfort proporciona ambientes mais frescos, iluminados e sofisticados, ideais para o estilo de vida acolhedor e ensolarado de Itatiba.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Americana",
+     "html": "<p>A Telha PergoConfort em Americana é a escolha ideal para enfrentar o calor intenso de uma das cidades mais importantes da Região Metropolitana de Campinas. Com mais de 240 mil habitantes e forte desenvolvimento industrial e residencial, a cidade valoriza soluções modernas que combinam eficiência e estética em projetos arquitetônicos.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, a PergoConfort alia leveza, resistência e longa durabilidade. Seu formato trapezoidal 40/980 assegura encaixe perfeito e vedação eficiente, enquanto a fabricação sob medida elimina desperdícios e se adapta a qualquer projeto de pergolado, seja residencial ou comercial.</p><p>O grande diferencial está no filme Melinex 389 da DuPont, que protege contra raios UVA e UVB, mantendo a translucidez e evitando o amarelamento. Com a opção de pigmentação metalizada, a telha proporciona ambientes mais frescos, iluminados e sofisticados, entregando o conforto térmico que Americana precisa em seus dias ensolarados.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Arujá",
+     "html": "<p>A Telha PergoConfort em Arujá é perfeita para projetos que unem estilo e eficiência em uma cidade que cresce cada vez mais e é conhecida como a Cidade Natureza pela grande área verde preservada. Com clima quente e ensolarado, investir em soluções que tragam conforto térmico e luminosidade natural é essencial para o dia a dia dos moradores.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, a PergoConfort é leve, resistente e fabricada sob medida para eliminar desperdícios. Seu formato trapezoidal 40/980 garante encaixe preciso e vedação eficiente, enquanto o filme Melinex 389 da DuPont protege contra raios UVA e UVB, mantendo a translucidez e evitando o amarelamento.</p><p>Com a opção de pigmentação metalizada, a telha proporciona ambientes mais frescos, iluminados e sofisticados, ideais para o estilo de vida tranquilo e ensolarado de Arujá.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Cotia",
+     "html": "<p>A Telha PergoConfort em Cotia é a solução perfeita para quem busca resistência, conforto térmico e sofisticação em uma cidade que combina áreas urbanas em crescimento com regiões de natureza preservada.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, ela é leve, durável e fabricada sob medida no comprimento ideal para cada projeto. Seu formato trapezoidal 40/980 garante encaixe preciso e vedação eficiente, enquanto o filme Melinex 389 da DuPont protege contra raios UVA e UVB, mantendo a translucidez e evitando o amarelamento ao longo do tempo.</p><p>Com a opção de pigmentação metalizada, a PergoConfort oferece ambientes mais frescos, iluminados e elegantes, ideais para o clima ensolarado de Cotia.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Salto",
+     "html": "<p>A Telha PergoConfort em Salto é ideal para quem deseja unir estética e desempenho em uma cidade marcada pelo calor e pelo rápido crescimento urbano. Com forte valorização de áreas de lazer e espaços abertos, a PergoConfort transforma pergolados em ambientes mais agradáveis e funcionais.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, a telha combina leveza, resistência e longa durabilidade. Seu formato trapezoidal 40/980 garante encaixe perfeito e vedação eficiente, enquanto a fabricação sob medida elimina desperdícios e permite adaptação a qualquer projeto.</p><p>O diferencial está no filme Melinex 389 da DuPont, que protege contra raios UVA e UVB, evitando o amarelamento e preservando a translucidez. Aliada à opção de pigmentação metalizada, a PergoConfort proporciona conforto térmico, ambientes iluminados e um toque de sofisticação, ideais para os dias ensolarados de Salto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em Minas Gerais",
+     "html": "<p>A Telha PergoConfort em Minas Gerais é a solução ideal para enfrentar as diferentes condições climáticas do estado, que vão do calor intenso em cidades como Uberlândia e Governador Valadares até os dias ensolarados de Belo Horizonte e região. Em um estado com mais de 20 milhões de habitantes e tradição em valorizar espaços de convivência, a PergoConfort se adapta perfeitamente a projetos residenciais e comerciais, trazendo conforto térmico e um visual moderno para pergolados.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, a telha é leve, resistente e fabricada sob medida, evitando desperdícios e garantindo encaixe preciso graças ao formato trapezoidal 40/980. O exclusivo filme Melinex 389 da DuPont protege contra raios UVA e UVB, preservando a translucidez e evitando o amarelamento, enquanto a opção de pigmentação metalizada proporciona ambientes mais frescos, iluminados e sofisticados, perfeitos para o estilo de vida diversificado e ensolarado de Minas Gerais.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort em São José dos Campos",
+     "html": "<p>A Telha PergoConfort em São José dos Campos é a escolha certa para quem busca qualidade, resistência e conforto térmico em uma das cidades mais importantes do Vale do Paraíba, marcada pelo crescimento tecnológico e pelo clima quente.</p><p>Produzida em resina de poliéster reforçada com fibra de vidro, ela é leve, durável e fabricada sob medida no comprimento ideal para cada projeto. Seu formato trapezoidal 40/980 garante encaixe preciso e vedação eficiente, enquanto o filme Melinex 389 da DuPont protege contra raios UVA e UVB, mantendo a translucidez e evitando o amarelamento.</p><p>Com a opção de pigmentação metalizada, a PergoConfort proporciona ambientes mais frescos, iluminados e sofisticados, ideais para os dias ensolarados de São José dos Campos.</p>",
+     "imagem": null
+    }
+   ]
+  }
+ ]
+}

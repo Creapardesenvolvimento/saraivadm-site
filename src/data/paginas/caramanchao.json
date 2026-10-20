@@ -1,0 +1,232 @@
+{
+ "slug": "caramanchao",
+ "nome": "Caramanchão",
+ "seo": {
+  "title": "Caramanchão de Madeira Sob Medida | Saraiva Design",
+  "description": "Caramanchão de madeira sob medida em madeiras nobres, com forro de palha ou bambu e telha PergoConfort. Para jardins, piscinas e áreas gourmet."
+ },
+ "hero": {
+  "titulo": "Caramanchão",
+  "texto": "Caramanchão sob medida com o melhor madeiramento do mercado, forração de palha ou bambu, telha Pergoconfort e sistema de captação de água com calha, rufos e condutores.",
+  "imagem": "013-capa-caramanchao.jpg"
+ },
+ "faixa": [
+  "Madeiras nobres",
+  "Projeto sob medida",
+  "Telha PergoConfort",
+  "Mão de obra artesanal"
+ ],
+ "relacionados": [
+  "/gazebo/",
+  "/pergolado-de-madeira/",
+  "/cobertura-para-pergolado/",
+  "/forro-de-palha/",
+  "/deck-de-madeira/",
+  "/pergokit/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Conheça o caramanchão",
+   "lead": "Projetamos caramanchões de madeira sob medida, com acabamento refinado em madeiras nobres e um sistema de montagem exclusivo que garante durabilidade e elegância. Tudo isso com a garantia líder do mercado",
+   "blocos": [
+    {
+     "t": "videos",
+     "videos": [
+      {
+       "id": "rGEXPJUnyMY",
+       "capa": "yt-rGEXPJUnyMY.jpg"
+      }
+     ]
+    },
+    {
+     "t": "html",
+     "html": "<p><strong>Hoje, quando pensamos em jardim</strong>ou área gourmet, é impossível não lembrar dos caramanchões de madeira — estruturas encantadoras que unem beleza, praticidade e sofisticação.</p><p><strong>O caramanchão se tornou um verdadeiro coringa na arquitetura externa</strong>, substituindo o antigo “puxadinho” por uma solução muito mais elegante e funcional. Ele pode ser instalado como extensão da área gourmet ou de forma isolada no jardim, oferecendo sombra, charme e integração com a natureza, especialmente quando combinado com plantas trepadeiras.</p><p><strong>A Saraiva Design em Madeiras e Aços é especialista na criação de caramanchões personalizados,</strong>atendendo desde modelos simples até projetos de grande porte. Com uma equipe experiente de técnicos e carpinteiros, a empresa garante qualidade, segurança e acabamento impecável em cada projeto. Utilizamos apenas madeiras nobres, tratadas e selecionadas para atender com excelência às necessidades de cada cliente.</p><p><strong>Seu estilo, seu projeto, sua casa — nas mãos de quem entende do assunto.</strong></p>"
+    }
+   ]
+  },
+  {
+   "tipo": "usos",
+   "titulo": "Onde usar o caramanchão",
+   "itens": [
+    {
+     "tipo": "uso",
+     "titulo": "Tipos de Caramanchão de Madeira",
+     "html": "<p>Os caramanchões de madeira podem ter diversas utilizações e aplicações. Os mesmos montados com madeiras maciças, naturais, duras, de lei e apropriadas para área externa podem ter contatos direto com sol e chuva, podendo molhar, pegar sol e ações do tempo. Para essas caramanchões externos indicamos madeiras como <strong>GARAPEIRA ou CUMARÚ</strong>.</p><p>Os caramanchões de madeira também podem ser utilizados em áreas internas, como varandas, salas, estruturas estéticas para cozinhas, quartos e adegas. O caramanchão se tornou um grande coringa na construção civil e um artefato de desejo, requinte e solução para a arquitetura moderna e contemporânea.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "001-madeira-nobre-1-scaled.png",
+      "alt": "Tipos de Caramanchão de Madeira"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Caramanchão na área gourmet",
+     "html": "<p>Ter um <a href=\"/5-dicas-para-montar-seu-pergolado/\"><strong>caramanchão na área gourmet</strong></a> é uma adição encantadora e funcional para qualquer espaço ao ar livre. Esse elemento arquitetônico não apenas <strong>adiciona um toque de charme e elegância ao ambiente</strong>, mas também oferece uma série de benefícios práticos. Com sua estrutura de madeira , o pergolado proporciona <strong>sombra agradável e proteção contra os elementos</strong>, tornando a <strong><a href=\"https://www.youtube.com/watch?v=QF-coyDoO8Q\" target=\"_blank\" rel=\"noopener\">área gourmet</a></strong> um local aconchegante para desfrutar de refeições ao ar livre em qualquer clima. Além disso, o design do pergolado permite a instalação de iluminação e cortinas,<strong>criando uma atmosfera acolhedora durante a noite.</strong> Combinando estilo e funcionalidade, ter um pergolado na área gourmet é uma escolha inteligente para transformar seu espaço ao ar livre <strong>em um refúgio relaxante e convidativo.</strong></p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "002-caramanchao-9.jpg",
+      "alt": "Caramanchão na área gourmet"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Caramanchão na piscina",
+     "html": "<p>Muitos caramanchões ficam próximos a piscinas, na área de lazer. <strong>O caramanchão muita das vezes é um apoio para a piscina</strong>, quando se quer tomar sol, você vai para o <a href=\"/deck-de-madeira/\">deck</a> e toma sol, quando quer aproveitar a brisa da piscina, do dia, mas sem receber o sol direto em você, a primeira coisa vem na mente é uma sombra, e <strong>nada como um caramanchão de apoio para você pegar uma sombra com muito estilo</strong>. O caramanchão pode ser fixado no solo com o processo de enterramento e concretagem das colunas, ou somente pinado sobre o piso, por tanto se você já tem o piso instalado e não quer quebra-lo para instalar o caramanchão, não se preocupe.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "003-caramanchao-10.jpg",
+      "alt": "Caramanchão na piscina"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Caramanchão garagem",
+     "html": "<p>O <strong>Caramanchão em formato de garagem é muito utilizado quando o cliente já possui a casa pronta, mas não possui a garagem</strong>, sendo assim uma forma de fazer uma garagem rápida,bonita, com proteção UV e muito segura, é fazer em <a href=\"/cobertura-para-pergolado/\">Caramanchão com cobertura</a> de telha ouvidro e forração de bambu ou palha. O Caramanchão de garagem quando executado na construção da casa, vem com um pegada mais decorativa, pois devido a sua estética de tirar o folego, a fachada da casa fica muito bonita. <strong>Ao montar a garagem em Caramanchão tome cuidado com questões de altura e proteção solar (principalmente sombra).</strong>A Saraiva Design em madeira já fez Caramanchões como garagem, solicite um orçamento e sugestões para sua casa, esteja pronta ou em construção.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "004-caramanchao-11.jpg",
+      "alt": "Caramanchão garagem"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Caramanchão na área academia",
+     "html": "<p>O Caramanchão para um espaço de academia é uma adição versátil e inspiradora. Esta estrutura de madeira <strong>pode criar um ambiente agradável e ao ar livre para exercícios</strong>, combinando a beleza da natureza com a funcionalidade do espaço de treino. A sombra proporcionada pelo <strong>Caramanchão ajuda a manter os usuários frescos durante os exercícios ao ar livre</strong>, enquanto a estrutura pode ser usada para pendurar equipamentos de treinamento, como barras ou argolas. Com a possibilidade de adicionar plantas trepadeiras e iluminação, o Caramanchão de madeira pode criar um ambiente motivador e atraente para atividades físicas ao ar livre, tornando o espaço da <a href=\"https://www.youtube.com/watch?v=zu3uNYoBfyw\" target=\"_blank\" rel=\"noopener\"><strong>academia mais agradável e sofisticado.</strong></a></p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "005-caramanchao-12.jpg",
+      "alt": "Caramanchão na área academia"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Caramanchão na área de sala",
+     "html": "<p>Quer fazer uma sala com um Caramanchão? É possível e fica muito bonito.<strong>A montagem é simples, basta montar o Caramanchão, forrar e cobrir com uma cobertura especial para pergolado</strong>, após esses serviços feitos, entre com o piso e com os fechamentos laterais em alvenaria ou em vidro.<br>Para Caramanchão como salas, recomendamos ar-condicionado para um melhor aconchego térmico.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "006-caramanchao-13.jpg",
+      "alt": "Caramanchão na área de sala"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Caramanchão na área de jardim",
+     "html": "<p>Os Caramanchões para jardins são ótimas opções para quem quer decorar a sua área de lazer. O <strong>Caramanchão no jardim pode ser montado com cobertura de trepadeiras ou deixando somente as madeiras aparentes</strong>, de forma a agregar a residência um local de descanso, para leitura ou de decoração.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "007-caramanchao-14.jpg",
+      "alt": "Caramanchão na área de jardim"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Caramanchão na área de lazer",
+     "html": "<p>Ter um Caramanchão em sua área de lazer é como <strong>adicionar um toque de requinte e funcionalidade</strong> a um espaço já <a href=\"https://br.pinterest.com/pin/756886281154528857/\" target=\"_blank\" rel=\"noopener\"><strong>dedicado à diversão e ao relaxamento.</strong></a>Essa estrutura de madeira proporciona uma sombra agradável, <strong>criando um ambiente aconchegante para reuniões com amigos e familiares</strong>, churrascos ao ar livre, ou simplesmente para relaxar em uma tarde ensolarada. Com a possibilidade de personalização, <strong>você pode adaptar o Caramanchão para atender às suas preferências de estilo</strong>, adicionando iluminação decorativa, mesa de bilhar ou jogos para diversão. Em resumo, um Caramanchão na área de lazer combina funcionalidade e elegante, tornando seu espaço ao ar livre um local perfeito para criar memórias inesquecíveis e <a href=\"/habitos-saudaveis-para-curtir-seu-pergolado/\"><strong>desfrutar de momentos de lazer.</strong></a></p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "008-caramanchao-15.jpg",
+      "alt": "Caramanchão na área de lazer"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Caramanchão na sacada",
+     "html": "<p>Os Caramanchões de sacada estão em alta, muitos arquitetos fazem as sacadas com Caramanchões para dar uma estética diferenciada a casa. F<strong>ica muito bonito e funcional fazer o pergolado na sacada.</strong> Ao montar o Caramanchão na sacada da casa, tome cuidado com questões e ventilação, normalmente esses pergolados são montados em lugares altos, sendo assim procure o melhor sistema de fixação, encaixes das madeiras e sistema de cobertura, para que você não tenha nenhuma surpresa. <strong>A equipe da Saraiva Design em Madeiras está à disposição para te auxiliar a montar seu pergolado na sacada de forma segura, bonita e muito funcional.</strong></p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "009-caramanchao-16.jpg",
+      "alt": "Caramanchão na sacada"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Caramanchão para eventos",
+     "html": "<p>Ter um <a href=\"https://www.youtube.com/watch?v=FI3DX24xdX4\" target=\"_blank\" rel=\"noopener\"><strong>Caramanchão de madeira para eventos</strong></a> é como investir em <strong>um espaço versátil e encantador para celebrações memoráveis.</strong>Essa estrutura arquitetônica proporciona uma atmosfera única, onde a elegância natural da madeira se combina com a funcionalidade para acomodar uma variedade de graças especiais, <strong>como casamentos, festas, churrascos e reuniões familiares.</strong>Sob o caramanchão, os convidados podem desfrutar de sombra agradável e uma sensação de intimidação, enquanto ainda apreciam o ambiente ao ar livre. Com a adição de decoração, iluminação e elementos personalizados, <strong>o Caramanchão se transforma em um espaço verdadeiramente mágico</strong>, pronto para criar momentos inesquecíveis e experiências memoráveis ​​para todos os presentes.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "010-caramanchao-17.jpg",
+      "alt": "Caramanchão para eventos"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Alguns Projetos de caramachão",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "011-caramanchao-17.avif",
+       "alt": "Caramanchão: projeto Saraiva Design 1"
+      },
+      {
+       "arquivo": "012-caramanchao-12.avif",
+       "alt": "Caramanchão: projeto Saraiva Design 2"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "Dúvidas sobre Caramanchão",
+   "intro": "<p>Tire todas as suas dúvidas sobre caramanchões e descubra a solução ideal para o seu projeto</p>",
+   "itens": [
+    {
+     "titulo": "O que é um Caramanchão?",
+     "html": "<p>Um <strong>caramanchão</strong> é uma estrutura geralmente feita em <strong>madeira ou metal</strong>, usada para criar áreas <strong>sombreadas e decorativas</strong> em jardins, muitas vezes com plantas trepadeiras.</p><p>Mais do que uma simples cobertura, o caramanchão é um elemento <strong>paisagístico e funcional</strong> que transforma qualquer área externa em um espaço aconchegante, repleto de charme e naturalidade.</p><h3>Características principais</h3><ul><li>Estrutura aberta com <strong>treliças ou ripas</strong></li> <li>Ideal para integração com <strong>plantas trepadeiras</strong></li> <li>Uso decorativo e funcional no <strong>paisagismo</strong></li> <li>Pode ser feito em <strong>madeira, metal ou combinados</strong></li></ul><p><strong>Fale com um especialista</strong> e descubra o caramanchão ideal para o seu jardim.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Qual a diferença entre Caramanchão e Pergolado?",
+     "html": "<p>Embora parecidos, o <strong>caramanchão</strong> e o <strong>pergolado</strong> têm características distintas que os tornam adequados para diferentes contextos e projetos.</p><h3>Caramanchão</h3><ul><li>Estilo mais <strong>rústico e natural</strong></li> <li>Voltado ao <strong>paisagismo</strong></li> <li>Integração com <strong>plantas e natureza</strong></li> <li>Visual orgânico e aconchegante</li></ul><h3>Pergolado</h3><ul><li>Mais <strong>estruturado e arquitetônico</strong></li> <li>Integrado à <strong>arquitetura da casa</strong></li> <li>Acabamento mais <strong>formal e refinado</strong></li> <li>Suporta diferentes tipos de <strong>cobertura</strong></li></ul><p><strong>Solicite um orçamento</strong> e encontre a solução mais adequada para o seu projeto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Quais madeiras são ideais para Caramanchão?",
+     "html": "<p>A escolha da <strong>madeira certa</strong> é fundamental para garantir durabilidade, segurança e beleza ao caramanchão, especialmente por se tratar de uma estrutura exposta às intempéries.</p><h3>Madeiras mais indicadas</h3><ul><li><strong>Cumaru:</strong> extremamente resistente ao tempo e umidade</li> <li><strong>Ipê:</strong> uma das madeiras mais nobres e duráveis do Brasil</li> <li><strong>Eucalipto Tratado:</strong> ótimo custo-benefício e alta resistência</li></ul><h3>Por que essas madeiras?</h3><ul><li>Alta <strong>resistência à umidade</strong> e variações de temperatura</li> <li>Longa <strong>vida útil</strong> mesmo em ambientes externos</li> <li>Menor necessidade de <strong>manutenção frequente</strong></li> <li>Estética natural e <strong>valorização do projeto</strong></li></ul><p><strong>Fale com um especialista</strong> e receba a indicação ideal para o seu projeto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "O Caramanchão precisa de cobertura?",
+     "html": "<p>A cobertura <strong>não é obrigatória</strong> em um caramanchão. Muitos projetos são projetados e utilizados sem cobertura, especialmente quando o objetivo é criar <strong>sombra natural</strong> por meio de plantas trepadeiras.</p><h3>Sem cobertura</h3><ul><li>Sombra criada pelas <strong>plantas trepadeiras</strong></li> <li>Visual mais <strong>natural e orgânico</strong></li> <li>Integração total com o <strong>paisagismo</strong></li></ul><h3>Com cobertura</h3><ul><li>Maior <strong>proteção contra chuva</strong></li> <li>Uso em qualquer <strong>condição climática</strong></li> <li>Mais conforto para <strong>áreas de convivência</strong></li></ul><p>A decisão depende do <strong>uso pretendido</strong> e das preferências estéticas do projeto. <strong>Solicite um orçamento</strong> e descubra a melhor solução para você.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Pode usar plantas trepadeiras no Caramanchão?",
+     "html": "<p>Sim! O uso de <strong>plantas trepadeiras</strong> é uma das principais funções de um caramanchão, criando um visual encantador e completamente natural.</p><h3>Plantas mais indicadas</h3><ul><li><strong>Primavera (Bouganville):</strong> floração intensa e colorida</li> <li><strong>Jasmim:</strong> perfume agradável e visual delicado</li> <li><strong>Hera:</strong> cobertura densa e folhagem bonita</li></ul><h3>Benefícios das trepadeiras</h3><ul><li>Criação de <strong>sombra natural</strong></li> <li>Visual <strong>aconchegante e vivo</strong></li> <li>Integração com o <strong>jardim e paisagismo</strong></li> <li>Ambiente mais <strong>fresco e agradável</strong></li></ul><p><strong>Fale com um especialista</strong> e descubra como integrar vegetação ao seu caramanchão.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Qual o tamanho ideal para um Caramanchão?",
+     "html": "<p>O tamanho ideal de um caramanchão depende do <strong>espaço disponível</strong> e da função que a estrutura irá desempenhar. Não existe uma medida padrão — o projeto é sempre adaptado às necessidades de cada cliente.</p><h3>Variações de tamanho</h3><ul><li><strong>Pequeno:</strong> estruturas decorativas para jardins compactos</li> <li><strong>Médio:</strong> ideal para cantinhos de leitura ou descanso</li> <li><strong>Grande:</strong> áreas de convivência e entretenimento</li></ul><h3>O que considerar no planejamento</h3><ul><li>Tamanho do <strong>terreno ou jardim</strong></li> <li>Quantidade de <strong>pessoas</strong> que irão usar</li> <li>Integração com o <strong>paisagismo existente</strong></li> <li>Tipo de <strong>mobiliário</strong> que será utilizado</li></ul><p><strong>Solicite um orçamento personalizado</strong> e receba um projeto sob medida para o seu espaço.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "O Caramanchão precisa de manutenção?",
+     "html": "<p>Sim. A <strong>manutenção periódica</strong> é essencial para preservar a beleza e a estrutura do caramanchão, especialmente quando feito em madeira exposta ao ambiente externo.</p><h3>Cuidados recomendados</h3><ul><li><strong>Aplicação de Verniz ou Stain:</strong> protege a madeira da umidade e raios UV, garantindo durabilidade.</li> <li><strong>Limpeza Regular:</strong> remova folhas, poeira e resíduos acumulados na estrutura.</li> <li><strong>Inspeção Periódica:</strong> verifique parafusos, encaixes e sinais de desgaste na madeira.</li></ul><h3>Frequência recomendada</h3><ul><li>Aplicação de verniz ou stain a cada <strong>1 a 2 anos</strong></li> <li>Limpeza geral a cada <strong>3 a 6 meses</strong></li> <li>Inspeção estrutural <strong>anual</strong></li></ul><p>Com esses cuidados, o caramanchão mantém sua <strong>aparência e resistência</strong> por muitos anos. <strong>Fale com um especialista</strong> e receba orientações completas.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Pode ser instalado em qualquer ambiente?",
+     "html": "<p>Sim! O caramanchão pode ser instalado em praticamente <strong>qualquer ambiente externo</strong>, desde que o solo ou a base ofereça o suporte adequado para a estrutura.</p><h3>Locais ideais para instalação</h3><ul><li><strong>Jardins</strong> residenciais</li> <li><strong>Quintais</strong> e áreas externas</li> <li><strong>Áreas gourmet</strong> e de convivência</li> <li>Espaços comerciais e <strong>eventos</strong></li></ul><h3>Requisitos básicos</h3><ul><li>Solo firme ou <strong>base de concreto</strong></li> <li>Espaço adequado para a <strong>dimensão do projeto</strong></li> <li>Acesso para <strong>instalação e manutenção</strong></li></ul><p><strong>Solicite uma visita técnica</strong> e garanta a melhor instalação para o seu ambiente.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Qual o custo médio de um Caramanchão?",
+     "html": "<p>O custo de um caramanchão é variável e depende de fatores como <strong>tamanho, material e nível de acabamento</strong> do projeto. Projetos personalizados tendem a ter um custo mais elevado, mas com resultado muito superior.</p><h3>Fatores que influenciam no preço</h3><ul><li><strong>Tipo de madeira:</strong> ipê e cumaru têm custo mais elevado por sua nobreza</li> <li><strong>Tamanho:</strong> estruturas maiores demandam mais material e mão de obra</li> <li><strong>Acabamento:</strong> pinturas, vernizes e detalhes especiais</li> <li><strong>Cobertura:</strong> inclusão ou não de telhas ou outros sistemas</li></ul><h3>Investimento que vale a pena</h3><ul><li>Valorização do <strong>imóvel</strong></li> <li>Longa <strong>durabilidade</strong> com manutenção adequada</li> <li>Qualidade de vida e <strong>conforto</strong> no ambiente externo</li></ul><p><strong>Solicite um orçamento personalizado</strong> e receba uma proposta sob medida para o seu projeto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "O Caramanchão valoriza o imóvel?",
+     "html": "<p>Sim! O caramanchão é um investimento que agrega tanto <strong>valor estético</strong> quanto <strong>valor de mercado</strong> ao imóvel, tornando o espaço mais atrativo e funcional.</p><p>Áreas externas bem planejadas são cada vez mais valorizadas pelos compradores, e um caramanchão bem executado pode ser um <strong>diferencial significativo</strong> na hora de vender ou alugar um imóvel.</p><h3>Benefícios que agregam valor</h3><ul><li>Ampliação do <strong>espaço de convivência</strong></li> <li>Visual mais <strong>sofisticado e atraente</strong></li> <li>Integração com <strong>área verde e jardim</strong></li> <li>Diferencial em relação a imóveis <strong>similares</strong></li></ul><p>Além de funcional, o caramanchão agrega <strong>estética ao ambiente externo</strong>, tornando o espaço mais atrativo e convidativo.</p><p><strong>Entre em contato</strong> e eleve o padrão do seu imóvel com um caramanchão Saraiva Design.</p>",
+     "imagem": null
+    }
+   ]
+  }
+ ]
+}

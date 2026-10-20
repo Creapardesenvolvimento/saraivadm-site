@@ -1,0 +1,131 @@
+{
+ "slug": "deck-modular",
+ "nome": "Deck modular",
+ "seo": {
+  "title": "Deck Modular de Madeira Cumaru | Saraiva Design",
+  "description": "Deck modular de madeira cumaru tipo exportação, com a melhor fixação do mercado, para piscinas, hidros, áreas gourmet e jardins."
+ },
+ "hero": {
+  "titulo": "Deck modular",
+  "texto": "Deck de Madeira feito com cumaru tipo exportação, com a melhor fixação do mercado, consulte um dos nossos vendedores.",
+  "imagem": "011-deck-de-madeira.jpg"
+ },
+ "faixa": [
+  "Cumaru tipo exportação",
+  "Fixação oculta",
+  "Fácil instalação",
+  "Envio para todo o Brasil"
+ ],
+ "relacionados": [
+  "/deck-de-madeira/",
+  "/deck-hidro-spa/",
+  "/pisos-de-madeira/",
+  "/pergolado-de-madeira/",
+  "/painel-ripado/",
+  "/brise-de-madeira/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Conheça o deck modular",
+   "lead": "O Deck de Madeira construído pela Saraiva Design é único e de altíssima qualidade. Por usarem madeiras tipo exportação, cumarú, e sistema eficiente de fixação",
+   "blocos": [
+    {
+     "t": "videos",
+     "videos": [
+      {
+       "id": "0VL_BvU1oHU",
+       "capa": "yt-0VL_BvU1oHU.jpg"
+      }
+     ]
+    },
+    {
+     "t": "sub",
+     "texto": "Alguns Projetos de deck modular"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "001-dsc09863-aprimorado-nr-scaled-1.avif",
+       "alt": "Deck de Madeira para piscinas Saraiva"
+      },
+      {
+       "arquivo": "002-img-4466-enhanced-nr-scaled-1.avif",
+       "alt": "Deck de Madeira com pergolado Saraiva"
+      },
+      {
+       "arquivo": "003-dsc06240-aprimorado-nr-scaled-1.avif",
+       "alt": "Deck de Madeira na piscinas Saraiva"
+      },
+      {
+       "arquivo": "004-dsc9062-aprimorado-nr-scaled.jpg",
+       "alt": "Institucional Deck Saraiva"
+      },
+      {
+       "arquivo": "005-pergolado-e-deck-de-madeira-11zon.webp",
+       "alt": "Deck modular: projeto Saraiva Design 5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Deck de madeira",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p><strong>O deck de madeira é uma ótima opção para acompanhar o seu pergolado.</strong> Por ser adaptável para todos os ambientes não têm a necessidade de retirar pisos e nem construir alvenaria para a sua sustentação, ou seja, o deck de madeira pode ser apoiado sobre o piso existente no local abaixo do pergolado. Além de combinar com o madeiramento do pergolado e deixar um ambiente harmónico, o deck de madeira é uma solução para acabamento do solo abaixo do pergolado, <strong>as réguas de cumarú do deck combinam e ornam com as madeiras de garapeira do pergolado.</strong> Deck de madeira + Pergolado é uma ótima opção para transformar seu ambiente, parece até que um foi feito para o outro, existem muitos projetos onde o deck de madeira fica ou dentro do pergolado ou ao lado do mesmo, uma harmonia perfeita e arquitetônica.</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "usos",
+   "titulo": "Onde usar o deck modular",
+   "itens": [
+    {
+     "tipo": "uso",
+     "titulo": "Deck de madeira na piscina",
+     "html": "<p>O deck de madeira é a opção ideal para a piscina, sendo um ótimo acabamento estético e estrutural para a áreas próximas a piscinas. <strong>O deck de madeira harmoniza com a água cristalina das piscinas</strong>, sendo um ponto de apoio para espreguiçadeiras e móveis de área de externa, o deck de madeira suaviza um tablado, pisante que pode ser colocado ao lado da piscina, e ele pode ter contato direto com ações do tempo e respingos da água da piscina. <strong>Um dos melhores pisos para piscina é o deck de madeira.</strong></p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "006-deck-de-madeira-em-beira-de-piscina-11zon-1.webp",
+      "alt": "Deck de madeira na piscina"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Deck de madeira na área gourmet",
+     "html": "<p>A área gourmet é um dos locais mais acessado da casa, já que é o ambiente onde todos as comemorações são realizadas, por isso um piso fácil de limpar, antiderrapante, <strong>estético e nobre como o deck de madeira é a opção ideal para trazer aconchego, praticidade e estética.</strong><br>Por ser um piso que pode ser construído em qualquer tipo de solo e elevação, o deck de madeira é ideal para áreas gourmets. Área gourmet, ambiente de churrasco e locais de confraternizações podem ser utilizados sobre o deck de madeira, com estilo e harmonia, <strong>valorizando sempre o princípio de acolhimento e aconchego que uma área gourmet precisa.</strong></p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "007-anyconv-com-perg-gourmet.webp",
+      "alt": "Deck de madeira na área gourmet"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Deck de madeira na piscina",
+     "html": "<p>O jardim é um ambiente natural da casa, <strong>então a melhor opção para criar um espaço de convívio que seja harmonioso com a folhagem e ideia de naturalidade é o deck de madeira</strong>, esse tipo de material fornece uma beleza natural, leve, traz vida e destaque para as plantas, pode ser inclusive utilizado para criar um cachepô para as plantas, ou um painel de madeira para suporte de vasos e até áreas de pisantes. Além de ser uma ótima opção para quem não quer mexer com construção civil, <strong>o deck de madeira fornece uma excelente durabilidade em contato com chuva e sol.</strong></p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "008-deck-para-jardim-11zon.webp",
+      "alt": "Deck de madeira na piscina"
+     }
+    },
+    {
+     "tipo": "uso",
+     "titulo": "Deck de madeira na hidro",
+     "html": "<p>A Saraiva Design em Madeiras trabalha com madeiramento selecionado e de lei para decks de madeira, <strong>participamos do Projeto Manejo, onde todas as madeiras são certificadas e provenientes de extração consciente e legal</strong>, oferecemos para os nossos clientes o DOF (Documento de Origem Florestal) onde tem registrado no IBAMA a garantia de cada madeiramento e a origem de todas as madeiras, assim como a rastreabilidade e a segurança para o consumidor de que as madeiras são naturais, legais e certificadas. A Saraiva Design em Madeiras <strong>só utiliza em seus projetos e obras madeiras certificadas pelo IBAMA</strong>, e apoia todo o monitoramento florestal Brasileiro e mundial, sendo a favor da rastreabilidade e manejo florestal consciente.</p>",
+     "imagem": {
+      "t": "img",
+      "arquivo": "009-deck-sustentavel-11zon.webp",
+      "alt": "Deck de madeira na hidro"
+     }
+    }
+   ]
+  }
+ ]
+}

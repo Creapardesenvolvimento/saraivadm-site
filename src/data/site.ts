@@ -70,6 +70,7 @@ export const menuPrincipal: ItemMenu[] = [
       { label: 'Telha para pergolado', href: '/telha-para-pergolado/' },
       { label: 'PergoConfort', href: '/pergoconfort/' },
       { label: 'PergoConfort Max', href: '/pergoconfort-max/' },
+      { label: 'PergoPlac', href: '/pergoplac/' },
     ],
   },
   {
@@ -93,6 +94,7 @@ export const menuPrincipal: ItemMenu[] = [
       { label: 'Gazebo', href: '/gazebo/' },
       { label: 'Pergokit', href: '/pergokit/' },
       { label: 'Deck modular', href: '/deck-modular/' },
+      { label: 'Deck hidro-spa', href: '/deck-hidro-spa/' },
     ],
   },
 ];
@@ -112,6 +114,14 @@ export const rodapeProdutos = [
   { label: 'Brise de madeira', href: '/brise-de-madeira/' },
   { label: 'Pergoconfort', href: '/pergoconfort/' },
   { label: 'Pergoconfort Max', href: '/pergoconfort-max/' },
+  { label: 'PergoPlac', href: '/pergoplac/' },
+  { label: 'Forro ripado', href: '/forro-ripado/' },
+  { label: 'Forro de lambril', href: '/forro-de-lambril/' },
+  { label: 'Painel ripado', href: '/painel-ripado/' },
+  { label: 'Caramanchão', href: '/caramanchao/' },
+  { label: 'Gazebo', href: '/gazebo/' },
+  { label: 'Deck modular', href: '/deck-modular/' },
+  { label: 'Deck hidro-spa', href: '/deck-hidro-spa/' },
 ];
 
 export const rodapeInstitucional = [

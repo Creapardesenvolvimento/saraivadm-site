@@ -1,0 +1,97 @@
+{
+ "slug": "pergoplac",
+ "nome": "PergoPlac",
+ "seo": {
+  "title": "PergoPlac: Isolamento Térmico para Pergolado | Saraiva Design",
+  "description": "PergoPlac, placa instalada entre o forro e a cobertura do pergolado para reduzir o calor e melhorar o conforto térmico do ambiente."
+ },
+ "hero": {
+  "titulo": "PergoPlac",
+  "texto": null,
+  "imagem": "001-pergoplac-capa.jpg"
+ },
+ "faixa": [
+  "Redução de calor",
+  "Entre forro e cobertura",
+  "Conforto térmico",
+  "Fácil instalação"
+ ],
+ "relacionados": [
+  "/pergoconfort/",
+  "/pergoconfort-max/",
+  "/cobertura-para-pergolado/",
+  "/forro-de-palha/",
+  "/forro-em-esteiras-de-bambu/",
+  "/pergolado-de-madeira/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Placa térmica PergoPlac",
+   "lead": "Instaladas entre o forro e a cobertura do pergolado, a Pergoplac é uma solução para quem busca redução de calor em pergolados",
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p><strong>PERGOPLAC</strong> – A solução térmica ideal para quem já possui cobertura em vidro ou policarbonato e não aguenta mais o calor</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "Dúvidas sobre a PergoPlac",
+   "intro": null,
+   "itens": [
+    {
+     "titulo": "Escolha da Madeira",
+     "html": "Prefira madeiras resistentes à umidade, como cumaru, ipê ou madeira tratada. Isso garante durabilidade mesmo com contato frequente com água.",
+     "imagem": null
+    },
+    {
+     "titulo": "Base Estrutural Reforçada",
+     "html": "O deck precisa suportar o peso da hidro spa cheia. Invista em uma base bem nivelada e com estrutura reforçada.",
+     "imagem": null
+    },
+    {
+     "titulo": "Sistema de Drenagem",
+     "html": "Deixe espaçamentos entre as tábuas para facilitar o escoamento da água e evitar acúmulo de umidade.",
+     "imagem": null
+    },
+    {
+     "titulo": "Acabamento Antiderrapante",
+     "html": "Utilize materiais ou tratamentos que evitem escorregões, garantindo mais segurança no uso diário.",
+     "imagem": null
+    },
+    {
+     "titulo": "Proteção da Madeira",
+     "html": "Aplique stain, verniz ou selador específico para áreas externas, protegendo contra água, sol e desgaste.",
+     "imagem": null
+    },
+    {
+     "titulo": "Acesso à Manutenção",
+     "html": "Projete o deck de forma que permita acesso fácil à hidro para manutenção e possíveis reparos.",
+     "imagem": null
+    },
+    {
+     "titulo": "Integração com o Ambiente",
+     "html": "Harmonize o deck com o restante do espaço, como jardim, área gourmet ou piscina, criando um ambiente sofisticado.",
+     "imagem": null
+    },
+    {
+     "titulo": "Ventilação Inferior",
+     "html": "Garanta circulação de ar abaixo do deck para evitar mofo, apodrecimento e aumento da vida útil da madeira.",
+     "imagem": null
+    },
+    {
+     "titulo": "Iluminação Funcional e Decorativa",
+     "html": "Instale iluminação indireta ou embutida para valorizar o espaço e aumentar a segurança à noite.",
+     "imagem": null
+    },
+    {
+     "titulo": "Manutenção Periódica",
+     "html": "Realize limpezas regulares e reaplicação de proteção na madeira para manter beleza e resistência ao longo do tempo.",
+     "imagem": null
+    }
+   ]
+  }
+ ]
+}

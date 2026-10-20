@@ -1,0 +1,141 @@
+{
+ "slug": "painel-ripado",
+ "nome": "Painel ripado",
+ "seo": {
+  "title": "Painel Ripado de Madeira Sob Medida | Saraiva Design",
+  "description": "Painel ripado de madeira sob medida para paredes, fachadas, muros e áreas gourmet. Madeiras nobres e acabamento de alto padrão."
+ },
+ "hero": {
+  "titulo": "Painel ripado",
+  "texto": null,
+  "imagem": "010-painel-capa-site-scaled.jpg"
+ },
+ "faixa": [
+  "Madeiras nobres",
+  "Produção sob medida",
+  "Interno e externo",
+  "Instalação especializada"
+ ],
+ "relacionados": [
+  "/brise-de-madeira/",
+  "/forro-ripado/",
+  "/forro-de-lambril/",
+  "/deck-de-madeira/",
+  "/pisos-de-madeira/",
+  "/pergolado-de-madeira/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Painel Ripado",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p><strong>A Saraiva Design desenvolve os melhores projetos em Painel Ripado de Madeira que é um elemento bastante presente e importante em um projeto arquitetônico.</strong></p>"
+    },
+    {
+     "t": "img",
+     "arquivo": "001-paineis-ripados-e-brises-de-madeira-jpg.jpeg",
+     "alt": "Painel Ripado"
+    },
+    {
+     "t": "html",
+     "html": "<p>O Painel ripado de Madeira é utilizado com o objetivo de minorar a incidência direta de luz solar nos interiores do ambiente sem, contudo, prejudicar a ventilação.</p><p>Além de bloqueio do sol, intrusos, e deixar passar a ventilação para ambientes a serem protegidos, hoje os painel ripado de madeira / brises de madeira estão sendo utilizados de forma a decorar casas, sejam em ambientes internos ou externos.</p><p>Os painéis ripados de madeira normalmente são fixados nos muros, nas paredes, entre colunas e estruturados de forma a decorar ambientes com o aconchego e o charme da madeira.</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Alguns Projetoscom Painel de Madeira Ripado"
+    },
+    {
+     "t": "html",
+     "html": "<p>Conheça alguns projetos realizados pela Saraiva Design em Madeiras e se surpreenda com a qualidade e acabamento dos painéis de madeira</p>"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "002-painel-ripado-4.jpg",
+       "alt": "painel ripado de madeira - leveza"
+      },
+      {
+       "arquivo": "003-painel-ripado-5.jpg",
+       "alt": "painel ripado de madeira - receptividade"
+      },
+      {
+       "arquivo": "004-painel-ripado-3.jpg",
+       "alt": "painel ripado de madeira - configuração"
+      },
+      {
+       "arquivo": "005-painel-ripado-2.jpg",
+       "alt": "painel ripado - funcionalidade"
+      },
+      {
+       "arquivo": "006-brise-de-madeira7.jpg",
+       "alt": "pergolado em madeira - bem rústico"
+      },
+      {
+       "arquivo": "007-brise-de-madeira6.jpg",
+       "alt": "pergolado metálico - amenidade"
+      },
+      {
+       "arquivo": "008-brise-de-madeira5.jpg",
+       "alt": "pergolado em madeira - regularidade"
+      },
+      {
+       "arquivo": "009-brise-de-madeira2.jpg",
+       "alt": "Pergolado com brise - calmaria"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "Dicas, estilos e cuidados ao montar o seu Painel Ripado",
+   "intro": null,
+   "itens": [
+    {
+     "titulo": "Madeiras para painel ripado",
+     "html": "<p>Ao montar um <strong>painel ripado de madeira</strong>, é fundamental utilizar <strong>madeiras nobres, selecionadas e tipo exportação</strong>, garantindo durabilidade, estética e acabamento de alto padrão.</p><p>A <strong>Saraiva Design</strong> recomenda especialmente o uso de:</p><ul><li><strong>Garapeira:</strong> resistente, estável e com visual moderno</li> <li><strong>Cumaru:</strong> alta durabilidade, cor intensa e acabamento sofisticado</li></ul><p>Essas madeiras oferecem excelente desempenho tanto em ambientes internos quanto externos, valorizando o projeto com qualidade superior.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Quais os modelos de painel ripado",
+     "html": "<p>O <strong>painel ripado de madeira</strong> possui diversas possibilidades de design, permitindo personalização conforme o estilo do projeto.</p><ul><li><strong>Posicionamento:</strong> ripas na vertical ou horizontal</li> <li><strong>Espaçamento (vão):</strong> entre 1 cm a 4 cm ou mais</li> <li><strong>Estilo:</strong> tradicional (ripado fino) ou com vigas mais robustas</li> <li><strong>Fixação:</strong> painel fixo ou móvel</li> <li><strong>Bitola das ripas:</strong> medidas comuns como 2x4 cm ou 3x4 cm</li></ul><p>Essa variedade permite criar desde projetos <strong>modernos e minimalistas</strong> até composições <strong>rústicas e imponentes</strong>, adaptando-se a qualquer ambiente.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Qual a fresta/vão entre as ripas do painel",
+     "html": "<p>As <strong>frestas (vãos)</strong> entre as ripas do painel ripado de madeira normalmente variam entre <strong>1 cm, 2 cm, 3 cm e 4 cm</strong>.</p><p>No entanto, é possível desenvolver projetos personalizados com <strong>vãos menores ou maiores</strong>, de acordo com a proposta estética e funcional.</p><p>O espaçamento entre as ripas, assim como o sentido (vertical ou horizontal), influencia diretamente na:</p><ul><li><strong>Incidência de luz solar</strong></li> <li><strong>Ventilação do ambiente</strong></li> <li><strong>Nível de privacidade</strong></li></ul><p>Por isso, o vão deve ser definido conforme o objetivo do projeto, equilibrando <strong>estética, conforto e funcionalidade</strong>.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "O painel ripado pode ser feito de ferro?",
+     "html": "<p>Sim, o <strong>painel ripado</strong> pode ser fabricado em materiais metálicos como <strong>aço carbono, ferro ou alumínio</strong>.</p><p>Os modelos metálicos são amplamente utilizados em <strong>fachadas, pergolados e divisórias</strong>, sendo mais comuns em aço carbono e alumínio.</p><p>Entre as principais vantagens dos painéis metálicos estão:</p><ul><li><strong>Alta durabilidade</strong></li> <li><strong>Baixa manutenção</strong></li> <li><strong>Visual moderno e sofisticado</strong></li></ul><p>Enquanto a madeira exige manutenção periódica (em média a cada 8 a 12 meses), os painéis metálicos podem ter manutenção apenas a cada <strong>3 a 5 anos</strong>.</p><p>Em casos de <strong>pintura eletrostática</strong>, esse intervalo pode chegar a <strong>10 a 12 anos</strong>, garantindo ainda mais durabilidade e resistência ao tempo.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Como cuidar do seu painel ripado de madeira",
+     "html": "<p>Para garantir a durabilidade e o bom acabamento do <strong>painel ripado de madeira</strong>, alguns cuidados são essenciais desde a instalação até a manutenção.</p><p>Utilize <strong>fixadores galvanizados</strong> e indicados para área externa, preferencialmente embutidos ou discretos, mantendo a estética do projeto.</p><p>A estrutura deve ser bem dimensionada. Caso o espaçamento entre os caibros seja muito grande e as ripas sejam finas, há risco de <strong>empenamento</strong>. Por isso, recomenda-se contratar uma <strong>empresa especializada</strong>.</p><p>A <strong>manutenção</strong> também é fundamental: envernizar, lixar ou aplicar stain protege a madeira contra sol, chuva e desgaste natural.</p><p>A pintura ajuda na <strong>impermeabilização</strong>, evita fissuras e prolonga a vida útil do painel, mantendo sua beleza ao longo dos anos.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Painel com vigas de madeira",
+     "html": "<p>O <strong>painel com vigas de madeira</strong> é uma variação mais robusta do painel ripado, muito utilizada em projetos modernos e estruturais.</p><p>Esse modelo pode ser composto por <strong>vigas horizontais ou verticais</strong>, criando um visual imponente e sofisticado.</p><p>As medidas mais comuns das vigas são:</p><ul><li>8x15 cm</li> <li>8x20 cm</li> <li>8x25 cm</li></ul><p>Os painéis podem ser <strong>fixos ou móveis</strong>, dependendo da funcionalidade desejada no projeto.</p><p>Esse estilo é ideal para <strong>divisórias de ambientes</strong>, fechamentos laterais de pergolados e áreas externas, unindo <strong>resistência, estética e presença arquitetônica</strong>.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "O painel de madeira pode ser móvel?",
+     "html": "<p>Sim, o <strong>painel ripado de madeira</strong> pode ser <strong>fixo ou móvel</strong>, dependendo da necessidade do projeto.</p><p>Quando móvel, o sistema envolve a integração entre <strong>carpintaria</strong> (estrutura do painel) e <strong>serralheria</strong> (mecanismo de correr).</p><p>É fundamental utilizar <strong>ferragens de alta qualidade</strong>, preferencialmente com <strong>amortecedores</strong> e devidamente dimensionadas para suportar o peso do painel.</p><p>Esse tipo de solução permite maior <strong>flexibilidade, controle de privacidade e ventilação</strong>, além de agregar modernidade ao ambiente.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Onde utilizar o painel ripado de madeira?",
+     "html": "<p>O <strong>painel ripado de madeira</strong> é extremamente versátil e pode ser aplicado em diversos ambientes, tanto internos quanto externos.</p><ul><li><strong>No pergolado:</strong> como fechamento lateral ou elemento decorativo</li> <li><strong>No muro:</strong> valorizando a fachada com um acabamento sofisticado</li> <li><strong>Para privacidade:</strong> criando divisórias elegantes e funcionais</li> <li><strong>No jardim:</strong> integrando paisagismo e arquitetura</li> <li><strong>Na fachada:</strong> trazendo modernidade e destaque visual</li> <li><strong>Na área gourmet:</strong> agregando aconchego e estilo</li> <li><strong>Em áreas externas:</strong> como brise, divisória ou elemento arquitetônico</li></ul><p>Essa variedade de aplicações torna o painel ripado uma solução completa para projetos que buscam <strong>estética, funcionalidade e valorização do espaço</strong>.</p>",
+     "imagem": null
+    }
+   ]
+  }
+ ]
+}

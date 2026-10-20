@@ -1,0 +1,289 @@
+{
+ "slug": "pergoconfort-max",
+ "nome": "PergoConfort Max",
+ "seo": {
+  "title": "PergoConfort Max: Telha Termoacústica para Pergolado | Saraiva Design",
+  "description": "PergoConfort Max, telha sanduíche termoacústica exclusiva da Saraiva Design para o máximo conforto térmico e acústico no seu pergolado."
+ },
+ "hero": {
+  "titulo": "PergoConfort Max",
+  "texto": null,
+  "imagem": "009-pergoconfort-max.jpg"
+ },
+ "faixa": [
+  "Exclusiva Saraiva Design",
+  "Telha termoacústica",
+  "Máximo conforto térmico",
+  "Redução de ruído"
+ ],
+ "relacionados": [
+  "/pergoconfort/",
+  "/telha-para-pergolado/",
+  "/cobertura-para-pergolado/",
+  "/pergolado-de-madeira/",
+  "/pergolado-metalico/",
+  "/mlc/"
+ ],
+ "secoes": [
+  {
+   "tipo": "conteudo",
+   "titulo": "Telha PergoConfort Max",
+   "lead": "A telha PergoConfort-Max é uma telha exclusiva da Saraiva Design e foi desenvolvida para o máximo conforto térmico em pergolado de madeira e aço",
+   "blocos": [
+    {
+     "t": "html",
+     "html": "<p><strong>PergoConfort Max:</strong> a telha sanduíche ideal para <strong>pergolados com conforto térmico, resistência e estilo</strong></p>"
+    },
+    {
+     "t": "img",
+     "arquivo": "001-pergoconfort-max-jpg.jpeg",
+     "alt": "PergoConfort Max"
+    },
+    {
+     "t": "html",
+     "html": "<p>A <strong>telha PergoConfort Max</strong> é a solução ideal para quem busca eficiência térmica, resistência e acabamento superior em coberturas de pergolados, áreas gourmet, varandas e ambientes externos. Trata-se de uma <strong>telha sanduíche</strong> de alto desempenho, composta por duas lâminas externas de material resistente (como aço pré-pintado ou galvanizado) e um núcleo isolante em EPS (<strong>Poliestireno Expandido</strong>), que proporciona excelente isolamento térmico e acústico.</p><p>Com tecnologia de ponta, a PergoConfort Max é capaz de <strong>bloquear até 95% da radiação térmica</strong>, reduzindo significativamente a transferência de calor para o ambiente interno, tornando os espaços mais confortáveis em dias quentes e contribuindo para a economia de energia em ambientes climatizados.<br><br></p><p>Sua estrutura rígida confere <strong>alta resistência mecânica</strong>, suportando ventos fortes, chuvas intensas e outras intempéries. Além disso, o sistema de encaixe preciso entre as telhas garante <strong>vedação total contra vazamentos e goteiras</strong>, mesmo após anos de uso.<br><br></p><p>A PergoConfort Max também se destaca por seu visual moderno e acabamento refinado, ideal para projetos de arquitetura contemporânea que exigem <strong>funcionalidade e estética</strong>. Disponível em diferentes cores, perfis e acabamentos, ela se adapta perfeitamente a diversos estilos de construção.</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Composição da PergoConfort Max"
+    },
+    {
+     "t": "html",
+     "html": "<p>A <strong>PergoConfort Max</strong>é uma telha do tipo <strong>sanduíche</strong>, composta por duas lâminas externas de alta resistência (como aço pré-pintado ou galvanizado) e um <strong>núcleo interno isolante de EPS (Poliestireno Expandido)</strong>. Essa estrutura em “camadas” oferece um <strong>desempenho térmico e acústico superior</strong>, reduzindo drasticamente a passagem de calor e som para o ambiente interno. A combinação entre isolamento eficiente e robustez mecânica torna a PergoConfort Max a solução ideal para coberturas que exigem conforto, <strong>durabilidade e acabamento moderno</strong>, sendo perfeita para pergolados, varandas, áreas gourmet e espaços externos em geral.</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "conteudo",
+   "titulo": "Vantagens e Qualidades",
+   "lead": null,
+   "blocos": [
+    {
+     "t": "img",
+     "arquivo": "002-composicao-telha-pergoconfort-max.jpg",
+     "alt": "PergoConfort Max Composição Saraiva"
+    },
+    {
+     "t": "cards",
+     "itens": [
+      {
+       "titulo": "Fácil instalação",
+       "html": "<p>A PergoConfort Max foi desenvolvida para instalação rápida e prática. Nossa equipe técnica oferece suporte total durante o processo.</p>"
+      },
+      {
+       "titulo": "Produção sob medida",
+       "html": "<p>Telhas fabricadas sob medida para o seu projeto, evitando cortes desnecessários e garantindo melhor acabamento e desempenho estrutural.</p>"
+      },
+      {
+       "titulo": "Proteção contra granizo",
+       "html": "<p>Com estrutura rígida e núcleo isolante, a PergoConfort Max suporta impactos de granizo, oferecendo maior segurança e durabilidade à cobertura.</p>"
+      },
+      {
+       "titulo": "10 anos de garantia",
+       "html": "<p>Telhas com 10 anos de garantia para a satisfação e tranquilidade de nossos clientes.</p>"
+      },
+      {
+       "titulo": "Acompanham materiais para fixação",
+       "html": "<p>As telhas enviadas pela Saraiva Design em Madeiras acompanham calços e parafusos para fixação.</p>"
+      },
+      {
+       "titulo": "Resistência mecânica",
+       "html": "<p>PergoConfort Max oferece alta rigidez estrutural e excelente resistência mecânica, suportando ventos fortes, chuvas intensas e impactos externos sem deformações.</p>"
+      },
+      {
+       "titulo": "Redução de concentração de calor e ruído",
+       "html": "<p>O núcleo isolante de Poliestireno Expandido (EPS) proporciona um ambiente termicamente confortável e com ótimo isolamento acústico, mesmo em dias quentes e locais com ruído externo.</p>"
+      }
+     ]
+    },
+    {
+     "t": "sub",
+     "texto": "Acompanham Materiais para Fixação"
+    },
+    {
+     "t": "sub",
+     "texto": "Design inovador"
+    },
+    {
+     "t": "html",
+     "html": "<p>O formato trapezoidal moderno proporciona encaixe perfeito entre as telhas, evitando goteiras e vazamentos mesmo após anos de uso.</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Proteção ao clima"
+    },
+    {
+     "t": "html",
+     "html": "<p>Projetada para resistir a chuvas intensas, ventos fortes e variações climáticas, a PergoConfort Max mantém seu ambiente sempre protegido.</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "Alguns Projetos com PergoConfort Max"
+    },
+    {
+     "t": "galeria",
+     "fotos": [
+      {
+       "arquivo": "003-2-1.jpg",
+       "alt": "PergoConfort Max: projeto Saraiva Design 1"
+      },
+      {
+       "arquivo": "004-5-1.jpg",
+       "alt": "PergoConfort Max: projeto Saraiva Design 2"
+      },
+      {
+       "arquivo": "005-3-1.jpg",
+       "alt": "PergoConfort Max: projeto Saraiva Design 3"
+      },
+      {
+       "arquivo": "006-1-10.jpg",
+       "alt": "PergoConfort Max: projeto Saraiva Design 4"
+      },
+      {
+       "arquivo": "007-6-1.jpg",
+       "alt": "PergoConfort Max: projeto Saraiva Design 5"
+      },
+      {
+       "arquivo": "008-4-1.jpg",
+       "alt": "PergoConfort Max: projeto Saraiva Design 6"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "Dúvidas sobre a PergoConfort Max",
+   "intro": null,
+   "itens": [
+    {
+     "titulo": "Quais são as principais características da Telha PergoConfort Max?",
+     "html": "<p>A Telha PergoConfort Max é uma cobertura de alto desempenho térmico e estrutural, desenvolvida para oferecer o máximo em proteção, conforto e durabilidade. Trata-se de uma telha sanduíche, formada por duas lâminas metálicas (aço galvanizado ou pré-pintado) e um núcleo interno de EPS (Poliestireno Expandido), que garante excelente isolamento térmico e acústico.</p><p>Seu formato trapezoidal 40/980 assegura encaixe preciso e vedação total contra vazamentos, mesmo após anos de uso. Com estrutura rígida e resistente, a PergoConfort Max suporta intempéries severas, como ventos fortes, chuvas intensas e impactos de granizo.</p><p>Além de sua eficiência funcional, a telha possui acabamento moderno e refinado, ideal para projetos contemporâneos que exigem estética e desempenho. É produzida sob medida, evitando cortes e desperdícios na obra, e possui garantia de 10 anos contra defeitos de fabricação. Sua instalação é prática, acompanhando os materiais de fixação adequados.</p><p>A PergoConfort Max é a escolha perfeita para quem busca uma cobertura robusta, eficiente e com visual elegante para áreas externas.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Como a Telha PergoConfort Max contribui para o conforto térmico do ambiente?",
+     "html": "<p>A Telha PergoConfort Max é uma solução de alto desempenho térmico, ideal para coberturas de pergolados, varandas, áreas gourmet e ambientes externos que exigem eficiência e sofisticação. Trata-se de uma telha sanduíche, composta por duas lâminas externas de aço galvanizado ou pré-pintado e um núcleo interno de EPS (Poliestireno Expandido), material reconhecido pelo excelente isolamento térmico e acústico.</p><p>Essa composição bloqueia até 95% da radiação térmica, reduzindo drasticamente a transferência de calor para o ambiente interno e tornando o espaço muito mais agradável mesmo em dias quentes. Isso contribui diretamente para o bem-estar dos usuários e ainda ajuda na economia de energia em locais climatizados.</p><p>Além disso, sua estrutura rígida e sistema de encaixe preciso garantem vedação total, evitando vazamentos e garantindo proteção contra chuvas e intempéries.</p><p>A PergoConfort Max alia desempenho técnico com acabamento refinado, sendo ideal para projetos que buscam conforto, durabilidade e estética moderna.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Quais são os materiais utilizados na fabricação da Telha PergoConfort Max?",
+     "html": "<p>A Telha PergoConfort Max é composta por três camadas principais que formam sua estrutura tipo sanduíche, garantindo alta performance térmica, acústica e mecânica.</p><p><strong>Lâmina superior:</strong><br> Fabricada em aço galvanizado ou aço pré-pintado, essa camada oferece resistência mecânica e proteção contra intempéries como chuva, vento e radiação solar. O revestimento pré-pintado agrega estética moderna e durabilidade extra.</p><p><strong>Núcleo isolante (miolo):</strong><br> Composto por EPS (Poliestireno Expandido), esse material é responsável pelo isolamento térmico e acústico, reduzindo a transferência de calor e aumentando o conforto do ambiente.</p><p><strong>Lâmina inferior:</strong><br> Também feita de aço galvanizado ou alumínio pintado, essa camada protege o interior da telha, contribuindo para sua rigidez estrutural e aumentando a durabilidade geral do produto.</p><p>Esses materiais juntos resultam em uma telha extremamente resistente, durável, funcional e esteticamente sofisticada, ideal para ambientes externos como pergolados, varandas e áreas gourmet.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Como é feita a instalação da Telha PergoConfort Max? É necessário um profissional?",
+     "html": "<p>A instalação da Telha PergoConfort Max é simples, mas exige atenção técnica para garantir vedação total, alinhamento perfeito e desempenho térmico adequado. As telhas são fabricadas sob medida, o que elimina a necessidade de cortes no local e facilita o encaixe.</p><p>O sistema de encaixe trapezoidal 40/980 permite uma sobreposição precisa entre as telhas, garantindo estanqueidade mesmo em chuvas fortes. Para a fixação, são utilizados parafusos autoperfurantes com calços e arruelas de vedação, que já acompanham o kit, assegurando firmeza e proteção contra infiltrações.</p><p>Embora o processo seja direto, a instalação deve ser feita por um profissional qualificado. Um instalador experiente garante o correto manuseio do material, o posicionamento adequado das telhas e a aplicação dos acabamentos de forma que se preserve a integridade estrutural e o visual do projeto.</p><p>Ao contratar um profissional, você garante a longevidade do sistema, evita problemas como vazamentos e empenamentos e assegura que a garantia de fábrica de 10 anos seja mantida.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Qual é a durabilidade estimada da Telha PergoConfort Max?",
+     "html": "<p>A Telha PergoConfort Max possui durabilidade estimada de 25 a 30 anos, desde que instalada corretamente e com manutenção mínima ao longo do tempo.</p><p>Sua estrutura é composta por lâminas metálicas (aço galvanizado ou pré-pintado) e núcleo isolante em poliestireno expandido (EPS), materiais de alta resistência a intempéries, impactos e variações térmicas.</p><p>Além disso, o sistema de encaixe preciso evita infiltrações e desgaste prematuro. A telha também conta com garantia de fábrica de 10 anos contra defeitos de fabricação, reforçando a confiabilidade do produto.</p><p>Com uso adequado, a PergoConfort Max mantém sua eficiência térmica, integridade estrutural e acabamento estético por décadas, sendo uma excelente escolha para projetos que exigem desempenho e longevidade.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Existem diferentes modelos ou cores disponíveis para a Telha PergoConfort Max?",
+     "html": "<p>A Telha PergoConfort Max está disponível em diversas cores e acabamentos, permitindo total personalização do projeto de acordo com o estilo arquitetônico desejado.</p><p>Entre as opções mais utilizadas estão o branco, bege, cinza, terracota e grafite, que podem ser aplicadas através do método de pintura eletrostática, garantindo alta durabilidade, resistência e um acabamento uniforme em brilho ou fosco.</p><p>Além da variação de cores, o cliente pode escolher o núcleo isolante da telha em poliestireno expandido (EPS), oferecendo excelente desempenho térmico e acústico e adaptação às necessidades específicas de cada projeto.</p><p>Essa versatilidade faz da PergoConfort Max uma solução ideal para ambientes residenciais, comerciais e gourmet, unindo estética moderna, resistência e funcionalidade em um único produto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "A Telha PergoConfort Max é indicada para quais tipos de pergolados?",
+     "html": "<p>A Telha PergoConfort Max é indicada para diversos tipos de pergolados, especialmente aqueles que exigem conforto térmico, resistência estrutural e acabamento sofisticado.</p><p>Graças à sua composição em lâminas metálicas com núcleo isolante em EPS (Poliestireno Expandido), ela se adapta perfeitamente a:</p><ul><li>Pergolados em madeira, valorizando o visual natural com proteção contra calor excessivo e chuvas;</li> <li>Pergolados em alumínio, com leveza, modernidade e vedação eficaz;</li> <li>Pergolados em ferro ou aço, ideal para estruturas robustas que exigem cobertura durável e rígida;</li> <li>Pergolados de alvenaria ou estruturas mistas, entregando alto desempenho térmico e integração estética com projetos arquitetônicos contemporâneos.</li></ul><p>Sua versatilidade, aliada à produção sob medida e variedade de cores, torna a PergoConfort Max uma excelente escolha para varandas, áreas gourmet, lounges, espaços comerciais e residenciais de alto padrão.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "É possível utilizar a Telha PergoConfort Max em ambientes comerciais e residenciais?",
+     "html": "<p>Sim! A Telha PergoConfort Max é uma solução versátil e altamente eficiente, ideal tanto para ambientes residenciais quanto comerciais.</p><p>Sua composição em lâminas metálicas com núcleo isolante em Poliestireno Expandido (EPS) oferece excelente isolamento térmico e acústico, tornando o espaço mais confortável e protegido contra as variações climáticas.</p><p>Nos projetos residenciais, é perfeita para pergolados, varandas, áreas gourmet, garagens e jardins de inverno, agregando estética moderna e proteção de longo prazo.</p><p>Já em ambientes comerciais, como cafeterias, restaurantes, lojas, condomínios e áreas comuns, proporciona conforto térmico para o público e reduz custos com climatização.</p><p>Com visual sofisticado, produção sob medida e fácil instalação, a PergoConfort Max se adapta a diferentes estilos arquitetônicos e agrega valor a qualquer projeto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Quais são os benefícios da proteção UV nas Telhas PergoConfort Max?",
+     "html": "<p>A proteção UV nas Telhas PergoConfort Max é um dos grandes diferenciais que garantem durabilidade, conforto térmico e estética preservada ao longo do tempo.</p><p>Veja os principais benefícios:</p><ul><li>Redução da temperatura interna: a camada protetora contra raios UVA e UVB reflete parte da radiação solar, diminuindo o aquecimento do ambiente sob a cobertura.</li> <li>Maior vida útil da telha: a proteção UV evita o envelhecimento precoce da telha causado pelo sol, como ressecamento, trincas ou perda de desempenho.</li> <li>Preservação da cor e acabamento: a exposição solar intensa pode desbotar superfícies metálicas, mas com a proteção UV a cor da telha se mantém viva por muito mais tempo.</li> <li>Conforto e economia: ao manter a temperatura mais agradável, há menos necessidade de climatização artificial, gerando economia de energia.</li> <li>Segurança e bem-estar: o bloqueio de até 95% da radiação térmica e grande parte dos raios UV contribui para um ambiente mais saudável, especialmente em áreas com permanência de pessoas.</li></ul><p>A proteção UV torna a PergoConfort Max não apenas mais resistente, mas também uma escolha inteligente para quem valoriza conforto, estética e desempenho a longo prazo.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "As Telhas PergoConfort Max são resistentes a chuvas fortes e ventos?",
+     "html": "<p>Sim! As Telhas PergoConfort Max foram projetadas para oferecer alta resistência a condições climáticas severas, como chuvas fortes, ventos intensos e variações térmicas.</p><p>Sua estrutura tipo sanduíche, composta por lâminas metálicas (aço galvanizado ou pré-pintado) e núcleo isolante em Poliestireno Expandido (EPS), proporciona uma rigidez mecânica excepcional.</p><p>Além disso, o formato trapezoidal 40/980 garante um encaixe preciso e vedação total, impedindo infiltrações e goteiras mesmo após anos de uso. Esse sistema de montagem evita deslocamentos durante rajadas de vento, tornando a cobertura segura e estável.</p><p>Seja em residências, áreas gourmet ou espaços comerciais, a PergoConfort Max entrega proteção estrutural e conforto mesmo nas piores condições climáticas.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Como fazer a manutenção e limpeza adequada das Telhas PergoConfort Max?",
+     "html": "<p>A manutenção das Telhas PergoConfort Max é simples e essencial para garantir sua durabilidade, eficiência térmica e aparência ao longo dos anos.</p><p>Por serem compostas por lâminas metálicas com núcleo de Poliestireno Expandido (EPS), essas telhas exigem apenas cuidados básicos e periódicos para manter seu desempenho máximo.</p><p>A limpeza deve ser realizada uma ou duas vezes ao ano, utilizando apenas água, detergente neutro e uma esponja, pano ou escova de cerdas macias. É importante evitar o uso de produtos abrasivos, solventes químicos ou materiais agressivos que possam danificar o revestimento da telha e comprometer sua proteção anticorrosiva e estética.</p><p>Em casos de sujeiras mais persistentes, como manchas ou resíduos orgânicos, pode-se utilizar soluções suaves, como vinagre diluído ou álcool isopropílico, sempre acompanhadas de um enxágue abundante. O uso de lavadoras de alta pressão não é recomendado, pois pode afetar o acabamento superficial e as vedações.</p><p>Recomenda-se também realizar inspeções regulares após eventos climáticos intensos, como chuvas fortes ou ventos, verificando se os parafusos e calços de fixação continuam firmes e bem vedados. Esse cuidado ajuda a prevenir infiltrações e mantém a estabilidade estrutural da cobertura.</p><p>Outro ponto importante é garantir que as calhas e sistemas de escoamento estejam sempre limpos e desobstruídos, evitando o acúmulo de água ao redor da telha, o que poderia comprometer sua fixação ou acelerar o desgaste dos componentes metálicos.</p><p>Seguindo essas orientações simples, a Telha PergoConfort Max manterá sua eficiência térmica, resistência mecânica e acabamento refinado por muitos anos, valorizando ainda mais o projeto e garantindo o máximo aproveitamento da sua garantia de fábrica.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Quais as cores da telha PergoConfort Max?",
+     "html": "<p>A telha PergoConfort Max é a solução ideal para quem busca aliar isolamento térmico, resistência, design moderno e acabamento de alto padrão em coberturas de pergolados, varandas e áreas externas.</p><p>Seu núcleo térmico especial proporciona ambientes mais frescos e protegidos contra o calor excessivo, além de contribuir com a redução de ruídos.</p><p>O grande diferencial está em seu acabamento: a pintura eletrostática, que garante maior durabilidade da cor, resistência à corrosão e um visual sofisticado por muito mais tempo.</p><p>E para deixar seu projeto ainda mais personalizado, a PergoConfort Max pode ser fabricada em diversas cores, adaptando-se perfeitamente ao estilo do seu espaço.</p><p>Entre em contato com um dos consultores da Saraiva Design em Madeiras e descubra como transformar sua cobertura com beleza, conforto e tecnologia.</p>",
+     "imagem": null
+    }
+   ]
+  },
+  {
+   "tipo": "acordeao",
+   "titulo": "Dicas, Estilos e Cuidados ao montar sua telha PergoConfort Max",
+   "intro": null,
+   "itens": [
+    {
+     "titulo": "Dicas para Instalação",
+     "html": "<p>A instalação da Telha PergoConfort MAX deve ser feita por profissionais capacitados, garantindo o encaixe perfeito e a vedação ideal.</p><p>Utilize sempre os calços e parafusos fornecidos ou recomendados pela Saraiva Design.</p><p>Mantenha a inclinação mínima adequada do telhado para garantir o escoamento da água e evite pisar diretamente sobre as telhas para preservar o núcleo isolante.</p><p>O uso correto dos acessórios de vedação assegura total proteção contra vazamentos.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Termo de Garantia",
+     "html": "<p>A Telha PergoConfort MAX possui 10 anos de garantia contra defeitos de fabricação e deterioração prematura, desde que a instalação e manutenção sigam as orientações da Saraiva Design.</p><p>A garantia cobre descolamento de camadas, falhas no isolamento térmico ou acústico e perda de rigidez estrutural por fatores não externos.</p><p>Para garantir seus direitos, mantenha a nota fiscal e o registro da instalação feita por profissionais indicados.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "PergoConfort MAX: A Telha Termoacústica",
+     "html": "<p>A PergoConfort MAX é uma telha sanduíche de alto desempenho, ideal para quem busca conforto térmico, resistência e sofisticação.</p><p>Com núcleo isolante em poliuretano (PU) e lâminas externas resistentes, ela bloqueia até 95% da radiação térmica, tornando os ambientes frescos, silenciosos e aconchegantes em qualquer estação do ano.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Por que Escolher a Telha PergoConfort MAX?",
+     "html": "<p>Porque ela reúne o que há de mais moderno em conforto e resistência.</p><p>Além de um visual refinado, a PergoConfort MAX oferece excelente desempenho térmico e acústico, alta durabilidade, vedação contra vazamentos e fácil instalação.</p><p>É a solução completa para transformar seu pergolado em um espaço funcional e elegante.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Invista na Qualidade Saraiva Design",
+     "html": "<p>Na Saraiva Design, cada projeto é tratado com atenção aos detalhes e compromisso com a excelência.</p><p>Ao escolher a PergoConfort MAX, você conta com uma empresa experiente em coberturas e estruturas em madeira e aço, que oferece suporte técnico, materiais de alta qualidade e soluções sob medida para seu espaço.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Iluminação e Integração com Telhas PergoConfort MAX",
+     "html": "<p>A Saraiva Design oferece kits de iluminação personalizados que se integram perfeitamente à PergoConfort MAX.</p><p>Isso inclui trilhos de iluminação, arandelas para vigas e pilares, além de ventiladores de teto que combinam com o estilo da cobertura.</p><p>Tudo é planejado conforme a necessidade de cada cliente, garantindo conforto, estética e funcionalidade em um só projeto.</p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Calços, Parafusos e vedação",
+     "html": "<p>Utilizamos apenas <strong>calços e parafusos de alta qualidade</strong>, resistentes à corrosão, que asseguram a firmeza da estrutura.</p><p>As telhas contam com <strong>sistema de encaixe preciso</strong> e acessórios de vedação que evitam infiltrações e prolongam a vida útil da cobertura.</p><p>Esses componentes são fundamentais para garantir a eficácia térmica e a estética do projeto.</p><p><strong>Calços e Parafusos | Vedação de Cobertura | Resistência à Corrosão | Eficácia Térmica</strong></p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Cobertura para Pergolados com Estilo e Função",
+     "html": "<p>A <strong>PergoConfort MAX</strong> oferece a combinação ideal entre estilo contemporâneo e função.</p><p>Seu <strong>design moderno</strong> valoriza o pergolado, enquanto o isolamento térmico e a resistência às intempéries garantem conforto e proteção.</p><p>É a escolha perfeita para áreas gourmet, varandas, jardins e espaços comerciais.</p><p><strong>Estilo e Função | Cobertura para Pergolado | Design Moderno | Proteção e Conforto</strong></p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Aplicabilidade e Benefícios",
+     "html": "<p><strong>Aplicabilidade:</strong></p><ul><li>Pergolados</li> <li>Áreas gourmet</li> <li>Varandas e sacadas</li> <li>Ambientes comerciais externos</li></ul><p><strong>Benefícios:</strong></p><ul><li>Redução de calor e ruído</li> <li>Visual moderno e refinado</li> <li>Longa durabilidade</li> <li>Instalação rápida</li> <li>Economia de energia com climatização</li></ul><p><strong>Aplicabilidade e Benefícios | Redução de Calor | Visual Moderno | Economia de Energia</strong></p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Quanto Tempo Demora para Montar uma Cobertura com Telha PergoConfort MAX?",
+     "html": "<p>A montagem de uma cobertura com a <strong>PergoConfort MAX</strong> é rápida e eficiente.</p><p>Em média, leva de <strong>1 a 3 dias úteis</strong>, dependendo do tamanho e complexidade do projeto.</p><p>Nossa equipe especializada realiza a instalação com agilidade, garantindo acabamento impecável e vedação completa.</p><p><strong>Tempo de Montagem | Instalação Rápida | Equipe Especializada | Agilidade e Vedação</strong></p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Dicas para Manutenção das Telhas PergoConfort MAX",
+     "html": "<p><strong>Dicas de conservação:</strong></p><ul><li>Faça limpeza periódica com água e sabão neutro</li> <li>Não utilize produtos abrasivos ou ferramentas cortantes</li> <li>Verifique os pontos de fixação e vedação anualmente</li> <li>Evite acúmulo de folhas ou sujeira sobre as telhas</li> <li>Faça inspeções após fortes chuvas ou ventanias</li></ul><p>Seguindo esses cuidados, sua cobertura se manterá bonita e eficiente por muitos anos.</p><p><strong>Manutenção de Telhas | Limpeza Periódica | Conservação PergoConfort MAX | Inspeção de Cobertura</strong></p>",
+     "imagem": null
+    },
+    {
+     "titulo": "Escolha PergoConfort MAX: Qualidade e Confiança",
+     "html": "<p>Quando você escolhe a <strong>PergoConfort MAX</strong>, está investindo em tecnologia, conforto e durabilidade.</p><p>É uma telha de alto desempenho, aprovada por engenheiros e arquitetos exigentes.</p><p>E o melhor: com o suporte e a confiança de quem entende do assunto — a <strong>Saraiva Design em Madeiras e Aços</strong>.</p><p><strong>Qualidade e Confiança | Tecnologia PergoConfort | Aprovada por Especialistas | Saraiva Design</strong></p>",
+     "imagem": null
+    }
+   ]
+  }
+ ]
+}

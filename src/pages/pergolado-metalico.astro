@@ -88,8 +88,7 @@ const schema = [
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Início', item: `${site.url}/` },
-      { '@type': 'ListItem', position: 2, name: 'Pergolados', item: `${site.url}/pergolados/` },
-      { '@type': 'ListItem', position: 3, name: 'Pergolado metálico', item: url },
+      { '@type': 'ListItem', position: 2, name: 'Pergolado metálico', item: url },
     ],
   },
 ];
@@ -100,7 +99,7 @@ const schema = [
     imagem={hero}
     titulo="Pergolado metálico"
     texto="Pergolado feito de aço carbono sob medida, forração de palha ou bambu, telha Pergoconfort e sistema de captação de água com calha, rufos e condutores."
-    trilha={[{ label: 'Início', href: '/' }, { label: 'Pergolados', href: '/pergolados/' }, { label: 'Pergolado metálico' }]}
+    trilha={[{ label: 'Início', href: '/' }, { label: 'Pergolado metálico' }]}
     botoes={[
       { label: 'Orçamento imediato', href: msg(), whatsapp: true },
       { label: 'Ver projetos', href: '#projetos' },

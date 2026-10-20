@@ -1,58 +1,460 @@
 {
   "forro-de-palha": {
-    "nome": "Forro de palha", "artigo": "o",
-    "seo": { "title": "Forro de Palha Natural e Sintético Sob Medida | Saraiva Design",
-             "description": "Forro de palha natural e sintético para pergolados, áreas gourmet e ambientes internos. Coleções Time Line e Fibré, proteção UV e envio para todo o Brasil." },
-    "faixa": ["Palha natural e sintética", "Proteção UV", "Produção sob medida", "Envio para todo o Brasil"],
-    "relacionados": ["/forro-em-esteiras-de-bambu/", "/pergolado-de-madeira/", "/pergolado-metalico/", "/cobertura-para-pergolado/", "/forro-de-madeira/", "/deck-de-madeira/"]
+    "nome": "Forro de palha",
+    "artigo": "o",
+    "seo": {
+      "title": "Forro de Palha Natural e Sintético Sob Medida | Saraiva Design",
+      "description": "Forro de palha natural e sintético para pergolados, áreas gourmet e ambientes internos. Coleções Time Line e Fibré, proteção UV e envio para todo o Brasil."
+    },
+    "faixa": [
+      "Palha natural e sintética",
+      "Proteção UV",
+      "Produção sob medida",
+      "Envio para todo o Brasil"
+    ],
+    "relacionados": [
+      "/forro-em-esteiras-de-bambu/",
+      "/pergolado-de-madeira/",
+      "/pergolado-metalico/",
+      "/cobertura-para-pergolado/",
+      "/forro-de-madeira/",
+      "/deck-de-madeira/"
+    ]
   },
   "forro-em-esteiras-de-bambu": {
-    "nome": "Forro de bambu", "artigo": "o", "h1": "Forro de bambu",
-    "seo": { "title": "Forro de Bambu em Esteiras Sob Medida | Saraiva Design",
-             "description": "Forro em esteiras de bambu artesanal, tratado e envernizado, para pergolados, áreas gourmet e ambientes internos e externos. Envio para todo o Brasil." },
-    "faixa": ["Trama artesanal", "Tratado e envernizado", "Produção sob medida", "Envio para todo o Brasil"],
-    "relacionados": ["/forro-de-palha/", "/pergolado-de-madeira/", "/pergolado-metalico/", "/cobertura-para-pergolado/", "/forro-de-madeira/", "/deck-de-madeira/"]
+    "nome": "Forro de bambu",
+    "artigo": "o",
+    "h1": "Forro de bambu",
+    "seo": {
+      "title": "Forro de Bambu em Esteiras Sob Medida | Saraiva Design",
+      "description": "Forro em esteiras de bambu artesanal, tratado e envernizado, para pergolados, áreas gourmet e ambientes internos e externos. Envio para todo o Brasil."
+    },
+    "faixa": [
+      "Trama artesanal",
+      "Tratado e envernizado",
+      "Produção sob medida",
+      "Envio para todo o Brasil"
+    ],
+    "relacionados": [
+      "/forro-de-palha/",
+      "/pergolado-de-madeira/",
+      "/pergolado-metalico/",
+      "/cobertura-para-pergolado/",
+      "/forro-de-madeira/",
+      "/deck-de-madeira/"
+    ]
   },
   "brise-de-madeira": {
-    "nome": "Brise de madeira", "artigo": "o",
-    "seo": { "title": "Brise de Madeira Sob Medida para Fachadas | Saraiva Design",
-             "description": "Brise de madeira sob medida para fachadas, muros, áreas gourmet e de lazer. Controle de luz e ventilação com acabamento de alto padrão." },
-    "faixa": ["Madeira nobre", "Controle de luz e calor", "Projeto sob medida", "Instalação especializada"],
-    "relacionados": ["/forro-de-madeira/", "/pergolado-de-madeira/", "/deck-de-madeira/", "/mlc/", "/forro-de-palha/", "/pergolado-metalico/"]
+    "nome": "Brise de madeira",
+    "artigo": "o",
+    "seo": {
+      "title": "Brise de Madeira Sob Medida para Fachadas | Saraiva Design",
+      "description": "Brise de madeira sob medida para fachadas, muros, áreas gourmet e de lazer. Controle de luz e ventilação com acabamento de alto padrão."
+    },
+    "faixa": [
+      "Madeira nobre",
+      "Controle de luz e calor",
+      "Projeto sob medida",
+      "Instalação especializada"
+    ],
+    "relacionados": [
+      "/forro-de-madeira/",
+      "/pergolado-de-madeira/",
+      "/deck-de-madeira/",
+      "/mlc/",
+      "/forro-de-palha/",
+      "/pergolado-metalico/"
+    ]
   },
   "cobertura-para-pergolado": {
-    "nome": "Cobertura para pergolado", "artigo": "a", "tituloUsos": "Onde usar a cobertura para pergolado",
-    "seo": { "title": "Cobertura para Pergolado com Telha PergoConfort | Saraiva Design",
-             "description": "Cobertura para pergolado com telha translúcida PergoConfort: proteção contra chuva, sol e calor, 10 anos de garantia e forro de palha ou bambu." },
-    "faixa": ["Telha PergoConfort", "10 anos de garantia", "Redução de calor", "Proteção contra granizo"],
-    "relacionados": ["/pergolado-de-madeira/", "/pergolado-metalico/", "/forro-de-palha/", "/forro-em-esteiras-de-bambu/", "/mlc/", "/deck-de-madeira/"]
+    "nome": "Cobertura para pergolado",
+    "artigo": "a",
+    "tituloUsos": "Onde usar a cobertura para pergolado",
+    "seo": {
+      "title": "Cobertura para Pergolado com Telha PergoConfort | Saraiva Design",
+      "description": "Cobertura para pergolado com telha translúcida PergoConfort: proteção contra chuva, sol e calor, 10 anos de garantia e forro de palha ou bambu."
+    },
+    "faixa": [
+      "Telha PergoConfort",
+      "10 anos de garantia",
+      "Redução de calor",
+      "Proteção contra granizo"
+    ],
+    "relacionados": [
+      "/pergolado-de-madeira/",
+      "/pergolado-metalico/",
+      "/forro-de-palha/",
+      "/forro-em-esteiras-de-bambu/",
+      "/mlc/",
+      "/deck-de-madeira/"
+    ]
   },
   "deck-de-madeira": {
-    "nome": "Deck de madeira", "artigo": "o",
-    "seo": { "title": "Deck de Madeira para Piscina e Área Externa | Saraiva Design",
-             "description": "Deck de madeira de alto padrão para piscinas, jardins, áreas gourmet e de lazer. Madeiras nobres selecionadas e instalação especializada." },
-    "faixa": ["Madeiras nobres", "Para piscina e área externa", "Projeto sob medida", "Instalação especializada"],
-    "relacionados": ["/pergolado-de-madeira/", "/pisos-de-madeira/", "/pergolado-metalico/", "/cobertura-para-pergolado/", "/forro-de-palha/", "/brise-de-madeira/"]
+    "nome": "Deck de madeira",
+    "artigo": "o",
+    "seo": {
+      "title": "Deck de Madeira para Piscina e Área Externa | Saraiva Design",
+      "description": "Deck de madeira de alto padrão para piscinas, jardins, áreas gourmet e de lazer. Madeiras nobres selecionadas e instalação especializada."
+    },
+    "faixa": [
+      "Madeiras nobres",
+      "Para piscina e área externa",
+      "Projeto sob medida",
+      "Instalação especializada"
+    ],
+    "relacionados": [
+      "/pergolado-de-madeira/",
+      "/pisos-de-madeira/",
+      "/pergolado-metalico/",
+      "/cobertura-para-pergolado/",
+      "/forro-de-palha/",
+      "/brise-de-madeira/"
+    ]
   },
   "mlc": {
-    "nome": "Pergolado em MLC", "artigo": "o", "tituloIntro": "Madeira laminada colada (MLC)", "tituloUsos": "Onde usar a madeira laminada colada",
-    "seo": { "title": "Pergolado em MLC (Madeira Laminada Colada) | Saraiva Design",
-             "description": "Estruturas e pergolados em MLC, madeira laminada colada: grandes vãos, alta resistência, obra rápida e sustentabilidade em projetos de alto padrão." },
-    "faixa": ["Madeira engenheirada", "Grandes vãos", "Alta resistência", "Sustentabilidade"],
-    "relacionados": ["/pergolado-de-madeira/", "/pergolado-metalico/", "/cobertura-para-pergolado/", "/deck-de-madeira/", "/forro-de-palha/", "/brise-de-madeira/"]
+    "nome": "Pergolado em MLC",
+    "artigo": "o",
+    "tituloIntro": "Madeira laminada colada (MLC)",
+    "tituloUsos": "Onde usar a madeira laminada colada",
+    "seo": {
+      "title": "Pergolado em MLC (Madeira Laminada Colada) | Saraiva Design",
+      "description": "Estruturas e pergolados em MLC, madeira laminada colada: grandes vãos, alta resistência, obra rápida e sustentabilidade em projetos de alto padrão."
+    },
+    "faixa": [
+      "Madeira engenheirada",
+      "Grandes vãos",
+      "Alta resistência",
+      "Sustentabilidade"
+    ],
+    "relacionados": [
+      "/pergolado-de-madeira/",
+      "/pergolado-metalico/",
+      "/cobertura-para-pergolado/",
+      "/deck-de-madeira/",
+      "/forro-de-palha/",
+      "/brise-de-madeira/"
+    ]
   },
   "pisos-de-madeira": {
-    "nome": "Pisos de madeira", "artigo": "os", "tituloIntro": "Pisos de madeira Triângulo", "tituloUsos": "Ambientes com piso de madeira",
-    "seo": { "title": "Pisos de Madeira Triângulo: Estruturado e Revestimento | Saraiva Design",
-             "description": "Pisos de madeira Triângulo para salas, quartos, áreas gourmet e tetos. Coleções Carvalho, Sense, Creative, Nordic e Classic com representação Saraiva Design." },
-    "faixa": ["Representante Triângulo", "Piso estruturado", "Coleções exclusivas", "Origem responsável"],
-    "relacionados": ["/deck-de-madeira/", "/forro-de-madeira/", "/pergolado-de-madeira/", "/brise-de-madeira/", "/mlc/", "/forro-de-palha/"]
+    "nome": "Pisos de madeira",
+    "artigo": "os",
+    "tituloIntro": "Pisos de madeira Triângulo",
+    "tituloUsos": "Ambientes com piso de madeira",
+    "seo": {
+      "title": "Pisos de Madeira Triângulo: Estruturado e Revestimento | Saraiva Design",
+      "description": "Pisos de madeira Triângulo para salas, quartos, áreas gourmet e tetos. Coleções Carvalho, Sense, Creative, Nordic e Classic com representação Saraiva Design."
+    },
+    "faixa": [
+      "Representante Triângulo",
+      "Piso estruturado",
+      "Coleções exclusivas",
+      "Origem responsável"
+    ],
+    "relacionados": [
+      "/deck-de-madeira/",
+      "/forro-de-madeira/",
+      "/pergolado-de-madeira/",
+      "/brise-de-madeira/",
+      "/mlc/",
+      "/forro-de-palha/"
+    ]
   },
   "forro-de-madeira": {
-    "nome": "Forro de madeira", "artigo": "o",
-    "seo": { "title": "Forro de Madeira Ripado Sob Medida | Saraiva Design",
-             "description": "Forro de madeira ripado sob medida para tetos, varandas e áreas gourmet. Modelos ripado e lambril com madeiras nobres e acabamento de alto padrão." },
-    "faixa": ["Madeiras nobres", "Ripado e lambril", "Produção sob medida", "Instalação especializada"],
-    "relacionados": ["/forro-de-palha/", "/forro-em-esteiras-de-bambu/", "/brise-de-madeira/", "/pisos-de-madeira/", "/pergolado-de-madeira/", "/deck-de-madeira/"]
+    "nome": "Forro de madeira",
+    "artigo": "o",
+    "seo": {
+      "title": "Forro de Madeira Ripado Sob Medida | Saraiva Design",
+      "description": "Forro de madeira ripado sob medida para tetos, varandas e áreas gourmet. Modelos ripado e lambril com madeiras nobres e acabamento de alto padrão."
+    },
+    "faixa": [
+      "Madeiras nobres",
+      "Ripado e lambril",
+      "Produção sob medida",
+      "Instalação especializada"
+    ],
+    "relacionados": [
+      "/forro-de-palha/",
+      "/forro-em-esteiras-de-bambu/",
+      "/brise-de-madeira/",
+      "/pisos-de-madeira/",
+      "/pergolado-de-madeira/",
+      "/deck-de-madeira/"
+    ]
+  },
+  "telha-para-pergolado": {
+    "nome": "Telha para pergolado",
+    "artigo": "a",
+    "seo": {
+      "title": "Telha para Pergolado Translúcida PergoConfort | Saraiva Design",
+      "description": "Telha para pergolado PergoConfort: translúcida, com proteção UV, redução de calor e 10 anos de garantia. Proteção contra chuva, sol e granizo."
+    },
+    "faixa": [
+      "Telha translúcida",
+      "10 anos de garantia",
+      "Redução de calor",
+      "Proteção contra granizo"
+    ],
+    "relacionados": [
+      "/cobertura-para-pergolado/",
+      "/pergoconfort/",
+      "/pergoconfort-max/",
+      "/pergolado-de-madeira/",
+      "/pergolado-metalico/",
+      "/forro-de-palha/"
+    ]
+  },
+  "pergoconfort": {
+    "nome": "PergoConfort",
+    "artigo": "a",
+    "h1": "PergoConfort",
+    "tituloIntro": "Telha PergoConfort",
+    "seo": {
+      "title": "PergoConfort: Telha Translúcida para Pergolado | Saraiva Design",
+      "description": "PergoConfort, telha translúcida exclusiva da Saraiva Design: reduz o calor, filtra raios UV, resiste a granizo e tem 10 anos de garantia."
+    },
+    "faixa": [
+      "Exclusiva Saraiva Design",
+      "Translúcida",
+      "Filtro UV",
+      "10 anos de garantia"
+    ],
+    "relacionados": [
+      "/pergoconfort-max/",
+      "/telha-para-pergolado/",
+      "/cobertura-para-pergolado/",
+      "/pergolado-de-madeira/",
+      "/pergolado-metalico/",
+      "/forro-em-esteiras-de-bambu/"
+    ]
+  },
+  "pergoconfort-max": {
+    "nome": "PergoConfort Max",
+    "artigo": "a",
+    "h1": "PergoConfort Max",
+    "tituloIntro": "Telha PergoConfort Max",
+    "seo": {
+      "title": "PergoConfort Max: Telha Termoacústica para Pergolado | Saraiva Design",
+      "description": "PergoConfort Max, telha sanduíche termoacústica exclusiva da Saraiva Design para o máximo conforto térmico e acústico no seu pergolado."
+    },
+    "faixa": [
+      "Exclusiva Saraiva Design",
+      "Telha termoacústica",
+      "Máximo conforto térmico",
+      "Redução de ruído"
+    ],
+    "relacionados": [
+      "/pergoconfort/",
+      "/telha-para-pergolado/",
+      "/cobertura-para-pergolado/",
+      "/pergolado-de-madeira/",
+      "/pergolado-metalico/",
+      "/mlc/"
+    ]
+  },
+  "forro-ripado": {
+    "nome": "Forro ripado",
+    "artigo": "o",
+    "seo": {
+      "title": "Forro de Madeira Ripado Sob Medida | Saraiva Design",
+      "description": "Forro de madeira ripado sob medida, com madeiramento selecionado e montagem técnica. Variedade de espécies e acabamentos para ambientes modernos."
+    },
+    "faixa": [
+      "Madeiramento selecionado",
+      "Montagem técnica",
+      "Produção sob medida",
+      "Variedade de espécies"
+    ],
+    "relacionados": [
+      "/forro-de-lambril/",
+      "/forro-de-madeira/",
+      "/painel-ripado/",
+      "/brise-de-madeira/",
+      "/pisos-de-madeira/",
+      "/forro-de-palha/"
+    ]
+  },
+  "forro-de-lambril": {
+    "nome": "Forro de lambril",
+    "artigo": "o",
+    "seo": {
+      "title": "Forro de Lambril de Madeira Sob Medida | Saraiva Design",
+      "description": "Forro de madeira tipo lambril sob medida, com madeiramento selecionado e instalação em todo o estado de São Paulo. Ambientes sofisticados e aconchegantes."
+    },
+    "faixa": [
+      "Madeiramento selecionado",
+      "Produção sob medida",
+      "Instalação em SP",
+      "Acabamento refinado"
+    ],
+    "relacionados": [
+      "/forro-ripado/",
+      "/forro-de-madeira/",
+      "/painel-ripado/",
+      "/pisos-de-madeira/",
+      "/brise-de-madeira/",
+      "/forro-de-palha/"
+    ]
+  },
+  "painel-ripado": {
+    "nome": "Painel ripado",
+    "artigo": "o",
+    "h1": "Painel ripado",
+    "tituloIntro": "Painel ripado de madeira",
+    "seo": {
+      "title": "Painel Ripado de Madeira Sob Medida | Saraiva Design",
+      "description": "Painel ripado de madeira sob medida para paredes, fachadas, muros e áreas gourmet. Madeiras nobres e acabamento de alto padrão."
+    },
+    "faixa": [
+      "Madeiras nobres",
+      "Produção sob medida",
+      "Interno e externo",
+      "Instalação especializada"
+    ],
+    "relacionados": [
+      "/brise-de-madeira/",
+      "/forro-ripado/",
+      "/forro-de-lambril/",
+      "/deck-de-madeira/",
+      "/pisos-de-madeira/",
+      "/pergolado-de-madeira/"
+    ]
+  },
+  "caramanchao": {
+    "nome": "Caramanchão",
+    "artigo": "o",
+    "seo": {
+      "title": "Caramanchão de Madeira Sob Medida | Saraiva Design",
+      "description": "Caramanchão de madeira sob medida em madeiras nobres, com forro de palha ou bambu e telha PergoConfort. Para jardins, piscinas e áreas gourmet."
+    },
+    "faixa": [
+      "Madeiras nobres",
+      "Projeto sob medida",
+      "Telha PergoConfort",
+      "Mão de obra artesanal"
+    ],
+    "relacionados": [
+      "/gazebo/",
+      "/pergolado-de-madeira/",
+      "/cobertura-para-pergolado/",
+      "/forro-de-palha/",
+      "/deck-de-madeira/",
+      "/pergokit/"
+    ]
+  },
+  "gazebo": {
+    "nome": "Gazebo de madeira",
+    "artigo": "o",
+    "seo": {
+      "title": "Gazebo de Madeira Sob Medida | Saraiva Design",
+      "description": "Gazebo de madeira sob medida em madeiras nobres, com forro de palha ou bambu e telha PergoConfort. Para jardins, piscinas, áreas gourmet e eventos."
+    },
+    "faixa": [
+      "Madeiras nobres",
+      "Projeto sob medida",
+      "Telha PergoConfort",
+      "Mão de obra artesanal"
+    ],
+    "relacionados": [
+      "/caramanchao/",
+      "/pergolado-de-madeira/",
+      "/cobertura-para-pergolado/",
+      "/forro-de-palha/",
+      "/deck-de-madeira/",
+      "/pergokit/"
+    ]
+  },
+  "pergokit": {
+    "nome": "Pergokit",
+    "artigo": "o",
+    "h1": "Pergokit",
+    "tituloIntro": "Kit de pergolado sob medida",
+    "tituloUsos": "O que vem no Pergokit",
+    "seo": {
+      "title": "Pergokit: Kit de Pergolado Sob Medida para Todo o Brasil | Saraiva Design",
+      "description": "Pergokit, kit de pergolado sob medida completo: projeto exclusivo, madeiramento selecionado, metais, forros, cobertura e envio para todo o Brasil."
+    },
+    "faixa": [
+      "Projeto exclusivo",
+      "Kit completo",
+      "Manual de instalação",
+      "Envio para todo o Brasil"
+    ],
+    "relacionados": [
+      "/pergolado-de-madeira/",
+      "/pergolado-metalico/",
+      "/cobertura-para-pergolado/",
+      "/forro-de-palha/",
+      "/forro-em-esteiras-de-bambu/",
+      "/deck-de-madeira/"
+    ]
+  },
+  "deck-modular": {
+    "nome": "Deck modular",
+    "artigo": "o",
+    "seo": {
+      "title": "Deck Modular de Madeira Cumaru | Saraiva Design",
+      "description": "Deck modular de madeira cumaru tipo exportação, com a melhor fixação do mercado, para piscinas, hidros, áreas gourmet e jardins."
+    },
+    "faixa": [
+      "Cumaru tipo exportação",
+      "Fixação oculta",
+      "Fácil instalação",
+      "Envio para todo o Brasil"
+    ],
+    "relacionados": [
+      "/deck-de-madeira/",
+      "/deck-hidro-spa/",
+      "/pisos-de-madeira/",
+      "/pergolado-de-madeira/",
+      "/painel-ripado/",
+      "/brise-de-madeira/"
+    ]
+  },
+  "deck-hidro-spa": {
+    "nome": "Deck hidro-spa",
+    "artigo": "o",
+    "h1": "Deck para hidro e spa",
+    "seo": {
+      "title": "Deck de Madeira para Hidro e Spa | Saraiva Design",
+      "description": "Deck de madeira cumaru para hidromassagem e spa, sob medida e com a melhor fixação do mercado. Acabamento de alto padrão e resistência à umidade."
+    },
+    "faixa": [
+      "Cumaru tipo exportação",
+      "Resistente à umidade",
+      "Projeto sob medida",
+      "Instalação especializada"
+    ],
+    "relacionados": [
+      "/deck-de-madeira/",
+      "/deck-modular/",
+      "/pisos-de-madeira/",
+      "/pergolado-de-madeira/",
+      "/painel-ripado/",
+      "/cobertura-para-pergolado/"
+    ]
+  },
+  "pergoplac": {
+    "nome": "PergoPlac",
+    "artigo": "a",
+    "h1": "PergoPlac",
+    "tituloIntro": "Placa térmica PergoPlac",
+    "seo": {
+      "title": "PergoPlac: Isolamento Térmico para Pergolado | Saraiva Design",
+      "description": "PergoPlac, placa instalada entre o forro e a cobertura do pergolado para reduzir o calor e melhorar o conforto térmico do ambiente."
+    },
+    "faixa": [
+      "Redução de calor",
+      "Entre forro e cobertura",
+      "Conforto térmico",
+      "Fácil instalação"
+    ],
+    "relacionados": [
+      "/pergoconfort/",
+      "/pergoconfort-max/",
+      "/cobertura-para-pergolado/",
+      "/forro-de-palha/",
+      "/forro-em-esteiras-de-bambu/",
+      "/pergolado-de-madeira/"
+    ]
   }
 }

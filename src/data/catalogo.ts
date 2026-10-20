@@ -1,12 +1,12 @@
 // Catálogo de produtos: usado nos cards da home e em "Outros produtos" das páginas internas.
-import imgPergoladoMetalico from '../assets/img/pergolado-metalico.png';
-import imgForroMadeira from '../assets/img/forro-de-madeira.png';
-import imgForroBambu from '../assets/img/forro-de-bambu.png';
+import imgPergoladoMetalico from '../assets/img/pergolado-metalico.jpg';
+import imgForroMadeira from '../assets/img/forro-de-madeira.jpg';
+import imgForroBambu from '../assets/img/forro-de-bambu.jpg';
 import imgForroPalha from '../assets/img/forro-de-palha.webp';
-import imgBrises from '../assets/img/brises.png';
-import imgCoberturas from '../assets/img/coberturas.png';
-import imgDecks from '../assets/img/decks.png';
-import imgMlc from '../assets/img/pergolado-mlc.png';
+import imgBrises from '../assets/img/brises.jpg';
+import imgCoberturas from '../assets/img/coberturas.jpg';
+import imgDecks from '../assets/img/decks.jpg';
+import imgMlc from '../assets/img/pergolado-mlc.jpg';
 import imgPergoladoMadeira from '../assets/img/pergolado-de-madeira.jpg';
 
 export interface ProdutoCatalogo {
