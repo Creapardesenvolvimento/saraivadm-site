@@ -167,9 +167,9 @@ const schema = [
 
       <div class="pm-modelo">
         <div class="pm-modelo__fotos">
-          <Image src={caixa1} alt="Pergolado de madeira modelo caixa em 3D" widths={[400, 700]} sizes="(max-width: 600px) 100vw, 380px" />
-          <Image src={caixa2} alt="Pergolado de madeira sem beiral ao lado da piscina" widths={[400, 700]} sizes="(max-width: 600px) 100vw, 380px" />
-          <Image src={caixa3} alt="Pergolado de madeira modelo caixa em área externa" widths={[400, 700]} sizes="(max-width: 600px) 100vw, 380px" />
+          <Image src={caixa1} alt="Pergolado de madeira modelo caixa em 3D" widths={[600, 1200, 1600]} sizes="(max-width: 900px) 100vw, 600px" />
+          <Image src={caixa2} alt="Pergolado de madeira sem beiral ao lado da piscina" widths={[480, 800, 1200]} sizes="(max-width: 600px) 100vw, 380px" />
+          <Image src={caixa3} alt="Pergolado de madeira modelo caixa em área externa" widths={[480, 800, 1200]} sizes="(max-width: 600px) 100vw, 380px" />
         </div>
         <div class="pm-modelo__texto">
           <h3>Modelo caixa (sem beiral)</h3>
@@ -188,9 +188,9 @@ const schema = [
 
       <div class="pm-modelo pm-modelo--inv">
         <div class="pm-modelo__fotos">
-          <Image src={beiral1} alt="Pergolado de madeira com beiral em 3D" widths={[400, 700]} sizes="(max-width: 600px) 100vw, 380px" />
-          <Image src={beiral2} alt="Pergolado de madeira com beiral em jardim" widths={[400, 700]} sizes="(max-width: 600px) 100vw, 380px" />
-          <Image src={beiral3} alt="Pergolado de madeira com beiral e cobertura" widths={[400, 700]} sizes="(max-width: 600px) 100vw, 380px" />
+          <Image src={beiral1} alt="Pergolado de madeira com beiral em 3D" widths={[600, 1200, 1600]} sizes="(max-width: 900px) 100vw, 600px" />
+          <Image src={beiral2} alt="Pergolado de madeira com beiral em jardim" widths={[480, 800, 1200]} sizes="(max-width: 600px) 100vw, 380px" />
+          <Image src={beiral3} alt="Pergolado de madeira com beiral e cobertura" widths={[480, 800, 1200]} sizes="(max-width: 600px) 100vw, 380px" />
         </div>
         <div class="pm-modelo__texto">
           <h3>Modelo com beiral</h3>
@@ -228,7 +228,7 @@ const schema = [
           artefato de desejo, requinte e solução para a arquitetura moderna e contemporânea.
         </p>
       </div>
-      <Image src={madeira} alt="Mascote da Saraiva Design carregando pranchas de madeira nobre" widths={[400, 700]} sizes="(max-width: 900px) 100vw, 480px" class="pm-madeira__img" />
+      <Image src={madeira} alt="Mascote da Saraiva Design carregando pranchas de madeira nobre" widths={[480, 800, 1200]} sizes="(max-width: 900px) 100vw, 480px" class="pm-madeira__img" />
     </div>
   </section>
 
@@ -243,7 +243,7 @@ const schema = [
         {
           conteudo.usos.map((u) => (
             <article class="pm-uso">
-              <Image src={img(u.imagem.arquivo)} alt={u.imagem.alt} widths={[500, 800]} sizes="(max-width: 900px) 100vw, 560px" class="pm-uso__img" />
+              <Image src={img(u.imagem.arquivo)} alt={u.imagem.alt} widths={[600, 1120, 1600]} sizes="(max-width: 900px) 100vw, 560px" class="pm-uso__img" />
               <div class="pm-uso__texto">
                 <h3>{u.titulo}</h3>
                 <div set:html={u.html} />
@@ -297,7 +297,7 @@ const schema = [
   <!-- ================= FOLDER ================= -->
   <section class="pm-folder">
     <div class="sar-wrap pm-folder__grid">
-      <Image src={folderCapa} alt="Capa do folder do pergolado de madeira Saraiva Design" widths={[300, 500]} sizes="260px" class="pm-folder__img" />
+      <Image src={folderCapa} alt="Capa do folder do pergolado de madeira Saraiva Design" widths={[300, 520, 780]} sizes="260px" class="pm-folder__img" />
       <div>
         <h2 class="pm-h2 titulo-secao">Faça o download do nosso folder e fique por dentro das novidades</h2>
         <p>Modelos, medidas, acabamentos e opções de cobertura do pergolado de madeira em um só arquivo.</p>

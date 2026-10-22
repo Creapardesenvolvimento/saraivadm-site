@@ -310,3 +310,14 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - Nome da página: campo `nome` do JSON (páginas geradas), fixo nas páginas de pergolado, ou o início do `<title>`
   (antes de "|" ou ":"). Para trocar em uma página, passe `pagina="..."` no `<Base>`.
 - Código: `src/components/WhatsAppFlutuante.astro`, mensagem em `src/data/site.ts` (`mensagemFlutuante`).
+
+---
+
+## 2026-10-22 — Qualidade das imagens
+
+- As fotos eram geradas pequenas demais (ex.: 700px para um card de 380px em tela retina) e com compressão alta
+  (qualidade 70). Agora: qualidade 82, versões maiores para telas retina (cards até 1200px, blocos até 1600px,
+  topo até 2400px, galeria ampliada 2000px a 85). O navegador continua baixando só o tamanho necessário.
+- `sizes` corrigido nas fotos grandes dos modelos (pergolado de madeira), que eram exibidas maiores que o declarado.
+- Limite restante: algumas fotos do topo são menores que a tela no arquivo original (home 1494px, pergolado metálico
+  1280px em retrato, demais 1600px). Para ficarem nítidas em 1920px+, é preciso foto original maior (2400px+).

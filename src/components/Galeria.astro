@@ -9,7 +9,7 @@ interface Props {
 }
 const { fotos, colunas = 4 } = Astro.props;
 
-const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width: 1600, format: 'webp', quality: 78 })));
+const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width: 2000, format: 'webp', quality: 85 })));
 ---
 
 <div class="gal" style={`--gal-cols:${colunas}`}>
@@ -18,7 +18,7 @@ const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width:
       fotos.map((f, i) => (
         <li>
           <button type="button" class="gal__item" data-full={grandes[i].src} data-alt={f.alt} aria-label={`Ampliar foto: ${f.alt}`}>
-            <Image src={f.src} alt={f.alt} widths={[400, 700]} sizes={`(max-width: 600px) 50vw, (max-width: 900px) 33vw, ${Math.round(1180 / colunas)}px`} quality={70} />
+            <Image src={f.src} alt={f.alt} widths={[480, 800, 1200]} sizes={`(max-width: 600px) 50vw, (max-width: 900px) 33vw, ${Math.round(1180 / colunas)}px`} quality={82} />
           </button>
         </li>
       ))

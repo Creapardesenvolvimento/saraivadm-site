@@ -10,7 +10,7 @@ interface Props {
   largura?: number;
 }
 const { id, capa, titulo, largura = 700 } = Astro.props;
-const img = await getImage({ src: capa, width: largura, format: 'webp', quality: 75 });
+const img = await getImage({ src: capa, width: largura, format: 'webp', quality: 82 });
 ---
 
 <button
