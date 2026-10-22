@@ -296,7 +296,17 @@ const atual = Astro.url.pathname;
     color: #6d5c55;
   }
   .sar-mega__intro .btn {
-    margin-top: auto;
+    width: 100%;
+    min-height: 40px;
+    margin-top: 6px;
+    padding: 0 14px;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    gap: 8px;
+  }
+  .sar-mega__intro .btn :global(svg) {
+    width: 15px;
+    height: 15px;
   }
   .sar-mega__grid {
     display: grid;
