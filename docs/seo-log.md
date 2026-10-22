@@ -288,3 +288,12 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - Fotos vêm automaticamente da capa de cada página (`src/lib/imagemDaPagina.ts`); descrições em `src/data/site.ts`.
 - No celular o menu continua em lista simples (as fotos nem são carregadas).
 - SEO: os links continuam sendo links HTML comuns (rastreáveis), agora com texto descritivo.
+
+---
+
+## 2026-10-22 — Primeira dobra em tela cheia em todas as páginas
+
+- O topo de todas as páginas internas (produtos, institucionais, catálogos, contato, redes sociais) agora ocupa a
+  primeira dobra inteira, igual à home, com o mesmo tamanho de título (86px em 1920px), texto e botões.
+- A faixa marrom de diferenciais fica logo abaixo da dobra, como na home.
+- Página Institucional ganhou o texto de apoio no topo ("Atendendo todo o Brasil com projetos em madeira, aço, bambu e palha…").

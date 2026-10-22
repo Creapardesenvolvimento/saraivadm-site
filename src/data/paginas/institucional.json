@@ -7,7 +7,7 @@
  },
  "hero": {
   "titulo": "Sobre a Saraiva Design",
-  "texto": null,
+  "texto": "Atendendo todo o Brasil com projetos em madeira, aço, bambu e palha. Com a alma familiar e excelência em cada detalhe.",
   "imagem": "010-capa-site-artes-novo-industria.jpg"
  },
  "faixa": [
@@ -31,7 +31,7 @@
   {
    "tipo": "conteudo",
    "titulo": "Quem somos",
-   "lead": "Atendendo todo o Brasil com Projetos em Madeira, Aço, Bambu e Palha. Com a alma familiar e excelência em cada detalhe",
+   "lead": null,
    "blocos": [
     {
      "t": "html",

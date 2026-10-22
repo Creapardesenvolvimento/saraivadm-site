@@ -481,7 +481,8 @@
       "/forro-em-esteiras-de-bambu/",
       "/deck-de-madeira/"
     ],
-    "semUsos": true
+    "semUsos": true,
+    "textoHero": "Atendendo todo o Brasil com projetos em madeira, aço, bambu e palha. Com a alma familiar e excelência em cada detalhe."
   },
   "sustentabilidade": {
     "nome": "Sustentabilidade",

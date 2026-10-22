@@ -319,7 +319,7 @@ saida = {
     'slug': slug,
     'nome': nome,
     'seo': cfg['seo'],
-    'hero': {'titulo': cfg.get('h1') or nome, 'texto': hero_texto, 'imagem': hero_arq},
+    'hero': {'titulo': cfg.get('h1') or nome, 'texto': cfg.get('textoHero') or hero_texto, 'imagem': hero_arq},
     'faixa': cfg.get('faixa'),
     'tipo': cfg.get('tipo', 'produto'),
     'botoes': cfg.get('botoes'),
