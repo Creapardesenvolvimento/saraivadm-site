@@ -1,0 +1,105 @@
+---
+// Botão de WhatsApp fixo no canto da tela, em todas as páginas.
+// A mensagem diz de qual página o cliente veio (definida pelo layout Base).
+import IconeWhatsApp from './IconeWhatsApp.astro';
+import { whatsappFlutuanteUrl } from '../data/site';
+
+interface Props {
+  /** Nome da página (ex.: "Pergolado de madeira"). Vazio = home ("site principal"). */
+  pagina?: string;
+}
+const { pagina } = Astro.props;
+---
+
+<a
+  class="wa-flutuante"
+  href={whatsappFlutuanteUrl(pagina)}
+  target="_blank"
+  rel="noopener"
+  aria-label="Falar com a Saraiva Design no WhatsApp"
+>
+  <IconeWhatsApp />
+  <span class="wa-flutuante__dica" aria-hidden="true">Fale conosco</span>
+</a>
+
+<style>
+  .wa-flutuante {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 90;
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: var(--raio);
+    background: #25d366;
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+  .wa-flutuante :global(svg) {
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+  }
+  .wa-flutuante::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 2px solid #25d366;
+    animation: wa-pulso 2.4s ease-out infinite;
+    pointer-events: none;
+  }
+  .wa-flutuante:hover,
+  .wa-flutuante:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+  }
+  .wa-flutuante__dica {
+    position: absolute;
+    right: calc(100% + 12px);
+    top: 50%;
+    padding: 8px 12px;
+    border-radius: var(--raio);
+    background: var(--sar-marrom-escuro, #3a2a24);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translate(6px, -50%);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+    pointer-events: none;
+  }
+  .wa-flutuante:hover .wa-flutuante__dica,
+  .wa-flutuante:focus-visible .wa-flutuante__dica {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+  @keyframes wa-pulso {
+    0% { opacity: 0.7; transform: scale(1); }
+    70%, 100% { opacity: 0; transform: scale(1.35); }
+  }
+  @media (max-width: 600px) {
+    .wa-flutuante {
+      right: 16px;
+      bottom: 16px;
+      width: 54px;
+      height: 54px;
+    }
+    .wa-flutuante :global(svg) { width: 28px; height: 28px; }
+    .wa-flutuante__dica { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .wa-flutuante::after { animation: none; }
+  }
+  @media print {
+    .wa-flutuante { display: none; }
+  }
+</style>

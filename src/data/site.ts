@@ -42,7 +42,19 @@ export const whatsappUrl = (
   mensagem = 'Olá! Vim pelo site e gostaria de um orçamento.',
 ) => `https://wa.me/${site.telefones[0].whatsapp}?text=${encodeURIComponent(mensagem)}`;
 
-export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+/** Mensagem do botão flutuante: diz de qual página o cliente veio. Sem página = home. */
+export const mensagemFlutuante = (pagina?: string) =>
+  pagina
+    ? `Olá, estou na página ${pagina} do site, quero saber mais informações`
+    : 'Olá, estou no site principal, quero saber mais informações';
+
+/** Link do botão flutuante, no formato api.whatsapp.com pedido pelo cliente. */
+export const whatsappFlutuanteUrl = (pagina?: string) =>
+  `https://api.whatsapp.com/send/?phone=${site.telefones[0].whatsapp}&text=${encodeURIComponent(
+    mensagemFlutuante(pagina),
+  )}&type=phone_number&app_absent=0`;
+
+export const mapsUrl =`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
   `${site.endereco.rua} - ${site.endereco.bairro}, ${site.endereco.cidade} - ${site.endereco.uf}`,
 )}`;
 

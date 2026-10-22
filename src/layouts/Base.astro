@@ -6,6 +6,7 @@ import '../styles/global.css';
 import { getImage } from 'astro:assets';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import WhatsAppFlutuante from '../components/WhatsAppFlutuante.astro';
 import { site } from '../data/site';
 import ogPadrao from '../assets/img/hero-pergolado-piscina.jpg';
 
@@ -24,6 +25,8 @@ interface Props {
   headerSobreposto?: boolean;
   /** 'website' ou 'article' */
   ogType?: 'website' | 'article';
+  /** Nome da página na mensagem do WhatsApp flutuante. Padrão: início do <title>. */
+  pagina?: string;
 }
 
 const {
@@ -34,7 +37,12 @@ const {
   schema = [],
   headerSobreposto = false,
   ogType = 'website',
+  pagina,
 } = Astro.props;
+
+// Home = "site principal"; nas demais, o nome da página (ou o início do título, antes de "|" e ":").
+const paginaWhats =
+  Astro.url.pathname === '/' ? undefined : (pagina ?? title.split('|')[0].split(':')[0].trim());
 
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const og = await getImage({ src: image, width: 1200, format: 'jpg', quality: 80 });
@@ -74,6 +82,7 @@ const ogUrl = new URL(og.src, site.url).href;
       <slot />
     </main>
     <Footer />
+    <WhatsAppFlutuante pagina={paginaWhats} />
     <script>
       import '../scripts/animacoes';
     </script>

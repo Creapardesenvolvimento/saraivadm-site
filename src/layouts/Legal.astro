@@ -11,7 +11,7 @@ interface Props {
 const { title, description, titulo, atualizado } = Astro.props;
 ---
 
-<Base title={title} description={description}>
+<Base title={title} description={description} pagina={titulo}>
   <article class="legal">
     <div class="legal__wrap">
       <nav class="legal__trilha" aria-label="Você está em"><a href="/">Início</a> › {titulo}</nav>

@@ -297,3 +297,16 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
   primeira dobra inteira, igual à home, com o mesmo tamanho de título (86px em 1920px), texto e botões.
 - A faixa marrom de diferenciais fica logo abaixo da dobra, como na home.
 - Página Institucional ganhou o texto de apoio no topo ("Atendendo todo o Brasil com projetos em madeira, aço, bambu e palha…").
+
+---
+
+## 2026-10-22 — Botão flutuante de WhatsApp em todas as páginas
+
+- Botão verde fixo no canto inferior direito, em todas as páginas, com a mensagem dizendo de onde o cliente veio:
+  - Home: "Olá, estou no site principal, quero saber mais informações"
+  - Demais: "Olá, estou na página **[nome da página]** do site, quero saber mais informações"
+    (ex.: "Forro de palha", "Pergolado metálico", "Contato", título do post no blog).
+- Link no formato `api.whatsapp.com/send/?phone=551151943920&text=…&type=phone_number&app_absent=0`.
+- Nome da página: campo `nome` do JSON (páginas geradas), fixo nas páginas de pergolado, ou o início do `<title>`
+  (antes de "|" ou ":"). Para trocar em uma página, passe `pagina="..."` no `<Base>`.
+- Código: `src/components/WhatsAppFlutuante.astro`, mensagem em `src/data/site.ts` (`mensagemFlutuante`).
