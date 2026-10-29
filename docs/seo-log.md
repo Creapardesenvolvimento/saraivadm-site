@@ -329,3 +329,10 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - Todos os botões do conteúdo têm agora o mesmo tamanho do "Conhecer blog" (54px de altura, texto 14px), inclusive
   os do topo das páginas e os dos cards de contato, catálogos e redes sociais. Só o botão do menu continua menor.
 - No celular, os botões dos cards de contato ocupam a largura do card, para não estourar a tela.
+
+---
+
+## 2026-10-29 — Mascote sem fundo branco (pergolado metálico)
+
+- A imagem do mascote na seção "Tipos de pergolado metálico" (`src/assets/img/pergolado-metalico/tipos.png`) agora
+  tem fundo transparente, com uma sombra suave nos pés, e fica direto sobre o fundo marrom da seção.
