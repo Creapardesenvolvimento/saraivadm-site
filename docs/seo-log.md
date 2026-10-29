@@ -321,3 +321,11 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - `sizes` corrigido nas fotos grandes dos modelos (pergolado de madeira), que eram exibidas maiores que o declarado.
 - Limite restante: algumas fotos do topo são menores que a tela no arquivo original (home 1494px, pergolado metálico
   1280px em retrato, demais 1600px). Para ficarem nítidas em 1920px+, é preciso foto original maior (2400px+).
+
+---
+
+## 2026-10-29 — Tamanho único dos botões
+
+- Todos os botões do conteúdo têm agora o mesmo tamanho do "Conhecer blog" (54px de altura, texto 14px), inclusive
+  os do topo das páginas e os dos cards de contato, catálogos e redes sociais. Só o botão do menu continua menor.
+- No celular, os botões dos cards de contato ocupam a largura do card, para não estourar a tela.

@@ -169,7 +169,7 @@ html.js-anima [data-revelar].is-visivel {
    Todos os botões do site usam .btn + uma cor:
    .btn--creme (claro)  .btn--contorno (vazado claro)  .btn--verde
    .btn--escuro-contorno (vazado escuro)  .btn--branco  .btn--waze
-   Tamanhos: .btn--grande (topo) e .btn--pequeno (menu).
+   Tamanho único em todo o conteúdo; só .btn--pequeno (menu) é menor.
    Animação única: a cor de destaque "preenche" o botão da esquerda para a direita
    e ele sobe levemente. */
 .btn {
@@ -272,16 +272,10 @@ html.js-anima [data-revelar].is-visivel {
   --btn-hover-fundo: #1fb5e8;
 }
 
-.btn--grande {
-  min-height: 64px;
-  padding: 0 40px;
-  font-size: clamp(15px, 1.15vw, 20px);
-  letter-spacing: 0.16em;
-}
-.btn--grande svg {
-  width: 24px;
-  height: 24px;
-}
+/* .btn--grande mantido só por compatibilidade: todos os botões do conteúdo têm o mesmo
+   tamanho padrão (o do "Conhecer blog"). */
+/* (classe sem estilo próprio) */
+
 .btn--pequeno {
   min-height: 44px;
   padding: 0 20px;

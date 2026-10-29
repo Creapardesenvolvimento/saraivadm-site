@@ -56,12 +56,12 @@ const schema = [
               </p>
             ))
           }
-          <a class="btn btn--verde btn--pequeno" href={whatsappUrl()} target="_blank" rel="noopener"><IconeWhatsApp />Chamar no WhatsApp</a>
+          <a class="btn btn--verde" href={whatsappUrl()} target="_blank" rel="noopener"><IconeWhatsApp />Chamar no WhatsApp</a>
         </li>
         <li class="ct-card">
           <h3>E-mail</h3>
           <p class="ct-linha"><a href={`mailto:${site.email}`}>{site.email}</a></p>
-          <a class="btn btn--escuro-contorno btn--pequeno" href={`mailto:${site.email}`}>Enviar e-mail</a>
+          <a class="btn btn--escuro-contorno" href={`mailto:${site.email}`}>Enviar e-mail</a>
         </li>
         <li class="ct-card">
           <h3>Showroom</h3>
@@ -70,8 +70,8 @@ const schema = [
             {site.endereco.bairro}, {site.endereco.cidade}-{site.endereco.uf}
           </address>
           <div class="ct-acoes">
-            <a class="btn btn--branco btn--pequeno" href={mapsUrl} target="_blank" rel="noopener">Google Maps</a>
-            <a class="btn btn--waze btn--pequeno" href={wazeUrl} target="_blank" rel="noopener">Waze</a>
+            <a class="btn btn--branco" href={mapsUrl} target="_blank" rel="noopener">Google Maps</a>
+            <a class="btn btn--waze" href={wazeUrl} target="_blank" rel="noopener">Waze</a>
           </div>
         </li>
       </ul>
@@ -158,6 +158,13 @@ const schema = [
     }
     .ct-mapa {
       height: 320px;
+    }
+  }
+  @media (max-width: 600px) {
+    .ct-card .btn {
+      width: 100%;
+      padding: 0 16px;
+      letter-spacing: 0.08em;
     }
   }
 </style>
