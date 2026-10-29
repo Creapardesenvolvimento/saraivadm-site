@@ -53,7 +53,7 @@ const videos = [
 ];
 
 const relacionados = catalogo.filter((p) =>
-  ['/pergolado-de-madeira/', '/pergolado-mlc/', '/coberturas/', '/forro-de-palha/', '/forro-de-bambu/', '/forro-de-madeira/'].includes(p.href),
+  ['/pergolado-de-madeira/', '/mlc/', '/cobertura-para-pergolado/', '/forro-de-palha/', '/forro-em-esteiras-de-bambu/', '/forro-de-madeira/'].includes(p.href),
 );
 
 // ---------- Dados estruturados ----------
@@ -236,7 +236,7 @@ const schema = [
       <div>
         <h2 class="pm-h2 titulo-secao">Faça o download do nosso folder e fique por dentro das novidades</h2>
         <p>Modelos, medidas, acabamentos e opções de cobertura do pergolado metálico em um só arquivo.</p>
-        <a class="btn btn--creme pm-btn" href={folderUrl} target="_blank" rel="noopener">Baixar o folder (PDF)</a>
+        <a class="btn btn--creme pm-btn" href={folderUrl} target="_blank" rel="noopener" data-folder="Folder Pergolado Metálico">Baixar o folder (PDF)</a>
       </div>
     </div>
   </section>

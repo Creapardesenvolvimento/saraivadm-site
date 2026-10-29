@@ -10,6 +10,9 @@ $REMETENTE = getenv('SMTP_FROM') ?: getenv('SMTP_USER') ?: 'site@saraivadm.com.b
 $OBRIGADO  = '/obrigado/';
 // ========================
 
+// Pedido de download de folder (popup): responde em JSON em vez de redirecionar.
+$FOLDER = ($_POST['tipo'] ?? '') === 'folder';
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: /', true, 303);
     exit;
@@ -22,6 +25,13 @@ function campo(string $nome, int $max = 200): string {
 }
 
 function falhar(string $msg): void {
+    global $FOLDER;
+    if ($FOLDER) {
+        http_response_code(400);
+        header('Content-Type: application/json; charset=utf-8');
+        echo json_encode(['ok' => false, 'erro' => $msg]);
+        exit;
+    }
     http_response_code(400);
     header('Content-Type: text/html; charset=utf-8');
     echo '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
@@ -34,6 +44,11 @@ function falhar(string $msg): void {
 // Anti-spam: campo invisível preenchido ou envio rápido demais = robô.
 $ts = (int)($_POST['ts'] ?? 0);
 if (!empty($_POST['website']) || ($ts > 0 && time() - $ts < 3)) {
+    if ($FOLDER) {
+        header('Content-Type: application/json; charset=utf-8');
+        echo json_encode(['ok' => true]);
+        exit;
+    }
     header('Location: ' . $OBRIGADO, true, 303);
     exit;
 }
@@ -45,15 +60,19 @@ $cidade   = campo('cidade', 100);
 $origem   = campo('origem', 200);
 $mensagem = mb_substr(trim((string)($_POST['mensagem'] ?? '')), 0, 3000);
 
-if ($nome === '' || $telefone === '' || $cidade === '') {
+if ($FOLDER) {
+    if ($nome === '' || $telefone === '') {
+        falhar('Preencha nome e WhatsApp.');
+    }
+} elseif ($nome === '' || $telefone === '' || $cidade === '') {
     falhar('Preencha nome, telefone e cidade.');
 }
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     falhar('Informe um e-mail válido.');
 }
 
-$assunto = 'Novo contato pelo site - ' . $nome;
-$corpo = "Novo contato recebido pelo site saraivadm.com.br\n\n"
+$assunto = ($FOLDER ? 'Download de folder pelo site - ' : 'Novo contato pelo site - ') . $nome;
+$corpo = ($FOLDER ? "Pedido de download de folder pelo site saraivadm.com.br\n\n" : "Novo contato recebido pelo site saraivadm.com.br\n\n")
        . "Nome: {$nome}\n"
        . "Telefone: {$telefone}\n"
        . "E-mail: {$email}\n"
@@ -73,6 +92,12 @@ $ok = mail($DESTINO, '=?UTF-8?B?' . base64_encode($assunto) . '?=', $corpo, impl
 
 if (!$ok) {
     falhar('Tente novamente em instantes ou fale conosco pelo WhatsApp.');
+}
+
+if ($FOLDER) {
+    header('Content-Type: application/json; charset=utf-8');
+    echo json_encode(['ok' => true]);
+    exit;
 }
 
 header('Location: ' . $OBRIGADO, true, 303);

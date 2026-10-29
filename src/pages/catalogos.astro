@@ -54,7 +54,7 @@ const schema = [
           </header>
           <ul class:list={['cat-grid', { 'cat-grid--retrato': g.retrato }]}>
             {g.itens.map((c) => (
-              <li class="cat-card">
+              <li class="cat-card" data-folder-titulo={c.titulo}>
                 <a class="cat-card__capa" href={c.pdf} target="_blank" rel="noopener" aria-label={`Baixar ${c.titulo} (PDF)`}>
                   <Image src={c.capa} alt={`Capa: ${c.titulo}`} widths={[480, 800, 1200]} sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" />
                 </a>

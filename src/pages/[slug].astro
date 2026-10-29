@@ -59,6 +59,11 @@ const relacionados: ProdutoCatalogo[] = (p.relacionados ?? [])
     return pg && capa ? { nome: pg.nome, href, img: capa, alt: pg.nome } : null;
   })
   .filter(Boolean);
+// "Complete seu projeto" sempre com pelo menos 3 opções: completa com produtos do catálogo
+for (const c of catalogo) {
+  if (relacionados.length >= 3) break;
+  if (c.href !== `/${slug}/` && !relacionados.some((r) => r.href === c.href)) relacionados.push(c);
+}
 
 // ---------- Dados estruturados ----------
 const url = `${site.url}/${slug}/`;
@@ -149,7 +154,7 @@ if (duvidas) {
               <div>
                 <h2 class="titulo-secao">Faça o download do nosso folder e fique por dentro das novidades</h2>
                 <p>Modelos, medidas e acabamentos de {nomeMin} em um só arquivo.</p>
-                <a class="btn btn--creme pm-btn" href={s.href} target="_blank" rel="noopener">Baixar o folder (PDF)</a>
+                <a class="btn btn--creme pm-btn" href={s.href} target="_blank" rel="noopener" data-folder={`Folder ${nome}`}>Baixar o folder (PDF)</a>
               </div>
             </div>
           </section>

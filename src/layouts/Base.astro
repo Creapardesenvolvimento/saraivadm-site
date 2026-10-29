@@ -7,6 +7,7 @@ import { getImage } from 'astro:assets';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppFlutuante from '../components/WhatsAppFlutuante.astro';
+import FolderPopup from '../components/FolderPopup.astro';
 import { site } from '../data/site';
 import ogPadrao from '../assets/img/hero-pergolado-piscina.jpg';
 
@@ -83,6 +84,7 @@ const ogUrl = new URL(og.src, site.url).href;
     </main>
     <Footer />
     <WhatsAppFlutuante pagina={paginaWhats} />
+    <FolderPopup />
     <script>
       import '../scripts/animacoes';
     </script>

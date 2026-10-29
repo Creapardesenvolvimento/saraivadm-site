@@ -336,3 +336,17 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 
 - A imagem do mascote na seção "Tipos de pergolado metálico" (`src/assets/img/pergolado-metalico/tipos.png`) agora
   tem fundo transparente, com uma sombra suave nos pés, e fica direto sobre o fundo marrom da seção.
+
+---
+
+## 2026-10-29 — Popup para baixar folders + "Complete seu projeto" sempre completo
+
+- **Download com cadastro:** todo link para PDF do site (folders das páginas de produto, folders e tabelas da página
+  Catálogos) abre um popup pedindo **nome, WhatsApp e e-mail**. Ao enviar, o pedido chega por e-mail
+  ("Download de folder pelo site - Nome", com a página e o arquivo) e o botão "Baixar o PDF" é liberado.
+  Depois de preencher uma vez, o visitante baixa os outros PDFs direto (fica salvo no navegador dele).
+- Código: `src/components/FolderPopup.astro` (incluído em todas as páginas pelo `Base`) e `public/enviar.php`
+  (modo `tipo=folder`, responde em JSON). **Depende do SMTP configurado no Easypanel** para os e-mails chegarem;
+  se o envio falhar, o download é liberado mesmo assim, para não travar o visitante.
+- **Complete seu projeto:** as páginas de pergolado de madeira e metálico mostravam só 2 produtos porque apontavam
+  para endereços antigos; agora mostram 6, como as demais. Páginas geradas completam automaticamente até no mínimo 3.
