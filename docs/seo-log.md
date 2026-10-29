@@ -350,3 +350,11 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
   se o envio falhar, o download é liberado mesmo assim, para não travar o visitante.
 - **Complete seu projeto:** as páginas de pergolado de madeira e metálico mostravam só 2 produtos porque apontavam
   para endereços antigos; agora mostram 6, como as demais. Páginas geradas completam automaticamente até no mínimo 3.
+
+---
+
+## 2026-10-29 — Textos na largura da página
+
+- Nos textos corridos das páginas de produto e institucionais (ex.: MLC), a coluna de texto tinha 820px enquanto as
+  fotos ocupavam 1132px. Agora textos, subtítulos e o parágrafo de abertura das seções ocupam a largura inteira do
+  conteúdo, alinhados com as fotos. Colunas lado a lado (texto + foto, dúvidas) continuam como estavam.

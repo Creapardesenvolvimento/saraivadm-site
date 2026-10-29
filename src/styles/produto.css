@@ -26,7 +26,7 @@
     color: rgba(243, 234, 219, 0.8);
   }
   .pm-head {
-    max-width: 780px;
+    max-width: 100%;
     margin: 0 auto var(--secao-head);
     text-align: center;
   }
@@ -280,7 +280,7 @@
   }
   .pm-fluxo__texto {
     width: 100%;
-    max-width: 820px;
+    max-width: 100%;
     margin: 0 auto;
     font-size: 16px;
     line-height: 1.75;
@@ -304,7 +304,7 @@
   }
   .pm-fluxo__sub {
     margin: var(--gap) auto 0;
-    max-width: 820px;
+    max-width: 100%;
     width: 100%;
     font-family: var(--fonte-titulos);
     font-size: clamp(20px, 1.8vw, 26px);
