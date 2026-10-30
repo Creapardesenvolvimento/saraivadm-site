@@ -403,3 +403,9 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - **Vídeos:** vídeos em sequência ficam lado a lado, com legenda centralizada embaixo de cada um (ex.: Floresta Manoa,
   em Pisos de madeira). No celular, um embaixo do outro.
 - **Botões no celular:** textos longos agora quebram linha, em vez de estourar a largura da tela.
+
+## 2026-10-30 — Galerias sem corte, logos de coleção e menu em notebooks
+
+- Galerias do site inteiro: cada foto aparece inteira, na proporção original. Fotos de mesma proporção formam grade; proporções diferentes formam fileiras de mesma altura.
+- Forro de Palha e Forro de Bambu: logotipos das coleções (Time Line, Fibré, Bamboo Concept) reduzidos para no máximo 340×200px.
+- Menu: corrigida a rolagem lateral em telas menores que 1760px; tamanhos ajustados por largura e menu de celular a partir de 1240px.

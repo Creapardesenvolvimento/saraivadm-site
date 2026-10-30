@@ -9,14 +9,18 @@ interface Props {
 }
 const { fotos, colunas = 4 } = Astro.props;
 
+// Cada foto aparece inteira: fotos de mesma proporção formam uma grade; proporções diferentes, fileiras de mesma altura.
+const proporcoes = fotos.map((f) => f.src.width / f.src.height);
+const mista = proporcoes.some((p) => Math.abs(p / proporcoes[0] - 1) > 0.01);
+
 const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width: 2000, format: 'webp', quality: 85 })));
 ---
 
-<div class="gal" style={`--gal-cols:${colunas}`}>
+<div class:list={['gal', { 'gal--mista': mista }]} style={`--gal-cols:${colunas};--gal-prop:${proporcoes[0]}`}>
   <ul class="gal__grid">
     {
       fotos.map((f, i) => (
-        <li>
+        <li style={`--prop:${proporcoes[i]}`}>
           <button type="button" class="gal__item" data-full={grandes[i].src} data-alt={f.alt} aria-label={`Ampliar foto: ${f.alt}`}>
             <Image src={f.src} alt={f.alt} widths={[480, 800, 1200]} sizes={`(max-width: 600px) 50vw, (max-width: 900px) 33vw, ${Math.round(1180 / colunas)}px`} quality={82} />
           </button>
@@ -56,10 +60,21 @@ const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width:
     margin: 0;
     padding: 0;
   }
+  .gal--mista .gal__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gal--mista li {
+    flex: var(--prop) 1 calc(var(--prop) * var(--gal-altura, 220px));
+    min-width: 0;
+    /* limite para uma foto sozinha na fileira não ficar enorme */
+    max-width: calc(var(--prop) * var(--gal-altura, 220px) * 1.4);
+  }
   .gal__item {
     display: block;
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: var(--prop);
     padding: 0;
     border: 0;
     border-radius: var(--raio);
@@ -118,6 +133,9 @@ const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width:
     }
   }
   @media (max-width: 600px) {
+    .gal {
+      --gal-altura: 120px;
+    }
     .gal__grid {
       grid-template-columns: repeat(2, 1fr);
     }

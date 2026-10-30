@@ -522,6 +522,20 @@
       text-align: center;
     }
   }
+  /* Logotipo de coleção: pequeno e centralizado na sua metade */
+  .pm-fluxo .pm-uso--colecao .pm-uso__img {
+    justify-self: center;
+    box-sizing: border-box;
+    max-width: 340px;
+    max-height: 200px;
+    padding: 0 24px;
+    object-fit: contain;
+  }
+  @media (max-width: 900px) {
+    .pm-fluxo .pm-uso--colecao .pm-uso__img {
+      margin-top: 28px;
+    }
+  }
   .pm-sec:not(.pm-sec--bege) .pm-uso--linha {
     background: var(--sar-bege);
     box-shadow: none;

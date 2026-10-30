@@ -401,14 +401,19 @@ const atual = Astro.url.pathname;
     outline-offset: 4px;
   }
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1760px) {
     .sar-header { --sar-logo-w: 260px; --sar-espaco-itens: 26px; --sar-fonte: 13px; padding: 32px 50px; }
   }
-  @media (max-width: 1200px) {
-    .sar-header { --sar-logo-w: 230px; --sar-espaco-itens: 16px; --sar-fonte: 12px; padding: 28px 30px; }
+  @media (max-width: 1530px) {
+    .sar-header { --sar-logo-w: 230px; --sar-espaco-itens: 20px; padding: 28px 40px; }
+    .sar-inner { gap: 30px; }
+  }
+  @media (max-width: 1400px) {
+    .sar-header { --sar-logo-w: 200px; --sar-espaco-itens: 16px; --sar-fonte: 12px; padding: 28px 30px; }
+    .sar-inner { gap: 24px; }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1240px) {
     .sar-header { --sar-logo-w: 200px; padding: 22px; }
     .sar-burger { display: block; z-index: 1001; }
 
@@ -474,7 +479,7 @@ const atual = Astro.url.pathname;
   @media (max-width: 480px) {
     .sar-header { --sar-logo-w: 170px; padding: 18px; }
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1240px) {
     .sar-header.is-fixo { --sar-logo-w: 150px; padding-top: 12px; padding-bottom: 12px; }
   }
 </style>
