@@ -365,3 +365,10 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 
 - Na home, em "Visite nosso showroom", os botões agora mostram as logos oficiais enviadas (cortadas e salvas em
   `src/assets/img/showroom/`), no tamanho padrão dos botões. O texto alternativo e o `aria-label` foram mantidos.
+
+---
+
+## 2026-10-30 — Selo PEFC menor na página MLC
+
+- O selo PEFC, que ocupava metade da largura, agora é um logo pequeno (72×88px) ao lado do texto, na altura da escrita.
+  Regra: blocos cuja imagem tem "selo" no nome usam esse formato (`.pm-uso--selo`).

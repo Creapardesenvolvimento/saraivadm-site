@@ -434,6 +434,34 @@
   .pm-fluxo .pm-uso--linha:nth-of-type(even) .pm-uso__img {
     order: 2;
   }
+
+  /* Selo de certificação (PEFC): logo pequeno ao lado do texto, na altura da escrita */
+  .pm-fluxo .pm-uso--selo {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 32px;
+    padding: 32px 40px;
+  }
+  .pm-fluxo .pm-uso--selo .pm-uso__img {
+    order: 0;
+    width: 72px;
+    height: 88px;
+    min-height: 0;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+  .pm-uso--selo .pm-uso__texto {
+    padding: 0;
+  }
+  @media (max-width: 600px) {
+    .pm-fluxo .pm-uso--selo {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 20px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+  }
   .pm-sec:not(.pm-sec--bege) .pm-uso--linha {
     background: var(--sar-bege);
     box-shadow: none;

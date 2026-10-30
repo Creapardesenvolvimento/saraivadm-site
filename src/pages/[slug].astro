@@ -246,8 +246,8 @@ if (duvidas) {
                 }
                 if (b.t === 'linha' && img(b.arquivo))
                   return (
-                    <article class="pm-uso pm-uso--linha">
-                      <Image src={img(b.arquivo)!} alt={b.alt || nome} widths={[600, 1120, 1600]} sizes="(max-width: 900px) 100vw, 560px" class="pm-uso__img" />
+                    <article class:list={['pm-uso pm-uso--linha', { 'pm-uso--selo': /selo/.test(b.arquivo) }]}>
+                      <Image src={img(b.arquivo)!} alt={b.alt || nome} widths={/selo/.test(b.arquivo) ? [240, 480] : [600, 1120, 1600]} sizes={/selo/.test(b.arquivo) ? '72px' : '(max-width: 900px) 100vw, 560px'} class="pm-uso__img" />
                       <div class="pm-uso__texto" set:html={b.html} />
                     </article>
                   );
