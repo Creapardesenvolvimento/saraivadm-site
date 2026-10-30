@@ -290,6 +290,16 @@ html.js-anima [data-revelar].is-visivel {
 .btn--bloco {
   width: 100%;
 }
+@media (max-width: 600px) {
+  /* Texto longo quebra linha em vez de estourar a tela */
+  .btn {
+    max-width: 100%;
+    padding: 12px 20px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.3;
+  }
+}
 
 /* ===================== Título de seção =====================
    Todos os títulos de seção seguem o padrão de "Nossos produtos". */

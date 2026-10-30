@@ -150,9 +150,12 @@
   .pm-madeira strong {
     color: #fff;
   }
+  /* Mascote na altura do texto: não empurra a linha; ocupa só o que o texto define */
   .pm-madeira .pm-madeira__img {
+    align-self: stretch;
     width: 100%;
-    max-height: 520px;
+    height: 0;
+    min-height: 100%;
     object-fit: contain;
   }
 
@@ -327,6 +330,27 @@
     justify-content: center;
     gap: var(--gap);
   }
+  .pm-videos--lado {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .pm-video {
+    margin: 0;
+  }
+  .pm-video figcaption {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    color: #5b4a43;
+  }
+  .pm-video figcaption p {
+    margin: 0;
+  }
+  @media (max-width: 900px) {
+    .pm-videos--lado {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
   .pm-videos--um {
     grid-template-columns: 1fr;
     max-width: 820px;
@@ -435,6 +459,40 @@
   }
   .pm-fluxo .pm-uso--linha:nth-of-type(even) .pm-uso__img {
     order: 2;
+  }
+
+  /* Mascote ao lado do texto: padrão único, na altura do texto */
+  .pm-uso--mascote {
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+    padding-left: 24px;
+  }
+  .pm-uso--mascote .pm-uso__img,
+  .pm-uso--mascote:nth-child(even) .pm-uso__img {
+    order: 0;
+    align-self: stretch;
+    height: 0;
+    min-height: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    object-fit: contain;
+  }
+  .pm-fluxo__img--mascote {
+    max-height: 280px;
+  }
+  @media (max-width: 900px) {
+    .pm-uso--mascote {
+      grid-template-columns: minmax(0, 1fr);
+      padding-left: 0;
+    }
+    .pm-uso--mascote .pm-uso__img,
+    .pm-uso--mascote:nth-child(even) .pm-uso__img {
+      height: 240px;
+      min-height: 0;
+    }
+    .pm-madeira .pm-madeira__img {
+      height: 280px;
+      min-height: 0;
+    }
   }
 
   /* Selo de certificação (PEFC): logo pequeno ao lado do texto, na altura da escrita */

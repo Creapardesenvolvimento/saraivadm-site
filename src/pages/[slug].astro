@@ -65,6 +65,28 @@ for (const c of catalogo) {
   if (c.href !== `/${slug}/` && !relacionados.some((r) => r.href === c.href)) relacionados.push(c);
 }
 
+// Mascote da Saraiva: acompanha a altura do texto ao lado (ver .pm-uso--mascote)
+const ehMascote = (arquivo?: string) => /madeira-nobre/.test(arquivo ?? '');
+
+// Vídeos únicos em sequência, com ou sem legenda logo abaixo, viram uma grade de vídeos lado a lado
+const legendaCurta = (b: any) => b?.t === 'html' && b.html.replace(/<[^>]+>/g, '').length <= 90;
+const agruparVideos = (blocos: any[]) => {
+  const lista: any[] = [];
+  for (let i = 0; i < blocos.length; i++) {
+    const b = blocos[i];
+    if (b.t !== 'videos' || b.videos.length !== 1) {
+      lista.push(b);
+      continue;
+    }
+    const legenda = legendaCurta(blocos[i + 1]) ? blocos[++i].html : null;
+    const item = { video: b.videos[0], legenda };
+    const ultimo = lista[lista.length - 1];
+    if (ultimo?.t === 'videosLado') ultimo.itens.push(item);
+    else lista.push({ t: 'videosLado', itens: [item] });
+  }
+  return lista;
+};
+
 // Botões de PDF em sequência (ex.: Tabela de preço + Catálogo) ficam lado a lado
 const agruparPdfs = (blocos: any[]) =>
   blocos.reduce((lista: any[], b: any) => {
@@ -181,8 +203,8 @@ if (duvidas) {
               <div class="pm-usos">
                 {s.itens.map((u: any) =>
                   img(u.imagem.arquivo) ? (
-                    <article class="pm-uso">
-                      <Image src={img(u.imagem.arquivo)!} alt={u.imagem.alt} widths={[600, 1120, 1600]} sizes="(max-width: 900px) 100vw, 560px" class="pm-uso__img" />
+                    <article class:list={['pm-uso', { 'pm-uso--mascote': ehMascote(u.imagem.arquivo) }]}>
+                      <Image src={img(u.imagem.arquivo)!} alt={u.imagem.alt} widths={[600, 1120, 1600]} sizes={ehMascote(u.imagem.arquivo) ? '300px' : '(max-width: 900px) 100vw, 560px'} class="pm-uso__img" />
                       <div class="pm-uso__texto">
                         <h3>{u.titulo}</h3>
                         <div set:html={u.html} />
@@ -245,11 +267,11 @@ if (duvidas) {
               )
             )}
             <div class="pm-fluxo">
-              {agruparPdfs(resto).map((b: any) => {
+              {agruparPdfs(agruparVideos(resto)).map((b: any) => {
                 if (b.t === 'html') return <div class:list={['pm-fluxo__texto', { 'pm-fluxo__texto--centro': b.centro }]} set:html={b.html} />;
                 if (b.t === 'sub') return <h3 class="pm-fluxo__sub">{b.texto}</h3>;
                 if (b.t === 'img' && img(b.arquivo))
-                  return <Image src={img(b.arquivo)!} alt={b.alt} widths={[700, 1200, 1920]} sizes="(max-width: 1000px) 100vw, 960px" class="pm-fluxo__img" />;
+                  return <Image src={img(b.arquivo)!} alt={b.alt} widths={[700, 1200, 1920]} sizes={ehMascote(b.arquivo) ? '300px' : '(max-width: 1000px) 100vw, 960px'} class:list={['pm-fluxo__img', { 'pm-fluxo__img--mascote': ehMascote(b.arquivo) }]} />;
                 if (b.t === 'galeria') {
                   const fotos = b.fotos.filter((f: any) => img(f.arquivo)).map((f: any) => ({ src: img(f.arquivo)!, alt: f.alt }));
                   return fotos.length ? <Galeria fotos={fotos} colunas={fotos.length <= 5 ? Math.max(fotos.length, 3) : fotos.length % 3 === 0 && fotos.length < 10 ? 3 : 4} /> : null;
@@ -270,6 +292,17 @@ if (duvidas) {
                         </li>
                       ))}
                     </ul>
+                  );
+                if (b.t === 'videosLado')
+                  return (
+                    <div class:list={['pm-videos pm-videos--lado', { 'pm-videos--um': b.itens.length === 1 }]}>
+                      {b.itens.map((v: any) => (
+                        <figure class="pm-video">
+                          <VideoYoutube id={v.video.id} capa={img(v.video.capa) ?? hero} titulo={`${nome}: vídeo Saraiva Design`} largura={700} />
+                          {v.legenda && <figcaption set:html={v.legenda} />}
+                        </figure>
+                      ))}
+                    </div>
                   );
                 if (b.t === 'videos')
                   return (

@@ -393,3 +393,13 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 
 - As fotos ao lado do texto eram esticadas para acompanhar a altura do texto: cortavam as laterais e ficavam borradas
   (ex.: Deck de madeira). Agora todas aparecem inteiras, na proporção original, sem ampliação.
+
+---
+
+## 2026-10-30 — Mascote padronizado, vídeos lado a lado e botões no celular
+
+- **Mascote:** em todas as páginas em que há texto ao lado (deck, gazebo, caramanchão, pergolado de madeira e metálico),
+  ele agora acompanha a altura do texto. Sem texto ao lado (institucional), fica com altura máxima de 280px.
+- **Vídeos:** vídeos em sequência ficam lado a lado, com legenda centralizada embaixo de cada um (ex.: Floresta Manoa,
+  em Pisos de madeira). No celular, um embaixo do outro.
+- **Botões no celular:** textos longos agora quebram linha, em vez de estourar a largura da tela.
