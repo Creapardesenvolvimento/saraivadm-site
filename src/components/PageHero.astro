@@ -17,7 +17,7 @@ const { imagem, titulo, texto, trilha = [], botoes = [], faixa = [] } = Astro.pr
 ---
 
 <section class="ph">
-  <Image src={imagem} alt="" class="ph__bg" widths={[828, 1280, 1920, 2400]} sizes="100vw" loading="eager" fetchpriority="high" quality={82} />
+  <Image src={imagem} alt="" class="ph__bg" widths={[828, 1280, 1600, 1920, 2400]} sizes="max(100vw, 178vh)" loading="eager" fetchpriority="high" quality={90} />
   <div class="ph__content">
     {
       trilha.length > 0 && (

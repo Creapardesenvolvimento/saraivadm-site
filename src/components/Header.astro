@@ -62,7 +62,7 @@ const atual = Astro.url.pathname;
                             <a class="sar-mega__card" href={f.href} aria-current={atual === f.href ? 'page' : undefined}>
                               {foto && (
                                 <span class="sar-mega__foto">
-                                  <Image src={foto} alt="" widths={[240, 480]} sizes="200px" loading="lazy" />
+                                  <Image src={foto} alt="" widths={[240, 480]} sizes="200px" loading="lazy" quality={90} />
                                 </span>
                               )}
                               <span class="sar-mega__nome">{f.label}</span>

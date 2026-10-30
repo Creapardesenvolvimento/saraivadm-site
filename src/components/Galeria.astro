@@ -13,7 +13,7 @@ const { fotos, colunas = 4 } = Astro.props;
 const proporcoes = fotos.map((f) => f.src.width / f.src.height);
 const mista = proporcoes.some((p) => Math.abs(p / proporcoes[0] - 1) > 0.01);
 
-const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width: 2000, format: 'webp', quality: 85 })));
+const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width: 2000, format: 'webp', quality: 92 })));
 ---
 
 <div class:list={['gal', { 'gal--mista': mista }]} style={`--gal-cols:${colunas};--gal-prop:${proporcoes[0]}`}>
@@ -22,7 +22,7 @@ const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width:
       fotos.map((f, i) => (
         <li style={`--prop:${proporcoes[i]}`}>
           <button type="button" class="gal__item" data-full={grandes[i].src} data-alt={f.alt} aria-label={`Ampliar foto: ${f.alt}`}>
-            <Image src={f.src} alt={f.alt} widths={[480, 800, 1200]} sizes={`(max-width: 600px) 50vw, (max-width: 900px) 33vw, ${Math.round(1180 / colunas)}px`} quality={82} />
+            <Image src={f.src} alt={f.alt} widths={[480, 800, 1200]} sizes={mista ? '(max-width: 600px) 90vw, 640px' : `(max-width: 600px) 50vw, (max-width: 900px) 33vw, ${Math.round(1180 / colunas) + 20}px`} quality={90} />
           </button>
         </li>
       ))

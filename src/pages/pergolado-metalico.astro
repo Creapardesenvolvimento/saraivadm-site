@@ -140,7 +140,7 @@ const schema = [
         </div>
         <a class="btn btn--verde pm-btn" href={msg()} target="_blank" rel="noopener">Fale com um especialista técnico</a>
       </div>
-      <Image src={intro} alt="Pergolado metálico preto com cobertura em área externa" widths={[600, 1200, 1600]} sizes="(max-width: 900px) 100vw, 600px" class="pm-intro__img" />
+      <Image src={intro} alt="Pergolado metálico preto com cobertura em área externa" widths={[600, 1200, 1600]} sizes="(max-width: 900px) 100vw, 600px" class="pm-intro__img" quality={90} />
     </div>
   </section>
 
@@ -174,7 +174,7 @@ const schema = [
           solução inteligente para composições arquitetônicas modernas, oferecendo versatilidade e requinte na medida certa.
         </p>
       </div>
-      <Image src={tipos} alt="Mascote da Saraiva Design segurando um perfil metálico" widths={[480, 800, 1200]} sizes="(max-width: 900px) 100vw, 480px" class="pm-madeira__img" />
+      <Image src={tipos} alt="Mascote da Saraiva Design segurando um perfil metálico" widths={[480, 800, 1200]} sizes="(max-width: 900px) 100vw, 480px" class="pm-madeira__img" quality={90} />
     </div>
   </section>
 
@@ -189,7 +189,7 @@ const schema = [
         {
           conteudo.usos.map((u) => (
             <article class="pm-uso">
-              <Image src={img(u.imagem.arquivo)} alt={u.imagem.alt} widths={[600, 1120, 1600]} sizes="(max-width: 900px) 100vw, 560px" class="pm-uso__img" />
+              <Image src={img(u.imagem.arquivo)} alt={u.imagem.alt} widths={[600, 1120, 1600]} sizes="(max-width: 900px) 100vw, 600px" class="pm-uso__img" quality={90} />
               <div class="pm-uso__texto">
                 <h3>{u.titulo}</h3>
                 <div set:html={u.html} />
@@ -232,7 +232,7 @@ const schema = [
   <!-- ================= FOLDER ================= -->
   <section class="pm-folder">
     <div class="sar-wrap pm-folder__grid">
-      <Image src={folderCapa} alt="Capa do folder do pergolado metálico Saraiva Design" widths={[300, 520, 780]} sizes="260px" class="pm-folder__img" />
+      <Image src={folderCapa} alt="Capa do folder do pergolado metálico Saraiva Design" widths={[300, 520, 780]} sizes="260px" class="pm-folder__img" quality={90} />
       <div>
         <h2 class="pm-h2 titulo-secao">Faça o download do nosso folder e fique por dentro das novidades</h2>
         <p>Modelos, medidas, acabamentos e opções de cobertura do pergolado metálico em um só arquivo.</p>

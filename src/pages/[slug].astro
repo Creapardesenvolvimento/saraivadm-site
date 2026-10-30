@@ -184,7 +184,7 @@ if (duvidas) {
           <section class="pm-folder">
             <div class:list={['sar-wrap', s.capa && img(s.capa) ? 'pm-folder__grid' : 'pm-folder__solo']}>
               {s.capa && img(s.capa) && (
-                <Image src={img(s.capa)!} alt={`Folder ${nome} Saraiva Design`} widths={[300, 520, 780]} sizes="260px" class="pm-folder__img" />
+                <Image src={img(s.capa)!} alt={`Folder ${nome} Saraiva Design`} widths={[300, 520, 780]} sizes="260px" class="pm-folder__img" quality={90} />
               )}
               <div>
                 <h2 class="titulo-secao">Faça o download do nosso folder e fique por dentro das novidades</h2>
@@ -207,7 +207,7 @@ if (duvidas) {
                 {s.itens.map((u: any) =>
                   img(u.imagem.arquivo) ? (
                     <article class:list={['pm-uso', { 'pm-uso--mascote': ehMascote(u.imagem.arquivo) }]}>
-                      <Image src={img(u.imagem.arquivo)!} alt={u.imagem.alt} widths={[600, 1120, 1600]} sizes={ehMascote(u.imagem.arquivo) ? '300px' : '(max-width: 900px) 100vw, 560px'} class="pm-uso__img" />
+                      <Image src={img(u.imagem.arquivo)!} alt={u.imagem.alt} widths={[600, 1120, 1600]} sizes={ehMascote(u.imagem.arquivo) ? '300px' : '(max-width: 900px) 100vw, 600px'} class="pm-uso__img" quality={90} />
                       <div class="pm-uso__texto">
                         <h3>{u.titulo}</h3>
                         <div set:html={u.html} />
@@ -274,7 +274,7 @@ if (duvidas) {
                 if (b.t === 'html') return <div class:list={['pm-fluxo__texto', { 'pm-fluxo__texto--centro': b.centro }]} set:html={b.html} />;
                 if (b.t === 'sub') return <h3 class="pm-fluxo__sub">{b.texto}</h3>;
                 if (b.t === 'img' && img(b.arquivo))
-                  return <Image src={img(b.arquivo)!} alt={b.alt} widths={[700, 1200, 1920]} sizes={ehMascote(b.arquivo) ? '300px' : '(max-width: 1000px) 100vw, 960px'} class:list={['pm-fluxo__img', { 'pm-fluxo__img--mascote': ehMascote(b.arquivo) }]} />;
+                  return <Image src={img(b.arquivo)!} alt={b.alt} widths={[700, 1200, 1920]} sizes={ehMascote(b.arquivo) ? '300px' : '(max-width: 1000px) 100vw, 1180px'} class:list={['pm-fluxo__img', { 'pm-fluxo__img--mascote': ehMascote(b.arquivo) }]} quality={90} />;
                 if (b.t === 'galeria') {
                   const fotos = b.fotos.filter((f: any) => img(f.arquivo)).map((f: any) => ({ src: img(f.arquivo)!, alt: f.alt }));
                   return fotos.length ? <Galeria fotos={fotos} colunas={fotos.length <= 5 ? Math.max(fotos.length, 3) : fotos.length % 3 === 0 && fotos.length < 10 ? 3 : 4} /> : null;
@@ -282,7 +282,7 @@ if (duvidas) {
                 if (b.t === 'linha' && img(b.arquivo))
                   return (
                     <article class:list={['pm-uso pm-uso--linha', { 'pm-uso--selo': /selo/.test(b.arquivo), 'pm-uso--colecao': ehColecao(b.arquivo) }]}>
-                      <Image src={img(b.arquivo)!} alt={b.alt || nome} widths={/selo/.test(b.arquivo) ? [240, 480] : ehColecao(b.arquivo) ? [340, 680, 1020] : [600, 1120, 1600]} sizes={/selo/.test(b.arquivo) ? '72px' : ehColecao(b.arquivo) ? '340px' : '(max-width: 900px) 100vw, 560px'} class="pm-uso__img" />
+                      <Image src={img(b.arquivo)!} alt={b.alt || nome} widths={/selo/.test(b.arquivo) ? [240, 480] : ehColecao(b.arquivo) ? [340, 680, 1020] : [600, 1120, 1600]} sizes={/selo/.test(b.arquivo) ? '72px' : ehColecao(b.arquivo) ? '340px' : '(max-width: 900px) 100vw, 600px'} class="pm-uso__img" quality={90} />
                       <div class="pm-uso__texto" set:html={b.html} />
                     </article>
                   );
@@ -291,7 +291,7 @@ if (duvidas) {
                     <ul class="pm-logos">
                       {b.fotos.filter((f: any) => img(f.arquivo)).map((f: any) => (
                         <li>
-                          <Image src={img(f.arquivo)!} alt={f.alt || 'Cliente Saraiva Design'} widths={[240, 480]} sizes="200px" />
+                          <Image src={img(f.arquivo)!} alt={f.alt || 'Cliente Saraiva Design'} widths={[240, 480]} sizes="200px" quality={90} />
                         </li>
                       ))}
                     </ul>

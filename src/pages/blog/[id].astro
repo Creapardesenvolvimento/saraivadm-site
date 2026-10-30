@@ -62,7 +62,7 @@ const schema = [
         Publicado em <time datetime={d.publicado.toISOString()}>{formatarData(d.publicado)}</time>
         {d.atualizado && <> · atualizado em <time datetime={d.atualizado.toISOString()}>{formatarData(d.atualizado)}</time></>}
       </p>
-      <Image src={d.imagem} alt={d.imagemAlt} widths={[800, 1200, 1600]} sizes="(max-width: 820px) 100vw, 780px" loading="eager" class="post__capa" />
+      <Image src={d.imagem} alt={d.imagemAlt} widths={[800, 1200, 1600]} sizes="(max-width: 820px) 100vw, 780px" loading="eager" class="post__capa" quality={90} />
       <div class="post__conteudo">
         <Content />
       </div>

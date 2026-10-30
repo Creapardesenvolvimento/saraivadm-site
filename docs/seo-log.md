@@ -409,3 +409,12 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - Galerias do site inteiro: cada foto aparece inteira, na proporção original. Fotos de mesma proporção formam grade; proporções diferentes formam fileiras de mesma altura.
 - Forro de Palha e Forro de Bambu: logotipos das coleções (Time Line, Fibré, Bamboo Concept) reduzidos para no máximo 340×200px.
 - Menu: corrigida a rolagem lateral em telas menores que 1760px; tamanhos ajustados por largura e menu de celular a partir de 1240px.
+
+## 2026-10-30 — Qualidade das imagens no site inteiro
+
+- Compressão: fotos com qualidade 90 (antes 80 a 82) e ampliação da galeria com qualidade 92.
+- Capas: o navegador agora escolhe a versão pela altura da tela também, o que corrige a ampliação no celular.
+- Cartões de produto: versões maiores, sem ampliação. A foto continua preenchendo o cartão, com corte nas laterais nas de formato 16:9.
+- Demais imagens: tamanhos corrigidos para o navegador não escolher uma versão menor que a exibida.
+- Limite: as capas de 1600×900 ainda ficam cerca de 30% ampliadas em telas de 1920×1080. Isso só muda com fotos originais maiores.
+- Peso: as imagens geradas passaram de 517 MB para 697 MB no total; cada visitante baixa só as versões da sua tela.
