@@ -65,6 +65,16 @@ for (const c of catalogo) {
   if (c.href !== `/${slug}/` && !relacionados.some((r) => r.href === c.href)) relacionados.push(c);
 }
 
+// Botões de PDF em sequência (ex.: Tabela de preço + Catálogo) ficam lado a lado
+const agruparPdfs = (blocos: any[]) =>
+  blocos.reduce((lista: any[], b: any) => {
+    const ultimo = lista[lista.length - 1];
+    if (b.t !== 'pdf') lista.push(b);
+    else if (ultimo?.t === 'pdfs') ultimo.itens.push(b);
+    else lista.push({ t: 'pdfs', itens: [b] });
+    return lista;
+  }, []);
+
 // ---------- Dados estruturados ----------
 const url = `${site.url}/${slug}/`;
 const heroSchema = await getImage({ src: hero, width: 1200, format: 'jpg', quality: 80 });
@@ -235,7 +245,7 @@ if (duvidas) {
               )
             )}
             <div class="pm-fluxo">
-              {resto.map((b: any) => {
+              {agruparPdfs(resto).map((b: any) => {
                 if (b.t === 'html') return <div class="pm-fluxo__texto" set:html={b.html} />;
                 if (b.t === 'sub') return <h3 class="pm-fluxo__sub">{b.texto}</h3>;
                 if (b.t === 'img' && img(b.arquivo))
@@ -269,12 +279,14 @@ if (duvidas) {
                       ))}
                     </div>
                   );
-                if (b.t === 'pdf')
+                if (b.t === 'pdfs')
                   return (
                     <div class="pm-fluxo__acao">
-                      <a class="btn btn--escuro-contorno" href={b.href} target="_blank" rel="noopener">
-                        {rotuloPdf(b.href, b.texto)}
-                      </a>
+                      {b.itens.map((d: any) => (
+                        <a class="btn btn--escuro-contorno" href={d.href} target="_blank" rel="noopener">
+                          {rotuloPdf(d.href, d.texto)}
+                        </a>
+                      ))}
                     </div>
                   );
                 if (b.t === 'cards')

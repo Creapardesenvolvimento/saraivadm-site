@@ -323,7 +323,10 @@
     border-radius: var(--raio);
   }
   .pm-fluxo__acao {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--gap);
   }
   .pm-videos--um {
     grid-template-columns: 1fr;
@@ -433,6 +436,14 @@
   }
   .pm-fluxo .pm-uso--linha:nth-of-type(even) .pm-uso__img {
     order: 2;
+  }
+  /* Imagem inteira, sem corte (muitas são infográficos com texto) */
+  .pm-fluxo .pm-uso--linha .pm-uso__img {
+    align-self: center;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: auto;
+    object-fit: contain;
   }
 
   /* Selo de certificação (PEFC): logo pequeno ao lado do texto, na altura da escrita */

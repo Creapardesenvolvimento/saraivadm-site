@@ -372,3 +372,11 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 
 - O selo PEFC, que ocupava metade da largura, agora é um logo pequeno (72×88px) ao lado do texto, na altura da escrita.
   Regra: blocos cuja imagem tem "selo" no nome usam esse formato (`.pm-uso--selo`).
+
+---
+
+## 2026-10-30 — Imagens inteiras e botões lado a lado
+
+- Imagens ao lado do texto (infográficos da cobertura, composição da telha etc.) agora aparecem inteiras, sem corte.
+- Botões de PDF em sequência ("Tabela de preço" e "Catálogo") ficam um ao lado do outro; no celular quebram linha se
+  não couberem.
