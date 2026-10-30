@@ -358,3 +358,10 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - Nos textos corridos das páginas de produto e institucionais (ex.: MLC), a coluna de texto tinha 820px enquanto as
   fotos ocupavam 1132px. Agora textos, subtítulos e o parágrafo de abertura das seções ocupam a largura inteira do
   conteúdo, alinhados com as fotos. Colunas lado a lado (texto + foto, dúvidas) continuam como estavam.
+
+---
+
+## 2026-10-30 — Logos Google Maps e Waze no showroom
+
+- Na home, em "Visite nosso showroom", os botões agora mostram as logos oficiais enviadas (cortadas e salvas em
+  `src/assets/img/showroom/`), no tamanho padrão dos botões. O texto alternativo e o `aria-label` foram mantidos.

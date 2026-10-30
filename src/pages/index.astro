@@ -12,6 +12,8 @@ import { getPosts } from '../lib/blog';
 
 import hero from '../assets/img/hero-pergolado-piscina.jpg';
 import logo from '../assets/img/logo-saraiva.png';
+import logoMaps from '../assets/img/showroom/google-maps.png';
+import logoWaze from '../assets/img/showroom/waze.png';
 import capaInstitucional from '../assets/img/video-institucional.jpg';
 import capaProjeto1 from '../assets/img/projeto-1.jpg';
 import capaProjeto2 from '../assets/img/projeto-2.jpg';
@@ -279,19 +281,11 @@ const schema = [
     <div class="sar-showroom__bar">
       <h2 class="titulo-secao" id="showroom-titulo">Visite nosso showroom</h2>
       <div class="sar-showroom__acoes">
-        <a href={mapsUrl} target="_blank" rel="noopener" class="btn btn--branco btn--grande sar-pill" aria-label="Abrir o endereço no Google Maps">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="#4285F4" d="M12 2C8.13 2 5 5.13 5 9.1c0 5.25 7 12.9 7 12.9s7-7.65 7-12.9C19 5.13 15.87 2 12 2z"></path>
-            <path fill="#EA4335" d="M12 2C8.13 2 5 5.13 5 9.1c0 2.22 1.25 5.24 3.12 8.35L12 9.1V2z"></path>
-            <path fill="#FBBC04" d="M12 2v7.1l3.88 8.35C17.75 14.34 19 11.32 19 9.1 19 5.13 15.87 2 12 2z"></path>
-            <path fill="#34A853" d="M12 22s7-7.65 7-12.9c0-.44-.04-.87-.1-1.29L12 22z"></path>
-            <circle fill="#FFFFFF" cx="12" cy="9" r="3.2"></circle>
-          </svg>
-          <span>Maps</span>
+        <a href={mapsUrl} target="_blank" rel="noopener" class="btn btn--branco sar-pill" aria-label="Abrir o endereço no Google Maps">
+          <Image src={logoMaps} alt="Google Maps" class="sar-pill__logo" />
         </a>
-        <a href={wazeUrl} target="_blank" rel="noopener" class="btn btn--waze btn--grande sar-pill" aria-label="Abrir a rota no Waze">
-          <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M25.6 13.2c-.4-4.6-4.2-8.2-8.9-8.2-5 0-9.1 4.1-9.1 9.1 0 1.2.2 2.3.7 3.4l-1.8 3.8c-.3.7.2 1.5 1 1.5h1.2c1.3 2.5 3.9 4.3 7 4.3 3.9 0 7.3-2.6 8.5-6.2 1.1-.3 2-.9 2.5-1.9.8-1.5.5-3.3-.6-4.4.1-.5.1-.9.1-1.4zm-12.4.9c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6.5 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm-5.7 5.7c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4 1-1 2.3-1.5 3.8-1.5s2.8.5 3.8 1.5c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0-.6-.6-1.5-.9-2.4-.9s-1.8.3-2.4.9z"></path></svg>
-          <span>Waze</span>
+        <a href={wazeUrl} target="_blank" rel="noopener" class="btn btn--waze sar-pill" aria-label="Abrir a rota no Waze">
+          <Image src={logoWaze} alt="Waze" class="sar-pill__logo sar-pill__logo--waze" />
         </a>
       </div>
     </div>
@@ -661,9 +655,17 @@ const schema = [
   .sar-pill {
     min-width: 200px;
   }
-  .sar-pill svg {
-    width: 26px;
-    height: 26px;
+  /* Logos têm fundo próprio: o preenchimento do hover mantém a cor do botão para não aparecer uma caixa. */
+  .sar-pill {
+    --btn-hover-fundo: var(--btn-fundo);
+  }
+  .sar-pill__logo {
+    display: block;
+    width: auto;
+    height: 28px;
+  }
+  .sar-pill__logo--waze {
+    height: 34px;
   }
   @media (max-width: 580px) {
     .sar-showroom__mapa { height: 320px; }
