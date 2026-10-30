@@ -11,6 +11,8 @@ interface Props {
 }
 const { sobreposto = false } = Astro.props;
 const atual = Astro.url.pathname;
+// No menu lateral do celular, o grupo da página atual já começa aberto
+const grupoAtual = (filhos: { href: string }[]) => filhos.some((f) => f.href === atual);
 ---
 
 <header class:list={['sar-header', { 'sar-header--sobreposto': sobreposto }]}>
@@ -30,13 +32,21 @@ const atual = Astro.url.pathname;
       <span></span><span></span><span></span>
     </label>
 
-    <nav class="sar-nav" aria-label="Menu principal">
+    <label for="sar-toggle" class="sar-fundo" aria-hidden="true"></label>
+
+    <nav class="sar-nav" id="sar-nav" aria-label="Menu principal">
+      <div class="sar-gaveta__topo">
+        <span>Menu</span>
+        <button type="button" class="sar-gaveta__fechar" aria-label="Fechar menu" data-menu-fechar>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+      </div>
       <ul class="sar-menu">
         {
           menuPrincipal.map((item) =>
             item.filhos ? (
-              <li class="sar-menu__item sar-menu__item--pai">
-                <button type="button" class="sar-menu__link" aria-haspopup="true">
+              <li class:list={['sar-menu__item sar-menu__item--pai', { 'is-aberto': grupoAtual(item.filhos) }]}>
+                <button type="button" class="sar-menu__link" aria-expanded={grupoAtual(item.filhos) ? 'true' : 'false'}>
                   {item.label}
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
                 </button>
@@ -106,6 +116,41 @@ const atual = Astro.url.pathname;
     };
     window.addEventListener('scroll', atualizar, { passive: true });
     atualizar();
+  }
+
+  // Menu lateral do celular: abre e fecha a gaveta e os grupos.
+  const toggle = document.querySelector<HTMLInputElement>('#sar-toggle');
+  const fechar = document.querySelector<HTMLButtonElement>('[data-menu-fechar]');
+  const celular = window.matchMedia('(max-width: 1240px)');
+  if (toggle && fechar) {
+    const aoMudar = () => {
+      document.documentElement.style.overflow = toggle.checked ? 'hidden' : '';
+      if (toggle.checked) fechar.focus();
+      else if (celular.matches) toggle.focus();
+    };
+    const fecharMenu = () => {
+      if (!toggle.checked) return;
+      toggle.checked = false;
+      aoMudar();
+    };
+    toggle.addEventListener('change', aoMudar);
+    fechar.addEventListener('click', fecharMenu);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') fecharMenu();
+    });
+    celular.addEventListener('change', fecharMenu);
+
+    const grupos = document.querySelectorAll<HTMLElement>('.sar-menu__item--pai');
+    grupos.forEach((grupo) => {
+      grupo.querySelector('button')!.addEventListener('click', () => {
+        if (!celular.matches) return;
+        const abrir = !grupo.classList.contains('is-aberto');
+        grupos.forEach((g) => {
+          g.classList.toggle('is-aberto', g === grupo && abrir);
+          g.querySelector('button')!.setAttribute('aria-expanded', String(g === grupo && abrir));
+        });
+      });
+    });
   }
 </script>
 
@@ -371,6 +416,12 @@ const atual = Astro.url.pathname;
     margin-left: 14px;
   }
 
+  /* Só aparecem no menu lateral do celular */
+  .sar-fundo,
+  .sar-gaveta__topo {
+    display: none;
+  }
+
   .sar-toggle {
     position: absolute;
     opacity: 0;
@@ -415,65 +466,168 @@ const atual = Astro.url.pathname;
 
   @media (max-width: 1240px) {
     .sar-header { --sar-logo-w: 200px; padding: 22px; }
-    .sar-burger { display: block; z-index: 1001; }
+    .sar-burger { display: block; }
+    /* backdrop-filter prenderia a gaveta (position: fixed) dentro do cabeçalho */
+    .sar-header.is-fixo { background: rgba(124, 81, 67, 0.97); backdrop-filter: none; }
 
-    .sar-nav {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      flex-direction: column;
-      align-items: stretch;
-      background: rgba(20, 24, 28, 0.96);
-      padding: 10px 22px 26px;
-      max-height: 0;
-      overflow: hidden;
+    /* Gaveta lateral */
+    .sar-fundo {
+      display: block;
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      background: rgba(30, 18, 12, 0.6);
       opacity: 0;
       visibility: hidden;
-      transition: all 0.35s ease;
+      transition: opacity 0.3s ease, visibility 0.3s;
     }
-    .sar-menu { flex-direction: column; align-items: stretch; }
-    .sar-menu__item { display: block; border-bottom: 1px solid rgba(255, 255, 255, 0.14); }
+    .sar-nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      width: min(86vw, 400px);
+      background: #fff;
+      box-shadow: -12px 0 40px rgba(30, 18, 12, 0.28);
+      transform: translateX(100%);
+      visibility: hidden;
+      transition: transform 0.32s cubic-bezier(0.2, 0.7, 0.2, 1), visibility 0.32s;
+    }
+    .sar-toggle:checked ~ .sar-fundo { opacity: 1; visibility: visible; }
+    .sar-toggle:checked ~ .sar-nav { transform: none; visibility: visible; }
+
+    .sar-gaveta__topo {
+      display: flex;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 64px;
+      padding: 0 8px 0 22px;
+      background: var(--sar-marrom-rodape);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .sar-gaveta__fechar {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      padding: 0;
+      border: 0;
+      background: none;
+      color: inherit;
+      cursor: pointer;
+    }
+    .sar-gaveta__fechar svg {
+      width: 24px;
+      height: 24px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+    }
+
+    .sar-menu {
+      flex: 1 1 auto;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      justify-content: flex-start;
+      min-height: 0;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+    }
+    .sar-menu__item { display: block; border-bottom: 1px solid #ece4d8; }
     .sar-menu__item + .sar-menu__item::before { display: none; }
-    .sar-menu__item--pai > .sar-menu__link { cursor: default; color: rgba(255, 255, 255, 0.6); }
-    .sar-menu__link svg { display: none; }
-    /* No celular o mega menu vira uma lista simples */
+    .sar-menu__link,
+    .sar-menu__link:hover,
+    .sar-menu__item--pai:hover > .sar-menu__link,
+    .sar-menu__item--pai:focus-within > .sar-menu__link {
+      color: var(--sar-marrom-escuro);
+    }
+    .sar-menu__link {
+      justify-content: space-between;
+      width: 100%;
+      min-height: 56px;
+      padding: 8px 22px;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-align: left;
+      white-space: normal;
+    }
+    .sar-menu__link[aria-current='page'] { color: var(--sar-oliva-escuro); }
+    .sar-menu__link svg { width: 20px; height: 20px; }
+    .sar-menu__item--pai:hover > .sar-menu__link svg,
+    .sar-menu__item--pai:focus-within > .sar-menu__link svg {
+      transform: none;
+    }
+    .sar-menu__item--pai.is-aberto > .sar-menu__link svg { transform: rotate(180deg); }
+
+    /* Grupos recolhíveis: um aberto por vez */
     .sar-mega {
       position: static;
-      padding: 0 0 12px;
+      display: grid;
+      grid-template-rows: 0fr;
+      padding: 0;
       opacity: 1;
-      visibility: visible;
       transform: none;
+      transition: grid-template-rows 0.3s ease, visibility 0.3s;
+    }
+    .sar-menu__item--pai:not(.is-aberto) > .sar-mega,
+    .sar-menu__item--pai:not(.is-aberto):hover > .sar-mega,
+    .sar-menu__item--pai:not(.is-aberto):focus-within > .sar-mega {
+      visibility: hidden;
+    }
+    .sar-menu__item--pai.is-aberto > .sar-mega {
+      grid-template-rows: 1fr;
+      visibility: visible;
     }
     .sar-mega__inner {
       display: block;
+      width: 100%;
+      min-height: 0;
+      margin: 0;
       padding: 0;
-      background: none;
+      overflow: hidden;
+      background: var(--sar-bege);
       box-shadow: none;
     }
     .sar-mega__intro,
-    .sar-mega__foto,
     .sar-mega__desc {
       display: none;
     }
-    .sar-mega__grid { display: block; }
-    .sar-mega__nome {
-      margin: 0;
-      padding: 10px 4px 10px 16px;
-      font-family: inherit;
-      font-size: 14px;
-      font-weight: 400;
-      color: #fff;
-      letter-spacing: 0.06em;
+    .sar-mega__grid { display: block; padding: 6px 0; }
+    .sar-mega__card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-height: 60px;
+      padding: 6px 22px;
     }
-    .sar-mega__card:hover .sar-mega__nome { color: #d9e4c0; }
-    .sar-menu__link { padding: 18px 4px; font-size: 14px; }
-    .sar-btn { margin: 22px 0 0; min-height: 52px; }
+    .sar-mega__foto { flex: 0 0 auto; width: 60px; }
+    .sar-mega__nome { margin: 0; font-family: inherit; font-size: 15px; }
+    .sar-header.is-fixo .sar-mega { padding-top: 0; }
 
-    .sar-toggle:checked ~ .sar-nav { max-height: calc(100vh - 70px); overflow-y: auto; opacity: 1; visibility: visible; }
-    .sar-toggle:checked ~ .sar-burger span:nth-child(1) { top: 11px; transform: rotate(45deg); }
-    .sar-toggle:checked ~ .sar-burger span:nth-child(2) { opacity: 0; }
-    .sar-toggle:checked ~ .sar-burger span:nth-child(3) { top: 11px; transform: rotate(-45deg); }
+    .sar-btn {
+      flex: 0 0 auto;
+      margin: 14px 22px calc(14px + env(safe-area-inset-bottom));
+      min-height: 54px;
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 1240px) and (prefers-reduced-motion: reduce) {
+    .sar-nav,
+    .sar-fundo,
+    .sar-mega {
+      transition: none;
+    }
   }
 
   @media (max-width: 480px) {

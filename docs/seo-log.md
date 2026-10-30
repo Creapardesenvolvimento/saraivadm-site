@@ -418,3 +418,11 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - Demais imagens: tamanhos corrigidos para o navegador não escolher uma versão menor que a exibida.
 - Limite: as capas de 1600×900 ainda ficam cerca de 30% ampliadas em telas de 1920×1080. Isso só muda com fotos originais maiores.
 - Peso: as imagens geradas passaram de 517 MB para 697 MB no total; cada visitante baixa só as versões da sua tela.
+
+## 2026-10-30 — Menu lateral no celular
+
+- Em telas de até 1240px, o menu abre em gaveta lateral pela direita, com fundo escurecido.
+- Grupos recolhíveis, um aberto por vez, com miniatura de cada produto. O grupo da página atual já abre expandido.
+- Botão Atendimento fixo no fim da gaveta.
+- Fecha pelo X, tocando fora ou com a tecla Esc. A página atrás não rola enquanto o menu está aberto.
+- Sem alteração no menu do computador nem nos links, que continuam no HTML para o Google.
