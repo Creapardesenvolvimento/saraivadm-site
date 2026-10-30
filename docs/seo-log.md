@@ -386,3 +386,10 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 ## 2026-10-30 — Pergokit: limpeza do texto
 
 - Removido o subtítulo "O ChatGPT disse", que veio junto na importação, e centralizado o texto sobre aço carbono.
+
+---
+
+## 2026-10-30 — Imagens de produto sempre inteiras e nítidas
+
+- As fotos ao lado do texto eram esticadas para acompanhar a altura do texto: cortavam as laterais e ficavam borradas
+  (ex.: Deck de madeira). Agora todas aparecem inteiras, na proporção original, sem ampliação.
