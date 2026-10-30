@@ -286,6 +286,9 @@
     line-height: 1.75;
     color: #5b4a43;
   }
+  .pm-fluxo__texto--centro {
+    text-align: center;
+  }
   .pm-fluxo__texto p + p,
   .pm-fluxo__texto p + ul,
   .pm-fluxo__texto ul + p {

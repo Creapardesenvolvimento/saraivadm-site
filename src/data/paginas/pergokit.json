@@ -104,12 +104,9 @@
      "alt": "Metais selecionados"
     },
     {
-     "t": "sub",
-     "texto": "O ChatGPT disse"
-    },
-    {
      "t": "html",
-     "html": "<p>O aço carbono é um dos metais mais utilizados em pergolados metálicos pela combinação de resistência e custo-benefício.<br>Sua estrutura robusta garante estabilidade mesmo em vãos maiores, permitindo projetos modernos e bem definidos.<br>O material suporta impactos e deformações com eficiência, mantendo a integridade ao longo do tempo.<br>Com tratamentos como galvanização ou pintura eletrostática, sua durabilidade em áreas externas aumenta significativamente.</p>"
+     "html": "<p>O aço carbono é um dos metais mais utilizados em pergolados metálicos pela combinação de resistência e custo-benefício.<br>Sua estrutura robusta garante estabilidade mesmo em vãos maiores, permitindo projetos modernos e bem definidos.<br>O material suporta impactos e deformações com eficiência, mantendo a integridade ao longo do tempo.<br>Com tratamentos como galvanização ou pintura eletrostática, sua durabilidade em áreas externas aumenta significativamente.</p>",
+     "centro": true
     }
    ]
   },

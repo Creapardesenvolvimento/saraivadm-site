@@ -380,3 +380,9 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - Imagens ao lado do texto (infográficos da cobertura, composição da telha etc.) agora aparecem inteiras, sem corte.
 - Botões de PDF em sequência ("Tabela de preço" e "Catálogo") ficam um ao lado do outro; no celular quebram linha se
   não couberem.
+
+---
+
+## 2026-10-30 — Pergokit: limpeza do texto
+
+- Removido o subtítulo "O ChatGPT disse", que veio junto na importação, e centralizado o texto sobre aço carbono.

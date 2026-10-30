@@ -246,7 +246,7 @@ if (duvidas) {
             )}
             <div class="pm-fluxo">
               {agruparPdfs(resto).map((b: any) => {
-                if (b.t === 'html') return <div class="pm-fluxo__texto" set:html={b.html} />;
+                if (b.t === 'html') return <div class:list={['pm-fluxo__texto', { 'pm-fluxo__texto--centro': b.centro }]} set:html={b.html} />;
                 if (b.t === 'sub') return <h3 class="pm-fluxo__sub">{b.texto}</h3>;
                 if (b.t === 'img' && img(b.arquivo))
                   return <Image src={img(b.arquivo)!} alt={b.alt} widths={[700, 1200, 1920]} sizes="(max-width: 1000px) 100vw, 960px" class="pm-fluxo__img" />;
