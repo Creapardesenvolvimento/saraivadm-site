@@ -1,0 +1,10 @@
+# Assistente de IA: só chat.php e transcrever.php são chamados pelo navegador.
+<Files "nucleo.php">
+  Require all denied
+</Files>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(php|json)$">
+    Header set Cache-Control "no-store"
+  </FilesMatch>
+</IfModule>

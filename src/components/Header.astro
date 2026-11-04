@@ -125,6 +125,7 @@ const grupoAtual = (filhos: { href: string }[]) => filhos.some((f) => f.href ===
   if (toggle && fechar) {
     const aoMudar = () => {
       document.documentElement.style.overflow = toggle.checked ? 'hidden' : '';
+      document.documentElement.classList.toggle('sar-menu-aberto', toggle.checked);
       if (toggle.checked) fechar.focus();
       else if (celular.matches) toggle.focus();
     };

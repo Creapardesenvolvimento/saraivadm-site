@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import indiceAssistente from './ferramentas/indice-assistente.mjs';
 
 export default defineConfig({
   site: 'https://saraivadm.com.br',
@@ -11,7 +12,8 @@ export default defineConfig({
   vite: { resolve: { preserveSymlinks: true } },
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/obrigado/'),
+      filter: (page) => !page.includes('/obrigado/') && !page.includes('/assistente/'),
     }),
+    indiceAssistente(),
   ],
 });

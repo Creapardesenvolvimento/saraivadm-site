@@ -426,3 +426,9 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - Botão Atendimento fixo no fim da gaveta.
 - Fecha pelo X, tocando fora ou com a tecla Esc. A página atrás não rola enquanto o menu está aberto.
 - Sem alteração no menu do computador nem nos links, que continuam no HTML para o Google.
+
+## 2026-11-04 — Assistente de IA em modo de teste
+
+- Chat de IA no canto esquerdo, adaptado do plugin Creapar Assistente de Vendas IA, que era para WordPress. Detalhes em `docs/assistente-ia.md`.
+- Em modo de teste, os visitantes comuns não baixam nenhum arquivo do chat, então não há impacto na velocidade nem no SEO.
+- `/assistente/` fica fora do sitemap. O índice de conteúdo do assistente é gerado a cada build.

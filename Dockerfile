@@ -18,6 +18,8 @@ RUN a2enmod rewrite headers deflate \
  && echo 'sendmail_path = "/usr/bin/msmtp -t"' > /usr/local/etc/php/conf.d/mail.ini
 
 COPY --from=build /app/dist/ /var/www/html/
+# Conversas do assistente de IA (SQLite). No Easypanel, monte um volume aqui para não perder a cada deploy.
+RUN mkdir -p /var/www/dados && chown www-data:www-data /var/www/dados
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 

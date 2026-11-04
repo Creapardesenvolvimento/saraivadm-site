@@ -154,3 +154,20 @@ export const rodapeInstitucional = [
   { label: 'Mídias', href: '/redes-sociais/' },
   { label: 'Contato', href: '/contato/' },
 ];
+
+// Assistente de IA (chat no canto esquerdo). O servidor fica em public/assistente/chat.php
+// e usa as variáveis de ambiente do Easypanel (ver docs/assistente-ia.md).
+export const assistente = {
+  ativo: true,
+  // 'teste': só aparece para quem abriu o link de teste (/?cpai_teste=CHAVE). 'publico': para todos.
+  modo: 'teste' as 'teste' | 'publico',
+  nome: 'Assistente Saraiva',
+  boasVindas:
+    'Olá! Posso tirar suas dúvidas sobre pergolados, coberturas, forros, pisos e decks da Saraiva Design. Pode escrever, mandar uma foto do seu espaço ou falar.',
+  cor: '#7c5143',
+  maxFotos: 4,
+  // true só se a variável OPENAI_API_KEY estiver configurada (voz no iPhone)
+  vozNoServidor: false,
+  // muda a cada alteração do widget, para o navegador não usar a versão antiga em cache
+  versao: '1',
+};

@@ -1,0 +1,53 @@
+/* Ajustes do assistente à identidade da Saraiva Design (carregado depois de widget.css). */
+.cpai-root {
+  --cpai-surface: #f5efe6;
+  --cpai-text: #3a2a24;
+  --cpai-muted: #7a6a63;
+  --cpai-line: #e6ddd2;
+  --cpai-shadow: 0 12px 40px rgba(40, 24, 18, 0.22), 0 2px 8px rgba(40, 24, 18, 0.08);
+  font-family: 'Inter Variable', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* Cantos retos, como no restante do site */
+.cpai-root .cpai-launcher,
+.cpai-root .cpai-panel,
+.cpai-root .cpai-head button,
+.cpai-root .cpai-bubble,
+.cpai-root .cpai-user .cpai-bubble,
+.cpai-root .cpai-bot .cpai-bubble,
+.cpai-root .cpai-bubble a.cpai-wa,
+.cpai-root .cpai-chip,
+.cpai-root .cpai-card,
+.cpai-root .cpai-card img,
+.cpai-root .cpai-card-buy,
+.cpai-root .cpai-preview img,
+.cpai-root .cpai-input,
+.cpai-root .cpai-tool,
+.cpai-root .cpai-send {
+  border-radius: 2px;
+}
+
+.cpai-launcher-label {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.cpai-title strong {
+  font-family: 'Montserrat Variable', Montserrat, sans-serif;
+  letter-spacing: 0.04em;
+}
+.cpai-bot .cpai-bubble a:not(.cpai-wa) {
+  color: #5e6a3a;
+  font-weight: 600;
+}
+
+/* Fica escondido enquanto o menu lateral do celular está aberto */
+html.sar-menu-aberto .cpai-root {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .cpai-panel {
+    border-radius: 0;
+  }
+}

@@ -8,6 +8,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppFlutuante from '../components/WhatsAppFlutuante.astro';
 import FolderPopup from '../components/FolderPopup.astro';
+import Assistente from '../components/Assistente.astro';
 import { site } from '../data/site';
 import ogPadrao from '../assets/img/hero-pergolado-piscina.jpg';
 
@@ -85,6 +86,7 @@ const ogUrl = new URL(og.src, site.url).href;
     <Footer />
     <WhatsAppFlutuante pagina={paginaWhats} />
     <FolderPopup />
+    <Assistente />
     <script>
       import '../scripts/animacoes';
     </script>

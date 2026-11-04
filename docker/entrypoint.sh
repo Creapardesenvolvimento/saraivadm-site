@@ -26,4 +26,8 @@ else
   echo "Aviso: SMTP_HOST não definido. O formulário de contato não vai enviar e-mails." >&2
 fi
 
+# Pasta das conversas do assistente de IA: o volume do Easypanel chega com dono root.
+mkdir -p "${ASSISTENTE_DADOS:-/var/www/dados}"
+chown www-data:www-data "${ASSISTENTE_DADOS:-/var/www/dados}"
+
 exec "$@"

@@ -1,0 +1,50 @@
+---
+// Assistente de IA no canto esquerdo (widget em public/assistente/).
+// No modo de teste, o script só é baixado por quem abriu o link /?cpai_teste=CHAVE;
+// os demais visitantes não carregam nada.
+import { assistente, site } from '../data/site';
+
+const config = {
+  endpoint: '/assistente/',
+  name: assistente.nome,
+  welcome: assistente.boasVindas,
+  color: assistente.cor,
+  position: 'left',
+  whatsapp: `https://wa.me/${site.telefones[0].whatsapp}`,
+  sttServer: assistente.vozNoServidor,
+  maxImages: assistente.maxFotos,
+  cartUrl: '',
+  testMode: assistente.modo === 'teste',
+};
+const versao = assistente.versao;
+---
+
+{
+  assistente.ativo && (
+    <script is:inline define:vars={{ config, versao }}>
+      (function () {
+        if (config.testMode) {
+          var chave = new URLSearchParams(location.search).get('cpai_teste');
+          if (chave) {
+            document.cookie = 'cpai_teste=' + encodeURIComponent(chave) + '; path=/; max-age=' + 30 * 86400 +
+              '; samesite=lax' + (location.protocol === 'https:' ? '; secure' : '');
+          }
+          if (!/(?:^|;\s*)cpai_teste=/.test(document.cookie)) return;
+        }
+        window.CPAI = config;
+        var css = document.createElement('link');
+        css.rel = 'stylesheet';
+        css.href = '/assistente/widget.css?v=' + versao;
+        document.head.appendChild(css);
+        var tema = document.createElement('link');
+        tema.rel = 'stylesheet';
+        tema.href = '/assistente/saraiva.css?v=' + versao;
+        document.head.appendChild(tema);
+        var js = document.createElement('script');
+        js.src = '/assistente/widget.js?v=' + versao;
+        js.defer = true;
+        document.body.appendChild(js);
+      })();
+    </script>
+  )
+}
