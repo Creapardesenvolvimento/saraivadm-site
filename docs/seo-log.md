@@ -442,3 +442,8 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
   - as páginas dos projetos ficam com noindex e fora do sitemap;
   - o texto provisório fica fora do índice do assistente de IA.
 - Ao aprovar: corrigir os textos em `src/data/projetos.ts`, trocar `provisorio` para `false` e tirar a condição do portfólio no filtro do sitemap em `astro.config.mjs`.
+
+## 2026-11-06 — Assistente de IA aberto ao público
+
+- O chat aparece para todos os visitantes (`modo: 'publico'` em `src/data/site.ts`). Os arquivos do chat carregam em paralelo, sem travar a abertura da página.
+- No Easypanel, a variável `ASSISTENTE_TESTE_CHAVE` precisa ser apagada; com ela, o servidor só responde a quem tem o link de teste.

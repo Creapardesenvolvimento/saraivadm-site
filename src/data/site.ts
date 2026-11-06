@@ -160,7 +160,7 @@ export const rodapeInstitucional = [
 export const assistente = {
   ativo: true,
   // 'teste': só aparece para quem abriu o link de teste (/?cpai_teste=CHAVE). 'publico': para todos.
-  modo: 'teste' as 'teste' | 'publico',
+  modo: 'publico' as 'teste' | 'publico',
   nome: 'Assistente Saraiva',
   boasVindas:
     'Olá! Posso tirar suas dúvidas sobre pergolados, coberturas, forros, pisos e decks da Saraiva Design. Pode escrever, mandar uma foto do seu espaço ou falar.',
