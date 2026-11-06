@@ -12,7 +12,9 @@ export default defineConfig({
   vite: { resolve: { preserveSymlinks: true } },
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/obrigado/') && !page.includes('/assistente/'),
+      // Páginas de projeto do portfólio ficam fora enquanto os textos estão em aprovação
+      // (ver `provisorio` em src/data/projetos.ts). Depois de aprovados, apague a última condição.
+      filter: (page) => !page.includes('/obrigado/') && !page.includes('/assistente/') && !/\/portfolio\/[^/]+\/$/.test(page),
     }),
     indiceAssistente(),
   ],

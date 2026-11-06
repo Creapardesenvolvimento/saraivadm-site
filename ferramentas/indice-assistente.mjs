@@ -53,7 +53,10 @@ export default function indiceAssistente() {
           const url = '/' + relative(raiz, arquivo).split(sep).slice(0, -1).join('/') + '/';
           const caminho = url.replace(/\/+/g, '/');
           if (IGNORAR.includes(caminho)) continue;
-          const html = await readFile(arquivo, 'utf8');
+          const html = (await readFile(arquivo, 'utf8'))
+            // Conteúdo provisório (ainda em aprovação) não entra no que o assistente responde
+            .replace(/<section\b[^>]*data-provisorio[^>]*>[\s\S]*?<\/section>/gi, ' ');
+          if (/<meta name="robots" content="noindex/i.test(html)) continue;
           const titulo = decodificar(html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] ?? '').trim();
           const descricao = decodificar(html.match(/<meta name="description" content="([^"]*)"/i)?.[1] ?? '').trim();
           const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1] ?? '';

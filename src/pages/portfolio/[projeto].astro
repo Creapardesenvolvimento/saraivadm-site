@@ -1,0 +1,101 @@
+---
+// Página de cada projeto detalhado do portfólio (dados em src/data/projetos.ts).
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Galeria from '../../components/Galeria.astro';
+import ProjetosDetalhados from '../../components/ProjetosDetalhados.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import IconeWhatsApp from '../../components/IconeWhatsApp.astro';
+import { projetos, provisorio, type Projeto } from '../../data/projetos';
+import { site, whatsappUrl } from '../../data/site';
+import portfolio from '../../data/paginas/portfolio.json';
+import '../../styles/produto.css';
+import '../../styles/vitrine.css';
+
+export function getStaticPaths() {
+  return projetos.map((p) => ({ params: { projeto: p.slug }, props: { p } }));
+}
+const { p } = Astro.props as { p: Projeto };
+
+const imagens = import.meta.glob<{ default: ImageMetadata }>('../../assets/img/paginas/portfolio/*.{jpg,jpeg,png,webp}', { eager: true });
+const fotosPortfolio = (portfolio.secoes as any[])
+  .flatMap((s) => s.blocos ?? [])
+  .filter((b) => b.t === 'galeria')
+  .flatMap((b) => b.fotos)
+  .map((f: any) => ({ src: Object.entries(imagens).find(([k]) => k.endsWith('/' + f.arquivo))?.[1].default!, alt: f.alt as string }));
+
+const capa = fotosPortfolio[p.capa];
+const fotos = p.fotos.map((i, k) => fotosPortfolio[i] && { src: fotosPortfolio[i].src, alt: `${p.titulo} – foto ${k + 1}` }).filter(Boolean) as { src: ImageMetadata; alt: string }[];
+const outros = projetos.filter((x) => x.slug !== p.slug).slice(0, 3);
+const msg = whatsappUrl(`Olá! Vi o projeto "${p.titulo}" no site e quero algo parecido com a Saraiva Design.`);
+const url = `${site.url}/portfolio/${p.slug}/`;
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: `${site.url}/` },
+      { '@type': 'ListItem', position: 2, name: 'Portfólio', item: `${site.url}/portfolio/` },
+      { '@type': 'ListItem', position: 3, name: p.titulo, item: url },
+    ],
+  },
+];
+---
+
+<Base title={`${p.titulo.split(':')[0]} | Saraiva Design`} description={p.resumo} image={capa.src} schema={schema} pagina={p.titulo.split(':')[0]} noindex={provisorio} headerSobreposto>
+  <PageHero
+    imagem={capa.src}
+    titulo={p.titulo}
+    trilha={[{ label: 'Início', href: '/' }, { label: 'Portfólio', href: '/portfolio/' }, { label: 'Projeto' }]}
+    botoes={[
+      { label: 'Quero um projeto assim', href: msg, whatsapp: true },
+      { label: 'Ver as fotos', href: '#conteudo-produto' },
+    ]}
+  />
+
+  <div id="conteudo-produto"></div>
+  <section class="pm-sec">
+    <div class="sar-wrap">
+      <a class="dt-voltar" href="/portfolio/#projetos">← Voltar para os projetos</a>
+      {
+        provisorio && (
+          <p class="pj-aviso" role="note">
+            <strong>Em aprovação:</strong> o texto e a ficha deste projeto são provisórios e ainda serão revisados pela Saraiva Design.
+          </p>
+        )
+      }
+      <dl class="dt-ficha vt-revela">
+        <div><dt>Local</dt><dd>{p.local}</dd></div>
+        <div><dt>Categoria</dt><dd>{p.categoria}</dd></div>
+        <div><dt>Material</dt><dd>{p.material}</dd></div>
+        <div><dt>Tamanho</dt><dd>{p.tamanho}</dd></div>
+        <div><dt>Tipo</dt><dd>{p.tipo}</dd></div>
+      </dl>
+      <div class="dt-corpo vt-revela">
+        <p class="dt-lead">{p.resumo}</p>
+        {p.texto.map((t) => <p>{t}</p>)}
+        <a class="btn btn--verde" href={msg} target="_blank" rel="noopener"><IconeWhatsApp /> Quero um projeto como este</a>
+      </div>
+      <h2 class="dt-sub">Fotos da obra</h2>
+      <Galeria fotos={fotos} colunas={3} />
+    </div>
+  </section>
+
+  <section class="pm-sec pm-sec--bege">
+    <div class="sar-wrap">
+      <h2 class="dt-sub">Outros projetos</h2>
+      <ProjetosDetalhados fotos={fotosPortfolio} lista={outros} simples />
+      <p style="text-align:center;margin-top:36px">
+        <a class="btn btn--escuro-contorno" href="/portfolio/#projetos">Ver todos os projetos</a>
+      </p>
+    </div>
+  </section>
+
+  <ContactForm titulo="Gostou deste projeto?<br> Receba o contato da nossa equipe" />
+</Base>
+
+<script>
+  import { revelar } from '../../scripts/vitrine';
+  revelar();
+</script>

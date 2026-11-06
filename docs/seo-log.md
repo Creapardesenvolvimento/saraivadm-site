@@ -432,3 +432,13 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - Chat de IA no canto esquerdo, adaptado do plugin Creapar Assistente de Vendas IA, que era para WordPress. Detalhes em `docs/assistente-ia.md`.
 - Em modo de teste, os visitantes comuns não baixam nenhum arquivo do chat, então não há impacto na velocidade nem no SEO.
 - `/assistente/` fica fora do sitemap. O índice de conteúdo do assistente é gerado a cada build.
+
+## 2026-11-06 — Portfólio e Antes e depois mais dinâmicos
+
+- Antes e depois: as 67 montagens viraram comparadores (arrastar a linha ou passar o mouse), com filtro por tipo, "ver mais" e tela cheia. As metades são geradas por `ferramentas/dividir-antes-depois.py` em `src/assets/img/paginas/antes-depois/comparar/`. O selo central e a faixa branca saem; o resto da foto é mantido.
+- Portfólio: carrossel "Projetos em destaque", galeria com filtro por tipo, "carregar mais" e tela cheia. Fotos inteiras, sem corte. Os textos originais da página foram mantidos.
+- Projetos detalhados: 7 projetos com busca, filtros e uma página para cada um (`/portfolio/<projeto>/`). Os textos vieram do protótipo e estão **em aprovação** (`provisorio` em `src/data/projetos.ts`). Enquanto isso:
+  - o site mostra um aviso de texto provisório;
+  - as páginas dos projetos ficam com noindex e fora do sitemap;
+  - o texto provisório fica fora do índice do assistente de IA.
+- Ao aprovar: corrigir os textos em `src/data/projetos.ts`, trocar `provisorio` para `false` e tirar a condição do portfólio no filtro do sitemap em `astro.config.mjs`.

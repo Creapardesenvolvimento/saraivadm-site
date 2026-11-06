@@ -1,0 +1,94 @@
+---
+// Galeria do portfólio com filtro por tipo, "carregar mais" e tela cheia.
+// Fotos inteiras: fileiras de mesma altura, cada quadro na proporção da própria foto.
+import { Image } from 'astro:assets';
+import { categoriaDaFoto } from '../data/projetos';
+import '../styles/vitrine.css';
+
+interface Props {
+  fotos: { src: ImageMetadata; alt: string }[];
+  inicial?: number;
+}
+const { fotos, inicial = 18 } = Astro.props;
+const maiuscula = (t: string) => t.charAt(0).toUpperCase() + t.slice(1).replace(/\s+/g, ' ');
+
+const itens = fotos.map((f) => ({ ...f, titulo: maiuscula(f.alt), categoria: categoriaDaFoto(f.alt), prop: f.src.width / f.src.height }));
+const categorias = [...new Set(itens.map((i) => i.categoria))].sort((a, b) => itens.filter((i) => i.categoria === b).length - itens.filter((i) => i.categoria === a).length);
+const ZOOM = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>';
+---
+
+<div class="pf" data-inicial={inicial}>
+  <div class="vt-filtros" role="group" aria-label="Filtrar por tipo">
+    <button type="button" class="vt-filtro" data-cat="" aria-pressed="true">Todos<span>{itens.length}</span></button>
+    {
+      categorias.map((c) => (
+        <button type="button" class="vt-filtro" data-cat={c} aria-pressed="false">
+          {c}
+          <span>{itens.filter((i) => i.categoria === c).length}</span>
+        </button>
+      ))
+    }
+  </div>
+  <ul class="pf-grade" role="list">
+    {
+      itens.map((it, k) => (
+        <li class="pf-item vt-revela" data-cat={it.categoria} style={`--prop:${it.prop.toFixed(4)};--d:${(k % 4) * 0.06}s`} hidden={k >= inicial}>
+          <button type="button" class="pf-foto" aria-label={`Ver em tela cheia: ${it.titulo}`} data-titulo={it.titulo} data-sub={it.categoria}>
+            <Image src={it.src} alt={it.alt} widths={[400, 700, 1100, 1600]} sizes="(max-width: 520px) 60vw, (max-width: 900px) 45vw, 420px" quality={90} />
+            <span class="vt-zoom" set:html={ZOOM} />
+            <span class="vt-legenda">
+              <small>{it.categoria}</small>
+              <strong>{it.titulo}</strong>
+            </span>
+          </button>
+        </li>
+      ))
+    }
+  </ul>
+  <div class="vt-mais" hidden={itens.length <= inicial}>
+    <button type="button" class="btn btn--escuro-contorno">Carregar mais projetos</button>
+  </div>
+</div>
+
+<script>
+  import { revelar, visualizador, filtros } from '../scripts/vitrine';
+
+  document.querySelectorAll<HTMLElement>('.pf').forEach((raiz) => {
+    const passo = Number(raiz.dataset.inicial) || 18;
+    const itens = [...raiz.querySelectorAll<HTMLElement>('.pf-item')];
+    const mais = raiz.querySelector<HTMLElement>('.vt-mais')!;
+    let cat = '';
+    let limite = passo;
+    const doFiltro = () => itens.filter((c) => !cat || c.dataset.cat === cat);
+    const mostrar = () => {
+      const lista = doFiltro();
+      itens.forEach((c) => (c.hidden = true));
+      lista.forEach((c, k) => (c.hidden = k >= limite));
+      mais.hidden = lista.length <= limite;
+      revelar(raiz);
+    };
+    filtros(raiz.querySelector('.vt-filtros')!, (c) => {
+      cat = c;
+      limite = passo;
+      mostrar();
+    });
+    mais.querySelector('button')!.addEventListener('click', () => {
+      limite += passo;
+      mostrar();
+    });
+    const vz = visualizador({ textoBotao: 'Quero um projeto assim' });
+    itens.forEach((li) =>
+      li.querySelector('.pf-foto')!.addEventListener('click', () => {
+        const lista = doFiltro();
+        vz.abrir(
+          lista.map((x) => {
+            const b = x.querySelector<HTMLElement>('.pf-foto')!;
+            return { titulo: b.dataset.titulo!, sub: b.dataset.sub!, midia: b.querySelector('img')! };
+          }),
+          lista.indexOf(li),
+        );
+      }),
+    );
+    revelar(raiz);
+  });
+</script>

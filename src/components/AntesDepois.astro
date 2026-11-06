@@ -1,0 +1,146 @@
+---
+// Antes e depois: cada montagem vira um comparador (arraste a linha ou passe o mouse).
+// As metades vêm de src/assets/img/paginas/antes-depois/comparar/ (ferramentas/dividir-antes-depois.py).
+// Montagem sem metades divididas aparece inteira, como foto comum.
+import { Image } from 'astro:assets';
+import { categoriaDaFoto } from '../data/projetos';
+import '../styles/vitrine.css';
+
+interface Props {
+  fotos: { arquivo: string; alt: string }[];
+  /** quantas aparecem antes do botão "ver mais" */
+  inicial?: number;
+}
+const { fotos, inicial = 12 } = Astro.props;
+
+const metades = import.meta.glob<{ default: ImageMetadata }>('../assets/img/paginas/antes-depois/comparar/*.jpg', { eager: true });
+const metade = (n: string, lado: 'antes' | 'depois') =>
+  Object.entries(metades).find(([k]) => k.endsWith(`/${n}-${lado}.jpg`))?.[1].default;
+
+const limpa = (t: string) => t.replace(/\s+/g, ' ').replace(/\s*-\s*/g, ' – ').trim();
+const maiuscula = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
+
+const itens = fotos
+  .map((f) => {
+    const n = f.arquivo.slice(0, 3);
+    const antes = metade(n, 'antes');
+    const depois = metade(n, 'depois');
+    if (!antes || !depois) return null;
+    return { antes, depois, titulo: maiuscula(limpa(f.alt)), categoria: categoriaDaFoto(f.alt), prop: antes.width / antes.height };
+  })
+  .filter((x): x is NonNullable<typeof x> => !!x);
+
+const categorias = [...new Set(itens.map((i) => i.categoria))].sort((a, b) => itens.filter((i) => i.categoria === b).length - itens.filter((i) => i.categoria === a).length);
+const AMPLIAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>';
+---
+
+<div class="ad" data-inicial={inicial}>
+  <p class="ad__dica">Passe o mouse ou arraste o dedo sobre as fotos e veja o antes virar depois.</p>
+  <div class="vt-filtros" role="group" aria-label="Filtrar por tipo">
+    <button type="button" class="vt-filtro" data-cat="" aria-pressed="true">Todos<span>{itens.length}</span></button>
+    {
+      categorias.map((c) => (
+        <button type="button" class="vt-filtro" data-cat={c} aria-pressed="false">
+          {c}
+          <span>{itens.filter((i) => i.categoria === c).length}</span>
+        </button>
+      ))
+    }
+  </div>
+
+  <ul class="ad-grade" role="list">
+    {
+      itens.map((it, k) => (
+        <li class="ad-card vt-revela" data-cat={it.categoria} style={`--d:${(k % 3) * 0.08}s`} hidden={k >= inicial}>
+          <div class="cmp" style={`--prop:${it.prop.toFixed(4)}`} aria-label={`Comparar antes e depois: ${it.titulo}`} data-titulo={it.titulo} data-sub={it.categoria}>
+            <Image src={it.depois} alt={`Depois: ${it.titulo}`} class="cmp__depois" widths={[560, 1080]} sizes="(max-width: 600px) 100vw, (max-width: 980px) 50vw, 380px" quality={90} draggable="false" />
+            <Image src={it.antes} alt={`Antes: ${it.titulo}`} class="cmp__antes" widths={[560, 1080]} sizes="(max-width: 600px) 100vw, (max-width: 980px) 50vw, 380px" quality={90} draggable="false" />
+          </div>
+          <div class="ad-card__info">
+            <div>
+              <span class="vt-cat">{it.categoria}</span>
+              <h3>{it.titulo}</h3>
+            </div>
+            <button type="button" class="vt-ampliar" aria-label={`Ver em tela cheia: ${it.titulo}`} set:html={AMPLIAR} />
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+  <div class="vt-mais" hidden={itens.length <= inicial}>
+    <button type="button" class="btn btn--escuro-contorno">Ver mais transformações</button>
+  </div>
+</div>
+
+<style>
+  .ad__dica {
+    text-align: center;
+    margin: -12px auto 28px;
+    max-width: 620px;
+    color: #6b5a52;
+    font-size: 15px;
+  }
+</style>
+
+<script>
+  import { comparador, revelar, visualizador, filtros, type Comparador } from '../scripts/vitrine';
+
+  document.querySelectorAll<HTMLElement>('.ad').forEach((raiz) => {
+    const passo = Number(raiz.dataset.inicial) || 12;
+    const cards = [...raiz.querySelectorAll<HTMLElement>('.ad-card')];
+    const mais = raiz.querySelector<HTMLElement>('.vt-mais')!;
+    let cat = '';
+    let limite = passo;
+
+    cards.forEach((c) => comparador(c.querySelector<Comparador>('.cmp')!));
+
+    const doFiltro = () => cards.filter((c) => !cat || c.dataset.cat === cat);
+    const mostrar = () => {
+      const lista = doFiltro();
+      cards.forEach((c) => (c.hidden = true));
+      lista.forEach((c, k) => (c.hidden = k >= limite));
+      mais.hidden = lista.length <= limite;
+      revelar(raiz);
+    };
+
+    filtros(raiz.querySelector('.vt-filtros')!, (c) => {
+      cat = c;
+      limite = passo;
+      mostrar();
+    });
+    mais.querySelector('button')!.addEventListener('click', () => {
+      limite += passo;
+      mostrar();
+    });
+
+    const vz = visualizador({ textoBotao: 'Quero uma transformação assim' });
+    cards.forEach((c) =>
+      c.querySelector('.vt-ampliar')!.addEventListener('click', () => {
+        const lista = doFiltro();
+        vz.abrir(
+          lista.map((x) => {
+            const m = x.querySelector<HTMLElement>('.cmp')!;
+            return { titulo: m.dataset.titulo!, sub: m.dataset.sub!, midia: m };
+          }),
+          lista.indexOf(c),
+        );
+      }),
+    );
+
+    // Os três primeiros fazem uma varredura sozinhos quando aparecem, para mostrar o recurso
+    if ('IntersectionObserver' in window) {
+      const demo = new IntersectionObserver(
+        (es) =>
+          es.forEach((e) => {
+            if (e.isIntersecting) {
+              (e.target as Comparador).varrer?.(250);
+              demo.unobserve(e.target);
+            }
+          }),
+        { threshold: 0.6 },
+      );
+      cards.slice(0, 3).forEach((c) => demo.observe(c.querySelector('.cmp')!));
+    }
+    revelar(raiz);
+  });
+</script>

@@ -1,0 +1,90 @@
+---
+// Carrossel "Projetos em destaque" do portfólio: fotos inteiras, na mesma altura, com setas e barra de progresso.
+import { Image } from 'astro:assets';
+import { categoriaDaFoto } from '../data/projetos';
+import '../styles/vitrine.css';
+
+interface Props {
+  fotos: { src: ImageMetadata; alt: string }[];
+}
+const { fotos } = Astro.props;
+const maiuscula = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
+---
+
+<section class="dest" aria-labelledby="dest-titulo">
+  <div class="sar-wrap dest__topo">
+    <div>
+      <h2 class="titulo-secao" id="dest-titulo">Projetos em destaque</h2>
+      <p>Deslize e conheça alguns dos nossos trabalhos.</p>
+    </div>
+    <div class="dest__setas">
+      <button type="button" data-dir="-1" aria-label="Projeto anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></button>
+      <button type="button" data-dir="1" aria-label="Próximo projeto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></button>
+    </div>
+  </div>
+  <ul class="dest__trilho" role="list">
+    {
+      fotos.map((f, k) => (
+        <li class="dest__slide" style={`--prop:${(f.src.width / f.src.height).toFixed(4)}`}>
+          <button type="button" class="dest__foto" aria-label={`Ver em tela cheia: ${f.alt}`} data-titulo={maiuscula(f.alt)} data-sub={categoriaDaFoto(f.alt)}>
+            <Image src={f.src} alt={f.alt} widths={[600, 900, 1280, 1600]} sizes="(max-width: 700px) 86vw, 820px" loading={k < 2 ? 'eager' : 'lazy'} quality={90} />
+            <span class="vt-legenda">
+              <small>{categoriaDaFoto(f.alt)}</small>
+              <strong>{maiuscula(f.alt)}</strong>
+            </span>
+          </button>
+        </li>
+      ))
+    }
+  </ul>
+  <div class="sar-wrap"><div class="dest__progresso"><i></i></div></div>
+</section>
+
+<script>
+  import { visualizador } from '../scripts/vitrine';
+
+  document.querySelectorAll<HTMLElement>('.dest').forEach((sec) => {
+    const trilho = sec.querySelector<HTMLElement>('.dest__trilho')!;
+    const slides = [...trilho.querySelectorAll<HTMLElement>('.dest__slide')];
+    const barra = sec.querySelector<HTMLElement>('.dest__progresso i')!;
+    const atual = () => {
+      const c = trilho.getBoundingClientRect();
+      const meio = c.left + c.width / 2;
+      let melhor = 0;
+      let dist = Infinity;
+      slides.forEach((s, k) => {
+        const r = s.getBoundingClientRect();
+        const d = Math.abs(r.left + r.width / 2 - meio);
+        if (d < dist) {
+          dist = d;
+          melhor = k;
+        }
+      });
+      slides.forEach((s, k) => s.classList.toggle('is-atual', k === melhor));
+      barra.style.width = ((melhor + 1) / slides.length) * 100 + '%';
+      return melhor;
+    };
+    let pedido = 0;
+    trilho.addEventListener('scroll', () => {
+      cancelAnimationFrame(pedido);
+      pedido = requestAnimationFrame(atual);
+    }, { passive: true });
+    const ir = (k: number) => {
+      const s = slides[Math.max(0, Math.min(slides.length - 1, k))];
+      trilho.scrollTo({ left: s.offsetLeft - (trilho.clientWidth - s.offsetWidth) / 2, behavior: 'smooth' });
+    };
+    sec.querySelectorAll<HTMLButtonElement>('.dest__setas button').forEach((b) => b.addEventListener('click', () => ir(atual() + Number(b.dataset.dir))));
+    addEventListener('resize', atual);
+    atual();
+
+    const vz = visualizador({ textoBotao: 'Quero um projeto assim' });
+    const botoes = slides.map((s) => s.querySelector<HTMLElement>('.dest__foto')!);
+    botoes.forEach((b, k) =>
+      b.addEventListener('click', () => {
+        // Clique numa foto lateral só a traz para o centro; na do centro, abre em tela cheia
+        if (k !== atual()) return ir(k);
+        vz.abrir(botoes.map((x) => ({ titulo: x.dataset.titulo!, sub: x.dataset.sub!, midia: x.querySelector('img')! })), k);
+      }),
+    );
+  });
+</script>

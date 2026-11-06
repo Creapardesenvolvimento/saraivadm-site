@@ -9,6 +9,11 @@ import Galeria from '../components/Galeria.astro';
 import Acordeao from '../components/Acordeao.astro';
 import ProdutosGrid from '../components/ProdutosGrid.astro';
 import ContactForm from '../components/ContactForm.astro';
+import AntesDepois from '../components/AntesDepois.astro';
+import PortfolioDestaques from '../components/PortfolioDestaques.astro';
+import PortfolioGaleria from '../components/PortfolioGaleria.astro';
+import ProjetosDetalhados from '../components/ProjetosDetalhados.astro';
+import { destaques, provisorio } from '../data/projetos';
 import { site, whatsappUrl } from '../data/site';
 import { catalogo, type ProdutoCatalogo } from '../data/catalogo';
 import heroPadrao from '../assets/img/hero-pergolado-piscina.jpg';
@@ -64,6 +69,17 @@ for (const c of catalogo) {
   if (relacionados.length >= 3) break;
   if (c.href !== `/${slug}/` && !relacionados.some((r) => r.href === c.href)) relacionados.push(c);
 }
+
+// Portfólio: fotos da galeria (na ordem do JSON), usadas pelos destaques e pelos projetos detalhados
+const ehPortfolio = slug === 'portfolio';
+const fotosPortfolio: { src: ImageMetadata; alt: string }[] = ehPortfolio
+  ? p.secoes
+      .flatMap((s: any) => s.blocos ?? [])
+      .filter((b: any) => b.t === 'galeria')
+      .flatMap((b: any) => b.fotos)
+      .map((f: any) => ({ src: img(f.arquivo)!, alt: f.alt }))
+      .filter((f: any) => f.src)
+  : [];
 
 // Mascote da Saraiva: acompanha a altura do texto ao lado (ver .pm-uso--mascote)
 const ehMascote = (arquivo?: string) => /madeira-nobre/.test(arquivo ?? '');
@@ -176,6 +192,7 @@ if (duvidas) {
   />
 
   <div id="conteudo-produto"></div>
+  {ehPortfolio && <PortfolioDestaques fotos={destaques.map((i) => fotosPortfolio[i]).filter(Boolean)} />}
   {
     p.secoes.map((s: any) => {
       const classe = fundo(s);
@@ -275,6 +292,8 @@ if (duvidas) {
                 if (b.t === 'sub') return <h3 class="pm-fluxo__sub">{b.texto}</h3>;
                 if (b.t === 'img' && img(b.arquivo))
                   return <Image src={img(b.arquivo)!} alt={b.alt} widths={[700, 1200, 1920]} sizes={ehMascote(b.arquivo) ? '300px' : '(max-width: 1000px) 100vw, 1180px'} class:list={['pm-fluxo__img', { 'pm-fluxo__img--mascote': ehMascote(b.arquivo) }]} quality={90} />;
+                if (b.t === 'galeria' && slug === 'antes-depois') return <AntesDepois fotos={b.fotos.filter((f: any) => img(f.arquivo))} />;
+                if (b.t === 'galeria' && ehPortfolio) return <PortfolioGaleria fotos={fotosPortfolio} />;
                 if (b.t === 'galeria') {
                   const fotos = b.fotos.filter((f: any) => img(f.arquivo)).map((f: any) => ({ src: img(f.arquivo)!, alt: f.alt }));
                   return fotos.length ? <Galeria fotos={fotos} colunas={fotos.length <= 5 ? Math.max(fotos.length, 3) : fotos.length % 3 === 0 && fotos.length < 10 ? 3 : 4} /> : null;
@@ -346,8 +365,22 @@ if (duvidas) {
   }
 
   {
+    ehPortfolio && (
+      <section class="pm-sec pm-sec--bege" id="projetos" data-provisorio={provisorio ? '' : undefined}>
+        <div class="sar-wrap">
+          <header class="pm-head">
+            <h2 class="titulo-secao">Projetos detalhados</h2>
+            <p>Os bastidores de algumas obras, com mais fotos e informações de cada projeto.</p>
+          </header>
+          <ProjetosDetalhados fotos={fotosPortfolio} />
+        </div>
+      </section>
+    )
+  }
+
+  {
     relacionados.length > 0 && (
-      <section class="pm-sec pm-sec--bege">
+      <section class:list={['pm-sec', { 'pm-sec--bege': !ehPortfolio }]}>
         <div class="sar-wrap">
           <header class="pm-head">
             <h2 class="titulo-secao">Complete seu projeto</h2>

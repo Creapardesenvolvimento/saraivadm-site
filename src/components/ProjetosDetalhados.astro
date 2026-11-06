@@ -1,0 +1,118 @@
+---
+// "Projetos detalhados" do portfólio: busca, filtros e cards que levam à página de cada projeto.
+import { Image } from 'astro:assets';
+import { projetos, provisorio, type Projeto } from '../data/projetos';
+import '../styles/vitrine.css';
+
+interface Props {
+  /** fotos da galeria do portfólio, na ordem do portfolio.json */
+  fotos: { src: ImageMetadata; alt: string }[];
+  /** lista a mostrar (padrão: todos) */
+  lista?: Projeto[];
+  /** sem título, busca e filtros (usado em "Outros projetos") */
+  simples?: boolean;
+}
+const { fotos, lista = projetos, simples = false } = Astro.props;
+const valores = (campo: keyof Projeto) => [...new Set(lista.map((p) => String(p[campo])))];
+const FILTROS: [keyof Projeto, string][] = [
+  ['categoria', 'Categorias'],
+  ['material', 'Materiais'],
+  ['tamanho', 'Tamanhos'],
+  ['tipo', 'Tipos'],
+];
+---
+
+<div class="pj" data-simples={simples ? '1' : undefined}>
+  {
+    !simples && (
+      <>
+        {provisorio && (
+          <p class="pj-aviso" role="note">
+            <strong>Em aprovação:</strong> os textos e as fichas destes projetos são provisórios e ainda serão revisados pela Saraiva Design.
+          </p>
+        )}
+        <label class="visually-hidden" for="pj-busca">Buscar projetos</label>
+        <input class="pj-busca" id="pj-busca" type="search" placeholder="Busque pelo nome do projeto..." />
+        <div class="pj-filtros">
+          {FILTROS.map(([campo, rotulo]) => (
+            <select class="pj-sel" data-campo={campo} aria-label={rotulo}>
+              <option value="">{rotulo}</option>
+              {valores(campo).map((v) => (
+                <option>{v}</option>
+              ))}
+            </select>
+          ))}
+        </div>
+        <div class="pj-meta">
+          <span class="pj-conta" aria-live="polite">
+            {lista.length} projetos
+          </span>
+          <button type="button" class="pj-limpar" hidden>
+            Limpar filtros
+          </button>
+        </div>
+      </>
+    )
+  }
+  <ul class="pj-grade" role="list">
+    {
+      lista.map((p, k) => {
+        const capa = fotos[p.capa];
+        return (
+          <li class="vt-revela" style={`--d:${(k % 3) * 0.08}s`} data-busca={`${p.titulo} ${p.resumo} ${p.local}`} data-categoria={p.categoria} data-material={p.material} data-tamanho={p.tamanho} data-tipo={p.tipo}>
+            <a class="pj-card" href={`/portfolio/${p.slug}/`}>
+              <span class="pj-card__img" style={capa ? `--prop:${(capa.src.width / capa.src.height).toFixed(4)}` : ''}>
+                {capa && <Image src={capa.src} alt={capa.alt} widths={[400, 700, 1000]} sizes="(max-width: 620px) 100vw, (max-width: 980px) 50vw, 380px" quality={90} />}
+                <span class="pj-card__tag">{p.categoria}</span>
+                <span class="pj-card__fotos">{p.fotos.length} fotos</span>
+              </span>
+              <span class="pj-card__corpo">
+                <h3>{p.titulo}</h3>
+                <p>{p.resumo}</p>
+                <span class="pj-card__ver">Ver projeto »</span>
+              </span>
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+  {!simples && <p class="pj-vazio" hidden>Nenhum projeto encontrado com esses filtros.</p>}
+</div>
+
+<script>
+  import { revelar } from '../scripts/vitrine';
+
+  const norm = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+  document.querySelectorAll<HTMLElement>('.pj').forEach((raiz) => {
+    revelar(raiz);
+    if (raiz.dataset.simples) return;
+    const busca = raiz.querySelector<HTMLInputElement>('.pj-busca')!;
+    const sels = [...raiz.querySelectorAll<HTMLSelectElement>('.pj-sel')];
+    const cards = [...raiz.querySelectorAll<HTMLElement>('.pj-grade > li')];
+    const conta = raiz.querySelector<HTMLElement>('.pj-conta')!;
+    const vazio = raiz.querySelector<HTMLElement>('.pj-vazio')!;
+    const limpar = raiz.querySelector<HTMLButtonElement>('.pj-limpar')!;
+    const filtrar = () => {
+      const q = norm(busca.value.trim());
+      let n = 0;
+      cards.forEach((c) => {
+        const ok = (!q || norm(c.dataset.busca!).includes(q)) && sels.every((s) => !s.value || c.dataset[s.dataset.campo!] === s.value);
+        c.hidden = !ok;
+        if (ok) n++;
+      });
+      conta.textContent = n === 1 ? '1 projeto' : `${n} projetos`;
+      vazio.hidden = n > 0;
+      limpar.hidden = !(q || sels.some((s) => s.value));
+      revelar(raiz);
+    };
+    busca.addEventListener('input', filtrar);
+    sels.forEach((s) => s.addEventListener('change', filtrar));
+    limpar.addEventListener('click', () => {
+      busca.value = '';
+      sels.forEach((s) => (s.value = ''));
+      filtrar();
+    });
+  });
+</script>
