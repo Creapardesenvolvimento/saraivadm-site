@@ -68,8 +68,22 @@ export interface ItemMenu {
   filhos?: { label: string; href: string; descricao?: string }[];
 }
 
+// Páginas ocultas: continuam no ar pelo endereço direto, mas saem do menu, do rodapé,
+// dos cards de produtos, do sitemap, do assistente e do Google (noindex).
+// Para mostrar uma página de novo, basta tirá-la desta lista.
+export const paginasOcultas = [
+  '/telha-para-pergolado/',
+  '/pergoplac/',
+  '/brise-de-madeira/',
+  '/caramanchao/',
+  '/gazebo/',
+  '/deck-modular/',
+  '/deck-hidro-spa/',
+];
+export const paginaVisivel = (href: string) => !paginasOcultas.includes(href);
+
 // Menu do topo. Os endereços são os mesmos do site antigo (preserva o SEO).
-export const menuPrincipal: ItemMenu[] = [
+const menuCompleto: ItemMenu[] = [
   {
     label: 'Pergolados',
     descricao: 'Estruturas sob medida em madeira nobre, aço carbono e madeira laminada colada.',
@@ -118,7 +132,7 @@ export const menuPrincipal: ItemMenu[] = [
   },
 ];
 
-export const rodapeProdutos = [
+const rodapeCompleto = [
   { label: 'Pergolado de madeira', href: '/pergolado-de-madeira/' },
   { label: 'Pergolado metálico', href: '/pergolado-metalico/' },
   { label: 'Pergolado MLC', href: '/mlc/' },
@@ -142,6 +156,12 @@ export const rodapeProdutos = [
   { label: 'Deck modular', href: '/deck-modular/' },
   { label: 'Deck hidro-spa', href: '/deck-hidro-spa/' },
 ];
+
+export const menuPrincipal: ItemMenu[] = menuCompleto
+  .map((item) => (item.filhos ? { ...item, filhos: item.filhos.filter((f) => paginaVisivel(f.href)) } : item))
+  .filter((item) => (item.href ? paginaVisivel(item.href) : item.filhos!.length > 0));
+
+export const rodapeProdutos = rodapeCompleto.filter((l) => paginaVisivel(l.href));
 
 export const rodapeInstitucional = [
   { label: 'Sobre nós', href: '/institucional/' },

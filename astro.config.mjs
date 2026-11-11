@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { paginasOcultas } from './src/data/site.ts';
 import indiceAssistente from './ferramentas/indice-assistente.mjs';
 
 export default defineConfig({
@@ -14,7 +15,7 @@ export default defineConfig({
     sitemap({
       // Páginas de projeto do portfólio ficam fora enquanto os textos estão em aprovação
       // (ver `provisorio` em src/data/projetos.ts). Depois de aprovados, apague a última condição.
-      filter: (page) => !page.includes('/obrigado/') && !page.includes('/assistente/') && !/\/portfolio\/[^/]+\/$/.test(page),
+      filter: (page) => !page.includes('/obrigado/') && !page.includes('/assistente/') && !/\/portfolio\/[^/]+\/$/.test(page) && !paginasOcultas.some((h) => page.endsWith(h)),
     }),
     indiceAssistente(),
   ],

@@ -14,7 +14,7 @@ import PortfolioDestaques from '../components/PortfolioDestaques.astro';
 import PortfolioGaleria from '../components/PortfolioGaleria.astro';
 import ProjetosDetalhados from '../components/ProjetosDetalhados.astro';
 import { destaques, provisorio } from '../data/projetos';
-import { site, whatsappUrl } from '../data/site';
+import { site, whatsappUrl, paginaVisivel } from '../data/site';
 import { catalogo, type ProdutoCatalogo } from '../data/catalogo';
 import heroPadrao from '../assets/img/hero-pergolado-piscina.jpg';
 import '../styles/produto.css';
@@ -63,6 +63,7 @@ const rotuloPdf = (href: string, texto: string) => {
 
 // Produtos relacionados: do catálogo ou das próprias páginas geradas
 const relacionados: ProdutoCatalogo[] = (p.relacionados ?? [])
+  .filter((href: string) => paginaVisivel(href))
   .map((href: string) => {
     const doCatalogo = catalogo.find((c) => c.href === href);
     if (doCatalogo) return doCatalogo;
@@ -174,7 +175,7 @@ if (duvidas) {
 }
 ---
 
-<Base title={p.seo.title} description={p.seo.description} image={hero} schema={schema} pagina={p.nome} headerSobreposto>
+<Base title={p.seo.title} description={p.seo.description} image={hero} schema={schema} pagina={p.nome} noindex={!paginaVisivel(`/${slug}/`)} headerSobreposto>
   <PageHero
     imagem={hero}
     titulo={p.hero.titulo}

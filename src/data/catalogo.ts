@@ -7,6 +7,7 @@ import imgBrises from '../assets/img/brises.jpg';
 import imgCoberturas from '../assets/img/coberturas.jpg';
 import imgDecks from '../assets/img/decks.jpg';
 import imgMlc from '../assets/img/pergolado-mlc.jpg';
+import { paginaVisivel } from './site';
 import imgPergoladoMadeira from '../assets/img/pergolado-de-madeira.jpg';
 
 export interface ProdutoCatalogo {
@@ -16,7 +17,7 @@ export interface ProdutoCatalogo {
   alt: string;
 }
 
-export const catalogo: ProdutoCatalogo[] = [
+const todos: ProdutoCatalogo[] = [
   { nome: 'Pergolado metálico', href: '/pergolado-metalico/', img: imgPergoladoMetalico, alt: 'Pergolado metálico com cobertura em área de lazer' },
   { nome: 'Forro de madeira', href: '/forro-de-madeira/', img: imgForroMadeira, alt: 'Forro de madeira ripado em varanda' },
   { nome: 'Forro de bambu', href: '/forro-em-esteiras-de-bambu/', img: imgForroBambu, alt: 'Forro de bambu natural em área externa' },
@@ -27,3 +28,5 @@ export const catalogo: ProdutoCatalogo[] = [
   { nome: 'Pergolados MLC', href: '/mlc/', img: imgMlc, alt: 'Pergolado em madeira laminada colada (MLC)' },
   { nome: 'Pergolado de madeira', href: '/pergolado-de-madeira/', img: imgPergoladoMadeira, alt: 'Pergolado de madeira em jardim' },
 ];
+
+export const catalogo = todos.filter((p) => paginaVisivel(p.href));

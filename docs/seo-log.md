@@ -455,3 +455,11 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - Textos automáticos do fim das páginas com artigo correto ("com o Pergokit", "Quer a PergoConfort?") e "Conheça nossos produtos." nas institucionais.
 - Aviso "Em aprovação" do portfólio retirado; projetos detalhados seguem com noindex.
 - Itens que dependem da Saraiva (números, trechos copiados, blocos a adicionar) em `docs/revisao-textos-pendencias.md`.
+
+## 2026-11-11 — 7 páginas ocultas
+
+- Ocultas: Telha para pergolado, PergoPlac, Brise de madeira, Caramanchão, Gazebo, Deck modular e Deck hidro-spa.
+- Saíram do menu, do rodapé, dos cards de produtos, dos "produtos relacionados", do sitemap e do assistente; receberam noindex.
+  Os links no meio dos textos (Cobertura, Institucional, PergoConfort, Pergokit) viraram texto simples.
+- Os endereços continuam abrindo (quem vier de link antigo ou do Google não cai em erro 404).
+- Para reativar: tirar a página da lista `paginasOcultas` em `src/data/site.ts`.
