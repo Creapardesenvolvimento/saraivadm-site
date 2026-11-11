@@ -463,3 +463,8 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
   Os links no meio dos textos (Cobertura, Institucional, PergoConfort, Pergokit) viraram texto simples.
 - Os endereços continuam abrindo (quem vier de link antigo ou do Google não cai em erro 404).
 - Para reativar: tirar a página da lista `paginasOcultas` em `src/data/site.ts`.
+
+## 2026-11-11 — Imagens do topo iguais ao site oficial
+
+- Conferidas as 33 páginas contra saraivadm.com.br. Trocadas as 4 diferentes: Home (`hero-home.jpg`),
+  Pergolado metálico (`pergolado-metalico/hero.jpg`), MLC (`paginas/mlc/000-capa-mlc.jpg`) e Catálogos (`hero-catalogos.jpg`).
