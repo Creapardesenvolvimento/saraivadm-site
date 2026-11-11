@@ -466,5 +466,6 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 
 ## 2026-11-11 — Imagens do topo iguais ao site oficial
 
-- Conferidas as 33 páginas contra saraivadm.com.br. Trocadas as 4 diferentes: Home (`hero-home.jpg`),
+- Conferidas as 33 páginas contra saraivadm.com.br. Trocadas 3 das 4 diferentes:
   Pergolado metálico (`pergolado-metalico/hero.jpg`), MLC (`paginas/mlc/000-capa-mlc.jpg`) e Catálogos (`hero-catalogos.jpg`).
+  A Home continua com a imagem própria do site novo, por decisão da Saraiva.
