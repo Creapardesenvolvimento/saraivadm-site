@@ -7,7 +7,7 @@
  },
  "hero": {
   "titulo": "Forro de palha",
-  "texto": "Forro de palha para pergolado, produzido sob medida no comprimento, personalize seu pergolados com modelos exclusivos.",
+  "texto": "Forro de palha para pergolado, produzido sob medida no comprimento, personalize seu pergolado com modelos exclusivos.",
   "imagem": "036-forro-de-palha-capa.jpg"
  },
  "faixa": [
@@ -44,7 +44,7 @@
     },
     {
      "t": "html",
-     "html": "<p><strong>A Saraiva Design em Madeiras e Aço se destaca na criação de forros exclusivos para pergolados</strong>, oferecendo opções sintéticas e naturais testadas e aprovadas para revestir e embelezar essas estruturas, proporcionando sombra, privacidade e bloqueando a visão de elementos indesejados sobre a cobertura, resultando em ambientes atraentes e funcionais.</p><p>Podendo ser utilizado em pergolados, área gourmet, área de lazer, salas, espaços residenciais e comerciais, o forro de palha está disponível em 02 versões: <strong>forro de palha natural</strong> e <strong>forro de palha sintético</strong>. A Saraiva Design é uma empresa especializada na produção de forros para pergolados, sendo o forro palha líder em uso para pergolados.</p><p>Com uma equipe especializada e materiais de alta qualidade, a Saraiva se empenha em transformar seu pergolado em um espaço de beleza e conforto excepcionais.</p>"
+     "html": "<p><strong>A Saraiva Design em Madeiras e Aços se destaca na criação de forros exclusivos para pergolados</strong>, oferecendo opções sintéticas e naturais testadas e aprovadas para revestir e embelezar essas estruturas, proporcionando sombra, privacidade e bloqueando a visão de elementos indesejados sobre a cobertura, resultando em ambientes atraentes e funcionais.</p><p>Podendo ser utilizado em pergolados, área gourmet, área de lazer, salas, espaços residenciais e comerciais, o forro de palha está disponível em 02 versões: <strong>forro de palha natural</strong> e <strong>forro de palha sintético</strong>. A Saraiva Design é uma empresa especializada na produção de forros para pergolados, sendo o forro de palha líder em uso para pergolados.</p><p>Com uma equipe especializada e materiais de alta qualidade, a Saraiva se empenha em transformar seu pergolado em um espaço de beleza e conforto excepcionais.</p>"
     },
     {
      "t": "sub",
@@ -174,7 +174,7 @@
       },
       {
        "titulo": "Entrega Rápida",
-       "html": "<p>Envio por transportadora, com opções sob medida com produções variando de 5 a 7 e até 20 dias úteis.</p>"
+       "html": "<p>Envio por transportadora, com opções sob medida e produções variando de 5 a 7 e até 20 dias úteis.</p>"
       },
       {
        "titulo": "Redução de Calor",
@@ -182,11 +182,11 @@
       },
       {
        "titulo": "Envio para Todo o Brasil",
-       "html": "<p>O forro de palha natural e sintético da Saraiva Design é enviado para todo território nacional, acompanhado de manuais de instalação e suporte técnico. O forro pode ser enviado via terrestre ou aéreo.</p>"
+       "html": "<p>O forro de palha natural e sintético da Saraiva Design é enviado para todo o território nacional, acompanhado de manuais de instalação e suporte técnico. O forro pode ser enviado via terrestre ou aéreo.</p>"
       },
       {
        "titulo": "Fácil Instalação",
-       "html": "<p>A mesclagem do forro de palha é simples e rápida. A fixação pode ser feita de forma manual ou pneumática. Consulte a equipe de suporte para uma eficiente instalação.</p>"
+       "html": "<p>A instalação do forro de palha é simples e rápida. A fixação pode ser feita de forma manual ou pneumática. Consulte a equipe de suporte para uma eficiente instalação.</p>"
       }
      ]
     }
@@ -208,7 +208,7 @@
     {
      "tipo": "uso",
      "titulo": "Forro de palha na garagem",
-     "html": "<p>Aplicar <strong>forro de palha na garagem</strong> é uma<strong>solução prática e elegante para reduzir a temperatura</strong> e criar um ambiente mais agradável. Sua resistência a intempéries e a facilidade de instalação fazem dele uma escolha eficiente, protegendo o espaço contra o calor excessivo e oferecendo um acabamento diferenciado que valoriza o imóvel.</p>",
+     "html": "<p>Aplicar <strong>forro de palha na garagem</strong> é uma <strong>solução prática e elegante para reduzir a temperatura</strong> e criar um ambiente mais agradável. Sua resistência a intempéries e a facilidade de instalação fazem dele uma escolha eficiente, protegendo o espaço contra o calor excessivo e oferecendo um acabamento diferenciado que valoriza o imóvel.</p>",
      "imagem": {
       "arquivo": "021-dsc01329-aprimorado-nr-scaled-1.avif",
       "alt": "Forro de palha na garagem"
@@ -225,11 +225,11 @@
     },
     {
      "tipo": "uso",
-     "titulo": "Forro de palha na sala de tv e estar",
+     "titulo": "Forro de palha na sala de TV e estar",
      "html": "<p>A sala de TV e estar ganha sofisticação e aconchego com o <strong>forro de palha</strong>, que alia estética e funcionalidade. Ele melhora o <strong>conforto térmico, reduz a incidência de calor</strong> e cria uma atmosfera mais intimista, ideal para momentos de descanso e lazer em família.</p>",
      "imagem": {
       "arquivo": "023-dsc00011-aprimorado-nr-scaled-1.avif",
-      "alt": "Forro de palha na sala de tv e estar"
+      "alt": "Forro de palha na sala de TV e estar"
      }
     },
     {
@@ -451,7 +451,7 @@
    "itens": [
     {
      "titulo": "Forro de Palha em São Paulo",
-     "html": "<p>O estado de São Paulo é o mais populoso do Brasil, com mais de 44 milhões de habitantes e forte influência na economia nacional, principalmente na indústria, comércio e serviços. Com grandes centros urbanos como São Paulo capital, Campinas, Ribeirão Preto e Sorocaba, a demanda por soluções modernas e funcionais para áreas gourmet, varandas e espaços de lazer é cada vez maior.</p><p>O forro de palha em São Paulo surge como uma alternativa elegante e eficiente para pergolados e ambientes externos. Sua aplicação garante conforto térmico, redução do calor e um visual sofisticado, harmonizando tanto em residências modernas quanto em áreas comerciais. Além disso, sua versatilidade permite o uso em diferentes estruturas, madeira, alumínio, aço ou concreto, valorizando projetos em todo o estado.</p><p>Com o crescimento dos espaços de lazer e áreas gourmet nos imóveis paulistas, o forro de palha é uma solução que combina estética e funcionalidade, alinhando-se ao estilo de vida de quem busca bem-estar e sofisticação no maior centro econômico do Brasil.</p>",
+     "html": "<p>O estado de São Paulo é o mais populoso do Brasil, com mais de 44 milhões de habitantes e forte influência na economia nacional, principalmente na indústria, comércio e serviços. Com grandes centros urbanos como São Paulo capital, Campinas, Ribeirão Preto e Sorocaba, a demanda por soluções modernas e funcionais para áreas gourmet, varandas e espaços de lazer é cada vez maior.</p><p>O forro de palha em São Paulo surge como uma alternativa elegante e eficiente para pergolados e ambientes externos. Sua aplicação garante conforto térmico, redução do calor e um visual sofisticado, harmonizando tanto em residências modernas quanto em áreas comerciais. Além disso, sua versatilidade permite o uso em diferentes estruturas: madeira, alumínio, aço ou concreto, valorizando projetos em todo o estado.</p><p>Com o crescimento dos espaços de lazer e áreas gourmet nos imóveis paulistas, o forro de palha é uma solução que combina estética e funcionalidade, alinhando-se ao estilo de vida de quem busca bem-estar e sofisticação no maior centro econômico do Brasil.</p>",
      "imagem": null
     },
     {
@@ -526,7 +526,7 @@
     },
     {
      "titulo": "Forro de Palha no Espírito Santo",
-     "html": "<p>O Espírito Santo possui cerca de 4,1 milhões de habitantes e economia baseada em portos, exportações de minério de ferro, café e celulose. Cidades como Vitória, Vila Velha, Serra e Cachoeiro de Itapemirim são destaques no desenvolvimento urbano.</p><p>O forro de palha no Espírito Santo traz um toque elegante e funcional para pergolados, sacadas e áreas gourmet. Ele garante redução de calor, sombra e estética moderna, valorizando tanto ambientes residenciais quanto comerciais no litoral e interior capixaba.</p>",
+     "html": "<p>O Espírito Santo possui cerca de 4,1 milhões de habitantes e economia baseada em portos, exportações de minério de ferro, café e celulose. Cidades como Vitória, Vila Velha, Serra e Cachoeiro de Itapemirim são destaques no desenvolvimento urbano.</p><p>O forro de palha no Espírito Santo traz um toque elegante e funcional para pergolados, sacadas e áreas gourmet. Ele garante redução de calor, sombra e estética moderna, valorizando tanto ambientes residenciais quanto comerciais no litoral e no interior capixaba.</p>",
      "imagem": null
     },
     {
@@ -541,7 +541,7 @@
     },
     {
      "titulo": "Forro de Palha no Rio Grande do Norte",
-     "html": "<p>O Rio Grande do Norte, com cerca de 3,5 milhões de habitantes, tem como principais atividades o turismo, sal marinho e energia eólica. Sua capital, Natal, junto com cidades como Mossoró e Parnamirim, são pontos de destaque no desenvolvimento local.</p><p>O forro de palha no Rio Grande do Norte é perfeito para enfrentar o clima quente e ensolarado, trazendo frescor, ventilação e sombra natural. Além de funcional, agrega sofisticação em áreas gourmet, jardins e varandas, valorizando imóveis residenciais e comerciais.</p>",
+     "html": "<p>O Rio Grande do Norte, com cerca de 3,5 milhões de habitantes, tem como principais atividades o turismo, sal marinho e energia eólica. Sua capital, Natal, junto com cidades como Mossoró e Parnamirim, é ponto de destaque no desenvolvimento local.</p><p>O forro de palha no Rio Grande do Norte é perfeito para enfrentar o clima quente e ensolarado, trazendo frescor, ventilação e sombra natural. Além de funcional, agrega sofisticação em áreas gourmet, jardins e varandas, valorizando imóveis residenciais e comerciais.</p>",
      "imagem": null
     },
     {

@@ -3,7 +3,7 @@
 // ATENÇÃO: os textos, locais e fichas dos projetos detalhados abaixo são PROVISÓRIOS
 // (vieram do protótipo) e ainda precisam ser conferidos pela Saraiva.
 // Enquanto `provisorio` for true:
-//  - a seção mostra um aviso de "textos em aprovação";
+//  - (o aviso visível de "em aprovação" foi retirado a pedido da revisão de textos);
 //  - as páginas de projeto ficam fora do Google (noindex), do sitemap e do assistente de IA.
 // Depois de aprovados, corrija os textos e troque para false.
 

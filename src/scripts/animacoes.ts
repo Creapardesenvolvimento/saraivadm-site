@@ -91,7 +91,7 @@ function iniciarRevelar() {
   verificar();
 }
 
-// Números que contam: "+100mil", "+5mil", "+25", "100%"
+// Números que contam: "+100 mil", "+5 mil", "+25", "100%"
 function iniciarContadores() {
   if (reduzir) return;
   let pendentes = Array.from(document.querySelectorAll<HTMLElement>('[data-contador], .sar-stats strong'));

@@ -1,7 +1,7 @@
 ---
 // "Projetos detalhados" do portfólio: busca, filtros e cards que levam à página de cada projeto.
 import { Image } from 'astro:assets';
-import { projetos, provisorio, type Projeto } from '../data/projetos';
+import { projetos, type Projeto } from '../data/projetos';
 import '../styles/vitrine.css';
 
 interface Props {
@@ -26,11 +26,6 @@ const FILTROS: [keyof Projeto, string][] = [
   {
     !simples && (
       <>
-        {provisorio && (
-          <p class="pj-aviso" role="note">
-            <strong>Em aprovação:</strong> os textos e as fichas destes projetos são provisórios e ainda serão revisados pela Saraiva Design.
-          </p>
-        )}
         <label class="visually-hidden" for="pj-busca">Buscar projetos</label>
         <input class="pj-busca" id="pj-busca" type="search" placeholder="Busque pelo nome do projeto..." />
         <div class="pj-filtros">

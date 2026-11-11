@@ -447,3 +447,11 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 
 - O chat aparece para todos os visitantes (`modo: 'publico'` em `src/data/site.ts`). Os arquivos do chat carregam em paralelo, sem travar a abertura da página.
 - No Easypanel, a variável `ASSISTENTE_TESTE_CHAVE` precisa ser apagada; com ela, o servidor só responde a quem tem o link de teste.
+
+## 2026-11-11 — Revisão de textos aplicada
+
+- Correções de escrita do PDF de revisão aplicadas em 26 arquivos de conteúdo e nos textos fixos (home, menu, rodapé, páginas de pergolado).
+- Nome da empresa padronizado como "Saraiva Design em Madeiras e Aços"; produtos como PergoConfort, PergoConfort Max, PergoPlac e Pergokit. URLs não mudaram.
+- Textos automáticos do fim das páginas com artigo correto ("com o Pergokit", "Quer a PergoConfort?") e "Conheça nossos produtos." nas institucionais.
+- Aviso "Em aprovação" do portfólio retirado; projetos detalhados seguem com noindex.
+- Itens que dependem da Saraiva (números, trechos copiados, blocos a adicionar) em `docs/revisao-textos-pendencias.md`.

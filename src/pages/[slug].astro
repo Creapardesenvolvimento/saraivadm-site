@@ -39,7 +39,14 @@ const img = (arquivo?: string | null, pg = slug) =>
 
 const hero = img(p.hero.imagem) ?? heroPadrao;
 const nome: string = p.nome;
-const nomeMin = nome.charAt(0).toLowerCase() + nome.slice(1);
+// Nomes de produto próprios (PergoConfort, Pergokit...) mantêm a maiúscula
+const nomeProprio = /^Pergo/.test(nome);
+const nomeMin = nomeProprio ? nome : nome.charAt(0).toLowerCase() + nome.slice(1);
+// Frases com artigo para os nomes próprios: "combinam com a PergoConfort", "Quer um Pergokit?"
+const artigo = slug === 'pergokit' ? { com: 'o', quer: 'um', de: 'do' } : nomeProprio ? { com: 'a', quer: 'a', de: 'da' } : null;
+const comNome = artigo ? `${artigo.com} ${nome}` : nomeMin;
+const quer = artigo ? `${artigo.quer} ${nome}` : nomeMin;
+const deNome = artigo ? `${artigo.de} ${nome}` : `de ${nomeMin}`;
 const msg = (sobre = nomeMin) => whatsappUrl(`Olá! Vim do site e quero saber mais sobre ${sobre}.`);
 
 // Fundo alternado (branco / bege) entre as seções
@@ -205,7 +212,7 @@ if (duvidas) {
               )}
               <div>
                 <h2 class="titulo-secao">Faça o download do nosso folder e fique por dentro das novidades</h2>
-                <p>Modelos, medidas e acabamentos de {nomeMin} em um só arquivo.</p>
+                <p>{institucional ? 'Modelos, medidas e acabamentos dos nossos produtos em um só arquivo.' : `Modelos, medidas e acabamentos ${deNome} em um só arquivo.`}</p>
                 <a class="btn btn--creme pm-btn" href={s.href} target="_blank" rel="noopener" data-folder={`Folder ${nome}`}>Baixar o folder (PDF)</a>
               </div>
             </div>
@@ -384,7 +391,7 @@ if (duvidas) {
         <div class="sar-wrap">
           <header class="pm-head">
             <h2 class="titulo-secao">Complete seu projeto</h2>
-            <p>Produtos que combinam com {nomeMin}.</p>
+            <p>{institucional ? 'Conheça nossos produtos.' : `Produtos que combinam com ${comNome}.`}</p>
           </header>
           <ProdutosGrid produtos={relacionados} />
         </div>
@@ -392,5 +399,5 @@ if (duvidas) {
     )
   }
 
-  <ContactForm titulo={p.tituloForm ?? (institucional ? 'Preencha o formulário e receba o contato<br> da nossa equipe comercial' : `Quer ${nomeMin}?<br> Receba o contato da nossa equipe`)} />
+  <ContactForm titulo={p.tituloForm ?? (institucional ? 'Preencha o formulário e receba o contato<br> da nossa equipe comercial' : `Quer ${quer}?<br> Receba o contato da nossa equipe`)} />
 </Base>

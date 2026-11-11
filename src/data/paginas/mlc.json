@@ -7,7 +7,7 @@
  },
  "hero": {
   "titulo": "Pergolado em MLC",
-  "texto": "Soluções em MLC (Madeira lamelada colada) ou madeira engenheirada que unem tecnologia, resistência estrutural e naturalidade para projetos de pergolados, casas, galpões e outras soluções para construção civil.",
+  "texto": "Soluções em MLC (Madeira Laminada Colada) ou madeira engenheirada que unem tecnologia, resistência estrutural e naturalidade para projetos de pergolados, casas, galpões e outras soluções para construção civil.",
   "imagem": null
  },
  "faixa": [
@@ -273,7 +273,7 @@
      "t": "linha",
      "arquivo": "014-selo-pefc.png",
      "alt": "Certificação PEFC",
-     "html": "<p>Produzida a partir de madeira proveniente de fontes certificadas, com rastreabilidade e manejo florestal responsável.</p><p>Aplicações da Madeira Lamelada Colada / Pergolado em MLC</p>"
+     "html": "<p>Produzida a partir de madeira proveniente de fontes certificadas, com rastreabilidade e manejo florestal responsável.</p><p>Aplicações da Madeira Laminada Colada / Pergolado em MLC</p>"
     }
    ]
   },
@@ -401,7 +401,7 @@
     },
     {
      "titulo": "Madeira engenheirada pode substituir o concreto/aço?",
-     "html": "<p>Sim. Em determinadas aplicações, o MLC pode substituir elementos de concreto ou aço, oferecendo alta resistência, menor peso próprio e rapidez de montagem, desde que dimensionado para cada projeto. Também apresenta comportamento previsível ao fogo. A madeira forma uma camada carbonizada que protege o núcleo estrutural, permitindo manter sua capacidade resistente por determinado período. Já o aço perde resistência rapidamente com o aumento da temperatura, podendo exigir proteção adicional.</p>",
+     "html": "<p>Sim. Em determinadas aplicações, a MLC pode substituir elementos de concreto ou aço, oferecendo alta resistência, menor peso próprio e rapidez de montagem, desde que dimensionado para cada projeto. Também apresenta comportamento previsível ao fogo. A madeira forma uma camada carbonizada que protege o núcleo estrutural, permitindo manter sua capacidade resistente por determinado período. Já o aço perde resistência rapidamente com o aumento da temperatura, podendo exigir proteção adicional.</p>",
      "imagem": null
     },
     {
@@ -433,7 +433,7 @@
      }
     },
     {
-     "titulo": "Madeira CLT pega cupim ou apodrece com o tempo?",
+     "titulo": "Madeira MLC pega cupim ou apodrece com o tempo?",
      "html": "<p>Não, se for bem especificada. A madeira engenheirada é tratada, seca, selada e projetada para resistir a cupins, fungos e umidade. A chave está na engenharia, na correta instalação e na proteção da estrutura.</p>",
      "imagem": null
     },

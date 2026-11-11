@@ -31,11 +31,11 @@
   {
    "tipo": "conteudo",
    "titulo": "Placa térmica PergoPlac",
-   "lead": "Instaladas entre o forro e a cobertura do pergolado, a Pergoplac é uma solução para quem busca redução de calor em pergolados",
+   "lead": "Instaladas entre o forro e a cobertura do pergolado, a PergoPlac é uma solução para quem busca redução de calor em pergolados",
    "blocos": [
     {
      "t": "html",
-     "html": "<p><strong>PERGOPLAC</strong> – A solução térmica ideal para quem já possui cobertura em vidro ou policarbonato e não aguenta mais o calor</p>"
+     "html": "<p><strong>PergoPlac</strong> – A solução térmica ideal para quem já possui cobertura em vidro ou policarbonato e não aguenta mais o calor</p>"
     }
    ]
   },

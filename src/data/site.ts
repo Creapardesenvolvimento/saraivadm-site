@@ -2,13 +2,13 @@
 // (cabeçalho, rodapé, botões de WhatsApp e dados estruturados do Google).
 
 export const site = {
-  nome: 'Saraiva Design em Madeiras e Aço',
+  nome: 'Saraiva Design em Madeiras e Aços',
   nomeCurto: 'Saraiva Design',
   url: 'https://saraivadm.com.br',
   cnpj: '29.200.478/0001-47',
   email: 'contato@saraivadm.com.br',
   descricao:
-    'Projetos sob medida em madeira e aço para transformar áreas externas. Pergolados, coberturas e forros, Piso de madeira desenvolvidos com técnica, qualidade e atenção aos detalhes.',
+    'Projetos sob medida em madeira e aço para transformar áreas externas. Pergolados, coberturas, forros e piso de madeira, desenvolvidos com técnica, qualidade e atenção aos detalhes.',
 
   telefones: [
     { exibicao: '11 5194 3920', whatsapp: '551151943920', tel: '+551151943920' },
@@ -101,7 +101,7 @@ export const menuPrincipal: ItemMenu[] = [
       { label: 'Forro de lambril', href: '/forro-de-lambril/', descricao: 'Clássico e aconchegante' },
     ],
   },
-  { label: 'Piso de Madeira', href: '/pisos-de-madeira/' },
+  { label: 'Pisos de madeira', href: '/pisos-de-madeira/' },
   { label: 'Deck', href: '/deck-de-madeira/' },
   {
     label: 'Outros',
@@ -127,12 +127,12 @@ export const rodapeProdutos = [
   { label: 'Forro de palha', href: '/forro-de-palha/' },
   { label: 'Forro de bambu', href: '/forro-em-esteiras-de-bambu/' },
   { label: 'Forro de madeira', href: '/forro-de-madeira/' },
-  { label: 'Piso de madeira', href: '/pisos-de-madeira/' },
+  { label: 'Pisos de madeira', href: '/pisos-de-madeira/' },
   { label: 'Deck de madeira', href: '/deck-de-madeira/' },
   { label: 'Pergokit', href: '/pergokit/' },
   { label: 'Brise de madeira', href: '/brise-de-madeira/' },
-  { label: 'Pergoconfort', href: '/pergoconfort/' },
-  { label: 'Pergoconfort Max', href: '/pergoconfort-max/' },
+  { label: 'PergoConfort', href: '/pergoconfort/' },
+  { label: 'PergoConfort Max', href: '/pergoconfort-max/' },
   { label: 'PergoPlac', href: '/pergoplac/' },
   { label: 'Forro ripado', href: '/forro-ripado/' },
   { label: 'Forro de lambril', href: '/forro-de-lambril/' },

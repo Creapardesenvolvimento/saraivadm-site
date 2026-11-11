@@ -52,7 +52,7 @@
     },
     {
      "t": "sub",
-     "texto": "E o que está incluso no seu pergokit?"
+     "texto": "E o que está incluso no seu Pergokit?"
     },
     {
      "t": "html",
@@ -67,7 +67,7 @@
     {
      "tipo": "uso",
      "titulo": "Projeto exclusivo",
-     "html": "<p>Na Pergokit, <strong>nossa equipe altamente capacitada está pronta para criar um projeto personalizado para o seu Pergokit</strong>, garantindo todas as informações essenciais para uma montagem eficiente. Oferecemos suporte técnico dedicado e disponibilizamos vídeos instrutivos para facilitar cada etapa do processo. <strong>Nosso compromisso é proporcionar não apenas um pergolado, mas sim uma solução ideal para o seu ambiente, refletindo sua visão e elevando o charme do espaço.</strong>Conte conosco para transformar suas ideias em realidade com expertise e qualidade incomparáveis.</p>",
+     "html": "<p>Na Pergokit, <strong>nossa equipe altamente capacitada está pronta para criar um projeto personalizado para o seu Pergokit</strong>, garantindo todas as informações essenciais para uma montagem eficiente. Oferecemos suporte técnico dedicado e disponibilizamos vídeos instrutivos para facilitar cada etapa do processo. <strong>Nosso compromisso é proporcionar não apenas um pergolado, mas sim uma solução ideal para o seu ambiente, refletindo sua visão e elevando o charme do espaço.</strong> Conte conosco para transformar suas ideias em realidade com expertise e qualidade incomparáveis.</p>",
      "imagem": {
       "arquivo": "001-foto-pergokit-site-1-11zon.avif",
       "alt": "Projeto exclusivo"
@@ -112,21 +112,21 @@
   },
   {
    "tipo": "usos",
-   "titulo": "Mais ideias com pergokit",
+   "titulo": "Mais ideias com o Pergokit",
    "itens": [
     {
      "tipo": "uso",
-     "titulo": "Forro especiais",
+     "titulo": "Forros especiais",
      "html": "<p>Na Pergokit, destacamos nossa forração exclusiva, <strong>oferecendo uma variedade de modelos para personalizar o seu pergolado</strong> de acordo com o seu estilo. <strong>Escolha entre forros em <a href=\"/forro-de-palha/\">palha</a> sintética ou natural, assim como esteiras de bambu</strong>, proporcionando uma estética única e aconchegante ao seu espaço. Todos os nossos forros são feitos sob medida, adaptando-se perfeitamente ao seu projeto. Com a Pergokit, <strong>garantimos não apenas a qualidade dos materiais, mas também a customização precisa</strong>, permitindo que seu pergolado seja uma expressão autêntica do seu gosto e personalidade.</p>",
      "imagem": {
       "arquivo": "005-forros-pergokit-11zon.webp",
-      "alt": "Forro especiais"
+      "alt": "Forros especiais"
      }
     },
     {
      "tipo": "uso",
      "titulo": "Cobertura premium",
-     "html": "<p>Introduzindo a inovação no seu Pergokit,<strong>apresentamos a <a href=\"/telha-para-pergolado/\">telha</a> Pergo-Confort, uma solução translúcida que vai além da estética, proporcionando proteção essencial para o seu pergolado.</strong> Além de conferir um toque elegante, a telha Pergo-Confort garante conforto térmico ao ambiente, criando um espaço agradável em todas as estações. <strong>Sua construção oferece uma eficiente proteção contra raios UV, assegurando não apenas beleza, mas também durabilidade.</strong> O kit inclui parafusos e calços para uma fixação segura, enquanto os materiais de vedação, como PU´s, silicone e manta asfáltica aluminizada, garantem uma montagem resistente e confiável. Com a telha Pergo-Confort, seu pergolado não apenas encanta visualmente, mas também proporciona um ambiente protegido.</p>",
+     "html": "<p>Introduzindo a inovação no seu Pergokit, <strong>apresentamos a <a href=\"/telha-para-pergolado/\">telha</a> PergoConfort, uma solução translúcida que vai além da estética, proporcionando proteção essencial para o seu pergolado.</strong> Além de conferir um toque elegante, a telha PergoConfort garante conforto térmico ao ambiente, criando um espaço agradável em todas as estações. <strong>Sua construção oferece uma eficiente proteção contra raios UV, assegurando não apenas beleza, mas também durabilidade.</strong> O kit inclui parafusos e calços para uma fixação segura, enquanto os materiais de vedação, como PUs, silicone e manta asfáltica aluminizada, garantem uma montagem resistente e confiável. Com a telha PergoConfort, seu pergolado não apenas encanta visualmente, mas também proporciona um ambiente protegido.</p>",
      "imagem": {
       "arquivo": "006-d-1-hdr-scaled.jpg",
       "alt": "Cobertura premium"
@@ -135,7 +135,7 @@
     {
      "tipo": "uso",
      "titulo": "Ventiladores e iluminação",
-     "html": "<p>Na Pergokit temos uma variedade de opções para personalizar ainda mais o seu espaço, <strong>incluindo ventiladores de diversos modelos para que você escolha aquele que melhor se harmoniza com o seu ambiente.</strong> Além disso, <strong>nosso kit de iluminação é completo</strong>, apresentando arandelas, trilhos, balizadores e lâmpadas, proporcionando não apenas funcionalidade, mas também um toque de elegância à sua área externa. Com a Pergokit, cada detalhe é pensado para oferecer opções que atendam não apenas às suas necessidades práticas, mas também ao seu gosto estético,<strong>garantindo um pergolado personalizado e encantador.</strong></p>",
+     "html": "<p>Na Pergokit temos uma variedade de opções para personalizar ainda mais o seu espaço, <strong>incluindo ventiladores de diversos modelos para que você escolha aquele que melhor se harmoniza com o seu ambiente.</strong> Além disso, <strong>nosso kit de iluminação é completo</strong>, apresentando arandelas, trilhos, balizadores e lâmpadas, proporcionando não apenas funcionalidade, mas também um toque de elegância à sua área externa. Com a Pergokit, cada detalhe é pensado para oferecer opções que atendam não apenas às suas necessidades práticas, mas também ao seu gosto estético, <strong>garantindo um pergolado personalizado e encantador.</strong></p>",
      "imagem": {
       "arquivo": "007-ventiladores-e-iluminacao.webp",
       "alt": "Ventiladores e iluminação"
