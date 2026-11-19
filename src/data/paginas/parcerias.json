@@ -41,6 +41,39 @@
     {
      "t": "html",
      "html": "<p>Arquitetos, Engenheiros e Construtoras: Juntos, realizamos grandes projetos</p><p>Deixe aqui o seu contato!</p>"
+    },
+    {
+     "t": "sub",
+     "texto": "O que a Saraiva Design oferece ao seu escritório"
+    },
+    {
+     "t": "cards",
+     "itens": [
+      {
+       "titulo": "Engenharia integrada",
+       "html": "<p>Apoio técnico no dimensionamento e no detalhamento, do projeto até a obra.</p>"
+      },
+      {
+       "titulo": "Soluções sob medida",
+       "html": "<p>Pergolados, coberturas, forros e decks feitos para o seu projeto, sem adaptações.</p>"
+      },
+      {
+       "titulo": "Fabricação própria",
+       "html": "<p>Produção na nossa fábrica em Campinas, com controle de qualidade em cada etapa.</p>"
+      },
+      {
+       "titulo": "Instalação especializada",
+       "html": "<p>Equipes próprias de carpintaria e serralheria, com acabamento de alto padrão.</p>"
+      },
+      {
+       "titulo": "Garantia e pós-venda",
+       "html": "<p>Acompanhamento depois da entrega, para você e para o seu cliente.</p>"
+      },
+      {
+       "titulo": "Atendimento em todo o Brasil",
+       "html": "<p>Logística a partir de Campinas-SP e o Pergokit para obras em qualquer estado.</p>"
+      }
+     ]
     }
    ]
   }

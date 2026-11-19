@@ -469,3 +469,17 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - Conferidas as 33 páginas contra saraivadm.com.br. Trocadas 3 das 4 diferentes:
   Pergolado metálico (`pergolado-metalico/hero.jpg`), MLC (`paginas/mlc/000-capa-mlc.jpg`) e Catálogos (`hero-catalogos.jpg`).
   A Home continua com a imagem própria do site novo, por decisão da Saraiva.
+
+## 2026-11-12 — Auditoria de SEO do site atual (WordPress) e linha de base de posições
+
+- Mudanças feitas direto no WordPress publicado: noindex em 25 páginas de teste/LP, 404 real (plugin de redirecionamento para a home desativado), 301 de `/pagina-inicial/` e do post antigo de Campinas, títulos e descrições novos em 11 páginas.
+- Publicadas as páginas `/pergolado-de-madeira-campinas/` e `/pergolado-metalico-campinas/` (primeiras páginas de cidade).
+- Posições de base e roteiro de acompanhamento mensal em `docs/seo-monitoramento.md`.
+- **Para a troca de site:** o site novo ainda não tem 107 endereços indexados hoje (blog) nem as páginas de Campinas e os 301. A lista está na seção 6 de `docs/seo-monitoramento.md`.
+
+## 2026-11-19 — Ajustes do relatório de design
+
+- Forro de madeira oculto (noindex, fora do sitemap, menu e links), como as outras 7 páginas.
+- Institucional refeita em página própria (`src/pages/institucional.astro`), seguindo o folder 2026. URL mantida.
+- Vídeos curtos da equipe em obra nas páginas de produto (carregam só quando aparecem na tela).
+- Detalhes e pendências em `docs/relatorio-design-2026-11-19.md`.

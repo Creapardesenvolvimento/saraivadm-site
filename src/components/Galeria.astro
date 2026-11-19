@@ -1,33 +1,40 @@
 ---
 // Galeria de fotos com ampliação ao clicar (leve, sem biblioteca).
 import { Image, getImage } from 'astro:assets';
+import { colunasPara, fileiras } from '../lib/colunas';
 
 interface Props {
   fotos: { src: ImageMetadata; alt: string }[];
   /** Colunas no desktop */
   colunas?: number;
 }
-const { fotos, colunas = 4 } = Astro.props;
+const { fotos, colunas: pedidas = 4 } = Astro.props;
+// Sem foto sobrando sozinha na última linha
+const colunas = colunasPara(fotos.length, pedidas, Math.max(pedidas, 4));
 
 // Cada foto aparece inteira: fotos de mesma proporção formam uma grade; proporções diferentes, fileiras de mesma altura.
 const proporcoes = fotos.map((f) => f.src.width / f.src.height);
 const mista = proporcoes.some((p) => Math.abs(p / proporcoes[0] - 1) > 0.01);
+// Proporções diferentes: fileiras de mesma altura que ocupam a largura toda
+const linhas = mista ? fileiras(proporcoes) : [fotos.map((_, i) => i)];
 
 const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width: 2000, format: 'webp', quality: 92 })));
 ---
 
 <div class:list={['gal', { 'gal--mista': mista }]} style={`--gal-cols:${colunas};--gal-prop:${proporcoes[0]}`}>
-  <ul class="gal__grid">
-    {
-      fotos.map((f, i) => (
-        <li style={`--prop:${proporcoes[i]}`}>
-          <button type="button" class="gal__item" data-full={grandes[i].src} data-alt={f.alt} aria-label={`Ampliar foto: ${f.alt}`}>
-            <Image src={f.src} alt={f.alt} widths={[480, 800, 1200]} sizes={mista ? '(max-width: 600px) 90vw, 640px' : `(max-width: 600px) 50vw, (max-width: 900px) 33vw, ${Math.round(1180 / colunas) + 20}px`} quality={90} />
-          </button>
-        </li>
-      ))
-    }
-  </ul>
+  {
+    linhas.map((linha) => (
+      <ul class="gal__grid">
+        {linha.map((i) => (
+          <li style={`--prop:${proporcoes[i]}`}>
+            <button type="button" class="gal__item" data-full={grandes[i].src} data-alt={fotos[i].alt} aria-label={`Ampliar foto: ${fotos[i].alt}`}>
+              <Image src={fotos[i].src} alt={fotos[i].alt} widths={[480, 800, 1200]} sizes={mista ? '(max-width: 600px) 90vw, 640px' : `(max-width: 600px) 50vw, (max-width: 900px) 33vw, ${Math.round(1180 / colunas) + 20}px`} quality={90} />
+            </button>
+          </li>
+        ))}
+      </ul>
+    ))
+  }
   <dialog class="gal__dialog">
     <button type="button" class="gal__fechar" aria-label="Fechar">×</button>
     <img alt="" />
@@ -53,23 +60,27 @@ const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width:
 
 <style>
   .gal__grid {
-    display: grid;
-    grid-template-columns: repeat(var(--gal-cols), 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--gap);
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  .gal--mista .gal__grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .gal__grid + .gal__grid {
+    margin-top: var(--gap);
   }
-  .gal--mista li {
-    flex: var(--prop) 1 calc(var(--prop) * var(--gal-altura, 220px));
+  .gal__grid > li {
+    flex: 0 0 calc((100% - (var(--gal-cols) - 1) * var(--gap)) / var(--gal-cols));
     min-width: 0;
-    /* limite para uma foto sozinha na fileira não ficar enorme */
-    max-width: calc(var(--prop) * var(--gal-altura, 220px) * 1.4);
+  }
+  /* fileiras de mesma altura: cada foto ocupa a largura na medida da sua proporção */
+  .gal--mista .gal__grid {
+    flex-wrap: nowrap;
+  }
+  .gal--mista .gal__grid > li {
+    flex: var(--prop) 1 0%;
   }
   .gal__item {
     display: block;
@@ -128,16 +139,20 @@ const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width:
     cursor: pointer;
   }
   @media (max-width: 900px) {
-    .gal__grid {
-      grid-template-columns: repeat(3, 1fr);
+    .gal:not(.gal--mista) {
+      --gal-cols: 3 !important;
     }
   }
   @media (max-width: 600px) {
-    .gal {
-      --gal-altura: 120px;
+    .gal:not(.gal--mista) {
+      --gal-cols: 2 !important;
     }
-    .gal__grid {
-      grid-template-columns: repeat(2, 1fr);
+    /* no celular, fileiras com muitas fotos quebram em duas */
+    .gal--mista .gal__grid {
+      flex-wrap: wrap;
+    }
+    .gal--mista .gal__grid > li {
+      flex: var(--prop) 1 calc(var(--prop) * 120px);
     }
   }
 </style>

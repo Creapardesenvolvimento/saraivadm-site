@@ -13,9 +13,11 @@ import AntesDepois from '../components/AntesDepois.astro';
 import PortfolioDestaques from '../components/PortfolioDestaques.astro';
 import PortfolioGaleria from '../components/PortfolioGaleria.astro';
 import ProjetosDetalhados from '../components/ProjetosDetalhados.astro';
+import VideosObra from '../components/VideosObra.astro';
 import { destaques, provisorio } from '../data/projetos';
 import { site, whatsappUrl, paginaVisivel } from '../data/site';
 import { catalogo, type ProdutoCatalogo } from '../data/catalogo';
+import { colunasPara } from '../lib/colunas';
 import heroPadrao from '../assets/img/hero-pergolado-piscina.jpg';
 import '../styles/produto.css';
 
@@ -27,7 +29,10 @@ const paginas = Object.values(arquivos).map((m) => m.default);
 
 export function getStaticPaths() {
   const arq = import.meta.glob<{ default: any }>('../data/paginas/*.json', { eager: true });
-  return Object.values(arq).map((m) => ({ params: { slug: m.default.slug } }));
+  // A Institucional tem página própria (src/pages/institucional.astro), montada pelo folder
+  return Object.values(arq)
+    .filter((m) => m.default.slug !== 'institucional')
+    .map((m) => ({ params: { slug: m.default.slug } }));
 }
 
 const { slug } = Astro.params;
@@ -110,6 +115,28 @@ const agruparVideos = (blocos: any[]) => {
     const ultimo = lista[lista.length - 1];
     if (ultimo?.t === 'videosLado') ultimo.itens.push(item);
     else lista.push({ t: 'videosLado', itens: [item] });
+  }
+  return lista;
+};
+
+// Modelos em sequência (foto + nome + texto, como no Forro de bambu) viram uma grade de cards.
+// Os botões de PDF que estavam no meio vão para o fim da grade.
+const agruparModelos = (blocos: any[]) => {
+  const lista: any[] = [];
+  let i = 0;
+  while (i < blocos.length) {
+    const itens: any[] = [];
+    const pdfs: any[] = [];
+    let j = i;
+    while (blocos[j]?.t === 'img' && blocos[j + 1]?.t === 'sub' && blocos[j + 2]?.t === 'html' && img(blocos[j].arquivo)) {
+      itens.push({ arquivo: blocos[j].arquivo, alt: blocos[j].alt, titulo: blocos[j + 1].texto, html: blocos[j + 2].html });
+      j += 3;
+      while (blocos[j]?.t === 'pdf') pdfs.push(blocos[j++]);
+    }
+    if (itens.length >= 3) {
+      lista.push({ t: 'modelos', itens }, ...pdfs);
+      i = j;
+    } else lista.push(blocos[i++]);
   }
   return lista;
 };
@@ -202,7 +229,7 @@ if (duvidas) {
   <div id="conteudo-produto"></div>
   {ehPortfolio && <PortfolioDestaques fotos={destaques.map((i) => fotosPortfolio[i]).filter(Boolean)} />}
   {
-    p.secoes.map((s: any) => {
+    p.secoes.map((s: any, i: number) => [(() => {
       const classe = fundo(s);
       if (s.tipo === 'folder')
         return (
@@ -272,7 +299,10 @@ if (duvidas) {
       // conteúdo livre (texto, subtítulos, cards, fotos, vídeos, PDFs) na ordem original
       const blocos: any[] = s.blocos;
       const introVideo = blocos[0]?.t === 'videos' && blocos[0].videos.length === 1 && blocos[1]?.t === 'html';
-      const resto = introVideo ? blocos.slice(2) : blocos;
+      let resto = introVideo ? blocos.slice(2) : blocos;
+      // seção só com foto + texto (ex.: Metais selecionados no Pergokit): foto ao lado do texto, em destaque
+      if (resto.length === 2 && resto[0].t === 'img' && resto[1].t === 'html' && img(resto[0].arquivo))
+        resto = [{ t: 'linha', arquivo: resto[0].arquivo, alt: resto[0].alt, html: resto[1].html }];
       return (
         <section class:list={['pm-sec', classe]}>
           <div class="sar-wrap">
@@ -295,7 +325,7 @@ if (duvidas) {
               )
             )}
             <div class="pm-fluxo">
-              {agruparPdfs(agruparVideos(resto)).map((b: any) => {
+              {agruparPdfs(agruparVideos(agruparModelos(resto))).map((b: any) => {
                 if (b.t === 'html') return <div class:list={['pm-fluxo__texto', { 'pm-fluxo__texto--centro': b.centro }]} set:html={b.html} />;
                 if (b.t === 'sub') return <h3 class="pm-fluxo__sub">{b.texto}</h3>;
                 if (b.t === 'img' && img(b.arquivo))
@@ -336,7 +366,7 @@ if (duvidas) {
                   );
                 if (b.t === 'videos')
                   return (
-                    <div class:list={['pm-videos', { 'pm-videos--um': b.videos.length === 1 }]}>
+                    <div class:list={['pm-videos', { 'pm-videos--um': b.videos.length === 1 }]} style={`--cols:${colunasPara(b.videos.length)}`}>
                       {b.videos.map((v: any) => (
                         <VideoYoutube id={v.id} capa={img(v.capa) ?? hero} titulo={`${nome}: vídeo Saraiva Design`} largura={700} />
                       ))}
@@ -351,6 +381,20 @@ if (duvidas) {
                         </a>
                       ))}
                     </div>
+                  );
+                if (b.t === 'modelos')
+                  return (
+                    <ul class="pm-modelos" style={`--cols:${colunasPara(b.itens.length)}`}>
+                      {b.itens.map((m: any) => (
+                        <li class="pm-modelos__item">
+                          <Image src={img(m.arquivo)!} alt={m.alt || m.titulo} widths={[400, 700, 1000]} sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" class="pm-modelos__img" quality={90} />
+                          <div class="pm-modelos__texto">
+                            <h4>{m.titulo}</h4>
+                            <div set:html={m.html} />
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
                   );
                 if (b.t === 'cards')
                   return (
@@ -369,7 +413,10 @@ if (duvidas) {
           </div>
         </section>
       );
-    })
+    })(),
+    // vídeos da equipe em obra logo abaixo da primeira seção (vídeo + texto), com o mesmo fundo
+    i === 0 && <VideosObra pagina={slug!} nome={nome} continua />,
+    ])
   }
 
   {

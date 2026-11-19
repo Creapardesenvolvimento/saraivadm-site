@@ -60,11 +60,17 @@
   .pm-intro {
     padding: var(--secao) 0;
   }
+  /* Texto + vídeo: o vídeo fica alinhado ao topo do texto, maior, e acompanha a rolagem quando o texto é longo */
   .pm-intro__grid {
     display: grid;
-    grid-template-columns: 1fr 1.1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
     gap: var(--gap-col);
-    align-items: center;
+    align-items: start;
+  }
+  .pm-intro__grid > :last-child {
+    position: sticky;
+    top: 110px;
+    margin-top: 8px;
   }
   .pm-lead {
     margin-top: 18px;
@@ -208,7 +214,7 @@
   /* Vídeos */
   .pm-videos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr));
     gap: var(--gap);
   }
 
@@ -457,6 +463,17 @@
   .pm-fluxo .pm-uso--linha {
     width: 100%;
   }
+  /* Infográficos e fotos dentro do bloco bege: margem em volta e coluna da imagem maior, para o texto da imagem ficar legível */
+  .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote) {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  }
+  .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote):nth-of-type(even) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  }
+  .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote) .pm-uso__img {
+    box-sizing: border-box;
+    padding: 28px;
+  }
   .pm-fluxo .pm-uso--linha:nth-of-type(even) .pm-uso__img {
     order: 2;
   }
@@ -539,4 +556,74 @@
   .pm-sec:not(.pm-sec--bege) .pm-uso--linha {
     background: var(--sar-bege);
     box-shadow: none;
+  }
+  @media (max-width: 900px) {
+    .pm-intro__grid > :last-child {
+      position: static;
+      margin-top: 0;
+    }
+    .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote),
+    .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote):nth-of-type(even) {
+      grid-template-columns: 1fr;
+    }
+    .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote) .pm-uso__img {
+      padding: 16px;
+    }
+  }
+
+  /* Modelos lado a lado (ex.: Forro de bambu) */
+  .pm-modelos {
+    display: grid;
+    grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr));
+    gap: var(--gap);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .pm-modelos__item {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: var(--raio);
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(90, 58, 48, 0.06);
+  }
+  .pm-sec:not(.pm-sec--bege) .pm-modelos__item {
+    background: var(--sar-bege);
+    box-shadow: none;
+  }
+  .pm-modelos__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+  .pm-modelos__texto {
+    padding: 22px 22px 26px;
+  }
+  .pm-modelos__texto h4 {
+    font-family: var(--fonte-titulos);
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--sar-marrom-escuro);
+  }
+  .pm-modelos__texto p {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #5b4a43;
+  }
+  .pm-modelos__texto strong {
+    color: var(--sar-marrom-escuro);
+  }
+  @media (max-width: 900px) {
+    .pm-modelos {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 600px) {
+    .pm-modelos {
+      grid-template-columns: 1fr;
+    }
   }

@@ -79,6 +79,7 @@ export const paginasOcultas = [
   '/gazebo/',
   '/deck-modular/',
   '/deck-hidro-spa/',
+  '/forro-de-madeira/',
 ];
 export const paginaVisivel = (href: string) => !paginasOcultas.includes(href);
 

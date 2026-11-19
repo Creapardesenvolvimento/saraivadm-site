@@ -1,0 +1,141 @@
+---
+// Faixa com os vídeos curtos da equipe trabalhando (sem som, em repetição, como GIF).
+// Os vídeos só carregam e tocam quando entram na tela; quem prefere menos movimento vê só a capa.
+import { videosObra } from '../data/videosObra';
+
+interface Props {
+  pagina: string;
+  nome: string;
+  /** fundo bege */
+  bege?: boolean;
+  /** continua a seção de cima (mesmo fundo): sem espaço extra em cima */
+  continua?: boolean;
+}
+const { pagina, nome, bege = false, continua = false } = Astro.props;
+const dados = videosObra[pagina];
+const itens = dados ? Array.from({ length: dados.quantidade }, (_, i) => `/videos/obras/${pagina}-${i + 1}`) : [];
+const colunas = dados?.formato === 'horizontal' ? Math.min(itens.length, itens.length === 4 ? 2 : 3) : itens.length;
+---
+
+{
+  dados && (
+    <section class:list={['vo', { 'vo--bege': bege, 'vo--continua': continua }]} aria-labelledby={`vo-${pagina}`}>
+      <div class="sar-wrap">
+        <header class="vo__head">
+          <span class="vo__selo">Bastidores</span>
+          <h2 class="titulo-secao" id={`vo-${pagina}`}>Nossa equipe em obra</h2>
+          <p>Fabricação própria e instalação feita por quem entende: veja um pouco do dia a dia da Saraiva Design.</p>
+        </header>
+        <ul class:list={['vo__grade', `vo__grade--${dados.formato}`]} style={`--vo-cols:${colunas}`}>
+          {itens.map((base, i) => (
+            <li>
+              <video
+                class="vo__video"
+                muted
+                loop
+                playsinline
+                preload="none"
+                poster={`${base}.jpg`}
+                data-src={`${base}.mp4`}
+                aria-label={`${nome}: equipe Saraiva Design trabalhando, vídeo ${i + 1}`}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )
+}
+
+<script>
+  const reduzir = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const videos = document.querySelectorAll<HTMLVideoElement>('.vo__video');
+  if (!reduzir && 'IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(
+      (entradas) => {
+        entradas.forEach((e) => {
+          const v = e.target as HTMLVideoElement;
+          if (e.isIntersecting) {
+            if (!v.src) v.src = v.dataset.src!;
+            v.play().catch(() => {});
+          } else if (!v.paused) v.pause();
+        });
+      },
+      { rootMargin: '200px 0px' },
+    );
+    videos.forEach((v) => obs.observe(v));
+  }
+</script>
+
+<style>
+  .vo {
+    padding: var(--secao) 0;
+    background: #fff;
+  }
+  .vo--continua {
+    padding-top: 0;
+  }
+  .vo--bege {
+    background: var(--sar-bege);
+  }
+  .vo__head {
+    max-width: 720px;
+    margin: 0 auto var(--secao-head);
+    text-align: center;
+  }
+  .vo__selo {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-family: var(--fonte-titulos);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sar-marrom);
+  }
+  .vo__head p {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #5b4a43;
+  }
+  .vo__grade {
+    display: grid;
+    grid-template-columns: repeat(var(--vo-cols), minmax(0, 1fr));
+    gap: var(--gap);
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  /* um vídeo só não ocupa a largura toda */
+  .vo__grade--quadrado {
+    max-width: 560px;
+  }
+  .vo__grade--vertical:has(> li:only-child) {
+    max-width: 320px;
+  }
+  .vo__video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: var(--raio);
+    background: #d8cdbb;
+  }
+  .vo__grade--horizontal .vo__video {
+    aspect-ratio: 16 / 9;
+  }
+  .vo__grade--quadrado .vo__video {
+    aspect-ratio: 1;
+  }
+  @media (max-width: 900px) {
+    .vo__grade--vertical {
+      --vo-cols: 2 !important;
+    }
+  }
+  @media (max-width: 600px) {
+    .vo__grade--horizontal {
+      --vo-cols: 1 !important;
+    }
+  }
+</style>

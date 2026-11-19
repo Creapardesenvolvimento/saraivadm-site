@@ -39,7 +39,7 @@ const diferenciais = [
   { t: 'Projetos em 3D', d: 'Veja seu pergolado antes mesmo de começar a obra com nossa tecnologia 3D.' },
   { t: 'Mão de obra profissional', d: 'Mestres em marcenaria, serralheria e carpintaria artesanal com acabamento refinado.' },
   { t: 'Atendimento exclusivo', d: 'Consultores especializados à sua total disposição em todo o Brasil.' },
-  { t: 'Garantias certificadas', d: 'Qualidade comprovada, durabilidade e segurança total para o seu projeto.' },
+  { t: 'Garantia e pós-venda', d: 'Garantia por escrito em cada projeto e equipe própria para acompanhar você depois da entrega.' },
   { t: 'Logística', d: 'Atendimento para todo o Brasil, com centro logístico localizado em Campinas/SP.' },
   { t: 'Prazo reduzido', d: 'Cronograma inteligente e equipes prontas para entregas rápidas.' },
 ];
@@ -236,7 +236,7 @@ const schema = [
             <h2 class="titulo-secao">Nosso blog</h2>
             <p>Encontre dicas sobre pergolados, coberturas, materiais, manutenção e soluções para áreas externas.</p>
           </div>
-          <ul class="sar-blog__grid">
+          <ul class:list={['sar-blog__grid', { 'sar-blog__grid--destaque': posts.length === 1, 'sar-blog__grid--dois': posts.length === 2 }]}>
             {posts.map((post) => (
               <li>
                 <article class="sar-blog__card">
@@ -613,6 +613,26 @@ const schema = [
   .sar-blog__content a::after { content: ''; position: absolute; inset: -400px calc(-1 * var(--gap)) calc(-1 * var(--gap)); }
   .sar-blog__content p { font-size: 13px; line-height: 1.5; opacity: 0.85; }
   .sar-blog__cta { text-align: center; }
+  /* 1 ou 2 posts: card largo, sem espaço vazio ao lado */
+  .sar-blog__grid--dois { grid-template-columns: repeat(2, 1fr); }
+  .sar-blog__grid--destaque { grid-template-columns: 1fr; }
+  .sar-blog__grid--destaque .sar-blog__card { flex-direction: row; align-items: stretch; }
+  .sar-blog__grid--destaque .sar-blog__card :global(.sar-blog__thumb) { width: 58%; height: auto; min-height: 340px; }
+  .sar-blog__grid--destaque .sar-blog__content {
+    flex: 1;
+    align-self: center;
+    margin: var(--gap) var(--gap) var(--gap) -48px;
+    padding: 40px 36px;
+  }
+  .sar-blog__grid--destaque .sar-blog__content h3 { font-size: 24px; }
+  .sar-blog__grid--destaque .sar-blog__content p { font-size: 15.5px; line-height: 1.65; }
+  .sar-blog__grid--destaque .sar-blog__content a::after { inset: -600px calc(-1 * var(--gap)) -600px -1200px; }
+  @media (max-width: 767px) {
+    .sar-blog__grid--dois { grid-template-columns: 1fr; }
+    .sar-blog__grid--destaque .sar-blog__card { flex-direction: column; }
+    .sar-blog__grid--destaque .sar-blog__card :global(.sar-blog__thumb) { width: 100%; min-height: 0; height: 240px; }
+    .sar-blog__grid--destaque .sar-blog__content { margin: -38px var(--gap) var(--gap); padding: 28px 24px; }
+  }
   @media (max-width: 991px) {
     .sar-blog__grid { grid-template-columns: repeat(2, 1fr); }
   }

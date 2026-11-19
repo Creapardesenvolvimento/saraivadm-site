@@ -1,5 +1,6 @@
 // Folders e tabelas de preço em PDF. Os arquivos ainda estão no WordPress atual.
 // TODO: antes de desligar o WordPress, copiar (e comprimir) os PDFs para public/downloads/ e trocar os links.
+import { paginaVisivel } from './site';
 import capaPergoladoMadeira from '../assets/img/institucional/cat-pergolado-de-madeira.jpg';
 import capaInstitucional from '../assets/img/institucional/cat-institucional.jpg';
 import capaPergoladoMetalico from '../assets/img/institucional/cat-pergolado-metalico.jpg';
@@ -24,7 +25,7 @@ export interface Catalogo {
   produto?: string;
 }
 
-export const folders: Catalogo[] = [
+const todosFolders: Catalogo[] = [
   { titulo: 'Institucional', capa: capaInstitucional, pdf: U + '2025/03/FOLDER-INSTITUCIONAL-2025.pdf', produto: '/institucional/' },
   { titulo: 'Pergolado de madeira', capa: capaPergoladoMadeira, pdf: U + '2025/03/FOLDER-PERGOLADO-DE-MADEIRA-2025.pdf', produto: '/pergolado-de-madeira/' },
   { titulo: 'Pergolado metálico', capa: capaPergoladoMetalico, pdf: U + '2026/07/PERGOLADO-METALICO-2026_compressed.pdf', produto: '/pergolado-metalico/' },
@@ -36,6 +37,8 @@ export const folders: Catalogo[] = [
   { titulo: 'Deck de madeira', capa: capaDeck, pdf: U + '2025/03/FOLDER-DECK-DE-MADEIRA-2025.pdf', produto: '/deck-de-madeira/' },
   { titulo: 'Painel ripado', capa: capaPainel, pdf: U + '2025/05/FOLDER-PAINEL-RIPADO-2025.pdf', produto: '/painel-ripado/' },
 ];
+// folders de páginas ocultas (ex.: Forro de madeira) não aparecem
+export const folders = todosFolders.filter((c) => !c.produto || paginaVisivel(c.produto));
 
 export const tabelas: Catalogo[] = [
   { titulo: 'Tabela de preços: PergoConfort', capa: tabPergoconfort, pdf: U + '2026/08/TABELA-DE-PRECOS-PERGOCONFORT-1-ATUALIZADA.pdf', produto: '/pergoconfort/' },

@@ -1,0 +1,731 @@
+---
+// Institucional: segue a ordem do folder institucional 2026 (abertura, linha do tempo, números, missão,
+// especialidades, showroom, responsabilidade ambiental, estrutura, diferenciais, projetos, depoimentos e contato).
+// Fotos da equipe, oficina, frota e showroom: recortadas do folder institucional 2025 (src/assets/img/institucional/folder/).
+import { Image, getImage } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Galeria from '../components/Galeria.astro';
+import Depoimentos from '../components/Depoimentos.astro';
+import ContactForm from '../components/ContactForm.astro';
+import IconeWhatsApp from '../components/IconeWhatsApp.astro';
+import { site, whatsappUrl, mapsUrl } from '../data/site';
+import portfolio from '../data/paginas/portfolio.json';
+import '../styles/produto.css';
+
+import hero from '../assets/img/paginas/institucional/010-capa-site-artes-novo-industria.jpg';
+import fundadores from '../assets/img/institucional/folder/fundadores.jpg';
+import equipe from '../assets/img/institucional/folder/equipe.jpg';
+import escritorio1 from '../assets/img/institucional/folder/escritorio-1.jpg';
+import escritorio2 from '../assets/img/institucional/folder/escritorio-2.jpg';
+import oficina1 from '../assets/img/institucional/folder/oficina-1.jpg';
+import oficina2 from '../assets/img/institucional/folder/oficina-2.jpg';
+import oficina4 from '../assets/img/institucional/folder/oficina-4.jpg';
+import frota from '../assets/img/institucional/folder/frota.jpg';
+import caminhao from '../assets/img/institucional/folder/caminhao.jpg';
+import instalacaoDeck from '../assets/img/institucional/folder/instalacao-deck.jpg';
+import showroom1 from '../assets/img/institucional/folder/showroom-1.jpg';
+import showroom2 from '../assets/img/institucional/folder/showroom-2.jpg';
+import madeiraNobre from '../assets/img/paginas/institucional/002-madeira-nobre-1-scaled.png';
+import imgMlc from '../assets/img/pergolado-mlc.jpg';
+import imgMadeira from '../assets/img/pergolado-de-madeira.jpg';
+import imgMetalico from '../assets/img/pergolado-metalico.jpg';
+import imgCoberturas from '../assets/img/coberturas.jpg';
+import imgPalha from '../assets/img/forro-de-palha.webp';
+import imgBambu from '../assets/img/forro-de-bambu.jpg';
+import imgPainel from '../assets/img/paginas/painel-ripado/010-painel-capa-site-scaled.jpg';
+import imgPisos from '../assets/img/paginas/pisos-de-madeira/066-forro-estruturado-jequitiba-harbour.jpg';
+
+const msg = whatsappUrl('Olá! Vim do site (página Institucional) e quero falar com a Saraiva Design.');
+
+const linhaDoTempo = [
+  { ano: '2017', t: 'Primeira loja em Campinas', d: 'Abertura da primeira loja da Saraiva Design em Campinas-SP.' },
+  { ano: '2018/2019', t: 'Galpão de produção', d: 'Fábrica própria para produzir as estruturas com controle de cada etapa.' },
+  { ano: '2021/2022', t: 'Matéria-prima e máquinas', d: 'Compra direta de matéria-prima e novas máquinas na produção.' },
+  { ano: '2024/2025', t: 'Frota e showroom', d: 'Nova frota própria e atualização do showroom.' },
+  { ano: '2026', t: 'Novo showroom e Studio', d: 'Início do novo showroom e do Studio Saraiva Design.' },
+];
+
+const numeros = [
+  { n: '+10', u: 'anos', d: 'de Saraiva Design' },
+  { n: '+30', u: 'anos', d: 'de experiência da família Saraiva' },
+  { n: '+100', u: 'mil m²', d: 'de pergolado, deck e obras instaladas' },
+  { n: '+10', u: 'mil', d: 'projetos atendidos' },
+  { n: '+25', u: 'mil m', d: 'lineares de forro de palha' },
+  { n: '+18', u: 'mil m²', d: 'de forro de bambu' },
+  { n: '+30', u: 'mil m²', d: 'de telhas fornecidas' },
+  { n: '+10', u: '', d: 'produtos personalizados' },
+];
+
+const especialidades = [
+  { nome: 'MLC', href: '/mlc/', img: imgMlc },
+  { nome: 'Pergolado de madeira', href: '/pergolado-de-madeira/', img: imgMadeira },
+  { nome: 'Pergolado de aço', href: '/pergolado-metalico/', img: imgMetalico },
+  { nome: 'Coberturas', href: '/cobertura-para-pergolado/', img: imgCoberturas },
+  { nome: 'Forro de palha', href: '/forro-de-palha/', img: imgPalha },
+  { nome: 'Forro de bambu', href: '/forro-em-esteiras-de-bambu/', img: imgBambu },
+  { nome: 'Painel e revestimento', href: '/painel-ripado/', img: imgPainel },
+  { nome: 'Pisos de madeira', href: '/pisos-de-madeira/', img: imgPisos },
+];
+
+const ambiental = [
+  { t: 'Origem comprovada', d: 'Madeira de florestas com Plano de Manejo Florestal, licenciada por órgão ambiental competente.' },
+  { t: 'Rastreabilidade', d: 'Toda madeira nativa acompanha o DOF (Documento de Origem Florestal), do fornecedor até a obra.' },
+  { t: 'Aproveitamento integral', d: 'Política de desperdício zero: a madeira que entra na fábrica é 100% aproveitada.' },
+  { t: 'Fornecedores homologados', d: 'Não aceitamos matéria-prima sem comprovação de manejo florestal.' },
+  { t: 'Laudos e certificações', d: 'Processos que seguem as normas técnicas, com laudos e certificações dos materiais.' },
+];
+
+const estrutura = [
+  { n: '+2.500', u: 'm²', d: 'de cadeia produtiva' },
+  { n: '+50', u: '', d: 'profissionais especializados' },
+  { n: '+10', u: '', d: 'veículos na frota própria' },
+];
+
+const diferenciais = [
+  { t: 'Engenharia integrada', d: 'Engenheiros e arquitetos no time: cálculo, dimensionamento e detalhamento de cada projeto.' },
+  { t: 'Soluções sob medida', d: 'Cada estrutura é desenhada para o seu espaço, sem adaptações de catálogo.' },
+  { t: 'Fabricação própria', d: 'Produção na nossa fábrica em Campinas, com controle de qualidade em cada etapa.' },
+  { t: 'Conformidade e segurança jurídica', d: 'Contrato, normas técnicas e documentação de origem dos materiais.' },
+  { t: 'Instalação especializada', d: 'Equipes próprias de carpintaria e serralheria, com acabamento de alto padrão.' },
+  { t: 'Garantia e pós-venda', d: 'Garantia por escrito e equipe própria para acompanhar você depois da entrega.' },
+];
+
+// Projetos: fotos da galeria do portfólio (pela posição em src/data/paginas/portfolio.json)
+const imagensPortfolio = import.meta.glob<{ default: ImageMetadata }>('../assets/img/paginas/portfolio/*.{jpg,jpeg,png,webp}', { eager: true });
+const fotosPortfolio = (portfolio.secoes as any[])
+  .flatMap((s) => s.blocos ?? [])
+  .filter((b) => b.t === 'galeria')
+  .flatMap((b) => b.fotos)
+  .map((f: any) => ({ src: Object.entries(imagensPortfolio).find(([k]) => k.endsWith('/' + f.arquivo))?.[1].default!, alt: f.alt as string }));
+const fotos = (ids: number[]) => ids.map((i) => fotosPortfolio[i]).filter((f) => f?.src);
+const residenciais = fotos([4, 12, 6, 16, 29, 44, 69, 8]);
+const corporativos = fotos([18, 19, 13, 21, 46, 47]);
+
+const heroSchema = await getImage({ src: hero, width: 1200, format: 'jpg', quality: 80 });
+const url = `${site.url}/institucional/`;
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'Sobre a Saraiva Design',
+    url,
+    image: new URL(heroSchema.src, site.url).href,
+    about: { '@type': 'Organization', name: site.nome, url: site.url },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: `${site.url}/` },
+      { '@type': 'ListItem', position: 2, name: 'Institucional', item: url },
+    ],
+  },
+];
+---
+
+<Base
+  title="Sobre a Saraiva Design: Pergolados e Estruturas em Madeira e Aço"
+  description="Conheça a Saraiva Design em Madeiras e Aços: empresa familiar com fábrica própria em Campinas-SP, +10 mil projetos e atendimento em todo o Brasil."
+  image={hero}
+  schema={schema}
+  pagina="Institucional"
+  headerSobreposto
+>
+  <PageHero
+    imagem={hero}
+    titulo="Sobre a Saraiva Design"
+    texto="Atendendo todo o Brasil com projetos em madeira, aço, bambu e palha. Com alma familiar e excelência em cada detalhe."
+    trilha={[{ label: 'Início', href: '/' }, { label: 'Institucional' }]}
+    botoes={[
+      { label: 'Fale conosco', href: msg, whatsapp: true },
+      { label: 'Nossa história', href: '#historia' },
+    ]}
+    faixa={['+10 anos de Saraiva Design', 'Fábrica própria em Campinas', 'Atendimento em todo o Brasil', 'Garantia e pós-venda']}
+  />
+
+  <!-- 1. Abertura -->
+  <section class="pm-sec" id="historia">
+    <div class="sar-wrap in-abertura">
+      <div>
+        <span class="pm-selo">Quem somos</span>
+        <h2 class="titulo-secao">Projetado para durar, feito para viver</h2>
+        <div class="pm-texto">
+          <p>
+            A Saraiva Design em Madeiras e Aços é uma empresa familiar. A sociedade é de pai e filho: a experiência de quem
+            cresceu no meio da madeira e a visão de quem trouxe inovação para o negócio.
+          </p>
+          <p>
+            A história começou com os avós, no Mato Grosso, na região de Sinop. Do mato à serraria, da serraria à madeireira,
+            da madeireira à construção: esse caminho chegou à Saraiva Design, que hoje projeta, fabrica e instala pergolados,
+            coberturas, forros, decks e outras estruturas em madeira e aço.
+          </p>
+          <p>Atendemos com excelência, do primeiro contato à entrega final, e produzimos com responsabilidade para transformar ideias em grandes projetos.</p>
+        </div>
+      </div>
+      <Image src={fundadores} alt="Sócios da Saraiva Design, pai e filho, na fábrica" widths={[400, 556]} sizes="(max-width: 900px) 90vw, 460px" class="in-abertura__foto" quality={90} />
+    </div>
+  </section>
+
+  <!-- 2. Linha do tempo -->
+  <section class="pm-sec pm-sec--bege">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">Nossa trajetória</span>
+        <h2 class="titulo-secao">Linha do tempo</h2>
+      </header>
+      <ol class="in-tempo">
+        {
+          linhaDoTempo.map((m) => (
+            <li>
+              <span class="in-tempo__ano">{m.ano}</span>
+              <h3>{m.t}</h3>
+              <p>{m.d}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- 3. Números -->
+  <section class="pm-sec pm-sec--marrom">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo pm-selo--claro">Em números</span>
+        <h2 class="titulo-secao">A Saraiva Design em números</h2>
+        <p>Atendimento para todo o território nacional.</p>
+      </header>
+      <ul class="in-numeros">
+        {
+          numeros.map((x) => (
+            <li>
+              <strong>
+                {x.n}
+                {x.u && <small> {x.u}</small>}
+              </strong>
+              <span>{x.d}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4 e 5. Posicionamento, missão, visão e valores -->
+  <section class="pm-sec">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">Posicionamento</span>
+        <h2 class="titulo-secao">Evoluir também faz parte do que construímos</h2>
+        <p>Cada ano trouxe mais estrutura, mais equipe e mais tecnologia, sem perder o cuidado artesanal que vem da família.</p>
+      </header>
+      <ul class="in-mvv">
+        <li>
+          <h3>Missão</h3>
+          <p>
+            Construir estruturas em madeira e aço com excelência, forrar ambientes com palha, bambu e madeira de forma artesanal.
+            Unir tradição e inovação para entregar projetos artísticos em carpintaria e serralheria de alto padrão.
+          </p>
+        </li>
+        <li>
+          <h3>Visão</h3>
+          <p>
+            Ser referência mundial na construção de pergolados de alto padrão de forma sustentável, e líder de mercado no
+            fornecimento de palhas naturais e sintéticas, forros de bambu e kits de pergolados pré-fabricados.
+          </p>
+        </li>
+        <li>
+          <h3>Valores</h3>
+          <p>Transparência, ética, responsabilidade, sustentabilidade, inovação, amor ao próximo, paixão pelo trabalho, inclusão, criatividade e respeito.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. Especialidades -->
+  <section class="pm-sec pm-sec--bege">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">O que fazemos</span>
+        <h2 class="titulo-secao">Nossas especialidades</h2>
+      </header>
+      <ul class="in-espec">
+        {
+          especialidades.map((e) => (
+            <li>
+              <a href={e.href}>
+                <Image src={e.img} alt={e.nome} widths={[320, 560]} sizes="(max-width: 600px) 50vw, 280px" quality={88} />
+                <span>{e.nome}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7. Showroom -->
+  <section class="pm-sec">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">Showroom</span>
+        <h2 class="titulo-secao">Um espaço para ver, tocar e escolher</h2>
+      </header>
+      <div class="in-show">
+        <Image src={showroom1} alt="Showroom da Saraiva Design em Campinas" widths={[800, 1184]} sizes="(max-width: 900px) 100vw, 1180px" class="in-show__larga" quality={90} />
+        <article class="in-show__card">
+          <strong>+200 m²</strong>
+          <h3>Showroom atual</h3>
+          <p>
+            Pergolados, decks, painéis, forros, fibras naturais e sintéticas e coberturas montados em tamanho real. Venha conhecer
+            de perto o que será executado na sua casa.
+          </p>
+          <p class="in-show__end">{site.endereco.rua}, {site.endereco.bairro}, {site.endereco.cidade}-{site.endereco.uf}</p>
+          <a class="pm-link" href={mapsUrl} target="_blank" rel="noopener">Como chegar →</a>
+        </article>
+        <article class="in-show__card in-show__card--novo">
+          <strong>+1.000 m²</strong>
+          <h3>Novo showroom</h3>
+          <p>Em construção, com inauguração prevista para 2027: mais espaço para os projetos e o Studio Saraiva Design.</p>
+        </article>
+        <Image src={showroom2} alt="Sala de reuniões do showroom Saraiva Design" widths={[493]} sizes="(max-width: 900px) 100vw, 380px" class="in-show__foto" quality={90} />
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Responsabilidade ambiental -->
+  <section class="pm-sec pm-sec--bege">
+    <div class="sar-wrap in-amb">
+      <div>
+        <span class="pm-selo">Sustentabilidade</span>
+        <h2 class="titulo-secao">Responsabilidade ambiental</h2>
+        <p class="pm-lead">Respeitar os recursos naturais é uma premissa da Saraiva Design. A madeira tem origem 100% legal e cada processo busca o menor impacto possível.</p>
+        <ul class="in-amb__lista">
+          {
+            ambiental.map((a) => (
+              <li>
+                <h3>{a.t}</h3>
+                <p>{a.d}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <Image src={madeiraNobre} alt="Madeira nobre selecionada pela Saraiva Design" widths={[500, 800]} sizes="(max-width: 900px) 90vw, 460px" class="in-amb__foto" quality={90} />
+    </div>
+  </section>
+
+  <!-- 9. Estrutura -->
+  <section class="pm-sec">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">Estrutura</span>
+        <h2 class="titulo-secao">Da fábrica à sua obra</h2>
+        <p>Projeto, produção, logística e instalação feitos pela nossa equipe.</p>
+      </header>
+      <ul class="in-estrutura">
+        {
+          estrutura.map((x) => (
+            <li>
+              <strong>
+                {x.n}
+                {x.u && <small> {x.u}</small>}
+              </strong>
+              <span>{x.d}</span>
+            </li>
+          ))
+        }
+      </ul>
+      <Galeria
+        fotos={[
+          { src: oficina1, alt: 'Corte de peças de madeira na fábrica Saraiva Design' },
+          { src: oficina2, alt: 'Plaina na produção de peças de madeira' },
+          { src: oficina4, alt: 'Equipe Saraiva Design cortando madeira em obra' },
+          { src: instalacaoDeck, alt: 'Instalação de deck de madeira' },
+          { src: escritorio1, alt: 'Equipe de projetos da Saraiva Design' },
+          { src: escritorio2, alt: 'Projetista da Saraiva Design no escritório' },
+          { src: frota, alt: 'Frota própria da Saraiva Design' },
+          { src: caminhao, alt: 'Caminhão Saraiva Design levando madeira para a obra' },
+          { src: equipe, alt: 'Equipe da Saraiva Design no showroom' },
+        ]}
+      />
+    </div>
+  </section>
+
+  <!-- 10. Diferenciais -->
+  <section class="pm-sec pm-sec--bege">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">Por que a Saraiva</span>
+        <h2 class="titulo-secao">Nossos diferenciais</h2>
+      </header>
+      <ul class="pm-cards">
+        {
+          diferenciais.map((d) => (
+            <li class="pm-card">
+              <h3>{d.t}</h3>
+              <p>{d.d}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- 11. Projetos -->
+  <section class="pm-sec">
+    <div class="sar-wrap">
+      <header class="pm-head">
+        <span class="pm-selo">Portfólio</span>
+        <h2 class="titulo-secao">Projetos residenciais</h2>
+      </header>
+      <Galeria fotos={residenciais} />
+      <header class="pm-head in-proj__corp">
+        <h2 class="titulo-secao">Projetos corporativos</h2>
+        <p>Universidades, vinícolas, fazendas e espaços de eventos.</p>
+      </header>
+      <Galeria fotos={corporativos} />
+      <p class="in-proj__mais">
+        <a class="btn btn--escuro-contorno" href="/portfolio/">Ver o portfólio completo</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 12. Depoimentos -->
+  <Depoimentos titulo="O que nossos clientes dizem" />
+
+  <!-- 13. Contato -->
+  <section class="pm-folder">
+    <div class="sar-wrap pm-folder__solo">
+      <h2 class="titulo-secao">Projetado para durar, feito para viver</h2>
+      <p>
+        Showroom: {site.endereco.rua}, {site.endereco.bairro}, {site.endereco.cidade}-{site.endereco.uf}.
+      </p>
+      <div class="in-contato__acoes">
+        <a class="btn btn--creme" href={msg} target="_blank" rel="noopener"><IconeWhatsApp /> Falar no WhatsApp</a>
+        <a class="btn btn--creme" href="https://saraivadm.com.br/wp-content/uploads/2025/05/FOLDER-INSTITUCIONAL-2025.pdf" target="_blank" rel="noopener" data-folder="Folder Institucional">Baixar o folder (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <ContactForm titulo="Preencha o formulário e receba o contato<br> da nossa equipe comercial" />
+</Base>
+
+<style>
+  .in-abertura,
+  .in-amb {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: var(--gap-col);
+    align-items: center;
+  }
+  .in-abertura :global(.in-abertura__foto),
+  .in-amb :global(.in-amb__foto) {
+    width: 100%;
+    height: auto;
+    border-radius: var(--raio);
+    box-shadow: 0 18px 40px rgba(90, 58, 48, 0.16);
+  }
+  .in-abertura :global(.in-abertura__foto) {
+    max-width: 460px;
+    justify-self: center;
+  }
+
+  /* Linha do tempo */
+  .in-tempo {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--gap);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: none;
+  }
+  .in-tempo li {
+    position: relative;
+    padding-top: 28px;
+    border-top: 2px solid var(--sar-marrom);
+  }
+  .in-tempo li::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--sar-marrom);
+  }
+  .in-tempo__ano {
+    font-family: var(--fonte-titulos);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--sar-marrom);
+  }
+  .in-tempo h3 {
+    margin-top: 8px;
+    font-family: var(--fonte-titulos);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--sar-marrom-escuro);
+  }
+  .in-tempo p {
+    margin-top: 8px;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #5b4a43;
+  }
+
+  /* Números */
+  .in-numeros,
+  .in-estrutura {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--gap);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .in-numeros li {
+    padding: 28px 24px;
+    border: 1px solid rgba(243, 234, 219, 0.25);
+    border-radius: var(--raio);
+  }
+  .in-numeros strong,
+  .in-estrutura strong {
+    display: block;
+    font-family: var(--fonte-titulos);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .in-numeros small,
+  .in-estrutura small {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .in-numeros span {
+    display: block;
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(243, 234, 219, 0.88);
+  }
+  .in-estrutura {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: var(--secao-head);
+    text-align: center;
+  }
+  .in-estrutura li {
+    padding: 28px 20px;
+    background: var(--sar-bege);
+    border-radius: var(--raio);
+  }
+  .in-estrutura strong {
+    color: var(--sar-marrom);
+  }
+  .in-estrutura span {
+    display: block;
+    margin-top: 6px;
+    color: #5b4a43;
+  }
+
+  /* Missão, visão e valores */
+  .in-mvv {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--gap);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .in-mvv li {
+    padding: 36px 32px;
+    background: var(--sar-bege);
+    border-top: 3px solid var(--sar-oliva);
+    border-radius: var(--raio);
+  }
+  .in-mvv h3 {
+    font-family: var(--fonte-titulos);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--sar-marrom-escuro);
+  }
+  .in-mvv p {
+    margin-top: 12px;
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: #5b4a43;
+  }
+
+  /* Especialidades */
+  .in-espec {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--gap);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .in-espec a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: var(--raio);
+    aspect-ratio: 4 / 3.4;
+    text-decoration: none;
+  }
+  .in-espec :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+  .in-espec a:hover :global(img) {
+    transform: scale(1.05);
+  }
+  .in-espec span {
+    position: absolute;
+    inset: auto 0 0;
+    padding: 40px 18px 16px;
+    background: linear-gradient(transparent, rgba(30, 20, 16, 0.78));
+    color: #fff;
+    font-family: var(--fonte-titulos);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* Showroom */
+  .in-show {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--gap);
+  }
+  .in-show :global(.in-show__larga) {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: auto;
+    border-radius: var(--raio);
+  }
+  .in-show__card {
+    padding: 34px 30px;
+    background: var(--sar-bege);
+    border-radius: var(--raio);
+  }
+  .in-show__card--novo {
+    background: var(--sar-marrom);
+    color: var(--sar-creme);
+  }
+  .in-show__card strong {
+    font-family: var(--fonte-titulos);
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--sar-marrom);
+  }
+  .in-show__card--novo strong,
+  .in-show__card--novo h3 {
+    color: var(--sar-creme) !important;
+  }
+  .in-show__card h3 {
+    margin-top: 6px;
+    font-family: var(--fonte-titulos);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--sar-marrom-escuro);
+  }
+  .in-show__card p {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .in-show__end {
+    font-weight: 600;
+  }
+  .in-show :global(.in-show__foto) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--raio);
+  }
+
+  /* Responsabilidade ambiental */
+  .in-amb__lista {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 28px;
+    margin: 28px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .in-amb__lista h3 {
+    font-family: var(--fonte-titulos);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--sar-marrom-escuro);
+  }
+  .in-amb__lista h3::before {
+    content: '✓ ';
+    color: var(--sar-oliva-escuro);
+  }
+  .in-amb__lista p {
+    margin-top: 6px;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #5b4a43;
+  }
+
+  /* Projetos */
+  .in-proj__corp {
+    margin-top: var(--secao);
+  }
+  .in-proj__mais {
+    margin-top: var(--secao-head);
+    text-align: center;
+  }
+  .in-contato__acoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  @media (max-width: 900px) {
+    .in-abertura,
+    .in-amb,
+    .in-mvv,
+    .in-show {
+      grid-template-columns: 1fr;
+    }
+    .in-tempo {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      padding-left: 18px;
+      border-left: 2px solid var(--sar-marrom);
+    }
+    .in-tempo li {
+      padding-top: 0;
+      border-top: 0;
+    }
+    .in-tempo li::before {
+      top: 8px;
+      left: -26px;
+    }
+    .in-numeros,
+    .in-espec {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 600px) {
+    .in-estrutura,
+    .in-amb__lista {
+      grid-template-columns: 1fr;
+    }
+    .in-numeros strong {
+      font-size: 32px;
+    }
+  }
+</style>

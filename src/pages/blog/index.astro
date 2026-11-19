@@ -32,7 +32,7 @@ const schema = [
 
       {posts.length === 0 && <p>Em breve, novos conteúdos.</p>}
 
-      <ul class="blog-lista__grid">
+      <ul class:list={['blog-lista__grid', { 'blog-lista__grid--destaque': posts.length === 1, 'blog-lista__grid--dois': posts.length === 2 }]}>
         {
           posts.map((post) => (
             <li>
@@ -118,10 +118,22 @@ const schema = [
     font-size: 14px;
     line-height: 1.5;
   }
+  /* 1 ou 2 posts: cards largos, sem a página vazia ao lado */
+  .blog-lista__grid--dois { grid-template-columns: repeat(2, 1fr); }
+  .blog-lista__grid--destaque { grid-template-columns: 1fr; }
+  .blog-lista__grid--destaque .blog-card { display: grid; grid-template-columns: 1.3fr 1fr; }
+  .blog-lista__grid--destaque .blog-card img { height: 100%; min-height: 360px; }
+  .blog-lista__grid--destaque .blog-card__body { align-self: center; padding: 48px 44px; }
+  .blog-lista__grid--destaque .blog-card h2 { font-size: 26px; }
+  .blog-lista__grid--destaque .blog-card p { font-size: 16px; line-height: 1.65; }
   @media (max-width: 991px) {
     .blog-lista__grid { grid-template-columns: repeat(2, 1fr); }
   }
   @media (max-width: 767px) {
-    .blog-lista__grid { grid-template-columns: 1fr; }
+    .blog-lista__grid,
+    .blog-lista__grid--dois { grid-template-columns: 1fr; }
+    .blog-lista__grid--destaque .blog-card { grid-template-columns: 1fr; }
+    .blog-lista__grid--destaque .blog-card img { min-height: 0; height: 240px; }
+    .blog-lista__grid--destaque .blog-card__body { padding: 24px; }
   }
 </style>
