@@ -645,16 +645,16 @@ const schema = [
 
   /* ================= SHOWROOM ================= */
   .sar-showroom {
-    padding: var(--secao) var(--wrap-pad);
+    padding: 0 var(--wrap-pad) var(--secao);
   }
+  /* Street View do showroom de ponta a ponta da tela */
   .sar-showroom__mapa {
     display: block;
-    width: 100%;
-    max-width: calc(var(--wrap) - 2 * var(--wrap-pad));
-    height: 450px;
-    margin: 0 auto;
+    width: calc(100% + 2 * var(--wrap-pad));
+    max-width: none;
+    height: clamp(420px, 72vh, 680px);
+    margin: 0 calc(-1 * var(--wrap-pad));
     border: 0;
-    border-radius: var(--raio);
   }
   .sar-showroom__bar {
     display: flex;
@@ -688,7 +688,7 @@ const schema = [
     height: 34px;
   }
   @media (max-width: 580px) {
-    .sar-showroom__mapa { height: 320px; }
+    .sar-showroom__mapa { height: 420px; }
     .sar-showroom__acoes { flex-direction: column; gap: 12px; }
     .sar-pill { width: 100%; max-width: 320px; }
   }
