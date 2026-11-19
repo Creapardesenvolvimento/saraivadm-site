@@ -11,7 +11,7 @@ export const site = {
     'Projetos sob medida em madeira e aço para transformar áreas externas. Pergolados, coberturas, forros e piso de madeira, desenvolvidos com técnica, qualidade e atenção aos detalhes.',
 
   telefones: [
-    { exibicao: '11 5194 3920', whatsapp: '551151943920', tel: '+551151943920' },
+    { exibicao: '19 99436 4575', whatsapp: '5519994364575', tel: '+5519994364575' },
     { exibicao: '19 4141 2204', whatsapp: '551941412204', tel: '+551941412204' },
   ],
 

@@ -29,9 +29,8 @@ Relatório recebido: "RELATORIO AJUSTES DESIGN SITE NOVO SARAIVA.pdf" (20 págin
 
 ## Depende da Saraiva
 
-- **Números**: a Institucional usa os do folder 2026 (+10 mil projetos, +30 anos da família). O Início ainda mostra
-  "+5 mil projetos" e "+25 anos". Confirmar qual vale para trocar no Início também.
-- **Telefone**: o folder traz 19 99436 4575 / 19 4141 2204; o site mostra 11 5194 3920 / 19 4141 2204. Não foi alterado.
+- **Números e telefone**: resolvidos pelo folder (decisão de 19/11/2026: o folder é a correção do cliente e vale sobre
+  o site). Início com +10 mil projetos e +30 anos; WhatsApp principal 19 99436 4575 (e 19 4141 2204) em todo o site.
 - **Fotos da Institucional**: equipe, oficina, frota e showroom foram recortadas do folder 2025 (resolução baixa).
   Mandar as fotos originais do folder 2026 (linha do tempo, showroom novo, projetos) para trocar.
 - **Textos novos para aprovar**: frase de posicionamento, descrições da linha do tempo e bloco de Parcerias.

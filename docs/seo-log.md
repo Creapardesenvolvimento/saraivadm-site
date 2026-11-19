@@ -483,3 +483,5 @@ Institucionais (`/institucional/`, `/portfolio/`, `/antes-depois/`, `/catalogos/
 - Institucional refeita em página própria (`src/pages/institucional.astro`), seguindo o folder 2026. URL mantida.
 - Vídeos curtos da equipe em obra nas páginas de produto (carregam só quando aparecem na tela).
 - Detalhes e pendências em `docs/relatorio-design-2026-11-19.md`.
+- Dados do folder 2026 aplicados no site todo: +10 mil projetos, +30 anos de experiência e WhatsApp principal
+  (19) 99436-4575 no lugar de (11) 5194-3920 (botões, rodapé, contato, schema e assistente).
