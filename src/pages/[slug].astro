@@ -398,7 +398,7 @@ if (duvidas) {
                   );
                 if (b.t === 'cards')
                   return (
-                    <ul class="pm-cards">
+                    <ul class="pm-cards" style={`--cols:${colunasPara(b.itens.length)}`}>
                       {b.itens.map((c: any) => (
                         <li class="pm-card">
                           <h3>{c.titulo}</h3>

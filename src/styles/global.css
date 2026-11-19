@@ -23,6 +23,13 @@
   --secao-head: 56px;   /* título da seção -> conteúdo */
   --gap: 24px;          /* espaço entre cards, fotos e itens de grade */
   --gap-col: 64px;      /* espaço entre texto e imagem lado a lado */
+
+  /* ===== Escala de textos (use sempre estes tamanhos) ===== */
+  --fs-titulo: clamp(30px, 3.4vw, 44px); /* título de seção (.titulo-secao) */
+  --fs-subtitulo: 18px;  /* texto logo abaixo do título de seção */
+  --esp-subtitulo: 16px; /* espaço entre o título e o subtítulo */
+  --fs-bloco: 24px;      /* subtítulo dentro da seção (ex.: "Modelos", foto + texto) */
+  --fs-card: 20px;       /* título de card */
 }
 @media (max-width: 900px) {
   :root {
@@ -34,6 +41,9 @@
 }
 @media (max-width: 600px) {
   :root {
+    --fs-subtitulo: 16px;
+    --fs-bloco: 21px;
+    --fs-card: 18px;
     --secao: 56px;
     --secao-head: 32px;
     --wrap-pad: 20px;
@@ -306,7 +316,7 @@ html.js-anima [data-revelar].is-visivel {
 .titulo-secao {
   margin: 0;
   font-family: var(--fonte-titulos);
-  font-size: clamp(30px, 3.4vw, 44px);
+  font-size: var(--fs-titulo);
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0;
