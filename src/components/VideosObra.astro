@@ -111,6 +111,10 @@ const colunas = dados?.formato === 'horizontal' ? Math.min(itens.length, itens.l
   .vo__grade--quadrado {
     max-width: 560px;
   }
+  /* verticais lado a lado: no máximo ~290px cada, centralizados */
+  .vo__grade--vertical {
+    max-width: calc(var(--vo-cols) * 290px);
+  }
   .vo__grade--vertical:has(> li:only-child) {
     max-width: 320px;
   }
