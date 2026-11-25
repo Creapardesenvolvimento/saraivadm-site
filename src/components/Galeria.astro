@@ -7,13 +7,15 @@ interface Props {
   fotos: { src: ImageMetadata; alt: string }[];
   /** Colunas no desktop */
   colunas?: number;
+  /** Catálogo: sempre este número de colunas, fotos quadradas do mesmo tamanho */
+  fixas?: number;
 }
-const { fotos, colunas: pedidas = 4 } = Astro.props;
+const { fotos, colunas: pedidas = 4, fixas } = Astro.props;
 // Sem foto sobrando sozinha na última linha
-const colunas = colunasPara(fotos.length, pedidas, Math.max(pedidas, 4));
+const colunas = fixas ?? colunasPara(fotos.length, pedidas, Math.max(pedidas, 4));
 
 // Cada foto aparece inteira: fotos de mesma proporção formam uma grade; proporções diferentes, fileiras de mesma altura.
-const proporcoes = fotos.map((f) => f.src.width / f.src.height);
+const proporcoes = fotos.map((f) => (fixas ? 1 : f.src.width / f.src.height));
 const mista = proporcoes.some((p) => Math.abs(p / proporcoes[0] - 1) > 0.01);
 // Proporções diferentes: fileiras de mesma altura que ocupam a largura toda
 const linhas = mista ? fileiras(proporcoes) : [fotos.map((_, i) => i)];
@@ -21,7 +23,7 @@ const linhas = mista ? fileiras(proporcoes) : [fotos.map((_, i) => i)];
 const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width: 2000, format: 'webp', quality: 92 })));
 ---
 
-<div class:list={['gal', { 'gal--mista': mista }]} style={`--gal-cols:${colunas};--gal-prop:${proporcoes[0]}`}>
+<div class:list={['gal', { 'gal--mista': mista, 'gal--fixa': fixas }]} style={`--gal-cols:${colunas};--gal-prop:${proporcoes[0]}`}>
   {
     linhas.map((linha) => (
       <ul class="gal__grid">
@@ -138,8 +140,12 @@ const grandes = await Promise.all(fotos.map((f) => getImage({ src: f.src, width:
     line-height: 1;
     cursor: pointer;
   }
+  /* catálogo: fotos da última linha alinhadas à esquerda, como as de cima */
+  .gal--fixa .gal__grid {
+    justify-content: flex-start;
+  }
   @media (max-width: 900px) {
-    .gal:not(.gal--mista) {
+    .gal:not(.gal--mista, .gal--fixa) {
       --gal-cols: 3 !important;
     }
   }

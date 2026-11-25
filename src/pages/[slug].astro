@@ -356,6 +356,7 @@ if (duvidas) {
                 if (b.t === 'galeria' && ehPortfolio) return <PortfolioGaleria fotos={fotosPortfolio} />;
                 if (b.t === 'galeria') {
                   const fotos = b.fotos.filter((f: any) => img(f.arquivo)).map((f: any) => ({ src: img(f.arquivo)!, alt: f.alt }));
+                  if (slug === 'pisos-de-madeira') return fotos.length ? <Galeria fotos={fotos} fixas={4} /> : null;
                   return fotos.length ? <Galeria fotos={fotos} colunas={fotos.length <= 5 ? Math.max(fotos.length, 3) : fotos.length % 3 === 0 && fotos.length < 10 ? 3 : 4} /> : null;
                 }
                 if (b.t === 'linha' && img(b.arquivo))
