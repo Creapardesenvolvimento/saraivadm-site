@@ -631,3 +631,37 @@
       grid-template-columns: 1fr;
     }
   }
+
+  /* Texto + vídeo em duas colunas equilibradas (src/scripts/introFluxo.ts):
+     o vídeo fica no topo da coluna da direita e o texto continua abaixo dele */
+  .pm-intro__grid.is-fluxo {
+    display: block;
+    columns: 2;
+    column-gap: var(--gap-col);
+  }
+  .pm-intro__grid.is-fluxo > div,
+  .pm-intro__grid.is-fluxo .pm-texto {
+    display: contents;
+  }
+  .pm-intro__grid.is-fluxo > div > *,
+  .pm-intro__grid.is-fluxo .pm-texto > * {
+    break-inside: avoid;
+  }
+  .pm-intro__grid.is-fluxo .pm-intro__midia {
+    position: static;
+    display: block;
+    break-before: column;
+    margin: 0 0 8px;
+  }
+  .pm-intro__grid.is-fluxo .pm-btn {
+    display: inline-flex;
+  }
+  @media (max-width: 900px) {
+    .pm-intro__grid.is-fluxo {
+      columns: 1;
+    }
+    .pm-intro__grid.is-fluxo .pm-intro__midia {
+      break-before: auto;
+      margin: 24px 0 8px;
+    }
+  }
