@@ -665,3 +665,9 @@
       margin: 24px 0 8px;
     }
   }
+  .pm-intro__foto {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--raio);
+  }

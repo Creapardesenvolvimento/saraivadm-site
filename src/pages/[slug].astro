@@ -299,14 +299,34 @@ if (duvidas) {
       // conteúdo livre (texto, subtítulos, cards, fotos, vídeos, PDFs) na ordem original
       const blocos: any[] = s.blocos;
       const introVideo = blocos[0]?.t === 'videos' && blocos[0].videos.length === 1 && blocos[1]?.t === 'html';
-      let resto = introVideo ? blocos.slice(2) : blocos;
+      // primeira seção com foto + texto (ex.: Forro ripado, Pisos de madeira): mesmo padrão do texto + vídeo, com a foto
+      // (também quando a seção começa com um texto e logo depois vem a foto + texto, como no Painel ripado)
+      const fotoValida = (b: any) => b?.t === 'linha' && !!img(b.arquivo) && !/selo/.test(b.arquivo) && !ehColecao(b.arquivo) && !ehMascote(b.arquivo);
+      const textoAntes = blocos[0]?.t === 'html' && fotoValida(blocos[1]);
+      const introFoto = !introVideo && i === 0 && (fotoValida(blocos[0]) || textoAntes);
+      const b0 = introFoto
+        ? textoAntes
+          ? { ...blocos[1], html: blocos[0].html + blocos[1].html }
+          : blocos[0]
+        : null;
+      let resto = introVideo ? blocos.slice(2) : introFoto ? blocos.slice(textoAntes ? 2 : 1) : blocos;
       // seção só com foto + texto (ex.: Metais selecionados no Pergokit): foto ao lado do texto, em destaque
       if (resto.length === 2 && resto[0].t === 'img' && resto[1].t === 'html' && img(resto[0].arquivo))
         resto = [{ t: 'linha', arquivo: resto[0].arquivo, alt: resto[0].alt, html: resto[1].html }];
       return (
         <section class:list={['pm-sec', classe]}>
           <div class="sar-wrap">
-            {introVideo ? (
+            {introFoto ? (
+              <div class="pm-intro__grid">
+                <div>
+                  {s.titulo && <h2 class="titulo-secao">{s.titulo}</h2>}
+                  {s.lead && <p class="pm-lead">{s.lead}</p>}
+                  <div class="pm-texto" set:html={b0.html} />
+                  <a class="btn btn--verde pm-btn" href={msg()} target="_blank" rel="noopener">Fale com um especialista</a>
+                </div>
+                <Image src={img(b0.arquivo)!} alt={b0.alt || nome} widths={[600, 1000, 1400]} sizes="(max-width: 900px) 100vw, 560px" class="pm-intro__foto" quality={90} />
+              </div>
+            ) : introVideo ? (
               <div class="pm-intro__grid">
                 <div>
                   {s.titulo && <h2 class="titulo-secao">{s.titulo}</h2>}
