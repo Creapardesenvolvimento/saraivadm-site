@@ -1,4 +1,5 @@
 ---
+import { fundoBranco } from '../lib/fundoBranco';
 import { Image, getImage } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
@@ -141,7 +142,7 @@ const schema = [
         </div>
         <a class="btn btn--verde pm-btn" href={msg()} target="_blank" rel="noopener">Fale com um especialista técnico</a>
       </div>
-      <Image src={intro} alt="Pergolado metálico preto com cobertura em área externa" widths={[600, 1200, 1600]} sizes="(max-width: 900px) 100vw, 600px" class="pm-intro__img" quality={90} />
+      <Image src={intro} alt="Pergolado metálico preto com cobertura em área externa" widths={[600, 1200, 1600]} sizes="(max-width: 900px) 100vw, 600px" class:list={['pm-intro__img', { 'img--branca': fundoBranco(intro) }]} quality={90} />
     </div>
   </section>
   <VideosObra pagina="pergolado-metalico" nome="Pergolado metálico" continua />
@@ -176,7 +177,7 @@ const schema = [
           solução inteligente para composições arquitetônicas modernas, oferecendo versatilidade e requinte na medida certa.
         </p>
       </div>
-      <Image src={tipos} alt="Mascote da Saraiva Design segurando um perfil metálico" widths={[480, 800, 1200]} sizes="(max-width: 900px) 100vw, 480px" class="pm-madeira__img" quality={90} />
+      <Image src={tipos} alt="Mascote da Saraiva Design segurando um perfil metálico" widths={[480, 800, 1200]} sizes="(max-width: 900px) 100vw, 480px" class:list={['pm-madeira__img', { 'img--branca': fundoBranco(tipos) }]} quality={90} />
     </div>
   </section>
 
@@ -191,7 +192,7 @@ const schema = [
         {
           conteudo.usos.map((u) => (
             <article class="pm-uso">
-              <Image src={img(u.imagem.arquivo)} alt={u.imagem.alt} widths={[600, 1120, 1600]} sizes="(max-width: 900px) 100vw, 600px" class="pm-uso__img" quality={90} />
+              <Image src={img(u.imagem.arquivo)} alt={u.imagem.alt} widths={[600, 1120, 1600]} sizes="(max-width: 900px) 100vw, 600px" class:list={['pm-uso__img', { 'img--branca': fundoBranco(img(u.imagem.arquivo)) }]} quality={90} />
               <div class="pm-uso__texto">
                 <h3>{u.titulo}</h3>
                 <div set:html={u.html} />
@@ -234,7 +235,7 @@ const schema = [
   <!-- ================= FOLDER ================= -->
   <section class="pm-folder">
     <div class="sar-wrap pm-folder__grid">
-      <Image src={folderCapa} alt="Capa do folder do pergolado metálico Saraiva Design" widths={[300, 520, 780]} sizes="260px" class="pm-folder__img" quality={90} />
+      <Image src={folderCapa} alt="Capa do folder do pergolado metálico Saraiva Design" widths={[300, 520, 780]} sizes="260px" class:list={['pm-folder__img', { 'img--branca': fundoBranco(folderCapa) }]} quality={90} />
       <div>
         <h2 class="pm-h2 titulo-secao">Faça o download do nosso folder e fique por dentro das novidades</h2>
         <p>Modelos, medidas, acabamentos e opções de cobertura do pergolado metálico em um só arquivo.</p>

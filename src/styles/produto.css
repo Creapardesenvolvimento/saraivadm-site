@@ -671,3 +671,28 @@
     height: auto;
     border-radius: var(--raio);
   }
+
+  /* Imagens com fundo branco (src/lib/fundoBranco.ts): o espaço em volta também fica branco */
+  .img--branca {
+    background: #fff !important;
+  }
+  .pm-modelos__img.img--branca {
+    object-fit: contain;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  .pm-fluxo__img.img--branca {
+    box-sizing: border-box;
+    padding: 24px;
+  }
+  .pm-sec .pm-uso--branca,
+  .pm-sec:not(.pm-sec--bege) .pm-uso--branca {
+    background: #fff;
+    box-shadow: 0 0 0 1px #e6ddd0;
+  }
+  .pm-madeira .img--branca,
+  .in-amb .img--branca {
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: var(--raio);
+  }

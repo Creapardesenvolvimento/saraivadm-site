@@ -1,4 +1,5 @@
 ---
+import { fundoBranco } from '../lib/fundoBranco';
 // Institucional: segue a ordem do folder institucional 2026 (abertura, linha do tempo, números, missão,
 // especialidades, showroom, responsabilidade ambiental, estrutura, diferenciais, projetos, depoimentos e contato).
 // Fotos da equipe, oficina, frota e showroom: recortadas do folder institucional 2025 (src/assets/img/institucional/folder/).
@@ -163,7 +164,7 @@ const schema = [
           <p>Atendemos com excelência, do primeiro contato à entrega final, e produzimos com responsabilidade para transformar ideias em grandes projetos.</p>
         </div>
       </div>
-      <Image src={fundadores} alt="Sócios da Saraiva Design, pai e filho, na fábrica" widths={[400, 556]} sizes="(max-width: 900px) 90vw, 460px" class="in-abertura__foto" quality={90} />
+      <Image src={fundadores} alt="Sócios da Saraiva Design, pai e filho, na fábrica" widths={[400, 556]} sizes="(max-width: 900px) 90vw, 460px" class:list={['in-abertura__foto', { 'img--branca': fundoBranco(fundadores) }]} quality={90} />
     </div>
   </section>
 
@@ -255,7 +256,7 @@ const schema = [
           especialidades.map((e) => (
             <li>
               <a href={e.href}>
-                <Image src={e.img} alt={e.nome} widths={[320, 560]} sizes="(max-width: 600px) 50vw, 280px" quality={88} />
+                <Image class:list={[{ 'img--branca': fundoBranco(e.img) }]} src={e.img} alt={e.nome} widths={[320, 560]} sizes="(max-width: 600px) 50vw, 280px" quality={88} />
                 <span>{e.nome}</span>
               </a>
             </li>
@@ -273,7 +274,7 @@ const schema = [
         <h2 class="titulo-secao">Um espaço para ver, tocar e escolher</h2>
       </header>
       <div class="in-show">
-        <Image src={showroom1} alt="Showroom da Saraiva Design em Campinas" widths={[800, 1184]} sizes="(max-width: 900px) 100vw, 1180px" class="in-show__larga" quality={90} />
+        <Image src={showroom1} alt="Showroom da Saraiva Design em Campinas" widths={[800, 1184]} sizes="(max-width: 900px) 100vw, 1180px" class:list={['in-show__larga', { 'img--branca': fundoBranco(showroom1) }]} quality={90} />
         <article class="in-show__card">
           <strong>+200 m²</strong>
           <h3>Showroom atual</h3>
@@ -289,7 +290,7 @@ const schema = [
           <h3>Novo showroom</h3>
           <p>Em construção, com inauguração prevista para 2027: mais espaço para os projetos e o Studio Saraiva Design.</p>
         </article>
-        <Image src={showroom2} alt="Sala de reuniões do showroom Saraiva Design" widths={[493]} sizes="(max-width: 900px) 100vw, 380px" class="in-show__foto" quality={90} />
+        <Image src={showroom2} alt="Sala de reuniões do showroom Saraiva Design" widths={[493]} sizes="(max-width: 900px) 100vw, 380px" class:list={['in-show__foto', { 'img--branca': fundoBranco(showroom2) }]} quality={90} />
       </div>
     </div>
   </section>
@@ -312,7 +313,7 @@ const schema = [
           }
         </ul>
       </div>
-      <Image src={madeiraNobre} alt="Madeira nobre selecionada pela Saraiva Design" widths={[500, 800]} sizes="(max-width: 900px) 90vw, 460px" class="in-amb__foto" quality={90} />
+      <Image src={madeiraNobre} alt="Madeira nobre selecionada pela Saraiva Design" widths={[500, 800]} sizes="(max-width: 900px) 90vw, 460px" class:list={['in-amb__foto', { 'img--branca': fundoBranco(madeiraNobre) }]} quality={90} />
     </div>
   </section>
 
