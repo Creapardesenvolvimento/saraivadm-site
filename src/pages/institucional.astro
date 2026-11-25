@@ -674,6 +674,7 @@ const schema = [
     font-weight: 600;
     color: var(--sar-marrom-escuro);
     line-height: 1.3;
+    overflow-wrap: break-word;
   }
   .in-amb__lista h3::before {
     content: '✓ ';
@@ -728,9 +729,15 @@ const schema = [
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  @media (max-width: 900px) {
+    .in-amb--so-texto .in-amb__lista {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   @media (max-width: 600px) {
     .in-estrutura,
-    .in-amb__lista {
+    .in-amb__lista,
+    .in-amb--so-texto .in-amb__lista {
       grid-template-columns: 1fr;
     }
     .in-numeros strong {
