@@ -700,3 +700,42 @@
   .pm-madeira--so-texto {
     grid-template-columns: 1fr;
   }
+
+  /* ===== Cards foto + texto: imagem sempre do mesmo tamanho em todas as páginas =====
+     Metade do card para a foto, sempre quadrada (cortada no centro); com texto longo, a foto fica centralizada na altura.
+     Imagens de fundo branco (infográficos, composições) aparecem inteiras, sobre branco. */
+  .pm-usos .pm-uso:not(.pm-uso--sem-foto),
+  .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote),
+  .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote):nth-of-type(even) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    min-height: calc((min(100vw, var(--wrap)) - 2 * var(--wrap-pad)) / 2);
+  }
+  .pm-usos .pm-uso:not(.pm-uso--sem-foto) .pm-uso__img,
+  .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote) .pm-uso__img {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    padding: 0;
+    object-fit: cover;
+  }
+  .pm-usos .pm-uso:not(.pm-uso--sem-foto) .pm-uso__img.img--branca,
+  .pm-fluxo .pm-uso--linha .pm-uso__img.img--branca,
+  .pm-uso--branca .pm-uso__img {
+    object-fit: contain;
+    box-sizing: border-box;
+    padding: 28px;
+  }
+  @media (max-width: 900px) {
+    .pm-usos .pm-uso:not(.pm-uso--sem-foto),
+    .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote),
+    .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote):nth-of-type(even) {
+      grid-template-columns: 1fr;
+      min-height: 0;
+    }
+    .pm-usos .pm-uso:not(.pm-uso--sem-foto) .pm-uso__img,
+    .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote) .pm-uso__img {
+      height: auto;
+      aspect-ratio: 4 / 3;
+    }
+  }
