@@ -174,10 +174,10 @@ const schema = [
         <span class="pm-selo">Nossa trajetória</span>
         <h2 class="titulo-secao">Linha do tempo</h2>
       </header>
-      <ol class="in-tempo">
+      <ol class="in-tempo" data-anima>
         {
-          linhaDoTempo.map((m) => (
-            <li>
+          linhaDoTempo.map((m, i) => (
+            <li style={`--i:${i}`}>
               <span class="in-tempo__ano">{m.ano}</span>
               <h3>{m.t}</h3>
               <p>{m.d}</p>
@@ -201,7 +201,7 @@ const schema = [
           numeros.map((x) => (
             <li>
               <strong>
-                {x.n}
+                <span class="contador" data-contar={x.n}>{x.n}</span>
                 {x.u && <small> {x.u}</small>}
               </strong>
               <span>{x.d}</span>
@@ -328,7 +328,7 @@ const schema = [
           estrutura.map((x) => (
             <li>
               <strong>
-                {x.n}
+                <span class="contador" data-contar={x.n}>{x.n}</span>
                 {x.u && <small> {x.u}</small>}
               </strong>
               <span>{x.d}</span>
@@ -737,4 +737,116 @@ const schema = [
       font-size: 32px;
     }
   }
+  /* Linha do tempo animada: a linha corre da esquerda para a direita e cada marco aparece quando ela chega nele */
+  .in-tempo.is-anima li {
+    border-top-color: rgba(139, 90, 78, 0.18);
+  }
+  .in-tempo.is-anima li::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: calc(-1 * var(--gap));
+    height: 2px;
+    background: var(--sar-marrom);
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .in-tempo.is-anima li:last-child::after {
+    right: 0;
+  }
+  .in-tempo.is-anima li::before {
+    transform: scale(0);
+    z-index: 1;
+  }
+  .in-tempo.is-anima li > * {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  /* as transições só valem na entrada, para os marcos não sumirem devagar quando a página abre */
+  .in-tempo.is-anima.is-ativo li::after {
+    transform: scaleX(1);
+    transition: transform 0.6s linear calc(var(--i) * 0.6s);
+  }
+  .in-tempo.is-anima.is-ativo li::before {
+    transform: scale(1);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) calc(var(--i) * 0.6s);
+  }
+  .in-tempo.is-anima.is-ativo li > * {
+    opacity: 1;
+    transform: none;
+    transition:
+      opacity 0.5s ease calc(var(--i) * 0.6s + 0.15s),
+      transform 0.5s ease calc(var(--i) * 0.6s + 0.15s);
+  }
+  .contador {
+    font-variant-numeric: tabular-nums;
+  }
+  @media (max-width: 900px) {
+    /* celular: a linha é vertical; a linha de cada marco desce até o próximo */
+    .in-tempo.is-anima {
+      border-left-color: rgba(139, 90, 78, 0.18);
+    }
+    .in-tempo.is-anima li::after {
+      top: 8px;
+      left: -21px;
+      right: auto;
+      width: 2px;
+      height: calc(100% + 28px);
+      transform: scaleY(0);
+      transform-origin: top;
+    }
+    .in-tempo.is-anima li:last-child::after {
+      height: 100%;
+    }
+    .in-tempo.is-anima.is-ativo li::after {
+      transform: scaleY(1);
+    }
+  }
 </style>
+
+<script>
+  const reduzir = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Contador: o número sobe de 0 até o valor quando aparece na tela
+  const formatar = new Intl.NumberFormat('pt-BR');
+  function contar(el: HTMLElement) {
+    const texto = el.dataset.contar || '';
+    const m = texto.match(/^(\D*)([\d.]+)(.*)$/);
+    if (!m) return;
+    const [, antes, numero, depois] = m;
+    const alvo = Number(numero.replace(/\./g, ''));
+    const duracao = 1600;
+    const inicio = performance.now();
+    const passo = (agora: number) => {
+      const t = Math.min(1, (agora - inicio) / duracao);
+      const v = Math.round(alvo * (1 - Math.pow(1 - t, 3)));
+      el.textContent = `${antes}${formatar.format(v)}${depois}`;
+      if (t < 1) requestAnimationFrame(passo);
+      else el.textContent = texto;
+    };
+    requestAnimationFrame(passo);
+  }
+
+  if (!reduzir && 'IntersectionObserver' in window) {
+    const tempo = document.querySelector<HTMLElement>('.in-tempo[data-anima]');
+    tempo?.classList.add('is-anima');
+    const obs = new IntersectionObserver(
+      (entradas) => {
+        entradas.forEach((e) => {
+          if (!e.isIntersecting) return;
+          const el = e.target as HTMLElement;
+          if (el.classList.contains('contador')) contar(el);
+          else el.classList.add('is-ativo');
+          obs.unobserve(el);
+        });
+      },
+      { threshold: 0.35 },
+    );
+    if (tempo) obs.observe(tempo);
+    document.querySelectorAll<HTMLElement>('.contador').forEach((el) => {
+      el.textContent = (el.dataset.contar || '').replace(/[\d.]+/, '0');
+      obs.observe(el);
+    });
+  }
+</script>
