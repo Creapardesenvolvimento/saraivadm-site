@@ -696,3 +696,7 @@
     box-sizing: border-box;
     border-radius: var(--raio);
   }
+  /* Seção da madeira sem imagem: texto na largura toda */
+  .pm-madeira--so-texto {
+    grid-template-columns: 1fr;
+  }

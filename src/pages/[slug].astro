@@ -40,8 +40,9 @@ const { slug } = Astro.params;
 const p = paginas.find((x) => x.slug === slug)!;
 
 const imagens = Object.fromEntries(Object.entries(todasImagens).filter(([k]) => k.includes(`/paginas/${slug}/`)));
+// O boneco (mascote) foi retirado do site: as imagens dele não aparecem e o texto ocupa a largura toda
 const img = (arquivo?: string | null, pg = slug) =>
-  arquivo ? Object.entries(todasImagens).find(([k]) => k.includes(`/paginas/${pg}/`) && k.endsWith('/' + arquivo))?.[1].default : undefined;
+  arquivo && !/madeira-nobre/.test(arquivo) ? Object.entries(todasImagens).find(([k]) => k.includes(`/paginas/${pg}/`) && k.endsWith('/' + arquivo))?.[1].default : undefined;
 
 const hero = img(p.hero.imagem) ?? heroPadrao;
 const nome: string = p.nome;
@@ -364,6 +365,7 @@ if (duvidas) {
                       <div class="pm-uso__texto" set:html={b.html} />
                     </article>
                   );
+                if (b.t === 'linha') return <div class="pm-fluxo__texto" set:html={b.html} />;
                 if (b.t === 'logos')
                   return (
                     <ul class="pm-logos">

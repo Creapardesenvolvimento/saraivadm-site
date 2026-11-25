@@ -27,7 +27,6 @@ import caminhao from '../assets/img/institucional/folder/caminhao.jpg';
 import instalacaoDeck from '../assets/img/institucional/folder/instalacao-deck.jpg';
 import showroom1 from '../assets/img/institucional/folder/showroom-1.jpg';
 import showroom2 from '../assets/img/institucional/folder/showroom-2.jpg';
-import madeiraNobre from '../assets/img/paginas/institucional/002-madeira-nobre-1-scaled.png';
 import imgMlc from '../assets/img/pergolado-mlc.jpg';
 import imgMadeira from '../assets/img/pergolado-de-madeira.jpg';
 import imgMetalico from '../assets/img/pergolado-metalico.jpg';
@@ -297,7 +296,7 @@ const schema = [
 
   <!-- 8. Responsabilidade ambiental -->
   <section class="pm-sec pm-sec--bege">
-    <div class="sar-wrap in-amb">
+    <div class="sar-wrap in-amb in-amb--so-texto">
       <div>
         <span class="pm-selo">Sustentabilidade</span>
         <h2 class="titulo-secao">Responsabilidade ambiental</h2>
@@ -313,7 +312,6 @@ const schema = [
           }
         </ul>
       </div>
-      <Image src={madeiraNobre} alt="Madeira nobre selecionada pela Saraiva Design" widths={[500, 800]} sizes="(max-width: 900px) 90vw, 460px" class:list={['in-amb__foto', { 'img--branca': fundoBranco(madeiraNobre) }]} quality={90} />
     </div>
   </section>
 
@@ -656,6 +654,12 @@ const schema = [
   }
 
   /* Responsabilidade ambiental */
+  .in-amb--so-texto {
+    grid-template-columns: 1fr;
+  }
+  .in-amb--so-texto .in-amb__lista {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .in-amb__lista {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
