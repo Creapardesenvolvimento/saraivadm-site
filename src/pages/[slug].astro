@@ -371,6 +371,17 @@ if (duvidas) {
                     </article>
                   );
                 if (b.t === 'linha') return <div class="pm-fluxo__texto" set:html={b.html} />;
+                // animação do produto (vídeo curto em repetição, fundo branco) ao lado do título e do texto
+                if (b.t === 'animacao')
+                  return (
+                    <article class="pm-uso pm-uso--linha pm-uso--branca pm-uso--anim">
+                      <video class="pm-uso__img" src={`${b.video}.mp4`} poster={`${b.video}.jpg`} autoplay muted loop playsinline preload="metadata" aria-label={b.titulo} />
+                      <div class="pm-uso__texto">
+                        <h3>{b.titulo}</h3>
+                        <Fragment set:html={b.html} />
+                      </div>
+                    </article>
+                  );
                 if (b.t === 'logos')
                   return (
                     <ul class="pm-logos">
@@ -386,7 +397,7 @@ if (duvidas) {
                     <div class:list={['pm-videos pm-videos--lado', { 'pm-videos--um': b.itens.length === 1 }]}>
                       {b.itens.map((v: any) => (
                         <figure class="pm-video">
-                          <VideoYoutube id={v.video.id} capa={img(v.video.capa) ?? hero} titulo={`${nome}: vídeo Saraiva Design`} largura={700} />
+                          <VideoYoutube id={v.video.id} capa={img(v.video.capa) ?? hero} titulo={`${nome}: vídeo Saraiva Design`} largura={700} vertical={v.video.vertical} />
                           {v.legenda && <figcaption set:html={v.legenda} />}
                         </figure>
                       ))}
@@ -396,7 +407,7 @@ if (duvidas) {
                   return (
                     <div class:list={['pm-videos', { 'pm-videos--um': b.videos.length === 1 }]} style={`--cols:${colunasPara(b.videos.length)}`}>
                       {b.videos.map((v: any) => (
-                        <VideoYoutube id={v.id} capa={img(v.capa) ?? hero} titulo={`${nome}: vídeo Saraiva Design`} largura={700} />
+                        <VideoYoutube id={v.id} capa={img(v.capa) ?? hero} titulo={`${nome}: vídeo Saraiva Design`} largura={700} vertical={v.vertical} />
                       ))}
                     </div>
                   );

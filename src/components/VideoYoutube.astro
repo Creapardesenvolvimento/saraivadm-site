@@ -8,14 +8,16 @@ interface Props {
   titulo: string;
   /** Largura máxima em que a capa aparece (px) */
   largura?: number;
+  /** Vídeo em pé (Shorts do YouTube) */
+  vertical?: boolean;
 }
-const { id, capa, titulo, largura = 700 } = Astro.props;
+const { id, capa, titulo, largura = 700, vertical = false } = Astro.props;
 const img = await getImage({ src: capa, width: largura, format: 'webp', quality: 90 });
 ---
 
 <button
   type="button"
-  class="sar-video"
+  class:list={['sar-video', { 'sar-video--vertical': vertical }]}
   data-yt={id}
   style={`background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.45) 100%), url('${img.src}')`}
   aria-label={`Assistir: ${titulo}`}
@@ -76,6 +78,11 @@ const img = await getImage({ src: capa, width: largura, format: 'webp', quality:
   .sar-video:focus-visible .sar-video__play {
     transform: scale(1.08);
     background: #fff;
+  }
+  .sar-video--vertical {
+    aspect-ratio: 9 / 16;
+    max-width: 340px;
+    margin-inline: auto;
   }
   .sar-video:focus-visible {
     outline: 3px solid var(--sar-oliva);

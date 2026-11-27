@@ -180,32 +180,32 @@
      ]
     },
     {
-     "t": "html",
-     "html": "<p>Forro de Bambu</p>"
-    },
-    {
-     "t": "sub",
-     "texto": "Forro de bambu – Roliço"
-    },
-    {
-     "t": "html",
+     "t": "animacao",
+     "video": "/videos/produtos/forro-de-bambu-rolico",
+     "titulo": "Forro de bambu – Roliço",
      "html": "<p>O forro de bambu roliço é produzido com varas inteiras de bambu, dispostas lado a lado e fixados através de uma barra roscada metálica. Seu visual autêntico e rústico remete diretamente à natureza e à arquitetura asiática, sendo muito valorizado em projetos de inspiração tropical, ecológica ou zen. Além de ser resistente e funcional, esse tipo de forro também contribui para o conforto térmico e acústico, tornando-se uma escolha diferenciada para quem deseja um ambiente único e natural, com uma pegada despojada e litorânea.</p>"
     },
     {
-     "t": "sub",
-     "texto": "Forro de bambu – Entrelaçado único"
-    },
-    {
-     "t": "html",
+     "t": "animacao",
+     "video": "/videos/produtos/forro-de-bambu-entrelacado-unico",
+     "titulo": "Forro de bambu – Entrelaçado único",
      "html": "<p>O <strong>forro de bambu entrelaçado único</strong> é uma solução leve, rústica e visualmente charmosa, composta por lâminas de bambu entrelaçadas em uma única camada. Essa técnica valoriza a estética artesanal, transmitindo aconchego e naturalidade ao ambiente. É ideal para quem busca um estilo mais tropical ou boho, sendo frequentemente aplicado em varandas, áreas gourmet e coberturas com transparência, como vidro, telhas ou policarbonato. As esteiras de bambu podem ser facilmente instaladas por quadros ou sobre peças de madeira e aço.</p>"
     },
     {
-     "t": "sub",
-     "texto": "Forro de bambu – Entrelaçado Duplo"
+     "t": "animacao",
+     "video": "/videos/produtos/forro-de-bambu-entrelacado-duplo",
+     "titulo": "Forro de bambu – Entrelaçado Duplo",
+     "html": "<p>Mais robusto e com acabamento visual reforçado, o <strong>forro de bambu entrelaçado duplo</strong> é composto por duas camadas sobrepostas de entrelaçado de bambu. Isso garante maior resistência, durabilidade e um visual mais denso e elegante. Além do apelo estético, proporciona melhor isolamento térmico e visual. É uma excelente opção para ambientes externos cobertos ou áreas que exigem um acabamento mais encorpado, sem perder a leveza e o toque natural característico do bambu.</p>"
     },
     {
-     "t": "html",
-     "html": "<p>Mais robusto e com acabamento visual reforçado, o <strong>forro de bambu entrelaçado duplo</strong> é composto por duas camadas sobrepostas de entrelaçado de bambu. Isso garante maior resistência, durabilidade e um visual mais denso e elegante. Além do apelo estético, proporciona melhor isolamento térmico e visual. É uma excelente opção para ambientes externos cobertos ou áreas que exigem um acabamento mais encorpado, sem perder a leveza e o toque natural característico do bambu.</p>"
+     "t": "videos",
+     "videos": [
+      {
+       "id": "yO7H140JuYE",
+       "capa": "yt-yO7H140JuYE.jpg",
+       "vertical": true
+      }
+     ]
     }
    ]
   },
