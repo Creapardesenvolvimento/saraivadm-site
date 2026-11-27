@@ -64,7 +64,7 @@ const rotuloPdf = (href: string, texto: string) => {
   const t = (texto || '').trim();
   if (t && !/download|clique|aqui/i.test(t) && t.length < 60) return t;
   if (/tabela/i.test(href)) return 'Tabela de preços (PDF)';
-  if (/folder|catalogo/i.test(href)) return 'Baixar o folder (PDF)';
+  if (/folder|catalogo/i.test(href)) return 'Baixar o catálogo (PDF)';
   return 'Baixar PDF';
 };
 
@@ -238,12 +238,12 @@ if (duvidas) {
           <section class="pm-folder">
             <div class:list={['sar-wrap', s.capa && img(s.capa) ? 'pm-folder__grid' : 'pm-folder__solo']}>
               {s.capa && img(s.capa) && (
-                <Image src={img(s.capa)!} alt={`Folder ${nome} Saraiva Design`} widths={[300, 520, 780]} sizes="260px" class="pm-folder__img" quality={90} />
+                <Image src={img(s.capa)!} alt={`Catálogo ${nome} Saraiva Design`} widths={[300, 520, 780]} sizes="260px" class="pm-folder__img" quality={90} />
               )}
               <div>
-                <h2 class="titulo-secao">Faça o download do nosso folder e fique por dentro das novidades</h2>
+                <h2 class="titulo-secao">Faça o download do nosso catálogo e fique por dentro das novidades</h2>
                 <p>{institucional ? 'Modelos, medidas e acabamentos dos nossos produtos em um só arquivo.' : `Modelos, medidas e acabamentos ${deNome} em um só arquivo.`}</p>
-                <a class="btn btn--creme pm-btn" href={s.href} target="_blank" rel="noopener" data-folder={`Folder ${nome}`}>Baixar o folder (PDF)</a>
+                <a class="btn btn--creme pm-btn" href={s.href} target="_blank" rel="noopener" data-folder={`Catálogo ${nome}`}>Baixar o catálogo (PDF)</a>
               </div>
             </div>
           </section>
@@ -471,7 +471,7 @@ if (duvidas) {
     )
   }
 
-  <ContactForm titulo={p.tituloForm ?? (institucional ? 'Preencha o formulário e receba o contato<br> da nossa equipe comercial' : `Quer ${quer}?<br> Receba o contato da nossa equipe`)} />
+  <ContactForm titulo={p.tituloForm ?? (institucional ? 'Preencha o formulário e receba o contato<br> da nossa equipe comercial' : `Receba um orçamento sem compromisso<br> para ${quer}`)} />
 </Base>
 
 <script>

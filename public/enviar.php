@@ -58,6 +58,7 @@ $telefone = campo('telefone', 30);
 $email    = campo('email', 150);
 $cidade   = campo('cidade', 100);
 $origem   = campo('origem', 200);
+$produto  = campo('produto', 100);
 $mensagem = mb_substr(trim((string)($_POST['mensagem'] ?? '')), 0, 3000);
 
 if ($FOLDER) {
@@ -71,12 +72,13 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     falhar('Informe um e-mail válido.');
 }
 
-$assunto = ($FOLDER ? 'Download de folder pelo site - ' : 'Novo contato pelo site - ') . $nome;
-$corpo = ($FOLDER ? "Pedido de download de folder pelo site saraivadm.com.br\n\n" : "Novo contato recebido pelo site saraivadm.com.br\n\n")
+$assunto = ($FOLDER ? 'Download de catálogo pelo site - ' : 'Novo contato pelo site - ') . $nome . ($produto !== '' ? ' (' . $produto . ')' : '');
+$corpo = ($FOLDER ? "Pedido de download de catálogo pelo site saraivadm.com.br\n\n" : "Novo contato recebido pelo site saraivadm.com.br\n\n")
        . "Nome: {$nome}\n"
        . "Telefone: {$telefone}\n"
        . "E-mail: {$email}\n"
        . "Cidade: {$cidade}\n"
+       . ($produto !== '' ? "Produto de interesse: {$produto}\n" : '')
        . "Página: {$origem}\n\n"
        . "Mensagem:\n{$mensagem}\n\n"
        . '---' . "\n" . 'Enviado em ' . date('d/m/Y H:i') . ' | IP ' . ($_SERVER['REMOTE_ADDR'] ?? '') . "\n";

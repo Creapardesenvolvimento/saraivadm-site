@@ -9,7 +9,7 @@ import hero from '../assets/img/institucional/hero-catalogos.jpg';
 import '../styles/produto.css';
 
 const grupos: { titulo: string; selo: string; itens: Catalogo[]; retrato?: boolean }[] = [
-  { titulo: 'Folders', selo: 'Catálogos', itens: folders },
+  { titulo: 'Catálogos', selo: 'Download', itens: folders },
   { titulo: 'Tabelas de preço', selo: 'Preços', itens: tabelas, retrato: true },
 ];
 
@@ -35,7 +35,7 @@ const schema = [
   <PageHero
     imagem={hero}
     titulo="Catálogos"
-    texto="Folders com modelos, medidas e acabamentos dos nossos produtos e as tabelas de preço atualizadas."
+    texto="Catálogos com modelos, medidas e acabamentos dos nossos produtos e as tabelas de preço atualizadas."
     trilha={[{ label: 'Início', href: '/' }, { label: 'Catálogos' }]}
     botoes={[
       { label: 'Falar com um consultor', href: whatsappUrl('Olá! Vim pela página de catálogos e gostaria de um orçamento.'), whatsapp: true },

@@ -1,16 +1,43 @@
 ---
 // Formulário "Solicitar contato". Envia para /enviar.php (roda no cPanel),
 // que manda o e-mail para contato@saraivadm.com.br.
+import { paginaVisivel } from '../data/site';
+
 interface Props {
   titulo?: string;
+  /** Texto de apoio abaixo do título */
+  subtitulo?: string;
 }
-const { titulo = 'Preencha o formulário e receba o contato<br> da nossa equipe comercial' } = Astro.props;
+const {
+  titulo = 'Preencha o formulário e receba o contato<br> da nossa equipe comercial',
+  subtitulo = 'Projeto 3D, visita técnica e um consultor acompanhando você do início ao fim.',
+} = Astro.props;
 const origem = Astro.url.pathname;
+
+// Produto de interesse: já vem marcado com o produto da página em que o formulário está.
+const produtos = [
+  { nome: 'Pergolado de madeira', href: '/pergolado-de-madeira/' },
+  { nome: 'Pergolado metálico', href: '/pergolado-metalico/' },
+  { nome: 'Pergolado em MLC', href: '/mlc/' },
+  { nome: 'Pergokit', href: '/pergokit/' },
+  { nome: 'Cobertura para pergolado', href: '/cobertura-para-pergolado/' },
+  { nome: 'PergoConfort', href: '/pergoconfort/' },
+  { nome: 'PergoConfort Max', href: '/pergoconfort-max/' },
+  { nome: 'Forro de palha', href: '/forro-de-palha/' },
+  { nome: 'Forro de bambu', href: '/forro-em-esteiras-de-bambu/' },
+  { nome: 'Forro ripado', href: '/forro-ripado/' },
+  { nome: 'Forro de lambril', href: '/forro-de-lambril/' },
+  { nome: 'Painel ripado', href: '/painel-ripado/' },
+  { nome: 'Piso de madeira', href: '/pisos-de-madeira/' },
+  { nome: 'Deck de madeira', href: '/deck-de-madeira/' },
+].filter((x) => paginaVisivel(x.href));
+const atual = produtos.find((x) => origem.startsWith(x.href))?.nome;
 ---
 
 <section class="sar-form" id="contato" aria-labelledby="contato-titulo">
   <div class="sar-form__inner">
     <h2 class="titulo-secao sar-form__titulo" id="contato-titulo" set:html={titulo} />
+    {subtitulo && <p class="sar-form__sub">{subtitulo}</p>}
 
     <form class="sar-form__form" method="post" action="/enviar.php">
       <input type="hidden" name="origem" value={origem} />
@@ -32,10 +59,17 @@ const origem = Astro.url.pathname;
       <label class="visually-hidden" for="f-cidade">Sua cidade</label>
       <input id="f-cidade" type="text" name="cidade" placeholder="Sua cidade:" autocomplete="address-level2" required maxlength="100" />
 
+      <label class="visually-hidden" for="f-produto">Produto de interesse</label>
+      <select id="f-produto" name="produto" required>
+        <option value="" disabled selected={!atual}>Produto de interesse:</option>
+        {produtos.map((x) => <option value={x.nome} selected={x.nome === atual}>{x.nome}</option>)}
+        <option value="Outro / ainda não sei">Outro / ainda não sei</option>
+      </select>
+
       <label class="visually-hidden" for="f-msg">Sua mensagem</label>
       <textarea id="f-msg" name="mensagem" rows="4" placeholder="Deixe sua mensagem:" maxlength="3000"></textarea>
 
-      <button type="submit" class="btn btn--verde btn--grande btn--bloco">Solicitar contato</button>
+      <button type="submit" class="btn btn--verde btn--grande btn--bloco">Solicitar orçamento</button>
       <p class="sar-form__aviso">Ao enviar, você concorda com a nossa <a href="/politica-de-privacidade/">Política de privacidade</a>.</p>
     </form>
   </div>
@@ -61,6 +95,17 @@ const origem = Astro.url.pathname;
     margin-bottom: var(--secao-head);
     text-align: center;
   }
+  .sar-form__titulo:has(+ .sar-form__sub) {
+    margin-bottom: 0;
+  }
+  .sar-form__sub {
+    max-width: 640px;
+    margin: var(--esp-subtitulo) auto var(--secao-head);
+    text-align: center;
+    font-size: var(--fs-subtitulo);
+    line-height: 1.6;
+    color: #5b4a43;
+  }
   .sar-form__form {
     max-width: 760px;
     margin: 0 auto;
@@ -69,6 +114,7 @@ const origem = Astro.url.pathname;
     gap: 14px;
   }
   .sar-form__form input,
+  .sar-form__form select,
   .sar-form__form textarea {
     width: 100%;
     padding: 14px 18px;
@@ -85,7 +131,18 @@ const origem = Astro.url.pathname;
     color: #9e9e9e;
     font-size: 14px;
   }
+  .sar-form__form select {
+    appearance: none;
+    padding-right: 44px;
+    background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237a6a63' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 16px center / 18px;
+    cursor: pointer;
+  }
+  .sar-form__form select:invalid {
+    color: #9e9e9e;
+    font-size: 14px;
+  }
   .sar-form__form input:focus,
+  .sar-form__form select:focus,
   .sar-form__form textarea:focus {
     border-color: var(--sar-oliva-botao);
   }

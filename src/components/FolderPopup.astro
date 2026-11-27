@@ -1,5 +1,5 @@
 ---
-// Popup de download de folders e tabelas: todo link para um .pdf do site abre este formulário
+// Popup de download dos catálogos e tabelas de preço: todo link para um .pdf do site abre este formulário
 // (nome, WhatsApp, e-mail). O pedido vai por e-mail via /enviar.php (tipo=folder) e o download é liberado.
 // Depois de preencher uma vez, os próximos downloads no mesmo navegador abrem direto.
 ---
@@ -11,8 +11,8 @@
 
   <div class="fp__etapa" data-fp-form>
     <p class="fp__selo">Download gratuito</p>
-    <h2 class="fp__titulo" id="fp-titulo">Receba o folder completo</h2>
-    <p class="fp__texto">Preencha seus dados para liberar o download de <strong data-fp-nome>nosso folder</strong>.</p>
+    <h2 class="fp__titulo" id="fp-titulo" data-fp-titulo>Receba o catálogo completo</h2>
+    <p class="fp__texto">Preencha seus dados para liberar o download.</p>
 
     <form class="fp__form" method="post" action="/enviar.php">
       <input type="hidden" name="tipo" value="folder" />
@@ -62,7 +62,7 @@
     const etapaForm = dlg.querySelector<HTMLElement>('[data-fp-form]')!;
     const etapaOk = dlg.querySelector<HTMLElement>('[data-fp-ok]')!;
     const baixar = dlg.querySelector<HTMLAnchorElement>('[data-fp-baixar]')!;
-    const nomeArq = dlg.querySelector<HTMLElement>('[data-fp-nome]')!;
+    const tituloPopup = dlg.querySelector<HTMLElement>('[data-fp-titulo]')!;
     const origem = dlg.querySelector<HTMLInputElement>('[data-fp-origem]')!;
     const ts = dlg.querySelector<HTMLInputElement>('[data-fp-ts]')!;
     const enviar = dlg.querySelector<HTMLButtonElement>('[data-fp-enviar]')!;
@@ -74,7 +74,8 @@
         link.dataset.folder ||
         link.closest('[data-folder-titulo]')?.getAttribute('data-folder-titulo') ||
         decodeURIComponent(pdf.split('/').pop() || '').replace(/\.pdf$/i, '').replace(/[-_]+/g, ' ');
-      nomeArq.textContent = titulo;
+      // tabela de preço ou catálogo: o título diz o que a pessoa vai receber
+      tituloPopup.textContent = /tabela|pre[cç]o/i.test(`${pdf} ${titulo}`) ? 'Receba a tabela de preço' : 'Receba o catálogo completo';
       origem.value = `${location.pathname} | ${titulo} | ${pdf}`;
       ts.value = String(Math.floor(Date.now() / 1000));
       baixar.href = pdf;
