@@ -2,7 +2,7 @@
 // coluna da direita, com o restante do texto continuando logo abaixo dele.
 // O ponto em que o texto passa para a direita é escolhido medindo a página, para as duas colunas terminarem
 // na mesma altura: primeiro entre parágrafos e, para o acerto fino, partindo um parágrafo entre duas palavras
-// (a leitura continua normalmente embaixo do vídeo). Sem JavaScript, a seção fica no layout antigo (texto | vídeo).
+// sempre no fim de uma frase (a leitura continua normalmente embaixo do vídeo). Sem JavaScript, a seção fica no layout antigo (texto | vídeo).
 
 const CELULAR = '(max-width: 900px)';
 const continuacoes = new WeakMap<HTMLElement, HTMLElement>(); // parte de baixo -> parágrafo original
@@ -37,21 +37,24 @@ function colunas(grade: HTMLElement, midia: HTMLElement): [number, number] {
   return [esq, dir];
 }
 
-/** Posições (início de cada palavra) dentro de um parágrafo */
+/** Pontos em que o parágrafo pode ser partido: início de cada frase (depois de . ! ?), para a leitura
+ *  não ser cortada no meio de uma frase ao passar de uma coluna para a outra */
 function palavras(p: HTMLElement): { no: Text; pos: number }[] {
   const lista: { no: Text; pos: number }[] = [];
   const walker = document.createTreeWalker(p, NodeFilter.SHOW_TEXT);
   let no: Text | null;
   let anteriorEspaco = true;
+  let fimDeFrase = false;
   while ((no = walker.nextNode() as Text | null)) {
     const t = no.data;
     for (let i = 0; i < t.length; i++) {
       const espaco = /\s/.test(t[i]);
-      if (!espaco && anteriorEspaco && lista.length + 1 > 0) lista.push({ no, pos: i });
+      if (!espaco && anteriorEspaco && fimDeFrase) lista.push({ no, pos: i });
+      if (!espaco) fimDeFrase = /[.!?]/.test(t[i]);
       anteriorEspaco = espaco;
     }
   }
-  return lista.slice(1); // não parte antes da primeira palavra
+  return lista;
 }
 
 /** Parte o parágrafo na palavra n: a parte de baixo vai logo depois do vídeo */
@@ -117,7 +120,7 @@ function organizar(grade: HTMLElement) {
   if (!p || p.tagName !== 'P' || p.classList.contains('pm-lead')) return;
   if (dir > esq) p.after(midia); // o parágrafo de baixo sobe para a esquerda e é partido
   const total = palavras(p).length;
-  if (total < 4) {
+  if (total < 1) {
     colocar(conteudo, midia, blocosDe(conteudo, midia), melhor);
     return;
   }
@@ -127,8 +130,8 @@ function organizar(grade: HTMLElement) {
     if (baixo) juntar(baixo);
     return { e, d, altura: Math.max(e, d) };
   };
-  // n = quantas palavras ficam na esquerda; procura o ponto em que a esquerda alcança a direita
-  let lo = 1;
+  // n = em qual início de frase partir; procura o ponto em que a esquerda alcança a direita
+  let lo = 0;
   let hi = total - 1;
   while (lo < hi) {
     const m = (lo + hi) >> 1;
@@ -136,7 +139,7 @@ function organizar(grade: HTMLElement) {
     if (e >= d) hi = m;
     else lo = m + 1;
   }
-  const candidatos = [lo - 1, lo].filter((n) => n >= 1 && n < total);
+  const candidatos = [lo - 1, lo].filter((n) => n >= 0 && n < total);
   let escolhido = candidatos[0];
   let melhorAltura = Infinity;
   for (const n of candidatos) {
