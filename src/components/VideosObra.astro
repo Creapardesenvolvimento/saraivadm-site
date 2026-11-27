@@ -2,6 +2,7 @@
 // Faixa com os vídeos curtos da equipe trabalhando (sem som, em repetição, como GIF).
 // Os vídeos só carregam e tocam quando entram na tela; quem prefere menos movimento vê só a capa.
 import { videosObra } from '../data/videosObra';
+import VideoYoutube from './VideoYoutube.astro';
 
 interface Props {
   pagina: string;
@@ -14,7 +15,9 @@ interface Props {
 const { pagina, nome, bege = false, continua = false } = Astro.props;
 const dados = videosObra[pagina];
 const itens = dados ? Array.from({ length: dados.quantidade }, (_, i) => `/videos/obras/${pagina}-${i + 1}`) : [];
-const colunas = dados?.formato === 'horizontal' ? Math.min(itens.length, itens.length === 4 ? 2 : 3) : itens.length;
+const youtube = dados?.youtube ?? [];
+const total = itens.length + youtube.length;
+const colunas = dados?.formato === 'horizontal' ? Math.min(total, total === 4 ? 2 : 3) : total;
 ---
 
 {
@@ -39,6 +42,11 @@ const colunas = dados?.formato === 'horizontal' ? Math.min(itens.length, itens.l
                 data-src={`${base}.mp4`}
                 aria-label={`${nome}: equipe Saraiva Design trabalhando, vídeo ${i + 1}`}
               />
+            </li>
+          ))}
+          {youtube.map((v) => (
+            <li class="vo__yt">
+              <VideoYoutube id={v.id} capa={v.capa} titulo={`${nome}: vídeo Saraiva Design`} largura={600} vertical={dados.formato === 'vertical'} />
             </li>
           ))}
         </ul>
@@ -125,6 +133,10 @@ const colunas = dados?.formato === 'horizontal' ? Math.min(itens.length, itens.l
     object-fit: cover;
     border-radius: var(--raio);
     background: #d8cdbb;
+  }
+  /* vídeo do YouTube na faixa: mesmo tamanho dos outros */
+  .vo__yt :global(.sar-video) {
+    max-width: none;
   }
   .vo__grade--horizontal .vo__video {
     aspect-ratio: 16 / 9;
