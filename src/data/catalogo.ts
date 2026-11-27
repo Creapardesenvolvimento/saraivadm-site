@@ -1,5 +1,5 @@
 // Catálogo de produtos: usado nos cards da home e em "Outros produtos" das páginas internas.
-import imgPergoladoMetalico from '../assets/img/pergolado-metalico.jpg';
+import imgPergoladoMetalico from '../assets/img/pergolado-metalico/projeto-2.jpg';
 import imgForroMadeira from '../assets/img/forro-de-madeira.jpg';
 import imgForroBambu from '../assets/img/forro-de-bambu.jpg';
 import imgForroPalha from '../assets/img/forro-de-palha.webp';
