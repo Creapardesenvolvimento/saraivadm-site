@@ -496,16 +496,16 @@ const schema = [
   .in-estrutura strong {
     display: block;
     font-family: var(--fonte-titulos);
-    font-size: 40px;
+    font-size: clamp(44px, 4.6vw, 60px);
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.05;
   }
   .in-numeros small,
   .in-estrutura small {
-    font-size: 18px;
+    font-size: 0.4em;
     font-weight: 600;
   }
-  .in-numeros span {
+  .in-numeros li > span {
     display: block;
     margin-top: 8px;
     font-size: 15px;
@@ -525,7 +525,7 @@ const schema = [
   .in-estrutura strong {
     color: var(--sar-marrom);
   }
-  .in-estrutura span {
+  .in-estrutura li > span {
     display: block;
     margin-top: 6px;
     color: #5b4a43;
@@ -741,7 +741,7 @@ const schema = [
       grid-template-columns: 1fr;
     }
     .in-numeros strong {
-      font-size: 32px;
+      font-size: 38px;
     }
   }
   /* Linha do tempo animada: a linha corre da esquerda para a direita e cada marco aparece quando ela chega nele */
