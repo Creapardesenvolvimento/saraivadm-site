@@ -758,3 +758,31 @@
       padding: 12px 0 0;
     }
   }
+
+/* "Nesta página você vai ver": atalhos para as seções (ex.: MLC) */
+.pm-indice__titulo {
+  margin-top: 18px;
+}
+.pm-indice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.pm-indice a {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #cdbfae;
+  border-radius: 999px;
+  font-size: 14px;
+  color: var(--sar-marrom-escuro);
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.pm-indice a:hover,
+.pm-indice a:focus-visible {
+  background: var(--sar-bege);
+  border-color: var(--sar-marrom);
+}

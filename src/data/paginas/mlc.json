@@ -34,12 +34,21 @@
    "lead": "A Saraiva Design desenvolve estruturas em Madeira Laminada Colada (MLC), uma tecnologia que transforma a madeira natural em um produto estrutural de alta precisão, resistência e segurança",
    "blocos": [
     {
+     "t": "videos",
+     "videos": [
+      {
+       "id": "f2rPRRPQmVs",
+       "capa": "001-madeira-engenheirada.png"
+      }
+     ]
+    },
+    {
+     "t": "html",
+     "html": "<p><strong>A Madeira Laminada Colada (MLC)</strong> é uma solução estrutural de alta performance, produzida pela união de lamelas de madeira selecionadas (pinus ou eucalipto) coladas com adesivos estruturais de alta resistência. Para a fabricação de pilares e vigas de grandes dimensões, as lamelas recebem emendas longitudinais do tipo finger joint, permitindo a produção de peças com maiores comprimentos e elevado desempenho estrutural.</p><p>Mais do que unir peças de madeira, a madeira engenheirada transforma um material natural em um produto controlado, preciso e previsível. Todo o processo produtivo passa por um rigoroso controle de qualidade, garantindo a seleção de madeiras com teor de umidade adequado e sem defeitos estruturais significativos, proporcionando maior resistência, estabilidade dimensional, precisão de fabricação e segurança estrutural.</p><p>Essa tecnologia permite vencer grandes vãos e suportar elevadas cargas, oferecendo liberdade arquitetônica para projetos residenciais, comerciais e corporativos, sem abrir mão da estética e da beleza natural da madeira.</p><p>Na Saraiva Design, desenvolvemos estruturas em MLC que unem engenharia, design e sustentabilidade, criando soluções duráveis, elegantes e de alto desempenho para cada projeto.</p><p>A MLC também é conhecida como <strong>Madeira Lamelada Colada</strong>, <strong>Madeira Engenheirada</strong> ou <strong>Mass Timber</strong>.</p><p class=\"pm-indice__titulo\"><strong>Nesta página você vai ver:</strong></p><ul class=\"pm-indice\"><li><a href=\"#como-nasce-a-madeira-engenheirada\">Produção da madeira MLC</a></li><li><a href=\"#como-a-mlc-ganha-resistencia\">Resistência</a></li><li><a href=\"#como-sao-feitas-as-fixacoes-da-madeira-laminada-colada\">Fixação estrutural</a></li><li><a href=\"#sustentabilidade-que-constroi-o-futuro\">Sustentabilidade</a></li><li><a href=\"#onde-usar-a-madeira-laminada-colada\">Onde usar</a></li><li><a href=\"#vantagens-e-diferenciais-da-madeira-laminada-colada\">Vantagens</a></li><li><a href=\"#duvidas-sobre-madeira-engenheirada\">Dúvidas</a></li></ul>"
+    },
+    {
      "t": "galeria",
      "fotos": [
-      {
-       "arquivo": "001-madeira-engenheirada.png",
-       "alt": "Madeira Laminada Colada Saraiva - Vídeo"
-      },
       {
        "arquivo": "002-saud4680.jpg",
        "alt": "Desenvolvimento de projeto em madeira laminada colada"
@@ -53,10 +62,6 @@
        "alt": "Detalhe do desenvolvimento técnico de um projeto"
       }
      ]
-    },
-    {
-     "t": "html",
-     "html": "<p><strong>A Madeira Laminada Colada (MLC)</strong> é uma solução estrutural de alta performance, produzida pela união de lamelas de madeira selecionadas (pinus ou eucalipto) coladas com adesivos estruturais de alta resistência. Para a fabricação de pilares e vigas de grandes dimensões, as lamelas recebem emendas longitudinais do tipo finger joint, permitindo a produção de peças com maiores comprimentos e elevado desempenho estrutural.</p><p>Mais do que unir peças de madeira, a madeira engenheirada transforma um material natural em um produto controlado, preciso e previsível. Todo o processo produtivo passa por um rigoroso controle de qualidade, garantindo a seleção de madeiras com teor de umidade adequado e sem defeitos estruturais significativos, proporcionando maior resistência, estabilidade dimensional, precisão de fabricação e segurança estrutural.</p><p>Essa tecnologia permite vencer grandes vãos e suportar elevadas cargas, oferecendo liberdade arquitetônica para projetos residenciais, comerciais e corporativos, sem abrir mão da estética e da beleza natural da madeira.</p><p>Na Saraiva Design, desenvolvemos estruturas em MLC que unem engenharia, design e sustentabilidade, criando soluções duráveis, elegantes e de alto desempenho para cada projeto.</p><p>A MLC também é conhecida como <strong>Madeira Lamelada Colada</strong>, <strong>Madeira Engenheirada</strong> ou <strong>Mass Timber</strong>.</p>"
     }
    ]
   },

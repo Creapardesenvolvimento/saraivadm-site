@@ -57,6 +57,10 @@ const deNome = artigo ? `${artigo.de} ${nome}` : `de ${nomeMin}`;
 const msg = (sobre = nomeMin) => whatsappUrl(`Olá! Vim do site e quero saber mais sobre ${sobre}.`);
 
 // Fundo alternado (branco / bege) entre as seções
+// Âncora de cada seção pelo título (ex.: #onde-usar-a-madeira-laminada-colada), para links "o que você vai ver"
+const ancora = (t?: string) =>
+  t ? t.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') : undefined;
+
 let alterna = 0;
 const fundo = (s: any) => (s.tipo === 'folder' ? '' : alterna++ % 2 === 0 ? '' : 'pm-sec--bege');
 
@@ -251,7 +255,7 @@ if (duvidas) {
 
       if (s.tipo === 'usos')
         return (
-          <section class:list={['pm-sec', classe]}>
+          <section class:list={['pm-sec', classe]} id={ancora(s.titulo)}>
             <div class="sar-wrap">
               <header class="pm-head">
                 <span class="pm-selo">Aplicações</span>
@@ -286,7 +290,7 @@ if (duvidas) {
 
       if (s.tipo === 'acordeao')
         return (
-          <section class:list={['pm-sec', classe]}>
+          <section class:list={['pm-sec', classe]} id={ancora(s.titulo)}>
             <div class="sar-wrap">
               <header class="pm-head">
                 <span class="pm-selo">{/d[úu]vidas/i.test(s.titulo) ? 'Perguntas frequentes' : /cidades/i.test(s.titulo) ? 'Onde atendemos' : 'Guia'}</span>
@@ -316,7 +320,7 @@ if (duvidas) {
       if (resto.length === 2 && resto[0].t === 'img' && resto[1].t === 'html' && img(resto[0].arquivo))
         resto = [{ t: 'linha', arquivo: resto[0].arquivo, alt: resto[0].alt, html: resto[1].html }];
       return (
-        <section class:list={['pm-sec', classe]}>
+        <section class:list={['pm-sec', classe]} id={ancora(s.titulo)}>
           <div class="sar-wrap">
             {introFoto ? (
               <div class="pm-intro__grid">
