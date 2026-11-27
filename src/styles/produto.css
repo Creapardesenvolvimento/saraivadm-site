@@ -739,3 +739,22 @@
       aspect-ratio: 4 / 3;
     }
   }
+  /* Infográficos e composições (fundo branco) nunca são cortados: aparecem inteiros, na proporção original */
+  .pm-usos .pm-uso.pm-uso--branca .pm-uso__img,
+  .pm-usos .pm-uso:not(.pm-uso--sem-foto) .pm-uso__img.img--branca,
+  .pm-fluxo .pm-uso--linha.pm-uso--branca:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote) .pm-uso__img,
+  .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote) .pm-uso__img.img--branca {
+    aspect-ratio: auto;
+    height: auto;
+    object-fit: contain;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  @media (max-width: 900px) {
+    .pm-usos .pm-uso.pm-uso--branca .pm-uso__img,
+    .pm-usos .pm-uso:not(.pm-uso--sem-foto) .pm-uso__img.img--branca,
+    .pm-fluxo .pm-uso--linha.pm-uso--branca:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote) .pm-uso__img,
+    .pm-fluxo .pm-uso--linha:not(.pm-uso--selo):not(.pm-uso--colecao):not(.pm-uso--mascote) .pm-uso__img.img--branca {
+      padding: 12px 0 0;
+    }
+  }
