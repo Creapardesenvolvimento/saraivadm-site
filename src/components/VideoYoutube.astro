@@ -17,7 +17,7 @@ const img = await getImage({ src: capa, width: largura, format: 'webp', quality:
   type="button"
   class="sar-video"
   data-yt={id}
-  style={`background-image:url('${img.src}')`}
+  style={`background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.45) 100%), url('${img.src}')`}
   aria-label={`Assistir: ${titulo}`}
 >
   <span class="sar-video__play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"></path></svg></span>
@@ -33,14 +33,19 @@ const img = await getImage({ src: capa, width: largura, format: 'webp', quality:
       iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen';
       iframe.allowFullscreen = true;
       btn.classList.add('is-playing');
+      btn.style.backgroundImage = 'none';
       btn.replaceChildren(iframe);
     });
   });
 </script>
 
 <style>
+  /* Sem nenhum elemento com position: absolute: dentro do texto em duas colunas (CSS columns) o Chrome
+     desenhava o botão de play e o player fora do lugar (no topo da página). Play centralizado pela grade. */
   .sar-video {
     position: relative;
+    display: grid;
+    place-items: center;
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -50,24 +55,10 @@ const img = await getImage({ src: capa, width: largura, format: 'webp', quality:
     background: #1d1a18 center / cover no-repeat;
     cursor: pointer;
     overflow: hidden;
-    /* o player (iframe) se posiciona dentro da capa mesmo quando ela fica no texto em duas colunas;
-       sem isso o Chrome abria o vídeo no topo da página, por cima da capa */
-    contain: layout paint;
-  }
-  .sar-video::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.45) 100%);
   }
   .sar-video__play {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
     width: 68px;
     height: 68px;
-    transform: translate(-50%, -50%);
     border-radius: var(--raio);
     background: rgba(243, 234, 219, 0.94);
     display: flex;
@@ -83,22 +74,22 @@ const img = await getImage({ src: capa, width: largura, format: 'webp', quality:
   }
   .sar-video:hover .sar-video__play,
   .sar-video:focus-visible .sar-video__play {
-    transform: translate(-50%, -50%) scale(1.08);
+    transform: scale(1.08);
     background: #fff;
   }
   .sar-video:focus-visible {
     outline: 3px solid var(--sar-oliva);
     outline-offset: 3px;
   }
+  /* o player fica no fluxo normal (sem position: absolute): dentro do texto em duas colunas o Chrome
+     posicionava o player absoluto no topo da página, por cima da capa */
   .sar-video :global(iframe) {
-    position: absolute;
-    inset: 0;
+    display: block;
+    align-self: stretch;
+    justify-self: stretch;
     width: 100%;
     height: 100%;
     border: 0;
-  }
-  .sar-video.is-playing::after {
-    display: none;
   }
   @media (max-width: 600px) {
     .sar-video__play {
