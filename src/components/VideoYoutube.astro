@@ -50,6 +50,9 @@ const img = await getImage({ src: capa, width: largura, format: 'webp', quality:
     background: #1d1a18 center / cover no-repeat;
     cursor: pointer;
     overflow: hidden;
+    /* o player (iframe) se posiciona dentro da capa mesmo quando ela fica no texto em duas colunas;
+       sem isso o Chrome abria o vídeo no topo da página, por cima da capa */
+    contain: layout paint;
   }
   .sar-video::after {
     content: '';
