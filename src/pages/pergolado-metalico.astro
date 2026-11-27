@@ -16,7 +16,6 @@ import '../styles/produto.css';
 
 import hero from '../assets/img/pergolado-metalico/hero.jpg';
 import intro from '../assets/img/pergolado-metalico/intro.jpg';
-import tipos from '../assets/img/pergolado-metalico/tipos.png';
 import folderCapa from '../assets/img/pergolado-metalico/folder-capa.webp';
 import capaVideo1 from '../assets/img/pergolado-metalico/video-CcLtjQVucRw.jpg';
 import capaVideo2 from '../assets/img/pergolado-metalico/video-jnhUkOk38S4.jpg';
@@ -150,7 +149,7 @@ const schema = [
 
   <!-- ================= TIPOS ================= -->
   <section class="pm-sec pm-sec--marrom">
-    <div class="sar-wrap pm-madeira">
+    <div class="sar-wrap pm-madeira pm-madeira--so-texto">
       <div>
         <span class="pm-selo pm-selo--claro">Material</span>
         <h2 class="pm-h2 titulo-secao">Tipos de pergolado metálico</h2>
@@ -167,7 +166,6 @@ const schema = [
           solução inteligente para composições arquitetônicas modernas, oferecendo versatilidade e requinte na medida certa.
         </p>
       </div>
-      <Image src={tipos} alt="Mascote da Saraiva Design segurando um perfil metálico" widths={[480, 800, 1200]} sizes="(max-width: 900px) 100vw, 480px" class:list={['pm-madeira__img', { 'img--branca': fundoBranco(tipos) }]} quality={90} />
     </div>
   </section>
 
