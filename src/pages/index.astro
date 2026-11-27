@@ -35,16 +35,49 @@ const projetos = [
   { id: 'vbjZWB_g87c', capa: capaProjeto4, titulo: 'Projeto de pergolado Saraiva Design 4' },
 ];
 
+// Diferenciais (texto do marketing da Saraiva, 26/11/2026). Ícones: traços simples em 24x24.
 const diferenciais = [
-  { t: 'Projetos em 3D', d: 'Veja seu pergolado antes mesmo de começar a obra com nossa tecnologia 3D.' },
-  { t: 'Mão de obra profissional', d: 'Mestres em marcenaria, serralheria e carpintaria artesanal com acabamento refinado.' },
-  { t: 'Atendimento exclusivo', d: 'Consultores especializados à sua total disposição em todo o Brasil.' },
-  { t: 'Garantia e pós-venda', d: 'Garantia por escrito em cada projeto e equipe própria para acompanhar você depois da entrega.' },
-  { t: 'Logística', d: 'Atendimento para todo o Brasil, com centro logístico localizado em Campinas/SP.' },
-  { t: 'Prazo reduzido', d: 'Cronograma inteligente e equipes prontas para entregas rápidas.' },
+  {
+    t: 'Prazo combinado, prazo cumprido',
+    d: 'Cronograma definido em contrato e equipe própria pronta para começar. Muitos dos nossos clientes recebem antes da data.',
+    icone: 'M8 2v4M16 2v4M3 9h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM8.5 15l2.5 2.5 5-5',
+  },
+  {
+    t: 'Do 3D à obra, sem surpresas',
+    d: 'Visita técnica, projeto 3D e engenharia com ART. Você aprova cada detalhe antes da primeira peça ser cortada.',
+    icone: 'M12 2l9 5v10l-9 5-9-5V7zM12 22V12M21 7l-9 5-9-5',
+  },
+  {
+    t: 'Um consultor do início ao fim',
+    d: 'A mesma pessoa acompanha seu projeto, do orçamento à entrega.',
+    icone: 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1',
+  },
+  {
+    t: 'Obra limpa e organizada',
+    d: 'Equipe própria, área de lazer limpa ao fim de cada dia e entrega técnica acompanhada.',
+    icone: 'M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8zM19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9zM5 15l.7 1.3L7 17l-1.3.7L5 19l-.7-1.3L3 17l1.3-.7z',
+  },
+  {
+    t: 'Garantia e pós-venda',
+    d: 'Garantia por escrito em cada projeto e equipe própria para acompanhar você depois da entrega.',
+    icone: 'M12 2l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V5zM8.5 12l2.5 2.5 4.5-4.5',
+  },
+  {
+    t: 'Atendimento em todo o Brasil',
+    d: 'Centro logístico em Campinas/SP e frota própria para levar seu projeto até você.',
+    icone: 'M1 4h13v12H1zM14 8h4l4 4v4h-8M5.5 19.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18.5 19.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z',
+  },
 ];
 
 const posts = (await getPosts()).slice(0, 3);
+
+// Selos de sustentabilidade (textos da página Institucional). Trocar pelas artes oficiais quando o cliente enviar.
+const selos = [
+  { t: 'DOF / IBAMA', d: 'Documento de Origem Florestal em toda madeira nativa.', icone: 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8.5 14.5l2.5 2.5 4.5-4.5' },
+  { t: 'Plano de Manejo', d: 'Madeira de florestas com manejo licenciado por órgão ambiental.', icone: 'M12 22V12M12 12c0-5 3-8 8-9-1 5-4 8-8 9zM12 15c0-4-2.5-6.5-7-7.5 1 4 3 6.5 7 7.5z' },
+  { t: 'Aproveitamento integral', d: 'Política de desperdício zero na fábrica.', icone: 'M3 12a9 9 0 0 1 15.5-6.2L21 8M21 3v5h-5M21 12a9 9 0 0 1-15.5 6.2L3 16M3 21v-5h5' },
+];
+
 
 // ---------- Dados estruturados (Google) ----------
 const sameAs = Object.values(site.redes).filter(Boolean);
@@ -151,8 +184,9 @@ const schema = [
           <span class="sar-tradicao__selo">Top 1 em obras de alto padrão</span>
           <h2 class="titulo-secao"><strong>Tradição</strong> e inovação</h2>
           <p class="sar-tradicao__texto">
-            A Saraiva Design em Madeiras e Aços surgiu da necessidade de trabalhos com qualidade e garantia voltados à
-            madeira, com mais de 30 anos de experiência da família Saraiva.
+            A Saraiva Design em Madeiras e Aços nasceu do compromisso com a qualidade, a excelência e a garantia em projetos
+            que valorizam a madeira e o aço. Com mais de 30 anos de experiência da família Saraiva, a empresa desenvolve
+            soluções que unem tradição, conhecimento e alto padrão de acabamento.
           </p>
         </div>
         <VideoYoutube id="XyS5GsUSi0I" capa={capaInstitucional} titulo="Vídeo institucional da Saraiva Design" />
@@ -211,16 +245,42 @@ const schema = [
   </section>
 
   <!-- ================= DEPOIMENTOS (Google) ================= -->
+  <!-- ================= SUSTENTABILIDADE (selos) ================= -->
+  <section class="sar-selos" aria-labelledby="sar-selos-titulo">
+    <div class="sar-wrap sar-selos__inner">
+      <div class="sar-selos__texto">
+        <span class="sar-selos__tag">Sustentabilidade</span>
+        <h2 class="titulo-secao" id="sar-selos-titulo">Madeira de origem legal e comprovada</h2>
+        <p>Toda madeira nativa acompanha o DOF, do fornecedor até a sua obra. Respeitar os recursos naturais é uma premissa da Saraiva Design.</p>
+        <a class="btn btn--verde" href="/sustentabilidade/">Conheça nosso compromisso</a>
+      </div>
+      <ul class="sar-selos__lista">
+        {
+          selos.map((x) => (
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d={x.icone} /></svg>
+              <strong>{x.t}</strong>
+              <span>{x.d}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
   <Depoimentos />
 
   <!-- ================= DIFERENCIAIS ================= -->
   <section class="sar-dif">
-    <h2 class="titulo-secao sar-dif__title">Conheça nossos diferenciais e a qualidade dos nossos produtos.</h2>
+    <h2 class="titulo-secao sar-dif__title">Nossos diferenciais e o que nossos clientes mais valorizam</h2>
     <ol class="sar-dif__grid">
       {
         diferenciais.map((d, i) => (
           <li class="sar-dif__item">
-            <span class="sar-dif__num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+            <div class="sar-dif__topo" aria-hidden="true">
+              <span class="sar-dif__num">{String(i + 1).padStart(2, '0')}</span>
+              <svg class="sar-dif__icone" viewBox="0 0 24 24"><path d={d.icone} /></svg>
+            </div>
             <h3>{d.t}</h3>
             <p>{d.d}</p>
           </li>
@@ -240,7 +300,7 @@ const schema = [
         <div class="sar-blog__inner">
           <div class="sar-blog__head">
             <h2 class="titulo-secao">Nosso blog</h2>
-            <p>Encontre dicas sobre pergolados, coberturas, materiais, manutenção e soluções para áreas externas.</p>
+            <p>Encontre dicas sobre pergolados, coberturas, forros, pisos, materiais e manutenção para cada ambiente do seu projeto.</p>
           </div>
           <ul class:list={['sar-blog__grid', { 'sar-blog__grid--destaque': posts.length === 1, 'sar-blog__grid--dois': posts.length === 2 }]}>
             {posts.map((post) => (
@@ -473,6 +533,27 @@ const schema = [
     color: #6d5c55;
   }
 
+  /* ================= SUSTENTABILIDADE (selos) ================= */
+  .sar-selos { background: #eef0e6; padding: var(--secao) 0; }
+  .sar-selos__inner { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
+  .sar-selos__tag { display: inline-block; margin-bottom: 14px; font-family: var(--fonte-titulos); font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sar-oliva-escuro); }
+  .sar-selos__texto p { margin: var(--esp-subtitulo) 0 28px; font-size: var(--fs-subtitulo); line-height: 1.6; color: #4f4a40; }
+  .sar-selos__lista { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); list-style: none; margin: 0; padding: 0; }
+  .sar-selos__lista li { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 28px 18px; background: #fff; border-radius: var(--raio); }
+  .sar-selos__lista svg { width: 56px; height: 56px; padding: 12px; box-sizing: border-box; border: 1.5px solid var(--sar-oliva-escuro); border-radius: 50%; fill: none; stroke: var(--sar-oliva-escuro); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .sar-selos__lista strong { margin-top: 16px; font-family: var(--fonte-titulos); font-size: 17px; font-weight: 600; color: var(--sar-marrom-escuro); }
+  .sar-selos__lista span { margin-top: 6px; font-size: 14px; line-height: 1.5; color: #5b4a43; }
+  @media (max-width: 900px) {
+    .sar-selos__inner { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .sar-selos__lista { grid-template-columns: 1fr; }
+    .sar-selos__lista li { flex-direction: row; text-align: left; align-items: center; gap: 0 16px; display: grid; grid-template-columns: 56px 1fr; }
+    .sar-selos__lista svg { grid-row: span 2; }
+    .sar-selos__lista strong { margin-top: 0; }
+    .sar-selos__lista span { margin-top: 2px; }
+  }
+
   /* ================= DIFERENCIAIS ================= */
   .sar-dif {
     background: #f8f4ed;
@@ -509,8 +590,22 @@ const schema = [
     line-height: 1.2;
     color: #7e8c5f;
   }
+  .sar-dif__topo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .sar-dif__icone {
+    width: clamp(40px, 3.4vw, 52px);
+    height: clamp(40px, 3.4vw, 52px);
+    fill: none;
+    stroke: #7e8c5f;
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
   .sar-dif__item h3 {
-    margin-top: clamp(42px, 4.6vw, 74px);
+    margin-top: clamp(22px, 2.4vw, 36px);
     font-size: var(--fs-card);
     font-weight: 500;
     line-height: 1.25;
@@ -532,7 +627,7 @@ const schema = [
   }
   @media (max-width: 560px) {
     .sar-dif__grid { grid-template-columns: 1fr; }
-    .sar-dif__item h3 { margin-top: 36px; }
+    .sar-dif__item h3 { margin-top: 20px; }
     .sar-dif__btn { width: 100%; max-width: 320px; }
   }
 

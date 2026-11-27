@@ -1,6 +1,6 @@
 ---
-// Depoimentos reais do Google em carrossel (setas + barra de progresso, arrasta no celular).
-import { avaliacoesGoogle, depoimentos } from '../data/depoimentos';
+// Depoimentos reais do Google em carrossel (sem a nota geral: pedido do marketing, 26/11/2026) (setas + barra de progresso, arrasta no celular).
+import { depoimentos } from '../data/depoimentos';
 
 interface Props {
   titulo?: string;
@@ -15,14 +15,6 @@ const estrelas = Array.from({ length: 5 });
   <div class="sar-wrap">
     <header class="dep__head">
       <h2 class="titulo-secao" id="dep-titulo">{titulo}</h2>
-      <a class="dep__nota" href={avaliacoesGoogle.url} target="_blank" rel="noopener">
-        <strong>{avaliacoesGoogle.nota}</strong>
-        <span class="dep__estrelas" aria-hidden="true">
-          {estrelas.map(() => <svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" /></svg>)}
-        </span>
-        <span>{avaliacoesGoogle.total} avaliações no Google</span>
-        <span class="visually-hidden">(abre o Google Maps)</span>
-      </a>
     </header>
 
     <div class="dep__carrossel">
